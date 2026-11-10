@@ -1,0 +1,16 @@
+{
+  "DateUTC": "2026-11-07T13:47:17.3702049Z",
+  "MainVersion": "Frozen V449 RADIUS_PAIR_AWA_GATED",
+  "Static": "3072 calls PASS; root and independent audit crosscheck PASS",
+  "Memory": "128 actual observations finished; monitor PASS ended2026-11-07T13:45:08Z; analyses in progress",
+  "Online": "Updated-source correctness-only window released; no V450 policy performance pilot/full64 run yet",
+  "Window": "Correctness and lightweight analyses/rendering only. Exclusive online performance window pending completion notices",
+  "Reports": "reporting/build_report_v450.py prepared and AST PASS; Report_Assembly_Notes_01.txt retained",
+  "Figures": "Agent official_vehicle_capacities now running prepared source-data plots and QA",
+  "Novelty": "Fulltext source matrix retained; newCOR107577 partialprimary only, browser initialization failed; no globalfirst claim",
+  "FullFreightALNS": false,
+  "PublishedSearchBaselines": [
+    "Complete HZ AWA policy with disclosed adapters",
+    "Complete printed ANA policy with disclosed adapters"
+  ]
+}

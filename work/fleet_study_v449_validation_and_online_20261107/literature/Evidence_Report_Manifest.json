@@ -1,0 +1,19 @@
+{
+  "status": "EVIDENCE_REPORT_COMPLETE_VALIDATION_NOT_EXECUTED",
+  "created_utc": "2026-11-07T10:42:46.541108+00:00",
+  "no_traffic_simulation_executed": true,
+  "report_sha256": "8d80a8bfe2c6b826b94cf34faa7b9bd626baff8479e021d5d2f30e0b43dbfbbc",
+  "query_log_sha256": "5dcf33ca1dfd80e5c0898f99c3f25ca7d64412a1c1e9ba5679d9abf71b73b332",
+  "source_retrieval_manifest_sha256": "a5f333625302d20bf5fb7de9abebbfb79b26a06be0cc89a1ebaebeaa4edd93ac",
+  "protocol_path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\validation\\san_pablo_dam\\Protocol_and_Provenance.md",
+  "protocol_report_sha256": "f91fdec829154b43c125f399e08a217df2fa11ccbed440e41be99ec5c88b0cef",
+  "validation_preparation_manifest_sha256": "b78bea9c5e999d9419e8209fac4e97784d21bdd8d585122d1c787795400ab1e5",
+  "software_attribution_checked": "https://arxiv.org/abs/2609.00065",
+  "source_type": "official documentation, official proceedings, author manuscripts and DOI registration metadata; version limits explicit",
+  "updated_utc": "2026-11-07T11:03:46.341857+00:00",
+  "public_validation_source_sha256": "c50fcb484be5261a6e710371fbe745af1c0cbabd548ff57994febc6bd8acb451",
+  "public_validation_protocol_sha256": "3803811668a00b0377d2f6e3898819bf220927c48bbad59b4e5014815117162a",
+  "raw_observation_qc_sha256": "a87afee64877fb02c84b2e9edd3535e553425199a7f3ed4474b2170298fac16d",
+  "owned_process_lifecycle_pass": true,
+  "qc_report_amendment": "Clarified ordinal-row matching and segment eligibility; no source or traffic protocol changes"
+}

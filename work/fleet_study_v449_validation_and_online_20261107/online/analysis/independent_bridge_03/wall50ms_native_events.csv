@@ -1,0 +1,5 @@
+mode,case,signature,actual_J,old_flow,new_a_flow,new_b_flow,truck_arrival,first_handoff,last_handoff,truck_release,truck_wait_excluding_transfer,truck_dwell,initial_wait,between_transfer_wait,receiver,hub,trace_frames
+wall50ms,s420511_o0_p0_q0,2dfee5df8d7fc36ad538f979bb567c1806daa8c261a5cff226be0810bd94c590,1495.8,864.4,281.2,350.2,13.2,197.6,332.4,332.4,315.2,319.2,182.4,132.8,B,HW,1812
+wall50ms,s420511_o0_p0_q2,2dfee5df8d7fc36ad538f979bb567c1806daa8c261a5cff226be0810bd94c590,1495.8,864.4,281.2,350.2,13.2,197.6,332.4,332.4,315.2,319.2,182.4,132.8,B,HW,1812
+wall50ms,s420511_o24_p0_q0,bfa2298412a3e6600d1b665d1eb1826cd3456e8fc6dcc52550f63525ba216b93,1225.0,780.6,120.6,323.8,95.6,99.6,247.0,247.0,147.4,151.4,2.0,145.4,B,HE,1680
+wall50ms,s420511_o24_p0_q2,bfa2298412a3e6600d1b665d1eb1826cd3456e8fc6dcc52550f63525ba216b93,1278.0,785.4,122.19999999999999,370.4,97.2,101.2,273.0,273.0,171.8,175.8,2.0,169.8,B,HE,1913

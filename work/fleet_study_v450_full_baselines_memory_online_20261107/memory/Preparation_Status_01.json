@@ -1,0 +1,17 @@
+{
+  "status": "AST_PASS_STATIC_PREPARED",
+  "sources": {
+    "check_memory_safety.py": "4132b5e5051ab9587e2b98c394ce1b21ffc475952edec415ba35ab698610f313",
+    "freeze_memory.py": "17df74804da82906d1f8bd4abff51bdae48b9c0af4ba0786e005a4e1c6ea62f6",
+    "memory_common.py": "2027ac64fe4ddf44ba744eb8ed273d9ff813f441bc334b198479dcbf71e589c9",
+    "memory_worker.py": "12aebc8ca511144b0e59e1be0548fbb2864e9d9fa8588c69118beaae4a9a645b",
+    "native_memory.py": "13c9af100de45e9235c5842bdae6257f7461db9a61b5b5859f4e9d523712d5af",
+    "owned_process.py": "23c9e418596e20d29aae0d3842c47b516bf5d320c66b586afba552d4d797215c",
+    "run_memory.py": "cf613208dcfc30fee63cb3449fefb8a231eebdbc56f4db61cf7856ab2fd927e4",
+    "run_memory_jobs.py": "b994699a3111bee3bab068588dc8f9ef61742dceb0c7063b8ab1174278b662cf"
+  },
+  "safety_gate_status": "PASS",
+  "safety_gate_seconds": 65.38611269998364,
+  "algorithm_measurement_executed": false,
+  "pending": "Published source-matched runtime gate, metadata freeze, wrapper correctness and cost pilot"
+}

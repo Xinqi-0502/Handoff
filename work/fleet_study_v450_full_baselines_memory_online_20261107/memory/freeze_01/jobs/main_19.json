@@ -1,0 +1,20 @@
+{
+  "stage": "main",
+  "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\main_19_01",
+  "manifest": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\freeze_01\\MANIFEST.json",
+  "inputs": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\freeze_01\\INPUTS.json",
+  "offset": 19,
+  "count": 1,
+  "methods": [
+    "RADIUS_PAIR_AWA_GATED",
+    "HZ_AWA_RADIUS",
+    "HZ_AWA_RADIUS_PAIR_GATED",
+    "ANA_RADIUS"
+  ],
+  "repeats": 1,
+  "wall_ms": 1000,
+  "hard_seconds": 15,
+  "safety_gate": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\safety_02\\PROCESS_COMPLETE.json",
+  "correctness_gate": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\gates\\wrapper_all_01\\GATE.json",
+  "cost_approval": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\Cost_Approval_01.json"
+}

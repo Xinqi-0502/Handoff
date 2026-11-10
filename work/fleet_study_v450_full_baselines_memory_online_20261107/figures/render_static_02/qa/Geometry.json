@@ -1,0 +1,34 @@
+[
+  {
+    "figure": "Fig1_Same_Kernel_Scale",
+    "page_count": 1,
+    "physical_size_mm": [
+      183,
+      104
+    ],
+    "png_dpi": 600,
+    "svg_editable_text": true,
+    "raster_content_bbox": [
+      166,
+      109,
+      4196,
+      2309
+    ]
+  },
+  {
+    "figure": "Fig2_Anytime_Tradeoff",
+    "page_count": 1,
+    "physical_size_mm": [
+      183,
+      100
+    ],
+    "png_dpi": 600,
+    "svg_editable_text": true,
+    "raster_content_bbox": [
+      350,
+      106,
+      4110,
+      2268
+    ]
+  }
+]

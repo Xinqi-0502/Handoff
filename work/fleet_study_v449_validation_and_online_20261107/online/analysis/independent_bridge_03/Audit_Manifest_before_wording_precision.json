@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "output_hashes": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\analysis\\independent_bridge_03\\audit_raw.py": "9f9d9f1f6e7dd47dbad1e873ad9e8dedcd57466e517c1a894e67889dd5e3538d",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\analysis\\independent_bridge_03\\Audit_Source_Hashes.json": "6ab850d4baf7752c9df7dab0cf5328246b7c89fc25353dd0a7fed15f2f91856c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\analysis\\independent_bridge_03\\before_final_Online_Bridge_Results_01.md": "34ae848365794f38c4d16c0ec7702f6e2361f201a6f8c332647f59cbc0968001",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\analysis\\independent_bridge_03\\before_final_Online_Deadline_Results_01.md": "4d4b606cb8b920f7f953ccdfabef17b75b961cabe365df3bbb0b70189bac1a5a",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\analysis\\independent_bridge_03\\forecast24_cases.csv": "f65cd2ad49ba3655c6d9949835d793c0d80585b9cccf8781f8cc5e91e531b967",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\analysis\\independent_bridge_03\\forecast24_native_events.csv": "218f94d6522d0808e0cf3d63e11ec7caedcdfc3fa81265d233c999bcdde1109f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\analysis\\independent_bridge_03\\Independent_Aggregates.json": "c22aa08fb10980966214a3517150672876ce05b21c3ed2a271137eded0bd692d",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\analysis\\independent_bridge_03\\wall50ms_cases.csv": "dfdc698cee5a93936c453b83b765732ae603ba620eac676b8af1270b968dd0c8",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\analysis\\independent_bridge_03\\wall50ms_native_events.csv": "5f038ca6aa45e90f36000aaacef5408f2c3ca0d7b9a48d73c53df26e1ef22ca7",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\Online_Bridge_Results_01.md": "aa9adcbef924d16115445820c24ba3b51208680db662279d14b447a26e2f43f0",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\Online_Deadline_Results_01.md": "2b5d56a0bb403e63cc21b95b92a95a0bfe1f54fdaf672182981e2a8aecec5339"
+  },
+  "research_source_or_raw_modified": false,
+  "solver_or_SUMO_rerun": false,
+  "preserved_attempts": [
+    "independent_bridge_01",
+    "independent_bridge_02"
+  ]
+}

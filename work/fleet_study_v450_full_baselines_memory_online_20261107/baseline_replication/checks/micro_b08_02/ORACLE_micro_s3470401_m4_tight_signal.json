@@ -1,0 +1,40 @@
+{
+  "case": "micro_s3470401_m4_tight_signal",
+  "optimum_H2": 174,
+  "exhaustive_states": 275,
+  "dp": {
+    "status": "PASS",
+    "case": "micro_s3470401_m4_tight_signal",
+    "optimum_H2": 174,
+    "best_feasible_H2": 174,
+    "plan": [
+      "old:2",
+      "old:3",
+      "old:0",
+      "handoff:a",
+      "deliver:a",
+      "handoff:b"
+    ],
+    "certified_optimal": true,
+    "stop_reason": "all_structural_labels_completed",
+    "expanded": 57,
+    "expanded_phase0": 33,
+    "expanded_phase1": 24,
+    "structural_labels": 59,
+    "accepted_updates": 72,
+    "generated": 105,
+    "elapsed_seconds": 0.00043160002678632736,
+    "stats": {
+      "closure_queries": 105,
+      "closure_cache_hits": 54,
+      "dijkstra_runs": 51,
+      "edge_relaxations": 1173,
+      "closure_cache_entries": 51,
+      "cache_clears": 0,
+      "closure_cache_cap": 100000
+    },
+    "oracle_kind": "Independent topological earliest-arrival FIFO DP",
+    "proposed_bound_used": false,
+    "incumbent_pruning_used": false
+  }
+}

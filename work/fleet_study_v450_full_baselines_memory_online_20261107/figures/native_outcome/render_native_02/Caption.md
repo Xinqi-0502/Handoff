@@ -1,0 +1,12 @@
+# Native-outcome figure caption
+
+**Realized outcomes for the same AWA* engine with and without the shared-quota gate.**
+Panel a reports customer-flow J (the sum of completion-minus-release durations over customers); panel b reports truck handoff waiting at the hub, excluding the two transfer services. Values are candidate minus baseline, averaged over all 64 matched scenarios. Negative changes mean lower outcomes. Each budget (10, 50, 200 ms) retains the same prespecified 64 scenarios and eight independent mothers, with eight related offset/pedestrian/slow-vehicle conditions per mother. No confidence interval is inferred from the 64 related conditions.
+
+Each case-level outcome is the existing audit's policy-frequency-weighted representative native replay: selected representative plan/activation outcomes are weighted by the number of the three policy repetitions they represent, divided by three. It is not an average of three independent native replications. Planning latency and the existing activation quantization remain charged to execution. The plotted physical quantities are distinct from within-deadline forecast quality and from proving the forecast optimum.
+
+**Deadline interpretation at 10 ms.** The shared-quota-gated arm had NO_PLAN_BY_DEADLINE in 192/192 policy repetitions, and RADIUS alone in 191/192. These calls executed the late common-initial-plan fallback. Thus the 10 ms physical outcome mainly reflects this late fallback, not a plan produced within 10 ms. The recorded planning latency and activation timing remain included in the physical replay.
+
+W/T/L/U counts use lower/tied/higher/unknown paired outcomes, with a 1e-6 second equality tolerance matching the independent audit. Any missing or failed representative makes its full case/arm physical aggregate unknown. If any pair is unknown, the full-64 mean for that budget is withheld as NA; unknown outcomes remain in the count denominator. No survivor, winner, same-plan, or completed-proof subset is substituted for all scenarios.
+
+This evidence concerns a single frozen dispatch epoch in a synthetic SUMO network. Truck handoff waiting is distinct from SUMO waitingTime, general congestion delay and dispatch activation latency. The figure does not establish continuous rolling dispatch, calibration of the delivery network, real-world safety, or independent replication across 64 networks. No numerical values were selected using pilot gains. All three budgets and all unfavorable effects are retained.

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "policy_calls": 54,
+  "planned_policy_calls": 54,
+  "native_unique": 4,
+  "distinct_case_plans": 4,
+  "native_failures": 0,
+  "policy_elapsed_sum_seconds": 1.1111597999697551,
+  "native_elapsed_seconds": [
+    10.241628900053911,
+    10.416551199974492,
+    9.437699000001885,
+    11.252392299938947
+  ],
+  "native_elapsed_sum_seconds": 41.348271399969235,
+  "native_elapsed_median_seconds": 10.329090050014202,
+  "native_elapsed_range_seconds": [
+    9.437699000001885,
+    11.252392299938947
+  ],
+  "pilot_monitor_seconds": 96.691572,
+  "two_prefix_monitor_seconds": 55.449125,
+  "projected64_native_count_at_pilot_rate": 128,
+  "projected64_native_seconds_at_pilot_rate": 1323.1446847990155,
+  "projected64_policy_seconds_at_pilot_rate": 35.557113599032164,
+  "projected64_prefix_seconds_simple_conservative": 1774.372,
+  "projected64_total_minutes_simple_conservative": 81.14170506666666,
+  "projection_limit": "Linear operational-cost estimate from the fixed two cases, not a guarantee of plan diversity or simulation horizon; repeating monitor overhead per pair is conservative. No benefit used to select cases.",
+  "current_temperature_C": 38.0
+}

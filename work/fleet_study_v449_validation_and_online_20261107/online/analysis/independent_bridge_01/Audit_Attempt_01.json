@@ -1,0 +1,1 @@
+{"status":"AUDIT_SCRIPT_FAILURE_PRESERVED","stage":"monitor receipt before trace reread","error":"KeyError: status; monitor schema uses Status","research_source_or_results_changed":false,"correction":"read monitor['Status']","corrected_script_run":false,"reason_deferred":"Root formal timing batch started; no additional analysis during it"}

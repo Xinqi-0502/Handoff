@@ -1,0 +1,250 @@
+{
+  "schema": "V450-native-prefix-snapshots-v1",
+  "cases": [
+    {
+      "case": "s4509001_n8_q12_o0_p10_f2",
+      "seed": 4509001,
+      "offset": 0,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "1d9756a5cd83f53e82c1ca803f0bdc2fefcb8b303e30723ad6979a900e408451",
+      "xml": "1d9464a7a49440c93f0802d1b52591ece527655e3026a3070d08b5f09363b2ba",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 55,
+          "green_unique": 3,
+          "green_latest_age": 0.0,
+          "green_mean_mps": 1.7688866727272727,
+          "category": "slow"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509001_n8_q12_o24_p10_f2",
+      "seed": 4509001,
+      "offset": 24,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "4dc48cedd91d937ac99c56c4fe1fc7a68b640085a68c5b5553a31f8c48ee7188",
+      "xml": "1d9464a7a49440c93f0802d1b52591ece527655e3026a3070d08b5f09363b2ba",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    }
+  ],
+  "source_inputs_sha256": "449eec7aa1200bec723b24d57ae439bb497ab484de6e7aade1d0b7a80fdc7259"
+}

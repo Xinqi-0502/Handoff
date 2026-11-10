@@ -1,0 +1,40 @@
+{
+  "day": 1,
+  "tau": 1.2,
+  "vehicles": 2298,
+  "segment_metrics": [
+    {
+      "segment": "1-2",
+      "n_total": 2298,
+      "n": 2298,
+      "n_excluded": 0,
+      "rmse_seconds": 276.6217392490193,
+      "mae_seconds": 201.98613577023517,
+      "bias_seconds": 200.4652654482161
+    },
+    {
+      "segment": "2-3",
+      "n_total": 2298,
+      "n": 2297,
+      "n_excluded": 1,
+      "rmse_seconds": 137.11929212394924,
+      "mae_seconds": 96.23792337831955,
+      "bias_seconds": 89.35571179799737
+    },
+    {
+      "segment": "3-4",
+      "n_total": 2298,
+      "n": 2295,
+      "n_excluded": 3,
+      "rmse_seconds": 153.2157833357283,
+      "mae_seconds": 114.48472331154684,
+      "bias_seconds": 108.62673638344228
+    }
+  ],
+  "mean_segment_rmse_seconds": 188.98560490289893,
+  "all_requested_vehicles_arrived": true,
+  "all_expected_crossings_present": true,
+  "collision_or_teleport_warnings": [],
+  "max_depart_delay_seconds": 5.0,
+  "mean_depart_delay_seconds": 0.03959965187119234
+}

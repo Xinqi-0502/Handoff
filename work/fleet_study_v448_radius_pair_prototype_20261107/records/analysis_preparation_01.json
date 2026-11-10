@@ -1,0 +1,18 @@
+{
+  "status": "AST_PASS_PREPARED_NOT_EXECUTED",
+  "files": {
+    "analysis_v448.py": "1377a7161e94f09a5dd3806bb1cfcdb9a7e9b07e8f008cfeb3f8e6472c384166",
+    "Analysis_Plan.md": "8a2d99c6f7a5a6b9dd5b2336f3bf4288d4bd1a91e17109d6af2c0a08c5a10238",
+    "Execution_Commands.md": "0910421806348ba4ead2765c4dca4a25e6ae99b4557b9f05c9efb1c0c201db89",
+    "records/explicit_selected_check_run_paths.json": "cf86bd8165ad10a1ff41cbbadf832d87d4391b4bccee0869c2d2ed7a0e7f3a39",
+    "records/explicit_selected_pilot_run_paths.json": "162404d40ee396e0d3d8baac77344e35312fc7d3f0c9528792f31b39f95b9d7b"
+  },
+  "numerical_source_pins_unchanged": true,
+  "numerical_analysis_executed": false,
+  "solver_or_oracle_executed": false,
+  "actual_RAM_measured": false,
+  "independent_static_review": "PASS: independent full schema/metrics review plus final certificate/ledger diff, actual SHA and AST verified; no analysis executed",
+  "planned_scenarios": 32,
+  "planned_calls": 448,
+  "analysis_only_revision": "Add exact certificate identities and failure-ledger completeness; no measured sources changed"
+}

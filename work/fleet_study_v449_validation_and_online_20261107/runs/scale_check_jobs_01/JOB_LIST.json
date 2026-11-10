@@ -1,0 +1,78 @@
+{
+  "journal": "runs/scale_check_jobs_01",
+  "jobs": [
+    {
+      "entry": "check_scale_v449",
+      "args": [
+        "check",
+        "--start",
+        "0",
+        "--stop",
+        "4",
+        "--run",
+        "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_check_micro_01_00"
+      ]
+    },
+    {
+      "entry": "check_scale_v449",
+      "args": [
+        "check",
+        "--start",
+        "4",
+        "--stop",
+        "8",
+        "--run",
+        "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_check_micro_01_04"
+      ]
+    },
+    {
+      "entry": "check_scale_v449",
+      "args": [
+        "check",
+        "--start",
+        "8",
+        "--stop",
+        "12",
+        "--run",
+        "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_check_micro_01_08"
+      ]
+    },
+    {
+      "entry": "check_scale_v449",
+      "args": [
+        "check",
+        "--start",
+        "12",
+        "--stop",
+        "16",
+        "--run",
+        "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_check_micro_01_12"
+      ]
+    },
+    {
+      "entry": "check_scale_v449",
+      "args": [
+        "check",
+        "--start",
+        "16",
+        "--stop",
+        "20",
+        "--run",
+        "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_check_micro_01_16"
+      ]
+    },
+    {
+      "entry": "check_scale_v449",
+      "args": [
+        "check",
+        "--start",
+        "20",
+        "--stop",
+        "24",
+        "--run",
+        "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_check_micro_01_20"
+      ]
+    }
+  ],
+  "requires_parent_launch": true
+}

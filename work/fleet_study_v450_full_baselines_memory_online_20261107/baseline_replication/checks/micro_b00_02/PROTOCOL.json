@@ -1,0 +1,25 @@
+{
+  "sources": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\selective_v448.py": "f955dcb082a1e8fb4e683741a657c433209202f313571c07174d9ab15de42a6c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\reference_v448.py": "9810d96023a7710329d34a42f5c831687ea73e09fbfb42968fe4c660366a7416",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\independent_dp_v447.py": "8c59f8695dfa2347b0f8ac5c817aec93c0c41e07c0882d45f099abaf4d9c2431",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\baseline_replication\\published_search_v450.py": "4d4286ad650f52264375bda90cf1a7c0c907eaa57df4396b58f959d7313b951c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\baseline_replication\\check_published_search_v450.py": "c5a7809ecda4746364f97cf24e0b2d897b06abcbdd1d6f151f834d49a8450eb7",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\instances\\micro_01\\INPUTS.json": "0a5f38eba0565fb28a344b5987d3d3d2c0cc1a84c38489bfd1690c74b19cc2cc"
+  },
+  "methods": [
+    "HZ_AWA_RADIUS",
+    "HZ_AWA_RADIUS_PAIR_GATED",
+    "ANA_RADIUS",
+    "RADIUS_PAIR_AWA_GATED"
+  ],
+  "start": 0,
+  "stop": 4,
+  "timecaps_ms": [
+    0.001,
+    1,
+    1000
+  ],
+  "expected_solution_checks_per_case": 16,
+  "scope": "Correctness only; no timing inference"
+}

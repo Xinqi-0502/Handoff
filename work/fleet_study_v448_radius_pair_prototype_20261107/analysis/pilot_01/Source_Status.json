@@ -1,0 +1,134 @@
+[
+  {
+    "run": "E:/CodexResearch-xi/workspace/work/fleet_study_v448_radius_pair_prototype_20261107/runs/pilot_m6_01",
+    "full_source_complete": true,
+    "issues": [],
+    "ok": 112,
+    "hard_timeouts": 0,
+    "missing": 0,
+    "complete_cases": 8,
+    "exact_oracles": 8,
+    "source_summary": {
+      "status": "PASS",
+      "mode": "pilot",
+      "records": 112,
+      "hard_timeouts": 0,
+      "cases": 8,
+      "expected_attempts": 112,
+      "exact_oracles": 8,
+      "seconds": 1.3256412000628188
+    },
+    "process_complete": {
+      "status": "PASS",
+      "mode": "pilot",
+      "records": 112,
+      "hard_timeouts": 0,
+      "cases": 8,
+      "expected_attempts": 112,
+      "exact_oracles": 8,
+      "seconds": 1.3256412000628188
+    },
+    "preserved_failures": [],
+    "rejected_results": [],
+    "fatal": null
+  },
+  {
+    "run": "E:/CodexResearch-xi/workspace/work/fleet_study_v448_radius_pair_prototype_20261107/runs/pilot_m8_01",
+    "full_source_complete": true,
+    "issues": [],
+    "ok": 112,
+    "hard_timeouts": 0,
+    "missing": 0,
+    "complete_cases": 8,
+    "exact_oracles": 8,
+    "source_summary": {
+      "status": "PASS",
+      "mode": "pilot",
+      "records": 112,
+      "hard_timeouts": 0,
+      "cases": 8,
+      "expected_attempts": 112,
+      "exact_oracles": 8,
+      "seconds": 3.89958830003161
+    },
+    "process_complete": {
+      "status": "PASS",
+      "mode": "pilot",
+      "records": 112,
+      "hard_timeouts": 0,
+      "cases": 8,
+      "expected_attempts": 112,
+      "exact_oracles": 8,
+      "seconds": 3.89958830003161
+    },
+    "preserved_failures": [],
+    "rejected_results": [],
+    "fatal": null
+  },
+  {
+    "run": "E:/CodexResearch-xi/workspace/work/fleet_study_v448_radius_pair_prototype_20261107/runs/pilot_m10_01",
+    "full_source_complete": true,
+    "issues": [],
+    "ok": 112,
+    "hard_timeouts": 0,
+    "missing": 0,
+    "complete_cases": 8,
+    "exact_oracles": 8,
+    "source_summary": {
+      "status": "PASS",
+      "mode": "pilot",
+      "records": 112,
+      "hard_timeouts": 0,
+      "cases": 8,
+      "expected_attempts": 112,
+      "exact_oracles": 8,
+      "seconds": 25.235995499999262
+    },
+    "process_complete": {
+      "status": "PASS",
+      "mode": "pilot",
+      "records": 112,
+      "hard_timeouts": 0,
+      "cases": 8,
+      "expected_attempts": 112,
+      "exact_oracles": 8,
+      "seconds": 25.235995499999262
+    },
+    "preserved_failures": [],
+    "rejected_results": [],
+    "fatal": null
+  },
+  {
+    "run": "E:/CodexResearch-xi/workspace/work/fleet_study_v448_radius_pair_prototype_20261107/runs/pilot_m12_01",
+    "full_source_complete": true,
+    "issues": [],
+    "ok": 112,
+    "hard_timeouts": 0,
+    "missing": 0,
+    "complete_cases": 8,
+    "exact_oracles": 8,
+    "source_summary": {
+      "status": "PASS",
+      "mode": "pilot",
+      "records": 112,
+      "hard_timeouts": 0,
+      "cases": 8,
+      "expected_attempts": 112,
+      "exact_oracles": 8,
+      "seconds": 70.67867870000191
+    },
+    "process_complete": {
+      "status": "PASS",
+      "mode": "pilot",
+      "records": 112,
+      "hard_timeouts": 0,
+      "cases": 8,
+      "expected_attempts": 112,
+      "exact_oracles": 8,
+      "seconds": 70.67867870000191
+    },
+    "preserved_failures": [],
+    "rejected_results": [],
+    "fatal": null
+  }
+]

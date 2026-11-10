@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-07",
+  "scope": "Targeted original full algorithms and author code, not a systematic review",
+  "queries": [
+    {"query":"Hof Schneider \"Intraroute Resource Replenishment\" code instances","purpose":"Official freight code/instances"},
+    {"query":"Wei Wang Hu \"103954\" code github","purpose":"Official author code","limitation":"Mostly irrelevant search results"},
+    {"query":"\"Hof\" \"Schneider\" \"VRPTWMD\" code instances","purpose":"Author implementation or benchmark archive"},
+    {"query":"\"two-echelon truck-unmanned ground\" \"code\"","purpose":"Wei author code"},
+    {"query":"ANA* Anytime Nonparametric A* source code official Goldberg","purpose":"Primary full algorithm and author source"},
+    {"query":"ALNS 2023 Wouda Lan Python open source JOSS 05028","purpose":"Distinguish a complete generic framework from full freight algorithm"}
+  ],
+  "primary_followups": [
+    "https://jair.org/index.php/jair/article/view/10489",
+    "https://goldberg.berkeley.edu/ana/",
+    "https://goldberg.berkeley.edu/pubs/ana-aaai-2011-vdberg-shah-goldberg.pdf",
+    "https://www.cs.cmu.edu/~maxim/software.html",
+    "https://www.sbpl.net/Software",
+    "https://github.com/sbpl/sbpl",
+    "https://api.github.com/repos/sbpl/sbpl/commits/master",
+    "https://pubsonline.informs.org/doi/suppl/10.1287/trsc.2020.1034",
+    "https://pubsonline.informs.org/doi/suppl/10.1287/trsc.2020.1034/suppl_file/trsc.2020.1034.sm1.pdf",
+    "https://joss.theoj.org/papers/10.21105/joss.05028"
+  ],
+  "sbpl_commit":"4d654845aa3b92aa1b4282a342e9011bac95aeb9",
+  "access_notes":[
+    "The repository API was accessible through an ordinary HTTPS request, although web.open on that API URL returned an internal error.",
+    "The guessed root LICENSE.txt URL returned404. Root contents API has no such file; no license filename was fabricated. Author source and header are retained with their original notices; no source code was copied into the study implementation.",
+    "Hof publisher supplement landing linked the formal appendix PDF, not a retrieved code archive. Bounded search failure is not proof of code absence.",
+    "Wei formal article states data available on request. No author message was sent and no credentials were requested.",
+    "Wouda-Lan ALNS framework was inspected as a possible tool, but was not installed and is not presented as a full Hof/Wei reproduction."
+  ]
+}

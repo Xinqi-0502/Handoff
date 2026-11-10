@@ -1,0 +1,42 @@
+{
+  "status": "PREPARED_AST_STATIC_ONLY_NOT_NUMERICALLY_RUN",
+  "sources": {
+    "selective_v448.py": "f955dcb082a1e8fb4e683741a657c433209202f313571c07174d9ab15de42a6c",
+    "reference_v448.py": "9810d96023a7710329d34a42f5c831687ea73e09fbfb42968fe4c660366a7416",
+    "check_v448.py": "beec4805585dbf8224cad60a2fd107b73e2ec80cae4df199166b4ed0e074eb73",
+    "instances_v448.py": "b084409f1aeec06ae484b59b21d1644c76cf75ed097b75082d04c89d1e77d74c",
+    "run_v448.py": "4f310cb6213a9ca576d60dafa45c995068f88877a575c5ef844b5b5ba687896f",
+    "run_jobs_v448.py": "df5e82e317f203cdd771fd30ce6b241da40f3b185983afac7572b7a80dd3d169",
+    "micro_gate_v448.py": "2d8875a347f89fdca3f8eab6dc9052a2596bab86e00c4730c9d67f3e8d0dfe00",
+    "independent_dp_v447.py": "8c59f8695dfa2347b0f8ac5c817aec93c0c41e07c0882d45f099abaf4d9c2431",
+    "instances_v447.py": "a2e8b402e0c913c371c4d37107b23ff934a91df98fecc58b8f3274cb791e2329"
+  },
+  "input_sha256": "b459e02e4173e07787b47e905de193842fc05e4f7c4738315de044a588b7afa1",
+  "files": {
+    "Pilot_Protocol.md": "45c423e07ca86551998fc0735db859c71f367edb8ab159beb30f4b7b50d6bf70",
+    "Gate_Assembly_Notes.md": "4050496d107264beb27ee99d1cd84b4f474a2111c2388f99e922c110fa921533",
+    "records/pilot_jobs_01.json": "bd20b991602fa45275149be8dfb6c20ceabfef1f52993c8b30b9ef67b2325988",
+    "instances/pilot_01/PROTOCOL.json": "b39343d02c7168ec8c2faeb60ec9c83628f0eb983ad5fcc3a84c14c61e56da0a",
+    "instances/pilot_01/PAIR_CHECKS.json": "454af16e914a64375649dffe1de1b62f323a96409f766dc7cfa93f3600b70448"
+  },
+  "independent_mothers": 8,
+  "related_scenarios": 32,
+  "expected_solver_calls": 448,
+  "primary_calls": 384,
+  "auxiliary_calls": 64,
+  "wall_ms": 1000,
+  "hard_seconds": 15,
+  "oracle_seconds": 15,
+  "full_micro24_gate_assembled": false,
+  "source_input_generation_executed": true,
+  "solver_or_oracle_executed_by_this_preparation": false,
+  "benchmark_executed": false,
+  "static_review": {
+    "solver": "PASS",
+    "micro_checker": "PASS",
+    "pilot_runner_config": "PASS",
+    "gate": "STATIC_PASS_AFTER_RAW_CUTOFF_ACCOUNTING_CORRECTION",
+    "scope": "Syntax, API, formula and evidence-accounting inspection only"
+  },
+  "required_next_step": "Root-controlled complete 24-micro numerical checks; assemble gate; explicit launch decision under v2 supervisor"
+}

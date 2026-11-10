@@ -1,0 +1,473 @@
+{
+  "mode": "solve",
+  "worker_source_hashes": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\native_memory.py": "13c9af100de45e9235c5842bdae6257f7461db9a61b5b5859f4e9d523712d5af",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\owned_process.py": "23c9e418596e20d29aae0d3842c47b516bf5d320c66b586afba552d4d797215c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\memory_common.py": "2027ac64fe4ddf44ba744eb8ed273d9ff813f441bc334b198479dcbf71e589c9",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\memory_worker.py": "12aebc8ca511144b0e59e1be0548fbb2864e9d9fa8588c69118beaae4a9a645b",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\run_memory.py": "6a3e877d56bb416b2be2b2125fe211143044f994494c8bc6c48a4223ec840596",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\run_memory_jobs.py": "c078259db45fec49af6d23091245fb4707cd20b792aa51abdf56b86fb1511291",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\freeze_memory.py": "eafe92dde6ef4f6b62035cf4a82a789fa2affb9843e78c078f6807157818ca48",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\check_memory_safety.py": "4132b5e5051ab9587e2b98c394ce1b21ffc475952edec415ba35ab698610f313"
+  },
+  "manifest": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\freeze_01\\MANIFEST.json",
+  "spec": {
+    "seed": 94498001,
+    "m": 8,
+    "n_nodes": 10,
+    "coordinates": [
+      [
+        0,
+        0
+      ],
+      [
+        -38,
+        -38
+      ],
+      [
+        21,
+        -12
+      ],
+      [
+        -37,
+        31
+      ],
+      [
+        -16,
+        -50
+      ],
+      [
+        -38,
+        7
+      ],
+      [
+        17,
+        41
+      ],
+      [
+        12,
+        -22
+      ],
+      [
+        -20,
+        -36
+      ],
+      [
+        -50,
+        -44
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        2,
+        12,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        18,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        16,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        7,
+        10,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        4,
+        9,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        8,
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        9,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        13,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        26,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        7,
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        8,
+        19,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        9,
+        29,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        17,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        5,
+        13,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        6,
+        24,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        1,
+        12,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        6,
+        38,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        7,
+        15,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        8,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        9,
+        15,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        1,
+        18,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        2,
+        25,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        3,
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        9,
+        18,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        2,
+        18,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        3,
+        22,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        5,
+        27,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        0,
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        2,
+        9,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        4,
+        17,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        8,
+        17,
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        1,
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        2,
+        17,
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        4,
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        9,
+        16,
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        1,
+        10,
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        4,
+        13,
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        5,
+        21,
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        8,
+        13,
+        0,
+        0,
+        0
+      ]
+    ],
+    "hub": 0,
+    "a_node": 1,
+    "start_node": 0,
+    "t0": 23,
+    "A": 26,
+    "wa": 96,
+    "wb": 128,
+    "a_service": 4,
+    "tau_a": 4,
+    "tau_b": 5,
+    "old": [
+      {
+        "node": 2,
+        "weight": 32,
+        "service": 9
+      },
+      {
+        "node": 3,
+        "weight": 20,
+        "service": 2
+      },
+      {
+        "node": 4,
+        "weight": 17,
+        "service": 5
+      },
+      {
+        "node": 5,
+        "weight": 29,
+        "service": 10
+      },
+      {
+        "node": 6,
+        "weight": 35,
+        "service": 12
+      },
+      {
+        "node": 7,
+        "weight": 16,
+        "service": 10
+      },
+      {
+        "node": 8,
+        "weight": 7,
+        "service": 8
+      },
+      {
+        "node": 9,
+        "weight": 4,
+        "service": 2
+      }
+    ],
+    "total_old_weight": 160,
+    "total_old_service": 58,
+    "case": "v449_scale_main_s94498001_m8_roomier_free",
+    "split": "v449_scale_main",
+    "Q": 200,
+    "capacity_regime": "roomier",
+    "signal": false,
+    "geometry": "random_2d",
+    "control": false,
+    "pair_id": "v449_scale_main_s94498001_m8_roomier",
+    "signal_pair_id": "v449_scale_main_s94498001_m8_roomier",
+    "capacity_pair_id": "v449_scale_main_s94498001_m8_free",
+    "generation": "Prespecified random high-load FIFO synthetic transport",
+    "atomic_incoming_order": [
+      "a",
+      "b"
+    ],
+    "units": "Uncalibrated integer ticks and cargo units"
+  },
+  "spec_sha256": "7b577f681992591541ff267da88a1db50a46471c04ab221a3d07698ee5412129",
+  "method": "RADIUS_PAIR_AWA_GATED",
+  "wall_ms": 1000,
+  "hard_seconds": 15
+}

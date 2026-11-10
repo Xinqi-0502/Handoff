@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "scope": "selected micro batch; not authorization for performance",
+  "source_sha256": "f955dcb082a1e8fb4e683741a657c433209202f313571c07174d9ab15de42a6c",
+  "reference_sha256": "9810d96023a7710329d34a42f5c831687ea73e09fbfb42968fe4c660366a7416",
+  "micro_input_sha256": "0a5f38eba0565fb28a344b5987d3d3d2c0cc1a84c38489bfd1690c74b19cc2cc",
+  "offset": 17,
+  "case_count": 1,
+  "full_micro_suite_complete": false,
+  "cases": [
+    {
+      "status": "PASS",
+      "case": "micro_s3470501_m5_tight_signal",
+      "seed": 3470501,
+      "m": 5,
+      "optimum_H2": 189,
+      "counters": {
+        "prefixes": 1141,
+        "phase0": 285,
+        "phase1": 735,
+        "terminal": 121,
+        "literal_full_checks": 570,
+        "shortcut_checks": 346,
+        "cutoff_checks": 12840,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 172,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 1020,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 1670,
+          "channel_combinations": 6680
+        },
+        "radius": {
+          "edges": 1670,
+          "channel_combinations": 6680
+        }
+      },
+      "closure_comparisons": 2352,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.25487529998645186
+    }
+  ],
+  "elapsed_seconds": 0.3254925000946969
+}

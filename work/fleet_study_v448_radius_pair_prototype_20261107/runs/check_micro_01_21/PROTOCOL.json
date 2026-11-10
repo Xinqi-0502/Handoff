@@ -1,0 +1,45 @@
+{
+  "status": "RUN_STARTED",
+  "scope": "selected frozen micro cases only, no performance claims",
+  "offset": 21,
+  "limit": 1,
+  "total_frozen_micro_cases": 24,
+  "case_seconds": 30.0,
+  "max_seconds": 60.0,
+  "waiting_prefixes": 8,
+  "waiting_max_ticks": 4096,
+  "input_sha256": "0a5f38eba0565fb28a344b5987d3d3d2c0cc1a84c38489bfd1690c74b19cc2cc",
+  "runner_sha256": "beec4805585dbf8224cad60a2fd107b73e2ec80cae4df199166b4ed0e074eb73",
+  "sources": {
+    "old_solver": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\selective_v447.py",
+      "sha256": "1bbdf82f14286102e31ec35a9fec7b8f8588c5d5cbe63935787aef59fad3e4f4"
+    },
+    "old_reference": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\reference_v447.py",
+      "sha256": "9810d96023a7710329d34a42f5c831687ea73e09fbfb42968fe4c660366a7416"
+    },
+    "new_solver": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\selective_v448.py",
+      "sha256": "f955dcb082a1e8fb4e683741a657c433209202f313571c07174d9ab15de42a6c"
+    },
+    "new_reference": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\reference_v448.py",
+      "sha256": "9810d96023a7710329d34a42f5c831687ea73e09fbfb42968fe4c660366a7416"
+    },
+    "independent_dp": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\independent_dp_v447.py",
+      "sha256": "8c59f8695dfa2347b0f8ac5c817aec93c0c41e07c0882d45f099abaf4d9c2431"
+    },
+    "micro_inputs": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\instances\\micro_01\\INPUTS.json",
+      "sha256": "0a5f38eba0565fb28a344b5987d3d3d2c0cc1a84c38489bfd1690c74b19cc2cc"
+    }
+  },
+  "selected_cases": [
+    "micro_s3470502_m5_tight_signal"
+  ],
+  "all_internal_policies_both_bases": true,
+  "proof_scope_m_max": 5,
+  "main_results_read": false
+}

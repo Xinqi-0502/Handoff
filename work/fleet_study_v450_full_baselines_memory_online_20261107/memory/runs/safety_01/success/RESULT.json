@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "pid": 71876,
+  "native": {
+    "status": "OK",
+    "pid": 71876,
+    "monotonic_seconds": 607281.8059803,
+    "counters_bytes": {
+      "PeakWorkingSetSize": 22089728,
+      "WorkingSetSize": 21250048,
+      "QuotaPeakPagedPoolUsage": 145512,
+      "QuotaPagedPoolUsage": 145512,
+      "QuotaPeakNonPagedPoolUsage": 39616,
+      "QuotaNonPagedPoolUsage": 22256,
+      "PagefileUsage": 13418496,
+      "PeakPagefileUsage": 15921152,
+      "PrivateUsage": 13418496
+    },
+    "page_fault_count": 7672,
+    "counter_structure_bytes": 80,
+    "pointer_bits": 64,
+    "semantics": "Working set includes resident private and shared pages. PagefileUsage/PrivateUsage are process commit, not actual bytes written to a paging file.",
+    "peak_reset_performed": false
+  }
+}

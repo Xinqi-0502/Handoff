@@ -1,0 +1,11 @@
+{
+  "source_sha256": "680e929fc4572dcb9ad8ef9b28f7895711cf11dfb1802148c8b51d935222cd9e",
+  "status": "AST_PASS_NOT_EXECUTED",
+  "frozen_memory_manifest_sha256": "c9242a0fc7fec3571920cbf47c1d6c970b3be1aecc85048864c03a52cfb78c81",
+  "raw_main_read": false,
+  "notes_sha256": "1e544ebc5d8d5725714e0822184d5eb2e948ab58b2fe527fd551271e94ccf555",
+  "solver_imports": false,
+  "execution_window": "Await root after measurement and online correctness",
+  "source_lines": 410,
+  "numerical_runs": 0
+}

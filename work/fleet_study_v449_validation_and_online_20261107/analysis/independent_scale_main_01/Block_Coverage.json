@@ -1,0 +1,314 @@
+[
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m6_b00_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m6_b01_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m6_b02_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m6_b03_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m6_b04_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m6_b05_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m6_b06_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m6_b07_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m6_b08_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m6_b09_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m6_b10_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m6_b11_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m6_b12_01",
+    "cases": 4,
+    "calls": 108,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m8_b00_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m8_b01_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m8_b02_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m8_b03_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m8_b04_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m8_b05_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m8_b06_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m8_b07_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m8_b08_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m8_b09_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m8_b10_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m8_b11_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m8_b12_01",
+    "cases": 4,
+    "calls": 108,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m10_b00_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m10_b01_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m10_b02_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m10_b03_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m10_b04_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m10_b05_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m10_b06_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m10_b07_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m10_b08_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m10_b09_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m10_b10_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m10_b11_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m10_b12_01",
+    "cases": 4,
+    "calls": 108,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m12_b00_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m12_b01_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m12_b02_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m12_b03_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m12_b04_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m12_b05_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m12_b06_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m12_b07_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m12_b08_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m12_b09_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m12_b10_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m12_b11_01",
+    "cases": 8,
+    "calls": 216,
+    "hard": 0
+  },
+  {
+    "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_main_m12_b12_01",
+    "cases": 4,
+    "calls": 108,
+    "hard": 0
+  }
+]

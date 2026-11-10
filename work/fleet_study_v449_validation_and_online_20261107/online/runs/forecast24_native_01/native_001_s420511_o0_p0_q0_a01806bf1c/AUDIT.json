@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "J_customer_seconds": 1451.4,
+  "completed": {
+    "a0": 30,
+    "b0": 30,
+    "b1": 94,
+    "a4": 129,
+    "b4": 335,
+    "a3": 540,
+    "a": 716,
+    "a2": 755,
+    "a1": 826,
+    "b3": 856,
+    "b2": 1004,
+    "b": 2002
+  },
+  "handoff_a_seconds": 99.2,
+  "last_handoff_seconds": 300.0,
+  "truck_release_seconds": 300.0,
+  "all_customers": 12,
+  "prefix": "b84a56013748eb28db143656111cde58788499bcd5b5e6cceb683157a9e41f54",
+  "trace_sha256": "e0ef36b6718da33c53690713197bc695e31ebf8ee6a720f9af3e49b7fdf7ea3a",
+  "collision_ticks": 0,
+  "teleports": 0
+}

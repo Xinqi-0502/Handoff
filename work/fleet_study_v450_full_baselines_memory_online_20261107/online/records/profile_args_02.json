@@ -1,0 +1,8 @@
+[
+  "--prefixes",
+  "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\prefixes\\pilot_02",
+  "--gate",
+  "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\gates\\micro_02",
+  "--out",
+  "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\profiles\\pilot_02"
+]

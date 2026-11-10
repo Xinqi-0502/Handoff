@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE",
+  "planned_calls": 10800,
+  "ok": 10800,
+  "hard_timeouts": 0,
+  "missing": 0,
+  "independent_mothers": 100,
+  "related_scenarios": 400,
+  "methods": [
+    "RADIUS",
+    "RADIUS_PAIR_EAGER",
+    "RADIUS_PAIR_LAZY",
+    "RADIUS_AWA",
+    "RADIUS_PAIR_AWA",
+    "RADIUS_PAIR_AWA_GATED",
+    "NO_BOUND",
+    "DP_ADAPTER",
+    "ROUTE"
+  ],
+  "technical_repeats": 3,
+  "exact_oracle_cases": 400,
+  "source_blocks": 52,
+  "primary_view": "literal early quality; first-good and proof separately",
+  "actual_RAM_measured": false,
+  "ratio_scope": "both methods all three repeats meet event by 1s",
+  "all36_pairs_retained": true,
+  "analysis_seconds": 3.9900774999987334
+}

@@ -1,0 +1,90 @@
+{
+  "coordinator_sha256": "6bab02676746ce5b684f3b7427afe7058d2146b806de706da9b0daa7d9ca116c",
+  "checker_sha256": "beec4805585dbf8224cad60a2fd107b73e2ec80cae4df199166b4ed0e074eb73",
+  "source_sha256": "6bab02676746ce5b684f3b7427afe7058d2146b806de706da9b0daa7d9ca116c",
+  "input_sha256": "0a5f38eba0565fb28a344b5987d3d3d2c0cc1a84c38489bfd1690c74b19cc2cc",
+  "sources": {
+    "old_solver": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\selective_v447.py",
+      "sha256": "1bbdf82f14286102e31ec35a9fec7b8f8588c5d5cbe63935787aef59fad3e4f4"
+    },
+    "old_reference": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\reference_v447.py",
+      "sha256": "9810d96023a7710329d34a42f5c831687ea73e09fbfb42968fe4c660366a7416"
+    },
+    "new_solver": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\selective_v448.py",
+      "sha256": "f955dcb082a1e8fb4e683741a657c433209202f313571c07174d9ab15de42a6c"
+    },
+    "new_reference": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\reference_v448.py",
+      "sha256": "9810d96023a7710329d34a42f5c831687ea73e09fbfb42968fe4c660366a7416"
+    },
+    "independent_dp": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\independent_dp_v447.py",
+      "sha256": "8c59f8695dfa2347b0f8ac5c817aec93c0c41e07c0882d45f099abaf4d9c2431"
+    },
+    "micro_inputs": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\instances\\micro_01\\INPUTS.json",
+      "sha256": "0a5f38eba0565fb28a344b5987d3d3d2c0cc1a84c38489bfd1690c74b19cc2cc"
+    }
+  },
+  "cases": [
+    "micro_s3470301_m3_tight_free",
+    "micro_s3470301_m3_tight_signal",
+    "micro_s3470301_m3_roomier_free",
+    "micro_s3470301_m3_roomier_signal",
+    "micro_s3470302_m3_tight_free",
+    "micro_s3470302_m3_tight_signal",
+    "micro_s3470302_m3_roomier_free",
+    "micro_s3470302_m3_roomier_signal",
+    "micro_s3470401_m4_tight_free",
+    "micro_s3470401_m4_tight_signal",
+    "micro_s3470401_m4_roomier_free",
+    "micro_s3470401_m4_roomier_signal",
+    "micro_s3470402_m4_tight_free",
+    "micro_s3470402_m4_tight_signal",
+    "micro_s3470402_m4_roomier_free",
+    "micro_s3470402_m4_roomier_signal",
+    "micro_s3470501_m5_tight_free",
+    "micro_s3470501_m5_tight_signal",
+    "micro_s3470501_m5_roomier_free",
+    "micro_s3470501_m5_roomier_signal",
+    "micro_s3470502_m5_tight_free",
+    "micro_s3470502_m5_tight_signal",
+    "micro_s3470502_m5_roomier_free",
+    "micro_s3470502_m5_roomier_signal"
+  ],
+  "runs": [
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_00",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_01",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_02",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_03",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_04",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_05",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_06",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_07",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_08",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_09",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_10",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_11",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_12",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_13",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_14",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_15",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_16",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_17",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_18",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_19",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_20",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_21",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_22",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_23"
+  ],
+  "case_seconds": 30,
+  "max_seconds_per_case_run": 60,
+  "waiting_prefixes": 8,
+  "waiting_max_ticks": 4096,
+  "serial_same_process": true,
+  "numerical_suite_not_started_when_protocol_written": true
+}

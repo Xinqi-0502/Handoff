@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "mode": "pilot",
+  "records": 112,
+  "hard_timeouts": 0,
+  "cases": 8,
+  "expected_attempts": 112,
+  "exact_oracles": 8,
+  "seconds": 25.235995499999262
+}

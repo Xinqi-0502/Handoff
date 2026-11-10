@@ -1,0 +1,290 @@
+[
+  {
+    "axis": "signal",
+    "pair_id": "v449_scale_cost_s94486001_m6_roomier",
+    "normalized_model_hash": "ecb6ff19f7f4133cd4587530fb22feb227b824d79c99dec0f4a3614068ee8d46",
+    "instance_hashes": {
+      "v449_scale_cost_s94486001_m6_roomier_free": "eabef6c1022e7d9fc2e1efa778f11dc2bcbe48e8b00d2020b1ce15d3344921cf",
+      "v449_scale_cost_s94486001_m6_roomier_signal": "3fc61a499b300e030a504cba5d9fb58a2e2f6e4429373675c70499d8733e8345"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v449_scale_cost_s94486001_m6_tight",
+    "normalized_model_hash": "b8c63e9db0ab4c2aade0e4aae878defc559ddc12d0569e89a5931faa53110e26",
+    "instance_hashes": {
+      "v449_scale_cost_s94486001_m6_tight_free": "7f45926145b0d354d49de5255e24b0f514c4148386a512cf79f42d27c1f22ea0",
+      "v449_scale_cost_s94486001_m6_tight_signal": "b5af43b74b4d9d9a9aa114c63d76f5c9e2678d6ddf5be57d8ff9aadb7cd509c3"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v449_scale_cost_s94486002_m6_roomier",
+    "normalized_model_hash": "9e33db1627b86f80486a101fd1bcfabc83ec29aaf67aa5a0924b8a024eac509f",
+    "instance_hashes": {
+      "v449_scale_cost_s94486002_m6_roomier_free": "e52e6605a968eaea7a10f04ef86814a519f26b6355420fab315d3fa25040ed38",
+      "v449_scale_cost_s94486002_m6_roomier_signal": "461b3769f3b09e3f1f87ef29fec47cf28bddb3ed6f2eb6fa67967bd3350ef67c"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v449_scale_cost_s94486002_m6_tight",
+    "normalized_model_hash": "91b62e52cf5cedcfcda2f6786d92618cb9973f35e012695294c4ac1eb719adcb",
+    "instance_hashes": {
+      "v449_scale_cost_s94486002_m6_tight_free": "4e480b595c6c07bfdc14211d6b4268a7c75a65a3990c428921aa98793a21d389",
+      "v449_scale_cost_s94486002_m6_tight_signal": "f16fcd8a58d8b7574ccf216fc5dc8e251f172870439731a3f5e501000706789e"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v449_scale_cost_s94488001_m8_roomier",
+    "normalized_model_hash": "3f7223223933932b0054001f3eff3799f8ec43c0ffd82ee7f42dbd30357f1498",
+    "instance_hashes": {
+      "v449_scale_cost_s94488001_m8_roomier_free": "7419dde0e662baef301a3ac9712caa5aca57bc5e768144fe5aabbe1b149c5e6f",
+      "v449_scale_cost_s94488001_m8_roomier_signal": "dfe2ead1ac1cbcf252671abd2f9363182f6236f44aacfb179be2f389ceb293e7"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v449_scale_cost_s94488001_m8_tight",
+    "normalized_model_hash": "7c06dfe7f89dfff8cb1296ebb14c995ee4f90ae9db91be6a57cd357de65e9aa2",
+    "instance_hashes": {
+      "v449_scale_cost_s94488001_m8_tight_free": "1c4a4ba808b60a69a2a8534e2e4abede8560173e18bd775a4667d76d625fdae6",
+      "v449_scale_cost_s94488001_m8_tight_signal": "33978fbae01955214b91af634bb9b8c6245fba1e002cac715b3c6f90dee1a6da"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v449_scale_cost_s94488002_m8_roomier",
+    "normalized_model_hash": "c419b8401b812170b14e541696f0a3b6aa5e1ef93060b8df3a7c4825bf56e64f",
+    "instance_hashes": {
+      "v449_scale_cost_s94488002_m8_roomier_free": "b9218196f312e9cf8ee5334c6c914d8b658a952c94cac1af68ebd015958f957b",
+      "v449_scale_cost_s94488002_m8_roomier_signal": "c9430d8aca3a451d1c632d3950c6c225eeb47bb10d44618fb18492ac1fca15fa"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v449_scale_cost_s94488002_m8_tight",
+    "normalized_model_hash": "68b38563f28045aebe90a4de1705746fa6964656881f899244bf1edaf294e5de",
+    "instance_hashes": {
+      "v449_scale_cost_s94488002_m8_tight_free": "2d8c440c24ba33f89b164d116f398a3142d39ef56fc5dfddb2bce8fb242983f4",
+      "v449_scale_cost_s94488002_m8_tight_signal": "8b11d37493d2655115a6497c7844528b1c59de0a9fa2029c698ed21bc1b9471e"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v449_scale_cost_s94490001_m10_roomier",
+    "normalized_model_hash": "cb14af660e795838fac224c1d53b5c32d87fc76a54bb1f323c4dad0ebbfb6899",
+    "instance_hashes": {
+      "v449_scale_cost_s94490001_m10_roomier_free": "cd82102b92e24c5a986d56f4aa57146fb1bd4d67ecf34cd4737eac33a3e62ddd",
+      "v449_scale_cost_s94490001_m10_roomier_signal": "f9a0af617fe2e652baa692937715aa769514ce98460750223227d497d0fb9845"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v449_scale_cost_s94490001_m10_tight",
+    "normalized_model_hash": "606e0f228f1431d4d9faeb8504772417584d13ff230c70d2d1be08d8090b037a",
+    "instance_hashes": {
+      "v449_scale_cost_s94490001_m10_tight_free": "e0f1ab10fbcbb3438f71e77c89a697e7d589aa998955087e7db325f8c8380e8a",
+      "v449_scale_cost_s94490001_m10_tight_signal": "1ee55d98edf0609af47982da16c3b6dfc058f80bba08e59e5ac3e9d18d00f1b1"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v449_scale_cost_s94490002_m10_roomier",
+    "normalized_model_hash": "01af9079f922aa5608962a9ca29a95872d468588426eb7bc8a3d6ecc27fde4ae",
+    "instance_hashes": {
+      "v449_scale_cost_s94490002_m10_roomier_free": "e07439cbca614ceba5f9ee3172ab61aead5976e97735c1b59655939c12da3db3",
+      "v449_scale_cost_s94490002_m10_roomier_signal": "ce8868e4a3ddf063e9f7c9aef5ef76cbed40f057555183373538fbe7fd5c2e81"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v449_scale_cost_s94490002_m10_tight",
+    "normalized_model_hash": "b4dee6e4e28c73463efb26d7be8b591648f585cebc28c029e05e9eb1c264dd42",
+    "instance_hashes": {
+      "v449_scale_cost_s94490002_m10_tight_free": "969572309a51e3d648051cf001df244456957919f40d7af47af18f04d43b7243",
+      "v449_scale_cost_s94490002_m10_tight_signal": "fc4bc57f8c08870a538fc38156f04aa5a3a466513f7dfe8ac511b38c3e792f1e"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v449_scale_cost_s94492001_m12_roomier",
+    "normalized_model_hash": "2f91f97cd9857863e7b7028cad1f440d7a071fbfb155651734bc6016c73a3b66",
+    "instance_hashes": {
+      "v449_scale_cost_s94492001_m12_roomier_free": "7691f80ba64856db798fe398420618d88a1e3dd8e08e4d0b6fe2ccddfa3c12b7",
+      "v449_scale_cost_s94492001_m12_roomier_signal": "27d14f5cc7d475346757a21f6629e4813be656b0557a850eb6dcfed63727c23a"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v449_scale_cost_s94492001_m12_tight",
+    "normalized_model_hash": "f314f7bb7859993cf0ae1f87d592c7aacb51315b4501d952a068c03fefaaca24",
+    "instance_hashes": {
+      "v449_scale_cost_s94492001_m12_tight_free": "c6685a9c611d72bd424c44cc8db5e3c68ef05765fbfac8a99d37ab2cbb4cf133",
+      "v449_scale_cost_s94492001_m12_tight_signal": "37909dd83b635f4c039806545cd318c9a0c604beffc24c6bc8e58d82df446b94"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v449_scale_cost_s94492002_m12_roomier",
+    "normalized_model_hash": "573d600e992d14481e6f64ae4c8a3d15fe1a3ec1f62347a64909645697958249",
+    "instance_hashes": {
+      "v449_scale_cost_s94492002_m12_roomier_free": "476afd9a2def0bcb4bfd5d2d1362ec2c73a9e02df69ba773b08c9946b9774562",
+      "v449_scale_cost_s94492002_m12_roomier_signal": "348bef91e42c9504f5cfb40e884fc1bbc3b58267ce51536b40c7ecdc78bb5dd9"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v449_scale_cost_s94492002_m12_tight",
+    "normalized_model_hash": "f5d69c1e09e84ed8758c41405c3b1db4b4505aff6be02ca9e33267397eb2318f",
+    "instance_hashes": {
+      "v449_scale_cost_s94492002_m12_tight_free": "f56c2e9b44de88c1982536a4dd6a4c8e8a73f8852d4c4f7516a521166e9f7945",
+      "v449_scale_cost_s94492002_m12_tight_signal": "140f150ef26e6b6b437925f17338a49b76d5b6b3f818a6716e037a3eff76244c"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v449_scale_cost_s94486001_m6_free",
+    "normalized_model_hash": "0cda869ca769b8520ee960e67949f2dab784cbff1755ed0e8cb0ec8370f5607e",
+    "instance_hashes": {
+      "v449_scale_cost_s94486001_m6_tight_free": "7f45926145b0d354d49de5255e24b0f514c4148386a512cf79f42d27c1f22ea0",
+      "v449_scale_cost_s94486001_m6_roomier_free": "eabef6c1022e7d9fc2e1efa778f11dc2bcbe48e8b00d2020b1ce15d3344921cf"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v449_scale_cost_s94486001_m6_signal",
+    "normalized_model_hash": "69b27fede392948392f8c48d1c1804c12761e2c88576efbcd0defa748a494062",
+    "instance_hashes": {
+      "v449_scale_cost_s94486001_m6_tight_signal": "b5af43b74b4d9d9a9aa114c63d76f5c9e2678d6ddf5be57d8ff9aadb7cd509c3",
+      "v449_scale_cost_s94486001_m6_roomier_signal": "3fc61a499b300e030a504cba5d9fb58a2e2f6e4429373675c70499d8733e8345"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v449_scale_cost_s94486002_m6_free",
+    "normalized_model_hash": "e4f4f56db6eedce05611032f4ed044bacd30ba321d693de12e3b4764382c36e7",
+    "instance_hashes": {
+      "v449_scale_cost_s94486002_m6_tight_free": "4e480b595c6c07bfdc14211d6b4268a7c75a65a3990c428921aa98793a21d389",
+      "v449_scale_cost_s94486002_m6_roomier_free": "e52e6605a968eaea7a10f04ef86814a519f26b6355420fab315d3fa25040ed38"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v449_scale_cost_s94486002_m6_signal",
+    "normalized_model_hash": "e4b10ffd639f6c648ba6e6a41c84c61b506112b592c1c4f7eaaf617ebce6a41c",
+    "instance_hashes": {
+      "v449_scale_cost_s94486002_m6_tight_signal": "f16fcd8a58d8b7574ccf216fc5dc8e251f172870439731a3f5e501000706789e",
+      "v449_scale_cost_s94486002_m6_roomier_signal": "461b3769f3b09e3f1f87ef29fec47cf28bddb3ed6f2eb6fa67967bd3350ef67c"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v449_scale_cost_s94488001_m8_free",
+    "normalized_model_hash": "6198d22d82a4893fab6e0cb7ee28ddd571e55963e5057ce63e8d0c9516171866",
+    "instance_hashes": {
+      "v449_scale_cost_s94488001_m8_tight_free": "1c4a4ba808b60a69a2a8534e2e4abede8560173e18bd775a4667d76d625fdae6",
+      "v449_scale_cost_s94488001_m8_roomier_free": "7419dde0e662baef301a3ac9712caa5aca57bc5e768144fe5aabbe1b149c5e6f"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v449_scale_cost_s94488001_m8_signal",
+    "normalized_model_hash": "279dfb021bde2bb1263151e958836f6292553181cd0fbbf97a794ed65da27525",
+    "instance_hashes": {
+      "v449_scale_cost_s94488001_m8_tight_signal": "33978fbae01955214b91af634bb9b8c6245fba1e002cac715b3c6f90dee1a6da",
+      "v449_scale_cost_s94488001_m8_roomier_signal": "dfe2ead1ac1cbcf252671abd2f9363182f6236f44aacfb179be2f389ceb293e7"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v449_scale_cost_s94488002_m8_free",
+    "normalized_model_hash": "140d99e6fa8096b1e1bfc4a5d256478f5994064358bbeedc8adc39be6ad5da38",
+    "instance_hashes": {
+      "v449_scale_cost_s94488002_m8_tight_free": "2d8c440c24ba33f89b164d116f398a3142d39ef56fc5dfddb2bce8fb242983f4",
+      "v449_scale_cost_s94488002_m8_roomier_free": "b9218196f312e9cf8ee5334c6c914d8b658a952c94cac1af68ebd015958f957b"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v449_scale_cost_s94488002_m8_signal",
+    "normalized_model_hash": "06c57e6cfabe744dbd537c26335c3a3ed90a10d81b1ff4af97700fa43a357474",
+    "instance_hashes": {
+      "v449_scale_cost_s94488002_m8_tight_signal": "8b11d37493d2655115a6497c7844528b1c59de0a9fa2029c698ed21bc1b9471e",
+      "v449_scale_cost_s94488002_m8_roomier_signal": "c9430d8aca3a451d1c632d3950c6c225eeb47bb10d44618fb18492ac1fca15fa"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v449_scale_cost_s94490001_m10_free",
+    "normalized_model_hash": "a939b7cb1e54e9b28d8154b9c35da2abc488151768d3abcd5a98f1045e4db47e",
+    "instance_hashes": {
+      "v449_scale_cost_s94490001_m10_tight_free": "e0f1ab10fbcbb3438f71e77c89a697e7d589aa998955087e7db325f8c8380e8a",
+      "v449_scale_cost_s94490001_m10_roomier_free": "cd82102b92e24c5a986d56f4aa57146fb1bd4d67ecf34cd4737eac33a3e62ddd"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v449_scale_cost_s94490001_m10_signal",
+    "normalized_model_hash": "4a37a118d9e0f15ad14fc66c866169cf85dcb7f38b317143465c9ba8d2545309",
+    "instance_hashes": {
+      "v449_scale_cost_s94490001_m10_tight_signal": "1ee55d98edf0609af47982da16c3b6dfc058f80bba08e59e5ac3e9d18d00f1b1",
+      "v449_scale_cost_s94490001_m10_roomier_signal": "f9a0af617fe2e652baa692937715aa769514ce98460750223227d497d0fb9845"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v449_scale_cost_s94490002_m10_free",
+    "normalized_model_hash": "7ab46e04f955be3d874b23099cff63882dea822f9f9a752a9ab99cc5bf882926",
+    "instance_hashes": {
+      "v449_scale_cost_s94490002_m10_tight_free": "969572309a51e3d648051cf001df244456957919f40d7af47af18f04d43b7243",
+      "v449_scale_cost_s94490002_m10_roomier_free": "e07439cbca614ceba5f9ee3172ab61aead5976e97735c1b59655939c12da3db3"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v449_scale_cost_s94490002_m10_signal",
+    "normalized_model_hash": "52ca1b75dd53d180741c93aefecad0f476327add943825b37094fc82675426f9",
+    "instance_hashes": {
+      "v449_scale_cost_s94490002_m10_tight_signal": "fc4bc57f8c08870a538fc38156f04aa5a3a466513f7dfe8ac511b38c3e792f1e",
+      "v449_scale_cost_s94490002_m10_roomier_signal": "ce8868e4a3ddf063e9f7c9aef5ef76cbed40f057555183373538fbe7fd5c2e81"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v449_scale_cost_s94492001_m12_free",
+    "normalized_model_hash": "379d289a35b690d06800d392c3cd1576790d18046a4cd3c67c511e6d772530d6",
+    "instance_hashes": {
+      "v449_scale_cost_s94492001_m12_tight_free": "c6685a9c611d72bd424c44cc8db5e3c68ef05765fbfac8a99d37ab2cbb4cf133",
+      "v449_scale_cost_s94492001_m12_roomier_free": "7691f80ba64856db798fe398420618d88a1e3dd8e08e4d0b6fe2ccddfa3c12b7"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v449_scale_cost_s94492001_m12_signal",
+    "normalized_model_hash": "b71da1562daf45aac992c2175acb8c92e88bbe9d53eede4844282cdbf328776b",
+    "instance_hashes": {
+      "v449_scale_cost_s94492001_m12_tight_signal": "37909dd83b635f4c039806545cd318c9a0c604beffc24c6bc8e58d82df446b94",
+      "v449_scale_cost_s94492001_m12_roomier_signal": "27d14f5cc7d475346757a21f6629e4813be656b0557a850eb6dcfed63727c23a"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v449_scale_cost_s94492002_m12_free",
+    "normalized_model_hash": "5ee7ff3cb85df34222246a963f1d747db3164127ef4d449ddb71b6acc9bc07d9",
+    "instance_hashes": {
+      "v449_scale_cost_s94492002_m12_tight_free": "f56c2e9b44de88c1982536a4dd6a4c8e8a73f8852d4c4f7516a521166e9f7945",
+      "v449_scale_cost_s94492002_m12_roomier_free": "476afd9a2def0bcb4bfd5d2d1362ec2c73a9e02df69ba773b08c9946b9774562"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v449_scale_cost_s94492002_m12_signal",
+    "normalized_model_hash": "ed25c2378b3fd2b37965b6b034fdd7b8186a1c321a4e4e926f2a634b78045a70",
+    "instance_hashes": {
+      "v449_scale_cost_s94492002_m12_tight_signal": "140f150ef26e6b6b437925f17338a49b76d5b6b3f818a6716e037a3eff76244c",
+      "v449_scale_cost_s94492002_m12_roomier_signal": "348bef91e42c9504f5cfb40e884fc1bbc3b58267ce51536b40c7ecdc78bb5dd9"
+    }
+  }
+]

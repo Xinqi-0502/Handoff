@@ -1,0 +1,176 @@
+{
+  "snapshot": {
+    "case": "s4509002_n8_q12_o24_p10_f0",
+    "seed": 4509002,
+    "offset": 24,
+    "people": 10,
+    "slow": 0,
+    "epoch": 6.0,
+    "capacity": {
+      "A": 12,
+      "B": 12
+    },
+    "c": {
+      "seed": 4509002,
+      "actors": [
+        "A",
+        "B"
+      ],
+      "old": {
+        "a0": "WUu",
+        "a1": "EDx",
+        "a2": "EDu",
+        "a3": "WDx",
+        "a4": "EDv",
+        "a5": "WDu",
+        "a6": "EUu",
+        "a7": "WUx",
+        "b0": "WDu",
+        "b1": "EDx",
+        "b2": "EDu",
+        "b3": "WUv",
+        "b4": "EUx",
+        "b5": "EDv",
+        "b6": "EUv",
+        "b7": "EUu"
+      },
+      "size": {
+        "a0": 1,
+        "a1": 1,
+        "a2": 1,
+        "a3": 2,
+        "a4": 2,
+        "a5": 2,
+        "a6": 1,
+        "a7": 2,
+        "b0": 1,
+        "b1": 1,
+        "b2": 2,
+        "b3": 2,
+        "b4": 2,
+        "b5": 1,
+        "b6": 2,
+        "b7": 1
+      },
+      "start": {
+        "A": "AinE",
+        "B": "BinE"
+      },
+      "slow": 0
+    },
+    "wave2": {
+      "T": "tW",
+      "release": 6.0,
+      "orders": {
+        "a": {
+          "dest": "ME",
+          "weight": 8
+        },
+        "b": {
+          "dest": "MW",
+          "weight": 10
+        }
+      }
+    },
+    "ctx": {
+      "A": {
+        "ready": 14400,
+        "edge": "WU0",
+        "pos_m": 28.0,
+        "speed": 0.0,
+        "remaining_cm": 0,
+        "native_route": [
+          "WU0"
+        ],
+        "route_index": 0,
+        "committed": "WUu"
+      },
+      "B": {
+        "ready": 14400,
+        "edge": "WD0",
+        "pos_m": 28.0,
+        "speed": 0.0,
+        "remaining_cm": 0,
+        "native_route": [
+          "WD0"
+        ],
+        "route_index": 0,
+        "committed": "WDu"
+      }
+    },
+    "prefix": "d0b313346239fdc9251ffca58c19b3463d803bea0a4c0c8287825a45bb7dbe6e",
+    "xml": "a2ab9eb61b91d9aba26be1216b0458d1a0cdaaccbf1184ad94b6c13931ecfa8b",
+    "obs": {
+      "WC": {
+        "samples": 25,
+        "unique": 1,
+        "green_samples": 0,
+        "green_unique": 0,
+        "green_latest_age": null,
+        "green_mean_mps": null,
+        "category": "unknown"
+      },
+      "EC": {
+        "samples": 0,
+        "unique": 0,
+        "green_samples": 0,
+        "green_unique": 0,
+        "green_latest_age": null,
+        "green_mean_mps": null,
+        "category": "unknown"
+      }
+    }
+  },
+  "plan": {
+    "receiver": "B",
+    "hub": "HE",
+    "route": {
+      "B": [
+        "b0",
+        "b2",
+        "b5",
+        "b1",
+        "b7",
+        "b6",
+        "b4",
+        "Xa",
+        "b3",
+        "a",
+        "Xb",
+        "b"
+      ],
+      "A": [
+        "a0",
+        "a7",
+        "a5",
+        "a3",
+        "a2",
+        "a4",
+        "a1",
+        "a6"
+      ]
+    }
+  },
+  "runtime": {
+    "project_dir": "D:\\traffic-coop-research",
+    "python": "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "python_version": "3.12.14",
+    "sumo_binary": "D:\\traffic-coop-research\\.venv\\Lib\\site-packages\\sumo\\bin\\sumo.exe",
+    "netconvert_binary": "D:\\traffic-coop-research\\.venv\\Lib\\site-packages\\sumo\\bin\\netconvert.exe",
+    "packages": {
+      "eclipse-sumo": "1.27.1",
+      "traci": "1.27.1",
+      "sumolib": "1.27.1"
+    },
+    "sumo_version_text": "Eclipse SUMO sumo 1.27.1\n Build features: Windows-10.0.26100 AMD64 MSVC 19.51.36247.0 Release FMI Proj GUI FMT Intl SWIG Parquet Eigen GDAL FFmpeg OSG GL2PS JuPedSim\n Copyright (C) 2001-2026 German Aerospace Center (DLR) and others; https://sumo.dlr.de\n\nEclipse SUMO sumo 1.27.1 is part of SUMO.\nThis program and the accompanying materials\nare made available under the terms of the Eclipse Public License v2.0\nwhich accompanies this distribution, and is available at\nhttp://www.eclipse.org/legal/epl-v20.html\nThis program may also be made available under the following Secondary\nLicenses when the conditions for such availability set forth in the Eclipse\nPublic License 2.0 are satisfied: GNU General Public License, version 2\nor later which is available at\nhttps://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html\nSPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later\n",
+    "binary_sha256": {
+      "sumo": "e39d9f60e2494570bc826d29ac0a22c3fe311c2b222469cb5063591b4574d05c",
+      "netconvert": "b85bbcecd3c60799c3a0eb7f1077f9608b0187da29babc3a20f326f97d23942f"
+    }
+  },
+  "net": "dc4a5047cb2bd1f26be90ffc864fb58c177c7404d77302b7205a498c3aa8244e",
+  "initial_xml_hash": "a2ab9eb61b91d9aba26be1216b0458d1a0cdaaccbf1184ad94b6c13931ecfa8b",
+  "planning_seconds": 0.018482599989511073,
+  "activation_tick": 31,
+  "quantization_seconds": 0.18151740001048894
+}

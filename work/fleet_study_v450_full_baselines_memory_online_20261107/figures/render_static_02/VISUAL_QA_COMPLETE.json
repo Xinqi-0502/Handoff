@@ -1,0 +1,10 @@
+{
+  "collision_warnings": 0,
+  "minimum_pdf_font_pt": 7,
+  "accepted_source_warning": "No TIFF; agreed PDF/SVG/PNG deliverables",
+  "all_owned_children_finished": true,
+  "collision_failures": 0,
+  "plotted_point_csvs_identical_to_preserved_attempt01": true,
+  "visual_review": "PNG and exported-PDF previews inspected",
+  "status": "PASS"
+}

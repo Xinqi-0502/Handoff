@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "Independent saved-evidence audit; no optimization or SUMO rerun",
+  "cases": 64,
+  "mothers": 8,
+  "policy_calls": 1728,
+  "native_representatives": 128,
+  "native_failed_representatives": 0,
+  "complete_case_arm_budget_aggregates": 576,
+  "planned_case_arm_budget_aggregates": 576,
+  "aggregation": "policy-frequency-weighted representative replay J; never a mean of three native repetitions",
+  "collision_evidence_complete_representatives": 128,
+  "collision_xml_elements_total_known": 0,
+  "collision_warning_lines_total_known": 0,
+  "raw_results_changed": false,
+  "actual_RAM_measured": false,
+  "source_sha256": "534a6e236abd74c09a6fcb8705fc1a7a282a3548f1a53800b59e4f23dcf81858"
+}

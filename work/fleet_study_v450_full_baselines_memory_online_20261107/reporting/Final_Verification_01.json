@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-11-07T15:06:38.473108+00:00",
+  "checks": {
+    "local_links": 24,
+    "figures": 3,
+    "source_manifest_matches": 30,
+    "independent_audits": 4,
+    "local_proof_common_cases": 255,
+    "native_scenarios": 64,
+    "native_mothers": 8,
+    "native_policy_calls": 1728,
+    "native_distinct_replays": 128
+  },
+  "confirmed_claims": {
+    "same_kernel_proof_change_percent": -27.16808823855139,
+    "same_kernel_expansion_change_percent": -54.74106662298458,
+    "online_customer_and_truck_changes": "zero for all 64 cases at each budget",
+    "algorithm_specific_memory_savings": "not established"
+  },
+  "visual_scope": "Root inspected all three final PNG figures. Separate agent receipts record PDF inspection and automatic figure QA. HTML structure, local assets, displayed numbers and evidence hashes were checked here.",
+  "experimental_data_modified": false
+}

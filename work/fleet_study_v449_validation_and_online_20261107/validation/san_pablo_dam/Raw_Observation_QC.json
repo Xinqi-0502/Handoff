@@ -1,0 +1,146 @@
+{
+  "status": "PRE_SIMULATION_RULE_FROZEN",
+  "no_simulation_used_to_choose_rule": true,
+  "counts": [
+    {
+      "day": 1,
+      "segment": "1-2",
+      "n_total": 2298,
+      "n_eligible": 2298
+    },
+    {
+      "day": 1,
+      "segment": "2-3",
+      "n_total": 2298,
+      "n_eligible": 2297
+    },
+    {
+      "day": 1,
+      "segment": "3-4",
+      "n_total": 2298,
+      "n_eligible": 2295
+    },
+    {
+      "day": 1,
+      "segment": "7-8",
+      "n_total": 2298,
+      "n_eligible": 2298
+    },
+    {
+      "day": 2,
+      "segment": "1-2",
+      "n_total": 2293,
+      "n_eligible": 2293
+    },
+    {
+      "day": 2,
+      "segment": "2-3",
+      "n_total": 2293,
+      "n_eligible": 2289
+    },
+    {
+      "day": 2,
+      "segment": "3-4",
+      "n_total": 2293,
+      "n_eligible": 2292
+    },
+    {
+      "day": 2,
+      "segment": "7-8",
+      "n_total": 2293,
+      "n_eligible": 2292
+    }
+  ],
+  "exceptions": [
+    {
+      "day": 1,
+      "ordinal_row_index": 2002,
+      "segment": "2-3",
+      "source_start_seconds": 30916,
+      "source_end_seconds": 30912,
+      "observed_seconds": -4,
+      "action": "exclude_from_segment_score_only"
+    },
+    {
+      "day": 1,
+      "ordinal_row_index": 125,
+      "segment": "3-4",
+      "source_start_seconds": 24958,
+      "source_end_seconds": 24953,
+      "observed_seconds": -5,
+      "action": "exclude_from_segment_score_only"
+    },
+    {
+      "day": 1,
+      "ordinal_row_index": 126,
+      "segment": "3-4",
+      "source_start_seconds": 24960,
+      "source_end_seconds": 24954,
+      "observed_seconds": -6,
+      "action": "exclude_from_segment_score_only"
+    },
+    {
+      "day": 1,
+      "ordinal_row_index": 127,
+      "segment": "3-4",
+      "source_start_seconds": 24961,
+      "source_end_seconds": 24955,
+      "observed_seconds": -6,
+      "action": "exclude_from_segment_score_only"
+    },
+    {
+      "day": 2,
+      "ordinal_row_index": 95,
+      "segment": "2-3",
+      "source_start_seconds": 24677,
+      "source_end_seconds": 24645,
+      "observed_seconds": -32,
+      "action": "exclude_from_segment_score_only"
+    },
+    {
+      "day": 2,
+      "ordinal_row_index": 1771,
+      "segment": "2-3",
+      "source_start_seconds": 29941,
+      "source_end_seconds": 29936,
+      "observed_seconds": -5,
+      "action": "exclude_from_segment_score_only"
+    },
+    {
+      "day": 2,
+      "ordinal_row_index": 1995,
+      "segment": "2-3",
+      "source_start_seconds": 30873,
+      "source_end_seconds": 30844,
+      "observed_seconds": -29,
+      "action": "exclude_from_segment_score_only"
+    },
+    {
+      "day": 2,
+      "ordinal_row_index": 2206,
+      "segment": "2-3",
+      "source_start_seconds": 31688,
+      "source_end_seconds": 31675,
+      "observed_seconds": -13,
+      "action": "exclude_from_segment_score_only"
+    },
+    {
+      "day": 2,
+      "ordinal_row_index": 1996,
+      "segment": "3-4",
+      "source_start_seconds": 30903,
+      "source_end_seconds": 30888,
+      "observed_seconds": -15,
+      "action": "exclude_from_segment_score_only"
+    },
+    {
+      "day": 2,
+      "ordinal_row_index": 94,
+      "segment": "7-8",
+      "source_start_seconds": 24818,
+      "source_end_seconds": 24789,
+      "observed_seconds": -29,
+      "action": "hold_previous_boundary_speed"
+    }
+  ]
+}

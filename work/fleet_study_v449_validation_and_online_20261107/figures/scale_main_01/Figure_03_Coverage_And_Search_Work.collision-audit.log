@@ -1,0 +1,65 @@
+Nature Figure Rendered Collision Audit
+pdf: E:\CodexResearch-xi\workspace\work\fleet_study_v449_validation_and_online_20261107\figures\scale_main_01\Figure_03_Coverage_And_Search_Work.pdf
+pages: 1
+visible text boxes: 98
+stroke paths: 244
+
+[FAIL] page 1 text-stroke: Text is crossed by 1 stroked path(s) �� 'Completed expansions (symlog; linear 0-1)'
+  text bbox: (230.50180053710938, 585.7706909179688, 403.01641845703125, 593.7706909179688)
+[FAIL] page 1 text-stroke: Text is crossed by 2 stroked path(s) �� 'Cases'
+  text bbox: (454.06640625, 26.57564926147461, 476.9190979003906, 34.27565002441406)
+[FAIL] page 1 text-stroke: Text is crossed by 3 stroked path(s) �� '400/400'
+  text bbox: (454.06640625, 51.00545883178711, 486.04803466796875, 58.70545959472656)
+[FAIL] page 1 text-stroke: Text is crossed by 3 stroked path(s) �� '400/400'
+  text bbox: (454.06640625, 75.47615814208984, 486.04803466796875, 83.17616271972656)
+[FAIL] page 1 text-stroke: Text is crossed by 3 stroked path(s) �� '400/400'
+  text bbox: (454.06640625, 99.9468002319336, 486.04803466796875, 107.64680480957031)
+[FAIL] page 1 text-stroke: Text is crossed by 3 stroked path(s) �� '400/400'
+  text bbox: (454.06640625, 124.4175033569336, 486.04803466796875, 132.1175079345703)
+[FAIL] page 1 text-stroke: Text is crossed by 3 stroked path(s) �� '400/400'
+  text bbox: (454.06640625, 148.88818359375, 486.04803466796875, 156.5881805419922)
+[FAIL] page 1 text-stroke: Text is crossed by 5 stroked path(s) �� '400/400'
+  text bbox: (454.06640625, 173.35885620117188, 486.04803466796875, 181.05885314941406)
+[FAIL] page 1 text-stroke: Text is crossed by 2 stroked path(s) �� '400/400'
+  text bbox: (454.06640625, 197.82952880859375, 486.04803466796875, 205.52952575683594)
+[FAIL] page 1 text-stroke: Text is crossed by 2 stroked path(s) �� '400/400'
+  text bbox: (454.06640625, 222.30020141601562, 486.04803466796875, 230.0001983642578)
+[FAIL] page 1 text-stroke: Text is crossed by 2 stroked path(s) �� '284/400'
+  text bbox: (454.06640625, 246.7708740234375, 486.04803466796875, 254.4708709716797)
+[FAIL] page 1 text-stroke: Text is crossed by 1 stroked path(s) �� 'Not proved'
+  text bbox: (553.8355102539062, 589.5867309570312, 598.2295532226562, 597.5867309570312)
+[FAIL] page 1 text-stroke: Text is crossed by 1 stroked path(s) �� '0'
+  text bbox: (570.5255126953125, 573.7706909179688, 575.6153564453125, 581.7706909179688)
+[FAIL] page 1 text-stroke: Text is crossed by 2 stroked path(s) �� 'Completed expansions (symlog; linear 0-1)'
+  text bbox: (617.5982055664062, 585.7706909179688, 790.11279296875, 597.5867309570312)
+[FAIL] page 1 text-stroke: Text is crossed by 1 stroked path(s) �� '1'
+  text bbox: (619.9782104492188, 573.7706909179688, 625.0680541992188, 581.7706909179688)
+[FAIL] page 1 text-stroke: Text is crossed by 1 stroked path(s) �� 'Unavailable repeat'
+  text bbox: (636.6260986328125, 588.5341186523438, 712.321533203125, 597.8541259765625)
+[FAIL] page 1 text-text: Text boxes overlap by 21.1% of the smaller box �� 'Completed expansions (symlog; linear 0-1)'
+  other text: 'On-time proof'
+  text bbox: (230.50180053710938, 585.7706909179688, 403.01641845703125, 593.7706909179688)
+[FAIL] page 1 text-text: Text boxes overlap by 97.1% of the smaller box �� 'Completed expansions (symlog; linear 0-1)'
+  other text: 'Unavailable repeat'
+  text bbox: (617.5982055664062, 585.7706909179688, 790.11279296875, 597.5867309570312)
+[WARN] page 1 text-fill-edge: Text partially overlaps the edge of 1 filled region(s) �� 'End-of-run work includes soft overruns; censored work is not full-solution work at 1 s. Smaller counts can reflect slow bounds or truncation, not efficiency.'
+  text bbox: (185.9759979248047, 617.9557495117188, 778.1466674804688, 625.65576171875)
+[WARN] page 1 text-fill-edge: Text partially overlaps the edge of 1 filled region(s) �� 'Completed expansions (symlog; linear 0-1)'
+  text bbox: (230.50180053710938, 585.7706909179688, 403.01641845703125, 593.7706909179688)
+[WARN] page 1 text-fill-edge: Text partially overlaps the edge of 5 filled region(s) �� '400/400'
+  text bbox: (454.06640625, 173.35885620117188, 486.04803466796875, 181.05885314941406)
+[WARN] page 1 text-fill-edge: Text partially overlaps the edge of 2 filled region(s) �� '284/400'
+  text bbox: (454.06640625, 246.7708740234375, 486.04803466796875, 254.4708709716797)
+[WARN] page 1 text-fill-edge: Text partially overlaps the edge of 1 filled region(s) �� 'Not proved'
+  text bbox: (553.8355102539062, 589.5867309570312, 598.2295532226562, 597.5867309570312)
+[WARN] page 1 text-fill-edge: Text partially overlaps the edge of 2 filled region(s) �� 'Completed expansions (symlog; linear 0-1)'
+  text bbox: (617.5982055664062, 585.7706909179688, 790.11279296875, 597.5867309570312)
+[WARN] page 1 text-fill-edge: Text partially overlaps the edge of 1 filled region(s) �� '1'
+  text bbox: (619.9782104492188, 573.7706909179688, 625.0680541992188, 581.7706909179688)
+[WARN] page 1 text-fill-edge: Text partially overlaps the edge of 2 filled region(s) �� 'Unavailable repeat'
+  text bbox: (636.6260986328125, 588.5341186523438, 712.321533203125, 597.8541259765625)
+
+summary: 18 fail, 8 warn, 53 contained fill overlays, 0 contained image overlays
+verdict: FIX BEFORE DELIVERY
+note: contained overlays can be intentional; WARN findings need final-size visual review
+

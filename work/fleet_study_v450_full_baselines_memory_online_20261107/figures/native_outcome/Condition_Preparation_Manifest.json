@@ -1,0 +1,20 @@
+{
+  "status": "AST_PASS_NOT_EXECUTED",
+  "source_hashes": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\native_outcome\\summarize_native_conditions.py": "357865869ef05b908f218770df90c9b972bc9618fae2aa67bb4d8953551f93ef",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\native_outcome\\plot_native_outcome_v450.py": "f8521c10e968991fdee1c4bd9261eef0358b3819f74bc008a355c17873d5ef22",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\native_outcome\\Preparation_Manifest.json": "7f683a568161492919e6959eb4d39656202a51396f3034e1d64513d42ffac4d9",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\native_outcome\\Condition_Summary_Plan.md": "802f56a8309e42c213e5f51070546a36184e402c07976d72d498ab55bd7eb25d"
+  },
+  "aggregation_executed": false,
+  "pilot_gain_inspected": false,
+  "predeclared_cells": 8,
+  "budgets": [
+    10,
+    50,
+    200
+  ],
+  "expected_cases_per_cell": 8,
+  "expected_summary_rows": 48,
+  "static_note": "Only parsed source AST. No import, aggregation, figure rendering, solver, or simulator execution. Markdown table rows now contiguous."
+}

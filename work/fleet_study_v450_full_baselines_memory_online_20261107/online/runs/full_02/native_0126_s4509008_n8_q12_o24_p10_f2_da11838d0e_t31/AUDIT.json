@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "J_customer_seconds": 2878.8,
+  "completed": {
+    "a0": 30,
+    "b0": 30,
+    "b7": 130,
+    "a4": 202,
+    "b5": 269,
+    "b4": 333,
+    "a5": 405,
+    "a6": 510,
+    "b2": 649,
+    "b3": 713,
+    "a2": 872,
+    "b6": 900,
+    "a1": 936,
+    "b1": 964,
+    "a": 1556,
+    "a3": 1633,
+    "b": 1938,
+    "a7": 2384
+  },
+  "handoff_a_seconds": 221.6,
+  "last_handoff_seconds": 363.8,
+  "truck_release_seconds": 363.8,
+  "all_customers": 18,
+  "prefix": "ecb84830a8ef6ec72398d8966e68b9b5ff3c9151a20c78326cf2b8086a83d0f4",
+  "trace_sha256": "6cdd4c66aa2d2ca4809cad59f5b72d63a62aca5a2318377b64bb2c4045d44bc6",
+  "collision_ticks": 0,
+  "teleports": 0,
+  "planning_seconds": 0.014691799995489419,
+  "activation_seconds": 6.2,
+  "activation_delay_seconds": 0.2,
+  "quantization_seconds": 0.1853082000045106,
+  "old_flow_seconds": 2192.0,
+  "new_flow_seconds": {
+    "a": 305.2,
+    "b": 381.6
+  },
+  "truck_arrival_seconds": 123.2,
+  "truck_dwell_seconds": 240.6,
+  "truck_wait_excluding_transfer_seconds": 236.6,
+  "unfinished_customers": [],
+  "traffic_trip_metrics": {
+    "bg": {
+      "duration": "51.40",
+      "waitingTime": "28.40",
+      "timeLoss": "36.26",
+      "routeLength": "149.44",
+      "arrival": "56.40"
+    },
+    "slow1": {
+      "duration": "128.80",
+      "waitingTime": "29.80",
+      "timeLoss": "30.70",
+      "routeLength": "117.59",
+      "arrival": "128.80"
+    },
+    "slow0": {
+      "duration": "135.20",
+      "waitingTime": "20.80",
+      "timeLoss": "27.12",
+      "routeLength": "129.59",
+      "arrival": "135.20"
+    },
+    "B": {
+      "duration": "196.80",
+      "waitingTime": "0.00",
+      "timeLoss": "14.55",
+      "routeLength": "1043.37",
+      "arrival": "196.80"
+    },
+    "T": {
+      "duration": "371.20",
+      "waitingTime": "33.60",
+      "timeLoss": "35.97",
+      "routeLength": "525.38",
+      "arrival": "377.40"
+    },
+    "A": {
+      "duration": "483.20",
+      "waitingTime": "15.60",
+      "timeLoss": "44.42",
+      "routeLength": "2875.18",
+      "arrival": "483.20"
+    }
+  },
+  "pedestrian_arrivals": 10,
+  "observed_exposure": {
+    "red_or_yellow_signal_stopped_ticks": {
+      "A": 78,
+      "B": 0,
+      "T": 150
+    },
+    "ped_near_vehicle_pair_ticks": 1227,
+    "ped_near_vehicle_pairs": [
+      [
+        "T",
+        "ped0"
+      ],
+      [
+        "T",
+        "ped1"
+      ],
+      [
+        "T",
+        "ped2"
+      ],
+      [
+        "T",
+        "ped3"
+      ],
+      [
+        "T",
+        "ped4"
+      ],
+      [
+        "T",
+        "ped5"
+      ],
+      [
+        "T",
+        "ped6"
+      ],
+      [
+        "T",
+        "ped7"
+      ],
+      [
+        "T",
+        "ped8"
+      ],
+      [
+        "T",
+        "ped9"
+      ]
+    ],
+    "crosswalk_occupied_ticks_after_activation": 175,
+    "proximity_radius_metres": 15,
+    "interpretation": "Observed exposure, not identified causal pedestrian delay"
+  }
+}

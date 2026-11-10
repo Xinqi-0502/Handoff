@@ -1,0 +1,44 @@
+{
+  "status": "COMPLETED_V450_EVIDENCE_BATCH",
+  "report": "Research_Evidence_Report_01.html",
+  "main_version": "Frozen V449 RADIUS_PAIR_AWA_GATED",
+  "paired_causal_engine": "HZ_AWA_RADIUS_PAIR_GATED versus HZ_AWA_RADIUS",
+  "completed": [
+    "256 new local scenarios and 3072 formal solver calls",
+    "128 fresh-process memory observations",
+    "64 online scenarios, 1728 policy calls and 128 distinct SUMO replays",
+    "128 separate instrumented online calls",
+    "all-factorial reporting and three code-generated figures"
+  ],
+  "remaining_research_limits": [
+    "Full freight ALNS systems have not been reproduced",
+    "COR 10.1016/j.cor.2026.107577 full-text comparison remains incomplete",
+    "No city-traffic calibration or continuous rolling dispatch validation",
+    "No incremental online service gain or algorithm-specific memory saving established"
+  ],
+  "preservation": "All raw measurements, null effects, deadline misses, unsuccessful gates and report-building errors remain in this study directory or their linked frozen predecessor directories.",
+  "evidence": {
+    "Research_Evidence_Report_01.html": "ab46c5e11d10ff935da2f9bf84fe976b9f8ee03337003b6ee355c6edec81b05b",
+    "Research_Evidence_Report_01.manifest.json": "f7f6eb8c8b3c3919958b4f0b44b55e32602ec767066a18eb75fb90d246bb847d",
+    "reporting/Final_Verification_01.json": "11c2420309778b89f260f56a28d37808962ae04f35169c8abcf29e0fa144060a",
+    "audit_code/results/main_01/Independent_Audit.json": "5d5fcb5d0e0f5b2c261ddf52d6828529c2838955785c0b8b0e56ef3246c97104",
+    "audit_code/results/crosscheck_01/Crosscheck.json": "ba12dca00ae804b04c608cb2640d389ca8a093dbd44cee206531b53be3a36d93",
+    "audit_code/memory/results/main_01/Independent_Memory_Audit.json": "b13a5f7395b12c745ddee721cb56d333a36c7e1631b4954fa508bd7e421bd6de",
+    "online/analysis/full_02/SUMMARY.json": "318ed6ea6d45d46e3399e53b2d47871ea588874a6dbccbbb7b3e55827ee607bd",
+    "static_comparison/Frozen_Source_Manifest.json": "579d8079c0514bb82a3484eb7a8899b1d7a0d360aad8c2fedaa3cd1220ea7093",
+    "online/Online_Source_Manifest_03.json": "df93e43db1745bc66378a68ac22fce92f6496aa5c21e7d7ab1236f8a85145418",
+    "online/Online_Results_02.md": "721552aad7892fb03b3cb9a0d26514a875ea66fa0a6ff14111f48a3853413ac9",
+    "online/analysis/interpretation_02/Report_Manifest.json": "95499260d8e6cf132cc27e7541d6d094d88adc2f29e3263b2740cbddbbca7aca",
+    "online/analysis/full_02/Audit_Source_Hashes.json": "b4466593fb796c3a7d097281f4bd04a0489c26661e74f62585630577f69a082f",
+    "figures/native_outcome/Native_Final_Delivery_Manifest_02.json": "a1a7cfa453295a463b908964ddf8f6b41043689655e6a692d97a2945bb0d4cfa",
+    "figures/native_outcome/render_native_02/VISUAL_QA_COMPLETE.json": "818c4dcc9898b6f72213c957124cb86216561b2bffc833e71a8e2dfe03da29a1",
+    "figures/native_outcome/render_native_02/Caption.md": "ec95090e0c51887539377c777692226ff2b7694f579d3e3ce3d35942ed2ca0fa",
+    "figures/native_outcome/conditions_main_01/All_Condition_Summary.csv": "7c1f8b99947aebba69dc018148f79a9f2726d93e6cdb3ef5270d6dd80c0f2bbc",
+    "memory/Final_Delivery_Manifest_01.json": "e74965a16b2101b1f8f11b89ac4784b12bef12c0abff3d6d2169e2db79decf8e",
+    "literature/Formula_Coverage_Matrix.md": "4767166734f80ec306842408f4eb1dddd031492182dbb59ad0cf0582e57dbbc5",
+    "records/Browser_Access_Retry_02.json": "a30d04562866992d1e75739b8f6e0c5b5f35f17a8ba66bd916b0a7d3cd179ef7",
+    "reporting/Report_Build_Failure_01.json": "1ed337aa62339e279e8380af88f9f6b265718f31496a01c41398eb4842eb260f",
+    "reporting/Report_Build_Failure_02.json": "303ffc1a155fd794a2987814bb030ebd49ed8196cf3214d796958968296e8858",
+    "reporting/build_report_v450_v2.py": "809a4ecaaf3cfa4c905fce0fd1be665b9883578b3ed9763bb442e7aa05bef9ea"
+  }
+}

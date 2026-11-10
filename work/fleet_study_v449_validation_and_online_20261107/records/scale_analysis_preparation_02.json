@@ -1,0 +1,11 @@
+{
+  "status": "AST_PASS_NOT_EXECUTED",
+  "previous_sha256": "b3c64155e19030bbbad839f00fc1d77f4c25618fac02c0cf4a8e210fbc9e39ae",
+  "current_sha256": "2f0258d1e4fb914fa875fd56ab2683690ec1efe62cbf0cd0f4cdea82f999d2bc",
+  "changes": [
+    "Initial 0/5/10 percent target flags and case counts; common-subset initial-target counts",
+    "Same-eligible-set paired expansion sums and ratio"
+  ],
+  "numerical_sources_changed": false,
+  "analysis_executed": false
+}

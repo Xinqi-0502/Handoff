@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\profile_online_v450.py",
+    "--prefixes",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\prefixes\\full_02",
+    "--gate",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\gates\\micro_02",
+    "--out",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\profiles\\full_01"
+  ],
+  "cwd": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\hosts\\profile_full_01",
+  "helper": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\validation\\san_pablo_dam\\run_public_validation.py",
+  "helper_sha256": "c50fcb484be5261a6e710371fbe745af1c0cbabd548ff57994febc6bd8acb451",
+  "args_sha256": "e9b823ba9ae483fea4408453d1f2afb667f3492cc9bcefcf56544d7d7eccf358",
+  "timeout_seconds": 900.0,
+  "scope": "This worker and its native descendants only; kernel kill-on-job-close"
+}

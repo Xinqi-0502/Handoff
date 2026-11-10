@@ -1,0 +1,4 @@
+{"case": "micro_s3470401_m4_tight_free", "status": "PASS", "solution_checks": 16, "double_replays": 74, "exact_optimum": 163, "initial_H2": 199}
+{"case": "micro_s3470401_m4_tight_signal", "status": "PASS", "solution_checks": 16, "double_replays": 74, "exact_optimum": 174, "initial_H2": 201}
+{"case": "micro_s3470401_m4_roomier_free", "status": "PASS", "solution_checks": 16, "double_replays": 56, "exact_optimum": 147, "initial_H2": 199}
+{"case": "micro_s3470401_m4_roomier_signal", "status": "PASS", "solution_checks": 16, "double_replays": 74, "exact_optimum": 153, "initial_H2": 201}

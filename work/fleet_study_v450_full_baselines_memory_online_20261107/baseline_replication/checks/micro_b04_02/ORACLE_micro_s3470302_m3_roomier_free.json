@@ -1,0 +1,39 @@
+{
+  "case": "micro_s3470302_m3_roomier_free",
+  "optimum_H2": 108,
+  "exhaustive_states": 125,
+  "dp": {
+    "status": "PASS",
+    "case": "micro_s3470302_m3_roomier_free",
+    "optimum_H2": 108,
+    "best_feasible_H2": 108,
+    "plan": [
+      "old:1",
+      "handoff:a",
+      "old:2",
+      "deliver:a",
+      "handoff:b"
+    ],
+    "certified_optimal": true,
+    "stop_reason": "all_structural_labels_completed",
+    "expanded": 39,
+    "expanded_phase0": 13,
+    "expanded_phase1": 26,
+    "structural_labels": 43,
+    "accepted_updates": 47,
+    "generated": 72,
+    "elapsed_seconds": 0.00024640001356601715,
+    "stats": {
+      "closure_queries": 72,
+      "closure_cache_hits": 34,
+      "dijkstra_runs": 38,
+      "edge_relaxations": 646,
+      "closure_cache_entries": 38,
+      "cache_clears": 0,
+      "closure_cache_cap": 100000
+    },
+    "oracle_kind": "Independent topological earliest-arrival FIFO DP",
+    "proposed_bound_used": false,
+    "incumbent_pruning_used": false
+  }
+}

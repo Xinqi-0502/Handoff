@@ -1,0 +1,4 @@
+{"case": "v449_scale_main_s94496025_m6_tight_free", "oracle_exact": true, "completed_attempts": 27}
+{"case": "v449_scale_main_s94496025_m6_tight_signal", "oracle_exact": true, "completed_attempts": 27}
+{"case": "v449_scale_main_s94496025_m6_roomier_free", "oracle_exact": true, "completed_attempts": 27}
+{"case": "v449_scale_main_s94496025_m6_roomier_signal", "oracle_exact": true, "completed_attempts": 27}

@@ -1,0 +1,82 @@
+"""Race-free owned Job Object helper; no process action on import.
+Adapted from the frozen public-validation executor. Observer only reads counters.
+"""
+import os,subprocess
+
+def owned_windows_process(argv,folder,stdout_file,stderr_file,timeout,observer=None):
+    """Create the child inside a kill-on-close Job Object, with no assign-after-start race.
+    Uses Windows 10+ PROC_THREAD_ATTRIBUTE_JOB_LIST, not process enumeration.
+    The job handle is not inherited. Parent termination closes it in the kernel.
+    """
+    if os.name!='nt':raise RuntimeError('This frozen validation executor requires Windows')
+    import ctypes as C
+    from ctypes import wintypes as W
+    import msvcrt
+    k=C.WinDLL('kernel32',use_last_error=True)
+    class BasicLimit(C.Structure):
+        _fields_=[('PerProcessUserTimeLimit',C.c_longlong),('PerJobUserTimeLimit',C.c_longlong),('LimitFlags',W.DWORD),('MinimumWorkingSetSize',C.c_size_t),('MaximumWorkingSetSize',C.c_size_t),('ActiveProcessLimit',W.DWORD),('Affinity',C.c_size_t),('PriorityClass',W.DWORD),('SchedulingClass',W.DWORD)]
+    class IOCounters(C.Structure):
+        _fields_=[(n,C.c_ulonglong) for n in ['ReadOperationCount','WriteOperationCount','OtherOperationCount','ReadTransferCount','WriteTransferCount','OtherTransferCount']]
+    class ExtendedLimit(C.Structure):
+        _fields_=[('BasicLimitInformation',BasicLimit),('IoInfo',IOCounters),('ProcessMemoryLimit',C.c_size_t),('JobMemoryLimit',C.c_size_t),('PeakProcessMemoryUsed',C.c_size_t),('PeakJobMemoryUsed',C.c_size_t)]
+    class StartupInfo(C.Structure):
+        _fields_=[('cb',W.DWORD),('lpReserved',W.LPWSTR),('lpDesktop',W.LPWSTR),('lpTitle',W.LPWSTR),('dwX',W.DWORD),('dwY',W.DWORD),('dwXSize',W.DWORD),('dwYSize',W.DWORD),('dwXCountChars',W.DWORD),('dwYCountChars',W.DWORD),('dwFillAttribute',W.DWORD),('dwFlags',W.DWORD),('wShowWindow',W.WORD),('cbReserved2',W.WORD),('lpReserved2',C.POINTER(C.c_ubyte)),('hStdInput',W.HANDLE),('hStdOutput',W.HANDLE),('hStdError',W.HANDLE)]
+    class StartupInfoEx(C.Structure):
+        _fields_=[('StartupInfo',StartupInfo),('lpAttributeList',C.c_void_p)]
+    class ProcessInfo(C.Structure):
+        _fields_=[('hProcess',W.HANDLE),('hThread',W.HANDLE),('dwProcessId',W.DWORD),('dwThreadId',W.DWORD)]
+    k.CreateJobObjectW.argtypes=[C.c_void_p,W.LPCWSTR];k.CreateJobObjectW.restype=W.HANDLE
+    k.SetInformationJobObject.argtypes=[W.HANDLE,C.c_int,C.c_void_p,W.DWORD];k.SetInformationJobObject.restype=W.BOOL
+    k.InitializeProcThreadAttributeList.argtypes=[C.c_void_p,W.DWORD,W.DWORD,C.POINTER(C.c_size_t)];k.InitializeProcThreadAttributeList.restype=W.BOOL
+    k.UpdateProcThreadAttribute.argtypes=[C.c_void_p,W.DWORD,C.c_size_t,C.c_void_p,C.c_size_t,C.c_void_p,C.c_void_p];k.UpdateProcThreadAttribute.restype=W.BOOL
+    k.DeleteProcThreadAttributeList.argtypes=[C.c_void_p];k.DeleteProcThreadAttributeList.restype=None
+    k.CreateProcessW.argtypes=[W.LPCWSTR,W.LPWSTR,C.c_void_p,C.c_void_p,W.BOOL,W.DWORD,C.c_void_p,W.LPCWSTR,C.c_void_p,C.POINTER(ProcessInfo)];k.CreateProcessW.restype=W.BOOL
+    k.WaitForSingleObject.argtypes=[W.HANDLE,W.DWORD];k.WaitForSingleObject.restype=W.DWORD
+    k.GetExitCodeProcess.argtypes=[W.HANDLE,C.POINTER(W.DWORD)];k.GetExitCodeProcess.restype=W.BOOL
+    k.TerminateJobObject.argtypes=[W.HANDLE,W.UINT];k.TerminateJobObject.restype=W.BOOL
+    k.CloseHandle.argtypes=[W.HANDLE];k.CloseHandle.restype=W.BOOL
+    job=None;pi=ProcessInfo();attrs=None;initialized=False;finished=False;inheritable=[]
+    try:
+        job=k.CreateJobObjectW(None,None)
+        if not job:raise C.WinError(C.get_last_error())
+        limit=ExtendedLimit();limit.BasicLimitInformation.LimitFlags=0x2000 # JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE
+        if not k.SetInformationJobObject(job,9,C.byref(limit),C.sizeof(limit)):raise C.WinError(C.get_last_error())
+        size=C.c_size_t();k.InitializeProcThreadAttributeList(None,2,0,C.byref(size))
+        attrs=C.create_string_buffer(size.value)
+        if not k.InitializeProcThreadAttributeList(attrs,2,0,C.byref(size)):raise C.WinError(C.get_last_error())
+        initialized=True
+        jobs=(W.HANDLE*1)(job)
+        if not k.UpdateProcThreadAttribute(attrs,0,0x0002000D,jobs,C.sizeof(jobs),None,None):raise C.WinError(C.get_last_error()) # JOB_LIST
+        with open(os.devnull,'rb') as stdin_file:
+            handles=[msvcrt.get_osfhandle(f.fileno()) for f in (stdin_file,stdout_file,stderr_file)]
+            for h in handles:os.set_handle_inheritable(h,True);inheritable.append(h)
+            handle_array=(W.HANDLE*3)(*handles)
+            if not k.UpdateProcThreadAttribute(attrs,0,0x00020002,handle_array,C.sizeof(handle_array),None,None):raise C.WinError(C.get_last_error()) # HANDLE_LIST
+            startup=StartupInfoEx();startup.StartupInfo.cb=C.sizeof(startup);startup.StartupInfo.dwFlags=0x100
+            startup.StartupInfo.hStdInput, startup.StartupInfo.hStdOutput, startup.StartupInfo.hStdError=handles
+            startup.lpAttributeList=C.cast(attrs,C.c_void_p)
+            cmdline=C.create_unicode_buffer(subprocess.list2cmdline(argv))
+            if not k.CreateProcessW(argv[0],cmdline,None,None,True,0x00080000|0x08000000,None,str(folder),C.byref(startup),C.byref(pi)):raise C.WinError(C.get_last_error())
+            for h in inheritable:os.set_handle_inheritable(h,False)
+            inheritable.clear()
+            if observer is not None:observer("started",pi.dwProcessId,pi.hProcess)
+            wait=k.WaitForSingleObject(pi.hProcess,max(1,int(timeout*1000)))
+            if wait==258:raise subprocess.TimeoutExpired(argv,timeout)
+            if wait!=0:raise C.WinError(C.get_last_error())
+            code=W.DWORD()
+            if not k.GetExitCodeProcess(pi.hProcess,C.byref(code)):raise C.WinError(C.get_last_error())
+            if observer is not None:observer("exited",pi.dwProcessId,pi.hProcess)
+            finished=True;return code.value
+    finally:
+        try:
+            if pi.hProcess and not finished:
+                k.TerminateJobObject(job,1);k.WaitForSingleObject(pi.hProcess,5000)
+                if observer is not None:observer("terminated",pi.dwProcessId,pi.hProcess)
+        finally:
+            for h in inheritable:
+                try:os.set_handle_inheritable(h,False)
+                except OSError:pass
+            if pi.hThread:k.CloseHandle(pi.hThread)
+            if pi.hProcess:k.CloseHandle(pi.hProcess)
+            if initialized:k.DeleteProcThreadAttributeList(attrs)
+            if job:k.CloseHandle(job)

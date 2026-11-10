@@ -1,0 +1,8 @@
+{"case": "v448_radius_pilot_s9492001_m12_tight_free", "oracle_exact": true, "completed_attempts": 14}
+{"case": "v448_radius_pilot_s9492001_m12_tight_signal", "oracle_exact": true, "completed_attempts": 14}
+{"case": "v448_radius_pilot_s9492001_m12_roomier_free", "oracle_exact": true, "completed_attempts": 14}
+{"case": "v448_radius_pilot_s9492001_m12_roomier_signal", "oracle_exact": true, "completed_attempts": 14}
+{"case": "v448_radius_pilot_s9492002_m12_tight_free", "oracle_exact": true, "completed_attempts": 14}
+{"case": "v448_radius_pilot_s9492002_m12_tight_signal", "oracle_exact": true, "completed_attempts": 14}
+{"case": "v448_radius_pilot_s9492002_m12_roomier_free", "oracle_exact": true, "completed_attempts": 14}
+{"case": "v448_radius_pilot_s9492002_m12_roomier_signal", "oracle_exact": true, "completed_attempts": 14}

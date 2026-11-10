@@ -1,0 +1,290 @@
+[
+  {
+    "axis": "signal",
+    "pair_id": "v448_radius_pilot_s9486001_m6_roomier",
+    "normalized_model_hash": "007ca1a5eb8e1ceedb3b6012b556801488e3ddaa3c8f39e034d15b9d40587dc5",
+    "instance_hashes": {
+      "v448_radius_pilot_s9486001_m6_roomier_free": "38971e339e065406b75aa9ff9cc439c01562c385c3c304ea25f81057a42686ea",
+      "v448_radius_pilot_s9486001_m6_roomier_signal": "6db61c0015887d517fdff7e5c2fab70097311970a878012aa4aa3138803437b6"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v448_radius_pilot_s9486001_m6_tight",
+    "normalized_model_hash": "ce0c9a20ae37695fcc0fcfe510128f3488c66796d5076e2bf992144c8adead88",
+    "instance_hashes": {
+      "v448_radius_pilot_s9486001_m6_tight_free": "abe7a8af7803913ad70d4559c059d28a627fee1d432b648ba53531bf1383cb7b",
+      "v448_radius_pilot_s9486001_m6_tight_signal": "4e78e70281612e3277e9dc70bce5a2b89a7689a5a0fddef7b22a5a7bfb09268c"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v448_radius_pilot_s9486002_m6_roomier",
+    "normalized_model_hash": "ea3c4e6e25b1c9d50a9db23304e19fb849eac99f956f66ae61d3e4da2198456c",
+    "instance_hashes": {
+      "v448_radius_pilot_s9486002_m6_roomier_free": "e1691ac53b70111c81cb03f125b8b00802435cf2d5c1b2990565612a16bede36",
+      "v448_radius_pilot_s9486002_m6_roomier_signal": "165cf9d07b2d74aa687d56784c65c3df7a5138aa376eaa5991fbd866c75eee34"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v448_radius_pilot_s9486002_m6_tight",
+    "normalized_model_hash": "fd9a1aa394328d107e15e2401b63da788de59fd12476ebf5c555923ff58abd1a",
+    "instance_hashes": {
+      "v448_radius_pilot_s9486002_m6_tight_free": "babf473ea6968a0a507464fd479018eccd3421e8df93958451a0fbbc44b93a79",
+      "v448_radius_pilot_s9486002_m6_tight_signal": "1223c0fe94f7cd518fcd3ab6516f2335bc9426d6fb1928944a6b2f0b0e59e6d4"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v448_radius_pilot_s9488001_m8_roomier",
+    "normalized_model_hash": "046301bc998de9a0dfc101190b8bcbf2fdd9e5f9c0c6b185760e9ab58472903f",
+    "instance_hashes": {
+      "v448_radius_pilot_s9488001_m8_roomier_free": "f5b6b6667a489dd8c66e5218ed0d447904e0b528d1cc98339b4e0ce990a5a5de",
+      "v448_radius_pilot_s9488001_m8_roomier_signal": "d80cec640a134816f7c275bff675f76f3bf93e5a3821edacc1191eef1b556633"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v448_radius_pilot_s9488001_m8_tight",
+    "normalized_model_hash": "7ea7144dcf6d951964cdd2b6e515e63ac1fc4ae4dd92cc9b08a15558dba4f908",
+    "instance_hashes": {
+      "v448_radius_pilot_s9488001_m8_tight_free": "34889ad1b9210c6cbdd88982f7ad6680795570456cc27b20f003274b1e801413",
+      "v448_radius_pilot_s9488001_m8_tight_signal": "ce36e2e71407983300c2438e335148dd3fafe79b595a0169a385afdcefb687b9"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v448_radius_pilot_s9488002_m8_roomier",
+    "normalized_model_hash": "c125b2d575204f951c1f90c328b6229a02904083a0eae8fb40db686ba1263c45",
+    "instance_hashes": {
+      "v448_radius_pilot_s9488002_m8_roomier_free": "ba0504607ec1254d9d820b86b3281ee7fbb42179c59fda5e47d5a4b5b6e089d1",
+      "v448_radius_pilot_s9488002_m8_roomier_signal": "2df3e257032affe815afca4e50c221b79ab1d7502ce58f90ab064447fe05c50a"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v448_radius_pilot_s9488002_m8_tight",
+    "normalized_model_hash": "792f6d6e2b7535e0ff5cdee928169a0bcb43b903476e2dfe98d182d90daf7532",
+    "instance_hashes": {
+      "v448_radius_pilot_s9488002_m8_tight_free": "f64729b7256ce5a410479330c06f1771781d5af76bc0ed76bae53f32f5993ff7",
+      "v448_radius_pilot_s9488002_m8_tight_signal": "56ccf6c84674d944e7064d2439da458050de5def3d298f3ce858bbf0f6fc4835"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v448_radius_pilot_s9490001_m10_roomier",
+    "normalized_model_hash": "26c39a55d42fb264ad27478eb9038fbdd3a1ccb80c41ae6c5665c44464b2e1e0",
+    "instance_hashes": {
+      "v448_radius_pilot_s9490001_m10_roomier_free": "8b870bf472a09c391480b14539f6b170aec039e0e7204517060b3bcd5e0de762",
+      "v448_radius_pilot_s9490001_m10_roomier_signal": "c75d10d2ccfea5a564ad3085dfe020662819fc45f10cd8ba68fe70d8b3ae7bb2"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v448_radius_pilot_s9490001_m10_tight",
+    "normalized_model_hash": "6c670ed4d31637e4ec18818d82e0942e32d77dedf0d11fdc1b0428ed0e0e1492",
+    "instance_hashes": {
+      "v448_radius_pilot_s9490001_m10_tight_free": "507b82c47690f158488d29b0470f96615596aaa15c59e4e103b6c0b263dedef7",
+      "v448_radius_pilot_s9490001_m10_tight_signal": "1e1d98ebe1e9265796be3b762830e4d2d4db9b361c073f604ad0b3225ffe1e9a"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v448_radius_pilot_s9490002_m10_roomier",
+    "normalized_model_hash": "8c2723cbebf299d51350499a5df82c6648c0d34ab31a7377fef09f594222696b",
+    "instance_hashes": {
+      "v448_radius_pilot_s9490002_m10_roomier_free": "a1f62d57da304426270127ba403d5c9c026714d689f53d007b87a05ddb0733dc",
+      "v448_radius_pilot_s9490002_m10_roomier_signal": "b9c2ee672c92873b99f849cba20780f5dd864e067abc987f851c55896f1dbc27"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v448_radius_pilot_s9490002_m10_tight",
+    "normalized_model_hash": "ef9d9464db124e53007d7b05e4b68dfccf34b7cf264f82640447ffe0bfb89354",
+    "instance_hashes": {
+      "v448_radius_pilot_s9490002_m10_tight_free": "272799221eeefb8643a42adee6287519295864be4564d3221c204e6b2fb5d137",
+      "v448_radius_pilot_s9490002_m10_tight_signal": "1712a6f9ce1431c70994047017c08cc076430a911690788aa87b357028d0ed9e"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v448_radius_pilot_s9492001_m12_roomier",
+    "normalized_model_hash": "9271e8d206c238c55bbfd09bca6cc5398c34dda229154c9ca5a38d31496376b0",
+    "instance_hashes": {
+      "v448_radius_pilot_s9492001_m12_roomier_free": "3aa387952432a3e78e2da24e4ec45e6f81c6b4b0072e28bbd619891685e9fd14",
+      "v448_radius_pilot_s9492001_m12_roomier_signal": "f210b465dfaf394543083ca4d13975ad4c987998f3f26e7d05a43050e4b5ce63"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v448_radius_pilot_s9492001_m12_tight",
+    "normalized_model_hash": "fa6bae7c3cc9f77f3dbecdee8709bb6fb2c172f1d898fb8ffcfe0554630d2043",
+    "instance_hashes": {
+      "v448_radius_pilot_s9492001_m12_tight_free": "e7f27b73fe752df09f46b2a072207c1a238061dbffb07e07374ed29490d7b649",
+      "v448_radius_pilot_s9492001_m12_tight_signal": "acf0aca05f36b815b4ad525e7daf0de798a80061b1b9c85cf1ce6bd1cee36ad6"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v448_radius_pilot_s9492002_m12_roomier",
+    "normalized_model_hash": "972f1732ed1f90ccc5ec0abebec59f95b517018e9e3db569d487106a6513c150",
+    "instance_hashes": {
+      "v448_radius_pilot_s9492002_m12_roomier_free": "0e63d878fb200a1fe2613339a24164f039c50d827db2757ecdf05e01967f027a",
+      "v448_radius_pilot_s9492002_m12_roomier_signal": "ac081437ed3475c3ccc6f24fcd52f030cf57a1120179750e6e4ea7cd2e8a2a5f"
+    }
+  },
+  {
+    "axis": "signal",
+    "pair_id": "v448_radius_pilot_s9492002_m12_tight",
+    "normalized_model_hash": "aad6d2c388810933f519c337c60cafb3899bd75af0cb05fc738728fd86c97f88",
+    "instance_hashes": {
+      "v448_radius_pilot_s9492002_m12_tight_free": "cd1e668ac48272047b764c870446c9b66979f4b7ddfc831e2e34ec940a258a2b",
+      "v448_radius_pilot_s9492002_m12_tight_signal": "a4c18dd3d1ebedabbbf18f5ce971ab083c7dac740e10b26612f4e145e23e457c"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v448_radius_pilot_s9486001_m6_free",
+    "normalized_model_hash": "1b40912e805586059281fb2e0775e4bf3c1afd5b5734990f9872b5c8bdf0829e",
+    "instance_hashes": {
+      "v448_radius_pilot_s9486001_m6_tight_free": "abe7a8af7803913ad70d4559c059d28a627fee1d432b648ba53531bf1383cb7b",
+      "v448_radius_pilot_s9486001_m6_roomier_free": "38971e339e065406b75aa9ff9cc439c01562c385c3c304ea25f81057a42686ea"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v448_radius_pilot_s9486001_m6_signal",
+    "normalized_model_hash": "6bdd8c96410de87e90adc821edd18223a8cad2af10c8104cb65356fb6670cc46",
+    "instance_hashes": {
+      "v448_radius_pilot_s9486001_m6_tight_signal": "4e78e70281612e3277e9dc70bce5a2b89a7689a5a0fddef7b22a5a7bfb09268c",
+      "v448_radius_pilot_s9486001_m6_roomier_signal": "6db61c0015887d517fdff7e5c2fab70097311970a878012aa4aa3138803437b6"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v448_radius_pilot_s9486002_m6_free",
+    "normalized_model_hash": "6973b4cbdb1ddb641f34caa21a75e985cf2faaf35b5627f66c0df1045d60c3dc",
+    "instance_hashes": {
+      "v448_radius_pilot_s9486002_m6_tight_free": "babf473ea6968a0a507464fd479018eccd3421e8df93958451a0fbbc44b93a79",
+      "v448_radius_pilot_s9486002_m6_roomier_free": "e1691ac53b70111c81cb03f125b8b00802435cf2d5c1b2990565612a16bede36"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v448_radius_pilot_s9486002_m6_signal",
+    "normalized_model_hash": "7c2a6e327958c7ffb67b2cd152608d4933093ec13cf8d70191c8f2235b003a7d",
+    "instance_hashes": {
+      "v448_radius_pilot_s9486002_m6_tight_signal": "1223c0fe94f7cd518fcd3ab6516f2335bc9426d6fb1928944a6b2f0b0e59e6d4",
+      "v448_radius_pilot_s9486002_m6_roomier_signal": "165cf9d07b2d74aa687d56784c65c3df7a5138aa376eaa5991fbd866c75eee34"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v448_radius_pilot_s9488001_m8_free",
+    "normalized_model_hash": "7a5236081d8fcde611d93b9b4d9efdacc34f6e8b5ba05407ceae72201b2b028b",
+    "instance_hashes": {
+      "v448_radius_pilot_s9488001_m8_tight_free": "34889ad1b9210c6cbdd88982f7ad6680795570456cc27b20f003274b1e801413",
+      "v448_radius_pilot_s9488001_m8_roomier_free": "f5b6b6667a489dd8c66e5218ed0d447904e0b528d1cc98339b4e0ce990a5a5de"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v448_radius_pilot_s9488001_m8_signal",
+    "normalized_model_hash": "a22df91f911513498fe8287bd4e093e1519098ffd9c6ed8165bb9e60cd4498b0",
+    "instance_hashes": {
+      "v448_radius_pilot_s9488001_m8_tight_signal": "ce36e2e71407983300c2438e335148dd3fafe79b595a0169a385afdcefb687b9",
+      "v448_radius_pilot_s9488001_m8_roomier_signal": "d80cec640a134816f7c275bff675f76f3bf93e5a3821edacc1191eef1b556633"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v448_radius_pilot_s9488002_m8_free",
+    "normalized_model_hash": "c00aa77834d90d2066aaa48ee697d15d8b8cc97b60a194d0acd659d21ad0b3a0",
+    "instance_hashes": {
+      "v448_radius_pilot_s9488002_m8_tight_free": "f64729b7256ce5a410479330c06f1771781d5af76bc0ed76bae53f32f5993ff7",
+      "v448_radius_pilot_s9488002_m8_roomier_free": "ba0504607ec1254d9d820b86b3281ee7fbb42179c59fda5e47d5a4b5b6e089d1"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v448_radius_pilot_s9488002_m8_signal",
+    "normalized_model_hash": "e0c33b94b94adac9dacb311a7206906ff1387484105e9f4ab0b6e26e36755686",
+    "instance_hashes": {
+      "v448_radius_pilot_s9488002_m8_tight_signal": "56ccf6c84674d944e7064d2439da458050de5def3d298f3ce858bbf0f6fc4835",
+      "v448_radius_pilot_s9488002_m8_roomier_signal": "2df3e257032affe815afca4e50c221b79ab1d7502ce58f90ab064447fe05c50a"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v448_radius_pilot_s9490001_m10_free",
+    "normalized_model_hash": "e80b00e91cbe9703f06d1af1d021acc05fa225d2677b0b6c9b97183e3f25eb2f",
+    "instance_hashes": {
+      "v448_radius_pilot_s9490001_m10_tight_free": "507b82c47690f158488d29b0470f96615596aaa15c59e4e103b6c0b263dedef7",
+      "v448_radius_pilot_s9490001_m10_roomier_free": "8b870bf472a09c391480b14539f6b170aec039e0e7204517060b3bcd5e0de762"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v448_radius_pilot_s9490001_m10_signal",
+    "normalized_model_hash": "694333f543ac21df3406a55ea44a2788490ddf534c27f16f2ece8325c1dcc127",
+    "instance_hashes": {
+      "v448_radius_pilot_s9490001_m10_tight_signal": "1e1d98ebe1e9265796be3b762830e4d2d4db9b361c073f604ad0b3225ffe1e9a",
+      "v448_radius_pilot_s9490001_m10_roomier_signal": "c75d10d2ccfea5a564ad3085dfe020662819fc45f10cd8ba68fe70d8b3ae7bb2"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v448_radius_pilot_s9490002_m10_free",
+    "normalized_model_hash": "19d19cf75ae2a7e1f518c684b4e77641a2b5a76cd44eb254cac0564246a85648",
+    "instance_hashes": {
+      "v448_radius_pilot_s9490002_m10_tight_free": "272799221eeefb8643a42adee6287519295864be4564d3221c204e6b2fb5d137",
+      "v448_radius_pilot_s9490002_m10_roomier_free": "a1f62d57da304426270127ba403d5c9c026714d689f53d007b87a05ddb0733dc"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v448_radius_pilot_s9490002_m10_signal",
+    "normalized_model_hash": "5f601a7e9e166e564156dd4ca9339c6b24deff49663daea83ba4717db46131b7",
+    "instance_hashes": {
+      "v448_radius_pilot_s9490002_m10_tight_signal": "1712a6f9ce1431c70994047017c08cc076430a911690788aa87b357028d0ed9e",
+      "v448_radius_pilot_s9490002_m10_roomier_signal": "b9c2ee672c92873b99f849cba20780f5dd864e067abc987f851c55896f1dbc27"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v448_radius_pilot_s9492001_m12_free",
+    "normalized_model_hash": "40602954b9cb73d1fcf8e8e97be667381532916ea6b40f5be1c26c91aba62c7c",
+    "instance_hashes": {
+      "v448_radius_pilot_s9492001_m12_tight_free": "e7f27b73fe752df09f46b2a072207c1a238061dbffb07e07374ed29490d7b649",
+      "v448_radius_pilot_s9492001_m12_roomier_free": "3aa387952432a3e78e2da24e4ec45e6f81c6b4b0072e28bbd619891685e9fd14"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v448_radius_pilot_s9492001_m12_signal",
+    "normalized_model_hash": "8a5fcd23eccafdfb6995ed99204bfe0db76746dcaf737a86d3c8367f4ff5260a",
+    "instance_hashes": {
+      "v448_radius_pilot_s9492001_m12_tight_signal": "acf0aca05f36b815b4ad525e7daf0de798a80061b1b9c85cf1ce6bd1cee36ad6",
+      "v448_radius_pilot_s9492001_m12_roomier_signal": "f210b465dfaf394543083ca4d13975ad4c987998f3f26e7d05a43050e4b5ce63"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v448_radius_pilot_s9492002_m12_free",
+    "normalized_model_hash": "bfa0c9ce577716635b4d85f0cd65e4548e036ef52b08c99a80ef7e8088e1f8f6",
+    "instance_hashes": {
+      "v448_radius_pilot_s9492002_m12_tight_free": "cd1e668ac48272047b764c870446c9b66979f4b7ddfc831e2e34ec940a258a2b",
+      "v448_radius_pilot_s9492002_m12_roomier_free": "0e63d878fb200a1fe2613339a24164f039c50d827db2757ecdf05e01967f027a"
+    }
+  },
+  {
+    "axis": "capacity",
+    "pair_id": "v448_radius_pilot_s9492002_m12_signal",
+    "normalized_model_hash": "bb67f58e9b37860ded83f6e18188db0341ed0e27e85d68d01f43a2965f2e1df3",
+    "instance_hashes": {
+      "v448_radius_pilot_s9492002_m12_tight_signal": "a4c18dd3d1ebedabbbf18f5ce971ab083c7dac740e10b26612f4e145e23e457c",
+      "v448_radius_pilot_s9492002_m12_roomier_signal": "ac081437ed3475c3ccc6f24fcd52f030cf57a1120179750e6e4ea7cd2e8a2a5f"
+    }
+  }
+]

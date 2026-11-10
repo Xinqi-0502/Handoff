@@ -1,0 +1,16 @@
+{
+  "budget_ms": 10,
+  "counts": {
+    "HZ_AWA_PAIR_GATED": {
+      "case_count": 64,
+      "policy_repetitions": 192,
+      "no_plan_by_deadline": 192
+    },
+    "HZ_AWA_RADIUS": {
+      "case_count": 64,
+      "policy_repetitions": 192,
+      "no_plan_by_deadline": 191
+    }
+  },
+  "meaning": "Primarily executes late common-initial-plan fallback; not a 10 ms on-time plan claim."
+}

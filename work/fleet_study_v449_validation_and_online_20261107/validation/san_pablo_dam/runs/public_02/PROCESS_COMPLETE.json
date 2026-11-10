@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "sumo_runs": 5,
+  "interpretation": "Workflow completion only, not a physical-calibration acceptance threshold; inspect heldout error and failures."
+}

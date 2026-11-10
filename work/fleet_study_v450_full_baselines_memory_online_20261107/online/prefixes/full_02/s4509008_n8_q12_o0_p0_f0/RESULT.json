@@ -1,0 +1,51 @@
+{
+  "error": null,
+  "prefix": "39829a4babcd4db19e01d9a76cef61c0ea0cd10ea4e166d47e267369d4730af8",
+  "trace_hash": "39829a4babcd4db19e01d9a76cef61c0ea0cd10ea4e166d47e267369d4730af8",
+  "epoch_context": {
+    "A": {
+      "ready": 14400,
+      "edge": "EU0",
+      "pos_m": 73.0,
+      "speed": 0.0,
+      "remaining_cm": 0,
+      "native_route": [
+        "EU0"
+      ],
+      "route_index": 0,
+      "committed": "EUv"
+    },
+    "B": {
+      "ready": 14400,
+      "edge": "EU0",
+      "pos_m": 28.0,
+      "speed": 0.0,
+      "remaining_cm": 0,
+      "native_route": [
+        "EU0"
+      ],
+      "route_index": 0,
+      "committed": "EUu"
+    }
+  },
+  "events": [
+    [
+      10,
+      "arrive",
+      "A",
+      "a0",
+      "EUv"
+    ],
+    [
+      10,
+      "arrive",
+      "B",
+      "b0",
+      "EUu"
+    ]
+  ],
+  "completed": {},
+  "collision_ticks": 0,
+  "teleports": 0,
+  "elapsed_s": 5.623037800076418
+}

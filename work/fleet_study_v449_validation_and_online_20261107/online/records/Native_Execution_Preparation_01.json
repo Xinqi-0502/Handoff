@@ -1,0 +1,32 @@
+{
+  "gate_sha256": "f125b3735cf347ac45a8c2152200495071abcf51e6a3a0a8c887f972ca8a9fdf",
+  "inputs_sha256": "dee7a76550e766903375dfb96d6c0d48f0285000403baa7366c52d122f438a94",
+  "helper_sha256": "c50fcb484be5261a6e710371fbe745af1c0cbabd548ff57994febc6bd8acb451",
+  "lifecycle_summary_sha256": "3c646ac7a445177b28ec6bd1cb6c41b8cd6b48e89efee1984104391512deb25f",
+  "lifecycle_complete_sha256": "c008410dc5297388e842f0ab844cd551cdf9e0d7a96ed1957d8c79c052d02b9c",
+  "outer_job_timeout_seconds": 900,
+  "commands_prepared_only": true,
+  "source_changed": false,
+  "jobs": [
+    {
+      "mode": "forecast24",
+      "args_json": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\records\\forecast24_native_01_runner_args.json",
+      "args_sha256": "a7e2af4d75ab1112ef843392168e822873c73c6eea4d844721de9c2c4bdb64c2",
+      "worker_out": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\runs\\forecast24_native_01",
+      "host_out": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\runs\\host_forecast24_native_01",
+      "monitor_out": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\runs\\monitor_forecast24_native_01",
+      "technical_repeats": 3,
+      "maximum_unique_native_plans": 12
+    },
+    {
+      "mode": "wall",
+      "args_json": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\records\\wall50ms_native_01_runner_args.json",
+      "args_sha256": "1f1fe2360efe0134783ac4668971169dd9724c7e00e1a8fff2fb94497418002a",
+      "worker_out": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\runs\\wall50ms_native_01",
+      "host_out": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\runs\\host_wall50ms_native_01",
+      "monitor_out": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\runs\\monitor_wall50ms_native_01",
+      "technical_repeats": 3,
+      "maximum_unique_native_plans": 36
+    }
+  ]
+}

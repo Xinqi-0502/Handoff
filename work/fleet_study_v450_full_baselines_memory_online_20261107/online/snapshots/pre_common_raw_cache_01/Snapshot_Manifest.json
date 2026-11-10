@@ -1,0 +1,21 @@
+{
+  "sources": {
+    "check_online_v450.py": "052dd7c6aa603783d73fb1999d002dc166b14ae1d759d30a96aa4cbdfd9fd24b",
+    "Frozen_Online_Protocol.md": "928357a6a8fca2e35a7f1a3b5a1be691128459fae099673a5bb3acf93b8d4d66",
+    "job_host_online_v450.py": "1ddee530068976aff2eff4210da38d5f47142788efd76088e9a0548746447cbd",
+    "native_gate_v450.py": "8302fe152987e7f510d7652acfc3fc252c4cff9473b450f469dc657e4231857d",
+    "native_online_v450.py": "a884a0903f59a32b6b753049971bd6ddc0e76e95e4e56042138d2326e0881464",
+    "online_model_v450.py": "30f4fc0037a17c5cab646970c82d09aa4e8e0d72490f5920525e0d61d734051f",
+    "Online_Source_Manifest_01.json": "5930ef264085c965be76b72201b212cff700763224be85be027bda3d8c825c68",
+    "prepare_online_v450.py": "4b39f8e72c0a42523fff10ff92f0cb860d8fa5c1a6767ca4e1c97f4d7ec73460",
+    "profile_online_v450.py": "d90482d9396766e023283d16a90f39dcefeae612c79b08df4709c02b92d56199",
+    "published_online_v450.py": "2f66d981469d29f093493d1bd4df2a008a1275809d0f85aad3d4d86727eeae7a",
+    "run_online_v450.py": "d09d20f568931e6abf3f32199a88b4057ec399165308afd26bde147070ea074d"
+  },
+  "preserved_gates": [
+    "gates/micro_01",
+    "prefixes/pilot_01",
+    "gates/native_01"
+  ],
+  "reason": "Root approved ordinary common raw-bound caching before any online performance comparison"
+}

@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-07",
+  "scope": "targeted primary-source check, not systematic review",
+  "queries": [
+    "site.sumo.dlr.de calibration validation traffic simulation",
+    "SUMO traffic signal control synthetic traffic RESCO benchmark 2021 paper",
+    "\"Multi-Agent Deep Reinforcement Learning for Large-Scale Traffic Signal Control\" synthetic traffic SUMO pdf",
+    "\"Multi-intersection Traffic Optimisation\" synthetic SUMO paper pdf",
+    "\"Multi-intersection Traffic Optimisation\" \"10.1109\"",
+    "site:eclipse.dev/sumo/docs \"Validation\" \"validation\" FAQ",
+    "site:open-traffic.epfl.ch pNEUMA dataset download",
+    "site:fhwa.dot.gov NGSIM data Lankershim Peachtree trajectory"
+  ],
+  "primary_sources_archived_in": "Source_Retrieval_Manifest.json",
+  "direct_fetch_failures": [
+    {
+      "url": "https://www.eurecom.fr/publication/5813/download/comsys-publi-5813.pdf",
+      "error": "Web fetch timeout; author arXiv PDF obtained instead"
+    },
+    {
+      "url": "https://doi.org/10.1109/TITS.2019.2901791",
+      "error": "Web inaccessible; Crossref metadata obtained"
+    },
+    {
+      "url": "https://doi.org/10.1109/OJITS.2021.3126126",
+      "error": "Web inaccessible; Crossref metadata obtained; author-list discrepancy recorded"
+    },
+    {
+      "url": "https://github.com/eclipse-sumo/sumo/blob/main/tests/complex/tutorial/san_pablo_dam/",
+      "error": "Web robots denial; official raw files/API accessed normally"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.10491409",
+      "error": "Web redirected-access failure; no bulk pNEUMA dataset downloaded"
+    },
+    {
+      "url": "https://api.github.com/repos/eclipse-sumo/sumo/contents/tests/complex/tutorial/san_pablo_dam",
+      "error": "First local read under restricted execution denied socket access; authorized escalated read succeeded"
+    }
+  ],
+  "simulation_runs": 0,
+  "source_version_policy": "Formal RESCO PDF; author-version Chu experimental locators; Wang version-limited appendix because final metadata differs"
+}

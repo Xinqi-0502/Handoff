@@ -1,0 +1,35 @@
+--- v01_plot
++++ v02_plot
+@@ -147,7 +147,7 @@
+         ax.set_xticks(x, [str(r["m"])+"\nn = "+str(r["eligible_cases"])+"/64" for r in data])
+         ax.set_xlabel("Old orders, m", labelpad=8)
+         ax.set_title(title, fontsize=9, pad=12)
+-        ax.grid(axis="y", color="#E3E3E3", linewidth=.5, zorder=0)
++        ax.grid(False)
+         for px, py in zip(x, y):
+             ax.annotate(f"{py:.1f}", (px, py), xytext=(0, 5), textcoords="offset points",
+                         ha="center", va="bottom", fontsize=8)
+@@ -175,7 +175,7 @@
+     ax.set_xlim(-35, 11)
+     ax.set_xticks((-30, -20, -10, 0, 10))
+     ax.set_xlabel("Aggregate time change (%)")
+-    ax.grid(axis="x", color="#E3E3E3", linewidth=.5, zorder=0)
++    ax.grid(False)
+     for py, px in zip(y, changes):
+         offset = 5 if px>=0 else -5
+         ax.annotate(f"{px:+.2f}%", (px, py), xytext=(offset, 0), textcoords="offset points",
+--- v01_qa
++++ v02_qa
+@@ -25,9 +25,9 @@
+     command = [sys.executable, "-B", "-X", "utf8", str(script), *map(str, args)]
+     result = subprocess.run(command, cwd=ROOT, env=env, text=True, encoding="utf-8",
+                             capture_output=True, timeout=180)
+-    log.with_suffix(".stdout.txt").write_text(result.stdout, encoding="utf-8")
+-    log.with_suffix(".stderr.txt").write_text(result.stderr, encoding="utf-8")
+-    dump(log.with_suffix(".command.json"), {"argv":command, "returncode":result.returncode})
++    Path(str(log)+".stdout.txt").write_text(result.stdout, encoding="utf-8")
++    Path(str(log)+".stderr.txt").write_text(result.stderr, encoding="utf-8")
++    dump(Path(str(log)+".command.json"), {"argv":command, "returncode":result.returncode})
+     if result.returncode != 0:
+         raise RuntimeError("Retained failing QA step: "+str(log))
+     return result.stdout

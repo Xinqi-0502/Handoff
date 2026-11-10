@@ -1,0 +1,13 @@
+{
+  "previous_run": "figures/scale_main_01",
+  "previous_status": "FAIL: real bottom legend/xlabel collision",
+  "changes": [
+    "Axes bottom raised from .105 to .18 for a separate legend row",
+    "Legend placed between xlabels and caption",
+    "Use distinct solid gray for unavailable category; all counts unchanged, no hatch clipping artifact",
+    "Use current horizontal boxplot API"
+  ],
+  "next_run": "figures/scale_main_02",
+  "source_sha256": "4865826c5efaf50eb8bb82545c1434d8825141a894ae082f7b375c2529754b99",
+  "data_changes": false
+}

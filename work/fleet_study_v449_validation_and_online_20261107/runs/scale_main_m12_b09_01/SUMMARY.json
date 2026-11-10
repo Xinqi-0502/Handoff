@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "mode": "main",
+  "records": 216,
+  "hard_timeouts": 0,
+  "cases": 8,
+  "expected_attempts": 216,
+  "exact_oracles": 8,
+  "seconds": 94.48554709996097
+}

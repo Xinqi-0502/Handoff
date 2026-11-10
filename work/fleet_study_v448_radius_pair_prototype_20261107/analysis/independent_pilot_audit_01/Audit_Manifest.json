@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "source": "raw recomputation",
+  "input_sha256": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\records\\pilot_jobs_01.json": "bd20b991602fa45275149be8dfb6c20ceabfef1f52993c8b30b9ef67b2325988",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\instances\\pilot_01\\INPUTS.json": "b459e02e4173e07787b47e905de193842fc05e4f7c4738315de044a588b7afa1",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m6_01\\PROCESS_COMPLETE.json": "390bef23c37cce6fb81877c8a469ef7758a5b5d7dd42c557578f4e62bd7a93e0",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m6_01\\PROTOCOL.json": "8d7bf82c53ed562be1652aef41b325176605a96d971a8a5fef3a0131a6ab3eeb",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m6_01\\SUMMARY.json": "390bef23c37cce6fb81877c8a469ef7758a5b5d7dd42c557578f4e62bd7a93e0",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m6_01\\MEASUREMENTS.jsonl": "9e3f7a20c422fe892c92a1c9c24828376ea2c5e557f2612320e9d34f5f2da743",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m6_01\\ORACLES.jsonl": "7bfb60adebdffd382998eaca10c22601d9158d619e4dc98a4f4b76da311cbb53",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m6_01\\CASE_COMPLETE.jsonl": "8d69e89afb6cc5c260a384fd25837fc27868cd3acb9db46a023cc7eb33bb0c3e",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m8_01\\PROCESS_COMPLETE.json": "02669e2a316d7f0574a3e903a8f317c3487e25ca15b9cbe0c17cca8bc95877f7",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m8_01\\PROTOCOL.json": "a4b0132d42f32f26cee0f81c825a4dbf8263216788244f9296bfa2733c1135d9",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m8_01\\SUMMARY.json": "02669e2a316d7f0574a3e903a8f317c3487e25ca15b9cbe0c17cca8bc95877f7",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m8_01\\MEASUREMENTS.jsonl": "bd8ef77f122be541ac2a9b301ef6b206d63ca2a214ac66309385f8f587c736d0",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m8_01\\ORACLES.jsonl": "a35288da406b16315b9b74d2a71496e65ab1329dc8cf94821eb053c37b54a8f9",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m8_01\\CASE_COMPLETE.jsonl": "b1866607ca1b53eed534baf0796f0c3cdd69645a08435afcb0a5075b0b8c4de4",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m10_01\\PROCESS_COMPLETE.json": "9f3098ae7f65ab730ebe71d959a134892011345075d18aae58602eeb4bf8043b",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m10_01\\PROTOCOL.json": "1374fd5bec24da392a75a5105be648e0963e9849d49715871da729ee1c6cb2ff",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m10_01\\SUMMARY.json": "9f3098ae7f65ab730ebe71d959a134892011345075d18aae58602eeb4bf8043b",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m10_01\\MEASUREMENTS.jsonl": "a8ba5ad944f5e7d012e127f9dff109fc7d1e42172de35ae10f540c5fd5555052",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m10_01\\ORACLES.jsonl": "8620b33252339c449e4bb1ca9074edd451514d74fb5d8c1cc7719ac2045bcfe2",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m10_01\\CASE_COMPLETE.jsonl": "6c62109f15574b71896acc5447145fef15b43cdf809151e33c768271e5e7c1de",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m12_01\\PROCESS_COMPLETE.json": "494c1c4e1642f9354754cc5205e15778ddd34373b7323f959a4acce0e99da66b",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m12_01\\PROTOCOL.json": "976f592eade5d70b284b642ab09def2055d23190a40c13a04fc9667d827418ad",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m12_01\\SUMMARY.json": "494c1c4e1642f9354754cc5205e15778ddd34373b7323f959a4acce0e99da66b",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m12_01\\MEASUREMENTS.jsonl": "23e190134061d21def38c9844287c50bbc8d3054db98ee9a467534a1a89bdbd3",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m12_01\\ORACLES.jsonl": "d5eed13c920bfd112c0e72410da675c4357a163149de3b379d484a25c201f2ce",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m12_01\\CASE_COMPLETE.jsonl": "9917e32315f9f711756af989d11b0efd4b6c7b98416ad07b4412d575253c0fc1"
+  },
+  "scope": "V448 only; no solver or analysis module imports",
+  "outputs": {
+    "First_Optimal_Aggregates.csv": "84ff15d6b0b4004ec83869e0e41738e40f362b2d904a8dcca6c666de65cb2cff",
+    "First_Optimal_Tradeoff.csv": "8888479d207ae2336ae9d5dd9af81fbde0c21096c3f39f4b3ef1b42cbfe44ba0",
+    "Independent_Pilot_Audit.md": "afaacdbb0bdb7166968f9bb5cc58c242d75d3f2a218edb6fdd4b32cafc1fa3e1",
+    "Negative_Examples.csv": "ff8df4e846ef4165808bc16feb32c427a4b497763ed11e6235acb6233ff5a384",
+    "Raw_Recomputed_Coverage.csv": "d05f3fcf0d634fc63afc054cecc9d97d65219b5bc07459fdfd2afd99e72263c7",
+    "Raw_Recomputed_Pairs.csv": "0e08a3a6ed6c4c643baa480ab07d91c397e6289207a7b7d3683fb9e3482c7078",
+    "Raw_Recomputed_Per_Case.csv": "f16f52d89a347358c251dac17bb554c24186b083f010b4bd78da28d71a188311"
+  },
+  "initial_already_optimal_cases": 0,
+  "first_optimum_trace_recomputed": true,
+  "profile_summary_sha256": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\analysis\\profile_pilot_m12_01\\Profile_Summary.md": "2535a715a1c75e57107ad49b2487e199534b2d9f0020957e0ff469de8b0af260"
+  },
+  "profile_evidence_tier": "existing instrumented pilot summary/case table read; not independent raw reaggregation"
+}

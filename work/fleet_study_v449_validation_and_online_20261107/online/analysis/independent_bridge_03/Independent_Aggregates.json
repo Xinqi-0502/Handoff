@@ -1,0 +1,174 @@
+{
+  "forecast24": {
+    "rows": 36,
+    "native_plans": 8,
+    "case_count": 4,
+    "mother_count": 1,
+    "sum_one_deterministic_solve_per_case": {
+      "RADIUS": {
+        "sum_case_median_ms": 46.448599896393716,
+        "expanded": 128,
+        "forecasts": 20,
+        "actual_J_sum": 5494.6,
+        "forecast_J_sum": 4757.100000002667,
+        "pair_calls": 0,
+        "pair_stronger": 0,
+        "pair_only_pruned": 0
+      },
+      "PAIR": {
+        "sum_case_median_ms": 47.91169986128807,
+        "expanded": 128,
+        "forecasts": 20,
+        "actual_J_sum": 5494.6,
+        "forecast_J_sum": 4757.100000002667,
+        "pair_calls": 80,
+        "pair_stronger": 32,
+        "pair_only_pruned": 0
+      },
+      "OR_OPT": {
+        "sum_case_median_ms": 51.754600019194186,
+        "expanded": 0,
+        "forecasts": 96,
+        "actual_J_sum": 5524.8,
+        "forecast_J_sum": 5164.245000005333,
+        "pair_calls": 0,
+        "pair_stronger": 0,
+        "pair_only_pruned": 0
+      }
+    },
+    "pairs": [
+      {
+        "candidate": "PAIR",
+        "baseline": "RADIUS",
+        "cases": 4,
+        "time_sum_ratio": 1.0314993340629832,
+        "actual_J_sum_ratio": 1.0,
+        "forecast_J_WTL": [
+          0,
+          4,
+          0
+        ],
+        "actual_J_WTL": [
+          0,
+          4,
+          0
+        ],
+        "median_time_WTL": [
+          0,
+          0,
+          4
+        ]
+      },
+      {
+        "candidate": "PAIR",
+        "baseline": "OR_OPT",
+        "cases": 4,
+        "time_sum_ratio": 0.925747659986148,
+        "actual_J_sum_ratio": 0.9945337387778743,
+        "forecast_J_WTL": [
+          4,
+          0,
+          0
+        ],
+        "actual_J_WTL": [
+          2,
+          0,
+          2
+        ],
+        "median_time_WTL": [
+          4,
+          0,
+          0
+        ]
+      }
+    ],
+    "all_literal_results_available": true,
+    "max_elapsed_ms": 13.51820002309978
+  },
+  "wall50ms": {
+    "rows": 36,
+    "native_plans": 4,
+    "case_count": 4,
+    "mother_count": 1,
+    "sum_one_deterministic_solve_per_case": {
+      "RADIUS": {
+        "sum_case_median_ms": 44.08120003063232,
+        "expanded": 128,
+        "forecasts": 20,
+        "actual_J_sum": 5494.6,
+        "forecast_J_sum": 4757.100000002667,
+        "pair_calls": 0,
+        "pair_stronger": 0,
+        "pair_only_pruned": 0
+      },
+      "PAIR": {
+        "sum_case_median_ms": 45.49749998841435,
+        "expanded": 128,
+        "forecasts": 20,
+        "actual_J_sum": 5494.6,
+        "forecast_J_sum": 4757.100000002667,
+        "pair_calls": 80,
+        "pair_stronger": 32,
+        "pair_only_pruned": 0
+      },
+      "OR_OPT": {
+        "sum_case_median_ms": 120.30650000087917,
+        "expanded": 0,
+        "forecasts": 726,
+        "actual_J_sum": 5494.6,
+        "forecast_J_sum": 4757.100000002667,
+        "pair_calls": 0,
+        "pair_stronger": 0,
+        "pair_only_pruned": 0
+      }
+    },
+    "pairs": [
+      {
+        "candidate": "PAIR",
+        "baseline": "RADIUS",
+        "cases": 4,
+        "time_sum_ratio": 1.0321293421412718,
+        "actual_J_sum_ratio": 1.0,
+        "forecast_J_WTL": [
+          0,
+          4,
+          0
+        ],
+        "actual_J_WTL": [
+          0,
+          4,
+          0
+        ],
+        "median_time_WTL": [
+          0,
+          0,
+          4
+        ]
+      },
+      {
+        "candidate": "PAIR",
+        "baseline": "OR_OPT",
+        "cases": 4,
+        "time_sum_ratio": 0.3781798987426437,
+        "actual_J_sum_ratio": 1.0,
+        "forecast_J_WTL": [
+          0,
+          4,
+          0
+        ],
+        "actual_J_WTL": [
+          0,
+          4,
+          0
+        ],
+        "median_time_WTL": [
+          4,
+          0,
+          0
+        ]
+      }
+    ],
+    "all_literal_results_available": true,
+    "max_elapsed_ms": 31.12109994981438
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "SelectedConfiguration": "RADIUS_PAIR_AWA_GATED",
+  "IndependentMothers": 100,
+  "Scenarios": 400,
+  "ActualMemoryMeasured": false,
+  "RawArithmeticAudit": "PASS",
+  "Files": {
+    "literature\\Baseline_Identity_and_Contribution.md": "b488331a9bf6545c07271985d0b09958ae2fa40717efe487474fc2bf9b0fa5be",
+    "literature\\Simulation_Validity_Statement.md": "aa63737886a7a244869919b6dd69ae7e27ba0ba4461c7bde40513a72215308d6",
+    "online\\Online_Bridge_Results_01.md": "aa9adcbef924d16115445820c24ba3b51208680db662279d14b447a26e2f43f0",
+    "Research_Evidence_Summary.md": "8c4e95a5dc8b4e796bfcd1eae3462d88889694acd0e84fa2234630531fa386aa",
+    "figures\\scale_main_02\\Root_Visual_QA.json": "62a60bddf308b32a640308a5b07fa933408252c8d891dbfa19e83e8e35d614c5",
+    "analysis\\independent_scale_main_01\\PROCESS_COMPLETE.json": "3e9525cf6e9bc8f5f504b4ef2e3a8ad7ce264541cb077dfb26e7864ed6b64f1f",
+    "analysis\\scale_main_01\\PROCESS_COMPLETE.json": "50929716e585f9fbc41399c605783657a16a5aff986599a4ed405f99e0e8ebce",
+    "online\\Online_Deadline_Results_01.md": "ce0434bdc0ff5f37e9de9b8f321c7ce9233ffb12fec2fad18067f33487749dfd"
+  },
+  "Methods": 9,
+  "OnlineAudit": "PASS",
+  "Calls": 10800,
+  "FullPublishedFreightSystemReproduced": false,
+  "Status": "COMPLETED_EVIDENCE_ROUND",
+  "DeliveryNetworkCalibrated": false
+}

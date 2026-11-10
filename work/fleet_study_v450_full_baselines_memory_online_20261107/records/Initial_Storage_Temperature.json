@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-07T12:13:08.8611182Z",
+  "drive": "E",
+  "free_bytes": 753587855360,
+  "model": "Predator SSD GM6 1TB",
+  "sensors": [
+    {
+      "Index": 0,
+      "Celsius": 43
+    },
+    {
+      "Index": 1,
+      "Celsius": 43
+    },
+    {
+      "Index": 2,
+      "Celsius": 32
+    }
+  ],
+  "stop_at_celsius": 60
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "report": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\Online_Results_02.md",
+  "report_sha256": "e2ff654b4e80e2a847714ef637d2ad2d8f770d1217a4e5dfd1e76ca98cbf0d18",
+  "source_sha256": "e0a2c99e834213f7cdcc03ef012992ce5f3787b0053a20f46991d688f1971c6c",
+  "audit_summary_sha256": "318ed6ea6d45d46e3399e53b2d47871ea588874a6dbccbbb7b3e55827ee607bd",
+  "interpretation_summary_sha256": "80db49118f3faa8065cfa7852bff66f899d52b27ef7fb210c31161c1b5b908d4",
+  "additional_outputs": {
+    "Absolute_Outcome_Totals.csv": "e55160b8745935bda8f7f56bbd84420a1173e32404b9bf1c37c9f01ed4e6b830",
+    "Profile_Phases.csv": "da65c4e9d4ca7903e52a10fe08e42ebefa460b5697837f27091c97cd34bd99dc"
+  },
+  "no_new_experiments": true
+}

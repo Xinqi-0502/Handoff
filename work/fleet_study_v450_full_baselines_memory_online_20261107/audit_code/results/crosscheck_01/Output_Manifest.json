@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\crosscheck_01\\Crosscheck.json",
+      "sha256": "ba12dca00ae804b04c608cb2640d389ca8a093dbd44cee206531b53be3a36d93"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\crosscheck_01\\Mother_Consistency_Summary.csv",
+      "sha256": "4b32af799e34600a9778fbe8fe007ee433167a9affe61bcebe7d8f01b02a4ba8"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\crosscheck_01\\Mother_Paired_Deltas.csv",
+      "sha256": "66cc54d376ae8f2b801557cc3f28252bbe32c72fcb53c0cd4ff4d52cd023ffbf"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\crosscheck_01\\PROCESS_COMPLETE.json",
+      "sha256": "7c1f8ac39d2a23ac445d861b29a255a29096df7649cf5e2dcc37384e2badf5dd"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\crosscheck_01\\Results_Interpretation.md",
+      "sha256": "48fc8f05cb8e2cd29da469f23a17a88975981e4cccc14f71619d9701d1cdd361"
+    }
+  ],
+  "scope": "Completed-CSV crosscheck and descriptive interpretation; no new solver run",
+  "status": "PASS"
+}

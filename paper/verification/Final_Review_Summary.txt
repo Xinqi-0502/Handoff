@@ -1,0 +1,13 @@
+Final manuscript review
+
+The manuscript identifies one main contribution: a shared-time, identity-aware relaxation for two capacity-constrained handoffs, with deterministic bypasses that avoid unproductive checks.
+
+Algorithm 1 is 30 lines. Lines 8-22 show the additional rule. Event sorting follows the cheap bypasses. Common duplicate rejection precedes successor lower-bound evaluation. The algorithm uses the shared RADIUS/Pathmax queue priority and the PAIR rule only for rejection. The integer cutoff and FIFO assumptions are explicit.
+
+The current evidence supports lower local exact-search work and certification cost. On 255 common confirmation cases, completed expansions decrease by 54.74% and the sum of median proof times decreases by 27.17%. The 5% and 10% first-target times increase by 2.82% and 4.07%. No executed customer-service or truck-waiting benefit is claimed for the 64-condition SUMO test. No algorithm-specific memory reduction is established.
+
+Twelve plotted points were recalculated from frozen result tables. Eleven archived source hashes were checked. Three numerical tables and seven numbered equations are unchanged. The two retained figure files are unchanged. No new experiment was run and no raw data were edited.
+
+The combined manuscript has 11 pages: 6 main-text pages, 4 appendix pages and 1 reference page. All pages were visually inspected. Both figures and all three tables retain their captions on the same page. References follow Appendix D. The Faculty of Transportation acknowledgment is retained.
+
+Scope: fixed receiver, transfer site and two-load order for the local search; 6, 8, 10 and 12 old orders; synthetic network experiments. This review does not certify universal novelty or field-calibrated traffic performance.

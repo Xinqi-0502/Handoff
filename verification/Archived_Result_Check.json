@@ -1,0 +1,372 @@
+{
+  "status": "PASS",
+  "scope": "Recomputed from archived traces, result events and native memory counters. No new solve or simulation.",
+  "selection": {
+    "source": "V449 runs/scale_main_m*/MEASUREMENTS.jsonl",
+    "cases": 400,
+    "independent_networks": 100,
+    "technical_calls": 10800,
+    "appendix_table_B1": {
+      "RADIUS_PAIR_EAGER / RADIUS": {
+        "common_cases": 400,
+        "candidate_expanded": 113560,
+        "baseline_expanded": 256484,
+        "expanded_change_percent": -55.72433368163316,
+        "candidate_proof_seconds": 27.227316599455662,
+        "baseline_proof_seconds": 24.188013798790053,
+        "proof_time_change_percent": 12.565326057560133,
+        "candidate_faster": 44,
+        "ties": 0,
+        "candidate_slower": 356
+      },
+      "RADIUS_PAIR_LAZY / RADIUS": {
+        "common_cases": 400,
+        "candidate_expanded": 113560,
+        "baseline_expanded": 256484,
+        "expanded_change_percent": -55.72433368163316,
+        "candidate_proof_seconds": 21.378291200031526,
+        "baseline_proof_seconds": 24.188013798790053,
+        "proof_time_change_percent": -11.616177426271667,
+        "candidate_faster": 275,
+        "ties": 0,
+        "candidate_slower": 125
+      },
+      "RADIUS_PAIR_AWA / RADIUS_AWA": {
+        "common_cases": 400,
+        "candidate_expanded": 111442,
+        "baseline_expanded": 258496,
+        "expanded_change_percent": -56.88830774944294,
+        "candidate_proof_seconds": 22.74595969868824,
+        "baseline_proof_seconds": 23.307406899053603,
+        "proof_time_change_percent": -2.4088788718412135,
+        "candidate_faster": 164,
+        "ties": 0,
+        "candidate_slower": 236
+      },
+      "RADIUS_PAIR_AWA_GATED / RADIUS_AWA": {
+        "common_cases": 400,
+        "candidate_expanded": 118799,
+        "baseline_expanded": 258496,
+        "expanded_change_percent": -54.04222889329042,
+        "candidate_proof_seconds": 18.26048839907162,
+        "baseline_proof_seconds": 23.307406899053603,
+        "proof_time_change_percent": -21.65371086470762,
+        "candidate_faster": 361,
+        "ties": 0,
+        "candidate_slower": 39
+      },
+      "RADIUS_PAIR_AWA_GATED / RADIUS_PAIR_AWA": {
+        "common_cases": 400,
+        "candidate_expanded": 118799,
+        "baseline_expanded": 111442,
+        "expanded_change_percent": 6.601640315141499,
+        "candidate_proof_seconds": 18.26048839907162,
+        "baseline_proof_seconds": 22.74595969868824,
+        "proof_time_change_percent": -19.719859522459704,
+        "candidate_faster": 372,
+        "ties": 0,
+        "candidate_slower": 28
+      },
+      "RADIUS_PAIR_AWA_GATED / NO_BOUND": {
+        "common_cases": 400,
+        "candidate_expanded": 118799,
+        "baseline_expanded": 2878192,
+        "expanded_change_percent": -95.87244353399635,
+        "candidate_proof_seconds": 18.26048839907162,
+        "baseline_proof_seconds": 61.90527979948092,
+        "proof_time_change_percent": -70.50253474627743,
+        "candidate_faster": 386,
+        "ties": 0,
+        "candidate_slower": 14
+      },
+      "RADIUS_PAIR_AWA_GATED / ROUTE": {
+        "common_cases": 284,
+        "candidate_expanded": 25984,
+        "baseline_expanded": 25950,
+        "expanded_change_percent": 0.13102119460501882,
+        "candidate_proof_seconds": 4.061939099454321,
+        "baseline_proof_seconds": 58.15011400077492,
+        "proof_time_change_percent": -93.01473579329493,
+        "candidate_faster": 284,
+        "ties": 0,
+        "candidate_slower": 0
+      }
+    }
+  },
+  "confirmation": {
+    "source": "V450 static_comparison/runs/main_01/{INPUTS,ORACLES,MEASUREMENTS}",
+    "cases": 256,
+    "independent_networks": 64,
+    "formal_calls": 3072,
+    "pair_vs_awa": {
+      "common_cases": 255,
+      "candidate_expanded": 77362,
+      "baseline_expanded": 170932,
+      "expanded_change_percent": -54.74106662298458,
+      "candidate_proof_seconds": 16.888535799109377,
+      "baseline_proof_seconds": 23.188373599783517,
+      "proof_time_change_percent": -27.16808823855139,
+      "candidate_faster": 233,
+      "ties": 0,
+      "candidate_slower": 22
+    },
+    "pair_vs_ana": {
+      "common_cases": 255,
+      "candidate_expanded": 77362,
+      "baseline_expanded": 159966,
+      "expanded_change_percent": -51.638473175549805,
+      "candidate_proof_seconds": 16.888535799109377,
+      "baseline_proof_seconds": 22.053007999551482,
+      "proof_time_change_percent": -23.418447952982834,
+      "candidate_faster": 214,
+      "ties": 0,
+      "candidate_slower": 41
+    },
+    "pair_vs_specialized_pair": {
+      "common_cases": 256,
+      "candidate_expanded": 82923,
+      "baseline_expanded": 82923,
+      "expanded_change_percent": 0.0,
+      "candidate_proof_seconds": 17.68296909914352,
+      "baseline_proof_seconds": 14.96303990110755,
+      "proof_time_change_percent": 18.177651172571174,
+      "candidate_faster": 32,
+      "ties": 0,
+      "candidate_slower": 224
+    },
+    "figure_1_by_old_orders": {
+      "6": {
+        "common_cases": 64,
+        "candidate_expanded": 1577,
+        "baseline_expanded": 2857,
+        "expanded_change_percent": -44.8022401120056,
+        "candidate_proof_seconds": 0.20635179989039898,
+        "baseline_proof_seconds": 0.23513130005449057,
+        "proof_time_change_percent": -12.239757172874077,
+        "candidate_faster": 49,
+        "ties": 0,
+        "candidate_slower": 15
+      },
+      "8": {
+        "common_cases": 64,
+        "candidate_expanded": 4019,
+        "baseline_expanded": 8125,
+        "expanded_change_percent": -50.535384615384615,
+        "candidate_proof_seconds": 0.7923266988946125,
+        "baseline_proof_seconds": 1.0164615998510271,
+        "proof_time_change_percent": -22.050503530016663,
+        "candidate_faster": 60,
+        "ties": 0,
+        "candidate_slower": 4
+      },
+      "10": {
+        "common_cases": 64,
+        "candidate_expanded": 15771,
+        "baseline_expanded": 35079,
+        "expanded_change_percent": -55.0414778072351,
+        "candidate_proof_seconds": 3.642900599865243,
+        "baseline_proof_seconds": 4.869705799850635,
+        "proof_time_change_percent": -25.19259377071652,
+        "candidate_faster": 61,
+        "ties": 0,
+        "candidate_slower": 3
+      },
+      "12": {
+        "common_cases": 63,
+        "candidate_expanded": 55995,
+        "baseline_expanded": 124871,
+        "expanded_change_percent": -55.15772276989854,
+        "candidate_proof_seconds": 12.246956700459123,
+        "baseline_proof_seconds": 17.067074900027364,
+        "proof_time_change_percent": -28.24220452422409,
+        "candidate_faster": 63,
+        "ties": 0,
+        "candidate_slower": 0
+      }
+    },
+    "figure_2_first_target": {
+      "0": {
+        "sum_case_median_seconds": {
+          "HZ_AWA_RADIUS": 11.279697699705139,
+          "HZ_AWA_RADIUS_PAIR_GATED": 10.381433999864385,
+          "ANA_RADIUS": 16.582720700651407,
+          "RADIUS_PAIR_AWA_GATED": 9.098293400020339
+        },
+        "pair_change_percent": -7.963544092713015
+      },
+      "0.05": {
+        "sum_case_median_seconds": {
+          "HZ_AWA_RADIUS": 6.817544000106864,
+          "HZ_AWA_RADIUS_PAIR_GATED": 7.009566199965775,
+          "ANA_RADIUS": 9.877043499145657,
+          "RADIUS_PAIR_AWA_GATED": 6.188469599583186
+        },
+        "pair_change_percent": 2.8165890804064064
+      },
+      "0.1": {
+        "sum_case_median_seconds": {
+          "HZ_AWA_RADIUS": 5.965646199416369,
+          "HZ_AWA_RADIUS_PAIR_GATED": 6.208490501041524,
+          "ANA_RADIUS": 6.2250819995533675,
+          "RADIUS_PAIR_AWA_GATED": 5.487978399498388
+        },
+        "pair_change_percent": 4.07071243428605
+      }
+    },
+    "appendix_table_B2": {
+      "HZ_AWA_RADIUS": {
+        "all_repeats_optimal_at_ms": {
+          "100": 223,
+          "500": 255,
+          "1000": 256
+        },
+        "all_repeats_certified_within_one_second": 255
+      },
+      "HZ_AWA_RADIUS_PAIR_GATED": {
+        "all_repeats_optimal_at_ms": {
+          "100": 227,
+          "500": 256,
+          "1000": 256
+        },
+        "all_repeats_certified_within_one_second": 256
+      },
+      "ANA_RADIUS": {
+        "all_repeats_optimal_at_ms": {
+          "100": 207,
+          "500": 251,
+          "1000": 256
+        },
+        "all_repeats_certified_within_one_second": 255
+      },
+      "RADIUS_PAIR_AWA_GATED": {
+        "all_repeats_optimal_at_ms": {
+          "100": 232,
+          "500": 256,
+          "1000": 256
+        },
+        "all_repeats_certified_within_one_second": 256
+      }
+    },
+    "complete_networks_faster": 60,
+    "complete_networks_compared": 63,
+    "100_ms_case_median_pair_lower_equal_higher": [
+      6,
+      249,
+      1
+    ]
+  },
+  "memory": {
+    "source": "V450 memory/runs/main_[00-31]_01/MEMORY.jsonl",
+    "fresh_process_observations": 128,
+    "appendix_table_B3": {
+      "RADIUS_PAIR_AWA_GATED": {
+        "observations": 32,
+        "peak_working_set_median_KiB": 27042.0,
+        "peak_commit_median_KiB": 19048.0,
+        "peak_working_set_did_not_exceed_startup": 32
+      },
+      "HZ_AWA_RADIUS": {
+        "observations": 32,
+        "peak_working_set_median_KiB": 27236.0,
+        "peak_commit_median_KiB": 19296.0,
+        "peak_working_set_did_not_exceed_startup": 28
+      },
+      "HZ_AWA_RADIUS_PAIR_GATED": {
+        "observations": 32,
+        "peak_working_set_median_KiB": 27114.0,
+        "peak_commit_median_KiB": 19126.0,
+        "peak_working_set_did_not_exceed_startup": 30
+      },
+      "ANA_RADIUS": {
+        "observations": 32,
+        "peak_working_set_median_KiB": 27128.0,
+        "peak_commit_median_KiB": 19128.0,
+        "peak_working_set_did_not_exceed_startup": 28
+      }
+    }
+  },
+  "online": {
+    "source": "V450 online/runs/full_02/{RESULTS.jsonl,PHYSICAL.json,native_*/RESULT.json}",
+    "cases": 64,
+    "policy_calls": 1728,
+    "native_replays": 128,
+    "budget_ms": {
+      "10": {
+        "cases_with_identical_executed_signatures_and_ticks": 64,
+        "common_all_repeat_proofs": 0,
+        "all_repeat_proof_counts": {
+          "HZ_AWA_RADIUS": 0,
+          "HZ_AWA_RADIUS_PAIR_GATED": 0
+        },
+        "case_median_expansion_totals": {
+          "HZ_AWA_RADIUS": 0,
+          "HZ_AWA_RADIUS_PAIR_GATED": 0
+        },
+        "initialization_overrun_calls": {
+          "HZ_AWA_RADIUS": 191,
+          "HZ_AWA_RADIUS_PAIR_GATED": 192
+        },
+        "mean_customer_flow_seconds": {
+          "HZ_AWA_RADIUS": 2752.996875,
+          "HZ_AWA_RADIUS_PAIR_GATED": 2752.996875
+        },
+        "mean_truck_wait_seconds": {
+          "HZ_AWA_RADIUS": 254.04062499999995,
+          "HZ_AWA_RADIUS_PAIR_GATED": 254.04062499999995
+        }
+      },
+      "50": {
+        "cases_with_identical_executed_signatures_and_ticks": 64,
+        "common_all_repeat_proofs": 63,
+        "all_repeat_proof_counts": {
+          "HZ_AWA_RADIUS": 63,
+          "HZ_AWA_RADIUS_PAIR_GATED": 64
+        },
+        "case_median_expansion_totals": {
+          "HZ_AWA_RADIUS": 6304,
+          "HZ_AWA_RADIUS_PAIR_GATED": 6134
+        },
+        "initialization_overrun_calls": {
+          "HZ_AWA_RADIUS": 0,
+          "HZ_AWA_RADIUS_PAIR_GATED": 0
+        },
+        "mean_customer_flow_seconds": {
+          "HZ_AWA_RADIUS": 2416.040624999997,
+          "HZ_AWA_RADIUS_PAIR_GATED": 2416.040624999997
+        },
+        "mean_truck_wait_seconds": {
+          "HZ_AWA_RADIUS": 264.08749999999986,
+          "HZ_AWA_RADIUS_PAIR_GATED": 264.08749999999986
+        },
+        "expansion_change_percent": -2.6967005076142136,
+        "proof_time_change_percent": 5.569616106682229
+      },
+      "200": {
+        "cases_with_identical_executed_signatures_and_ticks": 64,
+        "common_all_repeat_proofs": 64,
+        "all_repeat_proof_counts": {
+          "HZ_AWA_RADIUS": 64,
+          "HZ_AWA_RADIUS_PAIR_GATED": 64
+        },
+        "case_median_expansion_totals": {
+          "HZ_AWA_RADIUS": 6304,
+          "HZ_AWA_RADIUS_PAIR_GATED": 6134
+        },
+        "initialization_overrun_calls": {
+          "HZ_AWA_RADIUS": 0,
+          "HZ_AWA_RADIUS_PAIR_GATED": 0
+        },
+        "mean_customer_flow_seconds": {
+          "HZ_AWA_RADIUS": 2416.040624999997,
+          "HZ_AWA_RADIUS_PAIR_GATED": 2416.040624999997
+        },
+        "mean_truck_wait_seconds": {
+          "HZ_AWA_RADIUS": 264.08749999999986,
+          "HZ_AWA_RADIUS_PAIR_GATED": 264.08749999999986
+        },
+        "expansion_change_percent": -2.6967005076142136,
+        "proof_time_change_percent": 2.8713524331005713
+      }
+    }
+  }
+}

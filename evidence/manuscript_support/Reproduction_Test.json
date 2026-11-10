@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "test_type": "Three-figure lightweight rendering only",
+  "pixel_identical_figures": 3,
+  "comparisons": {
+    "fig01_search_work_and_proof_time": {
+      "pixel_identical": true,
+      "dimensions": [
+        1889,
+        649
+      ],
+      "original_sha256": "7c42ac29d05977a7bb0c61daec89aea0e6156fbe8bc6f9778eff0d55d183cdd6",
+      "redrawn_sha256": "7c42ac29d05977a7bb0c61daec89aea0e6156fbe8bc6f9778eff0d55d183cdd6",
+      "file_byte_identical": true
+    },
+    "fig02_anytime_timing_tradeoff": {
+      "pixel_identical": true,
+      "dimensions": [
+        1889,
+        531
+      ],
+      "original_sha256": "08347e36b06dd5c01ec568ff5ab7fe7af03120212d8039dd5b74bfbe512e4832",
+      "redrawn_sha256": "08347e36b06dd5c01ec568ff5ab7fe7af03120212d8039dd5b74bfbe512e4832",
+      "file_byte_identical": true
+    },
+    "figS01_native_outcome_limits": {
+      "pixel_identical": true,
+      "dimensions": [
+        1889,
+        590
+      ],
+      "original_sha256": "25382ba41b069f9a872a32004ec1423b143cad707fe1e7f934ef44ed42597d23",
+      "redrawn_sha256": "25382ba41b069f9a872a32004ec1423b143cad707fe1e7f934ef44ed42597d23",
+      "file_byte_identical": true
+    }
+  },
+  "python_version": "3.12.14",
+  "matplotlib_version": "3.11.2",
+  "font_family": "Times New Roman",
+  "font_file_name": "times.ttf",
+  "solver_runs": 0,
+  "simulator_runs": 0,
+  "note": "Pixel identity applies to this recorded runtime/font. Vector metadata and other runtimes may differ."
+}

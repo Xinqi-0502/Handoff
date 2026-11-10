@@ -1,0 +1,866 @@
+{
+  "status": "PASS_OPERATIONAL_ACCOUNTING_ONLY",
+  "independent_mothers": 4,
+  "related_scenarios": 16,
+  "technical_repeats": 1,
+  "calls": 144,
+  "hard_timeouts": 0,
+  "exact_oracles": 16,
+  "elapsed_blocks_seconds": 20.182961499900557,
+  "blocks": [
+    {
+      "m": 6,
+      "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m6_01",
+      "status": "PASS",
+      "mode": "cost",
+      "records": 36,
+      "hard_timeouts": 0,
+      "cases": 4,
+      "expected_attempts": 36,
+      "exact_oracles": 4,
+      "seconds": 0.5272190999239683
+    },
+    {
+      "m": 8,
+      "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m8_01",
+      "status": "PASS",
+      "mode": "cost",
+      "records": 36,
+      "hard_timeouts": 0,
+      "cases": 4,
+      "expected_attempts": 36,
+      "exact_oracles": 4,
+      "seconds": 0.9210437999572605
+    },
+    {
+      "m": 10,
+      "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m10_01",
+      "status": "PASS",
+      "mode": "cost",
+      "records": 36,
+      "hard_timeouts": 0,
+      "cases": 4,
+      "expected_attempts": 36,
+      "exact_oracles": 4,
+      "seconds": 6.711643300019205
+    },
+    {
+      "m": 12,
+      "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m12_01",
+      "status": "PASS",
+      "mode": "cost",
+      "records": 36,
+      "hard_timeouts": 0,
+      "cases": 4,
+      "expected_attempts": 36,
+      "exact_oracles": 4,
+      "seconds": 12.023055300000124
+    }
+  ],
+  "statistics": [
+    {
+      "group": "ALL",
+      "method": "DP_ADAPTER",
+      "planned": 16,
+      "ok": 16,
+      "hard": 0,
+      "elapsed_sum_seconds": 2.156507499748841,
+      "elapsed_median_seconds": 0.045808350027073175,
+      "elapsed_max_seconds": 0.5706934999907389,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": "ALL",
+      "method": "NO_BOUND",
+      "planned": 16,
+      "ok": 16,
+      "hard": 0,
+      "elapsed_sum_seconds": 2.159776300075464,
+      "elapsed_median_seconds": 0.05939020001096651,
+      "elapsed_max_seconds": 0.557070399983786,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": "ALL",
+      "method": "RADIUS",
+      "planned": 16,
+      "ok": 16,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.748770099831745,
+      "elapsed_median_seconds": 0.01992814993718639,
+      "elapsed_max_seconds": 0.18610659998375922,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": "ALL",
+      "method": "RADIUS_AWA",
+      "planned": 16,
+      "ok": 16,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.7017729999497533,
+      "elapsed_median_seconds": 0.020750949974171817,
+      "elapsed_max_seconds": 0.14411009999457747,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": "ALL",
+      "method": "RADIUS_PAIR_AWA",
+      "planned": 16,
+      "ok": 16,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.6691264000255615,
+      "elapsed_median_seconds": 0.020377599983476102,
+      "elapsed_max_seconds": 0.14571169996634126,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": "ALL",
+      "method": "RADIUS_PAIR_AWA_GATED",
+      "planned": 16,
+      "ok": 16,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.5505320001393557,
+      "elapsed_median_seconds": 0.014658100029919297,
+      "elapsed_max_seconds": 0.12407959997653961,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": "ALL",
+      "method": "RADIUS_PAIR_EAGER",
+      "planned": 16,
+      "ok": 16,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.8658491001697257,
+      "elapsed_median_seconds": 0.019671100017149,
+      "elapsed_max_seconds": 0.22956840007100254,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": "ALL",
+      "method": "RADIUS_PAIR_LAZY",
+      "planned": 16,
+      "ok": 16,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.6717228998895735,
+      "elapsed_median_seconds": 0.01573695003753528,
+      "elapsed_max_seconds": 0.17430059995967895,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": "ALL",
+      "method": "ROUTE",
+      "planned": 16,
+      "ok": 16,
+      "hard": 0,
+      "elapsed_sum_seconds": 7.948927500168793,
+      "elapsed_median_seconds": 0.3901368999504484,
+      "elapsed_max_seconds": 1.1681036000372842,
+      "max_overrun_seconds": 0.1681036000372842,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 6,
+      "method": "DP_ADAPTER",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.014265099773183465,
+      "elapsed_median_seconds": 0.0035586999729275703,
+      "elapsed_max_seconds": 0.004574199905619025,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 6,
+      "method": "NO_BOUND",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.013032299932092428,
+      "elapsed_median_seconds": 0.003225149994250387,
+      "elapsed_max_seconds": 0.00341220002155751,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 6,
+      "method": "RADIUS",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.008289899909868836,
+      "elapsed_median_seconds": 0.002030049974564463,
+      "elapsed_max_seconds": 0.002445799997076392,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 6,
+      "method": "RADIUS_AWA",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.007920699892565608,
+      "elapsed_median_seconds": 0.0019543999806046486,
+      "elapsed_max_seconds": 0.0023317999439314008,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 6,
+      "method": "RADIUS_PAIR_AWA",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.010984100168570876,
+      "elapsed_median_seconds": 0.002762800024356693,
+      "elapsed_max_seconds": 0.0032776000443845987,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 6,
+      "method": "RADIUS_PAIR_AWA_GATED",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.007600500015541911,
+      "elapsed_median_seconds": 0.00197199999820441,
+      "elapsed_max_seconds": 0.002249400014989078,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 6,
+      "method": "RADIUS_PAIR_EAGER",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.011345900013111532,
+      "elapsed_median_seconds": 0.0028080499614588916,
+      "elapsed_max_seconds": 0.003204400069080293,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 6,
+      "method": "RADIUS_PAIR_LAZY",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.00843179994262755,
+      "elapsed_median_seconds": 0.0020725499489344656,
+      "elapsed_max_seconds": 0.0024302999954670668,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 6,
+      "method": "ROUTE",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.03273960016667843,
+      "elapsed_median_seconds": 0.008351000025868416,
+      "elapsed_max_seconds": 0.008523600059561431,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 8,
+      "method": "DP_ADAPTER",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.0793639998883009,
+      "elapsed_median_seconds": 0.018564549973234534,
+      "elapsed_max_seconds": 0.026783499983139336,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 8,
+      "method": "NO_BOUND",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.0942437999183312,
+      "elapsed_median_seconds": 0.023495499975979328,
+      "elapsed_max_seconds": 0.02626589999999851,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 8,
+      "method": "RADIUS",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.013867099885828793,
+      "elapsed_median_seconds": 0.0033214999712072313,
+      "elapsed_max_seconds": 0.004866099916398525,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 8,
+      "method": "RADIUS_AWA",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.02148909994866699,
+      "elapsed_median_seconds": 0.005412600003182888,
+      "elapsed_max_seconds": 0.008111899951472878,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 8,
+      "method": "RADIUS_PAIR_AWA",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.021872299956157804,
+      "elapsed_median_seconds": 0.005493249977007508,
+      "elapsed_max_seconds": 0.0078093999763950706,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 8,
+      "method": "RADIUS_PAIR_AWA_GATED",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.019880600040778518,
+      "elapsed_median_seconds": 0.004911250027362257,
+      "elapsed_max_seconds": 0.007989200064912438,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 8,
+      "method": "RADIUS_PAIR_EAGER",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.01948269992135465,
+      "elapsed_median_seconds": 0.00502119999146089,
+      "elapsed_max_seconds": 0.00578120001591742,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 8,
+      "method": "RADIUS_PAIR_LAZY",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.013715000008232892,
+      "elapsed_median_seconds": 0.003277549985796213,
+      "elapsed_max_seconds": 0.004684100043959916,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 8,
+      "method": "ROUTE",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.17586699989624321,
+      "elapsed_median_seconds": 0.04323204996762797,
+      "elapsed_max_seconds": 0.05401490000076592,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 10,
+      "method": "DP_ADAPTER",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.35039820009842515,
+      "elapsed_median_seconds": 0.08674210001481697,
+      "elapsed_max_seconds": 0.1120807999977842,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 10,
+      "method": "NO_BOUND",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.4544015001738444,
+      "elapsed_median_seconds": 0.1138970500905998,
+      "elapsed_max_seconds": 0.13409289997071028,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 10,
+      "method": "RADIUS",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.2937716000014916,
+      "elapsed_median_seconds": 0.06980719999410212,
+      "elapsed_max_seconds": 0.11916700005531311,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 10,
+      "method": "RADIUS_AWA",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.2870454000076279,
+      "elapsed_median_seconds": 0.06986689998302609,
+      "elapsed_max_seconds": 0.11392160004470497,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 10,
+      "method": "RADIUS_PAIR_AWA",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.28146560001187027,
+      "elapsed_median_seconds": 0.06889540003612638,
+      "elapsed_max_seconds": 0.11072899994906038,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 10,
+      "method": "RADIUS_PAIR_AWA_GATED",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.21571450016926974,
+      "elapsed_median_seconds": 0.05258780007716268,
+      "elapsed_max_seconds": 0.08921190002001822,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 10,
+      "method": "RADIUS_PAIR_EAGER",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.32452910009305924,
+      "elapsed_median_seconds": 0.07627990003675222,
+      "elapsed_max_seconds": 0.1384083000011742,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 10,
+      "method": "RADIUS_PAIR_LAZY",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.264028099947609,
+      "elapsed_median_seconds": 0.061144899984356016,
+      "elapsed_max_seconds": 0.11494849994778633,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 10,
+      "method": "ROUTE",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 3.4719110000878572,
+      "elapsed_median_seconds": 0.8706636000424623,
+      "elapsed_max_seconds": 1.0043249001028016,
+      "max_overrun_seconds": 0.004324900102801621,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 12,
+      "method": "DP_ADAPTER",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 1.7124801999889314,
+      "elapsed_median_seconds": 0.43222675001015887,
+      "elapsed_max_seconds": 0.5706934999907389,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 12,
+      "method": "NO_BOUND",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 1.598098700051196,
+      "elapsed_median_seconds": 0.39932955004042014,
+      "elapsed_max_seconds": 0.557070399983786,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 12,
+      "method": "RADIUS",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.4328415000345558,
+      "elapsed_median_seconds": 0.09867490001488477,
+      "elapsed_max_seconds": 0.18610659998375922,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 12,
+      "method": "RADIUS_AWA",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.3853178001008928,
+      "elapsed_median_seconds": 0.09864160005236045,
+      "elapsed_max_seconds": 0.14411009999457747,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 12,
+      "method": "RADIUS_PAIR_AWA",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.3548043998889625,
+      "elapsed_median_seconds": 0.08446819998789579,
+      "elapsed_max_seconds": 0.14571169996634126,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 12,
+      "method": "RADIUS_PAIR_AWA_GATED",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.3073363999137655,
+      "elapsed_median_seconds": 0.07407894998323172,
+      "elapsed_max_seconds": 0.12407959997653961,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 12,
+      "method": "RADIUS_PAIR_EAGER",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.5104914001422003,
+      "elapsed_median_seconds": 0.1153108500293456,
+      "elapsed_max_seconds": 0.22956840007100254,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 12,
+      "method": "RADIUS_PAIR_LAZY",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 0.385547999991104,
+      "elapsed_median_seconds": 0.0869523499859497,
+      "elapsed_max_seconds": 0.17430059995967895,
+      "max_overrun_seconds": 0,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    },
+    {
+      "group": 12,
+      "method": "ROUTE",
+      "planned": 4,
+      "ok": 4,
+      "hard": 0,
+      "elapsed_sum_seconds": 4.268409900018014,
+      "elapsed_median_seconds": 1.0375860999920405,
+      "elapsed_max_seconds": 1.1681036000372842,
+      "max_overrun_seconds": 0.1681036000372842,
+      "initial_overruns": 0,
+      "missing_quality": {
+        "100": 0,
+        "500": 0,
+        "1000": 0
+      }
+    }
+  ],
+  "source_sha256": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m6_01\\ATTEMPTS.jsonl": "2eb56c8dcf13b7abc4af8fcbbf5fd30981c6df82b52d4baf1189fbecb8d4ca9b",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m6_01\\CASE_COMPLETE.jsonl": "bde366a94d940db2cd2f66890be77f13d20c07d3aecd01f82686f57fc57cae31",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m6_01\\INPUTS.json": "d18cc709aad847a0fee570c06b0c4d4f5e94175e6e54329dece83f8462bc993f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m6_01\\MEASUREMENTS.jsonl": "16674b3e64431bfa960fc0ce935bb78d5c3d1ee9a581bb1bd29d28fefa447c1d",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m6_01\\ORACLES.jsonl": "d6a9492e1c993466d0d2faa31d4bb5e3031647ac11ca467c8b18c3e3602fabc3",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m6_01\\PROCESS_COMPLETE.json": "7111f4c7dcd48ed09881be7812981d3e7fd41cee18f719f159c982fdb4339f00",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m6_01\\PROTOCOL.json": "16000ab2630c39b4abb2621650a31ea3c71f25fb088e78f3c2ec1e1af84b85ea",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m6_01\\SUMMARY.json": "7111f4c7dcd48ed09881be7812981d3e7fd41cee18f719f159c982fdb4339f00",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m8_01\\ATTEMPTS.jsonl": "bd4b0fd100102d7508b78f3d78acf621c62849fec143a723318d3bec3988d69f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m8_01\\CASE_COMPLETE.jsonl": "0e7208a8bb57d439e3e822bc1526b8513869ef9f24d469730545d5d35721b50a",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m8_01\\INPUTS.json": "a834c863ced6360926d9695bea706b44d1a94c99bba320bfa03724288a310e65",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m8_01\\MEASUREMENTS.jsonl": "eb8d518649bb39294bd4557e07072b2c142f504d07c422dc47361b0b631e850c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m8_01\\ORACLES.jsonl": "abded8bed5ed32b84cfcad597acbeadd09e083a2d3073394ddde380363777785",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m8_01\\PROCESS_COMPLETE.json": "3280e1839ad33b9bfeb98dc2f819d0a65a396f6bf8bd6a34324ede4ddcdb4d55",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m8_01\\PROTOCOL.json": "08a61bb59238ac06b1592037b5ef9224e69d57ac4e372fe1d7b06b25088c5c8d",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m8_01\\SUMMARY.json": "3280e1839ad33b9bfeb98dc2f819d0a65a396f6bf8bd6a34324ede4ddcdb4d55",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m10_01\\ATTEMPTS.jsonl": "0d550783d255aab19bd4f3d1c726da415c975aed58b20ec2122fa2021c68f846",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m10_01\\CASE_COMPLETE.jsonl": "2058751a9792258110255d17f339eb0a9823c28264d0d2a9d704504a172cf632",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m10_01\\INPUTS.json": "a22309bc4b878931b81606c5d9867128a4bcdb50c092434a5753d2721d652440",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m10_01\\MEASUREMENTS.jsonl": "7cd53f69582fab0b576cdf8d7a51394ff2dbb12bc23f6e384ef76c375da40320",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m10_01\\ORACLES.jsonl": "b2b12a7b6a64afa24bfe0c7858f1cc21cd240a2ae63230495066ce4c908f10bb",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m10_01\\PROCESS_COMPLETE.json": "0ef61b854dcbb29e96f4397df3db747fe949ef20ad0cc63397c563170a6c335a",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m10_01\\PROTOCOL.json": "6e6ad550e2768deed54d7d02a925ded141bb76cba3234ee6c4195725f5c74e9f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m10_01\\SUMMARY.json": "0ef61b854dcbb29e96f4397df3db747fe949ef20ad0cc63397c563170a6c335a",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m12_01\\ATTEMPTS.jsonl": "1b93dc13268895cb39ae19c4b9e54fdea55c934e1124942e7f0982315ab028f6",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m12_01\\CASE_COMPLETE.jsonl": "571a1bee621217ff5318d24ae674ed594e728840d05f74b6feeef44e054f4ea8",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m12_01\\INPUTS.json": "cf535268fa4833f11c2f9edf85a45006d03e8e69f7a3865417806d78914da865",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m12_01\\MEASUREMENTS.jsonl": "dedd244424af063dc007ffcdd39665afa34118e57afaab1d61ca906fe335cabc",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m12_01\\ORACLES.jsonl": "d82c74f6b8e4c681a353c357071c8de2fc7c724409e4bb16a98659f294ca5388",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m12_01\\PROCESS_COMPLETE.json": "29373de54033500115172320b076e9f5bc1e7bf58259dbe4c8cd6ee4ca4910c6",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m12_01\\PROTOCOL.json": "6c5d541bed19411f91d88a522211df88b41db70986bd3703c41d73803dd5be47",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_cost_m12_01\\SUMMARY.json": "29373de54033500115172320b076e9f5bc1e7bf58259dbe4c8cd6ee4ca4910c6"
+  },
+  "frozen_source_manifest_sha256": "db11af7fa52192252baacc67938dcb06e6f1daf0dbdcf5b204f957a04343cd84",
+  "parameters_changed": false,
+  "main_not_executed_by_this_accounting": true,
+  "purpose": "Execution feasibility only; no method/seed selection, no parameter adjustment",
+  "actual_RAM_measured": false
+}

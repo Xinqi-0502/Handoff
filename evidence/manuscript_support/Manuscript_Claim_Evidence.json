@@ -1,0 +1,783 @@
+{
+  "package_scope": "Figure/table and summary evidence only; NOT the complete raw research archive.",
+  "raw_archive_status": "Retained separately by the author; not distributed here.",
+  "archive_reference_convention": "research_archive/... and manuscript_source/... are provenance labels, not required local paths.",
+  "source_evidence_review_sha256": "5aadb31c9eafca3c96915ea166dcbc2a8367063163a89fa9598899964fdf677f",
+  "evidence_review": {
+    "schema_version": 1,
+    "date": "2026-11-07",
+    "status": "EVIDENCE_REVIEW_COMPLETE_WITH_EXPLICIT_SCOPE_LIMITS",
+    "reviewer": "Independent evidence reviewer /root/revision_experiment_priorities",
+    "purpose": "Claim-to-evidence audit for the real manuscript rewrite around a joint capacity-release lower bound and the cost of exact local search.",
+    "review_scope": {
+      "new_experiments": 0,
+      "solver_or_simulator_runs": 0,
+      "old_sources_or_manuscript_modified": false,
+      "actions": "Read frozen summaries, completed gates, independent audits, protocols and necessary formula/source implementations; save a new review only.",
+      "important_limit": "This review checks existing evidence and interpretations; it does not rerun raw audits or replace a line-by-line review of the forthcoming new manuscript."
+    },
+    "overall_decision": "READY_TO_REWRITE_WITH_A_NARROW_COMPUTATIONAL_CLAIM",
+    "recommended_primary_claim": "An identity-preserving two-receipt capacity-release relaxation, evaluated selectively within exact/anytime search, reduces the work and wall time needed to prove the local H2 optimum on the prespecified synthetic confirmation cohort. A separately proved J adapter establishes implementable single-epoch online integration, with no incremental native service benefit in the tested cohort.",
+    "recommended_experimental_hierarchy": [
+      "Primary mechanism attribution: HZ_AWA_RADIUS_PAIR_GATED versus HZ_AWA_RADIUS inside the identical complete HZ engine.",
+      "Secondary complete-policy comparison: HZ_AWA_RADIUS_PAIR_GATED versus ANA_RADIUS.",
+      "Deployment reference: frozen RADIUS_PAIR_AWA_GATED; its additional implementation-speed difference is not all attributable to the bound.",
+      "Native online integration and memory are separate evidence layers, retaining null effects and costs.",
+      "V448 exploratory and V449 method-selection results must not be relabelled as independent confirmation of the V450 selected method."
+    ],
+    "theory": {
+      "assumptions": [
+        "Local model: one fixed receiver/hub, two indivisible atomic incoming batches with a received before b; 0<wa<wb<=Q and wa+wb>Q.",
+        "Initial old load does not exceed Q; old parcels have positive weights; no splitting, temporary unloading/storage or alternative pickup order is permitted by this model.",
+        "Receiving a before b plus wa+wb>Q forces delivery of a before receipt of b. Capacity alone does not prove that a-first pickup is optimal in an unrestricted problem.",
+        "Local FIFO earliest-arrival network permits waiting, with load-independent travel and nonnegative service/transfer times; experimental service and travel ticks are positive. Supplier ETA is A and it remains available at the hub after the first handoff.",
+        "Goal is second handoff completion H2. Local terminal states can retain old cargo and do not require delivery of b: H2 is not full-route completion, customer-flow J, truck waiting, or global dispatch cost.",
+        "All local experimental clocks are integer ticks. Services differ by parcel, and tau_a and tau_b may differ. Do not impose the online common-service special case on the local model.",
+        "Earlier-arrival dominance is justified only for the local FIFO model. The online non-FIFO predictor instead retains exact full prefix identity."
+      ],
+      "construct": [
+        "At phase zero, qa=(L+wa-Q)+ and qb=(L+wb-Q)+. Compute weighted individual-via return thresholds Rqa/Rqb; R0 is direct hub arrival, not zero.",
+        "B=max(A,Rqa)+tau_a; H_R=max(F_a(B),max(A,Rqb))+tau_b. F_a includes serving a and returning to the hub.",
+        "alpha_o=v_o+tau_a, E1(x)={o:alpha_o<=x}. Residual quota is (qb-weight(E1(x)))+. The Gamma threshold uses ONLY old identities outside E1; Gamma visits both a and that old parcel in either order and includes both services.",
+        "Minimize max(F_a(x), residual Gamma threshold)+tau_b over at most |O|+1 events {B} union {alpha_o>=B}, and take max with H_R.",
+        "FIFO makes the relaxed expression nondecreasing inside intervals with fixed E1. This gives an exact finite-event minimum of the optimistic coverage relaxation, not an exact feasible route schedule.",
+        "RADIUS replacement removes the phase-zero exact quota subset-path DP. It does not remove the 2^m weight table, combinatorial search, or all exponential memory/work.",
+        "Full joint radius bound is at least its own radius baseline by construction. It is not proved to dominate the older exact ROUTE baseline in all states."
+      ],
+      "cutoff_and_certificate": [
+        "xcap=max(B,Rqb+tau_a) makes E1 cover qb. Urel=F_a(xcap)+tau_b upper-bounds the raw relaxation minimum; it is NOT a feasible-route incumbent or admissible lower bound.",
+        "Given H_R<U, Urel<U safely skips a prune-only check. Do not replace strict '<' by '<=' under the local >=U rejection rule.",
+        "Local integer cutoff deadline is U-tau_b-1. The continuous online adapter instead derives a J-specific EPS inequality; do not copy the integer subtraction.",
+        "Pathmax propagates unweighted admissible lower bounds. AWA weighted priority and Urel must never be used for pruning certificates.",
+        "Weighted search is exact only when its unweighted frontier certificate closes, or upon complete search. A first feasible/generated goal or an arbitrary one-second interruption does not automatically carry a w=2 optimality guarantee."
+      ],
+      "sources": [
+        "radius_source",
+        "formula_coverage",
+        "bridge_proof",
+        "published_identity"
+      ]
+    },
+    "claims": [
+      {
+        "id": "C01",
+        "status": "SUPPORTED_WITH_SCOPE",
+        "claim": "A concrete joint two-receipt relaxation is developed and proved admissible under the stated local model.",
+        "evidence": [
+          "radius_source",
+          "formula_coverage",
+          "radius_gate",
+          "bridge_proof"
+        ],
+        "qualification": "Conventional ingredients include quota thresholds, resource identity, temporal profiles, metric closures, Pathmax and published search policies. Claim the specific construction, not invention of those ingredients or a universal first-publication result."
+      },
+      {
+        "id": "C02",
+        "status": "SUPPORTED_WITH_SCOPE",
+        "claim": "The frozen low-cost implementation and complete policy adapters passed finite correctness checks.",
+        "evidence": [
+          "radius_gate",
+          "published_gate"
+        ],
+        "numbers": {
+          "radius_micro_cases": 24,
+          "radius_micro_independent_mothers": 6,
+          "radius_micro_m": [
+            3,
+            4,
+            5
+          ],
+          "published_micro_cases": 24,
+          "published_methods": 4,
+          "published_soft_ms": [
+            0.001,
+            1,
+            1000
+          ]
+        },
+        "qualification": "Existing completed gates are stronger evidence than stale preparation notes saying 'not run'. Finite gates support implementation correctness; the theorem supplies the general admissibility argument. Do not inflate micro coverage to all m<=12 timed prefixes."
+      },
+      {
+        "id": "C03",
+        "status": "SUPPORTED",
+        "claim": "V450 confirmation uses 64 unseen mothers and 256 related scenarios.",
+        "evidence": [
+          "static_protocol",
+          "static_input_generation",
+          "generator",
+          "static_independent_audit"
+        ],
+        "numbers": {
+          "m": [
+            6,
+            8,
+            10,
+            12
+          ],
+          "mothers_per_m": 16,
+          "total_mothers": 64,
+          "capacity_conditions": 2,
+          "signal_conditions": 2,
+          "scenarios_per_m": 64,
+          "total_scenarios": 256,
+          "methods": 4,
+          "technical_repeats": 3,
+          "total_calls": 3072,
+          "returned_calls": 3072,
+          "hard_timeouts": 0,
+          "oracle_exact_cases": 256
+        },
+        "qualification": "Each mother has four matched variants. Technical repetitions and variants are not independent draws. This is a local 6-12-old-parcel study, not large-scale citywide fleet validation."
+      },
+      {
+        "id": "C04",
+        "status": "SUPPORTED",
+        "claim": "The same-engine added check lowers local optimality-proof cost.",
+        "evidence": [
+          "directed_proof",
+          "static_independent_audit",
+          "static_pairs"
+        ],
+        "numbers": {
+          "candidate": "HZ_AWA_RADIUS_PAIR_GATED",
+          "baseline": "HZ_AWA_RADIUS",
+          "all_scenarios": 256,
+          "common_all_three_on_time_proof_scenarios": 255,
+          "baseline_sum_case_median_seconds": 23.188373599783517,
+          "candidate_sum_case_median_seconds": 16.888535799109377,
+          "time_change_percent": -27.16808823855139,
+          "baseline_expanded_sum": 170932,
+          "candidate_expanded_sum": 77362,
+          "expansion_change_percent": -54.74106662298458,
+          "candidate_faster_case_medians": 233,
+          "baseline_faster_case_medians": 22
+        },
+        "qualification": "Ratios are ratios of sums of scenario medians, not means of per-case speedups, per-run speed guarantees, or population effects. Both numerator and denominator use exactly the same all-three-repetitions-proved-within-1s subset."
+      },
+      {
+        "id": "C05",
+        "status": "SUPPORTED",
+        "claim": "The same-engine benefit is observed in every prespecified old-parcel size stratum.",
+        "evidence": [
+          "directed_proof"
+        ],
+        "numbers": {
+          "rows": [
+            {
+              "m": 6,
+              "all": 64,
+              "common_proof": 64,
+              "time_change_percent": -12.239757172874077,
+              "expansion_change_percent": -44.8022401120056
+            },
+            {
+              "m": 8,
+              "all": 64,
+              "common_proof": 64,
+              "time_change_percent": -22.050503530016663,
+              "expansion_change_percent": -50.535384615384615
+            },
+            {
+              "m": 10,
+              "all": 64,
+              "common_proof": 64,
+              "time_change_percent": -25.19259377071652,
+              "expansion_change_percent": -55.0414778072351
+            },
+            {
+              "m": 12,
+              "all": 64,
+              "common_proof": 63,
+              "time_change_percent": -28.24220452422409,
+              "expansion_change_percent": -55.15772276989854
+            }
+          ]
+        },
+        "qualification": "Descriptive stratum results only; do not extrapolate this trend beyond m=12, claim statistical significance, or call small m proof timing noise-free."
+      },
+      {
+        "id": "C06",
+        "status": "SUPPORTED_WITH_SCOPE",
+        "claim": "The same-engine candidate also has lower proof cost than the complete ANA policy adapter.",
+        "evidence": [
+          "directed_proof",
+          "published_identity"
+        ],
+        "numbers": {
+          "common_proof_scenarios": 255,
+          "candidate_seconds": 16.888535799109377,
+          "ANA_seconds": 22.053007999551482,
+          "time_change_percent": -23.418447952982834,
+          "candidate_expanded": 77362,
+          "ANA_expanded": 159966,
+          "expansion_change_percent": -51.638473175549805,
+          "candidate_faster_case_medians": 214,
+          "ANA_faster_case_medians": 41
+        },
+        "qualification": "This crosses search policies and supports a system-level comparison on the shared local model. It is not the pure causal bound ablation."
+      },
+      {
+        "id": "C07",
+        "status": "REQUIRED_NEGATIVE_AND_TRADEOFF",
+        "claim": "Earlier approximate solutions are not uniformly improved by the check.",
+        "evidence": [
+          "first_good",
+          "static_pairs",
+          "static_methods"
+        ],
+        "numbers": {
+          "same_engine_all_three_first_target_scenarios": 256,
+          "first_optimum_baseline_seconds": 11.279697699705139,
+          "first_optimum_candidate_seconds": 10.381433999864385,
+          "first_optimum_change_percent": -7.963544092713015,
+          "first_5percent_baseline_seconds": 6.817544000106864,
+          "first_5percent_candidate_seconds": 7.009566199965775,
+          "first_5percent_change_percent": 2.8165890804064064,
+          "first_10percent_baseline_seconds": 5.965646199416369,
+          "first_10percent_candidate_seconds": 6.208490501041524,
+          "first_10percent_change_percent": 4.07071243428605
+        },
+        "qualification": "Targets are H2*+fraction*(H2*-t0), i.e. relative to optimal remaining duration, not directly fraction*H2*. Targets use an external optimum post hoc and are never passed to the solver. No all-three initial solution already meets the reported 0/5/10% target on this cohort."
+      },
+      {
+        "id": "C08",
+        "status": "SUPPORTED_WITH_COMPLETE_DENOMINATORS",
+        "claim": "Literal-deadline quality and proof coverage are distinct.",
+        "evidence": [
+          "static_methods",
+          "static_pairs"
+        ],
+        "numbers": {
+          "candidate_all_three_proof_1s": 256,
+          "HZ_AWA_all_three_proof_1s": 255,
+          "ANA_all_three_proof_1s": 255,
+          "all_four_methods_all_three_optimal_1s": 256,
+          "candidate_all_three_optimal_100ms": 227,
+          "HZ_AWA_all_three_optimal_100ms": 223,
+          "ANA_all_three_optimal_100ms": 207,
+          "candidate_vs_HZ_AWA_median_quality_WTL_100ms": [
+            6,
+            249,
+            1
+          ],
+          "candidate_vs_HZ_AWA_median_quality_WTL_500ms": [
+            1,
+            255,
+            0
+          ],
+          "candidate_vs_HZ_AWA_median_quality_WTL_1000ms": [
+            0,
+            256,
+            0
+          ],
+          "candidate_vs_ANA_median_quality_WTL_100ms": [
+            31,
+            213,
+            12
+          ]
+        },
+        "qualification": "W/T/L compares medians of three timely objective values; it is not repeat-wise domination. The retained case v450_fair_main_s94512007_m12_tight_free reaches its oracle H2=244 under every method within 1s but the HZ baseline and ANA lack all-three timely proofs. Never delete it or call it an incorrect solution."
+      },
+      {
+        "id": "C09",
+        "status": "SUPPORTED_ONLY_AS_DEPLOYMENT_COMPARISON",
+        "claim": "The frozen specialized implementation is faster than generic published engines in this implementation.",
+        "evidence": [
+          "static_pairs",
+          "published_identity"
+        ],
+        "numbers": {
+          "frozen_vs_HZ_AWA_common_proof": 255,
+          "frozen_vs_HZ_AWA_time_change_percent": -38.08776049169724,
+          "frozen_vs_HZ_PAIR_common_proof": 256,
+          "frozen_vs_HZ_PAIR_time_change_percent": -15.381631799422824,
+          "frozen_and_HZ_PAIR_expanded_all256": 82923
+        },
+        "qualification": "Do not use 38.09% as the causal effect of the new bound. The same-kernel 27.17% is the primary attributable contrast; implementation/container/bookkeeping costs explain additional differences."
+      },
+      {
+        "id": "C10",
+        "status": "SUPPORTED_WITH_OBJECTIVE_BRIDGE",
+        "claim": "The same bound has an implemented single-epoch online J adapter.",
+        "evidence": [
+          "bridge_proof",
+          "online_results",
+          "online_independent_audit"
+        ],
+        "formula": "J_PAIR = J_R + H_PAIR - H_R before the first handoff; only the completion lower bound of incoming b changes.",
+        "qualification": "Every old/new customer is charged once. Prefix costs and the fixed other-route cost use the forecast, while future witnesses are static free-flow lower envelopes. No general FIFO assumption is made for COARSE. RAW local J_R, not inherited Pathmax, enters the pair cutoff. This bounds forecast J, not actual SUMO J."
+      },
+      {
+        "id": "C11",
+        "status": "SUPPORTED_WITH_RESTRICTED_ONLINE_COHORT",
+        "claim": "The online connection completed native execution and independent audit.",
+        "evidence": [
+          "online_results",
+          "online_independent_audit"
+        ],
+        "numbers": {
+          "independent_mothers": 8,
+          "matched_conditions_per_mother": 8,
+          "scenarios": 64,
+          "small_receivers": 2,
+          "old_customers_per_receiver": 8,
+          "new_atomic_customers": 2,
+          "total_customers_per_scenario": 18,
+          "main_wall_ms": [
+            10,
+            50,
+            200
+          ],
+          "policy_calls": 1728,
+          "distinct_case_plan_activation_representative_replays": 128,
+          "case_arm_budget_aggregates": 576,
+          "failed_representative_replays": 0
+        },
+        "qualification": "Representative replays are weighted by policy frequency; they are not 3 independent native repeats. All 18 customers complete and no recorded collisions/relevant collision warnings occur; neither establishes real-world safety. Online independent mothers are 8, not 64/128/1728. It is one network/epoch with a fixed other route, not rolling fleet dispatch."
+      },
+      {
+        "id": "C12",
+        "status": "REQUIRED_NULL_RESULT",
+        "claim": "Adding PAIR gives no incremental native customer-flow or handoff-wait improvement on this cohort.",
+        "evidence": [
+          "online_results",
+          "online_pairs"
+        ],
+        "numbers": {
+          "actual_J_WTL_each_budget": [
+            0,
+            64,
+            0
+          ],
+          "mean_actual_J_delta_each_budget": 0,
+          "mean_handoff_wait_delta_each_budget": 0,
+          "same_plan_and_activation_rep_pairs_per_budget": 192,
+          "zero_delta_mothers_each_budget": 8,
+          "activation_seconds_all_policy_calls": 6.2
+        },
+        "qualification": "The two methods choose identical plans and identical quantized 0.2s activation ticks. This explains the deterministic physical ties; it does not establish general forecast accuracy or lack of benefit in all environments."
+      },
+      {
+        "id": "C13",
+        "status": "REQUIRED_COST_TRADEOFF",
+        "claim": "Online extra pruning does not repay its checking cost here.",
+        "evidence": [
+          "online_pairs",
+          "online_results"
+        ],
+        "numbers": {
+          "formal_all_case_expanded_control": 6304,
+          "formal_all_case_expanded_candidate": 6134,
+          "extra_case_median_cuts": 170,
+          "expansion_change_percent": -2.6967005076142136,
+          "budget50_common_proof": 63,
+          "budget50_baseline_sum_median_ms": 1511.63739990443,
+          "budget50_candidate_sum_median_ms": 1595.8298000041395,
+          "budget50_time_change_percent": 5.569616106682229,
+          "budget200_common_proof": 64,
+          "budget200_baseline_sum_median_ms": 1569.166499772109,
+          "budget200_candidate_sum_median_ms": 1614.2228002427146,
+          "budget200_time_change_percent": 2.8713524331005713,
+          "budget50_candidate_all3_proof": 64,
+          "budget50_control_all3_proof": 63
+        },
+        "qualification": "At 50ms expanded totals use all64 cases whereas the paired proof-time subset has63. At 200ms both use64. Do not report fewer expansions as less wall time."
+      },
+      {
+        "id": "C14",
+        "status": "REQUIRED_DEADLINE_LIMIT",
+        "claim": "The 10ms native rows are predominantly late-initializer fallback execution, not timely solution quality.",
+        "evidence": [
+          "online_results"
+        ],
+        "numbers": {
+          "candidate_no_plan_by_deadline_calls": 192,
+          "control_no_plan_by_deadline_calls": 191,
+          "calls_per_arm": 192,
+          "expanded_both": 0,
+          "common_all3_timely_proof_scenarios": 0
+        },
+        "qualification": "Do not count late plans as within-budget quality or hide them because physical execution later completed. At 50/200ms all192 plans for each main arm are timely and improve the initializer."
+      },
+      {
+        "id": "C15",
+        "status": "AUXILIARY_NOT_MECHANISM_ATTRIBUTION",
+        "claim": "The observed 11.50% online J reduction relative to old ROUTE is not an incremental PAIR benefit.",
+        "evidence": [
+          "online_results"
+        ],
+        "numbers": {
+          "budget_ms": 50,
+          "candidate_and_no_pair_mean_actual_J_customer_seconds": 2416.040625,
+          "old_ROUTE_mean_actual_J_customer_seconds": 2729.861458,
+          "candidate_mean_truck_handoff_wait_seconds": 264.0875,
+          "old_ROUTE_mean_truck_handoff_wait_seconds": 253.922917
+        },
+        "qualification": "Ordinary RADIUS, same-engine AWA without PAIR, and ANA attain the same physical outcome. New a/b and truck wait are worse on average than old ROUTE; total J improves through old-customer flow. Do not infer Pareto improvement, reduced truck wait, or unique joint-bound benefit."
+      },
+      {
+        "id": "C16",
+        "status": "DIAGNOSTIC_ONLY",
+        "claim": "The online gate often avoids more expensive evaluation.",
+        "evidence": [
+          "online_results"
+        ],
+        "numbers": {
+          "separate_instrumented_calls": 128,
+          "pair_queries": 5309,
+          "upper_skips": 4337,
+          "skip_percent_rounded": 81.69,
+          "extra_cuts": 170,
+          "cases_with_extra_cuts": 44,
+          "pair_exclusive_ms": 80.9517,
+          "per_query_microseconds_rounded": 15.25,
+          "share_instrumented_elapsed_percent_rounded": 4.4
+        },
+        "qualification": "Instrumentation is separate and affects completed work. Do not pool profile time with formal timing, add nested timers twice, or infer service benefit from skip frequency."
+      },
+      {
+        "id": "C17",
+        "status": "MEASURED_MEMORY_WITH_NO_ALGORITHM_ADVANTAGE",
+        "claim": "Actual Windows worker process peaks were measured, but a causal algorithm RAM reduction was not established.",
+        "evidence": [
+          "memory_results",
+          "memory_addendum",
+          "memory_readback"
+        ],
+        "numbers": {
+          "observations": 128,
+          "scenarios": 32,
+          "independent_mothers": 8,
+          "methods": 4,
+          "process_repeats_per_cell": 1,
+          "all_methods_timely_proof_scenarios": 32,
+          "failures_or_censor": 0,
+          "same_engine_ratio_of_peak_working_set_sums": 0.9906215177495281,
+          "same_engine_ratio_of_peak_commit_sums": 0.9851817358355766,
+          "same_engine_median_case_working_set_ratio": 0.9958201093,
+          "same_engine_median_case_commit_ratio": 0.9904822408,
+          "no_new_peak_WS_by_method": {
+            "RADIUS_PAIR_AWA_GATED": 32,
+            "HZ_AWA_RADIUS": 28,
+            "HZ_AWA_RADIUS_PAIR_GATED": 30,
+            "ANA_RADIUS": 28
+          }
+        },
+        "qualification": "Lifetime peaks mostly precede solving and cannot be reset. Ratio-of-sums and median-case-ratio are different metrics. PeakWorkingSetSize includes shared/private resident pages; PeakPagefileUsage is peak process commit, not pagefile writes; current PrivateUsage is not a peak. One process observation per cell gives no repeat-variability estimate. Neither baseline subtraction nor frontier/cache size is algorithm-exclusive RAM. The endpoint excludes full-fleet/SUMO RAM."
+      }
+    ],
+    "must_not_write": [
+      "The proposed method is the first resource envelope, first quota bound, first lazy heuristic, or a universally novel search algorithm.",
+      "We reproduced and beat the complete Hof-Schneider freight ALNS or Wei multi-echelon algorithm.",
+      "The 38.09% specialized-versus-generic time difference is caused entirely by the new joint bound.",
+      "The 256 scenarios or 3072 calls are independent instances; the 64 online scenarios are64 independent networks.",
+      "The entire solver is polynomial because the individual RADIUS threshold is polynomial.",
+      "The method uniformly improves early good solutions, every case, every traffic regime, or arbitrary problem sizes.",
+      "A one-second run or a first weighted-search solution automatically proves optimality or a factor-two guarantee.",
+      "The H2 optimum is an optimum of total customer flow J, a complete delivery tour, truck waiting, or citywide fleet dispatch.",
+      "The online bound incorporates measured congestion into every future witness or is proved admissible for actual SUMO cost.",
+      "The online study demonstrates positive incremental delivery/wait gains from PAIR; it does not.",
+      "The 11.50% gain over old ROUTE is uniquely due to the new joint relation.",
+      "Fewer expanded labels establish faster runtime, lower RAM, or better customer service.",
+      "Small raw lifetime process-peak differences establish algorithm memory savings.",
+      "Traffic/pedestrian exposure counts establish a causal delay reduction; collision-free tested output establishes real-world safety.",
+      "The finite correctness gate is an exhaustive proof of all larger inputs or a formal floating-point verification.",
+      "Technical repetition counts justify confidence intervals, significance, or acceptance probability without a prespecified valid analysis."
+    ],
+    "open_gaps": [
+      "Formula-level literature comparison is bounded by inspected primary material; the complete COR DOI10.1016/j.cor.2026.107577 comparison remains incomplete.",
+      "Complete freight ALNS/multi-echelon system reproduction remains missing; baseline labels must disclose published-policy adaptation.",
+      "No arbitrary multi-batch incoming stream, alternate a/b pickup order, cross-receiver batch split or citywide joint route optimization is established.",
+      "No continuous rolling dispatch, calibrated city traffic, actual-optimal native oracle, incremental service gain or algorithm-exclusive RAM benefit is demonstrated.",
+      "Online proof and local H2 theorem require distinct assumptions and objectives; keep them in one method-plus-integration narrative rather than claiming two independent positive contributions."
+    ],
+    "sources": {
+      "final_index": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/FINAL_EVIDENCE_INDEX_01.json",
+      "final_report_panels": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/reporting/Report_Panels_Final_01.json",
+      "final_verification": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/reporting/Final_Verification_01.json",
+      "static_protocol": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/static_comparison/Prospective_Protocol.md",
+      "static_analysis": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/static_comparison/analysis/main_01/Analysis.json",
+      "static_methods": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/static_comparison/analysis/main_01/Method_Summary.csv",
+      "static_pairs": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/static_comparison/analysis/main_01/Paired_Summary.csv",
+      "directed_proof": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/audit_code/results/main_01/Directed_Proof_Pairs.csv",
+      "first_good": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/audit_code/results/main_01/Initial_Strata_First_Good_Pairs.csv",
+      "static_independent_audit": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/audit_code/results/main_01/Independent_Audit.json",
+      "published_identity": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/literature/Published_Baseline_Implementation_Audit.md",
+      "formula_coverage": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/literature/Formula_Coverage_Matrix.md",
+      "published_gate": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/baseline_replication/gates/micro_all_02/GATE.json",
+      "radius_gate": "research_archive/work/fleet_study_v448_radius_pair_prototype_20261107/gates/micro_all_01/GATE.json",
+      "radius_source": "research_archive/work/fleet_study_v448_radius_pair_prototype_20261107/selective_v448.py",
+      "radius_preparation_notes": "research_archive/work/fleet_study_v448_radius_pair_prototype_20261107/code_notes.md",
+      "generator": "research_archive/work/fleet_study_v447_random_high_load_20261107/instances_v447.py",
+      "static_input_generation": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/static_comparison/generate_fair_inputs.py",
+      "online_results": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/online/Online_Results_02.md",
+      "online_pairs": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/online/analysis/interpretation_02/Main_Same_Engine.csv",
+      "online_independent_audit": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/online/analysis/full_02/SUMMARY.json",
+      "bridge_proof": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/audit_code/theory/Online_H2_J_Proof_Scope.md",
+      "bridge_manifest": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/audit_code/theory/Theory_Source_Manifest_01.json",
+      "memory_results": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/memory/analysis/main_01/Memory_Results.md",
+      "memory_addendum": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/memory/analysis/main_01/Interpretation_Addendum.md",
+      "memory_readback": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/memory/analysis/main_01/Zero_Growth_Readback_01.json"
+    },
+    "source_hashes": {
+      "final_index": "8eb64eaeec124837f7ec6a09c020133fc6ced2cd3c05f0389547e8ebb719f7b5",
+      "final_report_panels": "385f6a5a90e894dac797736c9ca84895f878d5aafd9fbac44dfdfabf562b98c9",
+      "final_verification": "11c2420309778b89f260f56a28d37808962ae04f35169c8abcf29e0fa144060a",
+      "static_protocol": "d00edbcb564896edb25ac5217010ef523285c83d13762462838f2b7fdfa50563",
+      "static_analysis": "204778f72f5d2615967a18fa321aefc6c3ac4d0b5a501ce30ed8bb77cf624d39",
+      "static_methods": "d80909f317b9d6a3363db53aabec644ceffb64d99f7cddd991c74feb52fface2",
+      "static_pairs": "85701c599b0c64568ff37f3e2df0ed527179bd0dbd30a5718594c1926b6c15e3",
+      "directed_proof": "ccd7c02ce3d5ba2e585bef88919649fc733014682b20ee8adc0388c441c66d10",
+      "first_good": "9c0ac264f8da8507a768e6e975eeb33dd35267d36afeb2415ab55a5dea38e4d7",
+      "static_independent_audit": "5d5fcb5d0e0f5b2c261ddf52d6828529c2838955785c0b8b0e56ef3246c97104",
+      "published_identity": "50607dc369d717c43dfd705a5c55093b5d3455ae4652f1725eef373f6b2f9fc7",
+      "formula_coverage": "4767166734f80ec306842408f4eb1dddd031492182dbb59ad0cf0582e57dbbc5",
+      "published_gate": "1a1258de99a0b0c0c913a74514afaabe0928c7c2e45858203e893dc92709901e",
+      "radius_gate": "1b6bc3f4de0371981fd87f588ea3615feea4c6158d9dbac6c4d6b318c0d16775",
+      "radius_source": "f955dcb082a1e8fb4e683741a657c433209202f313571c07174d9ab15de42a6c",
+      "radius_preparation_notes": "32c212ed07f1854badc12ca61e782b95a947d44f26a7e71444799c9baae22fd4",
+      "generator": "a2e8b402e0c913c371c4d37107b23ff934a91df98fecc58b8f3274cb791e2329",
+      "static_input_generation": "c9ade80c72fcd0b3e95085f43d1b21a86d02426ad4b0db65dcfaa0d5679fb7e5",
+      "online_results": "721552aad7892fb03b3cb9a0d26514a875ea66fa0a6ff14111f48a3853413ac9",
+      "online_pairs": "bb84ee62dc3aa945f67c2cfd6d5c1dbbb78b84f8895639b3774db61207e2be43",
+      "online_independent_audit": "318ed6ea6d45d46e3399e53b2d47871ea588874a6dbccbbb7b3e55827ee607bd",
+      "bridge_proof": "9bbf8ec845730c6eb6edaaa206e531d9cd7e0cd350105366b2fe9a6b465578f5",
+      "bridge_manifest": "d225a5c90819ce6bfee539e5e2f8e041d536ef81c927f07e46efa44296c065d7",
+      "memory_results": "dba24e49762d9c53605ed6915176eb0eec409512851de478ebc664ac3adbc452",
+      "memory_addendum": "b5a5e13500dc3e0ec4abcc0731ffefa623d88f0bbe8d1809427f7f56285ec66e",
+      "memory_readback": "7777fc922eb08732ac003ba39bb1abbf4220ac70b290534213b29ffaab1e75e2"
+    },
+    "evidence_use_rules": [
+      "Use exact candidate direction from Directed_Proof_Pairs.csv. A reverse-row 37.30% baseline increase is not a 37.30% candidate reduction.",
+      "State paired denominator beside each time/state ratio and retain the one incomplete-proof case in full quality tables.",
+      "Report wall-clock elapsed solve time, including context/setup/greedy/root bound; do not relabel it CPU time.",
+      "Treat correctness, optimum attainment, proof, timing, memory and physical service as separate endpoints.",
+      "Use final manifests and completed gates; stale code_notes preparation status is historical, not current authority.",
+      "No new outcome-based case selection, experiment, or old artifact modification was performed by this review."
+    ]
+  },
+  "copied_source_files": [
+    {
+      "path": "Figure_Source_Data/Case_Budget_Results.csv",
+      "sha256": "58acc4798a431d61df7ac3cfaf426d9871a2192c85b4879fe9a5a588cc6111c7",
+      "bytes": 154805,
+      "source": "manuscript_source/figures/source_data/Case_Budget_Results.csv",
+      "role": "Unchanged figure or corroborating summary CSV"
+    },
+    {
+      "path": "Figure_Source_Data/Directed_Proof_Pairs.csv",
+      "sha256": "ccd7c02ce3d5ba2e585bef88919649fc733014682b20ee8adc0388c441c66d10",
+      "bytes": 13207,
+      "source": "manuscript_source/figures/source_data/Directed_Proof_Pairs.csv",
+      "role": "Unchanged figure or corroborating summary CSV"
+    },
+    {
+      "path": "Figure_Source_Data/fig01_points.csv",
+      "sha256": "975893370a26e5036408d26f48587fe693ac1b11777681f4a671daab46ff159a",
+      "bytes": 1913,
+      "source": "manuscript_source/figures/source_data/fig01_points.csv",
+      "role": "Unchanged figure or corroborating summary CSV"
+    },
+    {
+      "path": "Figure_Source_Data/fig02_points.csv",
+      "sha256": "3867e837f67d09c2bf477ccc0b9edc9f37e50407c8411a4f712a58d5ba3de975",
+      "bytes": 858,
+      "source": "manuscript_source/figures/source_data/fig02_points.csv",
+      "role": "Unchanged figure or corroborating summary CSV"
+    },
+    {
+      "path": "Figure_Source_Data/figS01_points.csv",
+      "sha256": "7e850fedb49a3c887c9a9e2d45fdbedfa707691ed760903c82ea8290cfc32b00",
+      "bytes": 1092,
+      "source": "manuscript_source/figures/source_data/figS01_points.csv",
+      "role": "Unchanged figure or corroborating summary CSV"
+    },
+    {
+      "path": "Figure_Source_Data/Initial_Strata_First_Good_Pairs.csv",
+      "sha256": "9c0ac264f8da8507a768e6e975eeb33dd35267d36afeb2415ab55a5dea38e4d7",
+      "bytes": 86498,
+      "source": "manuscript_source/figures/source_data/Initial_Strata_First_Good_Pairs.csv",
+      "role": "Unchanged figure or corroborating summary CSV"
+    },
+    {
+      "path": "Figure_Source_Data/native_per_case_points.csv",
+      "sha256": "fdf7a03b68db95537d80bed38f5432ea336b257b758619b211d811b8d1a3dc37",
+      "bytes": 44525,
+      "source": "manuscript_source/figures/source_data/native_per_case_points.csv",
+      "role": "Unchanged figure or corroborating summary CSV"
+    },
+    {
+      "path": "Figure_Source_Data/Pair_Cases.csv",
+      "sha256": "11488b57478bb6108176e2f77daa2483f38ce98a14cf70766a9808224d1e3483",
+      "bytes": 224070,
+      "source": "manuscript_source/figures/source_data/Pair_Cases.csv",
+      "role": "Unchanged figure or corroborating summary CSV"
+    },
+    {
+      "path": "Figure_Source_Data/Pair_Summary.csv",
+      "sha256": "faa99ae55fbc133b3f4db39cc82c3c180af5774186d49d1497c2558734223ec7",
+      "bytes": 17413,
+      "source": "manuscript_source/figures/source_data/Pair_Summary.csv",
+      "role": "Unchanged figure or corroborating summary CSV"
+    },
+    {
+      "path": "Table_Source_Data/Selection_400/First_Good_Summary.csv",
+      "sha256": "efaed03bffa4c770b70254ca978776048d46b514a317bf1784fa98dc055b2d55",
+      "bytes": 169436,
+      "source": "research_archive/work/fleet_study_v449_validation_and_online_20261107/analysis/scale_main_01/First_Good_Summary.csv",
+      "role": "Design-stage summary;400 scenarios/100 mothers;not confirmation"
+    },
+    {
+      "path": "Table_Source_Data/Selection_400/Pair_Quality_Summary.csv",
+      "sha256": "cba7a138c67570748806ce350f73e2156b848878d86b2b59edefe96f4d7ee82a",
+      "bytes": 351793,
+      "source": "research_archive/work/fleet_study_v449_validation_and_online_20261107/analysis/scale_main_01/Pair_Quality_Summary.csv",
+      "role": "Design-stage summary;400 scenarios/100 mothers;not confirmation"
+    },
+    {
+      "path": "Table_Source_Data/Selection_400/Pair_Time_Summary.csv",
+      "sha256": "ad09f1927ef661da499a6149c641a142f4ad36baf99625863f814c3044e0c527",
+      "bytes": 1071244,
+      "source": "research_archive/work/fleet_study_v449_validation_and_online_20261107/analysis/scale_main_01/Pair_Time_Summary.csv",
+      "role": "Design-stage summary;400 scenarios/100 mothers;not confirmation"
+    },
+    {
+      "path": "Table_Source_Data/Selection_400/Quality_Summary.csv",
+      "sha256": "6e9953166720c0fac7f4726cd28a67c8ac6b2975d14c357401886f35647b0674",
+      "bytes": 127270,
+      "source": "research_archive/work/fleet_study_v449_validation_and_online_20261107/analysis/scale_main_01/Quality_Summary.csv",
+      "role": "Design-stage summary;400 scenarios/100 mothers;not confirmation"
+    },
+    {
+      "path": "Table_Source_Data/Selection_400/Work_And_Proof_Summary.csv",
+      "sha256": "0a17440c9e80423867c863355de3540291a9ed8b8dc52631f37b6d973d09ed0e",
+      "bytes": 370068,
+      "source": "research_archive/work/fleet_study_v449_validation_and_online_20261107/analysis/scale_main_01/Work_And_Proof_Summary.csv",
+      "role": "Design-stage summary;400 scenarios/100 mothers;not confirmation"
+    },
+    {
+      "path": "Table_Source_Data/Confirmation_256/Method_Summary.csv",
+      "sha256": "d80909f317b9d6a3363db53aabec644ceffb64d99f7cddd991c74feb52fface2",
+      "bytes": 687,
+      "source": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/static_comparison/analysis/main_01/Method_Summary.csv",
+      "role": "Four-method confirmation;256 scenarios/64 mothers"
+    },
+    {
+      "path": "Table_Source_Data/Confirmation_256/Paired_Summary.csv",
+      "sha256": "85701c599b0c64568ff37f3e2df0ed527179bd0dbd30a5718594c1926b6c15e3",
+      "bytes": 2822,
+      "source": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/static_comparison/analysis/main_01/Paired_Summary.csv",
+      "role": "Four-method confirmation;256 scenarios/64 mothers"
+    },
+    {
+      "path": "Table_Source_Data/Confirmation_256/Case_Medians.csv",
+      "sha256": "4534dbd133d83de382eebc1a497d0d86af90813f8e07b209a52c0778be1e57c9",
+      "bytes": 254038,
+      "source": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/static_comparison/analysis/main_01/Case_Medians.csv",
+      "role": "Four-method confirmation;256 scenarios/64 mothers"
+    },
+    {
+      "path": "Table_Source_Data/Process_Memory_32/Method_Summary.csv",
+      "sha256": "6e221314a14a3ee1d450c65c3088892664b8d5c47f559991a5e7922f882c3340",
+      "bytes": 7003,
+      "source": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/memory/analysis/main_01/Method_Summary.csv",
+      "role": "Separate fresh-process memory;32 scenarios/128 processes"
+    },
+    {
+      "path": "Table_Source_Data/Process_Memory_32/Pair_Summary.csv",
+      "sha256": "10e3c2d4b515a3848c4657f381a707894cdee65729c47c0251cdb342bec5f9f8",
+      "bytes": 9688,
+      "source": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/memory/analysis/main_01/Pair_Summary.csv",
+      "role": "Separate fresh-process memory;32 scenarios/128 processes"
+    },
+    {
+      "path": "Table_Source_Data/Process_Memory_32/Pair_Summary_Proved_By_1s.csv",
+      "sha256": "37100492a8a3b3e84e3a36ef7f1a8cf3ccd921e7e3f66084da473209ad806068",
+      "bytes": 2072,
+      "source": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/memory/analysis/main_01/Pair_Summary_Proved_By_1s.csv",
+      "role": "Separate fresh-process memory;32 scenarios/128 processes"
+    },
+    {
+      "path": "Table_Source_Data/Process_Memory_32/Observations.csv",
+      "sha256": "77a310449ac142169305edf93cb6cb5e6c75d4195baeff71836b979fc906937c",
+      "bytes": 48061,
+      "source": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/memory/analysis/main_01/Observations.csv",
+      "role": "Separate fresh-process memory;32 scenarios/128 processes"
+    },
+    {
+      "path": "Table_Source_Data/Online_64/Absolute_Outcome_Totals.csv",
+      "sha256": "e55160b8745935bda8f7f56bbd84420a1173e32404b9bf1c37c9f01ed4e6b830",
+      "bytes": 1775,
+      "source": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/online/analysis/interpretation_02/Absolute_Outcome_Totals.csv",
+      "role": "Online summaries;instrumented Profile files separate from formal timing"
+    },
+    {
+      "path": "Table_Source_Data/Online_64/Arm_Budget_Summary.csv",
+      "sha256": "b31dbfaed681a9672674003c82e65dfb67230d6e706fe13139e1c83281d8f03d",
+      "bytes": 2185,
+      "source": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/online/analysis/interpretation_02/Arm_Budget_Summary.csv",
+      "role": "Online summaries;instrumented Profile files separate from formal timing"
+    },
+    {
+      "path": "Table_Source_Data/Online_64/Main_Same_Engine.csv",
+      "sha256": "bb84ee62dc3aa945f67c2cfd6d5c1dbbb78b84f8895639b3774db61207e2be43",
+      "bytes": 1040,
+      "source": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/online/analysis/interpretation_02/Main_Same_Engine.csv",
+      "role": "Online summaries;instrumented Profile files separate from formal timing"
+    },
+    {
+      "path": "Table_Source_Data/Online_64/Profile_Costs.csv",
+      "sha256": "312ab23a1095e241c82848445b83536eb6a6372f25df4dbc860b0240d34e44de",
+      "bytes": 625,
+      "source": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/online/analysis/interpretation_02/Profile_Costs.csv",
+      "role": "Online summaries;instrumented Profile files separate from formal timing"
+    },
+    {
+      "path": "Table_Source_Data/Online_64/Profile_Phases.csv",
+      "sha256": "da65c4e9d4ca7903e52a10fe08e42ebefa460b5697837f27091c97cd34bd99dc",
+      "bytes": 331,
+      "source": "research_archive/work/fleet_study_v450_full_baselines_memory_online_20261107/online/analysis/interpretation_02/Profile_Phases.csv",
+      "role": "Online summaries;instrumented Profile files separate from formal timing"
+    },
+    {
+      "path": "Figure_Code/Figure_Captions.md",
+      "sha256": "49384676d108946a701b9280d66ae1e6b3d1a13952804dfc75361e9a706f1e23",
+      "bytes": 3236,
+      "source": "manuscript_source/figures/Captions.md",
+      "role": "Captions with units, denominators and limitations"
+    },
+    {
+      "path": "Review_Notes/Original_Figure_QA.md",
+      "sha256": "a60f8666be6c34065a7da4209b77ecedbb4af1004d00dbdc7d7cd51f69515d5a",
+      "bytes": 2149,
+      "source": "manuscript_source/figures/Final_QA_Report.md",
+      "role": "Original-figure completed visual/PDF QA"
+    },
+    {
+      "path": "Table_Source_Data/Selection_400/Study_Coverage.json",
+      "sha256": "50929716e585f9fbc41399c605783657a16a5aff986599a4ed405f99e0e8ebce",
+      "bytes": 719,
+      "source": "research_archive/work/fleet_study_v449_validation_and_online_20261107/analysis/scale_main_01/Summary.json",
+      "role": "Selection analysis completion/coverage summary copied unchanged"
+    }
+  ],
+  "portable_code": {
+    "path": "Figure_Code/redraw_figures.py",
+    "sha256": "bdbbd0310104178056e01ace702abf3183ca92212ade4b77100525efba9dc2db",
+    "adapted_from_source_sha256": "3f994e8a8333aa8382acd550dabf71ce8a7afb24d78e148f2b6db3a448b6fb27",
+    "changes": "Relative paths, portable Times detection/fallback and local geometry check replace private runtime/skill dependencies; marks, dimensions, labels, limits and save parameters unchanged."
+  },
+  "complete_raw_reproducibility_claim": false,
+  "reproduction_test": {
+    "path": "Reproduction_Test.json",
+    "status": "PASS",
+    "sha256": "9923f504b25abace476b78eede43f37c5f8205161d572099a38819bc24a74c2e",
+    "pixel_identical_figures": 3,
+    "pdf_qa": "PASS: zero collision failures and no glyph below 8.5 pt in all three PDFs",
+    "visual_review": "PASS: all three complete PNGs and panels inspected"
+  },
+  "package_check": {
+    "path": "Final_Supporting_Check.json",
+    "sha256": "2ae6d82aa08bb6614ec202f41c9a2d0063a77b0e9d5acb32594b16408f601336"
+  }
+}

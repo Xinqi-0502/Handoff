@@ -1,0 +1,13 @@
+{
+  "status": "INTERPRETATION_ADDENDUM_ONLY",
+  "previous_report": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\analysis\\main_01\\Memory_Results_before_baseline_addendum_01.md",
+  "previous_report_sha256": "84f1ec4b4fd550763ddb4f20c6eb1ebdec48ef2b12f274e644f0f93befc11e0b",
+  "updated_report": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\analysis\\main_01\\Memory_Results.md",
+  "updated_report_sha256": "dba24e49762d9c53605ed6915176eb0eec409512851de478ebc664ac3adbc452",
+  "addendum_sha256": "b5a5e13500dc3e0ec4abcc0731ffefa623d88f0bbe8d1809427f7f56285ec66e",
+  "readback_sha256": "7777fc922eb08732ac003ba39bb1abbf4220ac70b290534213b29ffaab1e75e2",
+  "observation_csv_sha256": "77a310449ac142169305edf93cb6cb5e6c75d4195baeff71836b979fc906937c",
+  "existing_source_raw_hash_manifest_unchanged": true,
+  "numeric_sources_raw_and_csv_unchanged": true,
+  "no_new_measurement_or_numerical_analysis": true
+}

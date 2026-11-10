@@ -1,0 +1,5 @@
+{
+  "type": "RuntimeError",
+  "message": "Retained failing QA step: E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\render_static_01\\qa\\Fig1_Same_Kernel_Scale.collision",
+  "traceback": "Traceback (most recent call last):\n  File \"E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\render_and_audit_static_v450.py\", line 106, in main\n    collision = json.loads(invoke(SKILL/\"audit_figure_collisions.py\",\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\render_and_audit_static_v450.py\", line 32, in invoke\n    raise RuntimeError(\"Retained failing QA step: \"+str(log))\nRuntimeError: Retained failing QA step: E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\render_static_01\\qa\\Fig1_Same_Kernel_Scale.collision\n"
+}

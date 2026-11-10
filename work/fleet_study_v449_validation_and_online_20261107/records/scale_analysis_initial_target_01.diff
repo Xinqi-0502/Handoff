@@ -1,0 +1,85 @@
+--- analysis_before_initial_target_01
++++ analysis_with_initial_target_and_common_expansions
+@@ -41,10 +41,10 @@
+ def call_record(raw,s,index,slot,position,opt):
+     method,rep,j=slot
+     ident=dict(case=s['case'],seed=s['seed'],m=len(s['old']),Q=s['Q'],signal=s['signal'],capacity_regime=s['capacity_regime'],method=method,arm=method,policy=MAP[method][0],bound_basis=MAP[method][1],repeat=rep,position_within_repeat=j,position_within_case=position,mode='main',cohort='three_repeat',input_sha256=hashlib.sha256(json.dumps(s,sort_keys=True).encode()).hexdigest())
+-    r=dict(ident,outcome='MISSING',oracle_H2=opt,t0=s['t0'],end_H2=None,remaining_bound=None,certified_gap=None,end_certified=None,on_time_certified=None,late_certificate=None,initialization_overrun=None,hard_timeout_seconds=None,initial_H2=None,initial_plan=None,oracle_independent_of_this_method=method!='DP_ADAPTER')
++    r=dict(ident,outcome='MISSING',oracle_H2=opt,t0=s['t0'],end_H2=None,remaining_bound=None,certified_gap=None,end_certified=None,on_time_certified=None,late_certificate=None,initialization_overrun=None,hard_timeout_seconds=None,initial_H2=None,initial_plan=None,initial_available_seconds=None,oracle_independent_of_this_method=method!='DP_ADAPTER')
+     r.update({k:None for k in TIMERS+WORK+PROXIES})
+     for ms in BUDGETS:r.update({f'H2_{ms}ms':None,f'regret_{ms}ms':None})
+-    for pct in TARGETS:r.update({f'first_{pct}pct_seconds':None,f'first_{pct}pct_expansion':None,f'first_{pct}pct_on_time':None})
++    for pct in TARGETS:r.update({f'first_{pct}pct_seconds':None,f'first_{pct}pct_expansion':None,f'first_{pct}pct_on_time':None,f'initial_{pct}pct_met':None,f'initial_{pct}pct_on_time':None})
+     if raw is None:return r
+     for k,v in ident.items():require(raw.get(k)==v,('row identity',s['case'],method,rep,k,raw.get(k),v))
+     require(raw.get('wall_budget_ms')==1000,'one-second budget');r['outcome']=raw['outcome']
+@@ -95,8 +95,10 @@
+         timely=None if opt is None else hit is not None and seconds<=1
+         require(stored==dict(relative_gap=fraction,target_H2=target,seconds=seconds,expansion_index=ki,reached_within_wall=timely),'post-hoc threshold trace')
+         r[f'first_{pct}pct_seconds']=seconds;r[f'first_{pct}pct_expansion']=ki;r[f'first_{pct}pct_on_time']=timely
++        r[f'initial_{pct}pct_met']=None if target is None else trace[0]['H2']<=target
++        r[f'initial_{pct}pct_on_time']=None if target is None else trace[0]['H2']<=target and trace[0]['seconds']<=1
+     require(raw['first_optimal_seconds']==r['first_0pct_seconds'] and raw['first_optimal_expansion']==r['first_0pct_expansion'],'first optimum trace')
+-    r.update(end_H2=raw['H2'],remaining_bound=lower,certified_gap=gap,end_certified=raw['certified_optimal'],on_time_certified=on_time,late_certificate=raw['certified_optimal'] and not on_time,initialization_overrun=raw['initialization_overrun'],initial_H2=trace[0]['H2'],initial_plan=trace[0]['plan'])
++    r.update(end_H2=raw['H2'],remaining_bound=lower,certified_gap=gap,end_certified=raw['certified_optimal'],on_time_certified=on_time,late_certificate=raw['certified_optimal'] and not on_time,initialization_overrun=raw['initialization_overrun'],initial_H2=trace[0]['H2'],initial_plan=trace[0]['plan'],initial_available_seconds=trace[0]['seconds'])
+     for k in TIMERS+WORK+PROXIES:r[k]=raw.get(k,raw['stats'].get(k))
+     return r
+ 
+@@ -175,7 +177,7 @@
+         require(len(rs)==3 and {r['repeat'] for r in rs}=={0,1,2},'three planned repeats')
+         meta={k:rs[0][k] for k in ('case','seed','m','Q','capacity_regime','signal','method','oracle_H2','t0')}
+         c=dict(meta,planned_repeats=3,ok=sum(r['outcome']=='OK' for r in rs),hard_timeouts=sum(r['outcome']=='HARD_TIMEOUT' for r in rs),missing=sum(r['outcome']=='MISSING' for r in rs),on_time_certificates=sum(r['on_time_certified'] is True for r in rs),end_certificates=sum(r['end_certified'] is True for r in rs),late_certificates=sum(r['late_certificate'] is True for r in rs),initialization_overruns=sum(r['initialization_overrun'] is True for r in rs),all3_on_time_certified=all(r['on_time_certified'] is True for r in rs))
+-        for k in TIMERS+WORK+PROXIES+('end_H2','certified_gap','remaining_bound'):c[k]=median([r[k] for r in rs])
++        for k in TIMERS+WORK+PROXIES+('end_H2','certified_gap','remaining_bound','initial_H2','initial_available_seconds'):c[k]=median([r[k] for r in rs])
+         case_rows.append(c)
+         for ms in BUDGETS:
+             values=[r[f'H2_{ms}ms'] for r in rs];value=median(values);opt=meta['oracle_H2']
+@@ -183,7 +185,7 @@
+             quality.append(dict(meta,ms=ms,available_repeats=sum(v is not None for v in values),all3_feasible=all(v is not None for v in values),H2_median=value,H2_repeat_values=values,regret_median=regret,relative_regret=ratio(regret,None if opt is None else opt-meta['t0']),all3_optimal=None if opt is None else all(v==opt for v in values),median_optimal=None if value is None or opt is None else value==opt))
+         for pct in TARGETS:
+             seconds=[r[f'first_{pct}pct_seconds'] for r in rs]
+-            targets.append(dict(meta,target_pct=pct,target_H2=None if meta['oracle_H2'] is None else meta['oracle_H2']+pct/100*(meta['oracle_H2']-meta['t0']),hit_repeats=sum(x is not None for x in seconds),on_time_hit_repeats=sum(r[f'first_{pct}pct_on_time'] is True for r in rs),all3_reached_on_time=all(r[f'first_{pct}pct_on_time'] is True for r in rs),seconds_median=median(seconds),expansion_median=median([r[f'first_{pct}pct_expansion'] for r in rs])))
++            targets.append(dict(meta,target_pct=pct,target_H2=None if meta['oracle_H2'] is None else meta['oracle_H2']+pct/100*(meta['oracle_H2']-meta['t0']),hit_repeats=sum(x is not None for x in seconds),on_time_hit_repeats=sum(r[f'first_{pct}pct_on_time'] is True for r in rs),all3_reached_on_time=all(r[f'first_{pct}pct_on_time'] is True for r in rs),initial_target_repeats=sum(r[f'initial_{pct}pct_met'] is True for r in rs),initial_target_on_time_repeats=sum(r[f'initial_{pct}pct_on_time'] is True for r in rs),all3_initial_meets_target=None if meta['oracle_H2'] is None else all(r[f'initial_{pct}pct_met'] is True for r in rs),all3_initial_target_on_time=None if meta['oracle_H2'] is None else all(r[f'initial_{pct}pct_on_time'] is True for r in rs),seconds_median=median(seconds),expansion_median=median([r[f'first_{pct}pct_expansion'] for r in rs])))
+     return case_rows,quality,targets
+ 
+ def strata(r):
+@@ -215,7 +217,7 @@
+                 for k in ('H2_median','regret_median','relative_regret'):d.update(describe([r[k] for r in rs],k))
+             else:
+                 eligible=[r for r in rs if r['all3_reached_on_time']]
+-                d.update(known_oracle_cases=sum(r['oracle_H2'] is not None for r in rs),all3_reached_on_time=len(eligible))
++                d.update(known_oracle_cases=sum(r['oracle_H2'] is not None for r in rs),all3_reached_on_time=len(eligible),initial_target_cases_all3=sum(r['all3_initial_meets_target'] is True for r in rs),initial_target_on_time_cases_all3=sum(r['all3_initial_target_on_time'] is True for r in rs),on_time_target_cases_initial_all3=sum(r['all3_initial_meets_target'] is True for r in eligible),on_time_target_cases_search_required=sum(r['all3_initial_meets_target'] is False for r in eligible))
+                 d.update(describe([r['seconds_median'] for r in eligible],'eligible_seconds'))
+                 d.update(describe([r['expansion_median'] for r in eligible],'eligible_expansions'))
+             out.append(d)
+@@ -241,7 +243,9 @@
+                     a=ct[(cid,left,target)];b=ct[(cid,right,target)];ae=a['all3_reached_on_time'];be=b['all3_reached_on_time']
+                     av=a['seconds_median'];bv=b['seconds_median'];ak=a['expansion_median'];bk=b['expansion_median']
+                 common=ae and be
+-                tp.append(dict(pair,target=str(target),left_all3_eligible=ae,right_all3_eligible=be,common=common,left_seconds=av if common else None,right_seconds=bv if common else None,left_to_right_ratio=ratio(av,bv) if common else None,time_outcome=outcome(av,bv) if common else 'INELIGIBLE',left_expansions=ak if common else None,right_expansions=bk if common else None))
++                initial_level=0 if target=='proof' else target
++                ai=ct[(cid,left,initial_level)]['all3_initial_meets_target'];bi=ct[(cid,right,initial_level)]['all3_initial_meets_target']
++                tp.append(dict(pair,target=str(target),left_all3_eligible=ae,right_all3_eligible=be,common=common,left_initial_target_all3=ai,right_initial_target_all3=bi,left_seconds=av if common else None,right_seconds=bv if common else None,left_to_right_ratio=ratio(av,bv) if common else None,time_outcome=outcome(av,bv) if common else 'INELIGIBLE',left_expansions=ak if common else None,right_expansions=bk if common else None))
+     gs=defaultdict(list)
+     for r in qp:
+         for st in strata(r):gs[(st,r['left'],r['right'],r['ms'])].append(r)
+@@ -256,7 +260,9 @@
+     for (st,a,b,target),rs in gs.items():
+         eligible=[r for r in rs if r['common']];lefts=[r['left_seconds'] for r in eligible];rights=[r['right_seconds'] for r in eligible]
+         counts=Counter(r['time_outcome'] for r in eligible)
+-        ts.append(dict(stratum=st,left=a,right=b,target=target,scenarios=len(rs),independent_mothers=len({r['seed'] for r in rs}),both_all3_on_time=len(eligible),left_only=sum(r['left_all3_eligible'] and not r['right_all3_eligible'] for r in rs),right_only=sum(r['right_all3_eligible'] and not r['left_all3_eligible'] for r in rs),neither=sum(not r['left_all3_eligible'] and not r['right_all3_eligible'] for r in rs),common_mothers=len({r['seed'] for r in eligible}),left_seconds_sum=sum(lefts) if eligible else None,right_seconds_sum=sum(rights) if eligible else None,ratio_of_sums=ratio(sum(lefts),sum(rights)) if eligible else None,median_case_ratio=median([r['left_to_right_ratio'] for r in eligible if r['left_to_right_ratio'] is not None]),ratio_defined_cases=sum(r['left_to_right_ratio'] is not None for r in eligible),earlier=counts['WIN'],same=counts['TIE'],later=counts['LOSS']))
++        ex=[r for r in eligible if r['left_expansions'] is not None and r['right_expansions'] is not None]
++        lex=sum(r['left_expansions'] for r in ex) if ex else None;rex=sum(r['right_expansions'] for r in ex) if ex else None
++        ts.append(dict(stratum=st,left=a,right=b,target=target,scenarios=len(rs),independent_mothers=len({r['seed'] for r in rs}),both_all3_on_time=len(eligible),left_only=sum(r['left_all3_eligible'] and not r['right_all3_eligible'] for r in rs),right_only=sum(r['right_all3_eligible'] and not r['left_all3_eligible'] for r in rs),neither=sum(not r['left_all3_eligible'] and not r['right_all3_eligible'] for r in rs),common_mothers=len({r['seed'] for r in eligible}),left_initial_target_all3_in_common=sum(r['left_initial_target_all3'] is True for r in eligible),right_initial_target_all3_in_common=sum(r['right_initial_target_all3'] is True for r in eligible),both_initial_target_all3_in_common=sum(r['left_initial_target_all3'] is True and r['right_initial_target_all3'] is True for r in eligible),expansion_pairs=len(ex),left_expansion_sum=lex,right_expansion_sum=rex,ratio_of_expansion_sums=ratio(lex,rex),left_seconds_sum=sum(lefts) if eligible else None,right_seconds_sum=sum(rights) if eligible else None,ratio_of_sums=ratio(sum(lefts),sum(rights)) if eligible else None,median_case_ratio=median([r['left_to_right_ratio'] for r in eligible if r['left_to_right_ratio'] is not None]),ratio_defined_cases=sum(r['left_to_right_ratio'] is not None for r in eligible),earlier=counts['WIN'],same=counts['TIE'],later=counts['LOSS']))
+     return qp,tp,qs,ts
+ 
+ def report(out,summary,groups):
+@@ -270,7 +276,7 @@
+         cells=[f"{q[m,ms]['all3_feasible']}/400 / {q[m,ms]['all3_optimal']}/400" for ms in BUDGETS]
+         text.append('| '+m+' | '+' | '.join(cells)+f" | {w[m]['all3_on_time_certified']}/400 |")
+     text += ['', 'Pair_Quality_Summary.csv reports all 36 method pairs at 100/500/1000 ms, including wins, ties, losses, unknown cases and asymmetric availability. Case_Quality.csv preserves every case and all repeat values. Quality comparisons use the median only when all three values exist.',
+-        '', 'Pair_Time_Summary.csv separates proof time from first 0%, 5% and 10% relative-duration-gap targets. Each time comparison uses only scenarios where BOTH methods achieved the specified event within one second in ALL THREE repeats; the remaining left-only, right-only and neither counts stay visible. Targets use opt + fraction*(opt - t0), derived after search. Ratios use paired case medians, never pooled calls. Zero denominators are NA.',
++        '', 'Pair_Time_Summary.csv separates proof time from first 0%, 5% and 10% relative-duration-gap targets. Each time comparison uses only scenarios where BOTH methods achieved the specified event within one second in ALL THREE repeats; the remaining left-only, right-only and neither counts stay visible. Targets use opt + fraction*(opt - t0), derived after search. Ratios use paired case medians, never pooled calls. Zero denominators are NA. Initial-target counts identify targets already met by the common initializer; these are not search improvements. Expanded sums and their ratio use the same eligible pair subset, rather than all-case work totals.',
+         '', 'Late improvements and certificates remain in end-of-run records but receive no credit at earlier cutoffs. Hard timeouts have no recovered incumbent; their duration is not treated as solver elapsed or proof time. Returned soft-overrun values are retained separately. Incomplete source blocks make the report provisional.',
+         '', 'Case_Work_And_Proof.csv and Work_And_Proof_Summary.csv distinguish elapsed/setup/initial/search/root timing, phase-specific completed expansions, joint rejection counts and available work counters. Root timing is nested within search; it must not be added again. Detailed profiling was disabled, so absent internal DP/closure counters are NA.',
+         '', 'No process RAM or Python allocation bytes were measured. Peak heap entries (including stale labels), closure/cache entries, and DP structural-label counts are storage proxies with different meanings. The DP closure caches full arrival vectors; search closures cache scalar queries. These counts do not establish an actual memory saving.',

@@ -1,0 +1,60 @@
+{
+  "matching": "ordinal rows, not verified real vehicle identities",
+  "demand_vehicles_preserved": 2293,
+  "excluded_observations": [
+    {
+      "day": 2,
+      "ordinal_row_index": 95,
+      "segment": "2-3",
+      "source_start_seconds": 24677,
+      "source_end_seconds": 24645,
+      "observed_seconds": -32,
+      "action": "exclude_from_segment_score_only"
+    },
+    {
+      "day": 2,
+      "ordinal_row_index": 1771,
+      "segment": "2-3",
+      "source_start_seconds": 29941,
+      "source_end_seconds": 29936,
+      "observed_seconds": -5,
+      "action": "exclude_from_segment_score_only"
+    },
+    {
+      "day": 2,
+      "ordinal_row_index": 1995,
+      "segment": "2-3",
+      "source_start_seconds": 30873,
+      "source_end_seconds": 30844,
+      "observed_seconds": -29,
+      "action": "exclude_from_segment_score_only"
+    },
+    {
+      "day": 2,
+      "ordinal_row_index": 2206,
+      "segment": "2-3",
+      "source_start_seconds": 31688,
+      "source_end_seconds": 31675,
+      "observed_seconds": -13,
+      "action": "exclude_from_segment_score_only"
+    },
+    {
+      "day": 2,
+      "ordinal_row_index": 1996,
+      "segment": "3-4",
+      "source_start_seconds": 30903,
+      "source_end_seconds": 30888,
+      "observed_seconds": -15,
+      "action": "exclude_from_segment_score_only"
+    },
+    {
+      "day": 2,
+      "ordinal_row_index": 94,
+      "segment": "7-8",
+      "source_start_seconds": 24818,
+      "source_end_seconds": 24789,
+      "observed_seconds": -29,
+      "action": "hold_previous_boundary_speed"
+    }
+  ]
+}

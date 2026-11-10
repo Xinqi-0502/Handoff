@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "package_scope": "Figures/tables and summary evidence; complete raw archive retained separately",
+  "copied_source_files": 29,
+  "csv_files": 26,
+  "all_copied_data_byte_identical_and_sources_unchanged": true,
+  "portable_code_ast": "PASS",
+  "portable_code_sha256": "bdbbd0310104178056e01ace702abf3183ca92212ade4b77100525efba9dc2db",
+  "data_crosscheck": {
+    "status": "PASS",
+    "fig1_rows": 8,
+    "fig2_rows": 4,
+    "native_rows": 6,
+    "native_case_points": 384,
+    "fallback_10ms": {
+      "HZ_AWA_PAIR_GATED": 192,
+      "HZ_AWA_RADIUS": 191
+    }
+  },
+  "figure_checks": {
+    "fig01_search_work_and_proof_time": {
+      "collision": {
+        "fail": 0,
+        "warn": 0,
+        "contained_fill_overlays": 8,
+        "contained_image_overlays": 0
+      },
+      "minimum_font_pt": 8.5,
+      "alignment": "PASS",
+      "pixel_and_byte_identical_to_original": true,
+      "visual_review": "PASS: examined complete PNG and panels; labels, denominator differences and zero-outcome scope retained."
+    },
+    "fig02_anytime_timing_tradeoff": {
+      "collision": {
+        "fail": 0,
+        "warn": 0,
+        "contained_fill_overlays": 0,
+        "contained_image_overlays": 0
+      },
+      "minimum_font_pt": 8.5,
+      "alignment": "NOT_APPLICABLE_SINGLE_PANEL",
+      "pixel_and_byte_identical_to_original": true,
+      "visual_review": "PASS: examined complete PNG and panels; labels, denominator differences and zero-outcome scope retained."
+    },
+    "figS01_native_outcome_limits": {
+      "collision": {
+        "fail": 0,
+        "warn": 0,
+        "contained_fill_overlays": 0,
+        "contained_image_overlays": 0
+      },
+      "minimum_font_pt": 8.5,
+      "alignment": "PASS",
+      "pixel_and_byte_identical_to_original": true,
+      "visual_review": "PASS: examined complete PNG and panels; labels, denominator differences and zero-outcome scope retained."
+    }
+  },
+  "new_solver_runs": 0,
+  "new_simulator_runs": 0,
+  "new_performance_experiments": 0,
+  "test_render_only": true,
+  "sha256sums_scope": "All package files except SHA256SUMS itself"
+}

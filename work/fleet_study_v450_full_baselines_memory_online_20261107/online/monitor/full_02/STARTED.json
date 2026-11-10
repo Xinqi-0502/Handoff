@@ -1,0 +1,67 @@
+{
+  "Status": "FAIL_CLOSED",
+  "StartedUTC": "2026-11-07T14:10:10.2309985+00:00",
+  "EndedUTC": null,
+  "ChildPid": 55972,
+  "ReaderPid": 38148,
+  "ChildExitCode": null,
+  "ChildStarted": true,
+  "ChildTerminatedBySupervisor": false,
+  "Failure": null,
+  "IntervalSeconds": 10,
+  "StopAtC": 60,
+  "ReadTimeoutSeconds": 25,
+  "TemperatureFileMutexName": "Local\\CodexResearchV447Temperature_0384F82C40EC56E94EF05C7AF146B0288B4009389176D9F1A111D3144260C38C",
+  "TemperatureFileMutexWaitMilliseconds": 1000,
+  "AvailableBytesAtStart": 753517961216,
+  "AvailableBytesAtEnd": null,
+  "LastTemperature": {
+    "Status": "OK",
+    "Sequence": 0,
+    "TimeUTC": "2026-11-07T22:10:21.8881935+08:00",
+    "DiskNumber": 1,
+    "Model": "Predator SSD GM6 1TB",
+    "CompositeC": 38,
+    "MaximumReportedSensorC": 38.0,
+    "Sensors": [
+      {
+        "Index": 0,
+        "Celsius": 38
+      },
+      {
+        "Index": 1,
+        "Celsius": 38
+      },
+      {
+        "Index": 2,
+        "Celsius": 29
+      }
+    ],
+    "Failure": null
+  },
+  "Mapping": {
+    "Drive": "E",
+    "DiskNumber": 1,
+    "PhysicalDevice": "\\\\.\\PhysicalDrive1",
+    "Model": "Predator SSD GM6 1TB",
+    "SerialNumber": "0000_0000_0000_0000_0000_0054_5020_1752.",
+    "BusType": "NVMe",
+    "HealthStatus": "Healthy",
+    "PartitionNumber": 2
+  },
+  "ScriptPath": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\job_host_online_v450.py",
+  "RunnerArgs": [
+    "--python",
+    "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "--script",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\run_online_v450.py",
+    "--args-json",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\records\\full_args_02.json",
+    "--out",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\hosts\\full_02",
+    "--timeout-seconds",
+    "14400"
+  ],
+  "ReaderSHA256": "60E40C13C7B2EEFBFC1643D1777E16FBCB80937E2162B67126AF178872158284",
+  "MonitorSHA256": "947963A6D2A6440C7D09BA459CE50C9B676C322E4AE3A031A62E96228C855F92"
+}

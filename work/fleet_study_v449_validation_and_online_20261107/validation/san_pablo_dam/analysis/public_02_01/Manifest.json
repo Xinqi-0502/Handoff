@@ -1,0 +1,9 @@
+{
+  "files": {
+    "Independent_Audit.json": "78d7c97c64c54b9dd63f001c8d2efbdbb5f0d093c8efb5787ed872521145e17e",
+    "Independent_Segment_Metrics.csv": "e80cb9a48a68808508d40878eab711c9140c555e82360a0c880d373a3dc55939",
+    "Independent_Validation_Report.md": "d0918574ed53a8380c94c800d74265bfa935f3c66f06043796a7e26a516051aa"
+  },
+  "raw_output_manifest_sha256": "5e7affc98d71dc52dff022cd7851ed18cdcde600246e52188712038ac8f6ea73",
+  "audit_script_sha256": "501c4979fd0a79bc0dc341d28d361ae7991163bc7d1a0d466bf8b679aeb2ebb8"
+}

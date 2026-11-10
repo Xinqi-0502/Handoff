@@ -1,0 +1,294 @@
+[
+  {
+    "seed": 3470501,
+    "m": 5,
+    "n_nodes": 7,
+    "coordinates": [
+      [
+        0,
+        0
+      ],
+      [
+        5,
+        -47
+      ],
+      [
+        9,
+        -19
+      ],
+      [
+        39,
+        7
+      ],
+      [
+        -41,
+        -5
+      ],
+      [
+        -50,
+        7
+      ],
+      [
+        -45,
+        -29
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        2,
+        12,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        18,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        15,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        19,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        17,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        6,
+        19,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        12,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        15,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        3,
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        5,
+        22,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        18,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        1,
+        25,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        2,
+        17,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        5,
+        31,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        15,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        5,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        6,
+        12,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        18,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        3,
+        35,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        4,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        6,
+        18,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        1,
+        22,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        4,
+        13,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        5,
+        13,
+        0,
+        0,
+        0
+      ]
+    ],
+    "hub": 0,
+    "a_node": 1,
+    "start_node": 0,
+    "t0": 32,
+    "A": 34,
+    "wa": 120,
+    "wb": 160,
+    "a_service": 4,
+    "tau_a": 2,
+    "tau_b": 3,
+    "old": [
+      {
+        "node": 2,
+        "weight": 58,
+        "service": 11
+      },
+      {
+        "node": 3,
+        "weight": 64,
+        "service": 7
+      },
+      {
+        "node": 4,
+        "weight": 13,
+        "service": 7
+      },
+      {
+        "node": 5,
+        "weight": 30,
+        "service": 3
+      },
+      {
+        "node": 6,
+        "weight": 35,
+        "service": 10
+      }
+    ],
+    "total_old_weight": 200,
+    "total_old_service": 38,
+    "case": "micro_s3470501_m5_roomier_free",
+    "split": "micro",
+    "Q": 250,
+    "capacity_regime": "roomier",
+    "signal": false,
+    "geometry": "random_2d",
+    "control": false,
+    "pair_id": "micro_s3470501_m5_roomier",
+    "signal_pair_id": "micro_s3470501_m5_roomier",
+    "capacity_pair_id": "micro_s3470501_m5_free",
+    "generation": "Prespecified random high-load FIFO synthetic transport",
+    "atomic_incoming_order": [
+      "a",
+      "b"
+    ],
+    "units": "Uncalibrated integer ticks and cargo units"
+  }
+]

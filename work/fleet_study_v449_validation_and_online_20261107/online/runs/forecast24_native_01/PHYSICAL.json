@@ -1,0 +1,394 @@
+[
+  {
+    "case": "s420511_o0_p0_q0",
+    "signature": "2dfee5df8d7fc36ad538f979bb567c1806daa8c261a5cff226be0810bd94c590",
+    "selected_by": [
+      {
+        "arm": "RADIUS",
+        "rep": 0
+      },
+      {
+        "arm": "PAIR",
+        "rep": 0
+      },
+      {
+        "arm": "PAIR",
+        "rep": 1
+      },
+      {
+        "arm": "RADIUS",
+        "rep": 1
+      },
+      {
+        "arm": "RADIUS",
+        "rep": 2
+      },
+      {
+        "arm": "PAIR",
+        "rep": 2
+      }
+    ],
+    "folder": "native_000_s420511_o0_p0_q0_2dfee5df8d",
+    "status": "PASS",
+    "J_customer_seconds": 1495.8,
+    "completed": {
+      "a0": 30,
+      "b0": 30,
+      "b1": 94,
+      "a4": 129,
+      "b4": 309,
+      "a3": 540,
+      "b2": 752,
+      "a2": 755,
+      "a1": 826,
+      "b3": 857,
+      "a": 1436,
+      "b": 1781
+    },
+    "handoff_a_seconds": 197.6,
+    "last_handoff_seconds": 332.4,
+    "truck_release_seconds": 332.4,
+    "all_customers": 12,
+    "prefix": "b84a56013748eb28db143656111cde58788499bcd5b5e6cceb683157a9e41f54",
+    "trace_sha256": "e924d26a9682b5c19d1fadfe6816407df49c2752e74fd6c7a3a75bc4e0449773",
+    "collision_ticks": 0,
+    "teleports": 0
+  },
+  {
+    "case": "s420511_o0_p0_q0",
+    "signature": "a01806bf1cb84bf733d9a544b5edf150d3088bfec61a992dcabe478d8a83f8b7",
+    "selected_by": [
+      {
+        "arm": "OR_OPT",
+        "rep": 0
+      },
+      {
+        "arm": "OR_OPT",
+        "rep": 1
+      },
+      {
+        "arm": "OR_OPT",
+        "rep": 2
+      }
+    ],
+    "folder": "native_001_s420511_o0_p0_q0_a01806bf1c",
+    "status": "PASS",
+    "J_customer_seconds": 1451.4,
+    "completed": {
+      "a0": 30,
+      "b0": 30,
+      "b1": 94,
+      "a4": 129,
+      "b4": 335,
+      "a3": 540,
+      "a": 716,
+      "a2": 755,
+      "a1": 826,
+      "b3": 856,
+      "b2": 1004,
+      "b": 2002
+    },
+    "handoff_a_seconds": 99.2,
+    "last_handoff_seconds": 300.0,
+    "truck_release_seconds": 300.0,
+    "all_customers": 12,
+    "prefix": "b84a56013748eb28db143656111cde58788499bcd5b5e6cceb683157a9e41f54",
+    "trace_sha256": "e0ef36b6718da33c53690713197bc695e31ebf8ee6a720f9af3e49b7fdf7ea3a",
+    "collision_ticks": 0,
+    "teleports": 0
+  },
+  {
+    "case": "s420511_o0_p0_q2",
+    "signature": "2dfee5df8d7fc36ad538f979bb567c1806daa8c261a5cff226be0810bd94c590",
+    "selected_by": [
+      {
+        "arm": "PAIR",
+        "rep": 0
+      },
+      {
+        "arm": "RADIUS",
+        "rep": 0
+      },
+      {
+        "arm": "RADIUS",
+        "rep": 1
+      },
+      {
+        "arm": "PAIR",
+        "rep": 1
+      },
+      {
+        "arm": "RADIUS",
+        "rep": 2
+      },
+      {
+        "arm": "PAIR",
+        "rep": 2
+      }
+    ],
+    "folder": "native_002_s420511_o0_p0_q2_2dfee5df8d",
+    "status": "PASS",
+    "J_customer_seconds": 1495.8,
+    "completed": {
+      "a0": 30,
+      "b0": 30,
+      "b1": 94,
+      "a4": 129,
+      "b4": 309,
+      "a3": 540,
+      "b2": 752,
+      "a2": 755,
+      "a1": 826,
+      "b3": 857,
+      "a": 1436,
+      "b": 1781
+    },
+    "handoff_a_seconds": 197.6,
+    "last_handoff_seconds": 332.4,
+    "truck_release_seconds": 332.4,
+    "all_customers": 12,
+    "prefix": "95949bc0b694b9c30ea8a2d70db2b0902d9f33be48a2f219d0c8e77334acf4d0",
+    "trace_sha256": "d6a3b18042d535dd6f506897f272226d7aa22a759e87e6a0a97782012357d411",
+    "collision_ticks": 0,
+    "teleports": 0
+  },
+  {
+    "case": "s420511_o0_p0_q2",
+    "signature": "a01806bf1cb84bf733d9a544b5edf150d3088bfec61a992dcabe478d8a83f8b7",
+    "selected_by": [
+      {
+        "arm": "OR_OPT",
+        "rep": 0
+      },
+      {
+        "arm": "OR_OPT",
+        "rep": 1
+      },
+      {
+        "arm": "OR_OPT",
+        "rep": 2
+      }
+    ],
+    "folder": "native_003_s420511_o0_p0_q2_a01806bf1c",
+    "status": "PASS",
+    "J_customer_seconds": 1451.4,
+    "completed": {
+      "a0": 30,
+      "b0": 30,
+      "b1": 94,
+      "a4": 129,
+      "b4": 335,
+      "a3": 540,
+      "a": 716,
+      "a2": 755,
+      "a1": 826,
+      "b3": 856,
+      "b2": 1004,
+      "b": 2002
+    },
+    "handoff_a_seconds": 99.2,
+    "last_handoff_seconds": 300.0,
+    "truck_release_seconds": 300.0,
+    "all_customers": 12,
+    "prefix": "95949bc0b694b9c30ea8a2d70db2b0902d9f33be48a2f219d0c8e77334acf4d0",
+    "trace_sha256": "a3298e1f4eb3bbf24abadb3c4466ded917ff53c990b8180b1cbc6c4de34cb389",
+    "collision_ticks": 0,
+    "teleports": 0
+  },
+  {
+    "case": "s420511_o24_p0_q0",
+    "signature": "a01806bf1cb84bf733d9a544b5edf150d3088bfec61a992dcabe478d8a83f8b7",
+    "selected_by": [
+      {
+        "arm": "OR_OPT",
+        "rep": 0
+      },
+      {
+        "arm": "OR_OPT",
+        "rep": 1
+      },
+      {
+        "arm": "OR_OPT",
+        "rep": 2
+      }
+    ],
+    "folder": "native_004_s420511_o24_p0_q0_a01806bf1c",
+    "status": "PASS",
+    "J_customer_seconds": 1307.8,
+    "completed": {
+      "a0": 30,
+      "b0": 30,
+      "b1": 94,
+      "a4": 129,
+      "b4": 337,
+      "a3": 423,
+      "a": 633,
+      "a2": 638,
+      "a1": 709,
+      "b3": 773,
+      "b2": 921,
+      "b": 1882
+    },
+    "handoff_a_seconds": 99.6,
+    "last_handoff_seconds": 283.4,
+    "truck_release_seconds": 283.4,
+    "all_customers": 12,
+    "prefix": "405066740af98bf2ca1b9ca2b6673c0b81fd415f6fef53cf333e8f42bfdc1cb5",
+    "trace_sha256": "e2e34c9372e28b2cad010db829300841b2d1311c0d9487de031b2016d056e5e9",
+    "collision_ticks": 0,
+    "teleports": 0
+  },
+  {
+    "case": "s420511_o24_p0_q0",
+    "signature": "bfa2298412a3e6600d1b665d1eb1826cd3456e8fc6dcc52550f63525ba216b93",
+    "selected_by": [
+      {
+        "arm": "RADIUS",
+        "rep": 0
+      },
+      {
+        "arm": "PAIR",
+        "rep": 0
+      },
+      {
+        "arm": "RADIUS",
+        "rep": 1
+      },
+      {
+        "arm": "PAIR",
+        "rep": 1
+      },
+      {
+        "arm": "PAIR",
+        "rep": 2
+      },
+      {
+        "arm": "RADIUS",
+        "rep": 2
+      }
+    ],
+    "folder": "native_005_s420511_o24_p0_q0_bfa2298412",
+    "status": "PASS",
+    "J_customer_seconds": 1225.0,
+    "completed": {
+      "a0": 30,
+      "b0": 30,
+      "b1": 94,
+      "a4": 129,
+      "b4": 337,
+      "a3": 423,
+      "a": 633,
+      "a2": 638,
+      "b2": 704,
+      "a1": 709,
+      "b3": 809,
+      "b": 1649
+    },
+    "handoff_a_seconds": 99.6,
+    "last_handoff_seconds": 247.0,
+    "truck_release_seconds": 247.0,
+    "all_customers": 12,
+    "prefix": "405066740af98bf2ca1b9ca2b6673c0b81fd415f6fef53cf333e8f42bfdc1cb5",
+    "trace_sha256": "eac28512d9c26e56349019501c1d55cc5c5056f8698dd5416df5c2a289ace2a3",
+    "collision_ticks": 0,
+    "teleports": 0
+  },
+  {
+    "case": "s420511_o24_p0_q2",
+    "signature": "a01806bf1cb84bf733d9a544b5edf150d3088bfec61a992dcabe478d8a83f8b7",
+    "selected_by": [
+      {
+        "arm": "OR_OPT",
+        "rep": 0
+      },
+      {
+        "arm": "OR_OPT",
+        "rep": 1
+      },
+      {
+        "arm": "OR_OPT",
+        "rep": 2
+      }
+    ],
+    "folder": "native_006_s420511_o24_p0_q2_a01806bf1c",
+    "status": "PASS",
+    "J_customer_seconds": 1314.2,
+    "completed": {
+      "a0": 30,
+      "b0": 30,
+      "b1": 94,
+      "a4": 129,
+      "b4": 345,
+      "a3": 423,
+      "a2": 638,
+      "a": 641,
+      "a1": 709,
+      "b3": 781,
+      "b2": 929,
+      "b": 1882
+    },
+    "handoff_a_seconds": 101.2,
+    "last_handoff_seconds": 285.0,
+    "truck_release_seconds": 285.0,
+    "all_customers": 12,
+    "prefix": "f0795e12ae4a28cddf04cf6b3c17f5b382d32fa0efd3fd2bedbfc04efd216e0e",
+    "trace_sha256": "373a38f4a8b1628d92ec4551ef427751cded78098c04aeb5385e282570369601",
+    "collision_ticks": 0,
+    "teleports": 0
+  },
+  {
+    "case": "s420511_o24_p0_q2",
+    "signature": "bfa2298412a3e6600d1b665d1eb1826cd3456e8fc6dcc52550f63525ba216b93",
+    "selected_by": [
+      {
+        "arm": "RADIUS",
+        "rep": 0
+      },
+      {
+        "arm": "PAIR",
+        "rep": 0
+      },
+      {
+        "arm": "PAIR",
+        "rep": 1
+      },
+      {
+        "arm": "RADIUS",
+        "rep": 1
+      },
+      {
+        "arm": "RADIUS",
+        "rep": 2
+      },
+      {
+        "arm": "PAIR",
+        "rep": 2
+      }
+    ],
+    "folder": "native_007_s420511_o24_p0_q2_bfa2298412",
+    "status": "PASS",
+    "J_customer_seconds": 1278.0,
+    "completed": {
+      "a0": 30,
+      "b0": 30,
+      "b1": 94,
+      "a4": 129,
+      "b4": 345,
+      "a3": 423,
+      "a2": 638,
+      "a": 641,
+      "a1": 709,
+      "b2": 712,
+      "b3": 817,
+      "b": 1882
+    },
+    "handoff_a_seconds": 101.2,
+    "last_handoff_seconds": 273.0,
+    "truck_release_seconds": 273.0,
+    "all_customers": 12,
+    "prefix": "f0795e12ae4a28cddf04cf6b3c17f5b382d32fa0efd3fd2bedbfc04efd216e0e",
+    "trace_sha256": "7f09809361da3a87b3e44927d8b0448d21324ce56c8d356193ed73acb78e6509",
+    "collision_ticks": 0,
+    "teleports": 0
+  }
+]

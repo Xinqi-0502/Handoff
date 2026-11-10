@@ -1,0 +1,37 @@
+{
+  "Status": "FAIL_CLOSED",
+  "StartedUTC": "2026-11-07T12:31:09.0772907+00:00",
+  "EndedUTC": null,
+  "ChildPid": null,
+  "ReaderPid": null,
+  "ChildExitCode": null,
+  "ChildStarted": false,
+  "ChildTerminatedBySupervisor": false,
+  "Failure": null,
+  "IntervalSeconds": 10,
+  "StopAtC": 60,
+  "ReadTimeoutSeconds": 25,
+  "TemperatureFileMutexName": "Local\\CodexResearchV447Temperature_B1B378C24F940A7BA49AF17F001486494517512664F4A94FC6A3E3A1C4C3AF3B",
+  "TemperatureFileMutexWaitMilliseconds": 1000,
+  "AvailableBytesAtStart": 753568804864,
+  "AvailableBytesAtEnd": null,
+  "LastTemperature": null,
+  "Mapping": {
+    "Drive": "E",
+    "DiskNumber": 1,
+    "PhysicalDevice": "\\\\.\\PhysicalDrive1",
+    "Model": "Predator SSD GM6 1TB",
+    "SerialNumber": "0000_0000_0000_0000_0000_0054_5020_1752.",
+    "BusType": "NVMe",
+    "HealthStatus": "Healthy",
+    "PartitionNumber": 2
+  },
+  "ScriptPath": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\check_memory_safety.py",
+  "RunnerArgs": [
+    "--execute",
+    "--run",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\safety_01"
+  ],
+  "ReaderSHA256": "60E40C13C7B2EEFBFC1643D1777E16FBCB80937E2162B67126AF178872158284",
+  "MonitorSHA256": "947963A6D2A6440C7D09BA459CE50C9B676C322E4AE3A031A62E96228C855F92"
+}

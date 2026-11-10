@@ -1,0 +1,21 @@
+{
+  "status": "AST_STATIC_PREPARATION_NOT_RUN",
+  "source_manifest_sha256": "db11af7fa52192252baacc67938dcb06e6f1daf0dbdcf5b204f957a04343cd84",
+  "inputs_structurally_generated": true,
+  "main_inputs_unseen_by_solvers": true,
+  "parent_sources_unchanged": true,
+  "methods": 9,
+  "correctness_batches": 6,
+  "cost_batches": 4,
+  "main_batches": 52,
+  "independent_static_review": "PENDING",
+  "numeric_runs_executed": false,
+  "files": {
+    "Scale_Protocol.md": "657da80fdbb8c89a2d68ba5d410c60fafadd4cb692b2b295ad6d08ce748f1350",
+    "Protocol_Design_Amendment_01.md": "82d71d62bce085b41b764abf4326ee28c066df9e6d0dd5f804f946a15d207b42",
+    "records\\explicit_selected_scale_check_runs_01.json": "3d46a34c2c0a94bd44882fcfd72d3d12d368a572bf7673ada45dd2d03d4dee92",
+    "records\\scale_check_jobs_01.json": "0217b3c721d26c5bf27fa8d9272d2f2605d7d813e330846bc9312c3170f77b15",
+    "records\\scale_cost_jobs_01.json": "d913dc5402b08a43035078baf5bd9e7439b085ff443f897572aa42d3286f23c9",
+    "records\\scale_main_jobs_01.json": "e737c08af84eddecd607c9f5c78c603f87e517776d9597236dd7864325c42a3c"
+  }
+}

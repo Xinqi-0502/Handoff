@@ -1,0 +1,11 @@
+# Prospective amendment: complete engines and controlled bound ablation
+
+Frozen before any V450 solver performance output.
+
+The new static confirmation uses 64 unseen mother orders (16 at each m=6,8,10,12), four paired capacity/signal variants, hence 256 cases. A separate four-mother, 16-case namespace is reserved for cost assessment. No cases are selected using method differences. The V449 cohort selected the main method and is therefore not used again as an independent confirmation of the new published-engine comparison.
+
+Four arms share the same domain, objective H2, radius information, feasible initial schedule, one-second wall allowance and fixed inputs. They are the frozen V449 main implementation, independently reconstructed Hansen-Zhou Anytime Weighted A* with RADIUS, that SAME independently reconstructed engine with the new gated joint-capacity check, and the complete ANA* search engine with RADIUS. Three technical repeats, balanced rotating method order. The main causal contrast is the two arms inside the same published AWA engine. The specialized frozen implementation is a deployment reference. Comparing it alone against a generic engine cannot assign the whole time difference to the new bound.
+
+The full 256-case matrix has 3,072 calls. The 16-case cost matrix has one repeat and 64 calls. Results include literal 100/500/1000 ms quality, complete proof coverage, per-case median proof time on identical solved subsets, first reaching 0/5/10 percent remaining-duration gaps, expansions and source identities. Fresh-process memory measurements form a separate experiment with identical common imports. Actual process peak bytes are reported with baseline memory, not inferred from expansions.
+
+These are complete published search methods transferred to the fixed freight problem. They are not complete implementations of the Hof-Schneider or Wei multi-echelon freight systems. The latter replication gap remains explicitly tracked until all required components have been reproduced and tested.

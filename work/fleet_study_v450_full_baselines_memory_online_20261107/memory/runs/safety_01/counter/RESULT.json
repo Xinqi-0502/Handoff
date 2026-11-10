@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "allocation_bytes": 16777216,
+  "private_commit_growth_bytes": 16809984,
+  "before": {
+    "status": "OK",
+    "pid": 54244,
+    "monotonic_seconds": 607271.607562,
+    "counters_bytes": {
+      "PeakWorkingSetSize": 22360064,
+      "WorkingSetSize": 21303296,
+      "QuotaPeakPagedPoolUsage": 145512,
+      "QuotaPagedPoolUsage": 145512,
+      "QuotaPeakNonPagedPoolUsage": 39520,
+      "QuotaNonPagedPoolUsage": 22256,
+      "PagefileUsage": 12857344,
+      "PeakPagefileUsage": 16162816,
+      "PrivateUsage": 12857344
+    },
+    "page_fault_count": 7724,
+    "counter_structure_bytes": 80,
+    "pointer_bits": 64,
+    "semantics": "Working set includes resident private and shared pages. PagefileUsage/PrivateUsage are process commit, not actual bytes written to a paging file.",
+    "peak_reset_performed": false
+  },
+  "allocated": {
+    "status": "OK",
+    "pid": 54244,
+    "monotonic_seconds": 607271.6096419,
+    "counters_bytes": {
+      "PeakWorkingSetSize": 38084608,
+      "WorkingSetSize": 38084608,
+      "QuotaPeakPagedPoolUsage": 145512,
+      "QuotaPagedPoolUsage": 145512,
+      "QuotaPeakNonPagedPoolUsage": 39520,
+      "QuotaNonPagedPoolUsage": 22392,
+      "PagefileUsage": 29667328,
+      "PeakPagefileUsage": 29667328,
+      "PrivateUsage": 29667328
+    },
+    "page_fault_count": 11829,
+    "counter_structure_bytes": 80,
+    "pointer_bits": 64,
+    "semantics": "Working set includes resident private and shared pages. PagefileUsage/PrivateUsage are process commit, not actual bytes written to a paging file.",
+    "peak_reset_performed": false
+  },
+  "released": {
+    "status": "OK",
+    "pid": 54244,
+    "monotonic_seconds": 607271.6107657,
+    "counters_bytes": {
+      "PeakWorkingSetSize": 38084608,
+      "WorkingSetSize": 21307392,
+      "QuotaPeakPagedPoolUsage": 145512,
+      "QuotaPagedPoolUsage": 145512,
+      "QuotaPeakNonPagedPoolUsage": 39520,
+      "QuotaNonPagedPoolUsage": 22256,
+      "PagefileUsage": 12857344,
+      "PeakPagefileUsage": 29667328,
+      "PrivateUsage": 12857344
+    },
+    "page_fault_count": 11829,
+    "counter_structure_bytes": 80,
+    "pointer_bits": 64,
+    "semantics": "Working set includes resident private and shared pages. PagefileUsage/PrivateUsage are process commit, not actual bytes written to a paging file.",
+    "peak_reset_performed": false
+  },
+  "resident_delta_not_required": "OS trimming can change current working set; commit growth and peak invariants are checked",
+  "no_claim_of_peak_reset": true
+}

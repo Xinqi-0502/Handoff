@@ -1,0 +1,27 @@
+{
+  "status": "READY_FOR_ROOT_MONITORED_EXECUTION",
+  "no_traffic_simulation_executed_by_preparer": true,
+  "working_directory": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107",
+  "python": "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "arguments": [
+    "-B",
+    "-X",
+    "utf8",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\validation\\san_pablo_dam\\run_public_validation.py",
+    "--execute",
+    "--out",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\validation\\san_pablo_dam\\runs\\public_01"
+  ],
+  "environment": {
+    "TEMP": "E:\\CodexResearch-xi\\temp",
+    "TMP": "E:\\CodexResearch-xi\\temp",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "requires_external_thermal_monitor": true,
+  "max_sumo_runs": 5,
+  "sequential_no_benchmark_overlap": true,
+  "source_sha256": "c50fcb484be5261a6e710371fbe745af1c0cbabd548ff57994febc6bd8acb451",
+  "protocol_sha256": "3803811668a00b0377d2f6e3898819bf220927c48bbad59b4e5014815117162a",
+  "preparation_manifest_sha256": "b78bea9c5e999d9419e8209fac4e97784d21bdd8d585122d1c787795400ab1e5",
+  "lifecycle_summary_sha256": "3c646ac7a445177b28ec6bd1cb6c41b8cd6b48e89efee1984104391512deb25f"
+}

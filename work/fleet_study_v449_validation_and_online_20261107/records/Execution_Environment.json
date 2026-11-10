@@ -1,0 +1,17 @@
+{
+  "CollectedAfterRunUTC": "2026-11-07T11:48:42.4144711Z",
+  "CPU": {
+    "Name": "13th Gen Intel(R) Core(TM) i5-13600KF",
+    "NumberOfCores": 14,
+    "NumberOfLogicalProcessors": 20
+  },
+  "OperatingSystem": {
+    "Caption": "Microsoft Windows 11 专业版",
+    "Version": "10.0.22631",
+    "BuildNumber": "22631"
+  },
+  "InstalledMemoryBytes": 34164097024,
+  "PythonVersion": "Python 3.12.14",
+  "PythonPath": "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "Note": "Hardware inventory collected after the completed benchmark. No isolation from unrelated user/system background work is claimed."
+}

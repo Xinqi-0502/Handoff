@@ -1,0 +1,32 @@
+{
+  "status": "AST_STATIC_ONLY_NOT_RUN",
+  "parent_solver_sha256": "1bbdf82f14286102e31ec35a9fec7b8f8588c5d5cbe63935787aef59fad3e4f4",
+  "parent_reference_sha256": "9810d96023a7710329d34a42f5c831687ea73e09fbfb42968fe4c660366a7416",
+  "solver_sha256": "f955dcb082a1e8fb4e683741a657c433209202f313571c07174d9ab15de42a6c",
+  "reference_sha256": "9810d96023a7710329d34a42f5c831687ea73e09fbfb42968fe4c660366a7416",
+  "reference_byte_identical": true,
+  "unchanged_context_methods": [
+    "quota_pair",
+    "fa",
+    "gamma_order",
+    "gamma",
+    "gamma_at_most",
+    "continuation",
+    "alphas"
+  ],
+  "unchanged_network_ast": true,
+  "unchanged_base_ast": true,
+  "unchanged_top_level_functions": [
+    "queue_priority",
+    "reference_phase1_bound",
+    "verify_pathmax_edges",
+    "reference_lazy_policy",
+    "verify_lazy_toy"
+  ],
+  "no_solver_or_oracle_executed": true,
+  "source_version": "v448-radius-pair-prototype-unmeasured-1",
+  "exact_default": true,
+  "max_old_items": 12,
+  "new_global_caches": false,
+  "new_quota_cutoffs": false
+}

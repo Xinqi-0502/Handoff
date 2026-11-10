@@ -1,0 +1,65 @@
+{
+  "status": "FROZEN_NOT_RUN",
+  "source_commit": "32b8df574b9976dda12d9ccc5e6332b2ae9ff98e",
+  "sumo_binary": "D:\\traffic-coop-research\\.venv\\Lib\\site-packages\\sumo\\bin\\sumo.exe",
+  "sumo_version_observed": "1.27.1",
+  "netconvert_binary": "D:\\traffic-coop-research\\.venv\\Lib\\site-packages\\sumo\\bin\\netconvert.exe",
+  "parameters": {
+    "maxSpeed": 22.0,
+    "accel": 2.0,
+    "decel": 2.0,
+    "length": 5.0,
+    "minGap": 2.5,
+    "sigma": 0.5
+  },
+  "tau_candidates": [
+    1.2,
+    1.5,
+    1.8
+  ],
+  "baseline_tau": 1.5,
+  "train_day": 1,
+  "heldout_day": 2,
+  "segments": [
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "selection": "minimum mean of three segment RMSEs; exact numeric ties prefer baseline tau=1.5, then smaller tau",
+  "seed": 23423,
+  "step_length": 1.0,
+  "day_begin": "floor(first observed station1 second / 60)*60",
+  "day_end": "last observed station8 second + 7200",
+  "vss_distance_m": 337.5,
+  "vss_rule": "upstream t7-changes rule, omit final index, v=337.5/(t8-t7), subject only to frozen boundary QC",
+  "measure": "instantInductionLoop enter time indexed by simulated vehID equal to source ordinal row; comparison is ordinal-row matching, not verified observed identity",
+  "max_sumo_runs": 5,
+  "max_per_process_seconds": 45,
+  "total_execution_seconds": 300,
+  "time_to_teleport": -1,
+  "collision_action": "warn",
+  "requires_external_thermal_monitor": true,
+  "validation_claim": "conditional observed-boundary, cross-day tutorial transfer; not calibration of the delivery network",
+  "no_day2_selection": true,
+  "no_improvement_required_for_completion": true,
+  "windows_child_containment": "CreateProcessW STARTUPINFOEX JOB_LIST: child assigned at creation to noninherited KILL_ON_JOB_CLOSE Job Object; normal/exception close plus owned-job terminate/wait on timeout; no process enumeration",
+  "observation_matching": "same ordinal row across stations; no explicit real vehicle identifier exists",
+  "observation_qc": "preserve every demand vehicle; for each scored segment exclude only raw end<=start; keep raw row/times and eligibility; identical predetermined rule on both days/all candidates",
+  "boundary_qc": "omit any nonpositive 7->8 difference from VSS updates, so previous valid speed remains; reject if invalid update precedes first valid speed; preserve all raw input",
+  "day_end_padding_seconds": 7200,
+  "protocol_revision": "Uniform terminal drain horizon; no error-based tuning; fail without further extension if incomplete",
+  "supersedes_for_next_attempt_only": "Frozen_Protocol.json; original public_01 retained as failed/censored",
+  "previous_public_attempts": 1,
+  "planned_new_sumo_runs_max": 5,
+  "total_historical_plus_new_sumo_runs_max": 6,
+  "horizon_basis": "Original horizon ended with 119 running vehicles; all measured crossings present. Identical 7200-second allowance for both days/all tau; no metric inspected for horizon selection."
+}

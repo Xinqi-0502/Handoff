@@ -1,0 +1,5 @@
+method,expected_cases,available_cases,available_calls,all_three_proved,sum_case_median_proof_seconds,sum_expanded_end,all_three_optimal_100,all_three_optimal_500,all_three_optimal_1000,all_three_gap0_reached,initial_good_gap0_cases,all_three_gap1_reached,initial_good_gap1_cases,all_three_gap2_reached,initial_good_gap2_cases
+RADIUS_PAIR_AWA_GATED,256,256,768,256,14.96303990110755,82923,232,256,256,256,0,256,0,256,0
+HZ_AWA_RADIUS,256,256,768,255,23.188373599783517,181861,223,255,256,256,0,256,0,256,0
+HZ_AWA_RADIUS_PAIR_GATED,256,256,768,256,17.68296909914352,82923,227,256,256,256,0,256,0,256,0
+ANA_RADIUS,256,256,768,255,22.053007999551482,170818,207,251,256,256,0,256,0,256,0

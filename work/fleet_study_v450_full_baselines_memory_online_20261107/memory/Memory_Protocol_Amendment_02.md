@@ -1,0 +1,12 @@
+# Memory protocol amendment 02 — prospective cost control
+
+This amendment supersedes the workload counts in Memory_Protocol_01.md. It was approved before any solver memory observation, after counter/lifecycle checks showed about 10 seconds of fresh-process startup per normal worker. No method-memory outcome was inspected to select this scope. Original source/protocol preparation is retained under snapshots/pre_cost_scope_amendment_02_*.
+
+- Wrapper correctness: original frozen micro index 8, one m4 case, all twelve methods once = 12 fresh observations. The controller performs independent exhaustive optimum comparison, both plan replays, common initial identity, trace/certificate/timer checks and native-counter endpoint checks. Existing 24-case algorithm gates remain mandatory and separate.
+- Cost pilot: selected input indexes 0,8,16,24, one fixed tight/free scenario per scale, original nine methods once = 36 fresh observations. The pilot fixes actual operational cost and preserves all outcomes.
+- Main memory comparison: all 32 prespecified scenarios from eight mothers, one fresh observation each for RADIUS_PAIR_AWA_GATED, HZ_AWA_RADIUS, HZ_AWA_RADIUS_PAIR_GATED and ANA_RADIUS = 128 observations. Single observations cannot estimate process-repeat variability. All four methods retain the same 1000 ms soft/15 s solver hard budget and identical complete imports. New HZ_RADIUS versus HZ_PAIR isolates the bound addition within one complete published engine; comparisons across engines include implementation/container differences.
+- The other eight methods have no automatic large memory batch. Their fixed four-scenario cost-pilot observations, where included, are diagnostic only. The former 576+192 plan is historical and is not generated as an executable main configuration.
+
+The 32 input IDs, common initialization, frozen numerical sources, native API endpoints, E/temperature/owned-Job rules and all memory limitations in protocol 01 remain unchanged. After the actual 36-observation cost pilot, main still requires a source-matched explicit Cost_Approval_01.json. No automatic method selection or budget adjustment occurs.
+
+Native memory interpretation remains process lifetime high-water sampled immediately after the soft-ended solver. It is not an exact-at-1-second peak. Post-hoc replay never runs in the measured process. Current/peak import baselines, soft overruns and literal deadline quality accompany the main measurement.

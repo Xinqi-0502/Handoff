@@ -1,0 +1,25 @@
+{
+  "status": "OK",
+  "scope": "Lifetime high-water after result serialization, before final shutdown",
+  "native": {
+    "status": "OK",
+    "pid": 92660,
+    "monotonic_seconds": 611576.758276,
+    "counters_bytes": {
+      "PeakWorkingSetSize": 27500544,
+      "WorkingSetSize": 26337280,
+      "QuotaPeakPagedPoolUsage": 153704,
+      "QuotaPagedPoolUsage": 153704,
+      "QuotaPeakNonPagedPoolUsage": 39520,
+      "QuotaNonPagedPoolUsage": 22936,
+      "PagefileUsage": 18694144,
+      "PeakPagefileUsage": 20238336,
+      "PrivateUsage": 18694144
+    },
+    "page_fault_count": 12668,
+    "counter_structure_bytes": 80,
+    "pointer_bits": 64,
+    "semantics": "Working set includes resident private and shared pages. PagefileUsage/PrivateUsage are process commit, not actual bytes written to a paging file.",
+    "peak_reset_performed": false
+  }
+}

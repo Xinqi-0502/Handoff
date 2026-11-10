@@ -1,0 +1,288 @@
+"""Two-new-order bridge to V420 customer-flow J, not an H2-objective solver.
+
+Model scope: four (receiver, hub) branches, both atomic new orders a then b
+assigned to that receiver/hub; other receiver follows frozen lengths(). Both
+orders ride the same truck from release E; truck remains until handoff b.
+All old customers and both new deliveries are in J. The original COARSE
+forecast advances exact prefix times; it is NOT assumed FIFO. Bounds use a
+static directed free-flow metric closure. No dominance is used.
+
+API: Context(snapshot), branches(), initial(branch), children(state), plan(state),
+forecast(plan), bound(state, pair=False), solve(snapshot, arm, per_branch_cap=6,
+wall_seconds=None). RADIUS and PAIR share RADIUS queue ordering; PAIR differs
+only by a guarded extra pop bound. OR_OPT calls the unchanged published adapter.
+"""
+from __future__ import annotations
+from dataclasses import dataclass
+from pathlib import Path
+from itertools import permutations
+import hashlib, heapq, itertools, json, math, sys, time
+ROOT=Path(__file__).resolve().parent
+WORK=ROOT.parents[1]
+LEGACY=WORK/'fleet_study_v420_paired_20261104'
+sys.path.insert(0,str(LEGACY))
+import fusion420 as old
+EPS=1e-8
+ARMS=('RADIUS','PAIR','OR_OPT')
+
+@dataclass(frozen=True)
+class Branch:
+    receiver:str
+    hub:str
+
+@dataclass(frozen=True)
+class State:
+    branch:Branch
+    tokens:tuple[str,...]
+    t:float
+    pos:str
+    cost:float
+
+class Context:
+    def __init__(self,snapshot):
+        self.s=snapshot;self.c=snapshot['c'];self.w=snapshot['wave2']
+        self.epoch=float(old.E);self.service=float(old.SERV/old.SCALE)
+        self.transfer=float(old.XFER/old.SCALE);self.matrix=old.MATRIX
+        self.actors=tuple(self.c['actors']);self.cap=dict(old.CAP)
+        if len(self.actors)!=2 or self.w['release']!=self.epoch:
+            raise ValueError('Only the two-receiver frozen E epoch is supported')
+        if set(self.w['orders'])!={'a','b'} or not 0<self.weight('a')<self.weight('b'):
+            raise ValueError('Expected two atomic orders a,b with wa<wb')
+        self.jobs={v:tuple(old.items(self.c,v)) for v in self.actors}
+        self.fixed={v:tuple(old.lengths(self.c,v)) for v in self.actors}
+        for v in self.actors:
+            q=self.cap[v]
+            if not (self.weight('b')<=q<self.weight('a')+self.weight('b')):
+                raise ValueError('This bridge freezes the capacity-incompatible atomic domain')
+            obs=snapshot['ctx'][v]
+            if obs['remaining_cm']!=0 or abs(obs['ready']/old.SCALE-self.epoch)>EPS:
+                raise ValueError('Expected V420 completed committed stop at E')
+        self.sig=old.ShortForecast(snapshot['offset'],snapshot['obs'],'COARSE')
+        self.counts={k:0 for k in ('leg_calls','prefix_leg_calls','forecast_leg_calls',
+            'full_forecasts','bound_calls','pair_calls','pair_stronger','expanded',
+            'generated','base_pruned','pair_only_pruned')}
+        self.d=self._closure(8)
+        self.truck_d=self._closure(6)
+        self.truck={h:self.leg(self.epoch,self.w['T'],'T'+h[-1],6,'forecast')
+                    for h in old.POINTS}
+        self.other_cost={v:self._old_cost(v) for v in self.actors}
+    def weight(self,j):return self.w['orders'][j]['weight']
+    def dest(self,branch,j):
+        return branch.hub if j in ('Xa','Xb') else self.w['orders'][j]['dest'] if j in ('a','b') else self.c['old'][j]
+    def release(self,j):return self.epoch if j in ('a','b') else 0.
+    def _closure(self,speed):
+        ns=tuple(self.matrix)
+        d={u:{v:0. if u==v else self.matrix[u][v][0]/100/speed for v in ns} for u in ns}
+        for k in ns:
+            for u in ns:
+                for v in ns:d[u][v]=min(d[u][v],d[u][k]+d[k][v])
+        return d
+    def leg(self,t,p,q,speed,kind):
+        self.counts['leg_calls']+=1;self.counts[kind+'_leg_calls']+=1
+        try:return self.sig.leg(t,p,q,speed,self.matrix,True,[])
+        finally:self.sig.relevant.clear()
+    def _old_cost(self,v):
+        seq=self.fixed[v];t=self.epoch;pos=self.c['old'][seq[0]];val=t
+        for j in seq[1:]:
+            dest=self.c['old'][j];t=self.leg(t,pos,dest,8,'forecast')+self.service
+            val+=t;pos=dest
+        return val
+    def branches(self):return tuple(Branch(v,h) for v in self.actors for h in old.POINTS)
+    def initial(self,b):
+        j=self.jobs[b.receiver][0]
+        return State(b,(j,),self.epoch,self.c['old'][j],self.epoch)
+    def remaining(self,s):return tuple(j for j in self.jobs[s.branch.receiver][1:] if j not in s.tokens)
+    def load(self,s):
+        return sum(self.c['size'][j] for j in self.remaining(s))+sum(self.weight(j) for j in ('a','b') if 'X'+j in s.tokens and j not in s.tokens)
+    def terminal(self,s):return not self.remaining(s) and all(j in s.tokens for j in ('Xa','a','Xb','b'))
+    def children(self,s):
+        allowed=list(self.remaining(s));load=self.load(s);q=self.cap[s.branch.receiver]
+        if 'Xa' not in s.tokens:
+            # Keep V420's explicit at-least-one pending-old-before-handoff domain.
+            if len(self.remaining(s))<len(self.jobs[s.branch.receiver])-1 and load+self.weight('a')<=q:allowed.append('Xa')
+        else:
+            if 'a' not in s.tokens:allowed.append('a')
+            if 'Xb' not in s.tokens and load+self.weight('b')<=q:allowed.append('Xb')
+        if 'Xb' in s.tokens and 'b' not in s.tokens:allowed.append('b')
+        out=[]
+        for token in sorted(allowed):
+            pos=self.dest(s.branch,token);t=self.leg(s.t,s.pos,pos,8,'prefix');cost=s.cost
+            if token=='Xa':t=max(t,self.truck[s.branch.hub])+self.transfer
+            elif token=='Xb':t+=self.transfer
+            else:t+=self.service;cost+=t-self.release(token)
+            out.append(State(s.branch,s.tokens+(token,),t,pos,cost))
+        self.counts['generated']+=len(out)
+        return tuple(out)
+    def plan(self,s):
+        u=next(v for v in self.actors if v!=s.branch.receiver)
+        return {'receiver':s.branch.receiver,'hub':s.branch.hub,
+            'route':{s.branch.receiver:list(s.tokens),u:list(self.fixed[u])}}
+    def legal(self,p):
+        try:
+            b=Branch(p['receiver'],p['hub'])
+            if b not in self.branches() or set(p['route'])!=set(self.actors):return False
+            u=next(v for v in self.actors if v!=b.receiver)
+            if tuple(p['route'][u])!=self.fixed[u]:return False
+            seq=p['route'][b.receiver]
+            if seq[0]!=self.jobs[b.receiver][0] or sorted(seq)!=sorted(self.jobs[b.receiver]+('Xa','a','Xb','b')):return False
+            held=set(self.jobs[b.receiver][1:]);picked=set();done=set();old_done=0
+            for token in seq[1:]:
+                if token in ('Xa','Xb'):
+                    j=token[1]
+                    if j in picked or (j=='a' and old_done<1) or (j=='b' and 'a' not in picked):return False
+                    load=sum(self.c['size'][o] if o not in ('a','b') else self.weight(o) for o in held)
+                    if load+self.weight(j)>self.cap[b.receiver]:return False
+                    held.add(j);picked.add(j)
+                else:
+                    if token not in held:return False
+                    held.remove(token);done.add(token)
+                    if token not in ('a','b'):old_done+=1
+            return not held
+        except (KeyError,IndexError,TypeError):return False
+    def forecast(self,p):
+        if not self.legal(p):raise ValueError('Illegal plan')
+        self.counts['full_forecasts']+=1;completed={};h=p['hub'];arr=self.truck[h];hands={}
+        for v,seq in p['route'].items():
+            t=self.epoch;pos=self.c['old'][seq[0]];completed[seq[0]]=t
+            for token in seq[1:]:
+                dest=self.dest(Branch(v,h),token);t=self.leg(t,pos,dest,8,'forecast')
+                if token=='Xa':t=max(t,arr)+self.transfer;hands['a']=t
+                elif token=='Xb':t+=self.transfer;hands['b']=t
+                else:t+=self.service;completed[token]=t
+                pos=dest
+        return {'J':sum(t-self.release(j) for j,t in completed.items()),'completed':completed,
+                'handoffs':hands,'truck_arrival':arr,'truck_departure':hands['b'],
+                'truck_dwell':hands['b']-arr}
+    def greedy(self,b):
+        s=self.initial(b)
+        while not self.terminal(s):
+            children=self.children(s)
+            def key(z):
+                j=z.tokens[-1]
+                # Common capacity-first witness, no proposed-bound information.
+                return (0 if j in ('Xa','a','Xb','b') else 1,self.d[s.pos][z.pos],j)
+            s=min(children,key=key)
+        return self.plan(s)
+    @staticmethod
+    def quantile(rows,q,zero):
+        if q<=0:return zero
+        total=0
+        for value,weight in sorted(rows):
+            total+=weight
+            if total>=q:return value
+        return math.inf
+    def h2_bounds(self,s,with_pair=True):
+        """Return common and pair lower bounds for second handoff, phase zero only."""
+        h=s.branch.hub;ds=self.d;rem=self.remaining(s);L=sum(self.c['size'][j] for j in rem)
+        q=self.cap[s.branch.receiver];qa=max(0,L+self.weight('a')-q);qb=max(0,L+self.weight('b')-q)
+        r={j:s.t+ds[s.pos][self.c['old'][j]]+self.service+ds[self.c['old'][j]][h] for j in rem}
+        rq=lambda quota:self.quantile(((r[j],self.c['size'][j]) for j in rem),quota,s.t+ds[s.pos][h])
+        # An optimistic truck clock; the forecast's potentially non-FIFO clock is NOT propagated here.
+        A=self.epoch+self.truck_d[self.w['T']]['T'+h[-1]]
+        B=max(A,rq(qa))+self.transfer
+        an=self.w['orders']['a']['dest'];loop=ds[h][an]+self.service+ds[an][h]
+        base=max(B+loop,max(A,rq(qb)))+self.transfer
+        if not with_pair:return B,base,base
+        alpha={j:r[j]+self.transfer for j in rem}
+        events=sorted({B}|{x for x in alpha.values() if x>=B})
+        candidate=math.inf
+        for x in events:
+            first={j for j in rem if alpha[j]<=x}
+            needed=max(0,qb-sum(self.c['size'][j] for j in first))
+            rows=[]
+            for j in rem:
+                if j in first:continue
+                on=self.c['old'][j]
+                duration=min(ds[h][an]+self.service+ds[an][on]+self.service+ds[on][h],
+                             ds[h][on]+self.service+ds[on][an]+self.service+ds[an][h])
+                rows.append((x+duration,self.c['size'][j]))
+            threshold=self.quantile(rows,needed,x)
+            candidate=min(candidate,max(x+loop,threshold)+self.transfer)
+        return B,base,max(base,candidate)
+    def bound(self,s,pair=False):
+        self.counts['bound_calls']+=1
+        u=next(v for v in self.actors if v!=s.branch.receiver)
+        value=s.cost+self.other_cost[u];ds=self.d;h=s.branch.hub
+        for j in self.remaining(s):value+=s.t+ds[s.pos][self.c['old'][j]]+self.service
+        if 'Xa' not in s.tokens:
+            B,common,joint=self.h2_bounds(s,pair)
+            # Only this b completion term changes; H2 is never added as a separate objective.
+            eb=(joint if pair else common)+ds[h][self.w['orders']['b']['dest']]+self.service
+            ea=B+ds[h][self.w['orders']['a']['dest']]+self.service
+            if pair:
+                self.counts['pair_calls']+=1
+                self.counts['pair_stronger']+=int(joint>common+EPS)
+            value+=ea-self.epoch+eb-self.epoch
+        else:
+            if 'a' not in s.tokens:value+=s.t+ds[s.pos][self.w['orders']['a']['dest']]+self.service-self.epoch
+            if 'b' not in s.tokens:
+                if 'Xb' in s.tokens:eb=s.t+ds[s.pos][self.w['orders']['b']['dest']]+self.service
+                else:
+                    rem=self.remaining(s);L=sum(self.c['size'][j] for j in rem)
+                    quota=max(0,L+self.weight('b')-self.cap[s.branch.receiver])
+                    rows=((s.t+ds[s.pos][self.c['old'][j]]+self.service+ds[self.c['old'][j]][h],self.c['size'][j]) for j in rem)
+                    ready=self.quantile(rows,quota,s.t+ds[s.pos][h])
+                    if 'a' not in s.tokens:
+                        an=self.w['orders']['a']['dest']
+                        ready=max(ready,s.t+ds[s.pos][an]+self.service+ds[an][h])
+                    eb=ready+self.transfer+ds[h][self.w['orders']['b']['dest']]+self.service
+                value+=eb-self.epoch
+        return value
+
+def signature(plan):return old.digest(plan)
+
+def solve(snapshot,arm,per_branch_cap=6,wall_seconds=None):
+    if arm not in ARMS or per_branch_cap<1:raise ValueError('Bad arm/cap')
+    start=time.perf_counter();ctx=Context(snapshot);best=math.inf;bestplan=None;trace=[];evals={b:0 for b in ctx.branches()};seen=set();serial=itertools.count()
+    deadline=None if wall_seconds is None else start+wall_seconds
+    def score(p):
+        nonlocal best,bestplan
+        key=signature(p);b=Branch(p['receiver'],p['hub'])
+        if key in seen:raise AssertionError('Duplicate full forecast')
+        seen.add(key);evals[b]+=1;pred=ctx.forecast(p);stamp=time.perf_counter()-start
+        if (pred['J'],key)<(best,signature(bestplan) if bestplan else '~'):
+            best,bestplan=pred['J'],p
+            trace.append({'seconds':stamp,'J':best,'signature':key,'plan':p,'expanded':ctx.counts['expanded']})
+        return pred['J']
+    seeds={b:ctx.greedy(b) for b in ctx.branches()}
+    # All four common witnesses are mandatory setup; late outcomes are recorded literally.
+    seed_values={b:score(p) for b,p in seeds.items()}
+    initial=dict(J=best,plan=bestplan,seconds=time.perf_counter()-start)
+    heaps={b:[] for b in ctx.branches()};done=set();stopped='exhausted'
+    if arm=='OR_OPT':
+        for b in ctx.branches():
+            if deadline is not None and time.perf_counter()>=deadline:stopped='wall';break
+            def cached_score(p):
+                if signature(p)==signature(seeds[b]):return seed_values[b]
+                if deadline is not None and time.perf_counter()>=deadline:raise TimeoutError
+                return score(p)
+            try:old.select_plans(ctx.c,ctx.w,b.receiver,b.hub,seeds[b],cached_score,ctx.legal,per_branch_cap)
+            except TimeoutError:stopped='wall';break
+        else:stopped='forecast_or_local_stop'
+    else:
+        for b in ctx.branches():
+            s=ctx.initial(b);heapq.heappush(heaps[b],(ctx.bound(s),next(serial),s))
+        while len(done)<len(heaps):
+            for b,hp in heaps.items():
+                if b in done:continue
+                if deadline is not None and time.perf_counter()>=deadline:stopped='wall';done=set(heaps);break
+                if evals[b]>=per_branch_cap:stopped='forecast_cap';done.add(b);continue
+                if not hp:done.add(b);continue
+                lb,_,s=heapq.heappop(hp)
+                if lb>best+EPS:ctx.counts['base_pruned']+=1;continue
+                if arm=='PAIR' and ctx.bound(s,True)>best+EPS:
+                    ctx.counts['pair_only_pruned']+=1;continue
+                ctx.counts['expanded']+=1
+                for child in ctx.children(s):
+                    if ctx.terminal(child):
+                        p=ctx.plan(child)
+                        if signature(p) not in seen:score(p)
+                    else:heapq.heappush(hp,(ctx.bound(child),next(serial),child))
+    elapsed=time.perf_counter()-start
+    within=[r for r in trace if wall_seconds is None or r['seconds']<=wall_seconds]
+    certified=arm!='OR_OPT' and stopped=='exhausted' and all(not hp for hp in heaps.values())
+    return {'arm':arm,'J':best,'plan':bestplan,'signature':signature(bestplan),'elapsed_seconds':elapsed,
+            'initial':initial,'trace':trace,'within_budget_J':within[-1]['J'] if within else None,
+            'within_budget_plan':within[-1]['plan'] if within else None,'certified_forecast_optimal':certified,
+            'stop_reason':stopped,'per_branch_forecasts':{b.receiver+b.hub:count for b,count in evals.items()},'counts':ctx.counts}
+

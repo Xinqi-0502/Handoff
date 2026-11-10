@@ -1,0 +1,18 @@
+{
+  "source_sha256": "b2336d91bf1becb4d83ed8c4c43e45cf30bd49e0f929965c326c3db29710f41f",
+  "arguments": {
+    "runs": [
+      "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\static_comparison\\runs\\main_01"
+    ],
+    "allow_partial": false
+  },
+  "outputs": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Directed_Literal_Quality_Pairs.csv": "4fbf61fd9ca020093e7cc93891ee2a042329be7b14ae471d6384b38c18dfe041",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Directed_Proof_Pairs.csv": "ccd7c02ce3d5ba2e585bef88919649fc733014682b20ee8adc0388c441c66d10",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Independent_Audit.json": "5d5fcb5d0e0f5b2c261ddf52d6828529c2838955785c0b8b0e56ef3246c97104",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Independent_Audit.md": "300ca086cdeea8eedabe270ba87f4e9f9e813d016defc1101e3143c17f5ab469",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Independent_Case_Medians.csv": "6c7a40fa595551517a33a8ff7900056e1da0f01493b0f427282fb20f5e67a2b1",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Independent_Method_Summary.csv": "0163fe3063a600a4acaa9234e42687f05981a078c6b2415f30810190bb2e3adf",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Initial_Strata_First_Good_Pairs.csv": "9c0ac264f8da8507a768e6e975eeb33dd35267d36afeb2415ab55a5dea38e4d7"
+  }
+}

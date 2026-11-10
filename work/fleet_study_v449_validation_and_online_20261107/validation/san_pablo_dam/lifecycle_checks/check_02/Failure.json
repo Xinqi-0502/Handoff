@@ -1,0 +1,14 @@
+{
+  "error": "TimeoutError(('Owned child not ready', 'grandchild_pid.json', 0))",
+  "traceback": "Traceback (most recent call last):\n  File \"E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\validation\\san_pablo_dam\\check_owned_lifecycle.py\", line 52, in main\n    if time.monotonic()>deadline or owner.poll() is not None:raise TimeoutError(('Owned child not ready',name,owner.poll()))\n                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTimeoutError: ('Owned child not ready', 'grandchild_pid.json', 0)\n",
+  "completed": [
+    {
+      "mode": "normal",
+      "status": "PASS",
+      "owner_pid": 2672,
+      "owner_returncode": 0,
+      "owned_descendant_pids": [],
+      "termination_wait_results": []
+    }
+  ]
+}

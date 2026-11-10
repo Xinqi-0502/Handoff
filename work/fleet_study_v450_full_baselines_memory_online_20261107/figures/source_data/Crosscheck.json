@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "case_rows": 1024,
+  "case_field_checks": 22528,
+  "directed_pair_field_checks": 78,
+  "independent_mothers": 64,
+  "related_variants_per_mother": 4,
+  "mother_comparison_scope": "Four-variant common-proof sums; partial mothers retained and excluded from complete-mother consistency counts",
+  "inputs": {
+    "primary_cases": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\static_comparison\\analysis\\main_01\\Case_Medians.csv",
+      "sha256": "4534dbd133d83de382eebc1a497d0d86af90813f8e07b209a52c0778be1e57c9"
+    },
+    "audit_cases": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Independent_Case_Medians.csv",
+      "sha256": "6c7a40fa595551517a33a8ff7900056e1da0f01493b0f427282fb20f5e67a2b1"
+    },
+    "primary_pairs": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\static_comparison\\analysis\\main_01\\Paired_Summary.csv",
+      "sha256": "85701c599b0c64568ff37f3e2df0ed527179bd0dbd30a5718594c1926b6c15e3"
+    },
+    "audit_proof": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Directed_Proof_Pairs.csv",
+      "sha256": "ccd7c02ce3d5ba2e585bef88919649fc733014682b20ee8adc0388c441c66d10"
+    },
+    "audit_quality": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Directed_Literal_Quality_Pairs.csv",
+      "sha256": "4fbf61fd9ca020093e7cc93891ee2a042329be7b14ae471d6384b38c18dfe041"
+    },
+    "audit_first": {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Initial_Strata_First_Good_Pairs.csv",
+      "sha256": "9c0ac264f8da8507a768e6e975eeb33dd35267d36afeb2415ab55a5dea38e4d7"
+    }
+  },
+  "source_sha256": "a838a098f430733d183752a394a843c835b3c73b4607e43fa1d136a80415bd3c"
+}

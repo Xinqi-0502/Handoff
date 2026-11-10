@@ -1,0 +1,9 @@
+{
+  "CASE_COMPLETE.jsonl": "c0595bbef716999ad186ad23d38a9bdcec6bff89e98354a909ae6bcf5cb8d804",
+  "INPUTS.json": "41c213c6ce04ffc492784772a68bac1830f734a6ef90aa15f11c30358e17eb5d",
+  "ORACLES.jsonl": "31b7ab824244af58821957bb0f9d4ceab899d64e287bebcbfc89b5ababec198b",
+  "PREFIX_CHECKS.jsonl.gz": "1614e6a08cee3f60e4fdb4983c9eea978cdf6a1a28a0caa0376434679dd96933",
+  "PROTOCOL.json": "6095d8edc415cfd91be1aebaabfee74c51c62db84b2302f737e058480964a973",
+  "SOLVES.jsonl": "d4dc2eaa433ac88350a8c6d16fdba7eb5cfa70eeeded86933843f6c08fec7254",
+  "SUMMARY.json": "3d20674eab6c3072398485cd44c69bccf115ecb8bf1f97a259858f833f282f63"
+}

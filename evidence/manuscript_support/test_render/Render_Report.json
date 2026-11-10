@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETE",
+  "figures": 3,
+  "metadata": {
+    "font_family": "Times New Roman",
+    "font_file_name": "times.ttf",
+    "matplotlib_version": "3.11.2",
+    "size_mm": {
+      "fig01_search_work_and_proof_time": [
+        160,
+        55
+      ],
+      "fig02_anytime_timing_tradeoff": [
+        160,
+        45
+      ],
+      "figS01_native_outcome_limits": [
+        160,
+        50
+      ]
+    },
+    "png_dpi": 300
+  },
+  "solver_runs": 0,
+  "simulator_runs": 0,
+  "source_sha256": "bdbbd0310104178056e01ace702abf3183ca92212ade4b77100525efba9dc2db",
+  "figure_point_csv_sha256": {
+    "fig01_points.csv": "975893370a26e5036408d26f48587fe693ac1b11777681f4a671daab46ff159a",
+    "fig02_points.csv": "3867e837f67d09c2bf477ccc0b9edc9f37e50407c8411a4f712a58d5ba3de975",
+    "figS01_points.csv": "7e850fedb49a3c887c9a9e2d45fdbedfa707691ed760903c82ea8290cfc32b00"
+  },
+  "scope": "Redrawing summary data only; not raw-data analysis."
+}

@@ -1,0 +1,22 @@
+{
+  "scope": "Correctness gate and source-only reviewer note",
+  "status": "PASS",
+  "files": [
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\literature\\Runtime_Gate_Addendum.md",
+      "sha256": "9fcbb11d712c085891dddecdccdfebe2698c9a1154313a4a54507f756fde6157"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\static_comparison\\Independent_Static_Review_01.md",
+      "sha256": "3380dd8f73d1b2f6b3037bade32783516ab17a4da01e349b9f4c240d98697dbe"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\baseline_replication\\gates\\micro_all_02\\GATE.json",
+      "sha256": "1a1258de99a0b0c0c913a74514afaabe0928c7c2e45858203e893dc92709901e"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\records\\monitor_published_gate_02\\PROCESS_COMPLETE.json",
+      "sha256": "c71ae693c4ed9a3b4f2414e7e4be0c54cf2a0beffe4df4b5748683fbc10fc61b"
+    }
+  ]
+}

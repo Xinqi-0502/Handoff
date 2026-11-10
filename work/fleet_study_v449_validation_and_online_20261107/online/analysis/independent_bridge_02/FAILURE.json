@@ -1,0 +1,1 @@
+{"status":"AUDIT_READER_FAILURE_PRESERVED","stage":"canonical native trace hash","error":"Raw Windows CRLF bytes were hashed instead of the recorder's canonical JSON plus LF","research_data_changed":false,"fix":"Validate each raw record equals canonical JSON with LF or CRLF; hash canonical JSON+LF, separately hash compressed file bytes","retry":"independent_bridge_03"}

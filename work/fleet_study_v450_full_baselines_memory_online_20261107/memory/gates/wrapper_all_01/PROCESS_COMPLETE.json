@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "manifest_sha256": "c9242a0fc7fec3571920cbf47c1d6c970b3be1aecc85048864c03a52cfb78c81",
+  "evidence": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\correctness_00_01\\PROTOCOL.json": "e14bda1b8b16cbb7f5cd2a04f99850e91e02cb097e2f3cffe07ff2ab1aa83136",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\correctness_00_01\\ORACLES.jsonl": "905847d540d09d477c8349068f74c96c2053939148a84ca057443b2c848bc164",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\correctness_00_01\\MEMORY.jsonl": "b3b8c11f079145c9e90b3ab49893141d4b925d921c65c462d51ee2e0b803c931",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\correctness_00_01\\CASE_COMPLETE.jsonl": "724da3bf263346de50c0a2639de31c93a10c096a79b71da885780068a7bddeb4",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\correctness_00_01\\SUMMARY.json": "87fb992e46f66fb9d38ccb95b876c47fbac6ca2e4039c8029ae8db0fe4984c8d",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\correctness_00_01\\PROCESS_COMPLETE.json": "87fb992e46f66fb9d38ccb95b876c47fbac6ca2e4039c8029ae8db0fe4984c8d"
+  },
+  "case_ids": [
+    "micro_s3470401_m4_tight_free"
+  ],
+  "methods": [
+    "RADIUS",
+    "RADIUS_PAIR_EAGER",
+    "RADIUS_PAIR_LAZY",
+    "RADIUS_AWA",
+    "RADIUS_PAIR_AWA",
+    "RADIUS_PAIR_AWA_GATED",
+    "NO_BOUND",
+    "DP_ADAPTER",
+    "ROUTE",
+    "HZ_AWA_RADIUS",
+    "ANA_RADIUS",
+    "HZ_AWA_RADIUS_PAIR_GATED"
+  ],
+  "scope": "One predeclared m4 wrapper case with independent exhaustive optimum and two replay implementations; frozen upstream 24-case algorithm gates remain separate"
+}

@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\plot_static_v450.py",
+    "--out",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\render_static_02\\exports",
+    "--library-root",
+    "E:\\CodexResearch-xi\\workspace\\research_outputs\\ICTEC2027_Analysis_Figures_Extended_20261106\\_Plot_Runtime"
+  ],
+  "returncode": 0
+}

@@ -1,0 +1,9 @@
+{
+  "Figure3": "Viewed corrected scale_main_02 PNG; legend, axis labels and caption are separated",
+  "Reviewer": "Root visual inspection",
+  "CheckedUTC": "2026-11-07T11:59:19.6363879Z",
+  "Status": "PASS",
+  "FigureDirectory": "figures/scale_main_02",
+  "Data": "Generated from verified analysis CSVs; no manual numerical plotting edits",
+  "Figures1And2": "Viewed rendered PNGs and checked labels, values, denominators and layout"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "AST_PASS_LIFECYCLE_CHECK_PENDING_NO_SUMO_TRAFFIC_RUN",
+  "prepared_source_hashes": {
+    "Frozen_Protocol.json": "3803811668a00b0377d2f6e3898819bf220927c48bbad59b4e5014815117162a",
+    "run_public_validation.py": "c50fcb484be5261a6e710371fbe745af1c0cbabd548ff57994febc6bd8acb451",
+    "Upstream_Manifest.json": "628763faaf9c5482587128740de9e03509b8d834d6316842e5682d686864668e",
+    "Raw_Observation_QC.json": "a87afee64877fb02c84b2e9edd3535e553425199a7f3ed4474b2170298fac16d"
+  },
+  "sumo_version_only_checked": "1.27.1",
+  "no_sumo_traffic_run": true,
+  "max_sumo_runs": 5,
+  "created_utc": "2026-11-07T10:53:35.197040+00:00",
+  "execution_amendment": "Windows job-object atomic child containment; traffic parameters, selection, observations and measurement logic unchanged",
+  "previous_script_sha256": "40ca808def70c3c0a7138f7b0332e20e0609981f6391b1b888012cbb8a484582",
+  "observation_qc_amendment": "Root-approved pre-simulation positive-difference eligibility, no vehicle deletion, ordinal matching and valid previous boundary speed rule",
+  "previous_script_before_qc_sha256": "3a9a6862f4f16d9f49932bdeea89f4a9e1b4843d4cffcf3e9f07d2201cc91304"
+}

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<additional><variableSpeedSign id="vss" lanes="7to8_0" file="boundary.vss.xml" /><instantInductionLoop id="obs1" lane="1to7_0" pos="25.0" file="instant.xml" /><instantInductionLoop id="obs2" lane="1to7_0" pos="2896.82" file="instant.xml" /><instantInductionLoop id="obs3" lane="1to7_0" pos="3610.97" file="instant.xml" /><instantInductionLoop id="obs4" lane="1to7_0" pos="4506.16" file="instant.xml" /></additional>

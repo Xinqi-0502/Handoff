@@ -1,0 +1,13 @@
+{
+  "status": "EVIDENCE_REPORT_COMPLETE_VALIDATION_NOT_EXECUTED",
+  "created_utc": "2026-11-07T10:42:46.541108+00:00",
+  "no_traffic_simulation_executed": true,
+  "report_sha256": "aa0b7677c16731ebc2782aa47e9f11a9c995fa95e6e2afaa4cd763c97f9a273c",
+  "query_log_sha256": "5dcf33ca1dfd80e5c0898f99c3f25ca7d64412a1c1e9ba5679d9abf71b73b332",
+  "source_retrieval_manifest_sha256": "a5f333625302d20bf5fb7de9abebbfb79b26a06be0cc89a1ebaebeaa4edd93ac",
+  "protocol_path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\validation\\san_pablo_dam\\Protocol_and_Provenance.md",
+  "protocol_report_sha256": "dec643ed529870aff8548d784e2f5cda78a8b7c91a2a0e9a832bfe1976eb00c3",
+  "validation_preparation_manifest_sha256": "7e764859abbf249a8066c140d73bf372a9886639eb11dafc93d0e82cd3082c1d",
+  "software_attribution_checked": "https://arxiv.org/abs/2609.00065",
+  "source_type": "official documentation, official proceedings, author manuscripts and DOI registration metadata; version limits explicit"
+}

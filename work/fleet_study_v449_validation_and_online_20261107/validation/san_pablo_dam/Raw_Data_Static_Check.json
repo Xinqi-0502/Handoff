@@ -1,0 +1,113 @@
+{
+  "status": "RAW_ORDERING_ISSUES_RECORDED",
+  "simulation_executed": false,
+  "raw_timestamp_arithmetic_only": true,
+  "previous_strict_check": "failed; retained in this record, no data altered",
+  "days": [
+    {
+      "day": 1,
+      "counts": {
+        "1": 2298,
+        "2": 2298,
+        "3": 2298,
+        "4": 2298,
+        "7": 2298,
+        "8": 2298
+      },
+      "time_reversals": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "7": [],
+        "8": []
+      },
+      "nonpositive_segments": {
+        "1-2": [],
+        "2-3": [
+          {
+            "index": 2002,
+            "upstream": 30916,
+            "downstream": 30912
+          }
+        ],
+        "3-4": [
+          {
+            "index": 125,
+            "upstream": 24958,
+            "downstream": 24953
+          },
+          {
+            "index": 126,
+            "upstream": 24960,
+            "downstream": 24954
+          },
+          {
+            "index": 127,
+            "upstream": 24961,
+            "downstream": 24955
+          }
+        ],
+        "7-8": []
+      }
+    },
+    {
+      "day": 2,
+      "counts": {
+        "1": 2293,
+        "2": 2293,
+        "3": 2293,
+        "4": 2293,
+        "7": 2293,
+        "8": 2293
+      },
+      "time_reversals": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "7": [],
+        "8": []
+      },
+      "nonpositive_segments": {
+        "1-2": [],
+        "2-3": [
+          {
+            "index": 95,
+            "upstream": 24677,
+            "downstream": 24645
+          },
+          {
+            "index": 1771,
+            "upstream": 29941,
+            "downstream": 29936
+          },
+          {
+            "index": 1995,
+            "upstream": 30873,
+            "downstream": 30844
+          },
+          {
+            "index": 2206,
+            "upstream": 31688,
+            "downstream": 31675
+          }
+        ],
+        "3-4": [
+          {
+            "index": 1996,
+            "upstream": 30903,
+            "downstream": 30888
+          }
+        ],
+        "7-8": [
+          {
+            "index": 94,
+            "upstream": 24818,
+            "downstream": 24789
+          }
+        ]
+      }
+    }
+  ]
+}

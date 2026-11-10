@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE",
+  "issues": [],
+  "observations": 128,
+  "expected": 128,
+  "cases": 32,
+  "mothers": 8,
+  "common_import_hashes": [
+    "02dbc30c7c959be1fa2a17cddd001be4f44fa9c8db8c0c301e63b0dc81640738"
+  ],
+  "all_imports_identical": true,
+  "failed_or_censored": 0,
+  "sum_run_seconds": 1333.3069664001232,
+  "manifest_sha256": "c9242a0fc7fec3571920cbf47c1d6c970b3be1aecc85048864c03a52cfb78c81"
+}

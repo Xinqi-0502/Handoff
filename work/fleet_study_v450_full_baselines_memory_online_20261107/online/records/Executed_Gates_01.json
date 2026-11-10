@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "stages": [
+    {
+      "stage": "micro_gate_01",
+      "status": "PASS",
+      "started_utc": "2026-11-07T13:00:40.1263702Z",
+      "ended_utc": "2026-11-07T13:01:18.0550279Z",
+      "monitor_seconds": 37.9286577,
+      "temperature_c": 42,
+      "failure": null
+    },
+    {
+      "stage": "pilot_prefix_01",
+      "status": "PASS",
+      "started_utc": "2026-11-07T13:02:39.9128915Z",
+      "ended_utc": "2026-11-07T13:03:35.4986571Z",
+      "monitor_seconds": 55.5857656,
+      "temperature_c": 38,
+      "failure": null
+    },
+    {
+      "stage": "native_gate_01",
+      "status": "PASS",
+      "started_utc": "2026-11-07T13:05:22.7672541Z",
+      "ended_utc": "2026-11-07T13:07:03.7349308Z",
+      "monitor_seconds": 100.9676767,
+      "temperature_c": 38,
+      "failure": null
+    }
+  ],
+  "scope": "Correctness and physical invariants only; no policy performance trial",
+  "later_change": "Common raw J bound cache and red-or-yellow field labeling prepared for suffix02; original receipts preserved"
+}

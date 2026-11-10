@@ -1,0 +1,12 @@
+{
+  "status": "ADVANCE_ON_CORRECTNESS_AND_COST",
+  "utc": "2026-11-07T12:51:28.8047477Z",
+  "cost_cases": 16,
+  "cost_calls": 64,
+  "cost_total_seconds": 7.992934699985199,
+  "expected_main_cases": 256,
+  "main_mothers": 64,
+  "main_calls": 3072,
+  "selection_uses_method_advantage": false,
+  "thermal_stop_c": 60
+}

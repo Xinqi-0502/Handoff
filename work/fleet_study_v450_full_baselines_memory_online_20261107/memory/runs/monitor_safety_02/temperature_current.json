@@ -1,0 +1,24 @@
+{
+  "Status": "OK",
+  "Sequence": 7,
+  "TimeUTC": "2026-11-07T12:39:56.6242426+00:00",
+  "DiskNumber": 1,
+  "Model": "Predator SSD GM6 1TB",
+  "CompositeC": 42,
+  "MaximumReportedSensorC": 42.0,
+  "Sensors": [
+    {
+      "Index": 0,
+      "Celsius": 42
+    },
+    {
+      "Index": 1,
+      "Celsius": 42
+    },
+    {
+      "Index": 2,
+      "Celsius": 31
+    }
+  ],
+  "Failure": null
+}

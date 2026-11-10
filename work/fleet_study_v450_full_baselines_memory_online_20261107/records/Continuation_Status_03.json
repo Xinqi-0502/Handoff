@@ -1,0 +1,13 @@
+{
+  "DateUTC": "2026-11-07T14:15:26.5600712Z",
+  "MainVersion": "Frozen V449 RADIUS_PAIR_AWA_GATED",
+  "Static": "3072 calls PASS; root and independent crosscheck PASS; samekernel states -54.7411pct/proof time -27.1681pct on255",
+  "Memory": "128/128 observations PASS; independent428 planreplays/4412 fieldchecksPASS. Startup peaks dominate, algorithm-specific RAM benefit NOT established",
+  "Online": "All64prefixes PASS; full1728policycalls complete;128distinctnative replays inprogress; nooutcomeanalysisyet",
+  "Window": "Exclusive onlinefull_02 untilagent reportscomplete. Noothernumericaljobs.",
+  "OnlineNext": "Fullindependentaudit; profile_full_01 fixed64x2arms instrumentedafterformalrun; nativeoutcome figureprepared",
+  "Reports": "reporting/build_report_v450.py ASTPASS; Report_Panels_Seed_01.json reviewed=false awaitsactualonlinepanel",
+  "Figures": "render_static_02 twofigures QA+rootvisualPASS; native_outcome scriptprepared notexecuted",
+  "Novelty": "Fulltext matrix pluspartialCOR107577; theoreticalH2toJ codeaudit ongoing",
+  "AllFailuresPreserved": true
+}

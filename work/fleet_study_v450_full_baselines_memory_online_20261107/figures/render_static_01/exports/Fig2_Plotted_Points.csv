@@ -1,0 +1,5 @@
+figure,endpoint,label,candidate,baseline,gap_fraction,eligible_cases,available_cases,candidate_seconds_sum,baseline_seconds_sum,time_change_percent,source_csv
+Fig2,first_5_percent,First gap ≤5%,HZ_AWA_RADIUS_PAIR_GATED,HZ_AWA_RADIUS,0.05,256,256,7.009566199965775,6.817544000106864,2.8165890804064064,Initial_Strata_First_Good_Pairs.csv
+Fig2,first_10_percent,First gap ≤10%,HZ_AWA_RADIUS_PAIR_GATED,HZ_AWA_RADIUS,0.1,256,256,6.208490501041524,5.965646199416369,4.07071243428605,Initial_Strata_First_Good_Pairs.csv
+Fig2,first_optimum,First optimum,HZ_AWA_RADIUS_PAIR_GATED,HZ_AWA_RADIUS,0.0,256,256,10.381433999864385,11.279697699705139,-7.963544092713015,Initial_Strata_First_Good_Pairs.csv
+Fig2,proof,Optimality proof,HZ_AWA_RADIUS_PAIR_GATED,HZ_AWA_RADIUS,,255,256,16.888535799109377,23.188373599783517,-27.16808823855139,Directed_Proof_Pairs.csv

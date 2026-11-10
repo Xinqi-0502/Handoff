@@ -1,0 +1,60 @@
+{
+  "Status": "PASS",
+  "StartedUTC": "2026-11-07T12:51:28.8705369+00:00",
+  "EndedUTC": "2026-11-07T12:56:55.4650110+00:00",
+  "ChildPid": 31772,
+  "ReaderPid": 92116,
+  "ChildExitCode": 0,
+  "ChildStarted": true,
+  "ChildTerminatedBySupervisor": false,
+  "Failure": null,
+  "IntervalSeconds": 10,
+  "StopAtC": 60,
+  "ReadTimeoutSeconds": 25,
+  "TemperatureFileMutexName": "Local\\CodexResearchV447Temperature_8814538547839871D24E7554D9D566074E2DA768510E8A52D7A98F9C5648D7DE",
+  "TemperatureFileMutexWaitMilliseconds": 1000,
+  "AvailableBytesAtStart": 753562255360,
+  "AvailableBytesAtEnd": 753544892416,
+  "LastTemperature": {
+    "Status": "OK",
+    "Sequence": 31,
+    "TimeUTC": "2026-11-07T20:56:51.2101108+08:00",
+    "DiskNumber": 1,
+    "Model": "Predator SSD GM6 1TB",
+    "CompositeC": 38,
+    "MaximumReportedSensorC": 38.0,
+    "Sensors": [
+      {
+        "Index": 0,
+        "Celsius": 38
+      },
+      {
+        "Index": 1,
+        "Celsius": 38
+      },
+      {
+        "Index": 2,
+        "Celsius": 30
+      }
+    ],
+    "Failure": null
+  },
+  "Mapping": {
+    "Drive": "E",
+    "DiskNumber": 1,
+    "PhysicalDevice": "\\\\.\\PhysicalDrive1",
+    "Model": "Predator SSD GM6 1TB",
+    "SerialNumber": "0000_0000_0000_0000_0000_0054_5020_1752.",
+    "BusType": "NVMe",
+    "HealthStatus": "Healthy",
+    "PartitionNumber": 2
+  },
+  "ScriptPath": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\static_comparison\\run_fair_comparison.py",
+  "RunnerArgs": [
+    "main",
+    "--run",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\static_comparison\\runs\\main_01"
+  ],
+  "ReaderSHA256": "60E40C13C7B2EEFBFC1643D1777E16FBCB80937E2162B67126AF178872158284",
+  "MonitorSHA256": "947963A6D2A6440C7D09BA459CE50C9B676C322E4AE3A031A62E96228C855F92"
+}

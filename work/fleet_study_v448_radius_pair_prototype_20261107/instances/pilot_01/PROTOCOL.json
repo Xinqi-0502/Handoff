@@ -1,0 +1,46 @@
+{
+  "status": "GENERATED_STRUCTURAL_ONLY_NOT_SOLVER_VALIDATED",
+  "sizes": [
+    6,
+    8,
+    10,
+    12
+  ],
+  "seed_rule": "9480000 + 1000*m + i; i in {1,2}",
+  "seeds": {
+    "6": [
+      9486001,
+      9486002
+    ],
+    "8": [
+      9488001,
+      9488002
+    ],
+    "10": [
+      9490001,
+      9490002
+    ],
+    "12": [
+      9492001,
+      9492002
+    ]
+  },
+  "independent_mothers": 8,
+  "independent_mothers_per_scale": 2,
+  "related_variants_per_mother": 4,
+  "related_scenarios": 32,
+  "split": "v448_radius_pilot",
+  "source_formula": "Frozen V447 mother/variants/verify_pairs",
+  "inherited_generator_sha256": "a2e8b402e0c913c371c4d37107b23ff934a91df98fecc58b8f3274cb791e2329",
+  "generator_sha256": "b084409f1aeec06ae484b59b21d1644c76cf75ed097b75082d04c89d1e77d74c",
+  "inputs_sha256": "b459e02e4173e07787b47e905de193842fc05e4f7c4738315de044a588b7afa1",
+  "no_solver_executed": true,
+  "no_outcome_filtering": true,
+  "formal_results_read": false,
+  "scope": "Exploratory cost/mechanism pilot; fixed receiver/hub, atomic a before b, H2 only",
+  "paired_axes": [
+    "capacity",
+    "signal"
+  ],
+  "units": "Uncalibrated integer ticks/cargo"
+}

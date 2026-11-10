@@ -1,0 +1,18 @@
+{
+  "record_type": "primary_source_scope_check",
+  "date": "2026-11-07",
+  "status": "read_only_no_experiment",
+  "sources": [
+    {"url":"https://goldberg.berkeley.edu/pubs/ana-aaai-2011-vdberg-shah-goldberg.pdf","purpose":"Complete printed ANA policy and published application scope"},
+    {"url":"https://www.cs.unh.edu/~ruml/papers/anytime-socs10.pdf","purpose":"Check that anytime framework performance is domain dependent; do not label one comparison globally best"},
+    {"url":"https://sumo.dlr.de/docs/Simulation/Safety.html","purpose":"Distinguish registered vehicle and intermodal collisions; check junction collision configuration"},
+    {"url":"https://sumo.dlr.de/docs/Simulation/Why_Vehicles_are_teleporting.html","purpose":"Confirm teleport meaning and negative time-to-teleport behavior"}
+  ],
+  "source_review": {
+    "junction_collision_flag": "native_online_v450.py uses --collision.check-junctions true",
+    "teleport_flag": "native_online_v450.py uses --time-to-teleport -1 and still records teleport count",
+    "intermodal_check": "Independent online audit now checks every collision XML element and collision/intermodal Warning/Error logs; no vehicle-type filtering",
+    "statement_scope": "No recorded collisions in measured outputs; pedestrian proximity remains exposure, not attributed delay",
+    "online_execution_status_at_record": "Updated source correctness gates and policy/native comparisons pending memory window completion"
+  }
+}

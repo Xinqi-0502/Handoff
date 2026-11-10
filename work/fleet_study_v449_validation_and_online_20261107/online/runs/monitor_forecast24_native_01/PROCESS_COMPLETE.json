@@ -1,0 +1,67 @@
+{
+  "Status": "PASS",
+  "StartedUTC": "2026-11-07T11:06:30.0243946+00:00",
+  "EndedUTC": "2026-11-07T11:08:49.0609302+00:00",
+  "ChildPid": 5724,
+  "ReaderPid": 91980,
+  "ChildExitCode": 0,
+  "ChildStarted": true,
+  "ChildTerminatedBySupervisor": false,
+  "Failure": null,
+  "IntervalSeconds": 10,
+  "StopAtC": 60,
+  "ReadTimeoutSeconds": 25,
+  "TemperatureFileMutexName": "Local\\CodexResearchV447Temperature_E9EB139800A40F7F7CC9EDC68C6D04EC08CEC689B5F5273F229843BB240044F7",
+  "TemperatureFileMutexWaitMilliseconds": 1000,
+  "AvailableBytesAtStart": 753733009408,
+  "AvailableBytesAtEnd": 753732046848,
+  "LastTemperature": {
+    "Status": "OK",
+    "Sequence": 12,
+    "TimeUTC": "2026-11-07T19:08:47.5360636+08:00",
+    "DiskNumber": 1,
+    "Model": "Predator SSD GM6 1TB",
+    "CompositeC": 42,
+    "MaximumReportedSensorC": 42.0,
+    "Sensors": [
+      {
+        "Index": 0,
+        "Celsius": 42
+      },
+      {
+        "Index": 1,
+        "Celsius": 42
+      },
+      {
+        "Index": 2,
+        "Celsius": 31
+      }
+    ],
+    "Failure": null
+  },
+  "Mapping": {
+    "Drive": "E",
+    "DiskNumber": 1,
+    "PhysicalDevice": "\\\\.\\PhysicalDrive1",
+    "Model": "Predator SSD GM6 1TB",
+    "SerialNumber": "0000_0000_0000_0000_0000_0054_5020_1752.",
+    "BusType": "NVMe",
+    "HealthStatus": "Healthy",
+    "PartitionNumber": 2
+  },
+  "ScriptPath": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\job_host_online.py",
+  "RunnerArgs": [
+    "--python",
+    "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "--script",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\run_online.py",
+    "--args-json",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\records\\forecast24_native_01_runner_args.json",
+    "--out",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\runs\\host_forecast24_native_01",
+    "--timeout-seconds",
+    "900"
+  ],
+  "ReaderSHA256": "60E40C13C7B2EEFBFC1643D1777E16FBCB80937E2162B67126AF178872158284",
+  "MonitorSHA256": "947963A6D2A6440C7D09BA459CE50C9B676C322E4AE3A031A62E96228C855F92"
+}

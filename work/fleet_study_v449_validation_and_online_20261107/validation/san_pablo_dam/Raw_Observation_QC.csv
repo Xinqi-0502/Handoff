@@ -1,0 +1,11 @@
+day,ordinal_row_index,segment,source_start_seconds,source_end_seconds,observed_seconds,action
+1,2002,2-3,30916,30912,-4,exclude_from_segment_score_only
+1,125,3-4,24958,24953,-5,exclude_from_segment_score_only
+1,126,3-4,24960,24954,-6,exclude_from_segment_score_only
+1,127,3-4,24961,24955,-6,exclude_from_segment_score_only
+2,95,2-3,24677,24645,-32,exclude_from_segment_score_only
+2,1771,2-3,29941,29936,-5,exclude_from_segment_score_only
+2,1995,2-3,30873,30844,-29,exclude_from_segment_score_only
+2,2206,2-3,31688,31675,-13,exclude_from_segment_score_only
+2,1996,3-4,30903,30888,-15,exclude_from_segment_score_only
+2,94,7-8,24818,24789,-29,hold_previous_boundary_speed

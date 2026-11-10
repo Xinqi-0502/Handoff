@@ -1,0 +1,25 @@
+{"case": "micro_s3470301_m3_tight_free", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470301_m3_tight_signal", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470301_m3_roomier_free", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470301_m3_roomier_signal", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470302_m3_tight_free", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470302_m3_tight_signal", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470302_m3_roomier_free", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470302_m3_roomier_signal", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470401_m4_tight_free", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470401_m4_tight_signal", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470401_m4_roomier_free", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470401_m4_roomier_signal", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470402_m4_tight_free", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470402_m4_tight_signal", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470402_m4_roomier_free", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470402_m4_roomier_signal", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470501_m5_tight_free", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470501_m5_tight_signal", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470501_m5_roomier_free", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470501_m5_roomier_signal", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470502_m5_tight_free", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470502_m5_tight_signal", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470502_m5_roomier_free", "status": "PASS", "solution_checks": 16}
+{"case": "micro_s3470502_m5_roomier_signal", "status": "PASS", "solution_checks": 16}
+FULL_PUBLISHED_GATE_PASS

@@ -1,0 +1,8 @@
+[
+  "prefix",
+  "--inputs",
+  "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\INPUTS_64_01.json",
+  "--out",
+  "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\prefixes\\pilot_02",
+  "--pilot"
+]

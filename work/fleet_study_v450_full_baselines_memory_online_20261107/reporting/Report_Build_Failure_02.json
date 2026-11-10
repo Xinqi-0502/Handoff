@@ -1,0 +1,8 @@
+{
+  "status": "FAILED_BEFORE_OUTPUT",
+  "stage": "report_build_02",
+  "reason": "The audited table stores each pair in one orientation, but the report expected both.",
+  "exception": "StopIteration",
+  "resolution": "New report builder reverses paired sums and computes the requested ratio; original builder and experimental data remain unchanged.",
+  "experiment_data_changed": false
+}

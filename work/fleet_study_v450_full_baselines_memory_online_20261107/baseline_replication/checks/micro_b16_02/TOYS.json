@@ -1,0 +1,1019 @@
+[
+  {
+    "name": "REOPEN",
+    "algorithm": "AWA",
+    "result": {
+      "objective_value": 13,
+      "plan": [
+        "B",
+        "C",
+        "R",
+        "G"
+      ],
+      "trace": [
+        {
+          "seconds": 9.7999582067132e-06,
+          "cost": 100,
+          "plan": [
+            "G"
+          ],
+          "expansion_index": 0,
+          "expansions_completed": 0,
+          "event_kind": "initial"
+        },
+        {
+          "seconds": 9.660003706812859e-05,
+          "cost": 15,
+          "plan": [
+            "A",
+            "R",
+            "G"
+          ],
+          "expansion_index": 3,
+          "expansions_completed": 2,
+          "event_kind": "goal_generated"
+        },
+        {
+          "seconds": 0.00012510002125054598,
+          "cost": 13,
+          "plan": [
+            "B",
+            "C",
+            "R",
+            "G"
+          ],
+          "expansion_index": 6,
+          "expansions_completed": 5,
+          "event_kind": "goal_generated"
+        }
+      ],
+      "lower_bound": 13,
+      "certified_gap": 0,
+      "certified_optimal": true,
+      "elapsed_seconds": 0.00013509998098015785,
+      "setup_seconds": 7.500057108700275e-06,
+      "initial_seconds": 2.299901098012924e-06,
+      "search_seconds": 0.00012530002277344465,
+      "root_bound_seconds": 1.9299914129078388e-05,
+      "root_bound": 0,
+      "root_priority": 0,
+      "initialization_overrun": false,
+      "wall_budget_ms": null,
+      "overrun_seconds": 0,
+      "stop_reason": "exhausted",
+      "timing_interpretable": true,
+      "stats": {
+        "expanded": 6,
+        "expanded_phase0": 0,
+        "expanded_phase1": 0,
+        "expanded_other": 6,
+        "generated": 8,
+        "queued": 6,
+        "pruned": 0,
+        "dominated": 0,
+        "stale_pops": 0,
+        "reopened": 1,
+        "terminal_generated": 3,
+        "goal_pops": 0,
+        "frontier_rekeys": 0,
+        "rekey_labels": 0,
+        "peak_frontier": 2,
+        "extra_prune_calls": 0,
+        "extra_pruned": 0,
+        "structural_keys": 5,
+        "dominance_records": 5,
+        "detailed_profile_enabled": false,
+        "published_search_algorithm": "AWA",
+        "extra_prune_enabled": false
+      },
+      "audit_trace": [
+        {
+          "state": [
+            "S",
+            0
+          ],
+          "plan": [],
+          "g": 0,
+          "lower": 0
+        },
+        {
+          "state": [
+            "A",
+            1
+          ],
+          "plan": [
+            "A"
+          ],
+          "g": 1,
+          "lower": 2
+        },
+        {
+          "state": [
+            "R",
+            5
+          ],
+          "plan": [
+            "A",
+            "R"
+          ],
+          "g": 5,
+          "lower": 5
+        },
+        {
+          "state": [
+            "B",
+            2
+          ],
+          "plan": [
+            "B"
+          ],
+          "g": 2,
+          "lower": 7
+        },
+        {
+          "state": [
+            "C",
+            2
+          ],
+          "plan": [
+            "B",
+            "C"
+          ],
+          "g": 2,
+          "lower": 7
+        },
+        {
+          "state": [
+            "R",
+            3
+          ],
+          "plan": [
+            "B",
+            "C",
+            "R"
+          ],
+          "g": 3,
+          "lower": 7
+        }
+      ],
+      "ana_reported_e_bound": null,
+      "algorithm": "AWA",
+      "weight": 2,
+      "expanded": 6,
+      "expanded_phase0": 0,
+      "expanded_phase1": 0,
+      "expanded_other": 6,
+      "generated": 8,
+      "queued": 6,
+      "pruned": 0,
+      "dominated": 0,
+      "stale_pops": 0,
+      "reopened": 1,
+      "terminal_generated": 3,
+      "goal_pops": 0,
+      "frontier_rekeys": 0,
+      "rekey_labels": 0,
+      "peak_frontier": 2,
+      "extra_prune_calls": 0,
+      "extra_pruned": 0
+    }
+  },
+  {
+    "name": "REOPEN",
+    "algorithm": "ANA",
+    "result": {
+      "objective_value": 13,
+      "plan": [
+        "B",
+        "C",
+        "R",
+        "G"
+      ],
+      "trace": [
+        {
+          "seconds": 2.500019036233425e-06,
+          "cost": 100,
+          "plan": [
+            "G"
+          ],
+          "expansion_index": 0,
+          "expansions_completed": 0,
+          "event_kind": "initial"
+        },
+        {
+          "seconds": 4.8999907448887825e-05,
+          "cost": 15,
+          "plan": [
+            "A",
+            "R",
+            "G"
+          ],
+          "expansion_index": 3,
+          "expansions_completed": 3,
+          "event_kind": "goal_pop"
+        },
+        {
+          "seconds": 7.369997911155224e-05,
+          "cost": 13,
+          "plan": [
+            "B",
+            "C",
+            "R",
+            "G"
+          ],
+          "expansion_index": 6,
+          "expansions_completed": 6,
+          "event_kind": "goal_pop"
+        }
+      ],
+      "lower_bound": 13,
+      "certified_gap": 0,
+      "certified_optimal": true,
+      "elapsed_seconds": 7.999991066753864e-05,
+      "setup_seconds": 1.9000144675374031e-06,
+      "initial_seconds": 6.00004568696022e-07,
+      "search_seconds": 7.749989163130522e-05,
+      "root_bound_seconds": 6.300047971308231e-06,
+      "root_bound": 0,
+      "root_priority": "-Infinity",
+      "initialization_overrun": false,
+      "wall_budget_ms": null,
+      "overrun_seconds": 0,
+      "stop_reason": "exhausted",
+      "timing_interpretable": true,
+      "stats": {
+        "expanded": 6,
+        "expanded_phase0": 0,
+        "expanded_phase1": 0,
+        "expanded_other": 6,
+        "generated": 8,
+        "queued": 8,
+        "pruned": 1,
+        "dominated": 0,
+        "stale_pops": 0,
+        "reopened": 1,
+        "terminal_generated": 3,
+        "goal_pops": 2,
+        "frontier_rekeys": 2,
+        "rekey_labels": 1,
+        "peak_frontier": 2,
+        "extra_prune_calls": 0,
+        "extra_pruned": 0,
+        "structural_keys": 6,
+        "dominance_records": 6,
+        "detailed_profile_enabled": false,
+        "published_search_algorithm": "ANA",
+        "extra_prune_enabled": false
+      },
+      "audit_trace": [
+        {
+          "state": [
+            "S",
+            0
+          ],
+          "plan": [],
+          "g": 0,
+          "lower": 0
+        },
+        {
+          "state": [
+            "A",
+            1
+          ],
+          "plan": [
+            "A"
+          ],
+          "g": 1,
+          "lower": 2
+        },
+        {
+          "state": [
+            "R",
+            5
+          ],
+          "plan": [
+            "A",
+            "R"
+          ],
+          "g": 5,
+          "lower": 5
+        },
+        {
+          "state": [
+            "B",
+            2
+          ],
+          "plan": [
+            "B"
+          ],
+          "g": 2,
+          "lower": 7
+        },
+        {
+          "state": [
+            "C",
+            2
+          ],
+          "plan": [
+            "B",
+            "C"
+          ],
+          "g": 2,
+          "lower": 7
+        },
+        {
+          "state": [
+            "R",
+            3
+          ],
+          "plan": [
+            "B",
+            "C",
+            "R"
+          ],
+          "g": 3,
+          "lower": 7
+        }
+      ],
+      "ana_reported_e_bound": 2.6,
+      "algorithm": "ANA",
+      "weight": null,
+      "expanded": 6,
+      "expanded_phase0": 0,
+      "expanded_phase1": 0,
+      "expanded_other": 6,
+      "generated": 8,
+      "queued": 8,
+      "pruned": 1,
+      "dominated": 0,
+      "stale_pops": 0,
+      "reopened": 1,
+      "terminal_generated": 3,
+      "goal_pops": 2,
+      "frontier_rekeys": 2,
+      "rekey_labels": 1,
+      "peak_frontier": 2,
+      "extra_prune_calls": 0,
+      "extra_pruned": 0
+    }
+  },
+  {
+    "name": "REKEY",
+    "algorithm": "AWA",
+    "result": {
+      "objective_value": 12,
+      "plan": [
+        "B",
+        "G"
+      ],
+      "trace": [
+        {
+          "seconds": 1.600012183189392e-06,
+          "cost": 100,
+          "plan": [
+            "G"
+          ],
+          "expansion_index": 0,
+          "expansions_completed": 0,
+          "event_kind": "initial"
+        },
+        {
+          "seconds": 2.7699978090822697e-05,
+          "cost": 20,
+          "plan": [
+            "A",
+            "G"
+          ],
+          "expansion_index": 2,
+          "expansions_completed": 1,
+          "event_kind": "goal_generated"
+        },
+        {
+          "seconds": 3.120000474154949e-05,
+          "cost": 12,
+          "plan": [
+            "B",
+            "G"
+          ],
+          "expansion_index": 3,
+          "expansions_completed": 2,
+          "event_kind": "goal_generated"
+        }
+      ],
+      "lower_bound": 12,
+      "certified_gap": 0,
+      "certified_optimal": true,
+      "elapsed_seconds": 3.5400036722421646e-05,
+      "setup_seconds": 1.200009137392044e-06,
+      "initial_seconds": 4.00003045797348e-07,
+      "search_seconds": 3.3800024539232254e-05,
+      "root_bound_seconds": 4.499917849898338e-06,
+      "root_bound": 0,
+      "root_priority": 0,
+      "initialization_overrun": false,
+      "wall_budget_ms": null,
+      "overrun_seconds": 0,
+      "stop_reason": "exhausted",
+      "timing_interpretable": true,
+      "stats": {
+        "expanded": 3,
+        "expanded_phase0": 0,
+        "expanded_phase1": 0,
+        "expanded_other": 3,
+        "generated": 6,
+        "queued": 4,
+        "pruned": 1,
+        "dominated": 0,
+        "stale_pops": 0,
+        "reopened": 0,
+        "terminal_generated": 3,
+        "goal_pops": 0,
+        "frontier_rekeys": 0,
+        "rekey_labels": 0,
+        "peak_frontier": 3,
+        "extra_prune_calls": 0,
+        "extra_pruned": 0,
+        "structural_keys": 4,
+        "dominance_records": 4,
+        "detailed_profile_enabled": false,
+        "published_search_algorithm": "AWA",
+        "extra_prune_enabled": false
+      },
+      "audit_trace": [
+        {
+          "state": [
+            "S",
+            0
+          ],
+          "plan": [],
+          "g": 0,
+          "lower": 0
+        },
+        {
+          "state": [
+            "A",
+            1
+          ],
+          "plan": [
+            "A"
+          ],
+          "g": 1,
+          "lower": 1
+        },
+        {
+          "state": [
+            "B",
+            2
+          ],
+          "plan": [
+            "B"
+          ],
+          "g": 2,
+          "lower": 7
+        }
+      ],
+      "ana_reported_e_bound": null,
+      "algorithm": "AWA",
+      "weight": 2,
+      "expanded": 3,
+      "expanded_phase0": 0,
+      "expanded_phase1": 0,
+      "expanded_other": 3,
+      "generated": 6,
+      "queued": 4,
+      "pruned": 1,
+      "dominated": 0,
+      "stale_pops": 0,
+      "reopened": 0,
+      "terminal_generated": 3,
+      "goal_pops": 0,
+      "frontier_rekeys": 0,
+      "rekey_labels": 0,
+      "peak_frontier": 3,
+      "extra_prune_calls": 0,
+      "extra_pruned": 0
+    }
+  },
+  {
+    "name": "REKEY",
+    "algorithm": "ANA",
+    "result": {
+      "objective_value": 12,
+      "plan": [
+        "B",
+        "G"
+      ],
+      "trace": [
+        {
+          "seconds": 1.100008375942707e-06,
+          "cost": 100,
+          "plan": [
+            "G"
+          ],
+          "expansion_index": 0,
+          "expansions_completed": 0,
+          "event_kind": "initial"
+        },
+        {
+          "seconds": 3.23000131174922e-05,
+          "cost": 20,
+          "plan": [
+            "A",
+            "G"
+          ],
+          "expansion_index": 2,
+          "expansions_completed": 2,
+          "event_kind": "goal_pop"
+        },
+        {
+          "seconds": 4.4899992644786835e-05,
+          "cost": 12,
+          "plan": [
+            "B",
+            "G"
+          ],
+          "expansion_index": 3,
+          "expansions_completed": 3,
+          "event_kind": "goal_pop"
+        }
+      ],
+      "lower_bound": 12,
+      "certified_gap": 0,
+      "certified_optimal": true,
+      "elapsed_seconds": 4.910002462565899e-05,
+      "setup_seconds": 8.00006091594696e-07,
+      "initial_seconds": 3.00002284348011e-07,
+      "search_seconds": 4.800001624971628e-05,
+      "root_bound_seconds": 4.09991480410099e-06,
+      "root_bound": 0,
+      "root_priority": "-Infinity",
+      "initialization_overrun": false,
+      "wall_budget_ms": null,
+      "overrun_seconds": 0,
+      "stop_reason": "exhausted",
+      "timing_interpretable": true,
+      "stats": {
+        "expanded": 3,
+        "expanded_phase0": 0,
+        "expanded_phase1": 0,
+        "expanded_other": 3,
+        "generated": 6,
+        "queued": 6,
+        "pruned": 2,
+        "dominated": 0,
+        "stale_pops": 0,
+        "reopened": 0,
+        "terminal_generated": 3,
+        "goal_pops": 2,
+        "frontier_rekeys": 2,
+        "rekey_labels": 2,
+        "peak_frontier": 3,
+        "extra_prune_calls": 0,
+        "extra_pruned": 0,
+        "structural_keys": 5,
+        "dominance_records": 5,
+        "detailed_profile_enabled": false,
+        "published_search_algorithm": "ANA",
+        "extra_prune_enabled": false
+      },
+      "audit_trace": [
+        {
+          "state": [
+            "S",
+            0
+          ],
+          "plan": [],
+          "g": 0,
+          "lower": 0
+        },
+        {
+          "state": [
+            "A",
+            1
+          ],
+          "plan": [
+            "A"
+          ],
+          "g": 1,
+          "lower": 1
+        },
+        {
+          "state": [
+            "B",
+            2
+          ],
+          "plan": [
+            "B"
+          ],
+          "g": 2,
+          "lower": 7
+        }
+      ],
+      "ana_reported_e_bound": 3.6,
+      "algorithm": "ANA",
+      "weight": null,
+      "expanded": 3,
+      "expanded_phase0": 0,
+      "expanded_phase1": 0,
+      "expanded_other": 3,
+      "generated": 6,
+      "queued": 6,
+      "pruned": 2,
+      "dominated": 0,
+      "stale_pops": 0,
+      "reopened": 0,
+      "terminal_generated": 3,
+      "goal_pops": 2,
+      "frontier_rekeys": 2,
+      "rekey_labels": 2,
+      "peak_frontier": 3,
+      "extra_prune_calls": 0,
+      "extra_pruned": 0
+    }
+  },
+  {
+    "name": "PATHMAX_KEY",
+    "algorithm": "AWA",
+    "result": {
+      "objective_value": 11,
+      "plan": [
+        "A",
+        "D",
+        "G"
+      ],
+      "trace": [
+        {
+          "seconds": 1.200009137392044e-06,
+          "cost": 100,
+          "plan": [
+            "G"
+          ],
+          "expansion_index": 0,
+          "expansions_completed": 0,
+          "event_kind": "initial"
+        },
+        {
+          "seconds": 2.659996971487999e-05,
+          "cost": 11,
+          "plan": [
+            "A",
+            "D",
+            "G"
+          ],
+          "expansion_index": 3,
+          "expansions_completed": 2,
+          "event_kind": "goal_generated"
+        }
+      ],
+      "lower_bound": 11,
+      "certified_gap": 0,
+      "certified_optimal": true,
+      "elapsed_seconds": 3.260001540184021e-05,
+      "setup_seconds": 9.00006853044033e-07,
+      "initial_seconds": 3.00002284348011e-07,
+      "search_seconds": 3.1400006264448166e-05,
+      "root_bound_seconds": 3.899913281202316e-06,
+      "root_bound": 0,
+      "root_priority": 0,
+      "initialization_overrun": false,
+      "wall_budget_ms": null,
+      "overrun_seconds": 0,
+      "stop_reason": "exhausted",
+      "timing_interpretable": true,
+      "stats": {
+        "expanded": 4,
+        "expanded_phase0": 0,
+        "expanded_phase1": 0,
+        "expanded_other": 4,
+        "generated": 6,
+        "queued": 4,
+        "pruned": 0,
+        "dominated": 0,
+        "stale_pops": 0,
+        "reopened": 0,
+        "terminal_generated": 3,
+        "goal_pops": 0,
+        "frontier_rekeys": 0,
+        "rekey_labels": 0,
+        "peak_frontier": 2,
+        "extra_prune_calls": 0,
+        "extra_pruned": 0,
+        "structural_keys": 4,
+        "dominance_records": 4,
+        "detailed_profile_enabled": false,
+        "published_search_algorithm": "AWA",
+        "extra_prune_enabled": false
+      },
+      "audit_trace": [
+        {
+          "state": [
+            "S",
+            0
+          ],
+          "plan": [],
+          "g": 0,
+          "lower": 0
+        },
+        {
+          "state": [
+            "A",
+            1
+          ],
+          "plan": [
+            "A"
+          ],
+          "g": 1,
+          "lower": 10
+        },
+        {
+          "state": [
+            "D",
+            5
+          ],
+          "plan": [
+            "A",
+            "D"
+          ],
+          "g": 5,
+          "lower": 10
+        },
+        {
+          "state": [
+            "C",
+            2
+          ],
+          "plan": [
+            "A",
+            "C"
+          ],
+          "g": 2,
+          "lower": 10
+        }
+      ],
+      "ana_reported_e_bound": null,
+      "algorithm": "AWA",
+      "weight": 2,
+      "expanded": 4,
+      "expanded_phase0": 0,
+      "expanded_phase1": 0,
+      "expanded_other": 4,
+      "generated": 6,
+      "queued": 4,
+      "pruned": 0,
+      "dominated": 0,
+      "stale_pops": 0,
+      "reopened": 0,
+      "terminal_generated": 3,
+      "goal_pops": 0,
+      "frontier_rekeys": 0,
+      "rekey_labels": 0,
+      "peak_frontier": 2,
+      "extra_prune_calls": 0,
+      "extra_pruned": 0
+    }
+  },
+  {
+    "name": "NODE3_UNWEIGHTED",
+    "algorithm": "AWA",
+    "result": {
+      "objective_value": 15,
+      "plan": [
+        "A",
+        "R",
+        "G"
+      ],
+      "trace": [
+        {
+          "seconds": 1.800013706088066e-06,
+          "cost": 100,
+          "plan": [
+            "G"
+          ],
+          "expansion_index": 0,
+          "expansions_completed": 0,
+          "event_kind": "initial"
+        },
+        {
+          "seconds": 2.6799971237778664e-05,
+          "cost": 15,
+          "plan": [
+            "A",
+            "R",
+            "G"
+          ],
+          "expansion_index": 3,
+          "expansions_completed": 2,
+          "event_kind": "goal_generated"
+        }
+      ],
+      "lower_bound": 7,
+      "certified_gap": 8,
+      "certified_optimal": false,
+      "elapsed_seconds": 3.0199997127056122e-05,
+      "setup_seconds": 1.500011421740055e-06,
+      "initial_seconds": 3.00002284348011e-07,
+      "search_seconds": 2.8399983420968056e-05,
+      "root_bound_seconds": 3.899913281202316e-06,
+      "root_bound": 0,
+      "root_priority": 0,
+      "initialization_overrun": false,
+      "wall_budget_ms": null,
+      "overrun_seconds": 0,
+      "stop_reason": "node_budget",
+      "timing_interpretable": true,
+      "stats": {
+        "expanded": 3,
+        "expanded_phase0": 0,
+        "expanded_phase1": 0,
+        "expanded_other": 3,
+        "generated": 5,
+        "queued": 4,
+        "pruned": 0,
+        "dominated": 0,
+        "stale_pops": 0,
+        "reopened": 0,
+        "terminal_generated": 2,
+        "goal_pops": 0,
+        "frontier_rekeys": 0,
+        "rekey_labels": 0,
+        "peak_frontier": 2,
+        "extra_prune_calls": 0,
+        "extra_pruned": 0,
+        "structural_keys": 4,
+        "dominance_records": 4,
+        "detailed_profile_enabled": false,
+        "published_search_algorithm": "AWA",
+        "extra_prune_enabled": false
+      },
+      "audit_trace": [
+        {
+          "state": [
+            "S",
+            0
+          ],
+          "plan": [],
+          "g": 0,
+          "lower": 0
+        },
+        {
+          "state": [
+            "A",
+            1
+          ],
+          "plan": [
+            "A"
+          ],
+          "g": 1,
+          "lower": 2
+        },
+        {
+          "state": [
+            "R",
+            5
+          ],
+          "plan": [
+            "A",
+            "R"
+          ],
+          "g": 5,
+          "lower": 5
+        }
+      ],
+      "ana_reported_e_bound": null,
+      "algorithm": "AWA",
+      "weight": 2,
+      "expanded": 3,
+      "expanded_phase0": 0,
+      "expanded_phase1": 0,
+      "expanded_other": 3,
+      "generated": 5,
+      "queued": 4,
+      "pruned": 0,
+      "dominated": 0,
+      "stale_pops": 0,
+      "reopened": 0,
+      "terminal_generated": 2,
+      "goal_pops": 0,
+      "frontier_rekeys": 0,
+      "rekey_labels": 0,
+      "peak_frontier": 2,
+      "extra_prune_calls": 0,
+      "extra_pruned": 0
+    }
+  },
+  {
+    "name": "NODE3_UNWEIGHTED",
+    "algorithm": "ANA",
+    "result": {
+      "objective_value": 100,
+      "plan": [
+        "G"
+      ],
+      "trace": [
+        {
+          "seconds": 1.600012183189392e-06,
+          "cost": 100,
+          "plan": [
+            "G"
+          ],
+          "expansion_index": 0,
+          "expansions_completed": 0,
+          "event_kind": "initial"
+        }
+      ],
+      "lower_bound": 7,
+      "certified_gap": 93,
+      "certified_optimal": false,
+      "elapsed_seconds": 3.220001235604286e-05,
+      "setup_seconds": 1.300009898841381e-06,
+      "initial_seconds": 3.00002284348011e-07,
+      "search_seconds": 3.060000017285347e-05,
+      "root_bound_seconds": 3.500026650726795e-06,
+      "root_bound": 0,
+      "root_priority": "-Infinity",
+      "initialization_overrun": false,
+      "wall_budget_ms": null,
+      "overrun_seconds": 0,
+      "stop_reason": "node_budget",
+      "timing_interpretable": true,
+      "stats": {
+        "expanded": 3,
+        "expanded_phase0": 0,
+        "expanded_phase1": 0,
+        "expanded_other": 3,
+        "generated": 5,
+        "queued": 5,
+        "pruned": 1,
+        "dominated": 0,
+        "stale_pops": 0,
+        "reopened": 0,
+        "terminal_generated": 2,
+        "goal_pops": 0,
+        "frontier_rekeys": 0,
+        "rekey_labels": 0,
+        "peak_frontier": 2,
+        "extra_prune_calls": 0,
+        "extra_pruned": 0,
+        "structural_keys": 5,
+        "dominance_records": 5,
+        "detailed_profile_enabled": false,
+        "published_search_algorithm": "ANA",
+        "extra_prune_enabled": false
+      },
+      "audit_trace": [
+        {
+          "state": [
+            "S",
+            0
+          ],
+          "plan": [],
+          "g": 0,
+          "lower": 0
+        },
+        {
+          "state": [
+            "A",
+            1
+          ],
+          "plan": [
+            "A"
+          ],
+          "g": 1,
+          "lower": 2
+        },
+        {
+          "state": [
+            "R",
+            5
+          ],
+          "plan": [
+            "A",
+            "R"
+          ],
+          "g": 5,
+          "lower": 5
+        }
+      ],
+      "ana_reported_e_bound": 99.0,
+      "algorithm": "ANA",
+      "weight": null,
+      "expanded": 3,
+      "expanded_phase0": 0,
+      "expanded_phase1": 0,
+      "expanded_other": 3,
+      "generated": 5,
+      "queued": 5,
+      "pruned": 1,
+      "dominated": 0,
+      "stale_pops": 0,
+      "reopened": 0,
+      "terminal_generated": 2,
+      "goal_pops": 0,
+      "frontier_rekeys": 0,
+      "rekey_labels": 0,
+      "peak_frontier": 2,
+      "extra_prune_calls": 0,
+      "extra_pruned": 0
+    }
+  }
+]

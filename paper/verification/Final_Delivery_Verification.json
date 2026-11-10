@@ -1,0 +1,69 @@
+{
+  "checked_utc": "2026-11-07T17:26:22.990088+00:00",
+  "status": "PASS_FINAL_RENDER_AND_CONTENT_CHECKS",
+  "scope": "Editorial, formula-to-code consistency and frozen-evidence review. This is not a claim of universal originality or real-world traffic validation.",
+  "pages": {
+    "main": 6,
+    "appendices": 4,
+    "references": 1,
+    "total": 11
+  },
+  "all_pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "table_B2_enlarged_visual_check": "PASS aligned columns and values",
+  "figure_caption_pages": {
+    "Figure 1": 5,
+    "Figure 2": 6
+  },
+  "table_caption_pages": {
+    "Table B1": 8,
+    "Table B2": 8,
+    "Table B3": 9
+  },
+  "algorithm_page": 4,
+  "algorithm_lines": 30,
+  "new_mechanism_lines": [
+    8,
+    22
+  ],
+  "math_objects": 9,
+  "numbered_equations": 7,
+  "figures": 2,
+  "tables": 3,
+  "references": 11,
+  "old_user_edited_docx_unchanged_sha256": "792eb300195631719f0eefa444002d62c24de69432025a2cf1c4e4826911c2d4",
+  "content_sha256": "6632a13ff06ded38d619380b1b79e854f250044848364cbb0a9c2feb6c34e664",
+  "deliverables": {
+    "Joint_Capacity_Release_Manuscript.docx": "14d1e363f041a745604a921eadd516d4925d7f890b70dd0a2ea57036ebe1ffb0",
+    "Joint_Capacity_Release_Manuscript.pdf": "d962a27c1a9f25bef05ac391c90fbac119aa3aeb3539f2a60527ac42b9c77c69"
+  },
+  "page_images": {
+    "page-1.png": "e25bd9c84417c108a4778dc29e17a88dbac67485f0060b84281681ffd1804728",
+    "page-2.png": "2f4b5a73d20cbf47b19e1b091c62545f4f193a6ecf185c82fcd9be7538052d8f",
+    "page-3.png": "6ad5202abdffc5287c19156e99b06c23f881d36fa7c6938dc3b053db6490e10e",
+    "page-4.png": "1f43128a4bfc40eacf338b7208fa99b96f8ab53e3f74339a9b4f19b9801f4ceb",
+    "page-5.png": "ffff6440d52d101741635f918e97c4ca899fb21fa5ffc418e0985d8031272c0d",
+    "page-6.png": "522d7d43e33a8b26acafb693033d0f832ff413ae43706a63b27ef7d3d803ea64",
+    "page-7.png": "b3ed10ab03ee399a159624f0027802f2e02b5e162be917e59d72a489bd69ab04",
+    "page-8.png": "a432559f216f5cf82f4a7f1fdcc7215cd5b13a4ba0bb00bef4fc0a2d17f58b44",
+    "page-9.png": "b003a43999ce066110126a7bf5afc6f457b33bdd575a334ea61066c0a6cbeb33",
+    "page-10.png": "6b5c6f3cf39bd69df58f7a5ac5dd7ab94ffdcb50802f1bfab7dd666d3c0dc659",
+    "page-11.png": "a38c61db3b91b8979fcf58b3e6cd31ae378ce16ddee80ba816218d80a279fe85"
+  },
+  "review_tool_issue": {
+    "initial_pdf_probe": "fitz.open was unavailable on first import",
+    "resolution": "pypdf verified the PDF text and count; all final page images were visually inspected; Table B2 was additionally enlarged",
+    "manuscript_data_affected": false
+  }
+}

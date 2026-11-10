@@ -1,0 +1,62 @@
+--- before_observation_qc
++++ run_public_validation.py
+@@ -117,15 +117,27 @@
+     folder.mkdir()
+     obs={i:times(day,i) for i in (1,2,3,4,7,8)};n=len(obs[1])
+     if n<100 or any(len(x)!=n for x in obs.values()):raise ValueError(('observation lengths',day))
++    # Keep the complete demand population; QC affects comparison eligibility only.
++    excluded=[]
+     for a,b in p['segments']+[[7,8]]:
+-        if any(y<=x for x,y in zip(obs[a],obs[b])):raise ValueError(('nonpositive travel time',day,a,b))
++        for i,(x,y) in enumerate(zip(obs[a],obs[b])):
++            if y<=x:excluded.append(dict(day=day,ordinal_row_index=i,segment=f'{a}-{b}',
++                source_start_seconds=x,source_end_seconds=y,observed_seconds=y-x,
++                action='hold_previous_boundary_speed' if (a,b)==(7,8) else 'exclude_from_segment_score_only'))
++    dump(folder/'Observation_QC.json',{'matching':'ordinal rows, not verified real vehicle identities',
++        'demand_vehicles_preserved':n,'excluded_observations':excluded})
+     routes=ET.Element('routes');ET.SubElement(routes,'vType',id='pass',tau=str(tau),**{k:str(v) for k,v in p['parameters'].items()})
+     ET.SubElement(routes,'route',id='route01',edges='1to7 7to8')
+     for i,t in enumerate(obs[1]):ET.SubElement(routes,'vehicle',id=str(i),depart=str(t),arrivalPos='-1',route='route01',type='pass',departSpeed='max')
+     write_xml(folder/'routes.rou.xml',routes)
+     vss=ET.Element('vss')
+     for i in range(n-1):
+-        if obs[7][i]!=obs[7][i+1]:ET.SubElement(vss,'step',time=str(obs[7][i]),speed=str(p['vss_distance_m']/(obs[8][i]-obs[7][i])))
++        if obs[7][i]!=obs[7][i+1] and obs[8][i]>obs[7][i]:
++            ET.SubElement(vss,'step',time=str(obs[7][i]),speed=str(p['vss_distance_m']/(obs[8][i]-obs[7][i])))
++    if not len(vss):raise ValueError('No valid boundary speed observation')
++    invalid_boundary=[z for z in excluded if z['segment']=='7-8']
++    if invalid_boundary and float(vss[0].attrib['time'])>min(z['source_start_seconds'] for z in invalid_boundary):
++        raise ValueError('Invalid boundary before first valid speed: hold-previous rule undefined')
+     write_xml(folder/'boundary.vss.xml',vss)
+     additional=ET.Element('additional');ET.SubElement(additional,'variableSpeedSign',id='vss',lanes='7to8_0',file='boundary.vss.xml')
+     positions={x.attrib['id']:x.attrib for x in ET.parse(ROOT/'upstream/data/input_det.add.xml').getroot()}
+@@ -166,9 +178,17 @@
+         for i in range(n):
+             observed=obs[b][i]-obs[a][i];simulated=seen[b][i]-seen[a][i]
+             if simulated<=0:raise ValueError(('nonpositive simulated travel time',i,a,b))
+-            err=simulated-observed;errors.append(err)
+-            rows.append({'day':day,'tau':tau,'vehicle_row_index':i,'segment':f'{a}-{b}','observed_seconds':observed,'simulated_seconds':simulated,'error_seconds':err})
+-        segments.append({'segment':f'{a}-{b}','n':n,'rmse_seconds':math.sqrt(sum(e*e for e in errors)/n),'mae_seconds':sum(abs(e) for e in errors)/n,'bias_seconds':sum(errors)/n})
++            eligible=observed>0;err=simulated-observed
++            if eligible:errors.append(err)
++            rows.append({'day':day,'tau':tau,'ordinal_row_index':i,'segment':f'{a}-{b}',
++                'source_start_seconds':obs[a][i],'source_end_seconds':obs[b][i],
++                'observed_seconds':observed,'simulated_seconds':simulated,
++                'score_eligible':eligible,'error_seconds':err if eligible else None})
++        if not errors:raise ValueError(('No eligible observation pairs',day,a,b))
++        count=len(errors)
++        segments.append({'segment':f'{a}-{b}','n_total':n,'n':count,'n_excluded':n-count,
++            'rmse_seconds':math.sqrt(sum(e*e for e in errors)/count),
++            'mae_seconds':sum(abs(e) for e in errors)/count,'bias_seconds':sum(errors)/count})
+     with (folder/'Matched_Travel_Times.csv').open('w',newline='',encoding='utf-8') as f:
+         w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+     result={'day':day,'tau':tau,'vehicles':n,'segment_metrics':segments,'mean_segment_rmse_seconds':sum(x['rmse_seconds'] for x in segments)/len(segments),'all_requested_vehicles_arrived':True,'all_expected_crossings_present':True,'collision_or_teleport_warnings':bad,'max_depart_delay_seconds':max(float(x.attrib['departDelay']) for x in trips),'mean_depart_delay_seconds':sum(float(x.attrib['departDelay']) for x in trips)/n}
+@@ -199,7 +219,7 @@
+         dump(out/'Selection_Before_Heldout.json',selection)
+         baseline=run(p['heldout_day'],p['baseline_tau']);winner=baseline if best['tau']==p['baseline_tau'] else run(p['heldout_day'],best['tau'])
+         delta=winner['mean_segment_rmse_seconds']-baseline['mean_segment_rmse_seconds']
+-        summary={'workflow_status':'PASS','empirical_agreement_status':'MEASURED_NO_UNIVERSAL_ACCEPTANCE_THRESHOLD','source_commit':manifest['commit'],'sumo_version':version.splitlines()[0],'sumo_sha256':sha(sumo),'netconvert_sha256':sha(netconvert),'protocol_sha256':sha(ROOT/'Frozen_Protocol.json'),'script_sha256':sha(__file__),'sumo_runs':len(records),'selected_tau':best['tau'],'selection_before_heldout_sha256':sha(out/'Selection_Before_Heldout.json'),'baseline_heldout':baseline,'selected_heldout':winner,'heldout_mean_segment_rmse_delta_seconds':delta,'heldout_rmse_improved':delta<0,'no_day2_parameter_tuning':True,'conditional_on_observed_day_specific_inflow_and_outflow':True,'delivery_network_calibrated':False,'all_run_metrics':records,'elapsed_seconds':time.perf_counter()-started}
++        summary={'workflow_status':'PASS','empirical_agreement_status':'MEASURED_NO_UNIVERSAL_ACCEPTANCE_THRESHOLD','source_commit':manifest['commit'],'sumo_version':version.splitlines()[0],'sumo_sha256':sha(sumo),'netconvert_sha256':sha(netconvert),'protocol_sha256':sha(ROOT/'Frozen_Protocol.json'),'script_sha256':sha(__file__),'sumo_runs':len(records),'selected_tau':best['tau'],'selection_before_heldout_sha256':sha(out/'Selection_Before_Heldout.json'),'baseline_heldout':baseline,'selected_heldout':winner,'heldout_mean_segment_rmse_delta_seconds':delta,'heldout_rmse_improved':delta<0,'no_day2_parameter_tuning':True,'conditional_on_observed_day_specific_inflow_and_outflow':True,'matching':'ordinal rows, not verified real vehicle identities','delivery_network_calibrated':False,'all_run_metrics':records,'elapsed_seconds':time.perf_counter()-started}
+         dump(out/'Summary.json',summary)
+         dump(out/'Output_Manifest.json',{'files':{str(f.relative_to(out)):sha(f) for f in sorted(out.rglob('*')) if f.is_file()}})
+         dump(out/'PROCESS_COMPLETE.json',{'status':'PASS','sumo_runs':len(records),'interpretation':'Workflow completion only, not a physical-calibration acceptance threshold; inspect heldout error and failures.'})

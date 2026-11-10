@@ -1,0 +1,61 @@
+{
+  "status": "AUTOMATED_PASS_VISUAL_PENDING",
+  "source_sha256": "d6e13da4ffb733595d3689044c0d40378b4a51d2e29348330de1c86e57dabb1e",
+  "preparation_sha256": "85c3b2b6fda8bed0bd571a01d0043707ad80d3303cf0ad7a6fc6ab15b7bbe6c4",
+  "inputs": [
+    {
+      "original_path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Directed_Proof_Pairs.csv",
+      "copy_path": "source_data/Directed_Proof_Pairs.csv",
+      "sha256": "ccd7c02ce3d5ba2e585bef88919649fc733014682b20ee8adc0388c441c66d10"
+    },
+    {
+      "original_path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Initial_Strata_First_Good_Pairs.csv",
+      "copy_path": "source_data/Initial_Strata_First_Good_Pairs.csv",
+      "sha256": "9c0ac264f8da8507a768e6e975eeb33dd35267d36afeb2415ab55a5dea38e4d7"
+    }
+  ],
+  "files": {
+    "exports\\Captions.md": "b71112b16e77f7f5c62a29cddd13f7a2874823faa0dafc941613052c1364682e",
+    "exports\\Fig1_Plotted_Points.csv": "975893370a26e5036408d26f48587fe693ac1b11777681f4a671daab46ff159a",
+    "exports\\Fig1_Same_Kernel_Scale.alignment.json": "09df15d5959665a16983019bba01cced656d9a21d05f441deb798149d6fbe879",
+    "exports\\Fig1_Same_Kernel_Scale.alignment.svg": "44df6a9e768efcff72a6e789ed6904740692f93b1bee5e1e561dd02d417c9e44",
+    "exports\\Fig1_Same_Kernel_Scale.pdf": "c868f5b6e2611f66af321834167c1bd62088b71b1c6cec29bebdf438817d21d8",
+    "exports\\Fig1_Same_Kernel_Scale.png": "25d6154756ca5da95e2e92e284de72d1711b115c077cfefa3217c74fd85e2de9",
+    "exports\\Fig1_Same_Kernel_Scale.svg": "b76af126fadebb8ef28541c6da7d0db0f033376e6fbbc2e4343420604234f676",
+    "exports\\Fig2_Anytime_Tradeoff.alignment.json": "f5096d20e8cb0466bef50dc2d8afec61e9433f2ccc6d3e599c12b1b9b877b229",
+    "exports\\Fig2_Anytime_Tradeoff.alignment.svg": "9d7d1703774e3cba165d3e2f1d76f5dc7aa2bda164a87da6c008e48da60268b4",
+    "exports\\Fig2_Anytime_Tradeoff.pdf": "dc6e04b7ab3dd1b16c19c9ef5053d53efe493ed7cf75393e2d5f5d7328673b58",
+    "exports\\Fig2_Anytime_Tradeoff.png": "ebc6b46a26d510649883bd90f3494a8457053f44e469d183e42718703f459841",
+    "exports\\Fig2_Anytime_Tradeoff.svg": "93e5a8036af03205d44a21fa8c4985aadedaedf597581fbf1a489b7a93595762",
+    "exports\\Fig2_Plotted_Points.csv": "3867e837f67d09c2bf477ccc0b9edc9f37e50407c8411a4f712a58d5ba3de975",
+    "exports\\Render_Manifest.json": "1f38ac8c6fab526e678b00af1d7bce67698239aa16d83cd42464322f07254678",
+    "qa\\Fig1_Same_Kernel_Scale.collision.command.json": "4af39811b6968d570ee23fa784c4945e86679ffd08b79b345756635090f96fdb",
+    "qa\\Fig1_Same_Kernel_Scale.collision.json": "5f6a200e365c7274b7159766bebfd779302f617a21853cb37422ff299e4a0e63",
+    "qa\\Fig1_Same_Kernel_Scale.collision.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "qa\\Fig1_Same_Kernel_Scale.collision.stdout.txt": "5f6a200e365c7274b7159766bebfd779302f617a21853cb37422ff299e4a0e63",
+    "qa\\Fig1_Same_Kernel_Scale.font.command.json": "3381bef5a5e9a0689bee1d8325a593dc060855f41709617514f3c4496988e488",
+    "qa\\Fig1_Same_Kernel_Scale.font.json": "c1558f65e617f668f8e9a72f8a081e79c0cce0bcee1c35312800a4372023c96b",
+    "qa\\Fig1_Same_Kernel_Scale.font.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "qa\\Fig1_Same_Kernel_Scale.font.stdout.txt": "c1558f65e617f668f8e9a72f8a081e79c0cce0bcee1c35312800a4372023c96b",
+    "qa\\Fig1_Same_Kernel_Scale.pdf_preview.png": "cac80321ff6f5a83b206137818ee7b52ee4a93498862eb6be06364b1c6e6f589",
+    "qa\\Fig2_Anytime_Tradeoff.collision.command.json": "336d08a32048f123fcde0e60721daf37abab9b49379c19d8336c017e924df070",
+    "qa\\Fig2_Anytime_Tradeoff.collision.json": "e20d850883a4e27b8437fbb2aac2c414220f3afcacf178cb269a9d88e4b50409",
+    "qa\\Fig2_Anytime_Tradeoff.collision.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "qa\\Fig2_Anytime_Tradeoff.collision.stdout.txt": "e20d850883a4e27b8437fbb2aac2c414220f3afcacf178cb269a9d88e4b50409",
+    "qa\\Fig2_Anytime_Tradeoff.font.command.json": "76f5a6850bce9e661ef8a876adae841fb1ed50bd0dc1809dbf5450b7bd2a738f",
+    "qa\\Fig2_Anytime_Tradeoff.font.json": "f6e0d8987e80a4a38bc5591d93bb2c042ec71a5783b65f35e822acaaa64bbbd3",
+    "qa\\Fig2_Anytime_Tradeoff.font.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "qa\\Fig2_Anytime_Tradeoff.font.stdout.txt": "f6e0d8987e80a4a38bc5591d93bb2c042ec71a5783b65f35e822acaaa64bbbd3",
+    "qa\\Fig2_Anytime_Tradeoff.pdf_preview.png": "65419c99e6669f9760fcbdda6bddfd88641cee0a3e0de7c1fa8607aa7317a49b",
+    "qa\\Geometry.json": "a74f4b6565e3c17f173576ea659df0ba5990981ea4075c534f4ba773d7b29f2b",
+    "qa\\render.command.json": "6499371ae09f799c65175841161d27edd15f77200d8c702d95663b00fb5b2748",
+    "qa\\render.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "qa\\render.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "qa\\source.command.json": "e3ba2aef512d62b49f7a0a4f47abee22174f91e819002d62e0c5fd974d915bb7",
+    "qa\\source.json": "86ce82fad9e364090a19d01118e6747cc6427f666b8bd8811795cb871f2f5668",
+    "qa\\source.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "qa\\source.stdout.txt": "86ce82fad9e364090a19d01118e6747cc6427f666b8bd8811795cb871f2f5668",
+    "QA_Summary.json": "b5e80b24b49592d51f9dd59ed56be1b12cf99748d9b04fa59f19160655c1c112",
+    "VISUAL_REVIEW_REQUIRED.md": "202dac0840bdbcef3b494dcbca0ad667de70518aa75ee61e49d5ee5e0cae916d"
+  }
+}

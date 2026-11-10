@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-07T14:57:22.675452+00:00",
+  "reviewer": "official_vehicle_capacities agent",
+  "visual_method": "Viewed actual PNG and PDF-rendered preview with view_image; inspected both panels and complete figure.",
+  "visual_checks": {
+    "titles_and_axes_readable": true,
+    "zero_values_not_hidden": true,
+    "all_three_budgets_present": true,
+    "WTLU_and_denominators_clear": true,
+    "no_visible_overlap_or_clipping": true,
+    "PNG_matches_PDF_preview": true
+  },
+  "numeric_checks": {
+    "plot_rows": 6,
+    "per_case_metric_rows": 384,
+    "condition_summary_rows": 48,
+    "execution_identity_rows": 192,
+    "all_plotted_and_condition_changes_exactly_zero": true,
+    "same_per_case_CSV_hash": true
+  },
+  "execution_identity_summary": [
+    {
+      "budget_ms": 10,
+      "cases": 64,
+      "mothers": 8,
+      "aligned_rep_pair_denominator": 192,
+      "cross_arm_same_plan_activation_rep_pairs": 192,
+      "candidate_within_arm_stable_cases": 64,
+      "baseline_within_arm_stable_cases": 64,
+      "both_within_arm_stable_cases": 64,
+      "audit_known_direct_subset_cases": 64,
+      "cross_arm_all3_aligned_match_cases": 64,
+      "cross_arm_execution_distribution_equal_cases": 64,
+      "stable_cross_arm_same_execution_cases": 64
+    },
+    {
+      "budget_ms": 50,
+      "cases": 64,
+      "mothers": 8,
+      "aligned_rep_pair_denominator": 192,
+      "cross_arm_same_plan_activation_rep_pairs": 192,
+      "candidate_within_arm_stable_cases": 64,
+      "baseline_within_arm_stable_cases": 64,
+      "both_within_arm_stable_cases": 64,
+      "audit_known_direct_subset_cases": 64,
+      "cross_arm_all3_aligned_match_cases": 64,
+      "cross_arm_execution_distribution_equal_cases": 64,
+      "stable_cross_arm_same_execution_cases": 64
+    },
+    {
+      "budget_ms": 200,
+      "cases": 64,
+      "mothers": 8,
+      "aligned_rep_pair_denominator": 192,
+      "cross_arm_same_plan_activation_rep_pairs": 192,
+      "candidate_within_arm_stable_cases": 64,
+      "baseline_within_arm_stable_cases": 64,
+      "both_within_arm_stable_cases": 64,
+      "audit_known_direct_subset_cases": 64,
+      "cross_arm_all3_aligned_match_cases": 64,
+      "cross_arm_execution_distribution_equal_cases": 64,
+      "stable_cross_arm_same_execution_cases": 64
+    }
+  ],
+  "warnings_accepted": {
+    "EXPORT-RASTER": "PNG/PDF/SVG are the requested deliverables; TIFF is not required.",
+    "UNCERTAINTY-ENCODING": "Prespecified descriptive comparison with all 64 paired differences exactly zero; W/T/L/unknown displayed and no confidence intervals inferred from correlated variants."
+  },
+  "source_summary_sha256": "318ed6ea6d45d46e3399e53b2d47871ea588874a6dbccbbb7b3e55827ee607bd",
+  "inspected_images": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\native_outcome\\render_native_01\\Fig3_Native_Outcomes.png": "910a4f6dce16a6c4aa1614083eaeeed6d9b784a67498be12d9329ca3f4733545",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\native_outcome\\render_native_01\\qa\\pdf_preview.png": "f88ed59a3d5ed92234691bf4539499f9146072e1b6307c7bd696c5cca7645833"
+  },
+  "solver_runs": 0,
+  "SUMO_runs": 0,
+  "existing_output_manifests_modified": false
+}

@@ -1,0 +1,14 @@
+{
+  "status": "AST_PASS_NOT_NUMERICALLY_EXECUTED",
+  "prepared_source_hashes": {
+    "Frozen_Protocol.json": "65e34868637e4766285307f28fd0a8b4cba54ff78421d5f775ef51991d002f18",
+    "run_public_validation.py": "3a9a6862f4f16d9f49932bdeea89f4a9e1b4843d4cffcf3e9f07d2201cc91304",
+    "Upstream_Manifest.json": "628763faaf9c5482587128740de9e03509b8d834d6316842e5682d686864668e"
+  },
+  "sumo_version_only_checked": "1.27.1",
+  "no_sumo_traffic_run": true,
+  "max_sumo_runs": 5,
+  "created_utc": "2026-11-07T10:37:30.797554+00:00",
+  "execution_amendment": "Windows job-object atomic child containment; traffic parameters, selection, observations and measurement logic unchanged",
+  "previous_script_sha256": "40ca808def70c3c0a7138f7b0332e20e0609981f6391b1b888012cbb8a484582"
+}

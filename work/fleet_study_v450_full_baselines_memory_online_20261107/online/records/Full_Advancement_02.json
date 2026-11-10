@@ -1,0 +1,16 @@
+{
+  "status": "AUTHORIZED_COST_ONLY_ADVANCEMENT",
+  "time_utc": "2026-11-07T13:57:30.6624612Z",
+  "cases": 64,
+  "mothers": 8,
+  "policy_calls": 1728,
+  "inputs_sha256": "449eec7aa1200bec723b24d57ae439bb497ab484de6e7aade1d0b7a80fdc7259",
+  "source_manifest_sha256": "df93e43db1745bc66378a68ac22fce92f6496aa5c21e7d7ab1236f8a85145418",
+  "cost_record_sha256": "1cb1b1eb691610d99c5c2f63ed350e6bbbcfa0f30e9a872ecdd902a34b2fce8a",
+  "cases_changed": false,
+  "budgets_changed": false,
+  "outcome_selection_used": false,
+  "reason": "Root approved unchanged full64 on correctness and measured cost only; no benefit criterion",
+  "available_bytes": 753521139712,
+  "full_host_timeout_seconds": 14400
+}

@@ -1,0 +1,12 @@
+{
+  "source_sha256": "680e929fc4572dcb9ad8ef9b28f7895711cf11dfb1802148c8b51d935222cd9e",
+  "outputs": {
+    "Independent_Memory_Audit.json": "b13a5f7395b12c745ddee721cb56d333a36c7e1631b4954fa508bd7e421bd6de",
+    "Independent_Memory_Audit.md": "cf639f1c99a28730fde6a4592b8b7f4279958759b6032acd479ce3de0f8e1f87",
+    "Independent_Method_Summary.csv": "4dd819c87582efb539536440a42388e0913069f571e3a74cdb431e559773bd9e",
+    "Independent_Observations.csv": "055cf0b3a686acd7d03719d41fcf06ad3bdb97efdd67e6c9fc67f20d9d2e4c7d",
+    "Independent_Pair_Summary.csv": "df68018d0bc5e5fdc0d2c6bedb598ce89c4044e711ad7538b45221212d4daa81",
+    "Independent_Paired_Cases.csv": "71be50ac3fb5cb87ffb60a60151374189b640e864aba34013fc7defbfa1a4d6e",
+    "Source_and_Raw_Hashes.json": "db3d7744c38856879001a5a3d308bc5c2a8776b91c5e9753cac3e187acfdf6db"
+  }
+}

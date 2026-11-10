@@ -1,0 +1,4773 @@
+{
+  "schema": "V450-fixed64-native-single-epoch-v1",
+  "mothers": [
+    4509001,
+    4509002,
+    4509003,
+    4509004,
+    4509005,
+    4509006,
+    4509007,
+    4509008
+  ],
+  "budgets": [
+    0.01,
+    0.05,
+    0.2
+  ],
+  "cases": [
+    {
+      "case": "s4509001_n8_q12_o0_p0_f0",
+      "seed": 4509001,
+      "offset": 0,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509001_n8_q12_o0_p0_f2",
+      "seed": 4509001,
+      "offset": 0,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509001_n8_q12_o0_p10_f0",
+      "seed": 4509001,
+      "offset": 0,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509001_n8_q12_o0_p10_f2",
+      "seed": 4509001,
+      "offset": 0,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509001_n8_q12_o24_p0_f0",
+      "seed": 4509001,
+      "offset": 24,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509001_n8_q12_o24_p0_f2",
+      "seed": 4509001,
+      "offset": 24,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509001_n8_q12_o24_p10_f0",
+      "seed": 4509001,
+      "offset": 24,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509001_n8_q12_o24_p10_f2",
+      "seed": 4509001,
+      "offset": 24,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509002_n8_q12_o0_p0_f0",
+      "seed": 4509002,
+      "offset": 0,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509002,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "EDx",
+          "a2": "EDu",
+          "a3": "WDx",
+          "a4": "EDv",
+          "a5": "WDu",
+          "a6": "EUu",
+          "a7": "WUx",
+          "b0": "WDu",
+          "b1": "EDx",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EUx",
+          "b5": "EDv",
+          "b6": "EUv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509002_n8_q12_o0_p0_f2",
+      "seed": 4509002,
+      "offset": 0,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509002,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "EDx",
+          "a2": "EDu",
+          "a3": "WDx",
+          "a4": "EDv",
+          "a5": "WDu",
+          "a6": "EUu",
+          "a7": "WUx",
+          "b0": "WDu",
+          "b1": "EDx",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EUx",
+          "b5": "EDv",
+          "b6": "EUv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509002_n8_q12_o0_p10_f0",
+      "seed": 4509002,
+      "offset": 0,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509002,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "EDx",
+          "a2": "EDu",
+          "a3": "WDx",
+          "a4": "EDv",
+          "a5": "WDu",
+          "a6": "EUu",
+          "a7": "WUx",
+          "b0": "WDu",
+          "b1": "EDx",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EUx",
+          "b5": "EDv",
+          "b6": "EUv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509002_n8_q12_o0_p10_f2",
+      "seed": 4509002,
+      "offset": 0,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509002,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "EDx",
+          "a2": "EDu",
+          "a3": "WDx",
+          "a4": "EDv",
+          "a5": "WDu",
+          "a6": "EUu",
+          "a7": "WUx",
+          "b0": "WDu",
+          "b1": "EDx",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EUx",
+          "b5": "EDv",
+          "b6": "EUv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509002_n8_q12_o24_p0_f0",
+      "seed": 4509002,
+      "offset": 24,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509002,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "EDx",
+          "a2": "EDu",
+          "a3": "WDx",
+          "a4": "EDv",
+          "a5": "WDu",
+          "a6": "EUu",
+          "a7": "WUx",
+          "b0": "WDu",
+          "b1": "EDx",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EUx",
+          "b5": "EDv",
+          "b6": "EUv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509002_n8_q12_o24_p0_f2",
+      "seed": 4509002,
+      "offset": 24,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509002,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "EDx",
+          "a2": "EDu",
+          "a3": "WDx",
+          "a4": "EDv",
+          "a5": "WDu",
+          "a6": "EUu",
+          "a7": "WUx",
+          "b0": "WDu",
+          "b1": "EDx",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EUx",
+          "b5": "EDv",
+          "b6": "EUv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509002_n8_q12_o24_p10_f0",
+      "seed": 4509002,
+      "offset": 24,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509002,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "EDx",
+          "a2": "EDu",
+          "a3": "WDx",
+          "a4": "EDv",
+          "a5": "WDu",
+          "a6": "EUu",
+          "a7": "WUx",
+          "b0": "WDu",
+          "b1": "EDx",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EUx",
+          "b5": "EDv",
+          "b6": "EUv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509002_n8_q12_o24_p10_f2",
+      "seed": 4509002,
+      "offset": 24,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509002,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "EDx",
+          "a2": "EDu",
+          "a3": "WDx",
+          "a4": "EDv",
+          "a5": "WDu",
+          "a6": "EUu",
+          "a7": "WUx",
+          "b0": "WDu",
+          "b1": "EDx",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EUx",
+          "b5": "EDv",
+          "b6": "EUv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509003_n8_q12_o0_p0_f0",
+      "seed": 4509003,
+      "offset": 0,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509003,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WDv",
+          "a1": "EUx",
+          "a2": "EUu",
+          "a3": "WUu",
+          "a4": "EUv",
+          "a5": "WDx",
+          "a6": "WDu",
+          "a7": "WUv",
+          "b0": "EDx",
+          "b1": "WUu",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "WDx",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509003_n8_q12_o0_p0_f2",
+      "seed": 4509003,
+      "offset": 0,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509003,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WDv",
+          "a1": "EUx",
+          "a2": "EUu",
+          "a3": "WUu",
+          "a4": "EUv",
+          "a5": "WDx",
+          "a6": "WDu",
+          "a7": "WUv",
+          "b0": "EDx",
+          "b1": "WUu",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "WDx",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509003_n8_q12_o0_p10_f0",
+      "seed": 4509003,
+      "offset": 0,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509003,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WDv",
+          "a1": "EUx",
+          "a2": "EUu",
+          "a3": "WUu",
+          "a4": "EUv",
+          "a5": "WDx",
+          "a6": "WDu",
+          "a7": "WUv",
+          "b0": "EDx",
+          "b1": "WUu",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "WDx",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509003_n8_q12_o0_p10_f2",
+      "seed": 4509003,
+      "offset": 0,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509003,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WDv",
+          "a1": "EUx",
+          "a2": "EUu",
+          "a3": "WUu",
+          "a4": "EUv",
+          "a5": "WDx",
+          "a6": "WDu",
+          "a7": "WUv",
+          "b0": "EDx",
+          "b1": "WUu",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "WDx",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509003_n8_q12_o24_p0_f0",
+      "seed": 4509003,
+      "offset": 24,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509003,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WDv",
+          "a1": "EUx",
+          "a2": "EUu",
+          "a3": "WUu",
+          "a4": "EUv",
+          "a5": "WDx",
+          "a6": "WDu",
+          "a7": "WUv",
+          "b0": "EDx",
+          "b1": "WUu",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "WDx",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509003_n8_q12_o24_p0_f2",
+      "seed": 4509003,
+      "offset": 24,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509003,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WDv",
+          "a1": "EUx",
+          "a2": "EUu",
+          "a3": "WUu",
+          "a4": "EUv",
+          "a5": "WDx",
+          "a6": "WDu",
+          "a7": "WUv",
+          "b0": "EDx",
+          "b1": "WUu",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "WDx",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509003_n8_q12_o24_p10_f0",
+      "seed": 4509003,
+      "offset": 24,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509003,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WDv",
+          "a1": "EUx",
+          "a2": "EUu",
+          "a3": "WUu",
+          "a4": "EUv",
+          "a5": "WDx",
+          "a6": "WDu",
+          "a7": "WUv",
+          "b0": "EDx",
+          "b1": "WUu",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "WDx",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509003_n8_q12_o24_p10_f2",
+      "seed": 4509003,
+      "offset": 24,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509003,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WDv",
+          "a1": "EUx",
+          "a2": "EUu",
+          "a3": "WUu",
+          "a4": "EUv",
+          "a5": "WDx",
+          "a6": "WDu",
+          "a7": "WUv",
+          "b0": "EDx",
+          "b1": "WUu",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "WDx",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509004_n8_q12_o0_p0_f0",
+      "seed": 4509004,
+      "offset": 0,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509004,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WDu",
+          "a2": "WUu",
+          "a3": "EDx",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EUv",
+          "a7": "EUx",
+          "b0": "EDu",
+          "b1": "WUx",
+          "b2": "EUu",
+          "b3": "EUv",
+          "b4": "EUx",
+          "b5": "WUv",
+          "b6": "EDx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 2,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509004_n8_q12_o0_p0_f2",
+      "seed": 4509004,
+      "offset": 0,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509004,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WDu",
+          "a2": "WUu",
+          "a3": "EDx",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EUv",
+          "a7": "EUx",
+          "b0": "EDu",
+          "b1": "WUx",
+          "b2": "EUu",
+          "b3": "EUv",
+          "b4": "EUx",
+          "b5": "WUv",
+          "b6": "EDx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 2,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509004_n8_q12_o0_p10_f0",
+      "seed": 4509004,
+      "offset": 0,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509004,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WDu",
+          "a2": "WUu",
+          "a3": "EDx",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EUv",
+          "a7": "EUx",
+          "b0": "EDu",
+          "b1": "WUx",
+          "b2": "EUu",
+          "b3": "EUv",
+          "b4": "EUx",
+          "b5": "WUv",
+          "b6": "EDx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 2,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509004_n8_q12_o0_p10_f2",
+      "seed": 4509004,
+      "offset": 0,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509004,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WDu",
+          "a2": "WUu",
+          "a3": "EDx",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EUv",
+          "a7": "EUx",
+          "b0": "EDu",
+          "b1": "WUx",
+          "b2": "EUu",
+          "b3": "EUv",
+          "b4": "EUx",
+          "b5": "WUv",
+          "b6": "EDx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 2,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509004_n8_q12_o24_p0_f0",
+      "seed": 4509004,
+      "offset": 24,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509004,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WDu",
+          "a2": "WUu",
+          "a3": "EDx",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EUv",
+          "a7": "EUx",
+          "b0": "EDu",
+          "b1": "WUx",
+          "b2": "EUu",
+          "b3": "EUv",
+          "b4": "EUx",
+          "b5": "WUv",
+          "b6": "EDx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 2,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509004_n8_q12_o24_p0_f2",
+      "seed": 4509004,
+      "offset": 24,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509004,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WDu",
+          "a2": "WUu",
+          "a3": "EDx",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EUv",
+          "a7": "EUx",
+          "b0": "EDu",
+          "b1": "WUx",
+          "b2": "EUu",
+          "b3": "EUv",
+          "b4": "EUx",
+          "b5": "WUv",
+          "b6": "EDx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 2,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509004_n8_q12_o24_p10_f0",
+      "seed": 4509004,
+      "offset": 24,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509004,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WDu",
+          "a2": "WUu",
+          "a3": "EDx",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EUv",
+          "a7": "EUx",
+          "b0": "EDu",
+          "b1": "WUx",
+          "b2": "EUu",
+          "b3": "EUv",
+          "b4": "EUx",
+          "b5": "WUv",
+          "b6": "EDx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 2,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509004_n8_q12_o24_p10_f2",
+      "seed": 4509004,
+      "offset": 24,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509004,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WDu",
+          "a2": "WUu",
+          "a3": "EDx",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EUv",
+          "a7": "EUx",
+          "b0": "EDu",
+          "b1": "WUx",
+          "b2": "EUu",
+          "b3": "EUv",
+          "b4": "EUx",
+          "b5": "WUv",
+          "b6": "EDx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 2,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509005_n8_q12_o0_p0_f0",
+      "seed": 4509005,
+      "offset": 0,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509005,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUu",
+          "a1": "WUv",
+          "a2": "WDu",
+          "a3": "WUu",
+          "a4": "EDx",
+          "a5": "WDx",
+          "a6": "EUx",
+          "a7": "EUv",
+          "b0": "WUx",
+          "b1": "EDu",
+          "b2": "EUx",
+          "b3": "WDx",
+          "b4": "WDv",
+          "b5": "WUv",
+          "b6": "WUu",
+          "b7": "EDx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 1,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509005_n8_q12_o0_p0_f2",
+      "seed": 4509005,
+      "offset": 0,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509005,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUu",
+          "a1": "WUv",
+          "a2": "WDu",
+          "a3": "WUu",
+          "a4": "EDx",
+          "a5": "WDx",
+          "a6": "EUx",
+          "a7": "EUv",
+          "b0": "WUx",
+          "b1": "EDu",
+          "b2": "EUx",
+          "b3": "WDx",
+          "b4": "WDv",
+          "b5": "WUv",
+          "b6": "WUu",
+          "b7": "EDx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 1,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509005_n8_q12_o0_p10_f0",
+      "seed": 4509005,
+      "offset": 0,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509005,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUu",
+          "a1": "WUv",
+          "a2": "WDu",
+          "a3": "WUu",
+          "a4": "EDx",
+          "a5": "WDx",
+          "a6": "EUx",
+          "a7": "EUv",
+          "b0": "WUx",
+          "b1": "EDu",
+          "b2": "EUx",
+          "b3": "WDx",
+          "b4": "WDv",
+          "b5": "WUv",
+          "b6": "WUu",
+          "b7": "EDx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 1,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509005_n8_q12_o0_p10_f2",
+      "seed": 4509005,
+      "offset": 0,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509005,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUu",
+          "a1": "WUv",
+          "a2": "WDu",
+          "a3": "WUu",
+          "a4": "EDx",
+          "a5": "WDx",
+          "a6": "EUx",
+          "a7": "EUv",
+          "b0": "WUx",
+          "b1": "EDu",
+          "b2": "EUx",
+          "b3": "WDx",
+          "b4": "WDv",
+          "b5": "WUv",
+          "b6": "WUu",
+          "b7": "EDx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 1,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509005_n8_q12_o24_p0_f0",
+      "seed": 4509005,
+      "offset": 24,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509005,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUu",
+          "a1": "WUv",
+          "a2": "WDu",
+          "a3": "WUu",
+          "a4": "EDx",
+          "a5": "WDx",
+          "a6": "EUx",
+          "a7": "EUv",
+          "b0": "WUx",
+          "b1": "EDu",
+          "b2": "EUx",
+          "b3": "WDx",
+          "b4": "WDv",
+          "b5": "WUv",
+          "b6": "WUu",
+          "b7": "EDx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 1,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509005_n8_q12_o24_p0_f2",
+      "seed": 4509005,
+      "offset": 24,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509005,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUu",
+          "a1": "WUv",
+          "a2": "WDu",
+          "a3": "WUu",
+          "a4": "EDx",
+          "a5": "WDx",
+          "a6": "EUx",
+          "a7": "EUv",
+          "b0": "WUx",
+          "b1": "EDu",
+          "b2": "EUx",
+          "b3": "WDx",
+          "b4": "WDv",
+          "b5": "WUv",
+          "b6": "WUu",
+          "b7": "EDx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 1,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509005_n8_q12_o24_p10_f0",
+      "seed": 4509005,
+      "offset": 24,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509005,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUu",
+          "a1": "WUv",
+          "a2": "WDu",
+          "a3": "WUu",
+          "a4": "EDx",
+          "a5": "WDx",
+          "a6": "EUx",
+          "a7": "EUv",
+          "b0": "WUx",
+          "b1": "EDu",
+          "b2": "EUx",
+          "b3": "WDx",
+          "b4": "WDv",
+          "b5": "WUv",
+          "b6": "WUu",
+          "b7": "EDx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 1,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509005_n8_q12_o24_p10_f2",
+      "seed": 4509005,
+      "offset": 24,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509005,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUu",
+          "a1": "WUv",
+          "a2": "WDu",
+          "a3": "WUu",
+          "a4": "EDx",
+          "a5": "WDx",
+          "a6": "EUx",
+          "a7": "EUv",
+          "b0": "WUx",
+          "b1": "EDu",
+          "b2": "EUx",
+          "b3": "WDx",
+          "b4": "WDv",
+          "b5": "WUv",
+          "b6": "WUu",
+          "b7": "EDx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 1,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509006_n8_q12_o0_p0_f0",
+      "seed": 4509006,
+      "offset": 0,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509006,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "WUx",
+          "a2": "WDv",
+          "a3": "EDu",
+          "a4": "EDx",
+          "a5": "WUv",
+          "a6": "EUv",
+          "a7": "EDv",
+          "b0": "EUx",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "EDu",
+          "b4": "WDx",
+          "b5": "EDv",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 1,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509006_n8_q12_o0_p0_f2",
+      "seed": 4509006,
+      "offset": 0,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509006,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "WUx",
+          "a2": "WDv",
+          "a3": "EDu",
+          "a4": "EDx",
+          "a5": "WUv",
+          "a6": "EUv",
+          "a7": "EDv",
+          "b0": "EUx",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "EDu",
+          "b4": "WDx",
+          "b5": "EDv",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 1,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509006_n8_q12_o0_p10_f0",
+      "seed": 4509006,
+      "offset": 0,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509006,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "WUx",
+          "a2": "WDv",
+          "a3": "EDu",
+          "a4": "EDx",
+          "a5": "WUv",
+          "a6": "EUv",
+          "a7": "EDv",
+          "b0": "EUx",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "EDu",
+          "b4": "WDx",
+          "b5": "EDv",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 1,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509006_n8_q12_o0_p10_f2",
+      "seed": 4509006,
+      "offset": 0,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509006,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "WUx",
+          "a2": "WDv",
+          "a3": "EDu",
+          "a4": "EDx",
+          "a5": "WUv",
+          "a6": "EUv",
+          "a7": "EDv",
+          "b0": "EUx",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "EDu",
+          "b4": "WDx",
+          "b5": "EDv",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 1,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509006_n8_q12_o24_p0_f0",
+      "seed": 4509006,
+      "offset": 24,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509006,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "WUx",
+          "a2": "WDv",
+          "a3": "EDu",
+          "a4": "EDx",
+          "a5": "WUv",
+          "a6": "EUv",
+          "a7": "EDv",
+          "b0": "EUx",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "EDu",
+          "b4": "WDx",
+          "b5": "EDv",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 1,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509006_n8_q12_o24_p0_f2",
+      "seed": 4509006,
+      "offset": 24,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509006,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "WUx",
+          "a2": "WDv",
+          "a3": "EDu",
+          "a4": "EDx",
+          "a5": "WUv",
+          "a6": "EUv",
+          "a7": "EDv",
+          "b0": "EUx",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "EDu",
+          "b4": "WDx",
+          "b5": "EDv",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 1,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509006_n8_q12_o24_p10_f0",
+      "seed": 4509006,
+      "offset": 24,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509006,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "WUx",
+          "a2": "WDv",
+          "a3": "EDu",
+          "a4": "EDx",
+          "a5": "WUv",
+          "a6": "EUv",
+          "a7": "EDv",
+          "b0": "EUx",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "EDu",
+          "b4": "WDx",
+          "b5": "EDv",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 1,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509006_n8_q12_o24_p10_f2",
+      "seed": 4509006,
+      "offset": 24,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509006,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "WUx",
+          "a2": "WDv",
+          "a3": "EDu",
+          "a4": "EDx",
+          "a5": "WUv",
+          "a6": "EUv",
+          "a7": "EDv",
+          "b0": "EUx",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "EDu",
+          "b4": "WDx",
+          "b5": "EDv",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 1,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509007_n8_q12_o0_p0_f0",
+      "seed": 4509007,
+      "offset": 0,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509007,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WUx",
+          "a2": "WUv",
+          "a3": "EUv",
+          "a4": "WUu",
+          "a5": "EUx",
+          "a6": "WDv",
+          "a7": "EUu",
+          "b0": "WDx",
+          "b1": "WUv",
+          "b2": "EUv",
+          "b3": "EUu",
+          "b4": "WUu",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "WDu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 1,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509007_n8_q12_o0_p0_f2",
+      "seed": 4509007,
+      "offset": 0,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509007,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WUx",
+          "a2": "WUv",
+          "a3": "EUv",
+          "a4": "WUu",
+          "a5": "EUx",
+          "a6": "WDv",
+          "a7": "EUu",
+          "b0": "WDx",
+          "b1": "WUv",
+          "b2": "EUv",
+          "b3": "EUu",
+          "b4": "WUu",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "WDu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 1,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509007_n8_q12_o0_p10_f0",
+      "seed": 4509007,
+      "offset": 0,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509007,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WUx",
+          "a2": "WUv",
+          "a3": "EUv",
+          "a4": "WUu",
+          "a5": "EUx",
+          "a6": "WDv",
+          "a7": "EUu",
+          "b0": "WDx",
+          "b1": "WUv",
+          "b2": "EUv",
+          "b3": "EUu",
+          "b4": "WUu",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "WDu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 1,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509007_n8_q12_o0_p10_f2",
+      "seed": 4509007,
+      "offset": 0,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509007,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WUx",
+          "a2": "WUv",
+          "a3": "EUv",
+          "a4": "WUu",
+          "a5": "EUx",
+          "a6": "WDv",
+          "a7": "EUu",
+          "b0": "WDx",
+          "b1": "WUv",
+          "b2": "EUv",
+          "b3": "EUu",
+          "b4": "WUu",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "WDu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 1,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509007_n8_q12_o24_p0_f0",
+      "seed": 4509007,
+      "offset": 24,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509007,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WUx",
+          "a2": "WUv",
+          "a3": "EUv",
+          "a4": "WUu",
+          "a5": "EUx",
+          "a6": "WDv",
+          "a7": "EUu",
+          "b0": "WDx",
+          "b1": "WUv",
+          "b2": "EUv",
+          "b3": "EUu",
+          "b4": "WUu",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "WDu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 1,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509007_n8_q12_o24_p0_f2",
+      "seed": 4509007,
+      "offset": 24,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509007,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WUx",
+          "a2": "WUv",
+          "a3": "EUv",
+          "a4": "WUu",
+          "a5": "EUx",
+          "a6": "WDv",
+          "a7": "EUu",
+          "b0": "WDx",
+          "b1": "WUv",
+          "b2": "EUv",
+          "b3": "EUu",
+          "b4": "WUu",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "WDu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 1,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509007_n8_q12_o24_p10_f0",
+      "seed": 4509007,
+      "offset": 24,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509007,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WUx",
+          "a2": "WUv",
+          "a3": "EUv",
+          "a4": "WUu",
+          "a5": "EUx",
+          "a6": "WDv",
+          "a7": "EUu",
+          "b0": "WDx",
+          "b1": "WUv",
+          "b2": "EUv",
+          "b3": "EUu",
+          "b4": "WUu",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "WDu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 1,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509007_n8_q12_o24_p10_f2",
+      "seed": 4509007,
+      "offset": 24,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509007,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WUx",
+          "a2": "WUv",
+          "a3": "EUv",
+          "a4": "WUu",
+          "a5": "EUx",
+          "a6": "WDv",
+          "a7": "EUu",
+          "b0": "WDx",
+          "b1": "WUv",
+          "b2": "EUv",
+          "b3": "EUu",
+          "b4": "WUu",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "WDu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 1,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509008_n8_q12_o0_p0_f0",
+      "seed": 4509008,
+      "offset": 0,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509008,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUv",
+          "a1": "WUv",
+          "a2": "WUu",
+          "a3": "WDu",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EDx",
+          "a7": "WUx",
+          "b0": "EUu",
+          "b1": "WDv",
+          "b2": "WUu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "EDu",
+          "b6": "WDu",
+          "b7": "EUx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 1,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509008_n8_q12_o0_p0_f2",
+      "seed": 4509008,
+      "offset": 0,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509008,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUv",
+          "a1": "WUv",
+          "a2": "WUu",
+          "a3": "WDu",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EDx",
+          "a7": "WUx",
+          "b0": "EUu",
+          "b1": "WDv",
+          "b2": "WUu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "EDu",
+          "b6": "WDu",
+          "b7": "EUx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 1,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509008_n8_q12_o0_p10_f0",
+      "seed": 4509008,
+      "offset": 0,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509008,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUv",
+          "a1": "WUv",
+          "a2": "WUu",
+          "a3": "WDu",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EDx",
+          "a7": "WUx",
+          "b0": "EUu",
+          "b1": "WDv",
+          "b2": "WUu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "EDu",
+          "b6": "WDu",
+          "b7": "EUx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 1,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509008_n8_q12_o0_p10_f2",
+      "seed": 4509008,
+      "offset": 0,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509008,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUv",
+          "a1": "WUv",
+          "a2": "WUu",
+          "a3": "WDu",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EDx",
+          "a7": "WUx",
+          "b0": "EUu",
+          "b1": "WDv",
+          "b2": "WUu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "EDu",
+          "b6": "WDu",
+          "b7": "EUx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 1,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509008_n8_q12_o24_p0_f0",
+      "seed": 4509008,
+      "offset": 24,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509008,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUv",
+          "a1": "WUv",
+          "a2": "WUu",
+          "a3": "WDu",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EDx",
+          "a7": "WUx",
+          "b0": "EUu",
+          "b1": "WDv",
+          "b2": "WUu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "EDu",
+          "b6": "WDu",
+          "b7": "EUx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 1,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509008_n8_q12_o24_p0_f2",
+      "seed": 4509008,
+      "offset": 24,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509008,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUv",
+          "a1": "WUv",
+          "a2": "WUu",
+          "a3": "WDu",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EDx",
+          "a7": "WUx",
+          "b0": "EUu",
+          "b1": "WDv",
+          "b2": "WUu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "EDu",
+          "b6": "WDu",
+          "b7": "EUx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 1,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509008_n8_q12_o24_p10_f0",
+      "seed": 4509008,
+      "offset": 24,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509008,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUv",
+          "a1": "WUv",
+          "a2": "WUu",
+          "a3": "WDu",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EDx",
+          "a7": "WUx",
+          "b0": "EUu",
+          "b1": "WDv",
+          "b2": "WUu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "EDu",
+          "b6": "WDu",
+          "b7": "EUx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 1,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    },
+    {
+      "case": "s4509008_n8_q12_o24_p10_f2",
+      "seed": 4509008,
+      "offset": 24,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509008,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUv",
+          "a1": "WUv",
+          "a2": "WUu",
+          "a3": "WDu",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EDx",
+          "a7": "WUx",
+          "b0": "EUu",
+          "b1": "WDv",
+          "b2": "WUu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "EDu",
+          "b6": "WDu",
+          "b7": "EUx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 1,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      }
+    }
+  ],
+  "pilot_cases": [
+    "s4509001_n8_q12_o0_p10_f2",
+    "s4509001_n8_q12_o24_p10_f2"
+  ],
+  "primary_arms": [
+    "HZ_AWA_RADIUS",
+    "HZ_AWA_PAIR_GATED"
+  ],
+  "auxiliary_arms_50ms": [
+    "RADIUS",
+    "ROUTE",
+    "ANA_RADIUS"
+  ],
+  "external_baselines": "Complete Hansen-Zhou AWA and complete ANA search engines adapted to this J domain; not a freight-paper replication",
+  "technical_repeats": 3,
+  "physical_selection": "For each distinct selected plan among three repetitions, choose its median-latency repetition (lower middle for two, then repetition ID); replay once. Preserve all plans.",
+  "scope": "One frozen decision epoch. Full continuous two-epoch rolling execution is not implemented in this stage."
+}

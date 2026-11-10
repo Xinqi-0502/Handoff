@@ -1,0 +1,4 @@
+E:\CodexResearch-xi\workspace\work\fleet_study_v420_paired_20261104\native420.py:54: UserWarning: API change now handles duration as floating point seconds
+  e,p=SITES[dest];conn.vehicle.setStop('T',e,pos=p,laneIndex=0,duration=10000,flags=conn.vehicle.STOP_PARKING)
+E:\CodexResearch-xi\workspace\work\fleet_study_v415b_executor_audit_20261104\schedule.py:74: UserWarning: API change now handles duration as floating point seconds
+  conn.vehicle.setStop(v,edge,pos=pos,laneIndex=0,duration=10000,flags=conn.vehicle.STOP_PARKING)

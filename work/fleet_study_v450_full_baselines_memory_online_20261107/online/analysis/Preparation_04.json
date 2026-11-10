@@ -1,0 +1,7 @@
+{
+  "status": "STATIC_AST_PASS",
+  "script_sha256": "534a6e236abd74c09a6fcb8705fc1a7a282a3548f1a53800b59e4f23dcf81858",
+  "lines": 461,
+  "executed_analysis": false,
+  "change": "Inspect all collision XML elements plus collision/intermodal Warning/Error log lines; preserve failed replay evidence; frozen measurement sources unchanged"
+}

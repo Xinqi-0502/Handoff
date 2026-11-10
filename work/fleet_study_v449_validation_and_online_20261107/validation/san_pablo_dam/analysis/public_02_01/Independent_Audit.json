@@ -1,0 +1,170 @@
+{
+  "status": "PASS",
+  "scope": "Independent recomputation from raw detector XML and original ordinal observations; not independent empirical dataset",
+  "source_run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\validation\\san_pablo_dam\\runs\\public_02",
+  "source_sha256": "8cc08c493769e7559e2a529c1a0695bb8639b33a6022327567da52805106114b",
+  "audit_script_sha256": "501c4979fd0a79bc0dc341d28d361ae7991163bc7d1a0d466bf8b679aeb2ebb8",
+  "records": [
+    {
+      "day": 1,
+      "tau": 1.2,
+      "vehicles": 2298,
+      "mean_segment_rmse_seconds": 188.98560490289893,
+      "max_depart_delay_seconds": 5.0,
+      "mean_depart_delay_seconds": 0.03959965187119234,
+      "last_summary": {
+        "time": "39872.00",
+        "loaded": "2298",
+        "inserted": "2298",
+        "running": "0",
+        "waiting": "0",
+        "ended": "2298",
+        "arrived": "2298",
+        "collisions": "0",
+        "teleports": "0",
+        "halting": "0",
+        "stopped": "0",
+        "meanWaitingTime": "0.04",
+        "meanTravelTime": "1285.39",
+        "meanSpeed": "-1.00",
+        "meanSpeedRelative": "-1.00",
+        "discarded": "0",
+        "duration": "0"
+      },
+      "all_vehicles_arrived": true,
+      "warnings": [
+        "Warning: Environment variable SUMO_HOME is not set properly, disabling XML validation. Set 'auto' or 'always' for web lookups."
+      ]
+    },
+    {
+      "day": 1,
+      "tau": 1.5,
+      "vehicles": 2298,
+      "mean_segment_rmse_seconds": 318.8262289996032,
+      "max_depart_delay_seconds": 531.0,
+      "mean_depart_delay_seconds": 157.65404699738903,
+      "last_summary": {
+        "time": "39872.00",
+        "loaded": "2298",
+        "inserted": "2298",
+        "running": "0",
+        "waiting": "0",
+        "ended": "2298",
+        "arrived": "2298",
+        "collisions": "0",
+        "teleports": "0",
+        "halting": "0",
+        "stopped": "0",
+        "meanWaitingTime": "157.65",
+        "meanTravelTime": "1677.22",
+        "meanSpeed": "-1.00",
+        "meanSpeedRelative": "-1.00",
+        "discarded": "0",
+        "duration": "0"
+      },
+      "all_vehicles_arrived": true,
+      "warnings": [
+        "Warning: Environment variable SUMO_HOME is not set properly, disabling XML validation. Set 'auto' or 'always' for web lookups."
+      ]
+    },
+    {
+      "day": 1,
+      "tau": 1.8,
+      "vehicles": 2298,
+      "mean_segment_rmse_seconds": 358.07986819615013,
+      "max_depart_delay_seconds": 1492.0,
+      "mean_depart_delay_seconds": 586.538729329852,
+      "last_summary": {
+        "time": "39872.00",
+        "loaded": "2298",
+        "inserted": "2298",
+        "running": "0",
+        "waiting": "0",
+        "ended": "2298",
+        "arrived": "2298",
+        "collisions": "0",
+        "teleports": "0",
+        "halting": "0",
+        "stopped": "0",
+        "meanWaitingTime": "586.54",
+        "meanTravelTime": "1826.02",
+        "meanSpeed": "-1.00",
+        "meanSpeedRelative": "-1.00",
+        "discarded": "0",
+        "duration": "0"
+      },
+      "all_vehicles_arrived": true,
+      "warnings": [
+        "Warning: Environment variable SUMO_HOME is not set properly, disabling XML validation. Set 'auto' or 'always' for web lookups."
+      ]
+    },
+    {
+      "day": 2,
+      "tau": 1.5,
+      "vehicles": 2293,
+      "mean_segment_rmse_seconds": 426.8276235268499,
+      "max_depart_delay_seconds": 1509.0,
+      "mean_depart_delay_seconds": 300.03619712167466,
+      "last_summary": {
+        "time": "39822.00",
+        "loaded": "2293",
+        "inserted": "2293",
+        "running": "0",
+        "waiting": "0",
+        "ended": "2293",
+        "arrived": "2293",
+        "collisions": "0",
+        "teleports": "0",
+        "halting": "0",
+        "stopped": "0",
+        "meanWaitingTime": "300.04",
+        "meanTravelTime": "1819.48",
+        "meanSpeed": "-1.00",
+        "meanSpeedRelative": "-1.00",
+        "discarded": "0",
+        "duration": "0"
+      },
+      "all_vehicles_arrived": true,
+      "warnings": [
+        "Warning: Environment variable SUMO_HOME is not set properly, disabling XML validation. Set 'auto' or 'always' for web lookups."
+      ]
+    },
+    {
+      "day": 2,
+      "tau": 1.2,
+      "vehicles": 2293,
+      "mean_segment_rmse_seconds": 394.47706196144236,
+      "max_depart_delay_seconds": 291.0,
+      "mean_depart_delay_seconds": 23.03139991277802,
+      "last_summary": {
+        "time": "39822.00",
+        "loaded": "2293",
+        "inserted": "2293",
+        "running": "0",
+        "waiting": "0",
+        "ended": "2293",
+        "arrived": "2293",
+        "collisions": "0",
+        "teleports": "0",
+        "halting": "0",
+        "stopped": "0",
+        "meanWaitingTime": "23.03",
+        "meanTravelTime": "1688.10",
+        "meanSpeed": "-1.00",
+        "meanSpeedRelative": "-1.00",
+        "discarded": "0",
+        "duration": "0"
+      },
+      "all_vehicles_arrived": true,
+      "warnings": [
+        "Warning: Environment variable SUMO_HOME is not set properly, disabling XML validation. Set 'auto' or 'always' for web lookups."
+      ]
+    }
+  ],
+  "selected_tau": 1.2,
+  "heldout_mean_segment_rmse_delta_seconds": -32.35056156540753,
+  "heldout_rmse_relative_change_percent": -7.5793036303735155,
+  "no_delivery_network_calibration": true,
+  "within_day_controls_identical_except_tau": true,
+  "failure_attempt_preserved": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\validation\\san_pablo_dam\\analysis\\public_01_failure\\Failure_Audit.md"
+}

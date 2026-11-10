@@ -1,0 +1,23 @@
+{
+  "status": "READY_FOR_ROOT_MONITORED_EXECUTION",
+  "working_directory": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\validation\\san_pablo_dam",
+  "python": "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "arguments": [
+    "-B",
+    "-X",
+    "utf8",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\validation\\san_pablo_dam\\run_public_validation_v2.py",
+    "--execute",
+    "--out",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\validation\\san_pablo_dam\\runs\\public_02"
+  ],
+  "environment": {
+    "TEMP": "E:\\CodexResearch-xi\\temp",
+    "TMP": "E:\\CodexResearch-xi\\temp",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "requires_external_thermal_monitor": true,
+  "source_sha256": "8cc08c493769e7559e2a529c1a0695bb8639b33a6022327567da52805106114b",
+  "protocol_sha256": "5f4f2a83e52c32fe93ee3610651bcbb38530d86830c78d0c77c958156a3d39b3",
+  "preparation_manifest_sha256": "67a38b47e08ca2c10a5c947ea336a2e686c9ce06dc8ff6cf6f6be908c8051c90"
+}

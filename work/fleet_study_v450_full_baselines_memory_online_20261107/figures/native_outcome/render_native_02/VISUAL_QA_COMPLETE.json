@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-07T15:01:54.968004+00:00",
+  "reviewer": "official_vehicle_capacities agent",
+  "visual_method": "Viewed actual PNG and PDF-rendered preview with view_image.",
+  "checks": {
+    "10ms_late_fallback_notice_readable": true,
+    "no_visible_overlap_or_clipping": true,
+    "both_panels_and_counts_readable": true,
+    "PNG_matches_PDF_preview": true,
+    "points_CSVs_byte_identical_to_render01": true
+  },
+  "font_min_pt": 7.0,
+  "collision_fails": 0,
+  "collision_warnings": 0,
+  "deadline_interpretation": {
+    "budget_ms": 10,
+    "counts": {
+      "HZ_AWA_PAIR_GATED": {
+        "case_count": 64,
+        "policy_repetitions": 192,
+        "no_plan_by_deadline": 192
+      },
+      "HZ_AWA_RADIUS": {
+        "case_count": 64,
+        "policy_repetitions": 192,
+        "no_plan_by_deadline": 191
+      }
+    },
+    "meaning": "Primarily executes late common-initial-plan fallback; not a 10 ms on-time plan claim."
+  },
+  "accepted_source_warnings": {
+    "EXPORT-RASTER": "Requested deliverables are PNG/PDF/SVG, no TIFF requirement.",
+    "UNCERTAINTY-ENCODING": "Descriptive complete cohort with all observed differences zero; no CI inferred from related variants."
+  },
+  "inspected_images": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\native_outcome\\render_native_02\\Fig3_Native_Outcomes.png": "675db4cddf3ab439344809280038f19ca7fb90e13deb06719b9b757f5caf9a0d",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\native_outcome\\render_native_02\\qa\\pdf_preview.png": "ded0fe0e56b725d131721fd5e5be5629ae3aee37126a39f6de41d67054cbbf68"
+  },
+  "old_render_and_condition_tables_unchanged": true,
+  "solver_runs": 0,
+  "SUMO_runs": 0
+}

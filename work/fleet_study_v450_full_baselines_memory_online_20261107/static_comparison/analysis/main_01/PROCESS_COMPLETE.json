@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "raw_calls": 3072,
+  "case_rows": 1024,
+  "expected_cases": 256
+}

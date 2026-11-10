@@ -1,0 +1,46 @@
+{
+  "status": "AUTOMATED_QA_PASS_PENDING_ROOT_VISUAL",
+  "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\figures\\scale_main_02",
+  "source_csv_identical_to_failed_first_render": {
+    "Figure_01_Source.csv": true,
+    "Figure_02_Source.csv": true,
+    "Figure_03_Source.csv": true
+  },
+  "qa": [
+    {
+      "figure": "Figure_01_Budget_Quality",
+      "alignment_verdict": "PASS",
+      "collision_verdict": "PASS",
+      "collision_summary": {
+        "fail": 0,
+        "warn": 0,
+        "contained_fill_overlays": 324,
+        "contained_image_overlays": 324
+      }
+    },
+    {
+      "figure": "Figure_02_Conditional_Proof_Cost",
+      "alignment_verdict": "PASS",
+      "collision_verdict": "PASS",
+      "collision_summary": {
+        "fail": 0,
+        "warn": 0,
+        "contained_fill_overlays": 0,
+        "contained_image_overlays": 0
+      }
+    },
+    {
+      "figure": "Figure_03_Coverage_And_Search_Work",
+      "alignment_verdict": "PASS",
+      "collision_verdict": "PASS",
+      "collision_summary": {
+        "fail": 0,
+        "warn": 0,
+        "contained_fill_overlays": 0,
+        "contained_image_overlays": 0
+      }
+    }
+  ],
+  "caption_only_clarification": true,
+  "plot_source_sha256": "4865826c5efaf50eb8bb82545c1434d8825141a894ae082f7b375c2529754b99"
+}

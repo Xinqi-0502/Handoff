@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "policy_rows": 72,
+  "native_replays": 12,
+  "independent_mothers": 1,
+  "audit_manifest_sha256": "3454551b067b79c658efc96660fcdf687fa4c993c7aa66fb69be73ddbffc9e7a"
+}

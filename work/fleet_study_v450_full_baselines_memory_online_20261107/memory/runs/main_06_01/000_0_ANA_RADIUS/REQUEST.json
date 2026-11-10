@@ -1,0 +1,391 @@
+{
+  "mode": "solve",
+  "worker_source_hashes": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\native_memory.py": "13c9af100de45e9235c5842bdae6257f7461db9a61b5b5859f4e9d523712d5af",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\owned_process.py": "23c9e418596e20d29aae0d3842c47b516bf5d320c66b586afba552d4d797215c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\memory_common.py": "2027ac64fe4ddf44ba744eb8ed273d9ff813f441bc334b198479dcbf71e589c9",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\memory_worker.py": "12aebc8ca511144b0e59e1be0548fbb2864e9d9fa8588c69118beaae4a9a645b",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\run_memory.py": "6a3e877d56bb416b2be2b2125fe211143044f994494c8bc6c48a4223ec840596",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\run_memory_jobs.py": "c078259db45fec49af6d23091245fb4707cd20b792aa51abdf56b86fb1511291",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\freeze_memory.py": "eafe92dde6ef4f6b62035cf4a82a789fa2affb9843e78c078f6807157818ca48",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\check_memory_safety.py": "4132b5e5051ab9587e2b98c394ce1b21ffc475952edec415ba35ab698610f313"
+  },
+  "manifest": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\freeze_01\\MANIFEST.json",
+  "spec": {
+    "seed": 94496002,
+    "m": 6,
+    "n_nodes": 8,
+    "coordinates": [
+      [
+        0,
+        0
+      ],
+      [
+        37,
+        -9
+      ],
+      [
+        39,
+        36
+      ],
+      [
+        50,
+        -24
+      ],
+      [
+        13,
+        13
+      ],
+      [
+        -31,
+        11
+      ],
+      [
+        22,
+        -26
+      ],
+      [
+        16,
+        32
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        1,
+        13,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        19,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        10,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        16,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        18,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        3,
+        10,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        4,
+        15,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        6,
+        10,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        19,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        18,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        4,
+        17,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        7,
+        11,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        1,
+        10,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        4,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        6,
+        11,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        1,
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        2,
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        3,
+        19,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        6,
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        7,
+        9,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        12,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        4,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        6,
+        22,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        7,
+        22,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        16,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        1,
+        11,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        3,
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        5,
+        23,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        0,
+        13,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        2,
+        8,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        4,
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        5,
+        19,
+        0,
+        0,
+        0
+      ]
+    ],
+    "hub": 0,
+    "a_node": 1,
+    "start_node": 0,
+    "t0": 41,
+    "A": 51,
+    "wa": 72,
+    "wb": 96,
+    "a_service": 3,
+    "tau_a": 3,
+    "tau_b": 2,
+    "old": [
+      {
+        "node": 2,
+        "weight": 10,
+        "service": 2
+      },
+      {
+        "node": 3,
+        "weight": 21,
+        "service": 4
+      },
+      {
+        "node": 4,
+        "weight": 28,
+        "service": 9
+      },
+      {
+        "node": 5,
+        "weight": 8,
+        "service": 7
+      },
+      {
+        "node": 6,
+        "weight": 25,
+        "service": 3
+      },
+      {
+        "node": 7,
+        "weight": 28,
+        "service": 12
+      }
+    ],
+    "total_old_weight": 120,
+    "total_old_service": 37,
+    "case": "v449_scale_main_s94496002_m6_roomier_free",
+    "split": "v449_scale_main",
+    "Q": 150,
+    "capacity_regime": "roomier",
+    "signal": false,
+    "geometry": "random_2d",
+    "control": false,
+    "pair_id": "v449_scale_main_s94496002_m6_roomier",
+    "signal_pair_id": "v449_scale_main_s94496002_m6_roomier",
+    "capacity_pair_id": "v449_scale_main_s94496002_m6_free",
+    "generation": "Prespecified random high-load FIFO synthetic transport",
+    "atomic_incoming_order": [
+      "a",
+      "b"
+    ],
+    "units": "Uncalibrated integer ticks and cargo units"
+  },
+  "spec_sha256": "afa9ec3469cf3d1490b732b84545c6a311a7649b1a0bf37b922c37f3a83bd4d5",
+  "method": "ANA_RADIUS",
+  "wall_ms": 1000,
+  "hard_seconds": 15
+}

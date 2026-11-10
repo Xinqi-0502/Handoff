@@ -1,0 +1,171 @@
+{
+  "retrieved_utc": "2026-11-07T10:27:56.900516+00:00",
+  "sources": [
+    {
+      "file": "RESCO_NeurIPS_2021.pdf",
+      "url": "https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/file/f0935e4cd5920aa6c7c996a5ee53a70f-Paper-round1.pdf",
+      "final_url": "https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/file/f0935e4cd5920aa6c7c996a5ee53a70f-Paper-round1.pdf",
+      "status": "FETCHED",
+      "content_type": "application/pdf",
+      "bytes": 1545050,
+      "sha256": "a5f63be76a2453f4402f92339fee1cebf649912ef02e0c9f45161b8233ce1e48",
+      "pdf_pages": 11
+    },
+    {
+      "file": "Chu_MA2C_author_1903.04527.pdf",
+      "url": "https://arxiv.org/pdf/1903.04527",
+      "final_url": "https://arxiv.org/pdf/1903.04527",
+      "status": "FETCHED",
+      "content_type": "application/pdf",
+      "bytes": 3300598,
+      "sha256": "2028f9560b6fe7ef9d6266487143f4fee15f327ed41966973392984665b69986",
+      "pdf_pages": 10
+    },
+    {
+      "file": "Wang_EGU_author_2101.09640.pdf",
+      "url": "https://arxiv.org/pdf/2101.09640",
+      "final_url": "https://arxiv.org/pdf/2101.09640",
+      "status": "FETCHED",
+      "content_type": "application/pdf",
+      "bytes": 1425918,
+      "sha256": "0f19ab97b7e858f33bc72ecc69609ec9fd504a06756c9204a049a536b2e9fef8",
+      "pdf_pages": 11
+    },
+    {
+      "file": "SUMO_San_Pablo_Dam.html",
+      "url": "https://eclipse.dev/sumo/docs/Tutorials/Calibration/San_Pablo_Dam.html",
+      "final_url": "https://eclipse.dev/sumo/docs/Tutorials/Calibration/San_Pablo_Dam.html",
+      "status": "FETCHED",
+      "content_type": "text/html",
+      "bytes": 26199,
+      "sha256": "2f760aad242ebb8b6fae89f1e42a1d476822ccff14f761e7e43c376ec875a1c9"
+    },
+    {
+      "file": "SUMO_Berlin.html",
+      "url": "https://eclipse.dev/sumo/docs/Tutorials/Calibration/Berlin.html",
+      "final_url": "https://eclipse.dev/sumo/docs/Tutorials/Calibration/Berlin.html",
+      "status": "FETCHED",
+      "content_type": "text/html",
+      "bytes": 25205,
+      "sha256": "5c1fa1f04ae2b780f926d003e863fd253187927f9f00f7c1ee6b0726dc97829e"
+    },
+    {
+      "file": "SUMO_Calibrator.html",
+      "url": "https://eclipse.dev/sumo/docs/Simulation/Calibrator.html",
+      "final_url": "https://eclipse.dev/sumo/docs/Simulation/Calibrator.html",
+      "status": "FETCHED",
+      "content_type": "text/html",
+      "bytes": 35457,
+      "sha256": "c25cb00f670527041fde05fdafe59ce06748a6b1d973a82710bf7e7acee2ac9b"
+    },
+    {
+      "file": "SUMO_Randomness.html",
+      "url": "https://eclipse.dev/sumo/docs/Simulation/Randomness.html",
+      "final_url": "https://eclipse.dev/sumo/docs/Simulation/Randomness.html",
+      "status": "FETCHED",
+      "content_type": "text/html",
+      "bytes": 35114,
+      "sha256": "670ec5fc07449a41654c0baef367a1e883a70de7eaf25b7cf589ed9bf72de698"
+    },
+    {
+      "file": "SUMO_TripInfo.html",
+      "url": "https://eclipse.dev/sumo/docs/Simulation/Output/TripInfo.html",
+      "final_url": "https://eclipse.dev/sumo/docs/Simulation/Output/TripInfo.html",
+      "status": "FETCHED",
+      "content_type": "text/html",
+      "bytes": 34397,
+      "sha256": "23f5fff7b1e053053d70cd9d60cf1c09932e34d6875134f1b48440d50c4637da"
+    },
+    {
+      "file": "SUMO_Traffic_Lights.html",
+      "url": "https://eclipse.dev/sumo/docs/Simulation/Traffic_Lights.html",
+      "final_url": "https://eclipse.dev/sumo/docs/Simulation/Traffic_Lights.html",
+      "status": "FETCHED",
+      "content_type": "text/html",
+      "bytes": 117922,
+      "sha256": "364cf42b92341a06c4d73e92646a37fada67301b430bb93266ecba8ed5c38308"
+    },
+    {
+      "file": "SUMO_Teleporting.html",
+      "url": "https://eclipse.dev/sumo/docs/Simulation/Why_Vehicles_are_teleporting.html",
+      "final_url": "https://eclipse.dev/sumo/docs/Simulation/Why_Vehicles_are_teleporting.html",
+      "status": "FETCHED",
+      "content_type": "text/html",
+      "bytes": 25464,
+      "sha256": "9865a723e0b916e19cb9a14b0e08ca2d1e1dfe10f669c8c7f5f1894383f748e6"
+    },
+    {
+      "file": "SUMO_Safety.html",
+      "url": "https://eclipse.dev/sumo/docs/Simulation/Safety.html",
+      "final_url": "https://eclipse.dev/sumo/docs/Simulation/Safety.html",
+      "status": "FETCHED",
+      "content_type": "text/html",
+      "bytes": 35488,
+      "sha256": "b20e27366f986e9ec2528bad97e384d8fbe7781f7d7a0e9a4cf44005daaadc36"
+    },
+    {
+      "file": "SUMO_XMLValidation.html",
+      "url": "https://eclipse.dev/sumo/docs/XMLValidation.html",
+      "final_url": "https://eclipse.dev/sumo/docs/XMLValidation.html",
+      "status": "FETCHED",
+      "content_type": "text/html",
+      "bytes": 23053,
+      "sha256": "393d1fcc1c161bb3abb8d8e3158fb59d07e5cce353ddccc81889d954b7005b69"
+    },
+    {
+      "file": "SUMO_Scenarios.html",
+      "url": "https://eclipse.dev/sumo/docs/Data/Scenarios.html",
+      "final_url": "https://eclipse.dev/sumo/docs/Data/Scenarios.html",
+      "status": "FETCHED",
+      "content_type": "text/html",
+      "bytes": 32028,
+      "sha256": "06764f58840ad87d772708949566b31aff7874514f038ce16968b88e10d79a4c"
+    },
+    {
+      "file": "FHWA_Calibration_Chapter6.html",
+      "url": "https://www.fhwa.dot.gov/publications/research/operations/13026/007.cfm",
+      "final_url": "https://www.fhwa.dot.gov/publications/research/operations/13026/007.cfm",
+      "status": "FETCHED",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 76479,
+      "sha256": "c445879a9e34bf42798532099b748cb92afd918f9f095d2bcfbca25fbed62e3c"
+    },
+    {
+      "file": "FHWA_NGSIM.html",
+      "url": "https://ops.fhwa.dot.gov/trafficanalysistools/ngsim.htm",
+      "final_url": "https://ops.fhwa.dot.gov/trafficanalysistools/ngsim.htm",
+      "status": "FETCHED",
+      "content_type": "text/html",
+      "bytes": 9643,
+      "sha256": "73daae90223d0ba7de5b88b2f0ea215c2db0ecb26e8b9a239f6a3b062e170d3e"
+    },
+    {
+      "file": "pNEUMA_Downloads.html",
+      "url": "https://open-traffic.epfl.ch/index.php/downloads/",
+      "final_url": "https://open-traffic.epfl.ch/index.php/downloads/",
+      "status": "FETCHED",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 111924,
+      "sha256": "b1577d51d3de7438f929ac5d9bccb022e1a17a38b05888f42a2199eaa06debf7"
+    },
+    {
+      "file": "Crossref_Chu.json",
+      "url": "https://api.crossref.org/works/10.1109%2FTITS.2019.2901791",
+      "final_url": "https://api.crossref.org/works/10.1109%2FTITS.2019.2901791",
+      "status": "FETCHED",
+      "content_type": "application/json",
+      "bytes": 9451,
+      "sha256": "59665ca7471480b3314a47ffb9013276f59e90ad44a2ad7326b8ec29662fd7a3"
+    },
+    {
+      "file": "Crossref_Wang.json",
+      "url": "https://api.crossref.org/works/10.1109%2FOJITS.2021.3126126",
+      "final_url": "https://api.crossref.org/works/10.1109%2FOJITS.2021.3126126",
+      "status": "FETCHED",
+      "content_type": "application/json",
+      "bytes": 6973,
+      "sha256": "d660578ce5fc2ab797497f1f35504c8133e5ff40904cfe942c02cfa782047a0a"
+    }
+  ],
+  "no_simulations_executed": true
+}

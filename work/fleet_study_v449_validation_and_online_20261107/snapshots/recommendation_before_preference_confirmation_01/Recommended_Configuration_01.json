@@ -1,0 +1,388 @@
+{
+  "schema": "V449_local_H2_configuration_catalog_v1",
+  "status": "RECOMMENDED_WITHIN_DECLARED_SCOPE",
+  "selected_method": "RADIUS_PAIR_AWA_GATED",
+  "automatic_method_switching": false,
+  "automatic_winner_selection": false,
+  "recommendation_requires": [
+    "Complete selected-run accounting",
+    "Independent cross-check of literal quality and paired proof denominators",
+    "Explicit user-facing objective trade-off statement"
+  ],
+  "primary_objective": {
+    "name": "good_feasible_solution_within_budget",
+    "evaluate_deadlines_ms": [
+      100,
+      500,
+      1000
+    ],
+    "quality_measure": "H2, with oracle-relative-duration regret only when a known positive oracle duration exists",
+    "first_good_targets_relative_gap": [
+      0.05,
+      0.1
+    ],
+    "compare_as_separate_endpoints": true,
+    "composite_score": null,
+    "initial_target_attribution_required": true
+  },
+  "secondary_objective": {
+    "name": "proof_coverage_and_conditional_cost",
+    "all_three_runs_within_deadline_required": true,
+    "proof_deadline_ms": 1000,
+    "paired_time_denominator": "Both methods prove optimal by deadline in all three technical repeats"
+  },
+  "method_catalog": [
+    {
+      "method": "RADIUS",
+      "implementation_policy": "ROUTE",
+      "quota_basis": "radius",
+      "uses_new_joint_bound": false,
+      "joint_bound_deployment": "none",
+      "search_family": "shared_best_first_search",
+      "heuristic_weight": null,
+      "contribution_scope": "Comparator without the new joint bound",
+      "published_full_freight_algorithm_reproduction": false
+    },
+    {
+      "method": "RADIUS_PAIR_EAGER",
+      "implementation_policy": "PAIR_EAGER",
+      "quota_basis": "radius",
+      "uses_new_joint_bound": true,
+      "joint_bound_deployment": "numeric_eager",
+      "search_family": "shared_best_first_search",
+      "heuristic_weight": null,
+      "contribution_scope": "This study supplies the specific two-batch joint necessary-condition bound",
+      "published_full_freight_algorithm_reproduction": false
+    },
+    {
+      "method": "RADIUS_PAIR_LAZY",
+      "implementation_policy": "LAZY_ASTAR",
+      "quota_basis": "radius",
+      "uses_new_joint_bound": true,
+      "joint_bound_deployment": "numeric_lazy",
+      "search_family": "published_Lazy_A_star_policy_adaptation",
+      "heuristic_weight": null,
+      "contribution_scope": "This study supplies the specific two-batch joint necessary-condition bound",
+      "published_full_freight_algorithm_reproduction": false
+    },
+    {
+      "method": "RADIUS_AWA",
+      "implementation_policy": "AWA_ROUTE",
+      "quota_basis": "radius",
+      "uses_new_joint_bound": false,
+      "joint_bound_deployment": "none",
+      "search_family": "published_anytime_weighted_A_star_policy_adaptation",
+      "heuristic_weight": 2,
+      "contribution_scope": "Comparator without the new joint bound",
+      "published_full_freight_algorithm_reproduction": false
+    },
+    {
+      "method": "RADIUS_PAIR_AWA",
+      "implementation_policy": "AWA_PAIR",
+      "quota_basis": "radius",
+      "uses_new_joint_bound": true,
+      "joint_bound_deployment": "numeric_weighted",
+      "search_family": "published_anytime_weighted_A_star_policy_adaptation",
+      "heuristic_weight": 2,
+      "contribution_scope": "This study supplies the specific two-batch joint necessary-condition bound",
+      "published_full_freight_algorithm_reproduction": false
+    },
+    {
+      "method": "RADIUS_PAIR_AWA_GATED",
+      "implementation_policy": "AWA_GATED",
+      "quota_basis": "radius",
+      "uses_new_joint_bound": true,
+      "joint_bound_deployment": "prune_only_weighted_gate",
+      "search_family": "published_anytime_weighted_A_star_policy_adaptation",
+      "heuristic_weight": 2,
+      "contribution_scope": "This study supplies the specific two-batch joint necessary-condition bound",
+      "published_full_freight_algorithm_reproduction": false
+    },
+    {
+      "method": "NO_BOUND",
+      "implementation_policy": "NO_BOUND",
+      "quota_basis": "exact_unused",
+      "uses_new_joint_bound": false,
+      "joint_bound_deployment": "none",
+      "search_family": "shared_best_first_search",
+      "heuristic_weight": null,
+      "contribution_scope": "Comparator without the new joint bound",
+      "published_full_freight_algorithm_reproduction": false
+    },
+    {
+      "method": "DP_ADAPTER",
+      "implementation_policy": "TOPOLOGICAL_DP",
+      "quota_basis": "none",
+      "uses_new_joint_bound": false,
+      "joint_bound_deployment": "none",
+      "search_family": "standard_topological_DP",
+      "heuristic_weight": null,
+      "contribution_scope": "Comparator without the new joint bound",
+      "published_full_freight_algorithm_reproduction": false
+    },
+    {
+      "method": "ROUTE",
+      "implementation_policy": "ROUTE",
+      "quota_basis": "exact",
+      "uses_new_joint_bound": false,
+      "joint_bound_deployment": "none",
+      "search_family": "shared_best_first_search",
+      "heuristic_weight": null,
+      "contribution_scope": "Comparator without the new joint bound",
+      "published_full_freight_algorithm_reproduction": false
+    }
+  ],
+  "baseline_components": [
+    "RADIUS quota thresholds",
+    "Exact ROUTE quota dynamic program",
+    "Shared feasible initializer",
+    "FIFO closure",
+    "Common phase-1 continuation bound",
+    "Forward Pathmax",
+    "Published Lazy A* policy",
+    "Published weighted anytime A* policy",
+    "Standard topological DP"
+  ],
+  "candidate_contribution": "Specific joint relaxation coupling two handoffs, mandatory a delivery and union of old items released before or between handoffs",
+  "frozen_measurement_settings": {
+    "soft_budget_ms": 1000,
+    "hard_watchdog_seconds": 15,
+    "all_setup_and_initial_planning_charged": true,
+    "trace_uses_actual_elapsed_time": true,
+    "validation_oracle_outside_measured_solver": true,
+    "oracle_must_not_seed_incumbent": true,
+    "fresh_context_per_call": true,
+    "technical_repeats": 3
+  },
+  "scope": {
+    "objective": "minimize second-handoff completion H2",
+    "fixed_receiver_and_hub": true,
+    "old_items_max": 12,
+    "two_named_atomic_new_batches": true,
+    "FIFO_synthetic_directed_earliest_arrival_network": true,
+    "whole_fleet_dispatch": false,
+    "SUMO_online_applicability_claim": false,
+    "actual_RAM_measured": false
+  },
+  "source_manifest_sha256": "db11af7fa52192252baacc67938dcb06e6f1daf0dbdcf5b204f957a04343cd84",
+  "frozen_numerical_sources": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\scale_sources_v449.py": "8af0f6cdcbb4d77dcd81105f44c5bd987c50260ff555f98f74a5733403b829d2",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\instances_scale_v449.py": "e9b0c8c541d4f0d5ede9edeab8f73fadfce6f3421b85d6a065cbd3b232bab699",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\dp_adapter_v449.py": "05c4ac667e27e445e138070ce7326c89612ffcfdf417a8c7593c3a1085e060d8",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\check_scale_v449.py": "17452a236d94596d4682c6bd570ffa132d112683f27fe9267b90563675592938",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\run_scale_v449.py": "151660bed587e29cbcdfd7d6a11ddd98364aaab8914baef3ab1affe25e1cbcaf",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\run_scale_jobs_v449.py": "f352866847d2067a6b056536d235a4b95bf9fd9613be48f899b5b80901b632ae",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\selective_v448.py": "f955dcb082a1e8fb4e683741a657c433209202f313571c07174d9ab15de42a6c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\reference_v448.py": "9810d96023a7710329d34a42f5c831687ea73e09fbfb42968fe4c660366a7416",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\run_v448.py": "4f310cb6213a9ca576d60dafa45c995068f88877a575c5ef844b5b5ba687896f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\micro_gate_v448.py": "2d8875a347f89fdca3f8eab6dc9052a2596bab86e00c4730c9d67f3e8d0dfe00",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\independent_dp_v447.py": "8c59f8695dfa2347b0f8ac5c817aec93c0c41e07c0882d45f099abaf4d9c2431",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\instances_v447.py": "a2e8b402e0c913c371c4d37107b23ff934a91df98fecc58b8f3274cb791e2329"
+  },
+  "usage": "Reviewable reusable configuration for the documented local FIFO H2 model. No automatic execution or switching. Call the frozen policy through its existing driver with the stated basis and budget; do not inject validation oracle data. This is not an online whole-fleet dispatcher configuration.",
+  "selection_basis": "Among the four prespecified joint-bound combinations: strongest observed balance of literal quality, first-good and proof cost; not globally fastest on first 5/10 percent targets",
+  "runtime_configuration": {
+    "implementation_policy": "AWA_GATED",
+    "bound_basis": "radius",
+    "heuristic_weight_fixed_in_source": 2,
+    "wall_ms": 1000,
+    "hard_watchdog_seconds": 15,
+    "profile": false,
+    "checkpoints": [],
+    "initial_incumbent": "unchanged fully timed common greedy",
+    "oracle_inputs_forbidden": true,
+    "joint_numeric_bound_in_queue": false,
+    "joint_check_at_phase0_pop": true
+  },
+  "alternative_without_joint": {
+    "method": "RADIUS_AWA",
+    "reason": "Earlier first 5/10 percent good-solution targets in aggregate and on most cases; choose explicitly if joint-bound inclusion is not required"
+  },
+  "evidence": {
+    "independent_mothers": 100,
+    "related_scenarios": 400,
+    "technical_repeats": 3,
+    "calls": 10800,
+    "hard_timeouts": 0,
+    "missing_calls": 0,
+    "exact_oracles": 400,
+    "independent_arithmetic_audit_status": "PASS",
+    "independent_csv_field_checks": 222406,
+    "versus_AWA_proof": {
+      "candidate": "RADIUS_PAIR_AWA_GATED",
+      "baseline": "RADIUS_AWA",
+      "stratum": "ALL",
+      "target": "proof",
+      "n": 400,
+      "planned": 400,
+      "common_mothers": 100,
+      "candidate_seconds": 18.26048839907162,
+      "baseline_seconds": 23.307406899053603,
+      "percent_time_change": -21.65371086470762,
+      "candidate_expanded": 118799.0,
+      "baseline_expanded": 258496.0,
+      "percent_expanded_change": -54.04222889329042,
+      "candidate_earlier": 361,
+      "candidate_later": 39,
+      "candidate_only": 0,
+      "baseline_only": 0
+    },
+    "versus_AWA_first5": {
+      "candidate": "RADIUS_PAIR_AWA_GATED",
+      "baseline": "RADIUS_AWA",
+      "stratum": "ALL",
+      "target": "5",
+      "n": 400,
+      "planned": 400,
+      "common_mothers": 100,
+      "candidate_seconds": 8.031158600351773,
+      "baseline_seconds": 7.965820001089014,
+      "percent_time_change": 0.8202369530547537,
+      "candidate_expanded": 35255.0,
+      "baseline_expanded": 39408.0,
+      "percent_expanded_change": -10.538469346325618,
+      "candidate_earlier": 100,
+      "candidate_later": 300,
+      "candidate_only": 0,
+      "baseline_only": 0
+    },
+    "versus_AWA_first10": {
+      "candidate": "RADIUS_PAIR_AWA_GATED",
+      "baseline": "RADIUS_AWA",
+      "stratum": "ALL",
+      "target": "10",
+      "n": 400,
+      "planned": 400,
+      "common_mothers": 100,
+      "candidate_seconds": 7.142762599745765,
+      "baseline_seconds": 6.917212100466713,
+      "percent_time_change": 3.260713940864024,
+      "candidate_expanded": 30298.0,
+      "baseline_expanded": 31030.0,
+      "percent_expanded_change": -2.3590074121817572,
+      "candidate_earlier": 62,
+      "candidate_later": 338,
+      "candidate_only": 0,
+      "baseline_only": 0
+    },
+    "versus_AWA_100ms_quality": {
+      "candidate": "RADIUS_PAIR_AWA_GATED",
+      "baseline": "RADIUS_AWA",
+      "stratum": "ALL",
+      "ms": 100,
+      "n": 400,
+      "wins": 2,
+      "ties": 396,
+      "losses": 2,
+      "unknown": 0
+    },
+    "mother_stability": [
+      {
+        "stratum": "ALL",
+        "target": "proof",
+        "mothers": 100,
+        "candidate_faster": 94,
+        "candidate_slower": 6,
+        "ties": 0
+      },
+      {
+        "stratum": "ALL",
+        "target": "0",
+        "mothers": 100,
+        "candidate_faster": 61,
+        "candidate_slower": 39,
+        "ties": 0
+      },
+      {
+        "stratum": "ALL",
+        "target": "5",
+        "mothers": 100,
+        "candidate_faster": 29,
+        "candidate_slower": 71,
+        "ties": 0
+      },
+      {
+        "stratum": "ALL",
+        "target": "10",
+        "mothers": 100,
+        "candidate_faster": 6,
+        "candidate_slower": 94,
+        "ties": 0
+      },
+      {
+        "stratum": "signal",
+        "target": "proof",
+        "mothers": 100,
+        "candidate_faster": 95,
+        "candidate_slower": 5,
+        "ties": 0
+      },
+      {
+        "stratum": "signal",
+        "target": "0",
+        "mothers": 100,
+        "candidate_faster": 57,
+        "candidate_slower": 43,
+        "ties": 0
+      },
+      {
+        "stratum": "signal",
+        "target": "5",
+        "mothers": 100,
+        "candidate_faster": 24,
+        "candidate_slower": 76,
+        "ties": 0
+      },
+      {
+        "stratum": "signal",
+        "target": "10",
+        "mothers": 100,
+        "candidate_faster": 9,
+        "candidate_slower": 91,
+        "ties": 0
+      },
+      {
+        "stratum": "free",
+        "target": "proof",
+        "mothers": 100,
+        "candidate_faster": 93,
+        "candidate_slower": 7,
+        "ties": 0
+      },
+      {
+        "stratum": "free",
+        "target": "0",
+        "mothers": 100,
+        "candidate_faster": 51,
+        "candidate_slower": 49,
+        "ties": 0
+      },
+      {
+        "stratum": "free",
+        "target": "5",
+        "mothers": 100,
+        "candidate_faster": 21,
+        "candidate_slower": 79,
+        "ties": 0
+      },
+      {
+        "stratum": "free",
+        "target": "10",
+        "mothers": 100,
+        "candidate_faster": 12,
+        "candidate_slower": 88,
+        "ties": 0
+      }
+    ]
+  },
+  "evaluation_targets_are_runtime_stopping_rules": false,
+  "deployment_changed": false,
+  "recommendation_is_global_optimal_algorithm_claim": false,
+  "evidence_files": [
+    "Interpretation_Best_Combination.md",
+    "Interpretation_Evidence_01.json",
+    "Mother_Stability_01.json",
+    "analysis/scale_main_01",
+    "analysis/independent_scale_main_01"
+  ]
+}

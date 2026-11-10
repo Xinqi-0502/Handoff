@@ -1,0 +1,124 @@
+{
+  "date": "7 November 2026",
+  "reviewed": false,
+  "panels": [
+    {
+      "title": "What changes in measured memory",
+      "paragraphs": [
+        "All 128 fresh-process observations completed: 32 scenarios from eight mother instances, four methods and one observation per method/scenario. All methods found and proved the verified optimum within one second. An independent audit checked all lifecycle records, replayed 428 stored plans and matched 4,412 fields in the primary analysis.",
+        "The same-engine paired ratios of summed process peaks were 0.9906215 for working set and 0.9851817 for private commit. The candidate had lower working-set peaks in 23 cases and higher peaks in nine. It had lower private-commit peaks in 25 cases and higher peaks in seven.",
+        "Most working-set peaks had already been reached before the solver started. No new working-set high-water mark occurred in 32 of 32 frozen deployment runs, 28 of 32 AWA baseline runs, 30 of 32 AWA-plus-check runs and 28 of 32 ANA runs. The small raw differences therefore do not establish memory savings caused by the proposed check. The report retains measured bytes without treating label counts or baseline subtraction as algorithm-exclusive RAM.",
+        "Working set includes resident shared and private pages. PeakPagefileUsage records peak process commit, not physical pagefile writes. The sample has one process observation per cell and does not estimate repeat-to-repeat memory variability."
+      ],
+      "table": {
+        "headers": [
+          "Metric",
+          "Cases",
+          "Candidate / baseline peak sums",
+          "Lower / higher cases"
+        ],
+        "rows": [
+          [
+            "Resident working-set peak",
+            32,
+            "0.990622",
+            "23 / 9"
+          ],
+          [
+            "Private-commit peak",
+            32,
+            "0.985182",
+            "25 / 7"
+          ]
+        ]
+      },
+      "links": [
+        {
+          "label": "Native memory results and metric definitions",
+          "path": "memory/analysis/main_01/Memory_Results.md"
+        },
+        {
+          "label": "Full native observations",
+          "path": "memory/analysis/main_01/Observations.csv"
+        },
+        {
+          "label": "Independent memory audit",
+          "path": "audit_code/memory/results/main_01/Independent_Memory_Audit.json"
+        },
+        {
+          "label": "Why the raw process peaks do not establish algorithm memory savings",
+          "path": "memory/analysis/main_01/Interpretation_Addendum.md"
+        }
+      ]
+    },
+    {
+      "title": "Originality and published-method coverage",
+      "paragraphs": [
+        "The proposed method links both handoffs through one first-handoff completion time. Its optimistic eligibility set retains old-parcel identities, so a parcel cannot release capacity twice. The second-stage witnesses must include delivery of the first incoming order. Minimization over the finite eligibility-change times yields the joint lower bound. A constructive upper bound on this relaxation identifies checks that cannot reject the state.",
+        "The formula matrix separates this construction from published weighted resource thresholds, temporal profiles and lazy heuristic evaluation. Inspected Hof-Schneider and Wei formulations do not supply the complete current query. Those ingredients and the AWA/ANA search policies are credited to their sources.",
+        "A newly screened inventory-routing paper, DOI 10.1016/j.cor.2026.107577, remains a partial-primary-text comparison. Its complete algorithm and constraint material were not obtained. The recorded audit supports a specific difference from inspected formulas, without a universal first-publication claim.",
+        "Complete freight ALNS systems have not been reproduced in this study. The current complete published baselines are search-policy reimplementations with disclosed domain adapters. Their comparison supports the added bound's search contribution on the stated problem."
+      ],
+      "links": [
+        {
+          "label": "Formula-level coverage matrix",
+          "path": "literature/Formula_Coverage_Matrix.md"
+        },
+        {
+          "label": "Published AWA and ANA implementation mapping",
+          "path": "literature/Published_Baseline_Implementation_Audit.md"
+        },
+        {
+          "label": "New COR paper: inspected material and remaining access gap",
+          "path": "literature/COR_107577_Bounded_Update_20261107.md"
+        },
+        {
+          "label": "Full freight ALNS reproduction checklist",
+          "path": "literature/Freight_ALNS_Reconstruction_Checklist.md"
+        }
+      ]
+    },
+    {
+      "title": "Controlled variables and evidence limits",
+      "paragraphs": [
+        "The causal static comparison changes only the additional two-handoff check in a common search engine. Inputs, objective, initial plan, queue ordering, raw-bound cache, Pathmax and budget are shared. Three technical timing repetitions are summarized per scenario. The 256 scenarios come from 64 mother instances, not 256 independent random draws.",
+        "The 255-case proof comparison retains the excluded case in the full quality and deadline tables. All four methods found its optimum within the one-second budget. Some methods had not finished certification in every repetition. An incomplete proof is not counted as a complete one.",
+        "The local objective is completion of the second handoff. The online objective is total customer flow time. The online adapter uses the handoff bound only in the second incoming customer's completion term. Handoff completion is not added again as a separate customer-flow cost.",
+        "The online implementation uses a static free-flow joint relaxation within a traffic-conditioned forecast search. Its lower-envelope proof remains valid for the implemented non-FIFO predictor because each predicted leg is no faster than the static lower envelope. The proof concerns forecast cost, not physical SUMO cost. Queue scoring stays common and the extra pop-time check only removes subtrees that cannot improve the forecast incumbent.",
+        "Native SUMO execution checks capacity, freight ownership, service duration, physical handoff, planned activation delay, complete deliveries, recorded collisions and teleports. These checks establish implementation behavior on the tested network. They do not calibrate the delivery network against measured city traffic.",
+        "The online test optimizes one receiving vehicle's remaining order and a common receiver/hub choice at one decision epoch. The other receiver follows a shared fixed route. Continuous rolling arrivals, arbitrary numbers of incoming batches and general citywide fleet optimization remain outside this experiment.",
+        "Native planning delay is rounded upward to 0.2-second simulation steps. Under the same deterministic inputs, selecting the same complete plan and activation tick produces the same execution. A sub-step CPU reduction alone is therefore not an observed delivery-time improvement in this model."
+      ],
+      "links": [
+        {
+          "label": "Static independent analysis crosscheck",
+          "path": "audit_code/results/crosscheck_01/Crosscheck.json"
+        },
+        {
+          "label": "Static paired results",
+          "path": "static_comparison/analysis/main_01/Paired_Summary.csv"
+        },
+        {
+          "label": "Online predeclared aggregation rules",
+          "path": "online/analysis/Analysis_Rules_01.md"
+        },
+        {
+          "label": "Independent objective-bridge proof and implementation scope",
+          "path": "audit_code/theory/Online_H2_J_Proof_Scope.md"
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "path": "figures/render_static_02/exports/Fig1_Same_Kernel_Scale.png",
+      "alt": "Normalized expanded-state count and proof time by old-order count.",
+      "caption": "Source-generated comparison within the same AWA engine. Baseline equals 100. Each bar uses sums of case medians over the common on-time proof subset. The per-scale denominators are 64, 64, 64 and 63 out of 64 scenarios."
+    },
+    {
+      "path": "figures/render_static_02/exports/Fig2_Anytime_Tradeoff.png",
+      "alt": "Time changes for first five-percent gap, ten-percent gap, optimum and proof.",
+      "caption": "Source-generated anytime comparison. First attainment of the 5% and 10% duration gaps is slower, while first attainment of the optimum and completion of its proof are faster in aggregate. First-attainment results include 256 scenarios. The common on-time proof comparison includes 255."
+    }
+  ]
+}

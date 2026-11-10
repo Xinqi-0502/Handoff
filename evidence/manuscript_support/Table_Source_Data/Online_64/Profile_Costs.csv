@@ -1,0 +1,3 @@
+arm,cases,bound_calls,pair_calls,pair_skip_upper,pair_events,pair_loop_queries,extra_pruned,raw_bound_cache_queries,raw_bound_cache_hits,raw_bound_cache_entries,expanded,elapsed_ms,common_bound_ms,pair_inclusive_ms,pair_exclusive_ms,pair_exclusive_percent_of_elapsed,pair_us_per_call,pair_skip_fraction,positive_cut_cases,cut_range
+HZ_AWA_RADIUS,64,25996,0,0,0,0,0,26316,256,26060,6304,1748.680399497971,293.7409,0.0,0.0,0.0,,,0,"[0, 0]"
+HZ_AWA_PAIR_GATED,64,25269,5309,4337,1300,1702,170,30898,5565,25333,6127,1840.4615992913023,297.4677,80.9517,80.9517,4.398445478632735,15.2480128084385,0.8169146731964588,44,"[0, 12]"

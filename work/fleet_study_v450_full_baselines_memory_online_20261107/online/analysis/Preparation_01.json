@@ -1,0 +1,17 @@
+{
+  "status": "STATIC_AST_PASS",
+  "script_sha256": "dca39e3f8973c28c87c28020f23a9a70a29dd4bbdad3ba87fd8b744dc6549a23",
+  "lines": 420,
+  "executed_analysis": false,
+  "failures_preserved": [
+    {
+      "stage": "write",
+      "error": "Windows CreateProcess error206 command too long; process never started; split into four writes"
+    },
+    {
+      "stage": "AST",
+      "error": "Missing closing parenthesis in SITES product declaration; no code executed",
+      "snapshot": "snapshots/audit_before_ast_fix_01.py"
+    }
+  ]
+}

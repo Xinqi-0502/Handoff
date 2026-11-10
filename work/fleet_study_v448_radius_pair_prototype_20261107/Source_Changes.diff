@@ -1,0 +1,255 @@
+--- V447/selective_v447.py
++++ V448/selective_v448.py
+@@ -1,12 +1,10 @@
+ #!/usr/bin/env python3
+-"""V447 random high-load scale copy of frozen V446.
+-Parent solver SHA256 96874E0994D5F736AA40FAEA94EED72D8D4D4E4C9EB6BC9263F6EB37DECBE539.
+-Only the local reference validation cap changes from m<=6 to m<=12.
+-Import/hash/version metadata change accordingly. Bounds, queue policies,
+-initialization, caches, dominance, node accounting and formulas are unchanged.
+-A common root_bound_seconds timer records existing work for every arm; it is
+-nested in search/total elapsed and does not change the budget or search policy.
+-No scaling correctness or performance is implied by this source preparation.
++"""V448 unmeasured RADIUS-plus-PAIR prototype copied from frozen V447.
++Exact basis is the default. Only phase-0 quota-return values can switch to
++weighted individual-via thresholds; the union formula and search policies stay.
++No common quota cutoff, new global cache, network change or domain change is added.
++The local reference is byte-identical to V447. This source is prepared only:
++AST/static checks are not numerical correctness or performance evidence.
+ """
+ from __future__ import annotations
+ import argparse
+@@ -24,11 +22,11 @@
+ 
+ sys.dont_write_bytecode = True
+ HERE = Path(__file__).resolve().parent
+-REFERENCE = HERE/"reference_v447.py"
++REFERENCE = HERE/"reference_v448.py"
+ REFERENCE_SHA256 = "9810d96023a7710329d34a42f5c831687ea73e09fbfb42968fe4c660366a7416"
+ if hashlib.sha256(REFERENCE.read_bytes()).hexdigest() != REFERENCE_SHA256:
+-    raise RuntimeError("Frozen local V447 reference source hash changed.")
+-_spec = importlib.util.spec_from_file_location("v447_frozen_reference", REFERENCE)
++    raise RuntimeError("Frozen local V448 reference source hash changed.")
++_spec = importlib.util.spec_from_file_location("v448_frozen_reference", REFERENCE)
+ ref = importlib.util.module_from_spec(_spec)
+ sys.modules[_spec.name] = ref
+ _spec.loader.exec_module(ref)
+@@ -42,8 +40,25 @@
+ NODE_CHECKPOINTS = (10,25,50,100,250)
+ GATE_ARMS = ("FULL_GATE", "CUTOFF", "GATED_CUTOFF")
+ NEW_SEEDS = tuple(range(444101, 444117))
+-SOURCE_VERSION = "v447-random-high-load-validation12-1"
++SOURCE_VERSION = "v448-radius-pair-prototype-unmeasured-1"
+ LAZY_ASTAR_SOURCE = "https://tzin.bgu.ac.il/~felner/2013/lazya.pdf"
++BOUND_BASES = ("exact", "radius")
++# Public method names separate mathematical basis from unchanged queue policy.
++METHOD_MAP = {arm: (arm, "exact") for arm in ARMS}
++METHOD_MAP.update({
++    "RADIUS": ("ROUTE", "radius"),
++    "RADIUS_PAIR_LAZY": ("LAZY_ASTAR", "radius"),
++    "RADIUS_PAIR_EAGER": ("PAIR_EAGER", "radius"),
++    "RADIUS_AWA": ("AWA_ROUTE", "radius"),
++})
++
++
++def method_name(arm, basis):
++    for name, pair in METHOD_MAP.items():
++        if pair == (arm, basis):
++            return name
++    return basis.upper()+"_"+arm
++
+ 
+ 
+ class Network:
+@@ -99,7 +114,7 @@
+     B: int
+     qa: int
+     qb: int
+-    gb: int
++    gb: int  # Exact G_qb or radius R_qb according to Context.basis.
+ 
+ 
+ @dataclass(slots=True)
+@@ -113,8 +128,11 @@
+ 
+ 
+ class Context:
+-    """No global bound/detail/via/quota-table caches; scalar shared caches retained."""
+-    def __init__(self, spec, watchdog, profile=False):
++    """Fixed quota basis; original scalar caches and all feasible actions retained."""
++    def __init__(self, spec, watchdog, profile=False, *, basis="exact"):
++        if basis not in BOUND_BASES:
++            raise ValueError("basis must be exact or radius")
++        self.basis = basis
+         ref.validate_instance(spec)
+         self.spec, self.watchdog, self.profile = spec, watchdog, profile
+         self.old, self.m = spec["old"], len(spec["old"])
+@@ -133,6 +151,8 @@
+         self.quota_labels = self.via_items = self.fa_queries = self.fa_hits = 0
+         self.gamma_queries = self.gamma_hits = self.gamma_orders = self.events = 0
+         self.phase1_calls = self.phase1_via_items = self.phase1_ns = 0
++        self.radius_calls = self.radius_via_items = self.radius_ns = 0
++        self.radius_union_saturation_skips = 0
+ 
+     # Feasible domain and initial incumbent reuse the exact frozen implementations.
+     initial = ref.Context.initial
+@@ -174,6 +194,43 @@
+             self.quota_ns += time.perf_counter_ns()-started
+         return ga, gb
+ 
++    def radius_pair(self, s, qa, qb):
++        """Two indivisible weighted thresholds from one sorted individual-via list.
++
++        This is not a feasible common quota route. No new global/local-state cache
++        is retained. Later alphas use the original Network scalar cache as before.
++        """
++        self.radius_calls += 1
++        started = time.perf_counter_ns() if self.profile else 0
++        try:
++            direct = self.net.arrive(s.pos, self.h, s.t)
++            if qb == 0:
++                return direct, direct
++            values = []
++            for i in ref.bit_ids(s.oldmask):
++                if self.profile:
++                    self.radius_via_items += 1
++                item = self.old[i]
++                at = self.net.arrive(s.pos, item["node"], s.t) + item["service"]
++                returned = self.net.arrive(item["node"], self.h, at)
++                values.append((returned, item["weight"]))
++            ga = direct if qa == 0 else INF
++            gb = INF
++            released = 0
++            for returned, weight in sorted(values):
++                released += weight
++                if ga == INF and released >= qa:
++                    ga = returned
++                if released >= qb:
++                    gb = returned
++                    break
++            if ga == INF or gb == INF:
++                raise AssertionError("Capacity quotas must be covered by remaining old weight.")
++            return ga, gb
++        finally:
++            if self.profile:
++                self.radius_ns += time.perf_counter_ns()-started
++
+     def fa(self, x):
+         if self.profile:
+             self.fa_queries += 1
+@@ -266,7 +323,10 @@
+         load = self.weights[s.oldmask]
+         qa = max(0, load + self.spec["wa"] - self.spec["Q"])
+         qb = max(0, load + self.spec["wb"] - self.spec["Q"])
+-        ga, gb = self.quota_pair(s, qa, qb)
++        if self.basis == "exact":
++            ga, gb = self.quota_pair(s, qa, qb)
++        else:
++            ga, gb = self.radius_pair(s, qa, qb)
+         B = max(self.spec["A"], ga) + self.spec["tau_a"]
+         value = max(self.fa(B), max(self.spec["A"], gb)) + self.spec["tau_b"]
+         if self.profile:
+@@ -293,7 +353,11 @@
+         started = time.perf_counter_ns() if self.profile else 0
+         try:
+             if base.gb + self.spec["tau_a"] <= base.B:
+-                self.exact_quota_skips += 1
++                if self.basis == "exact":
++                    self.exact_quota_skips += 1
++                else:
++                    # R_qb threshold means E1(B) covers qb, not a feasible path.
++                    self.radius_union_saturation_skips += 1
+                 return base.value
+             alpha = self.alphas(s)
+             if sum(self.old[i]["weight"] for i, a in alpha if a <= base.B) >= base.qb:
+@@ -338,7 +402,11 @@
+         started = time.perf_counter_ns() if self.profile else 0
+         try:
+             if base.gb + self.spec["tau_a"] <= base.B:
+-                self.exact_quota_skips += 1
++                if self.basis == "exact":
++                    self.exact_quota_skips += 1
++                else:
++                    # R_qb threshold means E1(B) covers qb, not a feasible path.
++                    self.radius_union_saturation_skips += 1
+                 return False
+             alpha = self.alphas(s)
+             early_B = sum(self.old[i]["weight"] for i, a in alpha if a <= base.B)
+@@ -384,11 +452,15 @@
+                      closure_cache_size=len(self.net.cache), fa_cache_size=len(self.fa_cache),
+                      gamma_cache_size=len(self.gamma_cache), bound_cache_size=0,
+                      global_quota_cache_size=0, global_via_cache_size=0,
+-                     detailed_profile_enabled=self.profile)
++                     detailed_profile_enabled=self.profile,
++                     radius_calls=self.radius_calls,
++                     skip_radius_union_saturation=self.radius_union_saturation_skips)
+         if self.profile:
+             basic.update(base_ns=self.base_ns, phase1_base_ns=self.phase1_ns,
+                          phase1_individual_via_items=self.phase1_via_items,
+                          pair_ns=self.pair_ns, quota_ns=self.quota_ns,
++                         radius_ns=self.radius_ns,
++                         radius_individual_via_items=self.radius_via_items,
+                          quota_dp_labels=self.quota_labels, individual_via_items=self.via_items,
+                          fa_queries=self.fa_queries, fa_hits=self.fa_hits,
+                          gamma_queries=self.gamma_queries, gamma_hits=self.gamma_hits,
+@@ -408,7 +480,12 @@
+ 
+ 
+ def solve(spec, arm, watchdog, wall_ms=None, profile=False, audit=False,
+-          _context_factory=None, node_limit=None, checkpoints=NODE_CHECKPOINTS):
++          _context_factory=None, node_limit=None, checkpoints=NODE_CHECKPOINTS,
++          *, basis="exact"):
++    if basis not in BOUND_BASES:
++        raise ValueError("basis must be exact or radius")
++    if _context_factory is not None and basis != "exact":
++        raise ValueError("Custom policy fixtures support the legacy exact default only.")
+     if arm not in ARMS:
+         raise ValueError(arm)
+     if node_limit is not None and (not isinstance(node_limit,int) or node_limit < 0):
+@@ -419,8 +496,10 @@
+     checkpoint_set = set(checkpoints)
+     checkpoint_set.discard(0)  # Initial record is emitted only when checkpoints are enabled.
+     started = time.perf_counter()
+-    factory = Context if _context_factory is None else _context_factory
+-    ctx = factory(spec, watchdog, profile)
++    if _context_factory is None:
++        ctx = Context(spec, watchdog, profile, basis=basis)
++    else:
++        ctx = _context_factory(spec, watchdog, profile)
+     setup = time.perf_counter()-started
+     initial_started = time.perf_counter()
+     best, best_plan = ctx.greedy()
+@@ -598,6 +677,7 @@
+     stats = ctx.stats()
+     elapsed = time.perf_counter()-started
+     return dict(case=spec["case"],seed=spec["seed"],split=spec["split"],arm=arm,
++                bound_basis=basis,method=method_name(arm,basis),
+                 H2=best,plan=list(best_plan),trace=trace,audit_trace=audit_trace,
+                 node_trace=node_trace,node_limit=node_limit,
+                 requested_checkpoints=sorted(checkpoint_set),
+@@ -610,6 +690,16 @@
+                 stop_reason=stop,overrun_seconds=0 if wall_ms is None else max(0,elapsed-wall_ms/1000),
+                 timing_interpretable=not profile,stats=stats,**count)
+ 
++
++
++def solve_method(spec, method, watchdog, **kwargs):
++    """Explicit public name -> (unchanged search policy, phase-0 quota basis)."""
++    if method not in METHOD_MAP:
++        raise ValueError(method)
++    if "basis" in kwargs:
++        raise ValueError("solve_method fixes basis through METHOD_MAP.")
++    arm, basis = METHOD_MAP[method]
++    return solve(spec, arm, watchdog, basis=basis, **kwargs)
+ 
+ 
+ def get_cases(split):
+@@ -989,7 +1079,7 @@
+ def main():
+     parser = argparse.ArgumentParser(description=__doc__)
+     parser.add_argument("mode",choices=("correctness","profile","timing","allocations"))
+-    parser.add_argument("--run",help="Fresh descendant of the V444 directory.")
++    parser.add_argument("--run",help="Fresh descendant of the V448 directory (legacy exact-only CLI).")
+     parser.add_argument("--split",choices=("dev","holdout"),default=None)
+     parser.add_argument("--max-seconds",type=float,default=60)
+     parser.add_argument("--repeats",type=int,default=3)

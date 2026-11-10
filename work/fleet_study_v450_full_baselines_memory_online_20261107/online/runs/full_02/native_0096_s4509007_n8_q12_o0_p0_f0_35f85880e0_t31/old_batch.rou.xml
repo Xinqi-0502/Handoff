@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <vType id="small" vClass="delivery" length="2" maxSpeed="8" accel="2" decel="4.5" sigma="0" speedFactor="1" speedDev="0" tau="1" emergencyDecel="9" />
+  <vType id="truck" vClass="delivery" length="8" maxSpeed="6" accel="1.5" decel="3" sigma="0" speedFactor="1" speedDev="0" tau="1" emergencyDecel="9" />
+  <vType id="traffic" vClass="passenger" length="4" maxSpeed="10" accel="2" decel="4.5" sigma="0" speedFactor="1" speedDev="0" tau="1" emergencyDecel="9" />
+  <vType id="walker" vClass="pedestrian" maxSpeed="1.2" speedFactor="1" speedDev="0" />
+  <vehicle id="A" type="small" depart="0" departPos="73" departLane="0" departSpeed="0">
+    <route edges="ED0" />
+    <stop lane="ED0_0" endPos="73" duration="10000" parking="true" />
+  </vehicle>
+  <vehicle id="B" type="small" depart="0" departPos="27" departLane="0" departSpeed="0">
+    <route edges="WD1" />
+    <stop lane="WD1_0" endPos="27" duration="10000" parking="true" />
+  </vehicle>
+  <vehicle id="bg" type="traffic" depart="0" departPos="40" departLane="0" departSpeed="8">
+    <route edges="WC CE" />
+  </vehicle>
+</routes>

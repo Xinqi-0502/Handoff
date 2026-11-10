@@ -1,0 +1,13 @@
+{
+  "source_csv_sha256": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\analysis\\scale_main_01\\Case_Work_And_Proof.csv": "5c96c037371d8c9d8621a4ef702ab7d82b0007f94bacc0fd8dfcbd99a668ae18",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\analysis\\scale_main_01\\Quality_Summary.csv": "6e9953166720c0fac7f4726cd28a67c8ac6b2975d14c357401886f35647b0674",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\analysis\\scale_main_01\\Pair_Time_Summary.csv": "ad09f1927ef661da499a6149c641a142f4ad36baf99625863f814c3044e0c527"
+  },
+  "plot_script_sha256": "4865826c5efaf50eb8bb82545c1434d8825141a894ae082f7b375c2529754b99",
+  "matplotlib_version": "3.11.2",
+  "numpy_version": "2.5.4",
+  "analysis_statistics_recomputed": false,
+  "plot_aggregates_checked": true,
+  "actual_RAM_measured": false
+}

@@ -1,0 +1,14 @@
+{
+  "status": "AST_PASS_PREPARED_NOT_EXECUTED",
+  "analysis_sha256": "b3c64155e19030bbbad839f00fc1d77f4c25618fac02c0cf4a8e210fbc9e39ae",
+  "selected_sha256": "389f02817911eb32866de224e0d76178347c863a5248901cae5f2930fffb9047",
+  "main_source_hashes_unchanged": true,
+  "source_count": 12,
+  "planned_runs": 52,
+  "planned_scenarios": 400,
+  "planned_mothers": 100,
+  "planned_calls": 10800,
+  "solver_imported": false,
+  "analysis_executed": false,
+  "preparation_failure": "Initial single overlength shell command was rejected with Windows os error 206 before process creation; no numerical operation occurred. Source was then written in two bounded parts."
+}

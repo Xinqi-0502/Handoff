@@ -1,0 +1,139 @@
+{
+  "status": "AST_AND_STATIC_SCHEDULE_ONLY_NOT_RUN",
+  "files": {
+    "run_v448.py": "4f310cb6213a9ca576d60dafa45c995068f88877a575c5ef844b5b5ba687896f",
+    "run_jobs_v448.py": "df5e82e317f203cdd771fd30ce6b241da40f3b185983afac7572b7a80dd3d169",
+    "instances_v448.py": "b084409f1aeec06ae484b59b21d1644c76cf75ed097b75082d04c89d1e77d74c",
+    "Pilot_Protocol.md": "45c423e07ca86551998fc0735db859c71f367edb8ab159beb30f4b7b50d6bf70"
+  },
+  "config_sha256": "bd20b991602fa45275149be8dfb6c20ceabfef1f52993c8b30b9ef67b2325988",
+  "expected_primary_calls": 384,
+  "expected_auxiliary_calls": 64,
+  "total_calls": 448,
+  "scale_block_primary_position_checks": [
+    {
+      "start": 0,
+      "stop": 8,
+      "positions": {
+        "RADIUS": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "RADIUS_PAIR_LAZY": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "RADIUS_AWA": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "NO_BOUND": [
+          6,
+          6,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "start": 8,
+      "stop": 16,
+      "positions": {
+        "RADIUS": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "RADIUS_PAIR_LAZY": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "RADIUS_AWA": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "NO_BOUND": [
+          6,
+          6,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "start": 16,
+      "stop": 24,
+      "positions": {
+        "RADIUS": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "RADIUS_PAIR_LAZY": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "RADIUS_AWA": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "NO_BOUND": [
+          6,
+          6,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "start": 24,
+      "stop": 32,
+      "positions": {
+        "RADIUS": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "RADIUS_PAIR_LAZY": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "RADIUS_AWA": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "NO_BOUND": [
+          6,
+          6,
+          6,
+          6
+        ]
+      }
+    }
+  ],
+  "input_generation_only": true,
+  "solver_executed": false,
+  "oracle_executed": false,
+  "benchmark_executed": false
+}

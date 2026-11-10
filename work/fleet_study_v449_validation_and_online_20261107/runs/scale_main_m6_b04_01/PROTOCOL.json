@@ -1,0 +1,91 @@
+{
+  "mode": "main",
+  "sources": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\micro_gate_v448.py": "2d8875a347f89fdca3f8eab6dc9052a2596bab86e00c4730c9d67f3e8d0dfe00",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\selective_v448.py": "f955dcb082a1e8fb4e683741a657c433209202f313571c07174d9ab15de42a6c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\reference_v448.py": "9810d96023a7710329d34a42f5c831687ea73e09fbfb42968fe4c660366a7416",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\run_v448.py": "4f310cb6213a9ca576d60dafa45c995068f88877a575c5ef844b5b5ba687896f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\independent_dp_v447.py": "8c59f8695dfa2347b0f8ac5c817aec93c0c41e07c0882d45f099abaf4d9c2431",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\instances_v447.py": "a2e8b402e0c913c371c4d37107b23ff934a91df98fecc58b8f3274cb791e2329",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\scale_sources_v449.py": "8af0f6cdcbb4d77dcd81105f44c5bd987c50260ff555f98f74a5733403b829d2",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\instances_scale_v449.py": "e9b0c8c541d4f0d5ede9edeab8f73fadfce6f3421b85d6a065cbd3b232bab699",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\dp_adapter_v449.py": "05c4ac667e27e445e138070ce7326c89612ffcfdf417a8c7593c3a1085e060d8",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\check_scale_v449.py": "17452a236d94596d4682c6bd570ffa132d112683f27fe9267b90563675592938",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\run_scale_v449.py": "151660bed587e29cbcdfd7d6a11ddd98364aaab8914baef3ab1affe25e1cbcaf",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\run_scale_jobs_v449.py": "f352866847d2067a6b056536d235a4b95bf9fd9613be48f899b5b80901b632ae"
+  },
+  "input_file_sha256": "ce0a0e3118603f9585ef9f8b6a8ea119e428b5dc5a1b071835c6efafbe4f8f95",
+  "start": 32,
+  "stop": 40,
+  "methods": [
+    "RADIUS",
+    "RADIUS_PAIR_EAGER",
+    "RADIUS_PAIR_LAZY",
+    "RADIUS_AWA",
+    "RADIUS_PAIR_AWA",
+    "RADIUS_PAIR_AWA_GATED",
+    "NO_BOUND",
+    "DP_ADAPTER",
+    "ROUTE"
+  ],
+  "method_map": {
+    "RADIUS": {
+      "policy": "ROUTE",
+      "basis": "radius"
+    },
+    "RADIUS_PAIR_EAGER": {
+      "policy": "PAIR_EAGER",
+      "basis": "radius"
+    },
+    "RADIUS_PAIR_LAZY": {
+      "policy": "LAZY_ASTAR",
+      "basis": "radius"
+    },
+    "RADIUS_AWA": {
+      "policy": "AWA_ROUTE",
+      "basis": "radius"
+    },
+    "RADIUS_PAIR_AWA": {
+      "policy": "AWA_PAIR",
+      "basis": "radius"
+    },
+    "RADIUS_PAIR_AWA_GATED": {
+      "policy": "AWA_GATED",
+      "basis": "radius"
+    },
+    "NO_BOUND": {
+      "policy": "NO_BOUND",
+      "basis": "exact"
+    },
+    "DP_ADAPTER": {
+      "policy": "TOPOLOGICAL_DP",
+      "basis": "none"
+    },
+    "ROUTE": {
+      "policy": "ROUTE",
+      "basis": "exact"
+    }
+  },
+  "repeats": 3,
+  "wall_ms": 1000,
+  "watchdog_seconds": 15,
+  "oracle_seconds": 15,
+  "expected_attempts": 216,
+  "independent_mothers": 2,
+  "related_scenarios": 8,
+  "order": "rotation (repeats*schedule_case_index+repeat)%9; main global index, cost selected-mother ordinal; maximum imbalance one",
+  "gate_path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\gates\\scale_micro_all_01\\GATE.json",
+  "gate_sha256": "508bf6724af92f0657ecf9f72b79db961933c819558744b7999efd74608d5e5f",
+  "full_micro24_pass": true,
+  "frozen_V448_solver_unchanged": true,
+  "oracle_not_used_as_incumbent": true,
+  "oracle_independent_of_DP_ADAPTER": false,
+  "DP_validation": "Small separate full timed-prefix exhaustive algorithm plus frozen reference replay; oracle DP shares source",
+  "initial_rule": "all old items greedily by (service completion,item id,node), then a handoff/delivery,b handoff",
+  "fresh_context_per_call": true,
+  "all_setup_initial_queries_trace_certificate_charged": true,
+  "checkpoint_snapshots": false,
+  "profile": false,
+  "actual_RAM_measured": false,
+  "scope": "100-mother confirmation inputs for local synthetic H2 model; no whole-fleet SUMO claim"
+}

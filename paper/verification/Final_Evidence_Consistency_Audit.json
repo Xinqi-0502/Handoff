@@ -1,0 +1,157 @@
+{
+  "status": "PASS_CURRENT_SOURCE_AND_FROZEN_DATA_CROSSCHECK",
+  "source_hashes": [
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\research_outputs\\ICTEC2027_Rewritten_Joint_Bound_20261107\\figures\\source_data\\fig01_points.csv",
+      "unchanged": true,
+      "sha256": "975893370a26e5036408d26f48587fe693ac1b11777681f4a671daab46ff159a"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\research_outputs\\ICTEC2027_Rewritten_Joint_Bound_20261107\\figures\\source_data\\fig02_points.csv",
+      "unchanged": true,
+      "sha256": "3867e837f67d09c2bf477ccc0b9edc9f37e50407c8411a4f712a58d5ba3de975"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\research_outputs\\ICTEC2027_Rewritten_Joint_Bound_20261107\\figures\\source_data\\figS01_points.csv",
+      "unchanged": true,
+      "sha256": "7e850fedb49a3c887c9a9e2d45fdbedfa707691ed760903c82ea8290cfc32b00"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\published_online_v450.py",
+      "unchanged": true,
+      "sha256": "6243ff17e9aab4539fbfb6ac2ce21e6fca92203e7b2c7b94d4cb587b45d7dba5"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\baseline_replication\\published_search_v450.py",
+      "unchanged": true,
+      "sha256": "4d4286ad650f52264375bda90cf1a7c0c907eaa57df4396b58f959d7313b951c"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\baseline_replication\\check_published_search_v450.py",
+      "unchanged": true,
+      "sha256": "c5a7809ecda4746364f97cf24e0b2d897b06abcbdd1d6f151f834d49a8450eb7"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\baseline_replication\\checks\\micro_b00_02\\TOYS.json",
+      "unchanged": true,
+      "sha256": "fc7dc68be3bc88bf451698f51ba7a860e52b9761109e96a64d2839b1692d9478"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\static_comparison\\analysis\\main_01\\Method_Summary.csv",
+      "unchanged": true,
+      "sha256": "d80909f317b9d6a3363db53aabec644ceffb64d99f7cddd991c74feb52fface2"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Directed_Proof_Pairs.csv",
+      "unchanged": true,
+      "sha256": "ccd7c02ce3d5ba2e585bef88919649fc733014682b20ee8adc0388c441c66d10"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\analysis\\interpretation_02\\Main_Same_Engine.csv",
+      "unchanged": true,
+      "sha256": "bb84ee62dc3aa945f67c2cfd6d5c1dbbb78b84f8895639b3774db61207e2be43"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\analysis\\main_01\\Memory_Results.md",
+      "unchanged": true,
+      "sha256": "dba24e49762d9c53605ed6915176eb0eec409512851de478ebc664ac3adbc452"
+    }
+  ],
+  "figures": [
+    {
+      "figure": 1,
+      "m": "6",
+      "metric": "expanded_labels",
+      "ratio_percent": 55.1977598879944
+    },
+    {
+      "figure": 1,
+      "m": "6",
+      "metric": "proof_time_seconds",
+      "ratio_percent": 87.76024282712592
+    },
+    {
+      "figure": 1,
+      "m": "8",
+      "metric": "expanded_labels",
+      "ratio_percent": 49.464615384615385
+    },
+    {
+      "figure": 1,
+      "m": "8",
+      "metric": "proof_time_seconds",
+      "ratio_percent": 77.94949646998333
+    },
+    {
+      "figure": 1,
+      "m": "10",
+      "metric": "expanded_labels",
+      "ratio_percent": 44.9585221927649
+    },
+    {
+      "figure": 1,
+      "m": "10",
+      "metric": "proof_time_seconds",
+      "ratio_percent": 74.80740622928347
+    },
+    {
+      "figure": 1,
+      "m": "12",
+      "metric": "expanded_labels",
+      "ratio_percent": 44.842277230101466
+    },
+    {
+      "figure": 1,
+      "m": "12",
+      "metric": "proof_time_seconds",
+      "ratio_percent": 71.75779547577591
+    },
+    {
+      "figure": 2,
+      "endpoint": "first_5_percent",
+      "time_change_percent": 2.8165890804064064
+    },
+    {
+      "figure": 2,
+      "endpoint": "first_10_percent",
+      "time_change_percent": 4.07071243428605
+    },
+    {
+      "figure": 2,
+      "endpoint": "first_optimum",
+      "time_change_percent": -7.963544092713015
+    },
+    {
+      "figure": 2,
+      "endpoint": "proof",
+      "time_change_percent": -27.16808823855139
+    }
+  ],
+  "unchanged_tables": 3,
+  "unchanged_numbered_equations": 7,
+  "figure_images_unchanged": 2,
+  "reference_count": 11,
+  "citation_first_appearance": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "zero_figure_removed_equation_C1_retained": true,
+  "faculty_edit_preserved": true,
+  "algorithm_lines": 30,
+  "new_experiments": 0,
+  "scope": "Numerical reaggregation from frozen summaries, original data hash continuity, source-to-pseudocode review, explicit proof conditions. No new experiments or blanket originality certification.",
+  "algorithm_corrections": [
+    "Event sorting after cheap bypasses",
+    "Common duplicate rejection before successor lower-bound computation"
+  ],
+  "manuscript_content_sha256": "6632a13ff06ded38d619380b1b79e854f250044848364cbb0a9c2feb6c34e664"
+}

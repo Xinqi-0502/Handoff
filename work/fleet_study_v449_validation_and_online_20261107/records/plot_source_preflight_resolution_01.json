@@ -1,0 +1,11 @@
+{
+  "status": "SOURCE_PREFLIGHT_FALSE_POSITIVES_RESOLVED",
+  "detail": [
+    "Validator regex matched res=3 inside figures=3 as a 3-dpi setting; metadata key renamed figure_count",
+    "Existing alignment function had an alias; use its explicit name so static audit recognizes the same existing call"
+  ],
+  "previous_png_dpi": 300,
+  "current_png_dpi": 300,
+  "no_data_or_geometry_changes": true,
+  "current_sha256": "75bc1d59a9065450939aced5ea34d6e796dad5092096f65c6ef62f99544383ad"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "figure_bundle": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\figures\\scale_main_02",
+  "PNG_01_02_identical_to_visually_reviewed_first_bundle": {
+    "Figure_01_Budget_Quality.png": true,
+    "Figure_02_Conditional_Proof_Cost.png": true
+  },
+  "all_source_CSV_identical": {
+    "Figure_01_Source.csv": true,
+    "Figure_02_Source.csv": true,
+    "Figure_03_Source.csv": true
+  },
+  "automatic_QA": "All three alignment/text/collision checks passed; zero collision warnings",
+  "visual_review": "Parent reviewed Figures 1/2 from first run and corrected Figure 3; subagent also inspected corrected Figure 3",
+  "accepted_source_warnings": [
+    "PNG+PDF explicitly requested; TIFF not required",
+    "300-dpi PNG is a review image; PDF is vector",
+    "Report-size figures, not a journal-specific width claim",
+    "Descriptive counts/distributions of paired scenarios; no invented independence-based uncertainty intervals"
+  ],
+  "report_sha256": "f91312f1c27d1d283747dbb369d7b7c2c85e928a25f969c638dca5e9688030b5",
+  "configuration_sha256": "df82184f5cc1f4c9054f10dae8f0c22cc544d14a618b17ca5ed0b6f53999b291",
+  "plot_source_sha256": "4865826c5efaf50eb8bb82545c1434d8825141a894ae082f7b375c2529754b99",
+  "numerical_sources_changed": false,
+  "failed_first_render_preserved": true
+}

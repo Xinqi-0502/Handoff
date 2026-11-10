@@ -1,0 +1,669 @@
+{
+  "mode": "solve",
+  "worker_source_hashes": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\native_memory.py": "13c9af100de45e9235c5842bdae6257f7461db9a61b5b5859f4e9d523712d5af",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\owned_process.py": "23c9e418596e20d29aae0d3842c47b516bf5d320c66b586afba552d4d797215c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\memory_common.py": "2027ac64fe4ddf44ba744eb8ed273d9ff813f441bc334b198479dcbf71e589c9",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\memory_worker.py": "12aebc8ca511144b0e59e1be0548fbb2864e9d9fa8588c69118beaae4a9a645b",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\run_memory.py": "6a3e877d56bb416b2be2b2125fe211143044f994494c8bc6c48a4223ec840596",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\run_memory_jobs.py": "c078259db45fec49af6d23091245fb4707cd20b792aa51abdf56b86fb1511291",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\freeze_memory.py": "eafe92dde6ef4f6b62035cf4a82a789fa2affb9843e78c078f6807157818ca48",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\check_memory_safety.py": "4132b5e5051ab9587e2b98c394ce1b21ffc475952edec415ba35ab698610f313"
+  },
+  "manifest": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\freeze_01\\MANIFEST.json",
+  "spec": {
+    "seed": 94502002,
+    "m": 12,
+    "n_nodes": 14,
+    "coordinates": [
+      [
+        0,
+        0
+      ],
+      [
+        -5,
+        -12
+      ],
+      [
+        46,
+        33
+      ],
+      [
+        45,
+        3
+      ],
+      [
+        -41,
+        7
+      ],
+      [
+        20,
+        -17
+      ],
+      [
+        50,
+        -8
+      ],
+      [
+        27,
+        -44
+      ],
+      [
+        -39,
+        -48
+      ],
+      [
+        -30,
+        -9
+      ],
+      [
+        -47,
+        4
+      ],
+      [
+        43,
+        18
+      ],
+      [
+        -43,
+        -49
+      ],
+      [
+        21,
+        -3
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        1,
+        7,
+        12,
+        9,
+        6
+      ],
+      [
+        0,
+        2,
+        19,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        17,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        10,
+        12,
+        9,
+        5
+      ],
+      [
+        0,
+        13,
+        10,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        10,
+        24,
+        12,
+        12
+      ],
+      [
+        1,
+        3,
+        23,
+        12,
+        3,
+        11
+      ],
+      [
+        1,
+        5,
+        12,
+        24,
+        6,
+        7
+      ],
+      [
+        1,
+        6,
+        22,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        7,
+        17,
+        12,
+        6,
+        1
+      ],
+      [
+        1,
+        8,
+        17,
+        48,
+        36,
+        41
+      ],
+      [
+        1,
+        9,
+        9,
+        12,
+        6,
+        10
+      ],
+      [
+        2,
+        3,
+        14,
+        24,
+        6,
+        10
+      ],
+      [
+        2,
+        4,
+        32,
+        48,
+        12,
+        24
+      ],
+      [
+        2,
+        6,
+        18,
+        24,
+        18,
+        23
+      ],
+      [
+        2,
+        8,
+        43,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        11,
+        8,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        18,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        6,
+        9,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        11,
+        9,
+        24,
+        6,
+        11
+      ],
+      [
+        3,
+        13,
+        12,
+        24,
+        12,
+        6
+      ],
+      [
+        4,
+        1,
+        17,
+        24,
+        6,
+        12
+      ],
+      [
+        4,
+        2,
+        35,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        9,
+        10,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        10,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        10,
+        48,
+        12,
+        40
+      ],
+      [
+        5,
+        1,
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        6,
+        16,
+        24,
+        12,
+        17
+      ],
+      [
+        5,
+        7,
+        11,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        12,
+        28,
+        12,
+        6,
+        11
+      ],
+      [
+        5,
+        13,
+        7,
+        48,
+        36,
+        46
+      ],
+      [
+        6,
+        0,
+        18,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        1,
+        21,
+        48,
+        24,
+        3
+      ],
+      [
+        6,
+        3,
+        9,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        5,
+        16,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        11,
+        11,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        13,
+        10,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        1,
+        18,
+        48,
+        12,
+        2
+      ],
+      [
+        7,
+        5,
+        12,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        6,
+        17,
+        12,
+        9,
+        6
+      ],
+      [
+        7,
+        13,
+        14,
+        48,
+        12,
+        12
+      ],
+      [
+        8,
+        1,
+        22,
+        12,
+        9,
+        9
+      ],
+      [
+        8,
+        9,
+        17,
+        24,
+        12,
+        2
+      ],
+      [
+        8,
+        12,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        1,
+        10,
+        48,
+        36,
+        40
+      ],
+      [
+        9,
+        4,
+        8,
+        48,
+        12,
+        30
+      ],
+      [
+        9,
+        10,
+        13,
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        12,
+        20,
+        48,
+        36,
+        2
+      ],
+      [
+        10,
+        1,
+        18,
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        4,
+        7,
+        48,
+        12,
+        21
+      ],
+      [
+        10,
+        9,
+        12,
+        12,
+        6,
+        11
+      ],
+      [
+        11,
+        2,
+        8,
+        48,
+        36,
+        42
+      ],
+      [
+        11,
+        3,
+        6,
+        48,
+        12,
+        35
+      ],
+      [
+        11,
+        6,
+        9,
+        0,
+        0,
+        0
+      ],
+      [
+        12,
+        1,
+        21,
+        12,
+        6,
+        10
+      ],
+      [
+        12,
+        8,
+        5,
+        48,
+        12,
+        6
+      ],
+      [
+        12,
+        9,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        10,
+        48,
+        24,
+        20
+      ],
+      [
+        13,
+        3,
+        11,
+        48,
+        24,
+        47
+      ],
+      [
+        13,
+        5,
+        9,
+        12,
+        3,
+        6
+      ],
+      [
+        13,
+        6,
+        12,
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        10,
+        28,
+        0,
+        0,
+        0
+      ]
+    ],
+    "hub": 0,
+    "a_node": 1,
+    "start_node": 0,
+    "t0": 40,
+    "A": 41,
+    "wa": 72,
+    "wb": 96,
+    "a_service": 6,
+    "tau_a": 2,
+    "tau_b": 3,
+    "old": [
+      {
+        "node": 2,
+        "weight": 15,
+        "service": 5
+      },
+      {
+        "node": 3,
+        "weight": 16,
+        "service": 4
+      },
+      {
+        "node": 4,
+        "weight": 5,
+        "service": 4
+      },
+      {
+        "node": 5,
+        "weight": 14,
+        "service": 2
+      },
+      {
+        "node": 6,
+        "weight": 2,
+        "service": 3
+      },
+      {
+        "node": 7,
+        "weight": 11,
+        "service": 12
+      },
+      {
+        "node": 8,
+        "weight": 8,
+        "service": 10
+      },
+      {
+        "node": 9,
+        "weight": 13,
+        "service": 11
+      },
+      {
+        "node": 10,
+        "weight": 12,
+        "service": 11
+      },
+      {
+        "node": 11,
+        "weight": 18,
+        "service": 4
+      },
+      {
+        "node": 12,
+        "weight": 2,
+        "service": 7
+      },
+      {
+        "node": 13,
+        "weight": 4,
+        "service": 2
+      }
+    ],
+    "total_old_weight": 120,
+    "total_old_service": 75,
+    "case": "v449_scale_main_s94502002_m12_roomier_signal",
+    "split": "v449_scale_main",
+    "Q": 150,
+    "capacity_regime": "roomier",
+    "signal": true,
+    "geometry": "random_2d",
+    "control": false,
+    "pair_id": "v449_scale_main_s94502002_m12_roomier",
+    "signal_pair_id": "v449_scale_main_s94502002_m12_roomier",
+    "capacity_pair_id": "v449_scale_main_s94502002_m12_signal",
+    "generation": "Prespecified random high-load FIFO synthetic transport",
+    "atomic_incoming_order": [
+      "a",
+      "b"
+    ],
+    "units": "Uncalibrated integer ticks and cargo units"
+  },
+  "spec_sha256": "7143ed552f7be0e2e62573bcc05b03e10ad478c9e2564c9968a07e65ee39d080",
+  "method": "HZ_AWA_RADIUS",
+  "wall_ms": 1000,
+  "hard_seconds": 15
+}

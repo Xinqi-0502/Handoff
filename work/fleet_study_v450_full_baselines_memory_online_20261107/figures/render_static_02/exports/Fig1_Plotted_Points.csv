@@ -1,0 +1,9 @@
+figure,panel,m,metric,candidate,baseline,eligible_cases,available_cases,independent_mothers,related_variants_per_mother,candidate_sum,baseline_sum,relative_index_percent,change_percent,aggregation,source_csv
+Fig1,a,6,expanded_labels,HZ_AWA_RADIUS_PAIR_GATED,HZ_AWA_RADIUS,64,64,16,4,1577.0,2857.0,55.1977598879944,-44.8022401120056,ratio of sums; per-case median of three times,Directed_Proof_Pairs.csv
+Fig1,b,6,proof_time_seconds,HZ_AWA_RADIUS_PAIR_GATED,HZ_AWA_RADIUS,64,64,16,4,0.20635179989039898,0.23513130005449057,87.76024282712592,-12.239757172874079,ratio of sums; per-case median of three times,Directed_Proof_Pairs.csv
+Fig1,a,8,expanded_labels,HZ_AWA_RADIUS_PAIR_GATED,HZ_AWA_RADIUS,64,64,16,4,4019.0,8125.0,49.464615384615385,-50.535384615384615,ratio of sums; per-case median of three times,Directed_Proof_Pairs.csv
+Fig1,b,8,proof_time_seconds,HZ_AWA_RADIUS_PAIR_GATED,HZ_AWA_RADIUS,64,64,16,4,0.7923266988946125,1.0164615998510271,77.94949646998333,-22.05050353001667,ratio of sums; per-case median of three times,Directed_Proof_Pairs.csv
+Fig1,a,10,expanded_labels,HZ_AWA_RADIUS_PAIR_GATED,HZ_AWA_RADIUS,64,64,16,4,15771.0,35079.0,44.9585221927649,-55.0414778072351,ratio of sums; per-case median of three times,Directed_Proof_Pairs.csv
+Fig1,b,10,proof_time_seconds,HZ_AWA_RADIUS_PAIR_GATED,HZ_AWA_RADIUS,64,64,16,4,3.642900599865243,4.869705799850635,74.80740622928347,-25.192593770716528,ratio of sums; per-case median of three times,Directed_Proof_Pairs.csv
+Fig1,a,12,expanded_labels,HZ_AWA_RADIUS_PAIR_GATED,HZ_AWA_RADIUS,63,64,16,4,55995.0,124871.0,44.842277230101466,-55.157722769898534,ratio of sums; per-case median of three times,Directed_Proof_Pairs.csv
+Fig1,b,12,proof_time_seconds,HZ_AWA_RADIUS_PAIR_GATED,HZ_AWA_RADIUS,63,64,16,4,12.246956700459123,17.067074900027364,71.75779547577591,-28.242204524224093,ratio of sums; per-case median of three times,Directed_Proof_Pairs.csv

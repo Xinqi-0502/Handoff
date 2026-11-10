@@ -1,0 +1,41 @@
+{"job": 0, "status": "START", "args": ["pilot", "--inputs", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\instances\\pilot_01\\INPUTS.json", "--run", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m6_01", "--gate", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\gates\\micro_all_01\\GATE.json", "--start", "0", "--stop", "8", "--wall-ms", "1000", "--hard-seconds", "15", "--oracle-seconds", "15", "--repeats", "3"]}
+{"case": "v448_radius_pilot_s9486001_m6_tight_free", "cases_done": 1, "cases_total": 8, "records": 14, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9486001_m6_tight_signal", "cases_done": 2, "cases_total": 8, "records": 28, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9486001_m6_roomier_free", "cases_done": 3, "cases_total": 8, "records": 42, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9486001_m6_roomier_signal", "cases_done": 4, "cases_total": 8, "records": 56, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9486002_m6_tight_free", "cases_done": 5, "cases_total": 8, "records": 70, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9486002_m6_tight_signal", "cases_done": 6, "cases_total": 8, "records": 84, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9486002_m6_roomier_free", "cases_done": 7, "cases_total": 8, "records": 98, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9486002_m6_roomier_signal", "cases_done": 8, "cases_total": 8, "records": 112, "hard_timeouts": 0}
+{"status": "PASS", "mode": "pilot", "records": 112, "hard_timeouts": 0, "cases": 8, "expected_attempts": 112, "exact_oracles": 8, "seconds": 1.3256412000628188}
+{"job": 1, "status": "START", "args": ["pilot", "--inputs", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\instances\\pilot_01\\INPUTS.json", "--run", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m8_01", "--gate", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\gates\\micro_all_01\\GATE.json", "--start", "8", "--stop", "16", "--wall-ms", "1000", "--hard-seconds", "15", "--oracle-seconds", "15", "--repeats", "3"]}
+{"case": "v448_radius_pilot_s9488001_m8_tight_free", "cases_done": 1, "cases_total": 8, "records": 14, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9488001_m8_tight_signal", "cases_done": 2, "cases_total": 8, "records": 28, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9488001_m8_roomier_free", "cases_done": 3, "cases_total": 8, "records": 42, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9488001_m8_roomier_signal", "cases_done": 4, "cases_total": 8, "records": 56, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9488002_m8_tight_free", "cases_done": 5, "cases_total": 8, "records": 70, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9488002_m8_tight_signal", "cases_done": 6, "cases_total": 8, "records": 84, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9488002_m8_roomier_free", "cases_done": 7, "cases_total": 8, "records": 98, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9488002_m8_roomier_signal", "cases_done": 8, "cases_total": 8, "records": 112, "hard_timeouts": 0}
+{"status": "PASS", "mode": "pilot", "records": 112, "hard_timeouts": 0, "cases": 8, "expected_attempts": 112, "exact_oracles": 8, "seconds": 3.89958830003161}
+{"job": 2, "status": "START", "args": ["pilot", "--inputs", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\instances\\pilot_01\\INPUTS.json", "--run", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m10_01", "--gate", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\gates\\micro_all_01\\GATE.json", "--start", "16", "--stop", "24", "--wall-ms", "1000", "--hard-seconds", "15", "--oracle-seconds", "15", "--repeats", "3"]}
+{"case": "v448_radius_pilot_s9490001_m10_tight_free", "cases_done": 1, "cases_total": 8, "records": 14, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9490001_m10_tight_signal", "cases_done": 2, "cases_total": 8, "records": 28, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9490001_m10_roomier_free", "cases_done": 3, "cases_total": 8, "records": 42, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9490001_m10_roomier_signal", "cases_done": 4, "cases_total": 8, "records": 56, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9490002_m10_tight_free", "cases_done": 5, "cases_total": 8, "records": 70, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9490002_m10_tight_signal", "cases_done": 6, "cases_total": 8, "records": 84, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9490002_m10_roomier_free", "cases_done": 7, "cases_total": 8, "records": 98, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9490002_m10_roomier_signal", "cases_done": 8, "cases_total": 8, "records": 112, "hard_timeouts": 0}
+{"status": "PASS", "mode": "pilot", "records": 112, "hard_timeouts": 0, "cases": 8, "expected_attempts": 112, "exact_oracles": 8, "seconds": 25.235995499999262}
+{"job": 3, "status": "START", "args": ["pilot", "--inputs", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\instances\\pilot_01\\INPUTS.json", "--run", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m12_01", "--gate", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\gates\\micro_all_01\\GATE.json", "--start", "24", "--stop", "32", "--wall-ms", "1000", "--hard-seconds", "15", "--oracle-seconds", "15", "--repeats", "3"]}
+{"case": "v448_radius_pilot_s9492001_m12_tight_free", "cases_done": 1, "cases_total": 8, "records": 14, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9492001_m12_tight_signal", "cases_done": 2, "cases_total": 8, "records": 28, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9492001_m12_roomier_free", "cases_done": 3, "cases_total": 8, "records": 42, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9492001_m12_roomier_signal", "cases_done": 4, "cases_total": 8, "records": 56, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9492002_m12_tight_free", "cases_done": 5, "cases_total": 8, "records": 70, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9492002_m12_tight_signal", "cases_done": 6, "cases_total": 8, "records": 84, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9492002_m12_roomier_free", "cases_done": 7, "cases_total": 8, "records": 98, "hard_timeouts": 0}
+{"case": "v448_radius_pilot_s9492002_m12_roomier_signal", "cases_done": 8, "cases_total": 8, "records": 112, "hard_timeouts": 0}
+{"status": "PASS", "mode": "pilot", "records": 112, "hard_timeouts": 0, "cases": 8, "expected_attempts": 112, "exact_oracles": 8, "seconds": 70.67867870000191}
+{"status": "ALL_JOBS_COMPLETE", "jobs": 4}

@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\admin\\.codex\\skills\\nature-figure\\scripts\\audit_pdf_text.py",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\render_static_02\\exports\\Fig1_Same_Kernel_Scale.pdf",
+    "--min-pt",
+    "5",
+    "--json"
+  ],
+  "returncode": 0
+}

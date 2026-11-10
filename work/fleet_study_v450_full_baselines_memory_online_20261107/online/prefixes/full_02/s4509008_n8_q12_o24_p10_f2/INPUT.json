@@ -1,0 +1,74 @@
+{
+  "c": {
+    "seed": 4509008,
+    "actors": [
+      "A",
+      "B"
+    ],
+    "old": {
+      "a0": "EUv",
+      "a1": "WUv",
+      "a2": "WUu",
+      "a3": "WDu",
+      "a4": "EUu",
+      "a5": "EDu",
+      "a6": "EDx",
+      "a7": "WUx",
+      "b0": "EUu",
+      "b1": "WDv",
+      "b2": "WUu",
+      "b3": "WUv",
+      "b4": "EDv",
+      "b5": "EDu",
+      "b6": "WDu",
+      "b7": "EUx"
+    },
+    "size": {
+      "a0": 1,
+      "a1": 2,
+      "a2": 1,
+      "a3": 2,
+      "a4": 2,
+      "a5": 1,
+      "a6": 1,
+      "a7": 2,
+      "b0": 1,
+      "b1": 1,
+      "b2": 1,
+      "b3": 1,
+      "b4": 2,
+      "b5": 2,
+      "b6": 2,
+      "b7": 2
+    },
+    "start": {
+      "A": "AinW",
+      "B": "BinE"
+    },
+    "slow": 2
+  },
+  "people": true,
+  "offset": 24,
+  "mode": "prefix",
+  "wave": null,
+  "plan": null,
+  "initial_xml_hash": "b12e555d3e00002c5297504a3855bd0154faeba00e344f2b492817e356c8efbf",
+  "runtime": {
+    "project_dir": "D:\\traffic-coop-research",
+    "python": "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "python_version": "3.12.14",
+    "sumo_binary": "D:\\traffic-coop-research\\.venv\\Lib\\site-packages\\sumo\\bin\\sumo.exe",
+    "netconvert_binary": "D:\\traffic-coop-research\\.venv\\Lib\\site-packages\\sumo\\bin\\netconvert.exe",
+    "packages": {
+      "eclipse-sumo": "1.27.1",
+      "traci": "1.27.1",
+      "sumolib": "1.27.1"
+    },
+    "sumo_version_text": "Eclipse SUMO sumo 1.27.1\n Build features: Windows-10.0.26100 AMD64 MSVC 19.51.36247.0 Release FMI Proj GUI FMT Intl SWIG Parquet Eigen GDAL FFmpeg OSG GL2PS JuPedSim\n Copyright (C) 2001-2026 German Aerospace Center (DLR) and others; https://sumo.dlr.de\n\nEclipse SUMO sumo 1.27.1 is part of SUMO.\nThis program and the accompanying materials\nare made available under the terms of the Eclipse Public License v2.0\nwhich accompanies this distribution, and is available at\nhttp://www.eclipse.org/legal/epl-v20.html\nThis program may also be made available under the following Secondary\nLicenses when the conditions for such availability set forth in the Eclipse\nPublic License 2.0 are satisfied: GNU General Public License, version 2\nor later which is available at\nhttps://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html\nSPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later\n",
+    "binary_sha256": {
+      "sumo": "e39d9f60e2494570bc826d29ac0a22c3fe311c2b222469cb5063591b4574d05c",
+      "netconvert": "b85bbcecd3c60799c3a0eb7f1077f9608b0187da29babc3a20f326f97d23942f"
+    }
+  },
+  "net": "dc4a5047cb2bd1f26be90ffc864fb58c177c7404d77302b7205a498c3aa8244e"
+}

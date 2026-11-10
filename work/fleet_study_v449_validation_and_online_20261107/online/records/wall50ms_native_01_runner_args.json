@@ -1,0 +1,15 @@
+[
+  "--inputs",
+  "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\INPUTS_01.json",
+  "--gate",
+  "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\gates\\check_01",
+  "--out",
+  "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\runs\\wall50ms_native_01",
+  "--mode",
+  "wall",
+  "--repeats",
+  "3",
+  "--native",
+  "--wall-seconds",
+  "0.05"
+]

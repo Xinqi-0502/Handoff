@@ -1,0 +1,557 @@
+[
+  {
+    "kind": "title",
+    "text": "A Joint Capacity-Release Lower Bound for Two-Stage Urban Freight Handoffs"
+  },
+  {
+    "kind": "author",
+    "text": "Xinqi Wei"
+  },
+  {
+    "kind": "abstract",
+    "text": "Direct freight handoffs require enough space on the receiving vehicle. With two incoming loads, deliveries that release capacity before the first handoff also affect the second. Treating these requirements separately loses that dependence. A joint lower bound is developed for a fixed receiver, transfer site and pickup order under first-in-first-out travel times. It links both handoffs through one time variable, counts each old parcel once, and includes the delivery forced between the two receipts. A finite set of event times replaces continuous minimization. A cheap upper bound on the relaxation identifies checks that cannot prune. In a confirmation study of 256 scenarios from 64 independent synthetic networks, the added check reduced completed expansions by 54.74% and aggregate optimality-proof time by 27.17% relative to the same Anytime Weighted A* implementation on 255 commonly certified scenarios. All methods found the exact local optimum within one second on all 256 scenarios. Reaching 5% and 10% duration-gap targets took 2.82% and 4.07% longer. A separate SUMO integration retained identical customer outcomes and truck waiting across 64 traffic conditions. The measured benefit is lower computation for certifying the local handoff optimum."
+  },
+  {
+    "kind": "p",
+    "text": "Keywords: urban freight; synchronized handoff; capacity release; admissible lower bound; anytime search"
+  },
+  {
+    "kind": "h1",
+    "text": "1. Introduction"
+  },
+  {
+    "kind": "p",
+    "text": "A large delivery vehicle can leave a transfer site once its last load has been accepted by smaller receiving vehicles. Without temporary storage, spare receiving capacity determines when that departure becomes feasible. A receiver that is still carrying old parcels must deliver some of them before taking another load. Travel and signal waiting make the time needed to release this capacity part of the handoff decision."
+  },
+  {
+    "kind": "p",
+    "text": "Mobile-depot routing coordinates support vehicles, receiving vehicles and replenishment times [1]. Time-dependent truck–unmanned-ground-vehicle routing links transport and customer service under changing travel conditions [2]. Oliveira et al. model synchronized multi-trip transfers without intermediate storage, requiring receiving vehicles to arrive empty [3]. Himstedt and Meisel include waiting and cross-echelon synchronization in ALNS route planning for mixed delivery systems [4]. The local problem studied here allows old freight to remain onboard at the first receipt. It asks whether the capacity dependence between two successive handoffs can rule out search states cheaply enough to reduce the cost of exact local planning."
+  },
+  {
+    "kind": "p",
+    "text": "Vidal et al. study route evaluation and departure and service-time decisions for fixed visit sequences [5]. Here, the old-delivery sequence remains a search decision. An individual return-time threshold gives an inexpensive necessary condition for releasing a specified quantity. A connected release route gives a tighter condition but requires a subset-routing calculation. Separate quota calculations leave the allocation of old deliveries between two handoffs unresolved. The same old parcel cannot provide new capacity twice. When the two incoming loads cannot coexist on the receiver, the first must be delivered before the second can be accepted. These restrictions can be used without solving the complete release route."
+  },
+  {
+    "kind": "p",
+    "text": "The contribution is a joint relaxation that retains one common first-handoff time and the identities of old parcels, together with a deterministic test for skipping an unproductive evaluation. Weighted resource thresholds [6], resource-event accounting [7] and lazy heuristic evaluation [8] supply established ingredients. The construction here adds the two handoff quotas and the mandatory delivery loop to a finite-event lower-bound query. Its contribution is tested inside the same search implementation. A separate customer-flow adapter then checks whether the computational effect changes executed service in a signalized traffic simulation."
+  },
+  {
+    "kind": "h1",
+    "text": "2. Local handoff problem"
+  },
+  {
+    "kind": "p",
+    "text": "The local problem fixes one receiver, one transfer site h and two indivisible incoming loads received in order a then b. At time t, the receiver is at p with old parcels O of positive weights, total weight W ≤ Q and capacity Q. Each old parcel o has weight w_o, destination z_o and service time s_o. The supplier arrives at h at time A and remains available through both handoffs, whose durations are τ_a and τ_b. There is no intermediate storage, splitting or other replenishment."
+  },
+  {
+    "kind": "eq",
+    "text": "0<w_a<w_b\\leq Q,\\quad w_a+w_b>Q,\\quad q_a=\\max(0,W+w_a-Q),\\quad q_b=\\max(0,W+w_b-Q).",
+    "number": "1"
+  },
+  {
+    "kind": "p",
+    "text": "The receiver must deliver a before accepting b because their combined weight exceeds Q. The quotas q_a and q_b are the old-cargo weights that must have been delivered by the respective handoffs. Travel is load-independent. Its earliest-arrival closure permits waiting and is first-in-first-out (FIFO), so leaving later cannot give an earlier best arrival. Services are nonnegative. The objective H_2 is the completion time of the second handoff. Remaining old deliveries and the delivery of b are outside this local objective."
+  },
+  {
+    "kind": "p",
+    "text": "A search state records the remaining old identities, position, time, handoff phase and whether a has been delivered. The complete search considers feasible old deliveries and handoff transitions. An incumbent U is the H_2 value of a feasible continuation. A lower bound at least U can reject the state without losing a strictly better solution. Equal-cost solutions need not all be enumerated."
+  },
+  {
+    "kind": "h1",
+    "text": "3. Joint capacity-release bound"
+  },
+  {
+    "kind": "h2",
+    "text": "3.1. Independent quota relaxation"
+  },
+  {
+    "kind": "p",
+    "text": "For each old parcel o, let v_o be the earliest return to h after leaving the current state, delivering o and completing its service. For positive quota q, R_q is the smallest threshold r for which the weight of parcels with v_o ≤ r reaches q. Set R_0 to the direct earliest arrival at h. These individual witnesses relax the connected route needed to serve several parcels. Let F_a(x) be the earliest return to h after departing h at x and delivering a. The independent RADIUS bound is"
+  },
+  {
+    "kind": "eq",
+    "text": "B=\\max(A,R_{q_a})+\\tau_a,\\qquad H_R=\\max\\{F_a(B),A,R_{q_b}\\}+\\tau_b.",
+    "number": "2"
+  },
+  {
+    "kind": "p",
+    "text": "B bounds the first-handoff completion time. H_R also accounts for the mandatory a-delivery loop and the total old-cargo quota before the second handoff. It does not require the two quota witnesses to use a common first-handoff time. ROUTE, the earlier exact quota-path variant in this study, replaces individual thresholds with minimum connected release routes."
+  },
+  {
+    "kind": "h2",
+    "text": "3.2. Shared time and parcel identities"
+  },
+  {
+    "kind": "p",
+    "text": "Consider a candidate first-handoff completion time x ≥ B. An old parcel belongs to E_1(x) if its individual delivery-and-return witness can finish before that handoff. All parcels in E_1(x) are credited optimistically, even if no single route can serve them together. The remaining old-cargo quota is"
+  },
+  {
+    "kind": "eq",
+    "text": "\\alpha_o=v_o+\\tau_a,\\quad E_1(x)=\\{o\\in O:\\alpha_o\\leq x\\},\\quad q(x)=\\max\\left(0,q_b-\\sum_{o\\in E_1(x)}w_o\\right).",
+    "number": "3"
+  },
+  {
+    "kind": "p",
+    "text": "For an old parcel outside E_1(x), Γ_o(x) is the earlier return from the two hub loops that visit a and o in either order, including both services. Let T(x) be the smallest Γ threshold whose parcels cover q(x). Only identities outside E_1(x) are eligible. Set T(x)=x when q(x)=0. The relaxed second-handoff time is"
+  },
+  {
+    "kind": "eq",
+    "text": "\\Phi(x)=\\max\\{F_a(x),T(x)\\}+\\tau_b,\\qquad X=\\{B\\}\\cup\\{\\alpha_o:\\alpha_o\\geq B\\},",
+    "number": "4"
+  },
+  {
+    "kind": "eq",
+    "text": "H_{\\mathrm{PAIR}}=\\max\\left\\{H_R,\\min_{x\\in X}\\Phi(x)\\right\\}.",
+    "number": "5"
+  },
+  {
+    "kind": "p",
+    "text": "Proposition 1. Under the assumptions in Section 2, H_PAIR is an admissible lower bound on H_2. The event set X exactly minimizes this coverage relaxation over all x ≥ B."
+  },
+  {
+    "kind": "p",
+    "text": "Proof. Let x* be the first-handoff completion time of a feasible continuation. Every old parcel delivered before it belongs to E_1(x*). By the second handoff, at least q_b old weight must be delivered. Even after crediting all of E_1(x*), at least q(x*) weight outside this set must be delivered between handoffs. Each such parcel shares that interval with mandatory delivery a, so deleting other visits gives a Γ witness no later than the actual return. Thus Φ(x*)≤H_2. Between consecutive α events, eligible identities and quotas are fixed. FIFO makes F_a, Γ and their weighted threshold nondecreasing, so the preceding event or B cannot increase Φ. Taking the maximum with the valid H_R preserves admissibility. Appendix A gives boundary cases and the full argument."
+  },
+  {
+    "kind": "h2",
+    "text": "3.3. Selective evaluation"
+  },
+  {
+    "kind": "p",
+    "text": "A stronger bound need not be worth its evaluation cost. The selected implementation keeps RADIUS for queue ordering and applies the joint rule only as a rejection check when a pre-first-handoff state is popped. Before that check, it constructs"
+  },
+  {
+    "kind": "eq",
+    "text": "x_{\\mathrm{cap}}=\\max\\{B,R_{q_b}+\\tau_a\\},\\qquad U_{\\mathrm{rel}}=F_a(x_{\\mathrm{cap}})+\\tau_b.",
+    "number": "6"
+  },
+  {
+    "kind": "p",
+    "text": "Proposition 2. If H_R<U and U_rel<U, the full joint check cannot reject the state and can be skipped. At x_cap, E_1 already covers q_b, so Φ(x_cap)=U_rel. Consequently, the minimum in (5) is at most U_rel. This is an upper bound on a relaxation minimum. It is neither a feasible-route cost nor an admissible lower bound."
+  },
+  {
+    "kind": "p",
+    "text": "Algorithm 1 exposes the added check in lines 8–22. The raw RADIUS values supply B, q_a, q_b and x_cap from (6). If the skip test fails, the check scans candidate first-handoff times and accumulates distinct old-parcel weight that meets the return deadline. Here weight(C) sums the weights of distinct parcels in C. An event covering q_b keeps the state because the relaxation remains below U. Exhausting the candidates prunes it. Gamma comparisons stop as soon as one visit order meets the deadline, and weight accumulation stops once the quota is covered."
+  },
+  {
+    "kind": "p",
+    "text": "After receipt a, let W_s be the remaining old load and q_s=max(0,W_s+w_b−Q). The current old-delivery witnesses give the threshold for q_s, denoted R(q_s), with R(0) equal to direct hub arrival. Let D_a be direct hub arrival if a is already delivered, or earliest return via delivery a otherwise. The common continuation bound is H_1=max(D_a,R(q_s))+τ_b. In Algorithm 1, H_common uses (2) before receipt a, H_1 between receipts, and the current time at a terminal state. Queue priority is g+2h, with g=t−t₀ and h=L−t, where t₀ is the initial vehicle clock. Pruning and certification use the unweighted bound L."
+  },
+  {
+    "kind": "algorithm",
+    "text": "Algorithm 1. Selective capacity-release pruning inside AWA",
+    "lines": [
+      "Input: local state S₀, common bound H_common, time budget T, weight ω=2",
+      "Start the wall-clock timer and construct the common feasible incumbent U",
+      "If initialization exhausts T, return the late incumbent and lower bound t₀",
+      "Insert S₀ into OPEN with L=H_common(S₀) and priority g+ωh",
+      "while OPEN is nonempty and the budget permits do",
+      "    s ← extract the next active state by the common weighted priority",
+      "    if L(s) ≥ U then discard s and continue",
+      "    if s is before the first handoff and x_cap > B then",
+      "        Construct α and E₁ using equation (3)",
+      "        if weight(E₁(B)) < q_b and U_rel ≥ U using (6) then",
+      "            D ← U−τ_b−1 and keep ← false",
+      "            for x in X from (4), sorted increasingly, do",
+      "                if F_a(x) > D then break",
+      "                C ← E₁(x)",
+      "                if weight(C) < q_a then continue",
+      "                for o in O \\ E₁(x) in fixed parcel-ID order do",
+      "                    if weight(C) ≥ q_b then break",
+      "                    if Γ_o(x) ≤ D then C ← C ∪ {o}",
+      "                if weight(C) ≥ q_b then",
+      "                    keep ← true and break",
+      "            if keep is false then",
+      "                Discard s and continue",
+      "    for each feasible delivery or handoff successor y of s do",
+      "        if y is terminal then update U and record its time if improved",
+      "        else if the common duplicate test retains y then",
+      "            Compute H_common(y) and set L(y) ← max{L(s), H_common(y)}",
+      "            if L(y) < U then",
+      "                Insert or reopen y with the same weighted priority rule",
+      "    Record completion of this expansion",
+      "Return the incumbent and min{U, live unweighted frontier bounds}"
+    ]
+  },
+  {
+    "kind": "h1",
+    "text": "4. Experimental design"
+  },
+  {
+    "kind": "p",
+    "text": "Method selection and confirmation used separate synthetic networks. The selection cohort contained 400 scenarios from 100 networks, with 25 networks at each old-order count m=6, 8, 10 and 12. Each network produced four paired variants: tight or roomier capacity, with or without a signal calendar. Nine configurations were run three times. These results selected RADIUS with weight-2 anytime ordering, a pop-time joint cutoff and the skip test in (6). The configuration was frozen before confirmation."
+  },
+  {
+    "kind": "p",
+    "text": "The confirmation cohort contained 256 new scenarios from 64 networks, with 16 networks at each m. The four methods were complete domain-adapted implementations of Hansen–Zhou Anytime Weighted A* (AWA) [9], the same AWA plus the selected PAIR check, ANA* [10], and the frozen specialized implementation. AWA and ANA* shared the RADIUS heuristic, transition model, initial feasible solution, Pathmax and certificate calculation. The decisive ablation changed only the PAIR hook inside the same AWA engine. Appendix B states the published-policy adaptations and separates them from complete freight-system algorithms."
+  },
+  {
+    "kind": "p",
+    "text": "Each call included initialization and a freshly computed common greedy incumbent. The soft budget was one second, checked between completed expansions, with a 15-second cooperative hard limit. Literal 100, 500 and 1,000 ms quality was read from timestamped incumbent traces. An independent dynamic program supplied exact local optima outside the timed search. Improving plans were replayed independently. Twenty-four microinstances and seven hand-built graph-policy/budget checks checked feasibility, bound use, reopening, priority updates and certificates before the confirmation runs."
+  },
+  {
+    "kind": "p",
+    "text": "Three repeats measured timing variability, not three independent demand samples. Reported aggregate times are sums of per-scenario medians. Proof-time ratios use scenarios certified within one second by both methods in all three repeats. All scenarios remain in Table B2 in Appendix B. First-target time uses H_2 ≤ H_2* + ε(H_2*−t_0), with ε=0, 0.05 or 0.10 and initial vehicle clock t_0. The oracle target is used only for evaluation. Tests ran on an Intel Core i5-13600KF with 32 GiB RAM under Windows 11. Appendix B records seeds, controls and the separate process-memory protocol."
+  },
+  {
+    "kind": "h1",
+    "text": "5. Results"
+  },
+  {
+    "kind": "h2",
+    "text": "5.1. Search reduction and proof cost"
+  },
+  {
+    "kind": "p",
+    "text": "All four methods found the exact H_2 optimum within one second in all 256 confirmation scenarios and all three repeats. PAIR and the specialized implementation also certified all 256. AWA and ANA* each certified 255. On the 255 common AWA–PAIR cases, completed expansions fell from 170,932 to 77,362, a 54.74% reduction. Summed median proof time fell from 23.1884 to 16.8885 s, a 27.17% reduction. PAIR was faster on 233 cases and slower on 22. Among 63 networks with all four variants eligible, proof time improved on 60 and worsened on three."
+  },
+  {
+    "kind": "figure",
+    "text": "Figure 1. Same-engine PAIR versus AWA–RADIUS by old-order count. Each value divides the PAIR sum by the baseline sum over common scenarios certified within one second in all three repeats. Baseline equals 100%. The groups contain 64, 64, 64 and 63 scenarios. Timing uses per-scenario medians. Lower values indicate less work or time.",
+    "file": "fig01_search_work_and_proof_time.png",
+    "width": 16
+  },
+  {
+    "kind": "p",
+    "text": "The state reduction remained substantial at every tested scale, while the time saving rose from 12.24% at m=6 to 28.24% at m=12 (Figure 1). Against ANA* on 255 commonly certified scenarios, PAIR reduced expansions by 51.64% and proof time by 23.42%. This comparison changes both the pruning rule and search policy. The same-engine comparison above isolates the added check."
+  },
+  {
+    "kind": "p",
+    "text": "The selection ablations explain why the final method uses a cutoff rather than a full bound at every successor. Eager numeric PAIR reduced expansions by 55.72% against unweighted RADIUS but increased proof time by 12.57%. Lazy numeric evaluation retained that expansion count and reduced time by 11.62%. Under weighted search, the selective version expanded 6.60% more states than full numeric PAIR yet finished proof 19.72% sooner. Table B1 in Appendix B retains these design-stage comparisons, including the exact ROUTE and unpruned controls."
+  },
+  {
+    "kind": "h2",
+    "text": "5.2. Solution quality and memory"
+  },
+  {
+    "kind": "p",
+    "text": "Less proof work did not improve every anytime endpoint. On all 256 confirmation scenarios, the aggregate time to first reach the exact optimum fell by 7.96%, whereas the 5% and 10% duration-gap targets took 2.82% and 4.07% longer (Figure 2). At 100 ms, PAIR had lower, equal and higher case-median H_2 than AWA in 6, 249 and 1 scenarios. All methods tied at the one-second quality endpoint. The clearest advantage is therefore certifying the same local optimum at lower cost."
+  },
+  {
+    "kind": "figure",
+    "text": "Figure 2. Change in summed median target time for PAIR relative to the identical AWA engine. Negative values are faster. Approximate targets use the remaining-duration gap defined in Section 4. The three first-solution endpoints use all 256 scenarios. Proof time uses the 255 common all-repeat certifications.",
+    "file": "fig02_anytime_timing_tradeoff.png",
+    "width": 16
+  },
+  {
+    "kind": "p",
+    "text": "Actual process memory was measured separately on 32 scenarios in 128 fresh processes. Median peak working sets were 27,236 KiB for AWA and 27,114 KiB for same-engine PAIR. In 28 and 30 of their 32 runs, respectively, search did not exceed the process peak already reached during startup. These measurements do not establish an algorithmic memory saving. Table B3 in Appendix B reports the memory measurements."
+  },
+  {
+    "kind": "h2",
+    "text": "5.3. Online traffic integration"
+  },
+  {
+    "kind": "p",
+    "text": "The joint check was also inserted into a customer-flow search on one signalized SUMO network [11], replacing only the second incoming customer’s handoff bound. Eight order instances generated 64 paired traffic conditions, each with 18 customers. At 10, 50 and 200 ms, both methods executed identical plans and activation ticks, giving identical customer completion times and truck waiting. Expansions fell by 2.70% at 50 and 200 ms, but proof time increased by 5.57% on the 63 common 50 ms cases and by 2.87% on all 64 cases at 200 ms. The 10 ms runs predominantly used late initialization fallbacks. Appendix C gives the objective bridge, execution checks and deadline failures."
+  },
+  {
+    "kind": "h1",
+    "text": "6. Discussion and conclusion"
+  },
+  {
+    "kind": "p",
+    "text": "Sharing the first-handoff time rules out combinations of capacity-release witnesses that separate quota tests admit. Selective evaluation then limits the work spent finding that conflict. The same-engine ablation supports a computational contribution: fewer expansions and less time to certify H_2 on the tested local problems. The approximate-solution endpoints show its cost when an early acceptable plan matters more than a certificate."
+  },
+  {
+    "kind": "p",
+    "text": "The model fixes two atomic incoming loads, their order, the receiver and transfer site within each branch. The simulation tests one decision epoch on a synthetic network, without city-level calibration or field validation. Equal executed plans and 0.2 s activation ticks left no incremental customer-service benefit in this experiment. Finer execution timing, repeated dispatch decisions and alternative load orders require separate tests. The present evidence supports the joint bound as a search component, with its practical benefit concentrated on local optimality certification."
+  },
+  {
+    "kind": "p",
+    "text": "Acknowledgment. The author thanks Professor Jian Zhang of the Faculty of Transportation, Southeast University, for guidance on this study."
+  },
+  {
+    "kind": "appendix_start",
+    "text": ""
+  },
+  {
+    "kind": "h1",
+    "text": "Appendix A. Bound derivation and implementation"
+  },
+  {
+    "kind": "h2",
+    "text": "A.1. Travel witnesses and admissibility"
+  },
+  {
+    "kind": "p",
+    "text": "Let A_uv(t) denote the FIFO earliest-arrival closure from u to v when departure is no earlier than t. Waiting is allowed. Serving parcel o adds s_o at z_o. Then v_o is obtained by composing travel from p to z_o, service s_o, and travel from z_o to h. The loop F_a starts at h at time x, visits z_a, completes service s_a, and returns to h. The two ordered loops defining Γ_o(x) are h→z_a→z_o→h and h→z_o→z_a→h, with the appropriate service after each visit. Γ_o is their minimum. FIFO is preserved by composition, adding a fixed nonnegative service and taking a finite minimum of nondecreasing arrival functions."
+  },
+  {
+    "kind": "p",
+    "text": "For any feasible first-handoff completion x*, the pre-handoff receiver route has returned to h by x*−τ_a and released at least q_a old weight. Each old parcel on that route has v_o≤x*−τ_a. Hence B≤x*, and the actual first-stage identities form a subset of E_1(x*). The optimistic set E_1 can contain mutually incompatible witnesses. This only credits extra old weight and weakens the bound."
+  },
+  {
+    "kind": "p",
+    "text": "By the second handoff, at least q_b distinct old weight must have been delivered. Any necessary old parcel outside E_1(x*) was delivered between handoffs. The same route also delivered a. Removing its other visits gives one of the two Γ witnesses no later than the actual return. Therefore the Γ threshold covers the residual quota by that return, and F_a also finishes by it. Adding τ_b proves Φ(x*)≤H_2 for every feasible continuation. The argument assumes atomic loads, no temporary unloading and the fixed a-before-b order. Capacity alone does not establish that this pickup order is optimal in an unrestricted problem."
+  },
+  {
+    "kind": "p",
+    "text": "Between consecutive α events, E_1 and q(x) are constant. Every Γ and F_a is nondecreasing. Their weighted threshold and maximum are therefore nondecreasing on that interval. Moving x* to the preceding event or to B cannot increase Φ. All α equal to B are included through the ≤ test in E_1. Duplicate events can be merged. If the old set or quota is empty, the zero-quota convention applies. An impossible threshold is infinity. These rules establish the finite-event minimum in (5)."
+  },
+  {
+    "kind": "h2",
+    "text": "A.2. Prune-only cutoff and cost"
+  },
+  {
+    "kind": "p",
+    "text": "The local experiments use integer time ticks. A state with joint bound at least U cannot improve the incumbent. For a Boolean check, define D=U−τ_b−1. An event qualifies if F_a(x)≤D and the union of E_1(x) with eligible outside identities satisfying Γ_o(x)≤D covers q_b. Finding one qualifying event means the relaxation is below U. Exhausting the event set rejects the state. The −1 is specific to integer time and is not used in the continuous online adapter."
+  },
+  {
+    "kind": "p",
+    "text": "If x_cap=B, E_1(B) covers q_b and the joint bound equals H_R. This gives the first bypass in Algorithm 1. At x_cap in (6), all identities needed by the independent q_b threshold lie in E_1. The remaining quota is zero and Φ(x_cap)=U_rel. Given H_R<U, U_rel<U proves that the full relaxation cannot reach U. The skip is deterministic and does not estimate whether pruning is likely. No feasible incumbent is updated with U_rel."
+  },
+  {
+    "kind": "p",
+    "text": "There are at most m+1 candidate events. A direct numeric evaluation sorts up to m Γ values at each event, requiring O(m² log m) comparison work and O(m²) travel-function evaluations. A Boolean deadline scan avoids the per-event Γ sort and uses O(m²) scans/evaluations after event construction. These counts treat closure evaluation separately. The implementation still constructs event thresholds and retains a subset-weight table. They are not bounds on the time or memory of the complete search."
+  },
+  {
+    "kind": "p",
+    "text": "Certification completes when no live unweighted bound can improve U. Budget checks occur between complete expansions, and initialization overruns remain charged. The subset-weight table and the complete search remain combinatorial."
+  },
+  {
+    "kind": "h1",
+    "text": "Appendix B. Controlled comparisons and reproducibility"
+  },
+  {
+    "kind": "h2",
+    "text": "B.1. Cohorts and baseline identity"
+  },
+  {
+    "kind": "p",
+    "text": "The 400 selection scenarios and 256 confirmation scenarios are distinct. Confirmation seeds are 94500000+1000m+i for m∈{6,8,10,12}, i=1,…,16. Each network is tested with Q equal to its old load L or ceil(1.25L), crossed with signal-off and signal-on calendars. A separate cost pilot used seeds 94510000+1000m+i. Paired capacity and calendar variants share a network and are not treated as independent demand samples. The three timing runs per scenario are technical repeats."
+  },
+  {
+    "kind": "p",
+    "text": "The confirmation implementations follow the full printed AWA and ANA* search loops [9,10]. AWA keeps weighted OPEN ordering, strict-improvement reopening, feasible-goal updates, admissible pruning and a frontier certificate. ANA* uses maximum potential (U−t_0−g)/h, goal-pop incumbent updates, and global OPEN rekeying after an improvement. Common adaptations are a finite greedy seed, study-specific states and heuristics, stable ties and forward Pathmax. The ANA* implementation follows the published pseudocode rather than the integer-key details of the SBPL C++ implementation. These are complete search-policy reimplementations with domain adapters. Neither is a reconstruction of the complete Hof–Schneider or Wei freight-routing algorithm."
+  },
+  {
+    "kind": "p",
+    "text": "All methods use the same objective, initial solution generator, state transitions, calendar, capacity constraints and timing boundary within each comparison. The same-engine AWA comparison also shares data structures, cache and phase-one logic. Its only added component is the gated PAIR hook. The specialized implementation has different bookkeeping overhead. Its speed difference from the generic engine is therefore reported separately and not assigned entirely to the joint bound."
+  },
+  {
+    "kind": "table",
+    "text": "Table B1. Design-stage ablations and controls on 400 selection scenarios. Changes compare the first method with the second. Time is the sum of case-median proof times on the stated common subset. Selection results chose the method and are not independent confirmation of that choice.",
+    "headers": [
+      "Comparison",
+      "Common cases",
+      "Expansion change",
+      "Proof-time change"
+    ],
+    "rows": [
+      [
+        "Eager PAIR / RADIUS",
+        "400",
+        "−55.72%",
+        "+12.57%"
+      ],
+      [
+        "Lazy PAIR / RADIUS",
+        "400",
+        "−55.72%",
+        "−11.62%"
+      ],
+      [
+        "Numeric PAIR–AWA / AWA",
+        "400",
+        "−56.89%",
+        "−2.41%"
+      ],
+      [
+        "Gated PAIR–AWA / AWA",
+        "400",
+        "−54.04%",
+        "−21.65%"
+      ],
+      [
+        "Gated / numeric PAIR–AWA",
+        "400",
+        "+6.60%",
+        "−19.72%"
+      ],
+      [
+        "Gated / unpruned search",
+        "400",
+        "−95.87%",
+        "−70.50%"
+      ],
+      [
+        "Gated / exact ROUTE",
+        "284",
+        "+0.13%",
+        "−93.01%"
+      ]
+    ]
+  },
+  {
+    "kind": "p",
+    "text": "The exact ROUTE comparison uses only the 284 cases where both methods certified within one second. ROUTE certified 284/400 and the selected method 400/400. Its truncated expansion count on all 400 cases cannot be interpreted as superior search efficiency. On the common subset, almost unchanged expansions coexist with a large time reduction because the cheaper basis removes repeated exact quota-path work. Against unpruned search, the selected method was still slower on 14/400 cases despite a lower aggregate time."
+  },
+  {
+    "kind": "h2",
+    "text": "B.2. Confirmation detail and observed memory"
+  },
+  {
+    "kind": "table",
+    "text": "Table B2. Confirmation quality and proof coverage. A case counts only if every one of its three runs meets the literal deadline. All 256 cases are retained.",
+    "headers": [
+      "Method",
+      "Optimal by 100 ms",
+      "Optimal by 500 ms",
+      "Optimal by 1 s",
+      "Certified by 1 s"
+    ],
+    "rows": [
+      [
+        "AWA–RADIUS",
+        "223",
+        "255",
+        "256",
+        "255"
+      ],
+      [
+        "Same-engine PAIR",
+        "227",
+        "256",
+        "256",
+        "256"
+      ],
+      [
+        "ANA*–RADIUS",
+        "207",
+        "251",
+        "256",
+        "255"
+      ],
+      [
+        "Specialized PAIR",
+        "232",
+        "256",
+        "256",
+        "256"
+      ]
+    ]
+  },
+  {
+    "kind": "p",
+    "text": "The same-engine comparison used 255 common certified cases. Median proof time was lower in 233 and higher in 22. The full three-run timing ranges were separated in favour of PAIR in 175 cases and of the baseline in two, with overlap in 78. At the network level, 60 of the 63 complete paired networks were faster and three slower. The network missing one eligible variant is retained in all deadline-quality summaries."
+  },
+  {
+    "kind": "p",
+    "text": "The specialized and generic PAIR implementations both expanded 82,923 states over all 256 certified cases. Their summed proof times were 14.9630 and 17.6830 s. This is an implementation overhead comparison at equal search work. It explains why the frozen specialized version remains the selected specialized configuration, while the generic same-engine pair supplies the causal mechanism test."
+  },
+  {
+    "kind": "table",
+    "text": "Table B3. Actual process-memory measurements on 32 scenarios, each method in a fresh process. KiB denotes 1,024 bytes. Peaks include startup and imports.",
+    "headers": [
+      "Method",
+      "Median peak working set (KiB)",
+      "Median peak private commit (KiB)",
+      "No new working-set peak"
+    ],
+    "rows": [
+      [
+        "AWA–RADIUS",
+        "27,236",
+        "19,296",
+        "28/32"
+      ],
+      [
+        "Same-engine PAIR",
+        "27,114",
+        "19,126",
+        "30/32"
+      ],
+      [
+        "ANA*–RADIUS",
+        "27,128",
+        "19,128",
+        "28/32"
+      ],
+      [
+        "Specialized PAIR",
+        "27,042",
+        "19,048",
+        "32/32"
+      ]
+    ]
+  },
+  {
+    "kind": "p",
+    "text": "Windows GetProcessMemoryInfo was sampled immediately before and after search. PeakWorkingSetSize is the lifetime resident peak, including shared pages. PeakPagefileUsage is peak private commit, not bytes paged to disk. The 32 cases were a prespecified subset of eight selection networks and are not new accuracy evidence. In most processes, startup established the peak before search began. The small observed peak differences therefore do not identify search-memory savings."
+  },
+  {
+    "kind": "h1",
+    "text": "Appendix C. Online objective and native execution"
+  },
+  {
+    "kind": "h2",
+    "text": "C.1. Customer-flow bridge"
+  },
+  {
+    "kind": "p",
+    "text": "Online dispatch minimizes J=Σ_i(C_i−r_i), where C_i is customer service completion and r_i is release time. The domain fixes the order a then b, selects one of two receivers and one of two transfer sites for both receipts, and retains the other receiver’s common route. Both committed first deliveries finish at epoch E=6 s. The tested branch requires at least one further old delivery before accepting a. Incoming weights are 8 and 10, receiver capacity is 12, and the post-commit old load is 11. The problem therefore activates the two-receipt capacity relation."
+  },
+  {
+    "kind": "p",
+    "text": "For every forecast leg, predicted arrival is at least departure time plus the directed free-flow closure d. All signal and road-state penalties are nonnegative. This static envelope remains valid even though the finite-horizon observation penalty makes the forecast itself non-FIFO. The online Γ functions use this envelope, not general time-dependent arrival functions. The state key retains the full token prefix, clock, position and accumulated customer cost, so an earlier-clock dominance rule is not imported from the FIFO local model."
+  },
+  {
+    "kind": "eq",
+    "text": "J_{\\mathrm{PAIR}}=J_R+H_{\\mathrm{PAIR}}-H_R\\leq J_{\\mathrm{forecast}}(\\pi).",
+    "number": "C1"
+  },
+  {
+    "kind": "p",
+    "text": "Here π is any feasible forecast continuation of the current prefix. J_R contains completed customer cost, the other receiver’s fixed-route forecast cost, and individual completion lower bounds for pending customers. Only b’s handoff term H_R is replaced. Each customer and release time is counted once. The common raw J_R value is cached. The selected gated implementation keeps max(parent bound, guarded raw J_R) for queue ordering and uses PAIR only for pop-time Boolean rejection. The increment in (C1) is calculated from raw local bounds, never added to an inherited Pathmax floor. The inequality concerns the frozen forecast objective and the restricted branch domain, not actual SUMO flow time or global fleet optimality."
+  },
+  {
+    "kind": "h2",
+    "text": "C.2. Execution, costs and null outcomes"
+  },
+  {
+    "kind": "p",
+    "text": "Eight order instances (seeds 4509001–4509008) share one SUMO network. Signal offsets 0/24 s, pedestrian counts 0/10 and slow-vehicle counts 0/2 give 64 paired conditions, with 16 old and two new customers each. Both offsets retain signals. The study made 1,728 policy calls: the two main methods at 10, 50 and 200 ms and RADIUS, ROUTE and ANA* at 50 ms, each run three times. Initialization was charged. SUMO 1.27.1 used seed 40801, a 0.2 s step, 2 s handoffs and 4 s customer service."
+  },
+  {
+    "kind": "p",
+    "text": "Activation occurred at E+ceil(planning time/0.2)×0.2 while receivers waited, and the truck could leave after the final b handoff. Each distinct selected plan/activation combination was replayed, giving 128 native executions. A median-latency representative was selected before observing physical outcomes. Case results weight these replays by policy-selection frequency. Planning repeats therefore do not constitute independent physical replays."
+  },
+  {
+    "kind": "p",
+    "text": "All 128 replays completed 18 customers and passed capacity, ownership and physical-handoff checks. No collisions or relevant intermodal warnings were recorded. Red/yellow stopping occurred in 126 replays and an occupied crossing after activation in 64. These checks verify implemented rules and disturbance exposure. The synthetic network has not been calibrated or validated against field observations."
+  },
+  {
+    "kind": "p",
+    "text": "All formal calls activated at 6.2 s. The two main methods selected identical plans within every condition. At 10 ms, initialization overran the budget in 192/192 PAIR calls and 191/192 AWA calls, so equal executed outcomes do not establish successful within-budget planning. At 50 and 200 ms, both improved the initial plan on all 64 cases. All-repeat proof coverage at 50 ms was 64/64 for PAIR and 63/64 for AWA, rising to 64/64 for both at 200 ms. At 50 ms, both had mean customer flow time 2,416.040625 customer-seconds and mean truck handoff waiting 264.0875 s. Detailed auxiliary comparisons and separate instrumentation remain in the evidence materials. Online memory was not measured."
+  },
+  {
+    "kind": "h1",
+    "text": "Appendix D. Evidence materials"
+  },
+  {
+    "kind": "p",
+    "text": "The manuscript figures are programmatically drawn from the frozen result tables. Figure_Source_Data contains every plotted point. Figure_Code contains the plotting program. Manuscript_Claim_Evidence.json records the source and denominator of each reported result. The underlying research archive retains all order inputs, solver configurations, timestamped search traces, independent oracle and replay checks, native SUMO outputs, memory observations and failed or late runs. Original measurements are not rewritten when a figure or sentence is revised."
+  },
+  {
+    "kind": "p",
+    "text": "The material index supplies descriptive filenames and SHA-256 checksums. Adverse timings, deadline misses and null physical outcomes remain in the complete research archive."
+  },
+  {
+    "kind": "references",
+    "text": "",
+    "items": [
+      "Hof J and Schneider M 2021 Intraroute Resource Replenishment with Mobile Depots Transportation Science 55 660–686. doi:10.1287/trsc.2020.1034",
+      "Wei Y, Wang Y and Hu X 2025 The two-echelon truck-unmanned ground vehicle routing problem with time-dependent travel times Transportation Research Part E 194 103954. doi:10.1016/j.tre.2024.103954",
+      "Oliveira B, Ramos A G and de Sousa J P 2026 A two-echelon vehicle routing problem with multi-trips, synchronisation constraints and direct deliveries, in the context of city logistics Annals of Operations Research 361 805–835. doi:10.1007/s10479-026-07220-y",
+      "Himstedt B and Meisel F 2025 Combining multiple delivery systems for urban logistics by ALNS-based route planning Flexible Services and Manufacturing Journal. doi:10.1007/s10696-025-09648-z",
+      "Vidal T, Crainic T G, Gendreau M and Prins C 2014 A unified solution framework for multi-attribute vehicle routing problems European Journal of Operational Research 234 658–673. doi:10.1016/j.ejor.2013.09.045",
+      "Laborie P 2003 Algorithms for propagating resource constraints in AI planning and scheduling: Existing approaches and new results Artificial Intelligence 143 151–188. doi:10.1016/S0004-3702(02)00362-4",
+      "Muscettola N 2004 Incremental Maximum Flows for Fast Envelope Computation Proceedings of ICAPS 2004 pp 260–268",
+      "Tolpin D, Beja T, Shimony S E, Felner A and Karpas E 2013 Towards Rational Deployment of Multiple Heuristics in A* Proceedings of IJCAI 2013 pp 674–680",
+      "Hansen E A and Zhou R 2007 Anytime Heuristic Search Journal of Artificial Intelligence Research 28 267–297. doi:10.1613/jair.2096",
+      "van den Berg J, Shah R, Huang A and Goldberg K 2011 Anytime Nonparametric A* Proceedings of AAAI 25 105–111. doi:10.1609/aaai.v25i1.7819",
+      "Lopez P A et al 2018 Microscopic Traffic Simulation using SUMO 2018 IEEE International Conference on Intelligent Transportation Systems pp 2575–2582. doi:10.1109/ITSC.2018.8569938"
+    ]
+  }
+]

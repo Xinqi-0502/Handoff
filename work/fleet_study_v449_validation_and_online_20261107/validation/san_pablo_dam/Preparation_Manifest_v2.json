@@ -1,0 +1,17 @@
+{
+  "status": "AST_PASS_NOT_TRAFFIC_EXECUTED_V2",
+  "created_utc": "2026-11-07T11:07:59.071030+00:00",
+  "prepared_source_hashes": {
+    "run_public_validation_v2.py": "8cc08c493769e7559e2a529c1a0695bb8639b33a6022327567da52805106114b",
+    "Frozen_Protocol_v2.json": "5f4f2a83e52c32fe93ee3610651bcbb38530d86830c78d0c77c958156a3d39b3",
+    "Upstream_Manifest.json": "628763faaf9c5482587128740de9e03509b8d834d6316842e5682d686864668e",
+    "Raw_Observation_QC.json": "a87afee64877fb02c84b2e9edd3535e553425199a7f3ed4474b2170298fac16d"
+  },
+  "original_helper_sha256_unchanged": "c50fcb484be5261a6e710371fbe745af1c0cbabd548ff57994febc6bd8acb451",
+  "job_helper_AST_identical_to_lifecycle_checked_source": true,
+  "measurement_AST_identical_to_v1": true,
+  "v2_protocol_references_checked": "main and verify_sources read *_v2.json; day_end uses p['day_end_padding_seconds']",
+  "lifecycle_check_sha256": "3c646ac7a445177b28ec6bd1cb6c41b8cd6b48e89efee1984104391512deb25f",
+  "v1_failure_retained": "runs/public_01/VALIDATION_FAILURE.json",
+  "no_sumo_run_by_preparer": true
+}

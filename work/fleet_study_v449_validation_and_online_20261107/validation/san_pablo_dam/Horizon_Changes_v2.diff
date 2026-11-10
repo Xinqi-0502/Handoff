@@ -1,0 +1,38 @@
+--- run_public_validation.py
++++ run_public_validation_v2.py
+@@ -26,7 +26,7 @@
+     manifest=json.loads((ROOT/'Upstream_Manifest.json').read_text())
+     for r in manifest['sources']:
+         if r['status']!='FETCHED' or sha(ROOT/'upstream'/r['file'])!=r['sha256']:raise ValueError(('upstream hash',r['file']))
+-    freeze=json.loads((ROOT/'Preparation_Manifest.json').read_text())
++    freeze=json.loads((ROOT/'Preparation_Manifest_v2.json').read_text())
+     for name,value in freeze['prepared_source_hashes'].items():
+         if sha(ROOT/name)!=value:raise ValueError(('prepared hash',name))
+     return manifest
+@@ -147,7 +147,7 @@
+     cfg=ET.Element('configuration');inputs=ET.SubElement(cfg,'input')
+     for key,val in [('net-file',str(net)),('route-files','routes.rou.xml'),('additional-files','detectors.add.xml')]:ET.SubElement(inputs,key,value=val)
+     tt=ET.SubElement(cfg,'time')
+-    for key,val in [('begin',obs[1][0]//60*60),('end',obs[8][-1]+900),('step-length',p['step_length'])]:ET.SubElement(tt,key,value=str(val))
++    for key,val in [('begin',obs[1][0]//60*60),('end',obs[8][-1]+p['day_end_padding_seconds']),('step-length',p['step_length'])]:ET.SubElement(tt,key,value=str(val))
+     pr=ET.SubElement(cfg,'processing')
+     for key,val in [('time-to-teleport',p['time_to_teleport']),('collision.action',p['collision_action']),('collision.check-junctions','true')]:ET.SubElement(pr,key,value=str(val))
+     output=ET.SubElement(cfg,'output')
+@@ -200,7 +200,7 @@
+     os.environ.update(TEMP=r'E:\CodexResearch-xi\temp',TMP=r'E:\CodexResearch-xi\temp',PYTHONDONTWRITEBYTECODE='1')
+     out=args.out.resolve();allowed=(ROOT/'runs').resolve()
+     if allowed not in out.parents or out.exists() or out.drive.upper()!='E:':ap.error('Use fresh descendant of validation/san_pablo_dam/runs on E')
+-    manifest=verify_sources();p=json.loads((ROOT/'Frozen_Protocol.json').read_text());out.mkdir(parents=True)
++    manifest=verify_sources();p=json.loads((ROOT/'Frozen_Protocol_v2.json').read_text());out.mkdir(parents=True)
+     deadline=time.monotonic()+p['total_execution_seconds'];started=time.perf_counter();records=[]
+     try:
+         sumo=Path(p['sumo_binary']);netconvert=Path(p['netconvert_binary'])
+@@ -219,7 +219,7 @@
+         dump(out/'Selection_Before_Heldout.json',selection)
+         baseline=run(p['heldout_day'],p['baseline_tau']);winner=baseline if best['tau']==p['baseline_tau'] else run(p['heldout_day'],best['tau'])
+         delta=winner['mean_segment_rmse_seconds']-baseline['mean_segment_rmse_seconds']
+-        summary={'workflow_status':'PASS','empirical_agreement_status':'MEASURED_NO_UNIVERSAL_ACCEPTANCE_THRESHOLD','source_commit':manifest['commit'],'sumo_version':version.splitlines()[0],'sumo_sha256':sha(sumo),'netconvert_sha256':sha(netconvert),'protocol_sha256':sha(ROOT/'Frozen_Protocol.json'),'script_sha256':sha(__file__),'sumo_runs':len(records),'selected_tau':best['tau'],'selection_before_heldout_sha256':sha(out/'Selection_Before_Heldout.json'),'baseline_heldout':baseline,'selected_heldout':winner,'heldout_mean_segment_rmse_delta_seconds':delta,'heldout_rmse_improved':delta<0,'no_day2_parameter_tuning':True,'conditional_on_observed_day_specific_inflow_and_outflow':True,'matching':'ordinal rows, not verified real vehicle identities','delivery_network_calibrated':False,'all_run_metrics':records,'elapsed_seconds':time.perf_counter()-started}
++        summary={'workflow_status':'PASS','empirical_agreement_status':'MEASURED_NO_UNIVERSAL_ACCEPTANCE_THRESHOLD','source_commit':manifest['commit'],'sumo_version':version.splitlines()[0],'sumo_sha256':sha(sumo),'netconvert_sha256':sha(netconvert),'protocol_sha256':sha(ROOT/'Frozen_Protocol_v2.json'),'script_sha256':sha(__file__),'sumo_runs':len(records),'selected_tau':best['tau'],'selection_before_heldout_sha256':sha(out/'Selection_Before_Heldout.json'),'baseline_heldout':baseline,'selected_heldout':winner,'heldout_mean_segment_rmse_delta_seconds':delta,'heldout_rmse_improved':delta<0,'no_day2_parameter_tuning':True,'conditional_on_observed_day_specific_inflow_and_outflow':True,'matching':'ordinal rows, not verified real vehicle identities','delivery_network_calibrated':False,'all_run_metrics':records,'elapsed_seconds':time.perf_counter()-started}
+         dump(out/'Summary.json',summary)
+         dump(out/'Output_Manifest.json',{'files':{str(f.relative_to(out)):sha(f) for f in sorted(out.rglob('*')) if f.is_file()}})
+         dump(out/'PROCESS_COMPLETE.json',{'status':'PASS','sumo_runs':len(records),'interpretation':'Workflow completion only, not a physical-calibration acceptance threshold; inspect heldout error and failures.'})

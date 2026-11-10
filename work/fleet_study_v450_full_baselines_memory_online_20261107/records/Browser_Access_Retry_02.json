@@ -1,0 +1,19 @@
+{
+  "status": "ACCESS_CHECK_FAILED",
+  "observed_date": "2026-11-07",
+  "attempts": [
+    {
+      "api": "cua.getState()",
+      "result": "js execution timed out; kernel reset, rerun your request",
+      "wall_seconds": 47.768
+    },
+    {
+      "api": "cua.getState()",
+      "result": "js execution timed out; kernel reset, rerun your request",
+      "wall_seconds": 45.1065
+    }
+  ],
+  "impact": "No browser page or institutional full text was accessed in these attempts. This does not determine Monash entitlement. The bounded COR full-text comparison remains incomplete.",
+  "credentials_requested": false,
+  "experiments_changed": false
+}

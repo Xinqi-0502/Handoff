@@ -1,0 +1,136 @@
+{
+  "status": "PREPARED_AST_ONLY",
+  "backend": "python",
+  "rendered": false,
+  "solver_runs": 0,
+  "ast_checks": {
+    "plot_static_v450.py": {
+      "status": "PASS",
+      "sha256": "9fb1e2576ce79b0d35a08a4fb867d56faac15276b4bf59264fae6b7c050960f7"
+    },
+    "render_and_audit_static_v450.py": {
+      "status": "PASS",
+      "sha256": "5f355d76e9482e6e89d0a4d1c637fb121b6238b5671b274e71434b8828685314"
+    },
+    "prepare_static_figures.py": {
+      "status": "PASS",
+      "sha256": "389283b37e3c91af4bd344b83160dbffe3e4748b01f5452aaf64bec36b5a2950"
+    }
+  },
+  "source_csvs": [
+    {
+      "original_path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Directed_Proof_Pairs.csv",
+      "copy_path": "source_data/Directed_Proof_Pairs.csv",
+      "sha256": "ccd7c02ce3d5ba2e585bef88919649fc733014682b20ee8adc0388c441c66d10"
+    },
+    {
+      "original_path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Initial_Strata_First_Good_Pairs.csv",
+      "copy_path": "source_data/Initial_Strata_First_Good_Pairs.csv",
+      "sha256": "9c0ac264f8da8507a768e6e975eeb33dd35267d36afeb2415ab55a5dea38e4d7"
+    }
+  ],
+  "receipts": [
+    {
+      "original_path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\static_comparison\\analysis\\main_01\\PROCESS_COMPLETE.json",
+      "copy_path": "source_data/primary_complete.json",
+      "sha256": "1d4bffc0225d31dc3065cbb17f3964bd19ff00bed19a3ec46fd83cf4567816b6"
+    },
+    {
+      "original_path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\PROCESS_COMPLETE.json",
+      "copy_path": "source_data/independent_complete.json",
+      "sha256": "7b95449bea29dfc3e7c17a8755710da2ff699fd4556a3f1df3c09959cb07edc1"
+    },
+    {
+      "original_path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\crosscheck_01\\PROCESS_COMPLETE.json",
+      "copy_path": "source_data/crosscheck_complete.json",
+      "sha256": "7c1f8ac39d2a23ac445d861b29a255a29096df7649cf5e2dcc37384e2badf5dd"
+    },
+    {
+      "original_path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\crosscheck_01\\Crosscheck.json",
+      "copy_path": "source_data/Crosscheck.json",
+      "sha256": "ba12dca00ae804b04c608cb2640d389ca8a093dbd44cee206531b53be3a36d93"
+    },
+    {
+      "original_path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Manifest.json",
+      "copy_path": "source_data/Independent_Manifest.json",
+      "sha256": "147417d2eb1d8eac8d0ad213d9739bde552e0389e677ea703132091397710f7c"
+    }
+  ],
+  "pinned_files": [
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\Figure_Contract.md",
+      "sha256": "05540ac34ecc95ed04cbea9d703d6dd22b4fa94ea492aeff8edcc271a4addf5e"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\plot_static_v450.py",
+      "sha256": "9fb1e2576ce79b0d35a08a4fb867d56faac15276b4bf59264fae6b7c050960f7"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\render_and_audit_static_v450.py",
+      "sha256": "5f355d76e9482e6e89d0a4d1c637fb121b6238b5671b274e71434b8828685314"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\Render_Static_Figures_01.ps1",
+      "sha256": "bd4bc73606b2fd03b8f6c17b1d5d768b2cb26aeb9c1b163dee5f86785ba6d62f"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\prepare_static_figures.py",
+      "sha256": "389283b37e3c91af4bd344b83160dbffe3e4748b01f5452aaf64bec36b5a2950"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\nature_figure_config.json",
+      "sha256": "dad100bf58fece91f6d9ce9ef861408b330aea06bb703ea8229bf8d464754a8b"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\source_data\\Crosscheck.json",
+      "sha256": "ba12dca00ae804b04c608cb2640d389ca8a093dbd44cee206531b53be3a36d93"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\source_data\\crosscheck_complete.json",
+      "sha256": "7c1f8ac39d2a23ac445d861b29a255a29096df7649cf5e2dcc37384e2badf5dd"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\source_data\\Directed_Proof_Pairs.csv",
+      "sha256": "ccd7c02ce3d5ba2e585bef88919649fc733014682b20ee8adc0388c441c66d10"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\source_data\\independent_complete.json",
+      "sha256": "7b95449bea29dfc3e7c17a8755710da2ff699fd4556a3f1df3c09959cb07edc1"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\source_data\\Independent_Manifest.json",
+      "sha256": "147417d2eb1d8eac8d0ad213d9739bde552e0389e677ea703132091397710f7c"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\source_data\\Initial_Strata_First_Good_Pairs.csv",
+      "sha256": "9c0ac264f8da8507a768e6e975eeb33dd35267d36afeb2415ab55a5dea38e4d7"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\source_data\\primary_complete.json",
+      "sha256": "1d4bffc0225d31dc3065cbb17f3964bd19ff00bed19a3ec46fd83cf4567816b6"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-figure\\scripts\\validate_figure.py",
+      "sha256": "09694ac0ac4036d4b759e7c9aeb3d4f7a9b525212db50085d2ea0d88b0e49d76"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-figure\\scripts\\audit_pdf_text.py",
+      "sha256": "0b3d3e30ce9ec7191b8ba6dd053226487ab41594297005afcd127acda3b08281"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-figure\\scripts\\audit_figure_collisions.py",
+      "sha256": "4bd020238a9f207c8a67c61d7209cef5959f2995a1d9cd95911d6fa93de7aa36"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-figure\\scripts\\audit_panel_alignment.py",
+      "sha256": "4ed2d6afe9db45aaf6ca26aeb264cfc251ae92b49ee9fbf117d926e1956acf56"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-figure\\scripts\\nature_figure_backend.py",
+      "sha256": "ae15bc3f19217250edbbb8bfcb33227d185469f67e81071780369224e63d0dca"
+    }
+  ],
+  "runtime": "E:\\CodexResearch-xi\\workspace\\research_outputs\\ICTEC2027_Analysis_Figures_Extended_20261106\\_Plot_Runtime",
+  "execution": "Run Render_Static_Figures_01.ps1 only after the serial workload window opens.",
+  "visual_qa": "PENDING; no output images exist from this preparation"
+}

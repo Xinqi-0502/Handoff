@@ -1,0 +1,48 @@
+{
+  "status": "PREPARED_STATIC_REVIEW_PASS_RUNTIME_PENDING",
+  "sources": {
+    "check_online.py": {
+      "sha256": "d135b4d0a5cacdaf6caa8158356d6ac9b4a7aa16c4c5bc86e8ce21f1f2b56d99",
+      "lines": 159
+    },
+    "job_host_online.py": {
+      "sha256": "e11f1524f49f843318c3ecee2251c9402b89753d7daadea08bced59c5436cc13",
+      "lines": 44
+    },
+    "native_two_batch.py": {
+      "sha256": "54c19529942c92f36d7481ca1423e3cb8a03297a8b9ada4eadbbd5e1441ee628",
+      "lines": 155
+    },
+    "online_model.py": {
+      "sha256": "31d5521a1424608b6f0654744fbb7e0cfc83978071dd0ec96e4b83993a76fb06",
+      "lines": 293
+    },
+    "run_online.py": {
+      "sha256": "cd76490ce0af30a7ad36c8b66e3ec0b2bd72f9f3d9d4199b9ca4bb775e6ac9a9",
+      "lines": 63
+    }
+  },
+  "helper_sha256": "c50fcb484be5261a6e710371fbe745af1c0cbabd548ff57994febc6bd8acb451",
+  "inputs_sha256": "dee7a76550e766903375dfb96d6c0d48f0285000403baa7366c52d122f438a94",
+  "cases": [
+    "s420511_o0_p0_q0",
+    "s420511_o0_p0_q2",
+    "s420511_o24_p0_q0",
+    "s420511_o24_p0_q2"
+  ],
+  "case_count": 4,
+  "mother_count": 1,
+  "fixed_wall_seconds": 0.05,
+  "fixed_forecast_cap_per_branch": 6,
+  "fixed_forecast_cap_total": 24,
+  "old_sources_modified": false,
+  "author_solver_imported_or_run": false,
+  "author_sumo_started": false,
+  "independent_static_reviewer": "revision_experiment_priorities",
+  "pending": [
+    "public-helper process lifecycle receipt",
+    "root monitored correctness gate",
+    "root native replay"
+  ],
+  "scope": "Restricted four-branch two-atomic-order extension of old customer-flow J"
+}

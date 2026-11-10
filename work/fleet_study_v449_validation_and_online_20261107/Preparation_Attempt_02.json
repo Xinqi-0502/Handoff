@@ -1,0 +1,7 @@
+{
+  "stage": "pre-freeze source-authoring AST",
+  "status": "FAIL_PRESERVED",
+  "error": "IndentationError in in-memory loader patch; parse failed before writing source",
+  "numerical_execution": false,
+  "source_mutation_before_failure": false
+}

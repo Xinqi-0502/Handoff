@@ -1,0 +1,6 @@
+{
+  "source": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\validation\\san_pablo_dam\\run_public_validation_v2.py",
+  "source_sha256": "8cc08c493769e7559e2a529c1a0695bb8639b33a6022327567da52805106114b",
+  "change": "Optional read-only process-handle observer at start/exit/owned termination; JOB_LIST and kill-on-close behavior unchanged",
+  "execution_status": "NOT_RUN"
+}

@@ -1,0 +1,8 @@
+{
+  "argv": [
+    "D:\\traffic-coop-research\\.venv\\Lib\\site-packages\\sumo\\bin\\sumo.exe",
+    "-c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\validation\\san_pablo_dam\\runs\\public_02\\day2_tau1.5\\scenario.sumocfg"
+  ],
+  "wall_cap_seconds": 45
+}

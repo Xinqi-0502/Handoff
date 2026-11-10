@@ -1,0 +1,7 @@
+{
+  "argv": [
+    "D:\\traffic-coop-research\\.venv\\Lib\\site-packages\\sumo\\bin\\sumo.exe",
+    "--version"
+  ],
+  "wall_cap_seconds": 10
+}

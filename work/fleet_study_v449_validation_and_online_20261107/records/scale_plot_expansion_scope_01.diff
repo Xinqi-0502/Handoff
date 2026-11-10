@@ -1,0 +1,29 @@
+--- plot_before_scope_clarification
++++ plot_explicit_soft_end_scope
+@@ -211,7 +211,7 @@
+         ax.text(1.025,i,f"{counts['On-time proof']}/400",transform=ax.get_yaxis_transform(),ha='left',va='center',fontsize=7.7,clip_on=False)
+     ax.set_xlim(0,400);ax.set_xticks((0,100,200,300,400));ax.set_title('Proof coverage (all 3 repeats)',fontsize=9,pad=12)
+     ax.set_xlabel('Planned paired scenarios',fontsize=8.5)
+-    panels=((axes[0,1],'expanded','Total completed expansions'),(axes[1,0],'expanded_phase0','Before first handoff'),(axes[1,1],'expanded_phase1','After first handoff'))
++    panels=((axes[0,1],'expanded','End-of-run completed expansions'),(axes[1,0],'expanded_phase0','Phase 0: end-of-run expansions'),(axes[1,1],'expanded_phase1','Phase 1: end-of-run expansions'))
+     for ax,key,title in panels:
+         maximum=1.0
+         for i,method in enumerate(METHODS):
+@@ -233,7 +233,7 @@
+         ax.text(1.025,1.015,'Cases',transform=ax.transAxes,fontsize=7.7,ha='left',va='bottom')
+     handles,labels=axes[0,0].get_legend_handles_labels()
+     fig.legend(handles,labels,loc='lower center',bbox_to_anchor=(.59,.045),ncol=4,fontsize=8,frameon=False)
+-    fig.text(.205,.015,'Work: per-case median of 3 returned calls; boxes show median/IQR and full min-max range. Soft-end work includes overrun; fewer expansions need not mean faster.',fontsize=7.7)
++    fig.text(.205,.015,'End-of-run work includes soft overruns; censored work is not full-solution work at 1 s. Smaller counts can reflect slow bounds or truncation, not efficiency.',fontsize=7.7)
+     return save(fig,'Figure_03_Coverage_And_Search_Work',out)
+ 
+ def main():
+@@ -272,7 +272,7 @@
+ 
+ Figure 2 | Conditional proof cost and its denominator. Each point is candidate sum(case-median elapsed) divided by comparator sum(case-median elapsed), on exactly the same scenarios where both methods proved optimal by one second in all three repeats. The annotation gives the ratio and eligible n/planned N. N is 400 globally and 100 per scale; n is never replaced by N. Empty or zero-denominator comparisons are NA. The source CSV also retains common mother counts, one-sided eligibility, initial-optimal counts and expansion sums/ratios from the identical eligible subset. No confidence interval is implied. The figure measures proof cost, not time to a merely useful solution.
+ 
+-Figure 3 | Coverage and work are different outcomes. Panel a classifies all 400 scenarios per method: all-three on-time proof, all-three end-of-run proof arriving late in at least one repeat, not all-three proved among returned calls, or at least one unavailable repeat. Panels b-d show per-case medians of total, phase-0 and phase-1 completed expansions, with median/IQR boxes and full min-max whiskers. Every available case is included; n/400 is printed. The symmetric-log x-axis preserves zero (linear from zero to one). End-of-soft-run work includes charged overruns and is not equal-CPU work. A smaller label count does not itself establish speed or practical benefit. DP partial expansions are not miscounted as completed expansions.
++Figure 3 | Coverage and work are different outcomes. Panel a classifies all 400 scenarios per method: all-three on-time proof, all-three end-of-run proof arriving late in at least one repeat, not all-three proved among returned calls, or at least one unavailable repeat. Panels b-d show per-case medians of total, phase-0 and phase-1 completed expansions, with median/IQR boxes and full min-max whiskers. Every available case is included; n/400 is printed. The symmetric-log x-axis preserves zero (linear from zero to one). End-of-run work includes charged soft overruns and is not full-solution work at one second or equal-CPU work. Smaller counts can result from slow bound computation or truncation, including an exact quota calculation that consumes most of a budget before another expansion. A smaller label count does not itself establish pruning gains, speed or practical benefit. DP partial expansions are not miscounted as completed expansions.
+ 
+ All nine frozen methods remain in the quality and coverage/work views. Weighted and lazy search names identify published-policy adaptations; the new joint bound is supplied by this study. These figures use CSV tables only. They do not measure actual RAM, Python allocation bytes, whole-fleet SUMO performance, or real-world delivery gains. Three repeats are technical repeats; paired conditions are not additional independent networks. A target already achieved by the common initial plan is not a search-quality improvement.
+ 

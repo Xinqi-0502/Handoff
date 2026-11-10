@@ -1,0 +1,88 @@
+--- audit_before_collision_log_01.py
++++ audit_online_raw_v450.py
+@@ -3,7 +3,7 @@
+ representatives stay in denominators. Never renormalize over surviving plans.
+ """
+ from pathlib import Path
+-import argparse,collections,csv,gzip,hashlib,itertools,json,math,statistics,traceback,xml.etree.ElementTree as ET
++import argparse,collections,csv,gzip,hashlib,itertools,json,math,re,statistics,traceback,xml.etree.ElementTree as ET
+ ROOT=Path(__file__).resolve().parents[1]
+ PRIMARY=('HZ_AWA_RADIUS','HZ_AWA_PAIR_GATED');AUX=('RADIUS','ROUTE','ANA_RADIUS')
+ SCHEDULE=tuple((a,ms) for ms in (10,50,200) for a in PRIMARY)+tuple((a,50) for a in AUX)
+@@ -116,6 +116,30 @@
+         activation_tick=r['activation_tick'],quantization_ms=((r['activation_tick']-30)/5-r['elapsed_seconds'])*1000,
+         initial_known_optimal=initial,proof_by_deadline=r['certified_forecast_optimal_by_deadline'],signature=r['executed_signature'],
+         **{k:r['counts'].get(k) for k in ('expanded','generated','full_forecasts','extra_pruned','pair_only_pruned','pair_calls','pair_skip_upper','pair_events','pair_loop_queries','raw_bound_cache_queries','raw_bound_cache_hits','raw_bound_cache_entries')})
++
++def recorded_collision_evidence(rd,folder,require_complete):
++    # Inspect every collision element, independent of collider/victim/type.
++    # SUMO vehicle collision counters alone do not establish intermodal coverage.
++    path=folder/'collisions.xml';elements=None
++    if path.exists():
++        tree=ET.parse(rd.track(path)).getroot()
++        elements=[dict(x.attrib) for x in tree.iter() if x.tag.rsplit('}',1)[-1]=='collision']
++    logs=[];warnings=[]
++    for name in ('sumo.log','stdout.log'):
++        path=folder/name
++        if not path.exists():continue
++        logs.append(name)
++        for number,line in enumerate(rd.track(path).read_text(encoding='utf-8-sig',errors='replace').splitlines(),1):
++            if re.search(r'\b(?:warning|error)\b',line,re.I) and re.search(r'\b(?:collid\w*|collision\w*|intermodal)\b',line,re.I):
++                warnings.append(dict(file=name,line=number,text=line))
++    complete=elements is not None and len(logs)==2
++    if require_complete:
++        assert complete,('Missing collision evidence',folder,logs)
++        assert not elements and not warnings,('Recorded collision or relevant warning',folder,elements,warnings)
++    return dict(collision_evidence_complete=complete,collision_xml_element_count=None if elements is None else len(elements),
++        collision_xml_records=json.dumps(elements,sort_keys=True),collision_warning_line_count=len(warnings),
++        collision_warning_records=json.dumps(warnings,sort_keys=True),collision_logs_checked=';'.join(logs))
++
+ 
+ def audit_native(rd,folder,record,snapshot,network,matrix):
+     inp=rd.read(folder/'INPUT.json');raw=rd.read(folder/'RESULT.json');audit=rd.read(folder/'AUDIT.json')
+@@ -204,7 +228,7 @@
+     assert len({x.get('id') for x in people})==len(people)
+     for person in people:
+         walks=person.findall('walk');assert walks and all(float(z.get('arrival','-1'))>0 for z in walks)
+-    collision=ET.parse(rd.track(folder/'collisions.xml')).getroot();assert not collision.findall('.//collision')
++    collision_evidence=recorded_collision_evidence(rd,folder,True)
+     exposure=audit['observed_exposure'];assert exposure['red_or_yellow_signal_stopped_ticks']==red
+     assert exposure['ped_near_vehicle_pair_ticks']==near_ticks and exposure['ped_near_vehicle_pairs']==[list(x) for x in sorted(near)]
+     assert exposure['crosswalk_occupied_ticks_after_activation']==crossing
+@@ -219,7 +243,7 @@
+     customers=[dict(case=snapshot['case'],signature=record['signature'],activation_tick=activation,
+         customer=j,vehicle=owners[j],release_seconds=6 if j in ('a','b') else 0,
+         completion_seconds=t/5,flow_seconds=t/5-(6 if j in ('a','b') else 0)) for j,t in sorted(done.items())]
+-    return dict(status='PASS',actual_J=J,old_flow=old,new_a_flow=a_flow,new_b_flow=b_flow,
++    return dict(status='PASS',actual_J=J,old_flow=old,new_a_flow=a_flow,new_b_flow=b_flow,**collision_evidence,
+         truck_arrival_seconds=arrival/5,first_handoff_seconds=trans['a']/5,last_handoff_seconds=trans['b']/5,
+         truck_release_command_seconds=trans['b']/5,truck_first_moving_seconds=first_moving,truck_first_left_hub_seconds=first_left,
+         truck_handoff_wait_excluding_transfer=(trans['b']-arrival)/5-4,truck_dwell=(trans['b']-arrival)/5,
+@@ -401,7 +425,8 @@
+                     partial=rd.read(folder/'RESULT.json');assert partial['completed']==p['completed']
+                     if (folder/'trace.jsonl.gz').exists():rd.track(folder/'trace.jsonl.gz')
+                 metrics=dict(status='FAIL',actual_J=None,completed_customers=len(p.get('completed',{})),
+-                    unfinished_customers=len(p['unfinished_customers']) if p.get('unfinished_customers') is not None else None)
++                    unfinished_customers=len(p['unfinished_customers']) if p.get('unfinished_customers') is not None else None,
++                    **recorded_collision_evidence(rd,folder,False))
+             native_rows.append(dict(case=p['case'],seed=snapshots[p['case']]['seed'],signature=p['signature'],activation_tick=p['activation_tick'],folder=p['folder'],**metrics))
+         if failures:
+             assert summary['status']=='FAIL' and (a.run/'FAILURE.json').exists();rd.read(a.run/'FAILURE.json')
+@@ -415,6 +440,9 @@
+             policy_calls=len(raw),native_representatives=len(native_rows),native_failed_representatives=len(failures),
+             complete_case_arm_budget_aggregates=sum(r['complete_representative_replays'] for r in cases),planned_case_arm_budget_aggregates=len(cases),
+             aggregation='policy-frequency-weighted representative replay J; never a mean of three native repetitions',
++            collision_evidence_complete_representatives=sum(r['collision_evidence_complete'] for r in native_rows),
++            collision_xml_elements_total_known=sum(r['collision_xml_element_count'] or 0 for r in native_rows),
++            collision_warning_lines_total_known=sum(r['collision_warning_line_count'] for r in native_rows),
+             raw_results_changed=False,actual_RAM_measured=False,source_sha256=sha(__file__))
+         rd.unchanged();dump(a.out/'Audit_Source_Hashes.json',rd.hashes);dump(a.out/'SUMMARY.json',result)
+         report=['# Independent V450 online audit','',f"PASS: {len(expected)} scenarios, {result['mothers']} mothers, {len(raw)} policy calls; {len(native_rows)} representative native replays, including {len(failures)} retained failures.",'',
+@@ -422,6 +450,7 @@
+             'The primary physical quantity is policy-frequency-weighted representative replay J. It is not three independent native replications. The direct same-plan/same-activation subset is shown alongside its full denominator, never substituted for all scenarios.',
+             'Within-budget forecast quality excludes late fallback plans. Execution includes planning latency rounded up to 0.2 seconds. Forecast-to-actual reversals include both traffic-model error and activation-delay differences.',
+             'Truck handoff waiting is hub dwell minus the two 2-second transfers; SUMO waitingTime, dispatch activation delay, release command, first motion and hub departure are separate columns. Signal-stop exposure includes red OR yellow within45m, excludes planned stops, and is not pure red-light delay. Pedestrian15m proximity is exposure, not causal delay.',
++            'Every PASS replay has zero collision elements of any type in collisions.xml and no relevant collision/intermodal Warning or Error lines in captured sumo.log/stdout.log. This means no recorded collisions in the measured outputs; it is not a real-world safety guarantee. Failed replays retain recorded counts and missing-evidence flags.',
+             'Mother_Pairs.csv uses the mother as the independent unit; a mother mean is unknown if any planned condition is unknown. No statistical-power claim is made.',
+             'This is a single frozen decision epoch, not continuous rolling dispatch. No actual RAM bytes are supplied by these records.']
+         (a.out/'Independent_Online_Audit.md').write_text('\n\n'.join(report)+'\n',encoding='utf8')

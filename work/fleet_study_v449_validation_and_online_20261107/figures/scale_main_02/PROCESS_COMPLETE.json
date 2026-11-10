@@ -1,0 +1,42 @@
+{
+  "status": "RENDERED_PENDING_VISUAL_REVIEW",
+  "figure_count": 3,
+  "exports": [
+    "PNG",
+    "PDF",
+    "source CSV"
+  ],
+  "audits": {
+    "Figure_01": [
+      {
+        "kind": "text",
+        "returncode": 0
+      },
+      {
+        "kind": "collision",
+        "returncode": 0
+      }
+    ],
+    "Figure_02": [
+      {
+        "kind": "text",
+        "returncode": 0
+      },
+      {
+        "kind": "collision",
+        "returncode": 0
+      }
+    ],
+    "Figure_03": [
+      {
+        "kind": "text",
+        "returncode": 0
+      },
+      {
+        "kind": "collision",
+        "returncode": 0
+      }
+    ]
+  },
+  "source_csv_count": 3
+}

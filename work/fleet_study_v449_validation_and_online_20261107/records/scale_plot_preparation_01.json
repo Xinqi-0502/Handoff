@@ -1,0 +1,11 @@
+{
+  "status": "AST_PASS_PREPARED_NOT_EXECUTED",
+  "plot_sha256": "4d334153361fc630473ebdeb3df1ee3b5990a407ec6e931d9c1a79857483f318",
+  "analysis_required_sha256": "2f0258d1e4fb914fa875fd56ab2683690ec1efe62cbf0cd0f4cdea82f999d2bc",
+  "figures_planned": 3,
+  "data_input": "analysis CSV only",
+  "matplotlib_imported": false,
+  "rendered": false,
+  "solver_run": false,
+  "numerical_sources_changed": false
+}

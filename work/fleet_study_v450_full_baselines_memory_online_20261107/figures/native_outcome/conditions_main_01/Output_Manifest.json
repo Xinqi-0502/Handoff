@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "cases": 64,
+  "mothers": 8,
+  "cells": 8,
+  "budgets_ms": [
+    10,
+    50,
+    200
+  ],
+  "summary_rows": 48,
+  "source_sha256": "357865869ef05b908f218770df90c9b972bc9618fae2aa67bb4d8953551f93ef",
+  "input_hashes": {
+    "Case_Budget_Results.csv": {
+      "original": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\analysis\\full_02\\Case_Budget_Results.csv",
+      "sha256": "58acc4798a431d61df7ac3cfaf426d9871a2192c85b4879fe9a5a588cc6111c7"
+    },
+    "Pair_Cases.csv": {
+      "original": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\analysis\\full_02\\Pair_Cases.csv",
+      "sha256": "11488b57478bb6108176e2f77daa2483f38ce98a14cf70766a9808224d1e3483"
+    },
+    "Pair_Summary.csv": {
+      "original": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\analysis\\full_02\\Pair_Summary.csv",
+      "sha256": "faa99ae55fbc133b3f4db39cc82c3c180af5774186d49d1497c2558734223ec7"
+    },
+    "Calls.csv": {
+      "original": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\analysis\\full_02\\Calls.csv",
+      "sha256": "894de9bfe95333bfe8dad7081d947e3ce4ada095f95a51b84f15796c7e543c28"
+    },
+    "SUMMARY.json": {
+      "original": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\analysis\\full_02\\SUMMARY.json",
+      "sha256": "318ed6ea6d45d46e3399e53b2d47871ea588874a6dbccbbb7b3e55827ee607bd"
+    },
+    "PROCESS_COMPLETE.json": {
+      "original": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\analysis\\full_02\\PROCESS_COMPLETE.json",
+      "sha256": "fe7d3c7d6760cce8fd8680d4e91a7d432ed6f205244471dd858ab26b987dc3f3"
+    },
+    "Audit_Source_Hashes.json": {
+      "original": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\analysis\\full_02\\Audit_Source_Hashes.json",
+      "sha256": "b4466593fb796c3a7d097281f4bd04a0489c26661e74f62585630577f69a082f"
+    }
+  },
+  "outputs": {
+    "All_Conditions.md": "4e0e41b7f3193b08d3239a78cf37b85f6f95160357b172d75c5e92bdd76f7149",
+    "All_Condition_Summary.csv": "7c1f8b99947aebba69dc018148f79a9f2726d93e6cdb3ef5270d6dd80c0f2bbc",
+    "Execution_Identity_Per_Case.csv": "fa6dab2826c92adfe7ee86c8cbba4c95a2f5260c728493973ef373cefbdada35",
+    "Native_Per_Case_Points.csv": "fdf7a03b68db95537d80bed38f5432ea336b257b758619b211d811b8d1a3dc37"
+  },
+  "numeric_measurements_or_simulator_runs": 0
+}

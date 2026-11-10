@@ -1,0 +1,7 @@
+{
+  "status": "STATIC_AST_PASS",
+  "script_sha256": "41e4c64b0d07cae01eb333ed776793a191855e4354e5c4682f0d58e28f1f27f4",
+  "lines": 432,
+  "executed_analysis": false,
+  "change": "Carry existing cache queries/hits/entries and same-case expansion/extra-cut columns; no aggregation or selection rule change"
+}

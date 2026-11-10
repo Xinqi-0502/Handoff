@@ -1,0 +1,42 @@
+{
+  "matching": "ordinal rows, not verified real vehicle identities",
+  "demand_vehicles_preserved": 2298,
+  "excluded_observations": [
+    {
+      "day": 1,
+      "ordinal_row_index": 2002,
+      "segment": "2-3",
+      "source_start_seconds": 30916,
+      "source_end_seconds": 30912,
+      "observed_seconds": -4,
+      "action": "exclude_from_segment_score_only"
+    },
+    {
+      "day": 1,
+      "ordinal_row_index": 125,
+      "segment": "3-4",
+      "source_start_seconds": 24958,
+      "source_end_seconds": 24953,
+      "observed_seconds": -5,
+      "action": "exclude_from_segment_score_only"
+    },
+    {
+      "day": 1,
+      "ordinal_row_index": 126,
+      "segment": "3-4",
+      "source_start_seconds": 24960,
+      "source_end_seconds": 24954,
+      "observed_seconds": -6,
+      "action": "exclude_from_segment_score_only"
+    },
+    {
+      "day": 1,
+      "ordinal_row_index": 127,
+      "segment": "3-4",
+      "source_start_seconds": 24961,
+      "source_end_seconds": 24955,
+      "observed_seconds": -6,
+      "action": "exclude_from_segment_score_only"
+    }
+  ]
+}

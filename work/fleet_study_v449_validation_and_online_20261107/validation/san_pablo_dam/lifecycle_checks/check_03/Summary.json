@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "helper_sha256": "c50fcb484be5261a6e710371fbe745af1c0cbabd548ff57994febc6bd8acb451",
+  "cases": [
+    {
+      "mode": "normal",
+      "status": "PASS",
+      "owner_pid": 91272,
+      "owner_returncode": 0,
+      "owned_descendant_pids": [],
+      "termination_wait_results": []
+    },
+    {
+      "mode": "timeout",
+      "status": "PASS",
+      "owner_pid": 42424,
+      "owner_returncode": 0,
+      "owned_descendant_pids": [
+        29492,
+        22568
+      ],
+      "termination_wait_results": [
+        0,
+        0
+      ]
+    },
+    {
+      "mode": "parent_killed",
+      "status": "PASS",
+      "owner_pid": 91656,
+      "owner_returncode": 1,
+      "owned_descendant_pids": [
+        58204,
+        78532
+      ],
+      "termination_wait_results": [
+        0,
+        0
+      ]
+    }
+  ],
+  "no_sumo_or_solver_started": true,
+  "scope": "normal return, owned job timeout, abrupt owned parent death including its child and grandchild; no enumeration"
+}

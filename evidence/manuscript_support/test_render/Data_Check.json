@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "fig1_rows": 8,
+  "fig2_rows": 4,
+  "native_rows": 6,
+  "native_case_points": 384,
+  "fallback_10ms": {
+    "HZ_AWA_PAIR_GATED": 192,
+    "HZ_AWA_RADIUS": 191
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "status": "AST_PASS_ANNOTATION_REVISION",
+  "source_hashes": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\native_outcome\\Figure_Contract.md": "0602cd4e11829c0c752f544ef5480fcc6c19589a8f320a47dcd2bdd1543ec662",
+    "C:\\Users\\admin\\.codex\\skills\\nature-figure\\scripts\\validate_figure.py": "09694ac0ac4036d4b759e7c9aeb3d4f7a9b525212db50085d2ea0d88b0e49d76",
+    "C:\\Users\\admin\\.codex\\skills\\nature-figure\\scripts\\audit_panel_alignment.py": "4ed2d6afe9db45aaf6ca26aeb264cfc251ae92b49ee9fbf117d926e1956acf56",
+    "C:\\Users\\admin\\.codex\\skills\\nature-figure\\scripts\\audit_pdf_text.py": "0b3d3e30ce9ec7191b8ba6dd053226487ab41594297005afcd127acda3b08281",
+    "C:\\Users\\admin\\.codex\\skills\\nature-figure\\scripts\\audit_figure_collisions.py": "4bd020238a9f207c8a67c61d7209cef5959f2995a1d9cd95911d6fa93de7aa36",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\native_outcome\\plot_native_outcome_v450_v2.py": "ff6198b125dc02960ae3953247a6e1f1b1076a0edd9b017ec2b43aea8c4398f2",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\native_outcome\\Native_Figure_Revision_02.md": "3ea3b70547f7da43ce237bf8d3e59b6f0bf689631e0054cd83ae9b167020aa4e"
+  },
+  "audit_source_path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\analysis\\audit_online_raw_v450.py",
+  "audit_source_sha256": "534a6e236abd74c09a6fcb8705fc1a7a282a3548f1a53800b59e4f23dcf81858",
+  "analysis_data_read": true,
+  "pilot_values_inspected": false,
+  "headers_and_writer_only": false,
+  "expected_cases": 64,
+  "expected_mothers": 8,
+  "expected_policy_calls": 1728,
+  "budgets_ms": [
+    10,
+    50,
+    200
+  ],
+  "mean_requires_all_64_pairs": true,
+  "solver_or_simulator_calls": 0,
+  "rendered": false,
+  "revision": "10 ms fallback interpretation only; full audited data counts verified",
+  "points_function_AST_unchanged": true
+}

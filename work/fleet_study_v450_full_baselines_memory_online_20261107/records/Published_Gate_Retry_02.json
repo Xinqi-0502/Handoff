@@ -1,0 +1,9 @@
+{
+  "scope": "Diagnostic-only JSON export correction; solver unchanged",
+  "engine_sha256": "4d4286ad650f52264375bda90cf1a7c0c907eaa57df4396b58f959d7313b951c",
+  "checker_sha256": "c5a7809ecda4746364f97cf24e0b2d897b06abcbdd1d6f151f834d49a8450eb7",
+  "prior_failure": "baseline_replication/checks/micro_b00_01/FAILURE.json",
+  "fresh_wrapper": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\static_comparison\\run_published_gate_blocks_02.py",
+  "fresh_gate": "baseline_replication/gates/micro_all_02",
+  "space_remaining_bytes": 753564909568
+}

@@ -1,0 +1,30 @@
+{"job": 0, "status": "START", "entry": "check_scale_v449", "args": ["check", "--start", "0", "--stop", "4", "--run", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_check_micro_01_00"]}
+{"case": "micro_s3470301_m3_tight_free", "status": "PASS"}
+{"case": "micro_s3470301_m3_tight_signal", "status": "PASS"}
+{"case": "micro_s3470301_m3_roomier_free", "status": "PASS"}
+{"case": "micro_s3470301_m3_roomier_signal", "status": "PASS"}
+{"job": 1, "status": "START", "entry": "check_scale_v449", "args": ["check", "--start", "4", "--stop", "8", "--run", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_check_micro_01_04"]}
+{"case": "micro_s3470302_m3_tight_free", "status": "PASS"}
+{"case": "micro_s3470302_m3_tight_signal", "status": "PASS"}
+{"case": "micro_s3470302_m3_roomier_free", "status": "PASS"}
+{"case": "micro_s3470302_m3_roomier_signal", "status": "PASS"}
+{"job": 2, "status": "START", "entry": "check_scale_v449", "args": ["check", "--start", "8", "--stop", "12", "--run", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_check_micro_01_08"]}
+{"case": "micro_s3470401_m4_tight_free", "status": "PASS"}
+{"case": "micro_s3470401_m4_tight_signal", "status": "PASS"}
+{"case": "micro_s3470401_m4_roomier_free", "status": "PASS"}
+{"case": "micro_s3470401_m4_roomier_signal", "status": "PASS"}
+{"job": 3, "status": "START", "entry": "check_scale_v449", "args": ["check", "--start", "12", "--stop", "16", "--run", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_check_micro_01_12"]}
+{"case": "micro_s3470402_m4_tight_free", "status": "PASS"}
+{"case": "micro_s3470402_m4_tight_signal", "status": "PASS"}
+{"case": "micro_s3470402_m4_roomier_free", "status": "PASS"}
+{"case": "micro_s3470402_m4_roomier_signal", "status": "PASS"}
+{"job": 4, "status": "START", "entry": "check_scale_v449", "args": ["check", "--start", "16", "--stop", "20", "--run", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_check_micro_01_16"]}
+{"case": "micro_s3470501_m5_tight_free", "status": "PASS"}
+{"case": "micro_s3470501_m5_tight_signal", "status": "PASS"}
+{"case": "micro_s3470501_m5_roomier_free", "status": "PASS"}
+{"case": "micro_s3470501_m5_roomier_signal", "status": "PASS"}
+{"job": 5, "status": "START", "entry": "check_scale_v449", "args": ["check", "--start", "20", "--stop", "24", "--run", "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\runs\\scale_check_micro_01_20"]}
+{"case": "micro_s3470502_m5_tight_free", "status": "PASS"}
+{"case": "micro_s3470502_m5_tight_signal", "status": "PASS"}
+{"case": "micro_s3470502_m5_roomier_free", "status": "PASS"}
+{"case": "micro_s3470502_m5_roomier_signal", "status": "PASS"}

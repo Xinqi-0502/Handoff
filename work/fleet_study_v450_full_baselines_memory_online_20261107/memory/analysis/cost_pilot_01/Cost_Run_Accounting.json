@@ -1,0 +1,150 @@
+{
+  "status": "ACCOUNTED",
+  "manifest_sha256": "c9242a0fc7fec3571920cbf47c1d6c970b3be1aecc85048864c03a52cfb78c81",
+  "calls": 36,
+  "per_run": [
+    {
+      "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_00_01",
+      "m": 6,
+      "seconds": 92.92747710004915,
+      "process_seconds": 92.78125779994298,
+      "parent_validation_and_loading_residual_seconds": 0.1462193001061678,
+      "censored": 0
+    },
+    {
+      "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_08_01",
+      "m": 8,
+      "seconds": 92.92035309993662,
+      "process_seconds": 92.74971409991849,
+      "parent_validation_and_loading_residual_seconds": 0.17063900001812726,
+      "censored": 0
+    },
+    {
+      "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_16_01",
+      "m": 10,
+      "seconds": 94.62620960001368,
+      "process_seconds": 94.37549599993508,
+      "parent_validation_and_loading_residual_seconds": 0.25071360007859766,
+      "censored": 0
+    },
+    {
+      "run": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_24_01",
+      "m": 12,
+      "seconds": 96.16495810006745,
+      "process_seconds": 95.46778089995496,
+      "parent_validation_and_loading_residual_seconds": 0.6971772001124918,
+      "censored": 0
+    }
+  ],
+  "per_method": [
+    {
+      "method": "RADIUS",
+      "calls": 4,
+      "censored": 0,
+      "process_seconds_sum": 41.44799749995582,
+      "process_seconds_median": 10.370963249995839,
+      "process_seconds_max": 10.40414530003909
+    },
+    {
+      "method": "RADIUS_PAIR_EAGER",
+      "calls": 4,
+      "censored": 0,
+      "process_seconds_sum": 41.457773600006476,
+      "process_seconds_median": 10.354698000010103,
+      "process_seconds_max": 10.450162400025874
+    },
+    {
+      "method": "RADIUS_PAIR_LAZY",
+      "calls": 4,
+      "censored": 0,
+      "process_seconds_sum": 41.389413799974136,
+      "process_seconds_median": 10.342390250007156,
+      "process_seconds_max": 10.404449799912982
+    },
+    {
+      "method": "RADIUS_AWA",
+      "calls": 4,
+      "censored": 0,
+      "process_seconds_sum": 41.428901799954474,
+      "process_seconds_median": 10.350806499947794,
+      "process_seconds_max": 10.429628200014122
+    },
+    {
+      "method": "RADIUS_PAIR_AWA",
+      "calls": 4,
+      "censored": 0,
+      "process_seconds_sum": 41.35595779994037,
+      "process_seconds_median": 10.329649550025351,
+      "process_seconds_max": 10.402524199918844
+    },
+    {
+      "method": "RADIUS_PAIR_AWA_GATED",
+      "calls": 4,
+      "censored": 0,
+      "process_seconds_sum": 41.33456019998994,
+      "process_seconds_median": 10.336839349998627,
+      "process_seconds_max": 10.368479300057516
+    },
+    {
+      "method": "NO_BOUND",
+      "calls": 4,
+      "censored": 0,
+      "process_seconds_sum": 41.97414999990724,
+      "process_seconds_median": 10.373024950036779,
+      "process_seconds_max": 10.928696999908425
+    },
+    {
+      "method": "DP_ADAPTER",
+      "calls": 4,
+      "censored": 0,
+      "process_seconds_sum": 41.6031739001628,
+      "process_seconds_median": 10.330941250023898,
+      "process_seconds_max": 10.66552360006608
+    },
+    {
+      "method": "ROUTE",
+      "calls": 4,
+      "censored": 0,
+      "process_seconds_sum": 43.38232019986026,
+      "process_seconds_median": 10.82867575000273,
+      "process_seconds_max": 11.443984199897386
+    }
+  ],
+  "pilot_run_seconds_sum": 376.6389979000669,
+  "maximum_observed_process_non_solver_seconds": 10.444930600002408,
+  "maximum_observed_main_method_soft_overrun_seconds": 0,
+  "maximum_observed_case_parent_residual_seconds": 0.6971772001124918,
+  "planned_main_cases": 32,
+  "planned_main_calls": 128,
+  "main_arithmetic_estimate_seconds": 1487.260787203908,
+  "estimate_rule": "128*(maximum observed process wall minus solver elapsed + 1s soft budget + observed main-method overrun) + 32*maximum pilot case residual; based on observed wrapper/pilot costs, not a guaranteed upper bound",
+  "no_selection_by_memory_or_quality": true,
+  "all_censored_records_retained": true,
+  "evidence": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_00_01\\PROTOCOL.json": "29215d4c168e442c0e549fe914d31b11c56ded87ccdf9b46835e368a66248157",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_00_01\\MEMORY.jsonl": "453cca7449144498d7585be64b6e0e168e710dda3dcdc70bb991a4380dfe1cb6",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_00_01\\ORACLES.jsonl": "ebec391de323ca39cebf31ce7ec74a7b6fe75df6afdc86ad54cd0ba4b313152f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_00_01\\CASE_COMPLETE.jsonl": "9cd391f15461fb425aaa731ddb15bd4a3504553c1b811bd5628300af584a944b",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_00_01\\SUMMARY.json": "0482453648ac287f3864f03c6800a2431b25ca15956b9471ab68008f69155e3f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_00_01\\PROCESS_COMPLETE.json": "0482453648ac287f3864f03c6800a2431b25ca15956b9471ab68008f69155e3f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_08_01\\PROTOCOL.json": "45efa0e848087f43dfae5a4658ab83cc50412c8d7d23d18934ff4c9e385ed465",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_08_01\\MEMORY.jsonl": "ad2ef9a19a2b3f00ff0f58df947b9575b3c12bd892f7d5765dfdbe82c57103ad",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_08_01\\ORACLES.jsonl": "8a42cd76f1ccf9f9ce44ca2a6fdcdfe19f52e92dc4776a65cc230df6d1b546a0",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_08_01\\CASE_COMPLETE.jsonl": "84664945e9e8ccaadb8f68cf112abdaa85a9b457bb6c028a33bb32363aab3caf",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_08_01\\SUMMARY.json": "aa05a469f29c8abfe7a6908b12a7009f53e2986b988610d2f53e4c7f760e2c48",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_08_01\\PROCESS_COMPLETE.json": "aa05a469f29c8abfe7a6908b12a7009f53e2986b988610d2f53e4c7f760e2c48",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_16_01\\PROTOCOL.json": "0fcce69b38e6520ea0952433f5302f08b2c328e03227c1042d48ae1dcc2d7b57",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_16_01\\MEMORY.jsonl": "f8e5a4015c486be00110b5c3704d7b35a756c8b8b34d68f0369b5dc3ef638881",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_16_01\\ORACLES.jsonl": "2c4e0ee1539097c028550736d5ce1e7789792d8f5d04b07030afbe89f784514c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_16_01\\CASE_COMPLETE.jsonl": "765146a76aa0c74a40883d3410bccf5053571bf0db6f562da43f1d8793db5954",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_16_01\\SUMMARY.json": "ad78b22fad88b1faef6a74a9e7c5aac981b07180e04b7e2927599f04c42e47aa",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_16_01\\PROCESS_COMPLETE.json": "ad78b22fad88b1faef6a74a9e7c5aac981b07180e04b7e2927599f04c42e47aa",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_24_01\\PROTOCOL.json": "a9a4e6f6338cf546f6066a7653b4d0e33d7f27662c5074a4cb4fcff04376391f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_24_01\\MEMORY.jsonl": "2ecb0bc88340f3c8646407a7030a789fd1cbbb20afc7c1c564b4178943e3ac64",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_24_01\\ORACLES.jsonl": "d5158f436597b52bc3ab6ae8deb01520f6cf21d9b6b54f1075dbbd1d9aa9b47f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_24_01\\CASE_COMPLETE.jsonl": "49605f7eb6096a8285356af07eba143680e4c8b5c3f2e17a43f42c2457778457",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_24_01\\SUMMARY.json": "a7462ae830ebb6a7ae67d5efcf885b77437e65373f6d0bd07f6b36f166ef19dd",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\pilot_24_01\\PROCESS_COMPLETE.json": "a7462ae830ebb6a7ae67d5efcf885b77437e65373f6d0bd07f6b36f166ef19dd",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\runs\\correctness_00_01\\MEMORY.jsonl": "b3b8c11f079145c9e90b3ab49893141d4b925d921c65c462d51ee2e0b803c931"
+  }
+}

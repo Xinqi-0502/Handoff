@@ -1,0 +1,10 @@
+Nature Figure Rendered Collision Audit
+pdf: test_render\figS01_native_outcome_limits.pdf
+pages: 1
+visible text boxes: 24
+stroke paths: 24
+
+
+summary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays
+verdict: PASS
+note: contained overlays can be intentional; WARN findings need final-size visual review

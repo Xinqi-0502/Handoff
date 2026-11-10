@@ -1,0 +1,12 @@
+{
+  "status": "AST_PASS_NOT_NUMERICALLY_EXECUTED",
+  "prepared_source_hashes": {
+    "Frozen_Protocol.json": "2b4f70c35481b3147236bee3e72d32d6b7f3bf157475a6352b4e1d116bca8b7a",
+    "run_public_validation.py": "40ca808def70c3c0a7138f7b0332e20e0609981f6391b1b888012cbb8a484582",
+    "Upstream_Manifest.json": "628763faaf9c5482587128740de9e03509b8d834d6316842e5682d686864668e"
+  },
+  "sumo_version_only_checked": "1.27.1",
+  "no_sumo_traffic_run": true,
+  "max_sumo_runs": 5,
+  "created_utc": "2026-11-07T10:37:30.797554+00:00"
+}

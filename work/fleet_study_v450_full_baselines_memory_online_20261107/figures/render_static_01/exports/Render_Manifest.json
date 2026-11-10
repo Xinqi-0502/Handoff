@@ -1,0 +1,46 @@
+{
+  "status": "RENDERED_QA_PENDING",
+  "source_sha256": "9fb1e2576ce79b0d35a08a4fb867d56faac15276b4bf59264fae6b7c050960f7",
+  "preparation_sha256": "dfff1b5fad34d97fd900441ed33e2920a7c3b7987d0b6dcb002a8218bfff8158",
+  "matplotlib": "3.11.2",
+  "source_csvs": [
+    {
+      "original_path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Directed_Proof_Pairs.csv",
+      "copy_path": "source_data/Directed_Proof_Pairs.csv",
+      "sha256": "ccd7c02ce3d5ba2e585bef88919649fc733014682b20ee8adc0388c441c66d10"
+    },
+    {
+      "original_path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\results\\main_01\\Initial_Strata_First_Good_Pairs.csv",
+      "copy_path": "source_data/Initial_Strata_First_Good_Pairs.csv",
+      "sha256": "9c0ac264f8da8507a768e6e975eeb33dd35267d36afeb2415ab55a5dea38e4d7"
+    }
+  ],
+  "output_hashes": {
+    "Captions.md": "b71112b16e77f7f5c62a29cddd13f7a2874823faa0dafc941613052c1364682e",
+    "Fig1_Plotted_Points.csv": "975893370a26e5036408d26f48587fe693ac1b11777681f4a671daab46ff159a",
+    "Fig1_Same_Kernel_Scale.alignment.json": "09df15d5959665a16983019bba01cced656d9a21d05f441deb798149d6fbe879",
+    "Fig1_Same_Kernel_Scale.alignment.svg": "44df6a9e768efcff72a6e789ed6904740692f93b1bee5e1e561dd02d417c9e44",
+    "Fig1_Same_Kernel_Scale.pdf": "ed75c828727ec63537084e12a5271e477b28b0648acdb02143a84759582aebd2",
+    "Fig1_Same_Kernel_Scale.png": "e49524794f59ce99fec8a7cbdce4e4fd497a8ecb89f05e4d18d788e892de15e1",
+    "Fig1_Same_Kernel_Scale.svg": "48598f4c872ab0ddec085b08afab5e988fbe938bb1e186f71da8f65376ef0e32",
+    "Fig2_Anytime_Tradeoff.alignment.json": "f5096d20e8cb0466bef50dc2d8afec61e9433f2ccc6d3e599c12b1b9b877b229",
+    "Fig2_Anytime_Tradeoff.alignment.svg": "9d7d1703774e3cba165d3e2f1d76f5dc7aa2bda164a87da6c008e48da60268b4",
+    "Fig2_Anytime_Tradeoff.pdf": "3885710122d41ec90be2868721bfcd8a653b279abc5225253f7c9989d7277e68",
+    "Fig2_Anytime_Tradeoff.png": "21763de0c97c165ea67335f304aabeef3930aa91b693b182b4390ae9edef7d4e",
+    "Fig2_Anytime_Tradeoff.svg": "b76e89d6782e6a3a35aeaa384bc80e01bfbb71f3932633504b387ba9b68638fa",
+    "Fig2_Plotted_Points.csv": "3867e837f67d09c2bf477ccc0b9edc9f37e50407c8411a4f712a58d5ba3de975"
+  },
+  "physical_size_mm": {
+    "Fig1": [
+      183,
+      104
+    ],
+    "Fig2": [
+      183,
+      100
+    ]
+  },
+  "png_dpi": 600,
+  "visual_inspection": "PENDING",
+  "no_solver_called": true
+}

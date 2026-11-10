@@ -1,0 +1,8 @@
+{
+  "status": "STATIC_AST_PASS",
+  "script_sha256": "f2e1100ec7db9c2741326028d827a7e58e5b5c3da1d116e4b3254d8955fcbb75",
+  "lines": 424,
+  "previous_source_snapshot": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\snapshots\\pre_signal_label_rename_02\\audit_online_raw_v450.py",
+  "executed_analysis": false,
+  "description": "Red-or-yellow exposure label and distinct truck wait/dispatch fields; no observed outcomes used"
+}

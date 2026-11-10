@@ -1,0 +1,11 @@
+Nature Figure Rendered Collision Audit
+pdf: E:\CodexResearch-xi\workspace\work\fleet_study_v449_validation_and_online_20261107\figures\scale_main_02\Figure_01_Budget_Quality.pdf
+pages: 1
+visible text boxes: 407
+stroke paths: 32
+
+
+summary: 0 fail, 0 warn, 324 contained fill overlays, 324 contained image overlays
+verdict: PASS
+note: contained overlays can be intentional; WARN findings need final-size visual review
+

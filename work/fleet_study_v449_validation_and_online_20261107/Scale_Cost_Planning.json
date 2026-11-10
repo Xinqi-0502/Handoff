@@ -1,0 +1,98 @@
+{
+  "scope": "Read-only historical V448 cost arithmetic; no V449 numerical evaluation",
+  "rows": [
+    {
+      "m": 6,
+      "prior_mothers": 2,
+      "prior_related_scenarios": 8,
+      "observed_method_mean_seconds": {
+        "NO_BOUND": 0.004155308328336105,
+        "RADIUS": 0.003024920840592434,
+        "RADIUS_AWA": 0.0030878999871977917,
+        "RADIUS_PAIR_EAGER": 0.003877537528751418,
+        "RADIUS_PAIR_LAZY": 0.0029024958251587427,
+        "ROUTE": 0.010098449987708591
+      },
+      "old_oracle_mean_seconds": 0.003919312512152828,
+      "old_oracle_max_seconds": 0.005041299969889224,
+      "actual_old_batch_seconds": 1.3256412000628188,
+      "arithmetic_cost_block_seconds": 8.139940950088203,
+      "arithmetic_main_scale_seconds": 609.7117087541847
+    },
+    {
+      "m": 8,
+      "prior_mothers": 2,
+      "prior_related_scenarios": 8,
+      "observed_method_mean_seconds": {
+        "NO_BOUND": 0.03609503331244923,
+        "RADIUS": 0.01213280000956729,
+        "RADIUS_AWA": 0.01249481249639454,
+        "RADIUS_PAIR_EAGER": 0.01904213747184258,
+        "RADIUS_PAIR_LAZY": 0.012362849976246556,
+        "ROUTE": 0.10569701249187347
+      },
+      "old_oracle_mean_seconds": 0.025238837508368306,
+      "old_oracle_max_seconds": 0.04199619998689741,
+      "actual_old_batch_seconds": 3.89958830003161,
+      "arithmetic_cost_block_seconds": 8.993209283100441,
+      "arithmetic_main_scale_seconds": 669.4429287308594
+    },
+    {
+      "m": 10,
+      "prior_mothers": 2,
+      "prior_related_scenarios": 8,
+      "observed_method_mean_seconds": {
+        "NO_BOUND": 0.25907943331306643,
+        "RADIUS": 0.10711293333345868,
+        "RADIUS_AWA": 0.10449640415026806,
+        "RADIUS_PAIR_EAGER": 0.11590387497562915,
+        "RADIUS_PAIR_LAZY": 0.0943306666740682,
+        "ROUTE": 1.0162743125110865
+      },
+      "old_oracle_mean_seconds": 0.15166856251016725,
+      "old_oracle_max_seconds": 0.20215020002797246,
+      "actual_old_batch_seconds": 25.235995499999262,
+      "arithmetic_cost_block_seconds": 16.002138999911647,
+      "arithmetic_main_scale_seconds": 1169.82671249134
+    },
+    {
+      "m": 12,
+      "prior_mothers": 2,
+      "prior_related_scenarios": 8,
+      "observed_method_mean_seconds": {
+        "NO_BOUND": 0.9626834041700931,
+        "RADIUS": 0.3752968500048155,
+        "RADIUS_AWA": 0.36425332499008317,
+        "RADIUS_PAIR_EAGER": 0.38303487496159505,
+        "RADIUS_PAIR_LAZY": 0.3153539124953871,
+        "ROUTE": 1.3602510124765104
+      },
+      "old_oracle_mean_seconds": 0.7814101250114618,
+      "old_oracle_max_seconds": 1.0681803000625223,
+      "actual_old_batch_seconds": 70.67867870000191,
+      "arithmetic_cost_block_seconds": 29.29477451648563,
+      "arithmetic_main_scale_seconds": 2040.82606373413
+    }
+  ],
+  "source_sha256": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m6_01\\MEASUREMENTS.jsonl": "9e3f7a20c422fe892c92a1c9c24828376ea2c5e557f2612320e9d34f5f2da743",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m6_01\\ORACLES.jsonl": "7bfb60adebdffd382998eaca10c22601d9158d619e4dc98a4f4b76da311cbb53",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m6_01\\PROCESS_COMPLETE.json": "390bef23c37cce6fb81877c8a469ef7758a5b5d7dd42c557578f4e62bd7a93e0",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m8_01\\MEASUREMENTS.jsonl": "bd8ef77f122be541ac2a9b301ef6b206d63ca2a214ac66309385f8f587c736d0",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m8_01\\ORACLES.jsonl": "a35288da406b16315b9b74d2a71496e65ab1329dc8cf94821eb053c37b54a8f9",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m8_01\\PROCESS_COMPLETE.json": "02669e2a316d7f0574a3e903a8f317c3487e25ca15b9cbe0c17cca8bc95877f7",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m10_01\\MEASUREMENTS.jsonl": "a8ba5ad944f5e7d012e127f9dff109fc7d1e42172de35ae10f540c5fd5555052",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m10_01\\ORACLES.jsonl": "8620b33252339c449e4bb1ca9074edd451514d74fb5d8c1cc7719ac2045bcfe2",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m10_01\\PROCESS_COMPLETE.json": "9f3098ae7f65ab730ebe71d959a134892011345075d18aae58602eeb4bf8043b",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m12_01\\MEASUREMENTS.jsonl": "23e190134061d21def38c9844287c50bbc8d3054db98ee9a467534a1a89bdbd3",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m12_01\\ORACLES.jsonl": "d5eed13c920bfd112c0e72410da675c4357a163149de3b379d484a25c201f2ce",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\pilot_m12_01\\PROCESS_COMPLETE.json": "494c1c4e1642f9354754cc5205e15778ddd34373b7323f959a4acce0e99da66b"
+  },
+  "cost_planned_calls": 144,
+  "main_planned_calls": 10800,
+  "cost_soft_allowance_seconds": 144,
+  "main_soft_allowance_seconds": 10800,
+  "arithmetic_cost_seconds": 62.430063749585926,
+  "arithmetic_main_seconds": 4489.807413710514,
+  "caveat": "Uses old six-method means, old oracle as an unmeasured adapter proxy, and 1s allowance for each unmeasured AWA joint policy. Not a forecast, upper bound, or probability; excludes replay/I/O/gate/GC and soft overruns on new inputs."
+}

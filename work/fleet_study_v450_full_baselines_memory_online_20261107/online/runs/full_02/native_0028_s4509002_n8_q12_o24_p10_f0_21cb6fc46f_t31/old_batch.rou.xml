@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <vType id="small" vClass="delivery" length="2" maxSpeed="8" accel="2" decel="4.5" sigma="0" speedFactor="1" speedDev="0" tau="1" emergencyDecel="9" />
+  <vType id="truck" vClass="delivery" length="8" maxSpeed="6" accel="1.5" decel="3" sigma="0" speedFactor="1" speedDev="0" tau="1" emergencyDecel="9" />
+  <vType id="traffic" vClass="passenger" length="4" maxSpeed="10" accel="2" decel="4.5" sigma="0" speedFactor="1" speedDev="0" tau="1" emergencyDecel="9" />
+  <vType id="walker" vClass="pedestrian" maxSpeed="1.2" speedFactor="1" speedDev="0" />
+  <vehicle id="A" type="small" depart="0" departPos="28" departLane="0" departSpeed="0">
+    <route edges="WU0" />
+    <stop lane="WU0_0" endPos="28" duration="10000" parking="true" />
+  </vehicle>
+  <vehicle id="B" type="small" depart="0" departPos="28" departLane="0" departSpeed="0">
+    <route edges="WD0" />
+    <stop lane="WD0_0" endPos="28" duration="10000" parking="true" />
+  </vehicle>
+  <vehicle id="bg" type="traffic" depart="0" departPos="40" departLane="0" departSpeed="8">
+    <route edges="WC CE" />
+  </vehicle>
+  <person id="ped0" type="walker" depart="0.0" departPos="36">
+    <walk edges="NC CS" arrivalPos="2" />
+  </person>
+  <person id="ped1" type="walker" depart="0.4" departPos="34">
+    <walk edges="NC CS" arrivalPos="2" />
+  </person>
+  <person id="ped2" type="walker" depart="0.8" departPos="30">
+    <walk edges="NC CS" arrivalPos="2" />
+  </person>
+  <person id="ped3" type="walker" depart="1.2000000000000002" departPos="27">
+    <walk edges="NC CS" arrivalPos="2" />
+  </person>
+  <person id="ped4" type="walker" depart="1.6" departPos="23">
+    <walk edges="NC CS" arrivalPos="2" />
+  </person>
+  <person id="ped5" type="walker" depart="2.0" departPos="19">
+    <walk edges="NC CS" arrivalPos="2" />
+  </person>
+  <person id="ped6" type="walker" depart="2.4000000000000004" departPos="15">
+    <walk edges="NC CS" arrivalPos="2" />
+  </person>
+  <person id="ped7" type="walker" depart="2.8000000000000003" departPos="11">
+    <walk edges="NC CS" arrivalPos="2" />
+  </person>
+  <person id="ped8" type="walker" depart="3.2" departPos="7">
+    <walk edges="NC CS" arrivalPos="2" />
+  </person>
+  <person id="ped9" type="walker" depart="3.6" departPos="3">
+    <walk edges="NC CS" arrivalPos="2" />
+  </person>
+</routes>

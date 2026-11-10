@@ -1,0 +1,53 @@
+--- plot_native_outcome_v450.py
++++ plot_native_outcome_v450_v2.py
+@@ -30,7 +30,7 @@
+     require(len(found)==1,("Expected unique source row",fields));return found[0]
+ 
+ def evidence(analysis,expected_summary):
+-    prep=load(ROOT/"Preparation_Manifest.json")
++    prep=load(ROOT/"Preparation_Manifest_v2.json")
+     for path,h in prep["source_hashes"].items():require(sha(path)==h,("Prepared source changed",path))
+     require(sha(analysis/"SUMMARY.json")==expected_summary.lower(),"Independent audit summary SHA mismatch")
+     done=load(analysis/"PROCESS_COMPLETE.json");summary=load(analysis/"SUMMARY.json")
+@@ -114,6 +114,7 @@
+     fig.subplots_adjust(left=.11,right=.97,bottom=.30,top=.74,wspace=.33)
+     fig.suptitle("Native outcomes under three planning budgets",fontsize=10,fontweight="bold",y=.96)
+     fig.text(.5,.89,"Same AWA* engine | Shared-quota gate minus RADIUS alone",ha="center",fontsize=8)
++    fig.text(.5,.837,"10 ms mainly executes a late common-initial-plan fallback",ha="center",fontsize=7.5)
+     for ax,metric,panel,title in zip(axes,("customer_flow_J","truck_handoff_wait"),("a","b"),
+                                     ("Customer-flow J","Truck handoff waiting")):
+         rr=[r for r in data if r["metric"]==metric];values=[r["full64_mean_change_seconds"] for r in rr]
+@@ -151,6 +152,8 @@
+ 
+ Each case-level outcome is the existing audit's policy-frequency-weighted representative native replay: selected representative plan/activation outcomes are weighted by the number of the three policy repetitions they represent, divided by three. It is not an average of three independent native replications. Planning latency and the existing activation quantization remain charged to execution. The plotted physical quantities are distinct from within-deadline forecast quality and from proving the forecast optimum.
+ 
++**Deadline interpretation at 10 ms.** The shared-quota-gated arm had NO_PLAN_BY_DEADLINE in 192/192 policy repetitions, and RADIUS alone in 191/192. These calls executed the late common-initial-plan fallback. Thus the 10 ms physical outcome mainly reflects this late fallback, not a plan produced within 10 ms. The recorded planning latency and activation timing remain included in the physical replay.
++
+ W/T/L/U counts use lower/tied/higher/unknown paired outcomes, with a 1e-6 second equality tolerance matching the independent audit. Any missing or failed representative makes its full case/arm physical aggregate unknown. If any pair is unknown, the full-64 mean for that budget is withheld as NA; unknown outcomes remain in the count denominator. No survivor, winner, same-plan, or completed-proof subset is substituted for all scenarios.
+ 
+ This evidence concerns a single frozen dispatch epoch in a synthetic SUMO network. Truck handoff waiting is distinct from SUMO waitingTime, general congestion delay and dispatch activation latency. The figure does not establish continuous rolling dispatch, calibration of the delivery network, real-world safety, or independent replication across 64 networks. No numerical values were selected using pilot gains. All three budgets and all unfavorable effects are retained.
+@@ -180,6 +183,15 @@
+             shutil.copyfile(a.analysis/name,source/name);inputs[name]=dict(original=str((a.analysis/name).resolve()),sha256=sha(source/name))
+         preflight=command(SKILL/"validate_figure.py",[Path(__file__),"--backend","python","--json"],qa/"source",env)
+         dump(qa/"source.json",preflight);require(preflight["summary"]["ready"],"Source preflight")
++        fallback={}
++        for arm in (CAND,BASE):
++            rr=[r for r in csvread(source/FILES[0]) if r["arm"]==arm and int(r["budget_ms"])==10]
++            fallback[arm]={"case_count":len(rr),"policy_repetitions":sum(int(r["policy_repetitions"]) for r in rr),
++                           "no_plan_by_deadline":sum(int(r["fallback_repetitions"]) for r in rr)}
++        require(fallback[CAND]=={"case_count":64,"policy_repetitions":192,"no_plan_by_deadline":192},"10 ms candidate annotation source changed")
++        require(fallback[BASE]=={"case_count":64,"policy_repetitions":192,"no_plan_by_deadline":191},"10 ms baseline annotation source changed")
++        dump(out/"Deadline_Interpretation.json",{"budget_ms":10,"counts":fallback,
++             "meaning":"Primarily executes late common-initial-plan fallback; not a 10 ms on-time plan claim."})
+         casepoints,plotpoints=points(source)
+         csvwrite(out/"Native_Per_Case_Points.csv",casepoints);csvwrite(out/"Native_Plotted_Points.csv",plotpoints)
+         draw(plotpoints,out);(out/"Caption.md").write_text(CAPTION,encoding="utf-8")
+@@ -203,7 +215,7 @@
+         dump(out/"QA_Summary.json",dict(status="AUTOMATED_PASS_VISUAL_PENDING",font_min_pt=font["minimum_found_pt"],
+             collision_findings=collision["findings"],source_findings=preflight["findings"],visual_inspection="PENDING"))
+         dump(out/"Output_Manifest.json",dict(status="AUTOMATED_PASS_VISUAL_PENDING",source_sha256=sha(__file__),
+-            preparation_sha256=sha(ROOT/"Preparation_Manifest.json"),input_evidence=inputs,
++            preparation_sha256=sha(ROOT/"Preparation_Manifest_v2.json"),input_evidence=inputs,
+             outputs={str(p.relative_to(out)):sha(p) for p in sorted(out.rglob("*")) if p.is_file() and "_fontcache" not in p.parts}))
+         dump(out/"PROCESS_COMPLETE.json",dict(status="AUTOMATED_PASS_VISUAL_PENDING",cases=64,mothers=8,solver_runs=0))
+     except BaseException:

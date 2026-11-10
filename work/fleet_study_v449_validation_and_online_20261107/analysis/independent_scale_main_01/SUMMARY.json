@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "independent_raw_recomputation": true,
+  "audit_script_sha256": "2d79bdd1c021f0c7befa702b45ea93d1c06c3d1cc89dbf5b788f85275a1b6153",
+  "official_csv_field_checks": 222406,
+  "planned_calls": 10800,
+  "cases": 400,
+  "mothers": 100,
+  "methods": 9,
+  "pairs": 36,
+  "selected_blocks": 52,
+  "exact_oracles": 400,
+  "hard_timeout_calls": 0,
+  "actual_RAM_measured": false,
+  "oracle_independent_of_DP_ADAPTER": false,
+  "scope": "Independent arithmetic/source audit, not an independent rerun of search or oracle; no SUMO claim"
+}

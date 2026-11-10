@@ -1,0 +1,39 @@
+{
+  "status": "EXISTING_READBACK_ARCHIVED_NO_RECOMPUTATION",
+  "source_csv": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\analysis\\main_01\\Observations.csv",
+  "source_sha256": "77a310449ac142169305edf93cb6cb5e6c75d4195baeff71836b979fc906937c",
+  "observations_per_method": 32,
+  "recipe": "Filter method; count observed_growth_PeakWorkingSetSize == 0 and observed_growth_PeakPagefileUsage == 0. Growth columns equal post_solve peak minus pre_solve peak.",
+  "readback_tool_session": "73674, completed before root excluded numerical analysis",
+  "rows": [
+    {
+      "zero_commit_peak_growth": 30,
+      "zero_working_set_peak_growth": 32,
+      "pre_peak_ws_median_KiB": 27042,
+      "method": "RADIUS_PAIR_AWA_GATED",
+      "post_peak_ws_median_KiB": 27042
+    },
+    {
+      "zero_commit_peak_growth": 26,
+      "zero_working_set_peak_growth": 28,
+      "pre_peak_ws_median_KiB": 27202,
+      "method": "HZ_AWA_RADIUS",
+      "post_peak_ws_median_KiB": 27236
+    },
+    {
+      "zero_commit_peak_growth": 27,
+      "zero_working_set_peak_growth": 30,
+      "pre_peak_ws_median_KiB": 27110,
+      "method": "HZ_AWA_RADIUS_PAIR_GATED",
+      "post_peak_ws_median_KiB": 27114
+    },
+    {
+      "zero_commit_peak_growth": 26,
+      "zero_working_set_peak_growth": 28,
+      "pre_peak_ws_median_KiB": 27102,
+      "method": "ANA_RADIUS",
+      "post_peak_ws_median_KiB": 27128
+    }
+  ],
+  "raw_or_csv_modified": false
+}

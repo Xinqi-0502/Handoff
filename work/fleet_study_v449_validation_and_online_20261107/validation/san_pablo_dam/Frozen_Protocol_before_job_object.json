@@ -1,0 +1,54 @@
+{
+  "status": "FROZEN_NOT_RUN",
+  "source_commit": "32b8df574b9976dda12d9ccc5e6332b2ae9ff98e",
+  "sumo_binary": "D:\\traffic-coop-research\\.venv\\Lib\\site-packages\\sumo\\bin\\sumo.exe",
+  "sumo_version_observed": "1.27.1",
+  "netconvert_binary": "D:\\traffic-coop-research\\.venv\\Lib\\site-packages\\sumo\\bin\\netconvert.exe",
+  "parameters": {
+    "maxSpeed": 22.0,
+    "accel": 2.0,
+    "decel": 2.0,
+    "length": 5.0,
+    "minGap": 2.5,
+    "sigma": 0.5
+  },
+  "tau_candidates": [
+    1.2,
+    1.5,
+    1.8
+  ],
+  "baseline_tau": 1.5,
+  "train_day": 1,
+  "heldout_day": 2,
+  "segments": [
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "selection": "minimum mean of three segment RMSEs; exact numeric ties prefer baseline tau=1.5, then smaller tau",
+  "seed": 23423,
+  "step_length": 1.0,
+  "day_begin": "floor(first observed station1 second / 60)*60",
+  "day_end": "last observed station8 second + 900",
+  "vss_distance_m": 337.5,
+  "vss_rule": "same as upstream: t7 changes only, omit final index, v=337.5/(t8-t7)",
+  "measure": "instantInductionLoop enter time indexed by vehID (the common observation row index); travel time differences between station pairs",
+  "max_sumo_runs": 5,
+  "max_per_process_seconds": 45,
+  "total_execution_seconds": 300,
+  "time_to_teleport": -1,
+  "collision_action": "warn",
+  "requires_external_thermal_monitor": true,
+  "validation_claim": "conditional observed-boundary, cross-day tutorial transfer; not calibration of the delivery network",
+  "no_day2_selection": true,
+  "no_improvement_required_for_completion": true
+}

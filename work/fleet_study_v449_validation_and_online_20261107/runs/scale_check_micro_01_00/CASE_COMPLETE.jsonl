@@ -1,0 +1,4 @@
+{"case": "micro_s3470301_m3_tight_free", "status": "PASS", "solution_checks": 12, "trace_replays": 28, "same_initial_value": 165, "same_initial_plan": ["old:1", "old:0", "old:2", "handoff:a", "deliver:a", "handoff:b"], "exact_optimum": 152}
+{"case": "micro_s3470301_m3_tight_signal", "status": "PASS", "solution_checks": 12, "trace_replays": 27, "same_initial_value": 178, "same_initial_plan": ["old:1", "old:0", "old:2", "handoff:a", "deliver:a", "handoff:b"], "exact_optimum": 155}
+{"case": "micro_s3470301_m3_roomier_free", "status": "PASS", "solution_checks": 12, "trace_replays": 23, "same_initial_value": 165, "same_initial_plan": ["old:1", "old:0", "old:2", "handoff:a", "deliver:a", "handoff:b"], "exact_optimum": 120}
+{"case": "micro_s3470301_m3_roomier_signal", "status": "PASS", "solution_checks": 12, "trace_replays": 29, "same_initial_value": 178, "same_initial_plan": ["old:1", "old:0", "old:2", "handoff:a", "deliver:a", "handoff:b"], "exact_optimum": 154}

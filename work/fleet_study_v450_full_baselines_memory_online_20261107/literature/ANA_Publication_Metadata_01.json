@@ -1,0 +1,17 @@
+{
+  "status": "OFFICIAL_PUBLICATION_METADATA_VERIFIED",
+  "checked_date": "2026-11-07",
+  "title": "Anytime Nonparametric A*",
+  "authors": ["Jur van den Berg", "Rajat Shah", "Arthur Huang", "Ken Goldberg"],
+  "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "volume": 25,
+  "issue": 1,
+  "pages": "105-111",
+  "published": "2011-08-04",
+  "doi": "10.1609/aaai.v25i1.7819",
+  "official_metadata_url": "https://ojs.aaai.org/index.php/AAAI/article/view/7819",
+  "author_fulltext_used_for_algorithm_audit": "https://goldberg.berkeley.edu/pubs/ana-aaai-2011-vdberg-shah-goldberg.pdf",
+  "official_pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/7819/7678",
+  "official_pdf_direct_access_this_check": "ACCESS_DENIED_BY_PUBLISHER_BOT_PROTECTION",
+  "scope": "Official metadata verified; the algorithm comparison remains based on the accessible seven-page author copy and the pinned SBPL source described in Published_Baseline_Implementation_Audit.md. No frozen algorithm or experiment source changed."
+}

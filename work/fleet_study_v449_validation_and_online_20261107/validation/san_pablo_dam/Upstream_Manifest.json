@@ -1,0 +1,176 @@
+{
+  "commit": "32b8df574b9976dda12d9ccc5e6332b2ae9ff98e",
+  "retrieved_utc": "2026-11-07T10:33:21.943092+00:00",
+  "sources": [
+    {
+      "file": "data/analyzeData.py",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/analyzeData.py",
+      "bytes": 4524,
+      "sha256": "8637960876a346c59246c4eb7eb09507cab9c3e0bf0f498cb298b4b1d02368d1",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/input_det.add.xml",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/input_det.add.xml",
+      "bytes": 769,
+      "sha256": "759d1f498c75ec7774121a41f5b597f4234d989ece0f3f78d2232195ff35f6ee",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/input_vss.add.xml",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/input_vss.add.xml",
+      "bytes": 228,
+      "sha256": "06adb5eae5ce4b9f7652acc54fbecf99ba35d1bca999a8de946b9d9fdba95a81",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/obstimes_1_1.txt",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/obstimes_1_1.txt",
+      "bytes": 20682,
+      "sha256": "a06a3a314ddd614fd0f7b23328784cbf2c4aa6c949de753a58128f9a22913e69",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/obstimes_1_2.txt",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/obstimes_1_2.txt",
+      "bytes": 20682,
+      "sha256": "3348aa914f0836307dc58b1475e6ac357ac49dd4ca3004a1506d7f5edefbdada",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/obstimes_1_3.txt",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/obstimes_1_3.txt",
+      "bytes": 20682,
+      "sha256": "569f80da6a5dfd721e0f76e50fda52ef4b947dc80356bb7186b49eeed54fe5a9",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/obstimes_1_4.txt",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/obstimes_1_4.txt",
+      "bytes": 20682,
+      "sha256": "74dfb3445dbde49aaca9e4afd35fdfe10ed5f16cf4c98a180e50dc2ef965662c",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/obstimes_1_6.txt",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/obstimes_1_6.txt",
+      "bytes": 20682,
+      "sha256": "58c826b91050a2a7f5ff8ca4c0c9ca370d9d6494f8b61928a019564c38106dc4",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/obstimes_1_7.txt",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/obstimes_1_7.txt",
+      "bytes": 20682,
+      "sha256": "5e338ea55da75d22a18ce319161aa702331a60d2c35e77c7336c1df2b7e4e2ca",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/obstimes_1_8.txt",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/obstimes_1_8.txt",
+      "bytes": 20682,
+      "sha256": "97ea8cf8cce587af8d3e61263335a5a2c0fd4b7eb9f1f83fb677d4ed6b430330",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/obstimes_2_1.txt",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/obstimes_2_1.txt",
+      "bytes": 20637,
+      "sha256": "93aa9cc7c32428878c7ae86ff3200c3c01ee4bfcf83b37c088c79a66b8260050",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/obstimes_2_2.txt",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/obstimes_2_2.txt",
+      "bytes": 20637,
+      "sha256": "bd85fd394aaa0edb41e562288f00c47320ccacef526a355211787a5762581432",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/obstimes_2_3.txt",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/obstimes_2_3.txt",
+      "bytes": 20637,
+      "sha256": "14b57934db549b57a784f71abfc97827c9d7e4ce5f99765194849b30f8693c4a",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/obstimes_2_4.txt",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/obstimes_2_4.txt",
+      "bytes": 20637,
+      "sha256": "ccea8f10c74322ba20a2b8e78eaa64c1cfc0bd776d7feeb3be8c50f8771648d6",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/obstimes_2_5.txt",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/obstimes_2_5.txt",
+      "bytes": 20637,
+      "sha256": "874b4f5bce4005c2180c37aa78c8b26bc2cc5b3e16ad8e5905dc45ef9eba65e0",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/obstimes_2_7.txt",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/obstimes_2_7.txt",
+      "bytes": 20637,
+      "sha256": "5d3d63020f8d852fefd09de258620e6069f2bb387b3f51c500dcef9cd2a92767",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/obstimes_2_8.txt",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/obstimes_2_8.txt",
+      "bytes": 20637,
+      "sha256": "1d5360ee1a71427f482c0d255564160533412943d198d8b23227d1bc076b85cb",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/spd-road.edg.xml",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/spd-road.edg.xml",
+      "bytes": 159,
+      "sha256": "0d6d71d59fa7de3925807fd8df65d901607dc4707aeb5dc9138ed1705aa48e9a",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/spd-road.nod.xml",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/spd-road.nod.xml",
+      "bytes": 143,
+      "sha256": "375a6c202d457288842172228fc3eadbfd69d67a965b2b89c4876aecb86eba98",
+      "status": "FETCHED"
+    },
+    {
+      "file": "data/spd-road.sumocfg",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/data/spd-road.sumocfg",
+      "bytes": 759,
+      "sha256": "cbc72d49ece8eda93ad1fa9e5d998268d77cf1d2e0897c0b81a919db1ad8a37f",
+      "status": "FETCHED"
+    },
+    {
+      "file": "runner.py",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/runner.py",
+      "bytes": 4588,
+      "sha256": "9095b7115528334ee702baeb2a3a6d7683dca7d54f5f74c70bcb3670ff4ec2e9",
+      "status": "FETCHED"
+    },
+    {
+      "file": "validate.py",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/tests/complex/tutorial/san_pablo_dam/validate.py",
+      "bytes": 4443,
+      "sha256": "33c35f46562dec66418ad2fd0acc91817ae1992d77acfb7b19dc8be73a58c06a",
+      "status": "FETCHED"
+    },
+    {
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/LICENSE",
+      "bytes": 14197,
+      "sha256": "8c349f80764d0648e645f41ef23772a70c995a0924b5235f735f4a3d09df127c",
+      "status": "FETCHED"
+    },
+    {
+      "file": "NOTICE.md",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/32b8df574b9976dda12d9ccc5e6332b2ae9ff98e/NOTICE.md",
+      "bytes": 5076,
+      "sha256": "16e84a2f04366856851953c4e62e1f25b3f871777122047a5e9f90b00bb71a83",
+      "status": "FETCHED"
+    }
+  ],
+  "total_downloaded_bytes": 324119,
+  "no_sumo_execution": true
+}

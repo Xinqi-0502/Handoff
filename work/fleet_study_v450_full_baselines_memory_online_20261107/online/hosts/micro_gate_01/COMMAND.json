@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\check_online_v450.py",
+    "check",
+    "--inputs",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\MICRO_INPUTS_01.json",
+    "--out",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\gates\\micro_01"
+  ],
+  "cwd": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\hosts\\micro_gate_01",
+  "helper": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\validation\\san_pablo_dam\\run_public_validation.py",
+  "helper_sha256": "c50fcb484be5261a6e710371fbe745af1c0cbabd548ff57994febc6bd8acb451",
+  "args_sha256": "d4ce041f5c308cdb93c30ff171ed068c58ef705ae1346cd4d6f5cdbbbeee13a1",
+  "timeout_seconds": 900.0,
+  "scope": "This worker and its native descendants only; kernel kill-on-job-close"
+}

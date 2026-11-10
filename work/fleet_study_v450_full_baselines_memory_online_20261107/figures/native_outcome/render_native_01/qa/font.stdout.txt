@@ -1,0 +1,10 @@
+{
+  "pdf": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\native_outcome\\render_native_01\\Fig3_Native_Outcomes.pdf",
+  "auditable": true,
+  "minimum_required_pt": 5.0,
+  "minimum_found_pt": 7.0,
+  "text_run_count": 21,
+  "below_minimum_count": 0,
+  "below_minimum": [],
+  "warnings": []
+}

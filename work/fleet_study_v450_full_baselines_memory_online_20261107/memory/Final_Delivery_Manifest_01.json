@@ -1,0 +1,19 @@
+{
+  "status": "DELIVERY_COMPLETE_METADATA_ONLY",
+  "measurement_manifest_sha256": "c9242a0fc7fec3571920cbf47c1d6c970b3be1aecc85048864c03a52cfb78c81",
+  "main_observations": 128,
+  "cases": 32,
+  "mothers": 8,
+  "main_failures_or_censors": 0,
+  "independent_audit": "PASS",
+  "no_algorithm_RAM_advantage_established": true,
+  "raw_and_csv_modified": false,
+  "files": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\Final_Artifact_Index.md": "d3f1f18190876c09dcc8195368be36b41499565a6238acb1855e7c361312649c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\Failure_Chronology.md": "3237023e507bf1e1023b73729cb7b1b64905fbdb06a4a0ed8c492af77940a5a7",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\analysis\\main_01\\Memory_Results.md": "dba24e49762d9c53605ed6915176eb0eec409512851de478ebc664ac3adbc452",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\analysis\\main_01\\Interpretation_Addendum.md": "b5a5e13500dc3e0ec4abcc0731ffefa623d88f0bbe8d1809427f7f56285ec66e",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\analysis\\main_01\\Addendum_Manifest_01.json": "18d4994502cdbd75c39af68a7b5b4c73e8ef1636702abb61fe32c1511e6d52c7",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\analysis\\main_01\\Zero_Growth_Readback_01.json": "7777fc922eb08732ac003ba39bb1abbf4220ac70b290534213b29ffaab1e75e2"
+  }
+}

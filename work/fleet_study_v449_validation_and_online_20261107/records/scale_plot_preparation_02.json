@@ -1,0 +1,13 @@
+{
+  "status": "AST_PASS_NOT_EXECUTED",
+  "previous_sha256": "4d334153361fc630473ebdeb3df1ee3b5990a407ec6e931d9c1a79857483f318",
+  "current_sha256": "5d7627e18c7aeaf793df543def9b249b15ce5d752da05fbf77c163ec5477fbb4",
+  "changes": [
+    "Explicit end-of-run expansion titles",
+    "Visible warning: soft-overrun/truncated work is not full solution work at one second",
+    "Low expansion counts may reflect slow bounds; no efficiency ranking"
+  ],
+  "numerical_sources_changed": false,
+  "matplotlib_imported": false,
+  "analysis_or_render_executed": false
+}

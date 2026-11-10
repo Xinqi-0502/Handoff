@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-07",
+  "workflow": "academic-research-suite / deep-research / bounded fact-check",
+  "status": "PARTIAL_PRIMARY_BODY / NO_COMPLETE_FULLTEXT",
+  "new_search_queries": 8,
+  "queries": [
+    "\"10.1016/j.cor.2026.107577\"",
+    "\"Comparing four MILP formulations\" \"FIFO\"",
+    "\"10.1016/j.cor.2026.107577\" [domain: sciencedirect.com]",
+    "\"Comparing four MILP formulations\" \"Proposition 4\"",
+    "\"Comparing four MILP formulations\" \"inventory\" \"Constraints\"",
+    "\"Comparing four MILP formulations\" pdf -site:researchgate.net -site:ouci.dntb.gov.ua",
+    "\"107577\" \"Touzout\" hal",
+    "\"Comparing four MILP formulations\" \"3.1\" \"Algorithm\""
+  ],
+  "access": [
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0305054826001954",
+      "method": "web open",
+      "result": "403 Forbidden; search-index body excerpts accessible"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.cor.2026.107577",
+      "method": "web open",
+      "result": "Redirected to linkinghub.elsevier.com, inaccessible; search-index body excerpts accessible"
+    },
+    {
+      "url": "https://papers.ssrn.com/sol3/Delivery.cfm/09a2020b-40b9-4715-ac73-c99350997b9b-MECA.pdf?abstractid=6205942&mirid=1&type=2",
+      "method": "web open",
+      "result": "403 Forbidden"
+    },
+    {
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6205942",
+      "method": "web search",
+      "result": "Author preprint record/abstract; no full PDF obtained"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0305054826001954/pdfft",
+      "method": "web open",
+      "result": "Cache miss"
+    },
+    {
+      "method": "existing browser session initialization: cua.getState()",
+      "result": "failed to write kernel assets: 系统找不到指定的路径。 (os error 3)",
+      "accessed_tabs": 0
+    }
+  ],
+  "inspected_scope": [
+    "Partial publisher-index text §§3.1,3.3.1–3.3.3,3.4–3.5,4.1",
+    "Discussion of Eq.(33)",
+    "Statement of Proposition 4"
+  ],
+  "missing_scope": [
+    "Complete formal PDF",
+    "Algorithm 1–4 images",
+    "Complete formulation constraints",
+    "Complete proofs",
+    "Appendices",
+    "Verified PDF pagination"
+  ],
+  "evidence_limits": {
+    "metadata_is_not_formula_evidence": true,
+    "indexed_body_is_not_complete_fulltext": true,
+    "global_novelty_clearance": false
+  },
+  "secondary_results": "Secondary search hits were not used to establish formula claims.",
+  "scope_control": "No reopened excluded source; no credential request; no additional broad resource/profile search; no solver, SUMO, renderer or numerical analysis executed.",
+  "outputs": [
+    "COR_107577_Bounded_Update_20261107.md",
+    "COR_107577_Query_Access_Log.json"
+  ]
+}

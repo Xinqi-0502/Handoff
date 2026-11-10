@@ -1,0 +1,3 @@
+arm,cases,setup_seconds_sum_ms,initial_seconds_sum_ms,search_seconds_sum_ms,root_bound_seconds_sum_ms,instrumented_proof_by_deadline_calls
+HZ_AWA_RADIUS,64,694.6576996706426,127.13949987664819,912.1577005134895,7.385599194094539,63
+HZ_AWA_PAIR_GATED,64,702.8351994231343,125.5747004179284,996.9142996706069,6.947599817067385,62

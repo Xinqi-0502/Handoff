@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "E:\CodexResearch-xi\workspace\work\fleet_study_v449_validation_and_online_20261107\validation\san_pablo_dam\run_public_validation.py", line 231, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ^^^^^^
+  File "E:\CodexResearch-xi\workspace\work\fleet_study_v449_validation_and_online_20261107\validation\san_pablo_dam\run_public_validation.py", line 216, in main
+    train=[run(p['train_day'],tau) for tau in p['tau_candidates']]
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CodexResearch-xi\workspace\work\fleet_study_v449_validation_and_online_20261107\validation\san_pablo_dam\run_public_validation.py", line 215, in run
+    result=measure(folder,obs,p,day,tau);records.append(result);dump(out/'Progress.json',{'completed':len(records),'runs':records});return result
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CodexResearch-xi\workspace\work\fleet_study_v449_validation_and_online_20261107\validation\san_pablo_dam\run_public_validation.py", line 171, in measure
+    if len(ids)!=n or set(ids)!=set(map(str,range(n))) or any(float(x.attrib['arrival'])<0 for x in trips):raise ValueError(('incomplete vehicle population',day,tau))
+                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: ('incomplete vehicle population', 1, 1.2)

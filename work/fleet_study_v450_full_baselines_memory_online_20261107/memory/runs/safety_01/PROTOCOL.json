@@ -1,0 +1,16 @@
+{
+  "scope": "16-MiB native counters, successful exit callback and owned timeout cleanup only; no solver",
+  "sources": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\native_memory.py": "13c9af100de45e9235c5842bdae6257f7461db9a61b5b5859f4e9d523712d5af",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\owned_process.py": "23c9e418596e20d29aae0d3842c47b516bf5d320c66b586afba552d4d797215c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\memory_common.py": "9b16dae3c8c9881796c9cb0c77a9965af8cce02eedf3f39758d4563724593e4e",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\memory_worker.py": "12aebc8ca511144b0e59e1be0548fbb2864e9d9fa8588c69118beaae4a9a645b",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\memory\\check_memory_safety.py": "1405fc84068fb38397020b47b0caf312acb4dcbf2c306e27d08954de24763290"
+  },
+  "prior_helper_provenance": {
+    "source": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\validation\\san_pablo_dam\\run_public_validation_v2.py",
+    "source_sha256": "8cc08c493769e7559e2a529c1a0695bb8639b33a6022327567da52805106114b",
+    "change": "Optional read-only process-handle observer at start/exit/owned termination; JOB_LIST and kill-on-close behavior unchanged",
+    "execution_status": "NOT_RUN"
+  }
+}

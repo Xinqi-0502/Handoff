@@ -1,0 +1,7814 @@
+{
+  "schema": "V450-native-prefix-snapshots-v1",
+  "cases": [
+    {
+      "case": "s4509001_n8_q12_o0_p0_f0",
+      "seed": 4509001,
+      "offset": 0,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "37b9fc17d953d8c9f15ca80b5521cc059d05f3048f678568dd05560223d64c4c",
+      "xml": "b511fc2dd17eba467a2f75e34602c8f975c83d76005c0737fe79ca9ed93c22d2",
+      "obs": {
+        "WC": {
+          "samples": 17,
+          "unique": 1,
+          "green_samples": 17,
+          "green_unique": 1,
+          "green_latest_age": 1.5999999999999996,
+          "green_mean_mps": 8.922807411764706,
+          "category": "moving"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509001_n8_q12_o0_p0_f2",
+      "seed": 4509001,
+      "offset": 0,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "5234157bd1c7b8225a6c8bda93613dd8607b300f8c3439473fd90e10f62fbf4b",
+      "xml": "c4fd39baa37ce1903e17ae7fa2af2db0049857f8e69310553f881d253b08a174",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 55,
+          "green_unique": 3,
+          "green_latest_age": 0.0,
+          "green_mean_mps": 1.7688866727272727,
+          "category": "slow"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509001_n8_q12_o0_p10_f0",
+      "seed": 4509001,
+      "offset": 0,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "05b1f4313715861299a95d8db0698cf3243f7209c6ad09f30ae1571ef6f6c2b2",
+      "xml": "691d01b539ed6e4f6d8383666c0cd03de3fbc7cb6a5a3da32815e9ba9852c11d",
+      "obs": {
+        "WC": {
+          "samples": 17,
+          "unique": 1,
+          "green_samples": 17,
+          "green_unique": 1,
+          "green_latest_age": 1.5999999999999996,
+          "green_mean_mps": 8.922807411764706,
+          "category": "moving"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509001_n8_q12_o0_p10_f2",
+      "seed": 4509001,
+      "offset": 0,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "1d9756a5cd83f53e82c1ca803f0bdc2fefcb8b303e30723ad6979a900e408451",
+      "xml": "1d9464a7a49440c93f0802d1b52591ece527655e3026a3070d08b5f09363b2ba",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 55,
+          "green_unique": 3,
+          "green_latest_age": 0.0,
+          "green_mean_mps": 1.7688866727272727,
+          "category": "slow"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509001_n8_q12_o24_p0_f0",
+      "seed": 4509001,
+      "offset": 24,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "1adb9b73821ad2628d25d69312620718b3d169725b11cdc2e4521f152bd5fc59",
+      "xml": "b511fc2dd17eba467a2f75e34602c8f975c83d76005c0737fe79ca9ed93c22d2",
+      "obs": {
+        "WC": {
+          "samples": 25,
+          "unique": 1,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509001_n8_q12_o24_p0_f2",
+      "seed": 4509001,
+      "offset": 24,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "be1694e0278c118606b1540ade6eaa43a54d9d126326b0280e52aa2f77e78f47",
+      "xml": "c4fd39baa37ce1903e17ae7fa2af2db0049857f8e69310553f881d253b08a174",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509001_n8_q12_o24_p10_f0",
+      "seed": 4509001,
+      "offset": 24,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "291267acecb59643a7ff0da13265772923ae1d9cef3252831deec0b248966d1f",
+      "xml": "691d01b539ed6e4f6d8383666c0cd03de3fbc7cb6a5a3da32815e9ba9852c11d",
+      "obs": {
+        "WC": {
+          "samples": 25,
+          "unique": 1,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509001_n8_q12_o24_p10_f2",
+      "seed": 4509001,
+      "offset": 24,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509001,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDu",
+          "a1": "WUu",
+          "a2": "WUv",
+          "a3": "WUx",
+          "a4": "WDx",
+          "a5": "EUu",
+          "a6": "EDx",
+          "a7": "EDv",
+          "b0": "EUu",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "WUx",
+          "b4": "EUv",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 1,
+          "a5": 1,
+          "a6": 2,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "4dc48cedd91d937ac99c56c4fe1fc7a68b640085a68c5b5553a31f8c48ee7188",
+      "xml": "1d9464a7a49440c93f0802d1b52591ece527655e3026a3070d08b5f09363b2ba",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509002_n8_q12_o0_p0_f0",
+      "seed": 4509002,
+      "offset": 0,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509002,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "EDx",
+          "a2": "EDu",
+          "a3": "WDx",
+          "a4": "EDv",
+          "a5": "WDu",
+          "a6": "EUu",
+          "a7": "WUx",
+          "b0": "WDu",
+          "b1": "EDx",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EUx",
+          "b5": "EDv",
+          "b6": "EUv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU0"
+          ],
+          "route_index": 0,
+          "committed": "WUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WD0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD0"
+          ],
+          "route_index": 0,
+          "committed": "WDu"
+        }
+      },
+      "prefix": "eaf1aefe66347451df65a496b741caa5e9c852d16e9106967d31707af8eaf002",
+      "xml": "c9adf08c09dc0766874b0d707f0056a7d72801729f2a1717b63930be8e5377ef",
+      "obs": {
+        "WC": {
+          "samples": 17,
+          "unique": 1,
+          "green_samples": 17,
+          "green_unique": 1,
+          "green_latest_age": 1.5999999999999996,
+          "green_mean_mps": 8.922807411764706,
+          "category": "moving"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509002_n8_q12_o0_p0_f2",
+      "seed": 4509002,
+      "offset": 0,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509002,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "EDx",
+          "a2": "EDu",
+          "a3": "WDx",
+          "a4": "EDv",
+          "a5": "WDu",
+          "a6": "EUu",
+          "a7": "WUx",
+          "b0": "WDu",
+          "b1": "EDx",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EUx",
+          "b5": "EDv",
+          "b6": "EUv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU0"
+          ],
+          "route_index": 0,
+          "committed": "WUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WD0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD0"
+          ],
+          "route_index": 0,
+          "committed": "WDu"
+        }
+      },
+      "prefix": "96c96d3360617d479bd6653806dea56856d13ee912118d601bfa4e1eb83f6884",
+      "xml": "295a73a64c7831d5f0b909c3695e859421abb5520f701bbfacfc166441562526",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 55,
+          "green_unique": 3,
+          "green_latest_age": 0.0,
+          "green_mean_mps": 1.7688866727272727,
+          "category": "slow"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509002_n8_q12_o0_p10_f0",
+      "seed": 4509002,
+      "offset": 0,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509002,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "EDx",
+          "a2": "EDu",
+          "a3": "WDx",
+          "a4": "EDv",
+          "a5": "WDu",
+          "a6": "EUu",
+          "a7": "WUx",
+          "b0": "WDu",
+          "b1": "EDx",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EUx",
+          "b5": "EDv",
+          "b6": "EUv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU0"
+          ],
+          "route_index": 0,
+          "committed": "WUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WD0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD0"
+          ],
+          "route_index": 0,
+          "committed": "WDu"
+        }
+      },
+      "prefix": "12b4697ba8e448f60b07ebc871a19745fd27aec191b93910b34f4de3f68373db",
+      "xml": "a2ab9eb61b91d9aba26be1216b0458d1a0cdaaccbf1184ad94b6c13931ecfa8b",
+      "obs": {
+        "WC": {
+          "samples": 17,
+          "unique": 1,
+          "green_samples": 17,
+          "green_unique": 1,
+          "green_latest_age": 1.5999999999999996,
+          "green_mean_mps": 8.922807411764706,
+          "category": "moving"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509002_n8_q12_o0_p10_f2",
+      "seed": 4509002,
+      "offset": 0,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509002,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "EDx",
+          "a2": "EDu",
+          "a3": "WDx",
+          "a4": "EDv",
+          "a5": "WDu",
+          "a6": "EUu",
+          "a7": "WUx",
+          "b0": "WDu",
+          "b1": "EDx",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EUx",
+          "b5": "EDv",
+          "b6": "EUv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU0"
+          ],
+          "route_index": 0,
+          "committed": "WUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WD0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD0"
+          ],
+          "route_index": 0,
+          "committed": "WDu"
+        }
+      },
+      "prefix": "a3af6a84dbf7fb1af422399ab344e9312fd12f2075528f6fc4941b2893fc60b5",
+      "xml": "958e03c2cd0f98e3cef8ed7bc457c61c4f1c1db9cc4cc8e80e3b8352d6cb6a21",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 55,
+          "green_unique": 3,
+          "green_latest_age": 0.0,
+          "green_mean_mps": 1.7688866727272727,
+          "category": "slow"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509002_n8_q12_o24_p0_f0",
+      "seed": 4509002,
+      "offset": 24,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509002,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "EDx",
+          "a2": "EDu",
+          "a3": "WDx",
+          "a4": "EDv",
+          "a5": "WDu",
+          "a6": "EUu",
+          "a7": "WUx",
+          "b0": "WDu",
+          "b1": "EDx",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EUx",
+          "b5": "EDv",
+          "b6": "EUv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU0"
+          ],
+          "route_index": 0,
+          "committed": "WUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WD0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD0"
+          ],
+          "route_index": 0,
+          "committed": "WDu"
+        }
+      },
+      "prefix": "ce645e44b365b0870cda7f163d915a78d7d97a1f30c3c911e4b0d5451c0f6de5",
+      "xml": "c9adf08c09dc0766874b0d707f0056a7d72801729f2a1717b63930be8e5377ef",
+      "obs": {
+        "WC": {
+          "samples": 25,
+          "unique": 1,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509002_n8_q12_o24_p0_f2",
+      "seed": 4509002,
+      "offset": 24,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509002,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "EDx",
+          "a2": "EDu",
+          "a3": "WDx",
+          "a4": "EDv",
+          "a5": "WDu",
+          "a6": "EUu",
+          "a7": "WUx",
+          "b0": "WDu",
+          "b1": "EDx",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EUx",
+          "b5": "EDv",
+          "b6": "EUv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU0"
+          ],
+          "route_index": 0,
+          "committed": "WUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WD0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD0"
+          ],
+          "route_index": 0,
+          "committed": "WDu"
+        }
+      },
+      "prefix": "efeab246ef2dc853ce5f8da12f3e85aeef7c4f6fe618a23037e179dd15b92162",
+      "xml": "295a73a64c7831d5f0b909c3695e859421abb5520f701bbfacfc166441562526",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509002_n8_q12_o24_p10_f0",
+      "seed": 4509002,
+      "offset": 24,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509002,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "EDx",
+          "a2": "EDu",
+          "a3": "WDx",
+          "a4": "EDv",
+          "a5": "WDu",
+          "a6": "EUu",
+          "a7": "WUx",
+          "b0": "WDu",
+          "b1": "EDx",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EUx",
+          "b5": "EDv",
+          "b6": "EUv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU0"
+          ],
+          "route_index": 0,
+          "committed": "WUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WD0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD0"
+          ],
+          "route_index": 0,
+          "committed": "WDu"
+        }
+      },
+      "prefix": "d0b313346239fdc9251ffca58c19b3463d803bea0a4c0c8287825a45bb7dbe6e",
+      "xml": "a2ab9eb61b91d9aba26be1216b0458d1a0cdaaccbf1184ad94b6c13931ecfa8b",
+      "obs": {
+        "WC": {
+          "samples": 25,
+          "unique": 1,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509002_n8_q12_o24_p10_f2",
+      "seed": 4509002,
+      "offset": 24,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509002,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "EDx",
+          "a2": "EDu",
+          "a3": "WDx",
+          "a4": "EDv",
+          "a5": "WDu",
+          "a6": "EUu",
+          "a7": "WUx",
+          "b0": "WDu",
+          "b1": "EDx",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EUx",
+          "b5": "EDv",
+          "b6": "EUv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU0"
+          ],
+          "route_index": 0,
+          "committed": "WUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WD0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD0"
+          ],
+          "route_index": 0,
+          "committed": "WDu"
+        }
+      },
+      "prefix": "02c92a1faa4c291f38eccf03da875ace9acfdac631cd208ebc38dcdf591868a9",
+      "xml": "958e03c2cd0f98e3cef8ed7bc457c61c4f1c1db9cc4cc8e80e3b8352d6cb6a21",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509003_n8_q12_o0_p0_f0",
+      "seed": 4509003,
+      "offset": 0,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509003,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WDv",
+          "a1": "EUx",
+          "a2": "EUu",
+          "a3": "WUu",
+          "a4": "EUv",
+          "a5": "WDx",
+          "a6": "WDu",
+          "a7": "WUv",
+          "b0": "EDx",
+          "b1": "WUu",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "WDx",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WD0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD0"
+          ],
+          "route_index": 0,
+          "committed": "WDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "ED1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED1"
+          ],
+          "route_index": 0,
+          "committed": "EDx"
+        }
+      },
+      "prefix": "b61d19c04be774ae10810a2f68f02b1c07417738ce060800c5dfc2c75ebcef84",
+      "xml": "0da3f23ece4d8fb183801cd13c71d98c9a38d4df9d88d5bcf9f370260adaec2c",
+      "obs": {
+        "WC": {
+          "samples": 17,
+          "unique": 1,
+          "green_samples": 17,
+          "green_unique": 1,
+          "green_latest_age": 1.5999999999999996,
+          "green_mean_mps": 8.922807411764706,
+          "category": "moving"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509003_n8_q12_o0_p0_f2",
+      "seed": 4509003,
+      "offset": 0,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509003,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WDv",
+          "a1": "EUx",
+          "a2": "EUu",
+          "a3": "WUu",
+          "a4": "EUv",
+          "a5": "WDx",
+          "a6": "WDu",
+          "a7": "WUv",
+          "b0": "EDx",
+          "b1": "WUu",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "WDx",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WD0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD0"
+          ],
+          "route_index": 0,
+          "committed": "WDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "ED1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED1"
+          ],
+          "route_index": 0,
+          "committed": "EDx"
+        }
+      },
+      "prefix": "3a72da4a2361e40749b3be321f71bcf08cb3263c54c7a4bb2f2b5467dfcd1fcc",
+      "xml": "9f6f265d916db8a8bd8aca751efa9c12121320c3708e9e1613dec93df0fc31f5",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 55,
+          "green_unique": 3,
+          "green_latest_age": 0.0,
+          "green_mean_mps": 1.7688866727272727,
+          "category": "slow"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509003_n8_q12_o0_p10_f0",
+      "seed": 4509003,
+      "offset": 0,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509003,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WDv",
+          "a1": "EUx",
+          "a2": "EUu",
+          "a3": "WUu",
+          "a4": "EUv",
+          "a5": "WDx",
+          "a6": "WDu",
+          "a7": "WUv",
+          "b0": "EDx",
+          "b1": "WUu",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "WDx",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WD0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD0"
+          ],
+          "route_index": 0,
+          "committed": "WDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "ED1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED1"
+          ],
+          "route_index": 0,
+          "committed": "EDx"
+        }
+      },
+      "prefix": "64f7c11e11dbcd5a414b88c7f47241c8c56a8def8dfbb4fa807a571e8caafd43",
+      "xml": "697129169f99359ddc6a97756fd59264f0ce8f8307f23c029199836c42aed4cb",
+      "obs": {
+        "WC": {
+          "samples": 17,
+          "unique": 1,
+          "green_samples": 17,
+          "green_unique": 1,
+          "green_latest_age": 1.5999999999999996,
+          "green_mean_mps": 8.922807411764706,
+          "category": "moving"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509003_n8_q12_o0_p10_f2",
+      "seed": 4509003,
+      "offset": 0,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509003,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WDv",
+          "a1": "EUx",
+          "a2": "EUu",
+          "a3": "WUu",
+          "a4": "EUv",
+          "a5": "WDx",
+          "a6": "WDu",
+          "a7": "WUv",
+          "b0": "EDx",
+          "b1": "WUu",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "WDx",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WD0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD0"
+          ],
+          "route_index": 0,
+          "committed": "WDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "ED1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED1"
+          ],
+          "route_index": 0,
+          "committed": "EDx"
+        }
+      },
+      "prefix": "c3b03b696a5b39f1f3c7b12e3ca667c6cfd140313c2541221dc59a400a8e4574",
+      "xml": "fccaba5e87bd067882d58a4624859a57bcdcb6828a578f2b4571dfa66ef4e1ba",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 55,
+          "green_unique": 3,
+          "green_latest_age": 0.0,
+          "green_mean_mps": 1.7688866727272727,
+          "category": "slow"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509003_n8_q12_o24_p0_f0",
+      "seed": 4509003,
+      "offset": 24,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509003,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WDv",
+          "a1": "EUx",
+          "a2": "EUu",
+          "a3": "WUu",
+          "a4": "EUv",
+          "a5": "WDx",
+          "a6": "WDu",
+          "a7": "WUv",
+          "b0": "EDx",
+          "b1": "WUu",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "WDx",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WD0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD0"
+          ],
+          "route_index": 0,
+          "committed": "WDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "ED1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED1"
+          ],
+          "route_index": 0,
+          "committed": "EDx"
+        }
+      },
+      "prefix": "54a4ccb1a36f4baebd656a0266342d544c8d6d0d557dfd98a9092ed2c633517f",
+      "xml": "0da3f23ece4d8fb183801cd13c71d98c9a38d4df9d88d5bcf9f370260adaec2c",
+      "obs": {
+        "WC": {
+          "samples": 25,
+          "unique": 1,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509003_n8_q12_o24_p0_f2",
+      "seed": 4509003,
+      "offset": 24,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509003,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WDv",
+          "a1": "EUx",
+          "a2": "EUu",
+          "a3": "WUu",
+          "a4": "EUv",
+          "a5": "WDx",
+          "a6": "WDu",
+          "a7": "WUv",
+          "b0": "EDx",
+          "b1": "WUu",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "WDx",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WD0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD0"
+          ],
+          "route_index": 0,
+          "committed": "WDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "ED1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED1"
+          ],
+          "route_index": 0,
+          "committed": "EDx"
+        }
+      },
+      "prefix": "6daf90bb481864fe6f50802de1e059ffce8267f67cc9e3ff7de2ecd488087c6a",
+      "xml": "9f6f265d916db8a8bd8aca751efa9c12121320c3708e9e1613dec93df0fc31f5",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509003_n8_q12_o24_p10_f0",
+      "seed": 4509003,
+      "offset": 24,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509003,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WDv",
+          "a1": "EUx",
+          "a2": "EUu",
+          "a3": "WUu",
+          "a4": "EUv",
+          "a5": "WDx",
+          "a6": "WDu",
+          "a7": "WUv",
+          "b0": "EDx",
+          "b1": "WUu",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "WDx",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WD0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD0"
+          ],
+          "route_index": 0,
+          "committed": "WDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "ED1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED1"
+          ],
+          "route_index": 0,
+          "committed": "EDx"
+        }
+      },
+      "prefix": "556634ebc3cc6f6172f013261d1491cd8aa361648d6d3076fdbdc6d6ca52348d",
+      "xml": "697129169f99359ddc6a97756fd59264f0ce8f8307f23c029199836c42aed4cb",
+      "obs": {
+        "WC": {
+          "samples": 25,
+          "unique": 1,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509003_n8_q12_o24_p10_f2",
+      "seed": 4509003,
+      "offset": 24,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509003,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WDv",
+          "a1": "EUx",
+          "a2": "EUu",
+          "a3": "WUu",
+          "a4": "EUv",
+          "a5": "WDx",
+          "a6": "WDu",
+          "a7": "WUv",
+          "b0": "EDx",
+          "b1": "WUu",
+          "b2": "EDu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "WDx",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 2,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 2,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WD0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD0"
+          ],
+          "route_index": 0,
+          "committed": "WDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "ED1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED1"
+          ],
+          "route_index": 0,
+          "committed": "EDx"
+        }
+      },
+      "prefix": "fa8da1aec8fa3dd3346eef92855c0374168c34f2f2742c85082ae6e3e0373fd3",
+      "xml": "fccaba5e87bd067882d58a4624859a57bcdcb6828a578f2b4571dfa66ef4e1ba",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509004_n8_q12_o0_p0_f0",
+      "seed": 4509004,
+      "offset": 0,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509004,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WDu",
+          "a2": "WUu",
+          "a3": "EDx",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EUv",
+          "a7": "EUx",
+          "b0": "EDu",
+          "b1": "WUx",
+          "b2": "EUu",
+          "b3": "EUv",
+          "b4": "EUx",
+          "b5": "WUv",
+          "b6": "EDx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 2,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        }
+      },
+      "prefix": "b55574a7e1a4b073c528b26a1a95bcd5c088446512b2354aeabbea460393cc7d",
+      "xml": "3eafb9863e41e0f9e51f2d5bd40df84e36361bb79d73910f6ad3e5c29beb07e0",
+      "obs": {
+        "WC": {
+          "samples": 17,
+          "unique": 1,
+          "green_samples": 17,
+          "green_unique": 1,
+          "green_latest_age": 1.5999999999999996,
+          "green_mean_mps": 8.922807411764706,
+          "category": "moving"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509004_n8_q12_o0_p0_f2",
+      "seed": 4509004,
+      "offset": 0,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509004,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WDu",
+          "a2": "WUu",
+          "a3": "EDx",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EUv",
+          "a7": "EUx",
+          "b0": "EDu",
+          "b1": "WUx",
+          "b2": "EUu",
+          "b3": "EUv",
+          "b4": "EUx",
+          "b5": "WUv",
+          "b6": "EDx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 2,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        }
+      },
+      "prefix": "56418d5f595d86ce89bf1b400d45e22623f86b1c775c6566d491669782401205",
+      "xml": "4b3aab36ae2f5f3f41ea3ae91fdd0516ad14297de95adb9ee40f232cec476556",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 55,
+          "green_unique": 3,
+          "green_latest_age": 0.0,
+          "green_mean_mps": 1.7688866727272727,
+          "category": "slow"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509004_n8_q12_o0_p10_f0",
+      "seed": 4509004,
+      "offset": 0,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509004,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WDu",
+          "a2": "WUu",
+          "a3": "EDx",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EUv",
+          "a7": "EUx",
+          "b0": "EDu",
+          "b1": "WUx",
+          "b2": "EUu",
+          "b3": "EUv",
+          "b4": "EUx",
+          "b5": "WUv",
+          "b6": "EDx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 2,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        }
+      },
+      "prefix": "10bfc99ab48d6b98e9fe2c0382fd18c019a0628642b7b4ced07775ef05a03250",
+      "xml": "43d364b3282878efcf3239d69c39ba9605c166b7e37c4df9a9968f88f3d4663d",
+      "obs": {
+        "WC": {
+          "samples": 17,
+          "unique": 1,
+          "green_samples": 17,
+          "green_unique": 1,
+          "green_latest_age": 1.5999999999999996,
+          "green_mean_mps": 8.922807411764706,
+          "category": "moving"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509004_n8_q12_o0_p10_f2",
+      "seed": 4509004,
+      "offset": 0,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509004,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WDu",
+          "a2": "WUu",
+          "a3": "EDx",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EUv",
+          "a7": "EUx",
+          "b0": "EDu",
+          "b1": "WUx",
+          "b2": "EUu",
+          "b3": "EUv",
+          "b4": "EUx",
+          "b5": "WUv",
+          "b6": "EDx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 2,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        }
+      },
+      "prefix": "d54e42d5bfaf01bc622e69741216dfb7e70b5a29cc40759a24cf8d6fa31701cb",
+      "xml": "5e050652ea2fdee1f5cb201cacb3ab10519747a1fd6918a24192128eb4b3d313",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 55,
+          "green_unique": 3,
+          "green_latest_age": 0.0,
+          "green_mean_mps": 1.7688866727272727,
+          "category": "slow"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509004_n8_q12_o24_p0_f0",
+      "seed": 4509004,
+      "offset": 24,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509004,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WDu",
+          "a2": "WUu",
+          "a3": "EDx",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EUv",
+          "a7": "EUx",
+          "b0": "EDu",
+          "b1": "WUx",
+          "b2": "EUu",
+          "b3": "EUv",
+          "b4": "EUx",
+          "b5": "WUv",
+          "b6": "EDx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 2,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        }
+      },
+      "prefix": "d893d1b66cd264ab89656802a14cc25c1a745ce6d47cf0d0175bce03bd8d6ce3",
+      "xml": "3eafb9863e41e0f9e51f2d5bd40df84e36361bb79d73910f6ad3e5c29beb07e0",
+      "obs": {
+        "WC": {
+          "samples": 25,
+          "unique": 1,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509004_n8_q12_o24_p0_f2",
+      "seed": 4509004,
+      "offset": 24,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509004,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WDu",
+          "a2": "WUu",
+          "a3": "EDx",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EUv",
+          "a7": "EUx",
+          "b0": "EDu",
+          "b1": "WUx",
+          "b2": "EUu",
+          "b3": "EUv",
+          "b4": "EUx",
+          "b5": "WUv",
+          "b6": "EDx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 2,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        }
+      },
+      "prefix": "8c28e6ffaea7002902371b7ebca29525e87668f0046b544339d3890437b4170b",
+      "xml": "4b3aab36ae2f5f3f41ea3ae91fdd0516ad14297de95adb9ee40f232cec476556",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509004_n8_q12_o24_p10_f0",
+      "seed": 4509004,
+      "offset": 24,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509004,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WDu",
+          "a2": "WUu",
+          "a3": "EDx",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EUv",
+          "a7": "EUx",
+          "b0": "EDu",
+          "b1": "WUx",
+          "b2": "EUu",
+          "b3": "EUv",
+          "b4": "EUx",
+          "b5": "WUv",
+          "b6": "EDx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 2,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        }
+      },
+      "prefix": "469f00daef3bb493748694d819e5ad9608469f54032de144099b15d88ba5af6b",
+      "xml": "43d364b3282878efcf3239d69c39ba9605c166b7e37c4df9a9968f88f3d4663d",
+      "obs": {
+        "WC": {
+          "samples": 25,
+          "unique": 1,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509004_n8_q12_o24_p10_f2",
+      "seed": 4509004,
+      "offset": 24,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509004,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WDu",
+          "a2": "WUu",
+          "a3": "EDx",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EUv",
+          "a7": "EUx",
+          "b0": "EDu",
+          "b1": "WUx",
+          "b2": "EUu",
+          "b3": "EUv",
+          "b4": "EUx",
+          "b5": "WUv",
+          "b6": "EDx",
+          "b7": "EDv"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 2,
+          "a7": 1,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tW",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDu"
+        }
+      },
+      "prefix": "e7f9ed22c9bef21dae21945d0d906c1e402de387363982e172d0cfa72587f0b6",
+      "xml": "5e050652ea2fdee1f5cb201cacb3ab10519747a1fd6918a24192128eb4b3d313",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509005_n8_q12_o0_p0_f0",
+      "seed": 4509005,
+      "offset": 0,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509005,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUu",
+          "a1": "WUv",
+          "a2": "WDu",
+          "a3": "WUu",
+          "a4": "EDx",
+          "a5": "WDx",
+          "a6": "EUx",
+          "a7": "EUv",
+          "b0": "WUx",
+          "b1": "EDu",
+          "b2": "EUx",
+          "b3": "WDx",
+          "b4": "WDv",
+          "b5": "WUv",
+          "b6": "WUu",
+          "b7": "EDx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 1,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WU1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU1"
+          ],
+          "route_index": 0,
+          "committed": "WUx"
+        }
+      },
+      "prefix": "a9b821af98de1cd69acb90028ce92955fd06545ae4bad354d85afcf470a71576",
+      "xml": "e05d5cb7bb8b5e117e648ef0e33998ed0c26c2b7e190893c89e9238d594aa21f",
+      "obs": {
+        "WC": {
+          "samples": 17,
+          "unique": 1,
+          "green_samples": 17,
+          "green_unique": 1,
+          "green_latest_age": 1.5999999999999996,
+          "green_mean_mps": 8.922807411764706,
+          "category": "moving"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509005_n8_q12_o0_p0_f2",
+      "seed": 4509005,
+      "offset": 0,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509005,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUu",
+          "a1": "WUv",
+          "a2": "WDu",
+          "a3": "WUu",
+          "a4": "EDx",
+          "a5": "WDx",
+          "a6": "EUx",
+          "a7": "EUv",
+          "b0": "WUx",
+          "b1": "EDu",
+          "b2": "EUx",
+          "b3": "WDx",
+          "b4": "WDv",
+          "b5": "WUv",
+          "b6": "WUu",
+          "b7": "EDx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 1,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WU1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU1"
+          ],
+          "route_index": 0,
+          "committed": "WUx"
+        }
+      },
+      "prefix": "fe98c78f0e902490b270ebcf4d8a0057e303b8958dab9f8a1818a1d3178aed04",
+      "xml": "7d24914d969c74bd813077a0dda8404825c5802c07487309151ede6bad81eb50",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 55,
+          "green_unique": 3,
+          "green_latest_age": 0.0,
+          "green_mean_mps": 1.7688866727272727,
+          "category": "slow"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509005_n8_q12_o0_p10_f0",
+      "seed": 4509005,
+      "offset": 0,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509005,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUu",
+          "a1": "WUv",
+          "a2": "WDu",
+          "a3": "WUu",
+          "a4": "EDx",
+          "a5": "WDx",
+          "a6": "EUx",
+          "a7": "EUv",
+          "b0": "WUx",
+          "b1": "EDu",
+          "b2": "EUx",
+          "b3": "WDx",
+          "b4": "WDv",
+          "b5": "WUv",
+          "b6": "WUu",
+          "b7": "EDx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 1,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WU1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU1"
+          ],
+          "route_index": 0,
+          "committed": "WUx"
+        }
+      },
+      "prefix": "98f801a376af893bcf77e0e3f21d98a689ad2f3c27aa58c19f21a95ed1c5e7e6",
+      "xml": "375d140cc855ffcfa4a32652fc74b24c8727ca091f6a911322edc2d08f2068c9",
+      "obs": {
+        "WC": {
+          "samples": 17,
+          "unique": 1,
+          "green_samples": 17,
+          "green_unique": 1,
+          "green_latest_age": 1.5999999999999996,
+          "green_mean_mps": 8.922807411764706,
+          "category": "moving"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509005_n8_q12_o0_p10_f2",
+      "seed": 4509005,
+      "offset": 0,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509005,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUu",
+          "a1": "WUv",
+          "a2": "WDu",
+          "a3": "WUu",
+          "a4": "EDx",
+          "a5": "WDx",
+          "a6": "EUx",
+          "a7": "EUv",
+          "b0": "WUx",
+          "b1": "EDu",
+          "b2": "EUx",
+          "b3": "WDx",
+          "b4": "WDv",
+          "b5": "WUv",
+          "b6": "WUu",
+          "b7": "EDx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 1,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WU1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU1"
+          ],
+          "route_index": 0,
+          "committed": "WUx"
+        }
+      },
+      "prefix": "62cee516d3bcd5d2ef78175703281c2133046e7881cb92b4e644a51fe7367bd1",
+      "xml": "3135d6fea39eaaae5c8fe654039c89219a4154df8cdf9bfe9819f23f425175b8",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 55,
+          "green_unique": 3,
+          "green_latest_age": 0.0,
+          "green_mean_mps": 1.7688866727272727,
+          "category": "slow"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509005_n8_q12_o24_p0_f0",
+      "seed": 4509005,
+      "offset": 24,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509005,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUu",
+          "a1": "WUv",
+          "a2": "WDu",
+          "a3": "WUu",
+          "a4": "EDx",
+          "a5": "WDx",
+          "a6": "EUx",
+          "a7": "EUv",
+          "b0": "WUx",
+          "b1": "EDu",
+          "b2": "EUx",
+          "b3": "WDx",
+          "b4": "WDv",
+          "b5": "WUv",
+          "b6": "WUu",
+          "b7": "EDx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 1,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WU1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU1"
+          ],
+          "route_index": 0,
+          "committed": "WUx"
+        }
+      },
+      "prefix": "3659564fe3f864f5e8adf9634b05dfc2a49dda41fd15f4408e2a005518d7628e",
+      "xml": "e05d5cb7bb8b5e117e648ef0e33998ed0c26c2b7e190893c89e9238d594aa21f",
+      "obs": {
+        "WC": {
+          "samples": 25,
+          "unique": 1,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509005_n8_q12_o24_p0_f2",
+      "seed": 4509005,
+      "offset": 24,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509005,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUu",
+          "a1": "WUv",
+          "a2": "WDu",
+          "a3": "WUu",
+          "a4": "EDx",
+          "a5": "WDx",
+          "a6": "EUx",
+          "a7": "EUv",
+          "b0": "WUx",
+          "b1": "EDu",
+          "b2": "EUx",
+          "b3": "WDx",
+          "b4": "WDv",
+          "b5": "WUv",
+          "b6": "WUu",
+          "b7": "EDx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 1,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WU1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU1"
+          ],
+          "route_index": 0,
+          "committed": "WUx"
+        }
+      },
+      "prefix": "277d7551aec39d0daa78290cfad81d425ea63e9895dd73c592631d80a577e8d4",
+      "xml": "7d24914d969c74bd813077a0dda8404825c5802c07487309151ede6bad81eb50",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509005_n8_q12_o24_p10_f0",
+      "seed": 4509005,
+      "offset": 24,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509005,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUu",
+          "a1": "WUv",
+          "a2": "WDu",
+          "a3": "WUu",
+          "a4": "EDx",
+          "a5": "WDx",
+          "a6": "EUx",
+          "a7": "EUv",
+          "b0": "WUx",
+          "b1": "EDu",
+          "b2": "EUx",
+          "b3": "WDx",
+          "b4": "WDv",
+          "b5": "WUv",
+          "b6": "WUu",
+          "b7": "EDx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 1,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WU1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU1"
+          ],
+          "route_index": 0,
+          "committed": "WUx"
+        }
+      },
+      "prefix": "f9dd09e51dc04069c028bff282fa3bd7408974c2da4785390c9c74ba45efa282",
+      "xml": "375d140cc855ffcfa4a32652fc74b24c8727ca091f6a911322edc2d08f2068c9",
+      "obs": {
+        "WC": {
+          "samples": 25,
+          "unique": 1,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509005_n8_q12_o24_p10_f2",
+      "seed": 4509005,
+      "offset": 24,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509005,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUu",
+          "a1": "WUv",
+          "a2": "WDu",
+          "a3": "WUu",
+          "a4": "EDx",
+          "a5": "WDx",
+          "a6": "EUx",
+          "a7": "EUv",
+          "b0": "WUx",
+          "b1": "EDu",
+          "b2": "EUx",
+          "b3": "WDx",
+          "b4": "WDv",
+          "b5": "WUv",
+          "b6": "WUu",
+          "b7": "EDx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 2,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 1,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 2,
+          "b4": 2,
+          "b5": 1,
+          "b6": 1,
+          "b7": 1
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WU1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU1"
+          ],
+          "route_index": 0,
+          "committed": "WUx"
+        }
+      },
+      "prefix": "a81162e4e24ffd201c38d172ca2bcd0f42145895b650ac892055143c994207ba",
+      "xml": "3135d6fea39eaaae5c8fe654039c89219a4154df8cdf9bfe9819f23f425175b8",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509006_n8_q12_o0_p0_f0",
+      "seed": 4509006,
+      "offset": 0,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509006,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "WUx",
+          "a2": "WDv",
+          "a3": "EDu",
+          "a4": "EDx",
+          "a5": "WUv",
+          "a6": "EUv",
+          "a7": "EDv",
+          "b0": "EUx",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "EDu",
+          "b4": "WDx",
+          "b5": "EDv",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 1,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU0"
+          ],
+          "route_index": 0,
+          "committed": "WUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU1"
+          ],
+          "route_index": 0,
+          "committed": "EUx"
+        }
+      },
+      "prefix": "84e64adf03eaa9174005b4c807a9527da3d8520e40b221d34619ca74b5871ace",
+      "xml": "27243e50d6dc15ad94049d70e40b1a4fd91bdf826e3d37c110c0fd5f9218b25d",
+      "obs": {
+        "WC": {
+          "samples": 17,
+          "unique": 1,
+          "green_samples": 17,
+          "green_unique": 1,
+          "green_latest_age": 1.5999999999999996,
+          "green_mean_mps": 8.922807411764706,
+          "category": "moving"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509006_n8_q12_o0_p0_f2",
+      "seed": 4509006,
+      "offset": 0,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509006,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "WUx",
+          "a2": "WDv",
+          "a3": "EDu",
+          "a4": "EDx",
+          "a5": "WUv",
+          "a6": "EUv",
+          "a7": "EDv",
+          "b0": "EUx",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "EDu",
+          "b4": "WDx",
+          "b5": "EDv",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 1,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU0"
+          ],
+          "route_index": 0,
+          "committed": "WUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU1"
+          ],
+          "route_index": 0,
+          "committed": "EUx"
+        }
+      },
+      "prefix": "f8a2c5ded826c06709b92002d02890365c89ede46c9120591af6df41ceacac45",
+      "xml": "864d5436c0da688bbe14731e89e48ef1d807f0cae42e70a53dec4d1fd66fc17b",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 55,
+          "green_unique": 3,
+          "green_latest_age": 0.0,
+          "green_mean_mps": 1.7688866727272727,
+          "category": "slow"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509006_n8_q12_o0_p10_f0",
+      "seed": 4509006,
+      "offset": 0,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509006,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "WUx",
+          "a2": "WDv",
+          "a3": "EDu",
+          "a4": "EDx",
+          "a5": "WUv",
+          "a6": "EUv",
+          "a7": "EDv",
+          "b0": "EUx",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "EDu",
+          "b4": "WDx",
+          "b5": "EDv",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 1,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU0"
+          ],
+          "route_index": 0,
+          "committed": "WUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU1"
+          ],
+          "route_index": 0,
+          "committed": "EUx"
+        }
+      },
+      "prefix": "7bf8b5b8f12549dd09ebd4b2896c76ebb61827b749901ec0b2dd4d3d5c301648",
+      "xml": "4e6d7173ede404fba0e62809665373c3f5dc3ccdedf89ae65be0ec14e9780e10",
+      "obs": {
+        "WC": {
+          "samples": 17,
+          "unique": 1,
+          "green_samples": 17,
+          "green_unique": 1,
+          "green_latest_age": 1.5999999999999996,
+          "green_mean_mps": 8.922807411764706,
+          "category": "moving"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509006_n8_q12_o0_p10_f2",
+      "seed": 4509006,
+      "offset": 0,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509006,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "WUx",
+          "a2": "WDv",
+          "a3": "EDu",
+          "a4": "EDx",
+          "a5": "WUv",
+          "a6": "EUv",
+          "a7": "EDv",
+          "b0": "EUx",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "EDu",
+          "b4": "WDx",
+          "b5": "EDv",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 1,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU0"
+          ],
+          "route_index": 0,
+          "committed": "WUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU1"
+          ],
+          "route_index": 0,
+          "committed": "EUx"
+        }
+      },
+      "prefix": "59371d42e3156280445d8b16f3f2de52a5ea169213e361b3d8ab6a0fc44af11c",
+      "xml": "3b986f81d48449b4d8329746a62574c6bf2536872dbf25a89cdf2031d55a2e6a",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 55,
+          "green_unique": 3,
+          "green_latest_age": 0.0,
+          "green_mean_mps": 1.7688866727272727,
+          "category": "slow"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509006_n8_q12_o24_p0_f0",
+      "seed": 4509006,
+      "offset": 24,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509006,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "WUx",
+          "a2": "WDv",
+          "a3": "EDu",
+          "a4": "EDx",
+          "a5": "WUv",
+          "a6": "EUv",
+          "a7": "EDv",
+          "b0": "EUx",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "EDu",
+          "b4": "WDx",
+          "b5": "EDv",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 1,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU0"
+          ],
+          "route_index": 0,
+          "committed": "WUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU1"
+          ],
+          "route_index": 0,
+          "committed": "EUx"
+        }
+      },
+      "prefix": "6d4ad843120b7246b67048918f17e93b8cf46634b085b0f4d2c112a8b5d569c0",
+      "xml": "27243e50d6dc15ad94049d70e40b1a4fd91bdf826e3d37c110c0fd5f9218b25d",
+      "obs": {
+        "WC": {
+          "samples": 25,
+          "unique": 1,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509006_n8_q12_o24_p0_f2",
+      "seed": 4509006,
+      "offset": 24,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509006,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "WUx",
+          "a2": "WDv",
+          "a3": "EDu",
+          "a4": "EDx",
+          "a5": "WUv",
+          "a6": "EUv",
+          "a7": "EDv",
+          "b0": "EUx",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "EDu",
+          "b4": "WDx",
+          "b5": "EDv",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 1,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU0"
+          ],
+          "route_index": 0,
+          "committed": "WUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU1"
+          ],
+          "route_index": 0,
+          "committed": "EUx"
+        }
+      },
+      "prefix": "5822187126c43edd1cf71aeabe9c35ccccb5de15a553308541a8b88365a0d96a",
+      "xml": "864d5436c0da688bbe14731e89e48ef1d807f0cae42e70a53dec4d1fd66fc17b",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509006_n8_q12_o24_p10_f0",
+      "seed": 4509006,
+      "offset": 24,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509006,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "WUx",
+          "a2": "WDv",
+          "a3": "EDu",
+          "a4": "EDx",
+          "a5": "WUv",
+          "a6": "EUv",
+          "a7": "EDv",
+          "b0": "EUx",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "EDu",
+          "b4": "WDx",
+          "b5": "EDv",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 1,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU0"
+          ],
+          "route_index": 0,
+          "committed": "WUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU1"
+          ],
+          "route_index": 0,
+          "committed": "EUx"
+        }
+      },
+      "prefix": "c5f3eb319596eb6e36a5eda9f1c511f84227eabe48fa6325302b425777775e50",
+      "xml": "4e6d7173ede404fba0e62809665373c3f5dc3ccdedf89ae65be0ec14e9780e10",
+      "obs": {
+        "WC": {
+          "samples": 25,
+          "unique": 1,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509006_n8_q12_o24_p10_f2",
+      "seed": 4509006,
+      "offset": 24,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509006,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "WUu",
+          "a1": "WUx",
+          "a2": "WDv",
+          "a3": "EDu",
+          "a4": "EDx",
+          "a5": "WUv",
+          "a6": "EUv",
+          "a7": "EDv",
+          "b0": "EUx",
+          "b1": "WDu",
+          "b2": "WUv",
+          "b3": "EDu",
+          "b4": "WDx",
+          "b5": "EDv",
+          "b6": "WDv",
+          "b7": "EUu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 1,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 1,
+          "b3": 2,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "ME",
+            "weight": 8
+          },
+          "b": {
+            "dest": "MW",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "WU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WU0"
+          ],
+          "route_index": 0,
+          "committed": "WUu"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU1"
+          ],
+          "route_index": 0,
+          "committed": "EUx"
+        }
+      },
+      "prefix": "e2dd25adfb8ea565a98597f5039405df023d4fc1f7026370687a33d2df1b0912",
+      "xml": "3b986f81d48449b4d8329746a62574c6bf2536872dbf25a89cdf2031d55a2e6a",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509007_n8_q12_o0_p0_f0",
+      "seed": 4509007,
+      "offset": 0,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509007,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WUx",
+          "a2": "WUv",
+          "a3": "EUv",
+          "a4": "WUu",
+          "a5": "EUx",
+          "a6": "WDv",
+          "a7": "EUu",
+          "b0": "WDx",
+          "b1": "WUv",
+          "b2": "EUv",
+          "b3": "EUu",
+          "b4": "WUu",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "WDu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 1,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WD1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD1"
+          ],
+          "route_index": 0,
+          "committed": "WDx"
+        }
+      },
+      "prefix": "fcb19de3ba2036e5df5f6a4cb844de0b79ca6ecbab3136a93e3f090b14472ba5",
+      "xml": "05c4724ab2b5b094bff9062790cb6300d7d9c9aeda1fdb484c4ec45ef9028983",
+      "obs": {
+        "WC": {
+          "samples": 17,
+          "unique": 1,
+          "green_samples": 17,
+          "green_unique": 1,
+          "green_latest_age": 1.5999999999999996,
+          "green_mean_mps": 8.922807411764706,
+          "category": "moving"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509007_n8_q12_o0_p0_f2",
+      "seed": 4509007,
+      "offset": 0,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509007,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WUx",
+          "a2": "WUv",
+          "a3": "EUv",
+          "a4": "WUu",
+          "a5": "EUx",
+          "a6": "WDv",
+          "a7": "EUu",
+          "b0": "WDx",
+          "b1": "WUv",
+          "b2": "EUv",
+          "b3": "EUu",
+          "b4": "WUu",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "WDu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 1,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WD1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD1"
+          ],
+          "route_index": 0,
+          "committed": "WDx"
+        }
+      },
+      "prefix": "8def82b696ce85bd49c813830fd4605176592f4e8e27f0ab96b18de32399094a",
+      "xml": "67c3645810bc1bc4682fcce4a9554b2d6a6593ec995e893eb858731a25601e75",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 55,
+          "green_unique": 3,
+          "green_latest_age": 0.0,
+          "green_mean_mps": 1.7688866727272727,
+          "category": "slow"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509007_n8_q12_o0_p10_f0",
+      "seed": 4509007,
+      "offset": 0,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509007,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WUx",
+          "a2": "WUv",
+          "a3": "EUv",
+          "a4": "WUu",
+          "a5": "EUx",
+          "a6": "WDv",
+          "a7": "EUu",
+          "b0": "WDx",
+          "b1": "WUv",
+          "b2": "EUv",
+          "b3": "EUu",
+          "b4": "WUu",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "WDu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 1,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WD1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD1"
+          ],
+          "route_index": 0,
+          "committed": "WDx"
+        }
+      },
+      "prefix": "5465910d90767647364817d6ae27cc2830b160c38cc2d64b58ada41e5ca1d9fe",
+      "xml": "8ae241c87d6d5b0249c597a1d4e6329b2b4e81fa613217377d3064b9960a63d5",
+      "obs": {
+        "WC": {
+          "samples": 17,
+          "unique": 1,
+          "green_samples": 17,
+          "green_unique": 1,
+          "green_latest_age": 1.5999999999999996,
+          "green_mean_mps": 8.922807411764706,
+          "category": "moving"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509007_n8_q12_o0_p10_f2",
+      "seed": 4509007,
+      "offset": 0,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509007,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WUx",
+          "a2": "WUv",
+          "a3": "EUv",
+          "a4": "WUu",
+          "a5": "EUx",
+          "a6": "WDv",
+          "a7": "EUu",
+          "b0": "WDx",
+          "b1": "WUv",
+          "b2": "EUv",
+          "b3": "EUu",
+          "b4": "WUu",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "WDu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 1,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WD1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD1"
+          ],
+          "route_index": 0,
+          "committed": "WDx"
+        }
+      },
+      "prefix": "bb1c5056bef0459d9d30d7e0002f50093efbb0ffcc92214444bbe8517ffa6443",
+      "xml": "c448cc9a2090c5f8e45b81bac40cfcffca88492361b9d81ae1a5fba24ceb4408",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 55,
+          "green_unique": 3,
+          "green_latest_age": 0.0,
+          "green_mean_mps": 1.7688866727272727,
+          "category": "slow"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509007_n8_q12_o24_p0_f0",
+      "seed": 4509007,
+      "offset": 24,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509007,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WUx",
+          "a2": "WUv",
+          "a3": "EUv",
+          "a4": "WUu",
+          "a5": "EUx",
+          "a6": "WDv",
+          "a7": "EUu",
+          "b0": "WDx",
+          "b1": "WUv",
+          "b2": "EUv",
+          "b3": "EUu",
+          "b4": "WUu",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "WDu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 1,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WD1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD1"
+          ],
+          "route_index": 0,
+          "committed": "WDx"
+        }
+      },
+      "prefix": "97546ec200e17a6912a89cb6597bb2f04cf1c2e50770b071e84146a22ab9600f",
+      "xml": "05c4724ab2b5b094bff9062790cb6300d7d9c9aeda1fdb484c4ec45ef9028983",
+      "obs": {
+        "WC": {
+          "samples": 25,
+          "unique": 1,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509007_n8_q12_o24_p0_f2",
+      "seed": 4509007,
+      "offset": 24,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509007,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WUx",
+          "a2": "WUv",
+          "a3": "EUv",
+          "a4": "WUu",
+          "a5": "EUx",
+          "a6": "WDv",
+          "a7": "EUu",
+          "b0": "WDx",
+          "b1": "WUv",
+          "b2": "EUv",
+          "b3": "EUu",
+          "b4": "WUu",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "WDu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 1,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WD1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD1"
+          ],
+          "route_index": 0,
+          "committed": "WDx"
+        }
+      },
+      "prefix": "863a862ff8804815b3b0383d91ac1c723ffad04b216ba91e89b7b806858bcf1a",
+      "xml": "67c3645810bc1bc4682fcce4a9554b2d6a6593ec995e893eb858731a25601e75",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509007_n8_q12_o24_p10_f0",
+      "seed": 4509007,
+      "offset": 24,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509007,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WUx",
+          "a2": "WUv",
+          "a3": "EUv",
+          "a4": "WUu",
+          "a5": "EUx",
+          "a6": "WDv",
+          "a7": "EUu",
+          "b0": "WDx",
+          "b1": "WUv",
+          "b2": "EUv",
+          "b3": "EUu",
+          "b4": "WUu",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "WDu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 1,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WD1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD1"
+          ],
+          "route_index": 0,
+          "committed": "WDx"
+        }
+      },
+      "prefix": "fde619d8451587b0123682b2ca2d2dc6cb70cbd1dfe47a197802121c15705141",
+      "xml": "8ae241c87d6d5b0249c597a1d4e6329b2b4e81fa613217377d3064b9960a63d5",
+      "obs": {
+        "WC": {
+          "samples": 25,
+          "unique": 1,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509007_n8_q12_o24_p10_f2",
+      "seed": 4509007,
+      "offset": 24,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509007,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EDv",
+          "a1": "WUx",
+          "a2": "WUv",
+          "a3": "EUv",
+          "a4": "WUu",
+          "a5": "EUx",
+          "a6": "WDv",
+          "a7": "EUu",
+          "b0": "WDx",
+          "b1": "WUv",
+          "b2": "EUv",
+          "b3": "EUu",
+          "b4": "WUu",
+          "b5": "EDu",
+          "b6": "EUx",
+          "b7": "WDu"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 1,
+          "a2": 2,
+          "a3": 1,
+          "a4": 2,
+          "a5": 2,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 2,
+          "b2": 2,
+          "b3": 1,
+          "b4": 1,
+          "b5": 2,
+          "b6": 1,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinE",
+          "B": "BinW"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "ED0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "ED0"
+          ],
+          "route_index": 0,
+          "committed": "EDv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "WD1",
+          "pos_m": 27.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "WD1"
+          ],
+          "route_index": 0,
+          "committed": "WDx"
+        }
+      },
+      "prefix": "8d281a7f09f7df13a16227a101c4cd4832010ff9bf15c1166670a5be5bc19645",
+      "xml": "c448cc9a2090c5f8e45b81bac40cfcffca88492361b9d81ae1a5fba24ceb4408",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509008_n8_q12_o0_p0_f0",
+      "seed": 4509008,
+      "offset": 0,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509008,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUv",
+          "a1": "WUv",
+          "a2": "WUu",
+          "a3": "WDu",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EDx",
+          "a7": "WUx",
+          "b0": "EUu",
+          "b1": "WDv",
+          "b2": "WUu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "EDu",
+          "b6": "WDu",
+          "b7": "EUx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 1,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "39829a4babcd4db19e01d9a76cef61c0ea0cd10ea4e166d47e267369d4730af8",
+      "xml": "9f0d7ca77ab58fdf63dfccbd3ea4558b48233cdd099dd6a465c6382df0833a7e",
+      "obs": {
+        "WC": {
+          "samples": 17,
+          "unique": 1,
+          "green_samples": 17,
+          "green_unique": 1,
+          "green_latest_age": 1.5999999999999996,
+          "green_mean_mps": 8.922807411764706,
+          "category": "moving"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509008_n8_q12_o0_p0_f2",
+      "seed": 4509008,
+      "offset": 0,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509008,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUv",
+          "a1": "WUv",
+          "a2": "WUu",
+          "a3": "WDu",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EDx",
+          "a7": "WUx",
+          "b0": "EUu",
+          "b1": "WDv",
+          "b2": "WUu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "EDu",
+          "b6": "WDu",
+          "b7": "EUx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 1,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "ee5900abd9c119cf59c51fe02fba9fb11c6ca86d0d91e42abcaf674f766bf8dc",
+      "xml": "88e0f35cefa01712aab38688c00f998c5ae83fc19e18c865fad2abb7e3246eef",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 55,
+          "green_unique": 3,
+          "green_latest_age": 0.0,
+          "green_mean_mps": 1.7688866727272727,
+          "category": "slow"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509008_n8_q12_o0_p10_f0",
+      "seed": 4509008,
+      "offset": 0,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509008,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUv",
+          "a1": "WUv",
+          "a2": "WUu",
+          "a3": "WDu",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EDx",
+          "a7": "WUx",
+          "b0": "EUu",
+          "b1": "WDv",
+          "b2": "WUu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "EDu",
+          "b6": "WDu",
+          "b7": "EUx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 1,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "82636aed1401b3da476a229587c5ed50c6b384c04472e82691e8f8bf16e32370",
+      "xml": "c052a8fe438fd2b2011cc9a16ebb1da9694573df76ad38517b77e5f777070d55",
+      "obs": {
+        "WC": {
+          "samples": 17,
+          "unique": 1,
+          "green_samples": 17,
+          "green_unique": 1,
+          "green_latest_age": 1.5999999999999996,
+          "green_mean_mps": 8.922807411764706,
+          "category": "moving"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509008_n8_q12_o0_p10_f2",
+      "seed": 4509008,
+      "offset": 0,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509008,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUv",
+          "a1": "WUv",
+          "a2": "WUu",
+          "a3": "WDu",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EDx",
+          "a7": "WUx",
+          "b0": "EUu",
+          "b1": "WDv",
+          "b2": "WUu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "EDu",
+          "b6": "WDu",
+          "b7": "EUx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 1,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "36eb5bb8c839e6f6dbc41abd5007443e5deed7c3c68c2c9fd2dbb39cb5583e46",
+      "xml": "b12e555d3e00002c5297504a3855bd0154faeba00e344f2b492817e356c8efbf",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 55,
+          "green_unique": 3,
+          "green_latest_age": 0.0,
+          "green_mean_mps": 1.7688866727272727,
+          "category": "slow"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509008_n8_q12_o24_p0_f0",
+      "seed": 4509008,
+      "offset": 24,
+      "people": 0,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509008,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUv",
+          "a1": "WUv",
+          "a2": "WUu",
+          "a3": "WDu",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EDx",
+          "a7": "WUx",
+          "b0": "EUu",
+          "b1": "WDv",
+          "b2": "WUu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "EDu",
+          "b6": "WDu",
+          "b7": "EUx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 1,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "5100342b26473d924767e953caabb319467f30077149a30cd8a37c76cc3a8159",
+      "xml": "9f0d7ca77ab58fdf63dfccbd3ea4558b48233cdd099dd6a465c6382df0833a7e",
+      "obs": {
+        "WC": {
+          "samples": 25,
+          "unique": 1,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509008_n8_q12_o24_p0_f2",
+      "seed": 4509008,
+      "offset": 24,
+      "people": 0,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509008,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUv",
+          "a1": "WUv",
+          "a2": "WUu",
+          "a3": "WDu",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EDx",
+          "a7": "WUx",
+          "b0": "EUu",
+          "b1": "WDv",
+          "b2": "WUu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "EDu",
+          "b6": "WDu",
+          "b7": "EUx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 1,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "e241a2b3e29a9c7cc6709a35e2b0824c08936a965c4892683b137f89cb544876",
+      "xml": "88e0f35cefa01712aab38688c00f998c5ae83fc19e18c865fad2abb7e3246eef",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509008_n8_q12_o24_p10_f0",
+      "seed": 4509008,
+      "offset": 24,
+      "people": 10,
+      "slow": 0,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509008,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUv",
+          "a1": "WUv",
+          "a2": "WUu",
+          "a3": "WDu",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EDx",
+          "a7": "WUx",
+          "b0": "EUu",
+          "b1": "WDv",
+          "b2": "WUu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "EDu",
+          "b6": "WDu",
+          "b7": "EUx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 1,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 0
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "5b236b53d138a2ca188da8f11056c892bc2e25c2a605490904e6ff6477ca32c3",
+      "xml": "c052a8fe438fd2b2011cc9a16ebb1da9694573df76ad38517b77e5f777070d55",
+      "obs": {
+        "WC": {
+          "samples": 25,
+          "unique": 1,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    },
+    {
+      "case": "s4509008_n8_q12_o24_p10_f2",
+      "seed": 4509008,
+      "offset": 24,
+      "people": 10,
+      "slow": 2,
+      "epoch": 6.0,
+      "capacity": {
+        "A": 12,
+        "B": 12
+      },
+      "c": {
+        "seed": 4509008,
+        "actors": [
+          "A",
+          "B"
+        ],
+        "old": {
+          "a0": "EUv",
+          "a1": "WUv",
+          "a2": "WUu",
+          "a3": "WDu",
+          "a4": "EUu",
+          "a5": "EDu",
+          "a6": "EDx",
+          "a7": "WUx",
+          "b0": "EUu",
+          "b1": "WDv",
+          "b2": "WUu",
+          "b3": "WUv",
+          "b4": "EDv",
+          "b5": "EDu",
+          "b6": "WDu",
+          "b7": "EUx"
+        },
+        "size": {
+          "a0": 1,
+          "a1": 2,
+          "a2": 1,
+          "a3": 2,
+          "a4": 2,
+          "a5": 1,
+          "a6": 1,
+          "a7": 2,
+          "b0": 1,
+          "b1": 1,
+          "b2": 1,
+          "b3": 1,
+          "b4": 2,
+          "b5": 2,
+          "b6": 2,
+          "b7": 2
+        },
+        "start": {
+          "A": "AinW",
+          "B": "BinE"
+        },
+        "slow": 2
+      },
+      "wave2": {
+        "T": "tE",
+        "release": 6.0,
+        "orders": {
+          "a": {
+            "dest": "MW",
+            "weight": 8
+          },
+          "b": {
+            "dest": "ME",
+            "weight": 10
+          }
+        }
+      },
+      "ctx": {
+        "A": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 73.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUv"
+        },
+        "B": {
+          "ready": 14400,
+          "edge": "EU0",
+          "pos_m": 28.0,
+          "speed": 0.0,
+          "remaining_cm": 0,
+          "native_route": [
+            "EU0"
+          ],
+          "route_index": 0,
+          "committed": "EUu"
+        }
+      },
+      "prefix": "ecb84830a8ef6ec72398d8966e68b9b5ff3c9151a20c78326cf2b8086a83d0f4",
+      "xml": "b12e555d3e00002c5297504a3855bd0154faeba00e344f2b492817e356c8efbf",
+      "obs": {
+        "WC": {
+          "samples": 55,
+          "unique": 3,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        },
+        "EC": {
+          "samples": 0,
+          "unique": 0,
+          "green_samples": 0,
+          "green_unique": 0,
+          "green_latest_age": null,
+          "green_mean_mps": null,
+          "category": "unknown"
+        }
+      }
+    }
+  ],
+  "source_inputs_sha256": "449eec7aa1200bec723b24d57ae439bb497ab484de6e7aade1d0b7a80fdc7259"
+}

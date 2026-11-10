@@ -1,0 +1,303 @@
+[
+  {
+    "case": "s4509001_n8_q12_o0_p10_f2",
+    "arm": "HZ_AWA_RADIUS",
+    "budget_seconds": 0.01,
+    "signature": "ca4a97be615a247a5d582286d67e31301c37f7592e8124cda7314230c859b9cf",
+    "represented_reps": [
+      1,
+      2,
+      0
+    ],
+    "selected_rep": 2,
+    "planning_seconds": 0.010898799984715879,
+    "activation_tick": 31,
+    "quantization_seconds": 0.18910120001528413,
+    "deadline_fallback": true
+  },
+  {
+    "case": "s4509001_n8_q12_o0_p10_f2",
+    "arm": "HZ_AWA_PAIR_GATED",
+    "budget_seconds": 0.01,
+    "signature": "ca4a97be615a247a5d582286d67e31301c37f7592e8124cda7314230c859b9cf",
+    "represented_reps": [
+      0,
+      1,
+      2
+    ],
+    "selected_rep": 1,
+    "planning_seconds": 0.010853399988263845,
+    "activation_tick": 31,
+    "quantization_seconds": 0.18914660001173617,
+    "deadline_fallback": true
+  },
+  {
+    "case": "s4509001_n8_q12_o0_p10_f2",
+    "arm": "HZ_AWA_RADIUS",
+    "budget_seconds": 0.05,
+    "signature": "829a8d41dafbcb792f75325fdf191d9bae141ff14c3cc56c069a5da6e21347fd",
+    "represented_reps": [
+      0,
+      1,
+      2
+    ],
+    "selected_rep": 1,
+    "planning_seconds": 0.021135600050911307,
+    "activation_tick": 31,
+    "quantization_seconds": 0.1788643999490887,
+    "deadline_fallback": false
+  },
+  {
+    "case": "s4509001_n8_q12_o0_p10_f2",
+    "arm": "HZ_AWA_PAIR_GATED",
+    "budget_seconds": 0.05,
+    "signature": "829a8d41dafbcb792f75325fdf191d9bae141ff14c3cc56c069a5da6e21347fd",
+    "represented_reps": [
+      2,
+      0,
+      1
+    ],
+    "selected_rep": 0,
+    "planning_seconds": 0.02018079999834299,
+    "activation_tick": 31,
+    "quantization_seconds": 0.17981920000165702,
+    "deadline_fallback": false
+  },
+  {
+    "case": "s4509001_n8_q12_o0_p10_f2",
+    "arm": "HZ_AWA_RADIUS",
+    "budget_seconds": 0.2,
+    "signature": "829a8d41dafbcb792f75325fdf191d9bae141ff14c3cc56c069a5da6e21347fd",
+    "represented_reps": [
+      2,
+      1,
+      0
+    ],
+    "selected_rep": 1,
+    "planning_seconds": 0.020136800012551248,
+    "activation_tick": 31,
+    "quantization_seconds": 0.17986319998744876,
+    "deadline_fallback": false
+  },
+  {
+    "case": "s4509001_n8_q12_o0_p10_f2",
+    "arm": "HZ_AWA_PAIR_GATED",
+    "budget_seconds": 0.2,
+    "signature": "829a8d41dafbcb792f75325fdf191d9bae141ff14c3cc56c069a5da6e21347fd",
+    "represented_reps": [
+      2,
+      0,
+      1
+    ],
+    "selected_rep": 0,
+    "planning_seconds": 0.020436399965547025,
+    "activation_tick": 31,
+    "quantization_seconds": 0.17956360003445299,
+    "deadline_fallback": false
+  },
+  {
+    "case": "s4509001_n8_q12_o0_p10_f2",
+    "arm": "RADIUS",
+    "budget_seconds": 0.05,
+    "signature": "829a8d41dafbcb792f75325fdf191d9bae141ff14c3cc56c069a5da6e21347fd",
+    "represented_reps": [
+      0,
+      2,
+      1
+    ],
+    "selected_rep": 2,
+    "planning_seconds": 0.016075100051239133,
+    "activation_tick": 31,
+    "quantization_seconds": 0.18392489994876088,
+    "deadline_fallback": false
+  },
+  {
+    "case": "s4509001_n8_q12_o0_p10_f2",
+    "arm": "ROUTE",
+    "budget_seconds": 0.05,
+    "signature": "829a8d41dafbcb792f75325fdf191d9bae141ff14c3cc56c069a5da6e21347fd",
+    "represented_reps": [
+      1,
+      0,
+      2
+    ],
+    "selected_rep": 0,
+    "planning_seconds": 0.05053789995145053,
+    "activation_tick": 31,
+    "quantization_seconds": 0.14946210004854948,
+    "deadline_fallback": false
+  },
+  {
+    "case": "s4509001_n8_q12_o0_p10_f2",
+    "arm": "ANA_RADIUS",
+    "budget_seconds": 0.05,
+    "signature": "829a8d41dafbcb792f75325fdf191d9bae141ff14c3cc56c069a5da6e21347fd",
+    "represented_reps": [
+      2,
+      0,
+      1
+    ],
+    "selected_rep": 0,
+    "planning_seconds": 0.02016459999140352,
+    "activation_tick": 31,
+    "quantization_seconds": 0.1798354000085965,
+    "deadline_fallback": false
+  },
+  {
+    "case": "s4509001_n8_q12_o24_p10_f2",
+    "arm": "HZ_AWA_RADIUS",
+    "budget_seconds": 0.01,
+    "signature": "ca4a97be615a247a5d582286d67e31301c37f7592e8124cda7314230c859b9cf",
+    "represented_reps": [
+      1,
+      2,
+      0
+    ],
+    "selected_rep": 2,
+    "planning_seconds": 0.010898399981670082,
+    "activation_tick": 31,
+    "quantization_seconds": 0.18910160001832993,
+    "deadline_fallback": true
+  },
+  {
+    "case": "s4509001_n8_q12_o24_p10_f2",
+    "arm": "HZ_AWA_PAIR_GATED",
+    "budget_seconds": 0.01,
+    "signature": "ca4a97be615a247a5d582286d67e31301c37f7592e8124cda7314230c859b9cf",
+    "represented_reps": [
+      2,
+      1,
+      0
+    ],
+    "selected_rep": 1,
+    "planning_seconds": 0.010816099937073886,
+    "activation_tick": 31,
+    "quantization_seconds": 0.18918390006292612,
+    "deadline_fallback": true
+  },
+  {
+    "case": "s4509001_n8_q12_o24_p10_f2",
+    "arm": "HZ_AWA_RADIUS",
+    "budget_seconds": 0.05,
+    "signature": "829a8d41dafbcb792f75325fdf191d9bae141ff14c3cc56c069a5da6e21347fd",
+    "represented_reps": [
+      2,
+      1,
+      0
+    ],
+    "selected_rep": 1,
+    "planning_seconds": 0.017598599893972278,
+    "activation_tick": 31,
+    "quantization_seconds": 0.18240140010602773,
+    "deadline_fallback": false
+  },
+  {
+    "case": "s4509001_n8_q12_o24_p10_f2",
+    "arm": "HZ_AWA_PAIR_GATED",
+    "budget_seconds": 0.05,
+    "signature": "829a8d41dafbcb792f75325fdf191d9bae141ff14c3cc56c069a5da6e21347fd",
+    "represented_reps": [
+      2,
+      1,
+      0
+    ],
+    "selected_rep": 1,
+    "planning_seconds": 0.018577100010588765,
+    "activation_tick": 31,
+    "quantization_seconds": 0.18142289998941125,
+    "deadline_fallback": false
+  },
+  {
+    "case": "s4509001_n8_q12_o24_p10_f2",
+    "arm": "HZ_AWA_RADIUS",
+    "budget_seconds": 0.2,
+    "signature": "829a8d41dafbcb792f75325fdf191d9bae141ff14c3cc56c069a5da6e21347fd",
+    "represented_reps": [
+      1,
+      2,
+      0
+    ],
+    "selected_rep": 2,
+    "planning_seconds": 0.017155900015495718,
+    "activation_tick": 31,
+    "quantization_seconds": 0.1828440999845043,
+    "deadline_fallback": false
+  },
+  {
+    "case": "s4509001_n8_q12_o24_p10_f2",
+    "arm": "HZ_AWA_PAIR_GATED",
+    "budget_seconds": 0.2,
+    "signature": "829a8d41dafbcb792f75325fdf191d9bae141ff14c3cc56c069a5da6e21347fd",
+    "represented_reps": [
+      2,
+      1,
+      0
+    ],
+    "selected_rep": 1,
+    "planning_seconds": 0.018537500058300793,
+    "activation_tick": 31,
+    "quantization_seconds": 0.18146249994169922,
+    "deadline_fallback": false
+  },
+  {
+    "case": "s4509001_n8_q12_o24_p10_f2",
+    "arm": "RADIUS",
+    "budget_seconds": 0.05,
+    "signature": "829a8d41dafbcb792f75325fdf191d9bae141ff14c3cc56c069a5da6e21347fd",
+    "represented_reps": [
+      2,
+      1,
+      0
+    ],
+    "selected_rep": 1,
+    "planning_seconds": 0.014940799912437797,
+    "activation_tick": 31,
+    "quantization_seconds": 0.18505920008756221,
+    "deadline_fallback": false
+  },
+  {
+    "case": "s4509001_n8_q12_o24_p10_f2",
+    "arm": "ROUTE",
+    "budget_seconds": 0.05,
+    "signature": "829a8d41dafbcb792f75325fdf191d9bae141ff14c3cc56c069a5da6e21347fd",
+    "represented_reps": [
+      2,
+      1
+    ],
+    "selected_rep": 2,
+    "planning_seconds": 0.04515779996290803,
+    "activation_tick": 31,
+    "quantization_seconds": 0.15484220003709198,
+    "deadline_fallback": false
+  },
+  {
+    "case": "s4509001_n8_q12_o24_p10_f2",
+    "arm": "ROUTE",
+    "budget_seconds": 0.05,
+    "signature": "ca4a97be615a247a5d582286d67e31301c37f7592e8124cda7314230c859b9cf",
+    "represented_reps": [
+      0
+    ],
+    "selected_rep": 0,
+    "planning_seconds": 0.050157500081695616,
+    "activation_tick": 31,
+    "quantization_seconds": 0.1498424999183044,
+    "deadline_fallback": false
+  },
+  {
+    "case": "s4509001_n8_q12_o24_p10_f2",
+    "arm": "ANA_RADIUS",
+    "budget_seconds": 0.05,
+    "signature": "829a8d41dafbcb792f75325fdf191d9bae141ff14c3cc56c069a5da6e21347fd",
+    "represented_reps": [
+      0,
+      2,
+      1
+    ],
+    "selected_rep": 2,
+    "planning_seconds": 0.018431399948894978,
+    "activation_tick": 31,
+    "quantization_seconds": 0.18156860005110503,
+    "deadline_fallback": false
+  }
+]

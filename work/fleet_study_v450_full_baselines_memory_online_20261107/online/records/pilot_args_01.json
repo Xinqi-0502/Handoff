@@ -1,0 +1,14 @@
+[
+  "--definitions",
+  "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\INPUTS_64_01.json",
+  "--prefixes",
+  "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\prefixes\\pilot_01",
+  "--gate",
+  "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\gates\\micro_01",
+  "--native-gate",
+  "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\gates\\native_01",
+  "--out",
+  "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\runs\\pilot_01",
+  "--pilot",
+  "--native"
+]

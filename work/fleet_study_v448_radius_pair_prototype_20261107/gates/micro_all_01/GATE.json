@@ -1,0 +1,1171 @@
+{
+  "schema_version": 1,
+  "gate_kind": "V448_FROZEN_MICRO",
+  "status": "PASS",
+  "full_micro_suite_complete": true,
+  "cases": 24,
+  "independent_mothers": 6,
+  "sources": {
+    "selective_v448.py": "f955dcb082a1e8fb4e683741a657c433209202f313571c07174d9ab15de42a6c",
+    "reference_v448.py": "9810d96023a7710329d34a42f5c831687ea73e09fbfb42968fe4c660366a7416",
+    "check_v448.py": "beec4805585dbf8224cad60a2fd107b73e2ec80cae4df199166b4ed0e074eb73",
+    "instances_v448.py": "b084409f1aeec06ae484b59b21d1644c76cf75ed097b75082d04c89d1e77d74c",
+    "run_v448.py": "4f310cb6213a9ca576d60dafa45c995068f88877a575c5ef844b5b5ba687896f",
+    "run_jobs_v448.py": "df5e82e317f203cdd771fd30ce6b241da40f3b185983afac7572b7a80dd3d169",
+    "micro_gate_v448.py": "2d8875a347f89fdca3f8eab6dc9052a2596bab86e00c4730c9d67f3e8d0dfe00",
+    "independent_dp_v447.py": "8c59f8695dfa2347b0f8ac5c817aec93c0c41e07c0882d45f099abaf4d9c2431",
+    "instances_v447.py": "a2e8b402e0c913c371c4d37107b23ff934a91df98fecc58b8f3274cb791e2329"
+  },
+  "checker_sha256": "beec4805585dbf8224cad60a2fd107b73e2ec80cae4df199166b4ed0e074eb73",
+  "checker_pins": {
+    "old_solver": "1bbdf82f14286102e31ec35a9fec7b8f8588c5d5cbe63935787aef59fad3e4f4",
+    "old_reference": "9810d96023a7710329d34a42f5c831687ea73e09fbfb42968fe4c660366a7416",
+    "new_solver": "f955dcb082a1e8fb4e683741a657c433209202f313571c07174d9ab15de42a6c",
+    "new_reference": "9810d96023a7710329d34a42f5c831687ea73e09fbfb42968fe4c660366a7416",
+    "independent_dp": "8c59f8695dfa2347b0f8ac5c817aec93c0c41e07c0882d45f099abaf4d9c2431",
+    "micro_inputs": "0a5f38eba0565fb28a344b5987d3d3d2c0cc1a84c38489bfd1690c74b19cc2cc"
+  },
+  "input_sha256": "0a5f38eba0565fb28a344b5987d3d3d2c0cc1a84c38489bfd1690c74b19cc2cc",
+  "selected_runs": [
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_00",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_01",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_02",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_03",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_04",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_05",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_06",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_07",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_08",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_09",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_10",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_11",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_12",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_13",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_14",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_15",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_16",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_17",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_18",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_19",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_20",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_21",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_22",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_23"
+  ],
+  "evidence_sha256": {
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\check_v448.py": "beec4805585dbf8224cad60a2fd107b73e2ec80cae4df199166b4ed0e074eb73",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\selective_v447.py": "1bbdf82f14286102e31ec35a9fec7b8f8588c5d5cbe63935787aef59fad3e4f4",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\reference_v447.py": "9810d96023a7710329d34a42f5c831687ea73e09fbfb42968fe4c660366a7416",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\selective_v448.py": "f955dcb082a1e8fb4e683741a657c433209202f313571c07174d9ab15de42a6c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\reference_v448.py": "9810d96023a7710329d34a42f5c831687ea73e09fbfb42968fe4c660366a7416",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\independent_dp_v447.py": "8c59f8695dfa2347b0f8ac5c817aec93c0c41e07c0882d45f099abaf4d9c2431",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v447_random_high_load_20261107\\instances\\micro_01\\INPUTS.json": "0a5f38eba0565fb28a344b5987d3d3d2c0cc1a84c38489bfd1690c74b19cc2cc",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_00\\PROCESS_COMPLETE.json": "ab5339561c6fa477633e7262bb23f953ba4d1ce869707bb70f8de56e92baa2fc",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_00\\PROTOCOL.json": "eb9fce8cc853eaee4a4f2b63bcc3572d4e31a6d2e06ec86e34a8614b3121121c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_00\\SUMMARY.json": "381d3cbfe233d20e6785cf6f68bff0463fec6395b7be0b8d2b5ae6f947680fbd",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_00\\INPUTS.json": "e3384782562cf709a8635a908b8c486de77c16b4528beaddb6d7366341f3b3ba",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_00\\CASE_COMPLETE.jsonl": "bb66d0cf7ae936244462f8186684999cf5bb8d10a418619a9170f7e463ecbbaf",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_00\\OUTPUT_HASHES.json": "1910eabc91ca2bc5fed37f5f52eef10faf72765dbfc12033ee6d22f9e8ec2abc",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_00\\ORACLES.jsonl": "1472fc61c7db0dd8112cbc3114ebd44558af9a9cb8e94596a2948ee8b1015d9e",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_00\\PREFIX_CHECKS.jsonl.gz": "6590019f0eaf81dcf4a7188e75ebb02ab9330177220bc80693636b86ad224ad8",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_00\\SOLVES.jsonl": "78b92d21a2097c819b59bed68fd9d54c427888b5d6ef9bcec469485a62a09994",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_01\\PROCESS_COMPLETE.json": "63e7bfa5ebc5578c4191c11317cb4241a0e2f550b349415061461c7ab1cfa29e",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_01\\PROTOCOL.json": "da5e9a040226a3c9bc883938731822db76043ef777a14f997cba29660e260ba7",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_01\\SUMMARY.json": "acb370325de290b7f5be48143799d309d9526daeffc818baec2f80db9a2c9c78",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_01\\INPUTS.json": "c2fd245fcf745deb9ba0d8fff9a1f978b6a822f265860cd9579b1c716b92f727",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_01\\CASE_COMPLETE.jsonl": "09bb5c6d8dc2bb5ada04a995c62675f5318e2e67cc07c4ac9ad0eca4a0a6f5c6",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_01\\OUTPUT_HASHES.json": "c4ce619a9b83821143aef56ee4445c37c3b253492f4c73a0ab5a5e63f555d076",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_01\\ORACLES.jsonl": "ecd11b1a82d2cbf0ce786032cb818276df59f5156d63c1a274b9f4771628a882",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_01\\PREFIX_CHECKS.jsonl.gz": "c4e923ad7b8081afbacd37392779fe5b2afa7519c007683d132830bac9e6b800",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_01\\SOLVES.jsonl": "eaa2440d14b277e5d3b7e1a127baf0f5c22f3e0aa57015a76e07e6d1f72ecb26",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_02\\PROCESS_COMPLETE.json": "8a15ea64abe63ee3a9de667fb6cf73ff75865e509a4d7266b096aba67fc3003a",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_02\\PROTOCOL.json": "cfd3359712694149f6dff8f9c84469e58a73dbd746656ee4c52cef9b6905f14b",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_02\\SUMMARY.json": "fc367a8a58b7cf37deb03a72e594b6a107b17442acb5d097e6a66cfcb9092af8",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_02\\INPUTS.json": "16f47147ea46e44515e87de3fd68ebdfd323d184cb824be13753a94033cc173b",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_02\\CASE_COMPLETE.jsonl": "d2580cd5ee639b91e8f5557c76250523bdc34f5136fa7d1f3e2b12c2375dd8c9",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_02\\OUTPUT_HASHES.json": "75475c28811038bdfa4b93e97b5b680a6d0b75a62bbfcb65d6bad39a2b3d7606",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_02\\ORACLES.jsonl": "48aaff0b898f742b39ec24bf7a67480ea046922234d17d3f50c9490ae866bf7a",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_02\\PREFIX_CHECKS.jsonl.gz": "92745cddc6b67271bc379075a6f24151a0a30d6a0389953b146e2cda97819f26",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_02\\SOLVES.jsonl": "ce33e607497f1ef253e65866c74f1d562cbf12ce00e851cfd611bf676764140c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_03\\PROCESS_COMPLETE.json": "eeb0727c31b08652991435a0cf758cfb93197e8d1934b9795e4c98b8393a0a4f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_03\\PROTOCOL.json": "b28049c8a344dec2fa48c35827cfee5ebf91dfae057283336558fe76e228d5b5",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_03\\SUMMARY.json": "56f40e8a7a0d07fc3fa59e6a995e0d6adab7b2b05f665c07176be76e7ee3de30",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_03\\INPUTS.json": "6c00723ed3100b673fb15a326b3d820fcefa48eb9a619079c95f5190601538f0",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_03\\CASE_COMPLETE.jsonl": "dbb77090debde39733fca17d5ec74dbe532bd27b21fb1d3130e5ccf5c651dfd9",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_03\\OUTPUT_HASHES.json": "0ee66249fdd912a23bbdd3ec3171d6dba6e7b3243d587cf53152a995791984d3",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_03\\ORACLES.jsonl": "fdbea6d6a9f0ff28a9edcea37ec3eb423e818fa2784ce441cdd64eb37b659b28",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_03\\PREFIX_CHECKS.jsonl.gz": "7422d6c7ae0a47dae9b81a3840f976c9f676d6ccb2d217fdc0468319a13d03f4",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_03\\SOLVES.jsonl": "4be6aff014bf44c9caeae9639bc8b376d171d6450526a6b08602d2abff1bc047",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_04\\PROCESS_COMPLETE.json": "e8eb36a8c10e0114b548219b27e2c64bc6774e577a45ecf69c8ef5f277d78f44",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_04\\PROTOCOL.json": "e03b71fff86a379ed9c47c50a8244a8fe9a7cbebdc2602e9c5aad920fb076f3a",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_04\\SUMMARY.json": "60dfe29c3972f21f42a3c6ec5a4d96688e2f6df477659b80b0b2b224027a2c67",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_04\\INPUTS.json": "c7722dcca1e5bb4100612685bdb217881b67601aafcf96ef6c57bfe9f5e9c37c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_04\\CASE_COMPLETE.jsonl": "6ea9bf8ac74af5d3ba6e79ca319df7fbcdbc128dcc59022d67ce5833c3009dc4",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_04\\OUTPUT_HASHES.json": "8ffee3797825e7ca75414e9943977586fd5e84217d86a96e0c079c515e7e1c9d",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_04\\ORACLES.jsonl": "d253ffea855120d36ef1eb2a4fca15b5469b699fdc0a6faf6daa9715fc1f4186",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_04\\PREFIX_CHECKS.jsonl.gz": "6a361b2063c78745c918deb8300b821e7bc87895ceda8f3798fb467785027f5d",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_04\\SOLVES.jsonl": "80f69518c3fdf73a1ef4967168127b4f4bd8051dc83c60a20990bfd67fd4b420",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_05\\PROCESS_COMPLETE.json": "f028ffba2ec5f3823550a0a77ea77fcd40b7c376c7125a0bbb9d0eb357373fb7",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_05\\PROTOCOL.json": "e3907a60519b25f6e32cc2012da9397d6e4741e8bb81c3247cee52d8d6f0bff8",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_05\\SUMMARY.json": "6867bf510b6792cccc8b00b44c4b6459a3affe7bfd2e0b7d0a4063f36937a48a",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_05\\INPUTS.json": "98bc0843828773f3f3d6fc5b9497281b95f40d8226a834b39eb5f0f112281fb0",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_05\\CASE_COMPLETE.jsonl": "22e3318ce8f5121a83e394bc4fea287829ddb05eea9a73c368f9cf3ed54cb8a8",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_05\\OUTPUT_HASHES.json": "5881346f107556e39b219e2bbb09e2fef4c30cd9aebcaa95016184f223faee4f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_05\\ORACLES.jsonl": "d27a9b8f8b8d3eaec8e79010107c15d6eaaad061712bcf99f8e0c810ff024737",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_05\\PREFIX_CHECKS.jsonl.gz": "d51fbfd62c12232f937cd74a0256996fdb2ac95d9a8fddc5d0bc5fc9057e2a96",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_05\\SOLVES.jsonl": "d812e1d9acf480c555bee6c0118e8559fb5768f830b1b94db2a02c582ddfb595",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_06\\PROCESS_COMPLETE.json": "273596d1b26d5bb02973f2cd59ea7c8a9f2cbf2252cc9f2b07b78d3a7aa48577",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_06\\PROTOCOL.json": "1b8c7164f12d4dac264a024c2c85f87117872b832e1c9743e524be39711b3422",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_06\\SUMMARY.json": "265c064ec2bb8bfd1839113ebd0f2e42904a2690042bea29133d199b2c0d3808",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_06\\INPUTS.json": "8b94819d88eef84309fb8624192347c00af6313d48ffbae191f75be8c4102633",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_06\\CASE_COMPLETE.jsonl": "8b761c158d883230b03bf19dc56cb31324828af6786e4d35595be6ba86653f44",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_06\\OUTPUT_HASHES.json": "ec8330b342401bcd83d78d4a67f6f9f6dcf1ac970d70c591397a04041400b74f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_06\\ORACLES.jsonl": "a8df600f22b0c731f118ecd72a06f97608bf7c1e9d67915dc37fb16d2b26328a",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_06\\PREFIX_CHECKS.jsonl.gz": "0933b77ed26be7e6a3d9537cbb79171a7f9461a4e663c7aa4e0aeb3540b8204a",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_06\\SOLVES.jsonl": "467f0b36046e7af02dcffd2bfeb3e46e2ae6361c6d2de00d64b8d12d43cf68c2",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_07\\PROCESS_COMPLETE.json": "e5eeaf5ceb8e6d198dcd1549e4b008aa995474384f326c72598c00b65b5a60af",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_07\\PROTOCOL.json": "c72da32fda9b30fc87f0646c76f4901a69a89f79f06878530373a65be0443e1d",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_07\\SUMMARY.json": "47ff7f3f3d34f0075547ca85d95cb5fe07dfc41a2d31e98eb44de1c1e5ca4888",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_07\\INPUTS.json": "438ab188bcfac6d5f6ae962135aa4f42a571c9ba885ee6f3e2d3be0f67aff6cf",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_07\\CASE_COMPLETE.jsonl": "6cf324aea327c01848372429e5a337f8cce7dfe47d175103647374d937eb16a5",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_07\\OUTPUT_HASHES.json": "21b5b49cf14273aef64aea1f77135087c15c529605ef0ca4e7e24a84b1a8742c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_07\\ORACLES.jsonl": "07f6c69326cad505924450eb60ffa2b54c4c9e8fc70504037b10b38ed64598ea",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_07\\PREFIX_CHECKS.jsonl.gz": "849e9d63d1a31ff9db61874744ad4beccd4ea2f9272e44d92ca644409b8b28de",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_07\\SOLVES.jsonl": "39321110d2c1bb01148f5072e2b2ae4203c9aaf4fae5808da2ae33e0216666a4",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_08\\PROCESS_COMPLETE.json": "c2f403c24210ada0bc4ffcefb4e81beb0919230757c28f504f952829fe8d5512",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_08\\PROTOCOL.json": "fbc3a916a254a4a303b759600a3b1b7d9918b6ef1a0d9845817de912c7b4039f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_08\\SUMMARY.json": "e49927b0a0b5a3ea47b8b90ece41e05e46275bf49cf50b74418df28e69b63118",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_08\\INPUTS.json": "46e18b30d403fafe41ac95b06630c9967e4ce2bc004e91d8801d62771251415e",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_08\\CASE_COMPLETE.jsonl": "700f239b9b95665c53f6c05c2ce7b7f354e74817d57f1b65e5db707e697af258",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_08\\OUTPUT_HASHES.json": "602944fe527ce43bd9516e2d7081cedd14f1d557a1f9ce7246c9076e4e415631",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_08\\ORACLES.jsonl": "cddf9f711c04f0a88607c62635c1c7dcd02dbdc0b19e5f3bf80499c3c4babdc7",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_08\\PREFIX_CHECKS.jsonl.gz": "218f57b63f4373e9e5047e9c0ace4754bf98f78130bf621dfc1d29ae50838733",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_08\\SOLVES.jsonl": "be3b7f8713fd322f0133ac740d554e9cf0693d5e2a72ba844c05a598f68e0a3b",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_09\\PROCESS_COMPLETE.json": "4999611ab54608d326da0ea76d99233cda59240ad27ba6f98a03cb9d33917ed6",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_09\\PROTOCOL.json": "b322faef13f04a2fdf9abade0e05800df739fa7ea3d3b8cbecd4e1010c850383",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_09\\SUMMARY.json": "afffe2565fd9fd7d2c03a18b4e6f793b00230508b924b9d744d5c0406a8f2451",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_09\\INPUTS.json": "a6f806dabe4ad6d70cc71540df5db686e6fad99b77882c135e4a3018fb5cb257",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_09\\CASE_COMPLETE.jsonl": "5e0bd5a08fdd626855c538fc6b35ba665ed11572100e3992037c5ff14d7a2029",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_09\\OUTPUT_HASHES.json": "f06715e3071b953efe910e45b94a58e1a036576ad1a7d989b664e53c2bba8530",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_09\\ORACLES.jsonl": "51d81cce8463a4e395ccfa62082f68d1d43d4339ef8117ec55cfd74721f46f1c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_09\\PREFIX_CHECKS.jsonl.gz": "34d7601ae114f6df1c9bc6b7ff78ce5ad75e67294866944ab3b388fbf374b465",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_09\\SOLVES.jsonl": "5b19ca6fbc7c7984fae8ed032f4d810aea044d607e64a10ab1b2df765613dbd7",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_10\\PROCESS_COMPLETE.json": "232606642bb948541a7b8a38e857efc220d30cb6df2c8708734fc525dad91551",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_10\\PROTOCOL.json": "3a4a573f3b4395a534e2c88088b3d4e3fd3164b403720659f80990e535553b4c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_10\\SUMMARY.json": "fd9d2b11f40578352ea4082d60314c340010b20821612c953fbdfd73a7361e54",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_10\\INPUTS.json": "a573cbb93e054205363f8a385a7370e5acfab94a38c7604210f2186d9929de86",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_10\\CASE_COMPLETE.jsonl": "f0871d311f60a58b3b8a9e79d3e64dd544245c502cb2833cb5538b4f73c6ff31",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_10\\OUTPUT_HASHES.json": "d8e1d0a83fd36b4a324d4020304104e46160970717a20056fd472d71e15ab8e3",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_10\\ORACLES.jsonl": "400a31a1d9d09e5085bf5ef57d85e87b19cb368ee6ec88cefc048427d1c73324",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_10\\PREFIX_CHECKS.jsonl.gz": "9edac92ba6419c45272cd1357583de47426a2ce2abccd3bb4440dbce605d2045",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_10\\SOLVES.jsonl": "d1e3ebeb07f2dea68312f7415c1e8f732218b8444524f5be56a556105873954e",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_11\\PROCESS_COMPLETE.json": "1e52a0b1ecb3fa9a28ad5a6a415344932f820a9120e7f3257a05f494f95beafd",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_11\\PROTOCOL.json": "6095d8edc415cfd91be1aebaabfee74c51c62db84b2302f737e058480964a973",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_11\\SUMMARY.json": "3d20674eab6c3072398485cd44c69bccf115ecb8bf1f97a259858f833f282f63",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_11\\INPUTS.json": "41c213c6ce04ffc492784772a68bac1830f734a6ef90aa15f11c30358e17eb5d",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_11\\CASE_COMPLETE.jsonl": "c0595bbef716999ad186ad23d38a9bdcec6bff89e98354a909ae6bcf5cb8d804",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_11\\OUTPUT_HASHES.json": "9b2897d044d1cbf29626f6863c1e2403dcfbeb19d637ace8bf866235145f892c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_11\\ORACLES.jsonl": "31b7ab824244af58821957bb0f9d4ceab899d64e287bebcbfc89b5ababec198b",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_11\\PREFIX_CHECKS.jsonl.gz": "1614e6a08cee3f60e4fdb4983c9eea978cdf6a1a28a0caa0376434679dd96933",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_11\\SOLVES.jsonl": "d4dc2eaa433ac88350a8c6d16fdba7eb5cfa70eeeded86933843f6c08fec7254",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_12\\PROCESS_COMPLETE.json": "a033f0ecfe21033b2412a1ae6c6dcc85e458bf4a234bb944ef0a0fd5d2188210",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_12\\PROTOCOL.json": "06511ed42864dcdeb6a504d73b5679e5548b7c4314d8e5857748e919dafd25b3",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_12\\SUMMARY.json": "f32d0d87d96d41c1e45da7bcd2920e63e04952265a427585ba8e2005849b9eca",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_12\\INPUTS.json": "9732e7339d165f67432cfc2a5ee4b19b1920cf16569b14ec4c28196797720005",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_12\\CASE_COMPLETE.jsonl": "a78d97f3b72015583cb6398ac78d50796fcf19f8eb5ab4eb616cee0d4f55b38c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_12\\OUTPUT_HASHES.json": "66b8bd9f667d1b2bec0916cf580340bb3f37ae8eb67cd8baeb57ec80df9fa4a2",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_12\\ORACLES.jsonl": "7f6abc7ee1084ae3a0b6f2269185e82316231c17ee799278885baab6079d68bb",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_12\\PREFIX_CHECKS.jsonl.gz": "d2a4cc355f9d77ff265931a89843f6965686e92aab430f285abf6ff13beb2f78",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_12\\SOLVES.jsonl": "89c972e7b30f9574ecae52f70703d42931fb051c74398464678fe81872425593",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_13\\PROCESS_COMPLETE.json": "a2cf45ec4ef57d9c4a3fe00dd625c8f8b0a80be620a5cae2b71cbd905934c40c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_13\\PROTOCOL.json": "98179171b716bf113795786bca6a7e2ce72c8312def9b7e4e3e45f157fa2f255",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_13\\SUMMARY.json": "b4be0e938e2e5fe164f48bee6dc32e34b471a033ff3d88d0df019d4f079ebfaa",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_13\\INPUTS.json": "9f4d4303614f2dfd541cf2c43197cefd39c683c71276e8bd2c024c20e3d6dbcf",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_13\\CASE_COMPLETE.jsonl": "3986eee643fb5b65e89ff9ff2590987ca139104dfc66d6c92f235f150f3e22e8",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_13\\OUTPUT_HASHES.json": "9e3ecbaf967c965067448ff4dd4685e7a093483bfa7adc9216d589a429bc22b2",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_13\\ORACLES.jsonl": "c15f9ecbedd18aa8963cd6d75c54c4a4df9812f233daa2ec6d89999e8aa3eb5f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_13\\PREFIX_CHECKS.jsonl.gz": "0b96e66863dada7eb397bd82a1ba6d6968f06f4fae7a8a0bd3572182b5eca5c3",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_13\\SOLVES.jsonl": "edcbf27f761be6f6692d19f2e6102acb796025877ce3e471f7d44177b4159d56",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_14\\PROCESS_COMPLETE.json": "51f1694b936487717360c52f2f38a9acd139e2b6cf0774424cc6d5c34aaae455",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_14\\PROTOCOL.json": "3a9d1a6141e432d27f49815525bad3f989e5942ca62690a8e96c1c7455b0c4e5",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_14\\SUMMARY.json": "7fdb0875c24fea2a48b4337f509859f7142f45ddf483bb1cd5271f7c17aae108",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_14\\INPUTS.json": "2411953c9d250e36ff3889ad3da8fef30627286d7e33dfb403a34dfc0295fd95",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_14\\CASE_COMPLETE.jsonl": "f055ea0da952b633f30f81adbb9407c7d2d0d73499d3da5524b89fcfe9165d38",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_14\\OUTPUT_HASHES.json": "111e1a5087fd6c24660108f0595d28b66822010b05281468a2ac25ca7e0fbb35",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_14\\ORACLES.jsonl": "84d24bfdaf073ab43da05e3144e040ac3936c438a1a70a4b02b33f64d3c8b311",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_14\\PREFIX_CHECKS.jsonl.gz": "a814af946ecaad9f844acc2543cab9d2e2296ffc0011cf618a5f33b5d88fae0c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_14\\SOLVES.jsonl": "0e51bae34bb044fe998d0431ff7adf58b746ab3a39b4a6d4cee8ae3d2e449878",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_15\\PROCESS_COMPLETE.json": "97dd705884051664c35aa0e3e409141cf4763e85f2220bdd88724a943eebb3fa",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_15\\PROTOCOL.json": "9a5238f211b69141d528c1679f5f19dc6a71e9d59f59f067ff96df9426814e87",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_15\\SUMMARY.json": "79ce1125733bacb3831ed2fae65e9ca11baa1094ab58d706ad4216cda38159ef",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_15\\INPUTS.json": "f1891c6f1baedb41b8667a5406cd6bf9dee411b5321520be38506757a3f83806",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_15\\CASE_COMPLETE.jsonl": "7f8d85d61166a2ce8f397c5fa61f6895051978f3f52ee4f10f9420f32f199dd2",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_15\\OUTPUT_HASHES.json": "a00c21b2ce48ddeac00206e47c38addce40d9d1191c1ff71e322400e0e462686",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_15\\ORACLES.jsonl": "65a5f73aae09a33bd84714f41d769acacb430467e90d400e20c586ec258dacf4",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_15\\PREFIX_CHECKS.jsonl.gz": "06baed1e3f09435ff194abe2db09896147de5f1b917e092ef8db0c9408775813",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_15\\SOLVES.jsonl": "5b6119887fb3e18d9117043ef95d74b19206c1cc930def03b68747b1b2e865a7",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_16\\PROCESS_COMPLETE.json": "8d3120922a6086c838fd0d2fd90ca1d629ea1645f1ac943006782445243dad23",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_16\\PROTOCOL.json": "1c97ab8042bac559c7fcd37cb6ca57503c43d72e9733a8479bc28723893413f3",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_16\\SUMMARY.json": "beb327e6309109df5a472f34c8f20711264921af6df7204f6c5f00e2917f5627",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_16\\INPUTS.json": "70bc56a63c9dce9a515a16865aebce77086835077b619934fa2d54f15af7c9a5",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_16\\CASE_COMPLETE.jsonl": "ec1de6458429c0f1381ca59c25016b79f171b766d60942a163c6a28c0445328d",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_16\\OUTPUT_HASHES.json": "8e9ffea43a083eee95c35ca85ad4cd504894b1566fffb526c9998fe5501e73a1",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_16\\ORACLES.jsonl": "cce3f79d5f75570d88fba89574eb6dabd5e2ad910632df317d7ed92a790ca4db",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_16\\PREFIX_CHECKS.jsonl.gz": "03b8dea44e9d4d3aaa7d5ab596fac328c6d506d36d0195944caa128416c97ccf",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_16\\SOLVES.jsonl": "806b2b902bfeb0c2e6ebb8a6fa64d409b1ee434d1bae92a8b8e476637db18b62",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_17\\PROCESS_COMPLETE.json": "0efbdaa992735ef272caef4d6828cb855202d0ac7336b524cf9367e7dadb01f5",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_17\\PROTOCOL.json": "5b0a0957eece60559f022b6fe5aaf08d6645348eb97717f0aa6b7a7e0e851988",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_17\\SUMMARY.json": "06b50af6848ba24cdabdef0df1df85b6a8ddff4aa692d31a6a38ab6a9cb3d603",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_17\\INPUTS.json": "d40e8c820264ec9837b36c8e962547456f916dc9b8f8f914f5d8e68cda80b00f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_17\\CASE_COMPLETE.jsonl": "b9d50831ede9553c1fc1aafdf6dfd8b6bbb7091467e2e0b1286b16c2a17b69b0",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_17\\OUTPUT_HASHES.json": "1222c3d9cbf0215568865428bd01cc76eee3e552d18a7ac1c70dbeef154c20aa",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_17\\ORACLES.jsonl": "cce35b2db815d9eee2da53788e88a30f08d13698272a8726cd87ca3d177b5576",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_17\\PREFIX_CHECKS.jsonl.gz": "db298246ba2b6e506aa7e9df8211d4bf221682d85152a87842ad05cb5a910f56",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_17\\SOLVES.jsonl": "4befd04e683179c580ec2794d32354ea4dac0ef50ab2fe06063a6d2f415bb972",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_18\\PROCESS_COMPLETE.json": "e1e7c3b2be495d95c312807692801103797507c104d9ed1c06b9b1f26395c22b",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_18\\PROTOCOL.json": "585ae85c7eeb423726804a94c7b841eb7306b8ce9e195687517eedea09382141",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_18\\SUMMARY.json": "cf1ad475206c40aaa32d3a6cf2bc0c6c3bb6e145951ea644d03dfcf8de4a1565",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_18\\INPUTS.json": "176ffb368cfc53dee2b5eec8e3a66fbd8dc32e04ad126094292be0d4861ce1a6",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_18\\CASE_COMPLETE.jsonl": "f8433681a4a76de9511538a83aec42b10cd2573b9d49452f9433cd69be9dce83",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_18\\OUTPUT_HASHES.json": "c07cac33b19eb447f28d1661e7812b7abe0c311b82af082552dbbc8c47aec4b7",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_18\\ORACLES.jsonl": "e1d9d1130176ea42926e33016d61bc7098bf259356c70a2238d3ee2ca5de7929",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_18\\PREFIX_CHECKS.jsonl.gz": "633db8e6523c486cf341e20f1ce530616323f99686e4417050f870ab9d93bacd",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_18\\SOLVES.jsonl": "654400e4f81ee2225330d1b498fc0693881079de844e7199da1f992e9c53f626",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_19\\PROCESS_COMPLETE.json": "b5a3f562076a9899c01c0fbaf2222c267b15b8bbad4862c38a4858caf733d4e3",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_19\\PROTOCOL.json": "233981a691da73219d572e0ab65f4f630f2e214fb3e31a1ed34828cdd4135a6f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_19\\SUMMARY.json": "dafe927cdcad3dac678ec25320202ba061b3861a0ab07428ab72007bc211299f",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_19\\INPUTS.json": "72db8c117c7a0e9eb6f59f8ec15ca70b1625ceb1b1192219ba1ffafb9939a362",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_19\\CASE_COMPLETE.jsonl": "e717eb2bdb6e3d5520aaeb85cf8e8c0f0be00351b6a720cf7ec67f2c64acd904",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_19\\OUTPUT_HASHES.json": "ec75f7b3977a7174f32932702ff549e6e97fd06ada169c72ba37f828ce33847d",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_19\\ORACLES.jsonl": "f827666200d0f883db782ad016f941dbf695438e1b4cebce470170dd8f0f30d2",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_19\\PREFIX_CHECKS.jsonl.gz": "ba8ee945e0ced612157acf0ea2edfc6885ee86e4ecfbce04e9981957d011245a",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_19\\SOLVES.jsonl": "d27e82f4d5fc893a134fc4323b49f8f9e604acc838e2adf33c093446df96d937",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_20\\PROCESS_COMPLETE.json": "664b52abaadb4d02f7e34433966faaa383afe3f270f2c5a1c230bfa6820da832",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_20\\PROTOCOL.json": "907186f3130b7927793406008be177d51c9e718d2dd419a11381a33afafd63d8",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_20\\SUMMARY.json": "58a7874c4c021331fe49123d83ceedf5927db8e26854f140d1c3bdcd524b6aec",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_20\\INPUTS.json": "79cee16e0d4d6a831f6fbff602385c3684b81825ee00bcb975f18287330e9374",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_20\\CASE_COMPLETE.jsonl": "4e516b03b4e1fc39e9122a7c2cf0487401f1f56030b34dbbcfeb1f90589ca817",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_20\\OUTPUT_HASHES.json": "26aa8ab4902929b4e0160885490681c8bef30f8c9b4f7335564b873776a35be1",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_20\\ORACLES.jsonl": "ec2f00f70db00839bfb42fe2140f0099500a7f528dd2c35490f67ee282bd410a",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_20\\PREFIX_CHECKS.jsonl.gz": "06d20dc931246aa01234632c4062388e5ad2ba302b6aeddb3c67df9f7e0010aa",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_20\\SOLVES.jsonl": "19876bf8b33fbcda0fc5f4f13034051e46fce1f699f1eb88dc82f8ad5fcbfc1d",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_21\\PROCESS_COMPLETE.json": "90a2784125b8b1ee5d47dd243652e88b4d70aea38a3cd2ee0c0aa9165e01ad23",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_21\\PROTOCOL.json": "72f8eaea3a852726a06a249679c97d6e4df04b713f341f82aea1848b983bb471",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_21\\SUMMARY.json": "01bec9d319e29d7f7db6edc954df5a2b209e4a0a37aa7639b1f7772082c748a4",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_21\\INPUTS.json": "e444e35119e3c700c094be6f8e5c02d375b083d3127cc73ee6ec7dac97e09de7",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_21\\CASE_COMPLETE.jsonl": "a95084735390fb33ac13c61cd674863c73719c197402210e724708e96d04a445",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_21\\OUTPUT_HASHES.json": "a52eca67264f8751a614e4eea408356a6d3c7ba69c818d5b3d3bce20e6755139",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_21\\ORACLES.jsonl": "48cb9939c45f1840973077e5b28fbd719e5b66a149d3b677d0b37eb5f4a74224",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_21\\PREFIX_CHECKS.jsonl.gz": "25250e44f4c73048f94b44865eb210ae15cf6d0ce48b0d5056e0d92009d01cd1",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_21\\SOLVES.jsonl": "aebdb234d28f6b775fa15bc5f718b8b20114f0adfd75850b62929ead7151891e",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_22\\PROCESS_COMPLETE.json": "0b0d64bfdf1a991cde2f129ee25069ce4aa053fad8295fbf7fd1a4e4e5ed7587",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_22\\PROTOCOL.json": "8d723c66bc0c8c673f72fd6018417dca686efac96e9377c87f604adc919ade84",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_22\\SUMMARY.json": "0243c38ebbd7fb1bd9cfdb66f7b7c0e13231f016b7b2959e35bef1b90cf8fbc0",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_22\\INPUTS.json": "62f4e866b876afbdd0ba3bf83fd972971a7f0a5695e1cf670794225fb668e988",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_22\\CASE_COMPLETE.jsonl": "cdbc49e624c6dd8face4122249bf3687f508d62644894d3c24acc388656cb034",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_22\\OUTPUT_HASHES.json": "9d2f8aecf9e4b15416822efd52b6e328aa2bfeaa68c146448dd59c02cb20f57b",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_22\\ORACLES.jsonl": "346714f3e2b6bce778538c50de6b7c5f07512b34c50345b221f16eb31d5f9166",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_22\\PREFIX_CHECKS.jsonl.gz": "19891357e1c42023287c3af151825ad93362c42df596082cacf4381f5ab61f1c",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_22\\SOLVES.jsonl": "1559ee0c2035eb475c21d8ba2bf4c0e2ddd3a60fd6db34c909dcabda264f4f24",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_23\\PROCESS_COMPLETE.json": "44d69c00ea773bed2426bc596e9758a6b06c0f52fa1811d36a09b1cf7c7c2613",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_23\\PROTOCOL.json": "85ed58d90016195922f2bd955ff754107a16eea19ae0d0e6328078be66b4dde8",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_23\\SUMMARY.json": "cf926db82315b57b381f1fcd7ac5a75439e5db5304e536093ab6a67e967c6556",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_23\\INPUTS.json": "a554e0838b3d6c19f6b6e3a73bc022c469bddae9e1447cd12fae483a16e0fff7",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_23\\CASE_COMPLETE.jsonl": "3d2eb7cf5400fc430dc9417400905e9559a8354414c29dd922650a9620da285e",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_23\\OUTPUT_HASHES.json": "91e4909caafa4457d7c589a40aa89468c513decddd798ba61f9fdf1df1988aae",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_23\\ORACLES.jsonl": "cbed329995f3b24ae2408c2191119526643124e83946278074edc3e13cf11eac",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_23\\PREFIX_CHECKS.jsonl.gz": "c26433fce5d9710f49af93ea4c13f2f0695e3a0521e7f6230c90a746da93f9f9",
+    "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\runs\\check_micro_01_23\\SOLVES.jsonl": "bee83dbba1a05bee12b043dd3866888e288141a259e4f37f969adcd0f1ec0f6a"
+  },
+  "case_ids": [
+    "micro_s3470301_m3_tight_free",
+    "micro_s3470301_m3_tight_signal",
+    "micro_s3470301_m3_roomier_free",
+    "micro_s3470301_m3_roomier_signal",
+    "micro_s3470302_m3_tight_free",
+    "micro_s3470302_m3_tight_signal",
+    "micro_s3470302_m3_roomier_free",
+    "micro_s3470302_m3_roomier_signal",
+    "micro_s3470401_m4_tight_free",
+    "micro_s3470401_m4_tight_signal",
+    "micro_s3470401_m4_roomier_free",
+    "micro_s3470401_m4_roomier_signal",
+    "micro_s3470402_m4_tight_free",
+    "micro_s3470402_m4_tight_signal",
+    "micro_s3470402_m4_roomier_free",
+    "micro_s3470402_m4_roomier_signal",
+    "micro_s3470501_m5_tight_free",
+    "micro_s3470501_m5_tight_signal",
+    "micro_s3470501_m5_roomier_free",
+    "micro_s3470501_m5_roomier_signal",
+    "micro_s3470502_m5_tight_free",
+    "micro_s3470502_m5_tight_signal",
+    "micro_s3470502_m5_roomier_free",
+    "micro_s3470502_m5_roomier_signal"
+  ],
+  "case_summaries": [
+    {
+      "status": "PASS",
+      "case": "micro_s3470301_m3_tight_free",
+      "seed": 3470301,
+      "m": 3,
+      "optimum_H2": 152,
+      "counters": {
+        "prefixes": 61,
+        "phase0": 16,
+        "phase1": 31,
+        "terminal": 14,
+        "literal_full_checks": 32,
+        "shortcut_checks": 24,
+        "cutoff_checks": 588,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 108,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 47,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 62,
+          "channel_combinations": 248
+        },
+        "radius": {
+          "edges": 62,
+          "channel_combinations": 248
+        }
+      },
+      "closure_comparisons": 1200,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.029582799994386733
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470301_m3_tight_signal",
+      "seed": 3470301,
+      "m": 3,
+      "optimum_H2": 155,
+      "counters": {
+        "prefixes": 51,
+        "phase0": 15,
+        "phase1": 27,
+        "terminal": 9,
+        "literal_full_checks": 30,
+        "shortcut_checks": 22,
+        "cutoff_checks": 528,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 105,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 42,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 57,
+          "channel_combinations": 228
+        },
+        "radius": {
+          "edges": 57,
+          "channel_combinations": 228
+        }
+      },
+      "closure_comparisons": 1200,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.032495600054971874
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470301_m3_roomier_free",
+      "seed": 3470301,
+      "m": 3,
+      "optimum_H2": 120,
+      "counters": {
+        "prefixes": 116,
+        "phase0": 16,
+        "phase1": 71,
+        "terminal": 29,
+        "literal_full_checks": 32,
+        "shortcut_checks": 22,
+        "cutoff_checks": 1084,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 186,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 87,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 127,
+          "channel_combinations": 508
+        },
+        "radius": {
+          "edges": 127,
+          "channel_combinations": 508
+        }
+      },
+      "closure_comparisons": 1200,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.031563700060360134
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470301_m3_roomier_signal",
+      "seed": 3470301,
+      "m": 3,
+      "optimum_H2": 154,
+      "counters": {
+        "prefixes": 105,
+        "phase0": 15,
+        "phase1": 67,
+        "terminal": 23,
+        "literal_full_checks": 30,
+        "shortcut_checks": 20,
+        "cutoff_checks": 1024,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 207,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 82,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 122,
+          "channel_combinations": 488
+        },
+        "radius": {
+          "edges": 122,
+          "channel_combinations": 488
+        }
+      },
+      "closure_comparisons": 1200,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.041759900050237775
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470302_m3_tight_free",
+      "seed": 3470302,
+      "m": 3,
+      "optimum_H2": 126,
+      "counters": {
+        "prefixes": 62,
+        "phase0": 16,
+        "phase1": 32,
+        "terminal": 14,
+        "literal_full_checks": 32,
+        "shortcut_checks": 27,
+        "cutoff_checks": 592,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 103,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 48,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 63,
+          "channel_combinations": 252
+        },
+        "radius": {
+          "edges": 63,
+          "channel_combinations": 252
+        }
+      },
+      "closure_comparisons": 1200,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.02125069999601692
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470302_m3_tight_signal",
+      "seed": 3470302,
+      "m": 3,
+      "optimum_H2": 138,
+      "counters": {
+        "prefixes": 62,
+        "phase0": 16,
+        "phase1": 31,
+        "terminal": 15,
+        "literal_full_checks": 32,
+        "shortcut_checks": 27,
+        "cutoff_checks": 580,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 106,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 47,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 62,
+          "channel_combinations": 248
+        },
+        "radius": {
+          "edges": 62,
+          "channel_combinations": 248
+        }
+      },
+      "closure_comparisons": 1200,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.029855400091037154
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470302_m3_roomier_free",
+      "seed": 3470302,
+      "m": 3,
+      "optimum_H2": 108,
+      "counters": {
+        "prefixes": 125,
+        "phase0": 16,
+        "phase1": 72,
+        "terminal": 37,
+        "literal_full_checks": 32,
+        "shortcut_checks": 26,
+        "cutoff_checks": 1080,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 293,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 88,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 131,
+          "channel_combinations": 524
+        },
+        "radius": {
+          "edges": 131,
+          "channel_combinations": 524
+        }
+      },
+      "closure_comparisons": 1200,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.033046600059606135
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470302_m3_roomier_signal",
+      "seed": 3470302,
+      "m": 3,
+      "optimum_H2": 115,
+      "counters": {
+        "prefixes": 124,
+        "phase0": 16,
+        "phase1": 71,
+        "terminal": 37,
+        "literal_full_checks": 32,
+        "shortcut_checks": 26,
+        "cutoff_checks": 1068,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 296,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 87,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 130,
+          "channel_combinations": 520
+        },
+        "radius": {
+          "edges": 130,
+          "channel_combinations": 520
+        }
+      },
+      "closure_comparisons": 1200,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.030823799897916615
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470401_m4_tight_free",
+      "seed": 3470401,
+      "m": 4,
+      "optimum_H2": 163,
+      "counters": {
+        "prefixes": 256,
+        "phase0": 65,
+        "phase1": 146,
+        "terminal": 45,
+        "literal_full_checks": 130,
+        "shortcut_checks": 71,
+        "cutoff_checks": 2752,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 220,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 211,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 296,
+          "channel_combinations": 1184
+        },
+        "radius": {
+          "edges": 296,
+          "channel_combinations": 1184
+        }
+      },
+      "closure_comparisons": 1728,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.07629829994402826
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470401_m4_tight_signal",
+      "seed": 3470401,
+      "m": 4,
+      "optimum_H2": 174,
+      "counters": {
+        "prefixes": 275,
+        "phase0": 64,
+        "phase1": 161,
+        "terminal": 50,
+        "literal_full_checks": 128,
+        "shortcut_checks": 72,
+        "cutoff_checks": 2880,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 207,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 225,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 315,
+          "channel_combinations": 1260
+        },
+        "radius": {
+          "edges": 315,
+          "channel_combinations": 1260
+        }
+      },
+      "closure_comparisons": 1728,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.07243019994348288
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470401_m4_roomier_free",
+      "seed": 3470401,
+      "m": 4,
+      "optimum_H2": 147,
+      "counters": {
+        "prefixes": 404,
+        "phase0": 65,
+        "phase1": 240,
+        "terminal": 99,
+        "literal_full_checks": 130,
+        "shortcut_checks": 113,
+        "cutoff_checks": 3716,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 257,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 305,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 490,
+          "channel_combinations": 1960
+        },
+        "radius": {
+          "edges": 490,
+          "channel_combinations": 1960
+        }
+      },
+      "closure_comparisons": 1728,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.07301070005632937
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470401_m4_roomier_signal",
+      "seed": 3470401,
+      "m": 4,
+      "optimum_H2": 153,
+      "counters": {
+        "prefixes": 428,
+        "phase0": 64,
+        "phase1": 257,
+        "terminal": 107,
+        "literal_full_checks": 128,
+        "shortcut_checks": 109,
+        "cutoff_checks": 3908,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 250,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 321,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 510,
+          "channel_combinations": 2040
+        },
+        "radius": {
+          "edges": 510,
+          "channel_combinations": 2040
+        }
+      },
+      "closure_comparisons": 1728,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.07994609989691526
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470402_m4_tight_free",
+      "seed": 3470402,
+      "m": 4,
+      "optimum_H2": 172,
+      "counters": {
+        "prefixes": 237,
+        "phase0": 64,
+        "phase1": 138,
+        "terminal": 35,
+        "literal_full_checks": 128,
+        "shortcut_checks": 82,
+        "cutoff_checks": 2576,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 18,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 202,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 293,
+          "channel_combinations": 1172
+        },
+        "radius": {
+          "edges": 293,
+          "channel_combinations": 1172
+        }
+      },
+      "closure_comparisons": 1728,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.07116579997818917
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470402_m4_tight_signal",
+      "seed": 3470402,
+      "m": 4,
+      "optimum_H2": 186,
+      "counters": {
+        "prefixes": 205,
+        "phase0": 59,
+        "phase1": 115,
+        "terminal": 31,
+        "literal_full_checks": 118,
+        "shortcut_checks": 72,
+        "cutoff_checks": 2232,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 16,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 174,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 259,
+          "channel_combinations": 1036
+        },
+        "radius": {
+          "edges": 259,
+          "channel_combinations": 1036
+        }
+      },
+      "closure_comparisons": 1728,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.07587309996597469
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470402_m4_roomier_free",
+      "seed": 3470402,
+      "m": 4,
+      "optimum_H2": 136,
+      "counters": {
+        "prefixes": 398,
+        "phase0": 64,
+        "phase1": 243,
+        "terminal": 91,
+        "literal_full_checks": 128,
+        "shortcut_checks": 115,
+        "cutoff_checks": 3724,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 204,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 307,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 505,
+          "channel_combinations": 2020
+        },
+        "radius": {
+          "edges": 505,
+          "channel_combinations": 2020
+        }
+      },
+      "closure_comparisons": 1728,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.0747847999446094
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470402_m4_roomier_signal",
+      "seed": 3470402,
+      "m": 4,
+      "optimum_H2": 142,
+      "counters": {
+        "prefixes": 367,
+        "phase0": 59,
+        "phase1": 219,
+        "terminal": 89,
+        "literal_full_checks": 118,
+        "shortcut_checks": 105,
+        "cutoff_checks": 3376,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 194,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 278,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 462,
+          "channel_combinations": 1848
+        },
+        "radius": {
+          "edges": 462,
+          "channel_combinations": 1848
+        }
+      },
+      "closure_comparisons": 1728,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.07459670002572238
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470501_m5_tight_free",
+      "seed": 3470501,
+      "m": 5,
+      "optimum_H2": 186,
+      "counters": {
+        "prefixes": 1308,
+        "phase0": 276,
+        "phase1": 831,
+        "terminal": 201,
+        "literal_full_checks": 552,
+        "shortcut_checks": 329,
+        "cutoff_checks": 14146,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 148,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 1107,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 1756,
+          "channel_combinations": 7024
+        },
+        "radius": {
+          "edges": 1756,
+          "channel_combinations": 7024
+        }
+      },
+      "closure_comparisons": 2352,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.22591399995144457
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470501_m5_tight_signal",
+      "seed": 3470501,
+      "m": 5,
+      "optimum_H2": 189,
+      "counters": {
+        "prefixes": 1141,
+        "phase0": 285,
+        "phase1": 735,
+        "terminal": 121,
+        "literal_full_checks": 570,
+        "shortcut_checks": 346,
+        "cutoff_checks": 12840,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 172,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 1020,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 1670,
+          "channel_combinations": 6680
+        },
+        "radius": {
+          "edges": 1670,
+          "channel_combinations": 6680
+        }
+      },
+      "closure_comparisons": 2352,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.25487529998645186
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470501_m5_roomier_free",
+      "seed": 3470501,
+      "m": 5,
+      "optimum_H2": 147,
+      "counters": {
+        "prefixes": 2125,
+        "phase0": 276,
+        "phase1": 1441,
+        "terminal": 408,
+        "literal_full_checks": 552,
+        "shortcut_checks": 463,
+        "cutoff_checks": 20952,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 230,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 1717,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 3066,
+          "channel_combinations": 12264
+        },
+        "radius": {
+          "edges": 3066,
+          "channel_combinations": 12264
+        }
+      },
+      "closure_comparisons": 2352,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.4183325000340119
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470501_m5_roomier_signal",
+      "seed": 3470501,
+      "m": 5,
+      "optimum_H2": 163,
+      "counters": {
+        "prefixes": 1874,
+        "phase0": 285,
+        "phase1": 1301,
+        "terminal": 288,
+        "literal_full_checks": 570,
+        "shortcut_checks": 481,
+        "cutoff_checks": 19200,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 239,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 1586,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 2916,
+          "channel_combinations": 11664
+        },
+        "radius": {
+          "edges": 2916,
+          "channel_combinations": 11664
+        }
+      },
+      "closure_comparisons": 2352,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.4449835999403149
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470502_m5_tight_free",
+      "seed": 3470502,
+      "m": 5,
+      "optimum_H2": 131,
+      "counters": {
+        "prefixes": 1122,
+        "phase0": 300,
+        "phase1": 708,
+        "terminal": 114,
+        "literal_full_checks": 600,
+        "shortcut_checks": 244,
+        "cutoff_checks": 13388,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 93,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 1008,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 1525,
+          "channel_combinations": 6100
+        },
+        "radius": {
+          "edges": 1525,
+          "channel_combinations": 6100
+        }
+      },
+      "closure_comparisons": 2352,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.3616151000605896
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470502_m5_tight_signal",
+      "seed": 3470502,
+      "m": 5,
+      "optimum_H2": 140,
+      "counters": {
+        "prefixes": 952,
+        "phase0": 253,
+        "phase1": 587,
+        "terminal": 112,
+        "literal_full_checks": 506,
+        "shortcut_checks": 182,
+        "cutoff_checks": 11328,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 136,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 840,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 1295,
+          "channel_combinations": 5180
+        },
+        "radius": {
+          "edges": 1295,
+          "channel_combinations": 5180
+        }
+      },
+      "closure_comparisons": 2352,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.39623759989626706
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470502_m5_roomier_free",
+      "seed": 3470502,
+      "m": 5,
+      "optimum_H2": 112,
+      "counters": {
+        "prefixes": 2050,
+        "phase0": 300,
+        "phase1": 1406,
+        "terminal": 344,
+        "literal_full_checks": 600,
+        "shortcut_checks": 488,
+        "cutoff_checks": 20874,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 163,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 1706,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 3057,
+          "channel_combinations": 12228
+        },
+        "radius": {
+          "edges": 3057,
+          "channel_combinations": 12228
+        }
+      },
+      "closure_comparisons": 2352,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.43555630010087043
+    },
+    {
+      "status": "PASS",
+      "case": "micro_s3470502_m5_roomier_signal",
+      "seed": 3470502,
+      "m": 5,
+      "optimum_H2": 114,
+      "counters": {
+        "prefixes": 1886,
+        "phase0": 253,
+        "phase1": 1252,
+        "terminal": 381,
+        "literal_full_checks": 506,
+        "shortcut_checks": 396,
+        "cutoff_checks": 18468,
+        "integer_wait_prefixes": 8,
+        "integer_wait_evaluations": 213,
+        "integer_wait_horizon_skips": 0,
+        "old_exact_parity_prefixes": 1505,
+        "solution_checks": 36,
+        "method_alias_checks": 4
+      },
+      "pathmax": {
+        "exact": {
+          "edges": 2760,
+          "channel_combinations": 11040
+        },
+        "radius": {
+          "edges": 2760,
+          "channel_combinations": 11040
+        }
+      },
+      "closure_comparisons": 2352,
+      "gate_trace_equivalence_both_bases": true,
+      "elapsed_seconds": 0.48071719997096807
+    }
+  ],
+  "counters": {
+    "prefixes": 15734,
+    "phase0": 2858,
+    "phase1": 10182,
+    "terminal": 2694,
+    "literal_full_checks": 5716,
+    "shortcut_checks": 3862,
+    "cutoff_checks": 162904,
+    "integer_wait_prefixes": 192,
+    "integer_wait_evaluations": 4164,
+    "integer_wait_horizon_skips": 0,
+    "old_exact_parity_prefixes": 13040,
+    "solution_checks": 864,
+    "method_alias_checks": 96
+  },
+  "integer_wait_is_prefix_sample": true,
+  "no_solver_run_by_assembler": true,
+  "performance_claims": false,
+  "created_utc": "2026-11-07T09:22:24.247627+00:00",
+  "selection": {
+    "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v448_radius_pair_prototype_20261107\\records\\explicit_selected_check_run_paths.json",
+    "sha256": "cf86bd8165ad10a1ff41cbbadf832d87d4391b4bccee0869c2d2ed7a0e7f3a39"
+  }
+}

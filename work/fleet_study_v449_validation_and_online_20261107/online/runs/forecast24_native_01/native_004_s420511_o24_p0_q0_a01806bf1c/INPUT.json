@@ -1,0 +1,150 @@
+{
+  "snapshot": {
+    "seed": 420511,
+    "offset": 24,
+    "people": 0,
+    "slow": 0,
+    "c": {
+      "seed": 420511,
+      "actors": [
+        "A",
+        "B"
+      ],
+      "start": {
+        "A": "AinW",
+        "B": "BinE"
+      },
+      "size": {
+        "a0": 1,
+        "a1": 1,
+        "a2": 1,
+        "a3": 1,
+        "a4": 2,
+        "b0": 1,
+        "b1": 1,
+        "b2": 1,
+        "b3": 1,
+        "b4": 1
+      },
+      "old": {
+        "a0": "EUu",
+        "a1": "WDx",
+        "a2": "WDv",
+        "a3": "WUv",
+        "a4": "EUx",
+        "b0": "EDu",
+        "b1": "EDv",
+        "b2": "WUu",
+        "b3": "WUx",
+        "b4": "EUv"
+      },
+      "slow": 0
+    },
+    "ctx": {
+      "A": {
+        "ready": 14400,
+        "edge": "EU0",
+        "pos_m": 28.0,
+        "speed": 0.0,
+        "remaining_cm": 0,
+        "native_route": [
+          "EU0"
+        ],
+        "route_index": 0,
+        "committed": "EUu"
+      },
+      "B": {
+        "ready": 14400,
+        "edge": "ED0",
+        "pos_m": 28.0,
+        "speed": 0.0,
+        "remaining_cm": 0,
+        "native_route": [
+          "ED0"
+        ],
+        "route_index": 0,
+        "committed": "EDu"
+      }
+    },
+    "obs": {
+      "WC": {
+        "samples": 25,
+        "unique": 1,
+        "green_samples": 0,
+        "green_unique": 0,
+        "green_latest_age": null,
+        "green_mean_mps": null,
+        "category": "unknown"
+      },
+      "EC": {
+        "samples": 0,
+        "unique": 0,
+        "green_samples": 0,
+        "green_unique": 0,
+        "green_latest_age": null,
+        "green_mean_mps": null,
+        "category": "unknown"
+      }
+    },
+    "prefix": "405066740af98bf2ca1b9ca2b6673c0b81fd415f6fef53cf333e8f42bfdc1cb5",
+    "xml": "4f4415833292fad6693db9d283c301d9229217c6d9f59ffeac33972fb5d82adf",
+    "case": "s420511_o24_p0_q0",
+    "wave2": {
+      "T": "tW",
+      "release": 6.0,
+      "orders": {
+        "a": {
+          "dest": "MW",
+          "weight": 3
+        },
+        "b": {
+          "dest": "ME",
+          "weight": 4
+        }
+      }
+    }
+  },
+  "plan": {
+    "receiver": "B",
+    "hub": "HE",
+    "route": {
+      "B": [
+        "b0",
+        "b1",
+        "b4",
+        "Xa",
+        "a",
+        "b3",
+        "b2",
+        "Xb",
+        "b"
+      ],
+      "A": [
+        "a0",
+        "a4",
+        "a3",
+        "a2",
+        "a1"
+      ]
+    }
+  },
+  "runtime": {
+    "project_dir": "D:\\traffic-coop-research",
+    "python": "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "python_version": "3.12.14",
+    "sumo_binary": "D:\\traffic-coop-research\\.venv\\Lib\\site-packages\\sumo\\bin\\sumo.exe",
+    "netconvert_binary": "D:\\traffic-coop-research\\.venv\\Lib\\site-packages\\sumo\\bin\\netconvert.exe",
+    "packages": {
+      "eclipse-sumo": "1.27.1",
+      "traci": "1.27.1",
+      "sumolib": "1.27.1"
+    },
+    "sumo_version_text": "Eclipse SUMO sumo 1.27.1\n Build features: Windows-10.0.26100 AMD64 MSVC 19.51.36247.0 Release FMI Proj GUI FMT Intl SWIG Parquet Eigen GDAL FFmpeg OSG GL2PS JuPedSim\n Copyright (C) 2001-2026 German Aerospace Center (DLR) and others; https://sumo.dlr.de\n\nEclipse SUMO sumo 1.27.1 is part of SUMO.\nThis program and the accompanying materials\nare made available under the terms of the Eclipse Public License v2.0\nwhich accompanies this distribution, and is available at\nhttp://www.eclipse.org/legal/epl-v20.html\nThis program may also be made available under the following Secondary\nLicenses when the conditions for such availability set forth in the Eclipse\nPublic License 2.0 are satisfied: GNU General Public License, version 2\nor later which is available at\nhttps://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html\nSPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later\n",
+    "binary_sha256": {
+      "sumo": "e39d9f60e2494570bc826d29ac0a22c3fe311c2b222469cb5063591b4574d05c",
+      "netconvert": "b85bbcecd3c60799c3a0eb7f1077f9608b0187da29babc3a20f326f97d23942f"
+    }
+  },
+  "net": "dc4a5047cb2bd1f26be90ffc864fb58c177c7404d77302b7205a498c3aa8244e",
+  "initial_xml_hash": "4f4415833292fad6693db9d283c301d9229217c6d9f59ffeac33972fb5d82adf"
+}

@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "J_customer_seconds": 3029.2,
+  "completed": {
+    "a0": 30,
+    "b0": 30,
+    "a7": 136,
+    "b3": 262,
+    "a5": 281,
+    "a3": 380,
+    "b2": 570,
+    "b5": 634,
+    "b1": 711,
+    "a2": 725,
+    "a4": 789,
+    "b7": 856,
+    "a1": 866,
+    "a6": 1011,
+    "a": 1642,
+    "b6": 1755,
+    "b": 2047,
+    "b4": 2481
+  },
+  "handoff_a_seconds": 208.4,
+  "last_handoff_seconds": 382.4,
+  "truck_release_seconds": 382.4,
+  "all_customers": 18,
+  "prefix": "d0b313346239fdc9251ffca58c19b3463d803bea0a4c0c8287825a45bb7dbe6e",
+  "trace_sha256": "e371da1c4c93be3b608901e86510898e92382194a1484c2c4e1bfba244370831",
+  "collision_ticks": 0,
+  "teleports": 0,
+  "planning_seconds": 0.010883199982345104,
+  "activation_seconds": 6.2,
+  "activation_delay_seconds": 0.2,
+  "quantization_seconds": 0.1891168000176549,
+  "old_flow_seconds": 2303.4,
+  "new_flow_seconds": {
+    "a": 322.4,
+    "b": 403.4
+  },
+  "truck_arrival_seconds": 113.4,
+  "truck_dwell_seconds": 269.0,
+  "truck_wait_excluding_transfer_seconds": 265.0,
+  "unfinished_customers": [],
+  "traffic_trip_metrics": {
+    "bg": {
+      "duration": "59.40",
+      "waitingTime": "37.80",
+      "timeLoss": "44.60",
+      "routeLength": "144.59",
+      "arrival": "59.40"
+    },
+    "A": {
+      "duration": "211.80",
+      "waitingTime": "14.80",
+      "timeLoss": "32.14",
+      "routeLength": "1022.17",
+      "arrival": "211.80"
+    },
+    "T": {
+      "duration": "392.00",
+      "waitingTime": "20.40",
+      "timeLoss": "27.09",
+      "routeLength": "533.10",
+      "arrival": "398.20"
+    },
+    "B": {
+      "duration": "501.60",
+      "waitingTime": "31.80",
+      "timeLoss": "59.08",
+      "routeLength": "2893.28",
+      "arrival": "501.60"
+    }
+  },
+  "pedestrian_arrivals": 10,
+  "observed_exposure": {
+    "red_or_yellow_signal_stopped_ticks": {
+      "A": 74,
+      "B": 159,
+      "T": 15
+    },
+    "ped_near_vehicle_pair_ticks": 944,
+    "ped_near_vehicle_pairs": [
+      [
+        "B",
+        "ped8"
+      ],
+      [
+        "B",
+        "ped9"
+      ],
+      [
+        "T",
+        "ped0"
+      ],
+      [
+        "T",
+        "ped1"
+      ],
+      [
+        "T",
+        "ped2"
+      ],
+      [
+        "T",
+        "ped3"
+      ],
+      [
+        "T",
+        "ped4"
+      ],
+      [
+        "T",
+        "ped5"
+      ],
+      [
+        "T",
+        "ped6"
+      ],
+      [
+        "T",
+        "ped7"
+      ],
+      [
+        "T",
+        "ped8"
+      ],
+      [
+        "T",
+        "ped9"
+      ]
+    ],
+    "crosswalk_occupied_ticks_after_activation": 175,
+    "proximity_radius_metres": 15,
+    "interpretation": "Observed exposure, not identified causal pedestrian delay"
+  }
+}

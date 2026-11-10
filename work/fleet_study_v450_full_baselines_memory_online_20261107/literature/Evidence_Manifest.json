@@ -1,0 +1,61 @@
+{
+  "prepared_utc": "2026-11-07T12:42:33.6100070Z",
+  "scope": "Primary-source archive and source-level audit, no new numerical execution",
+  "files": [
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\literature\\Formula_Coverage_Matrix.md",
+      "bytes": 6840,
+      "sha256": "4767166734f80ec306842408f4eb1dddd031492182dbb59ad0cf0582e57dbbc5"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\literature\\Freight_ALNS_Reconstruction_Checklist.md",
+      "bytes": 6360,
+      "sha256": "1ad91c7be25d1e192ed6da7514589023394f1f26e0151d839caf5d0635ef8451"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\literature\\Published_Baseline_Implementation_Audit.md",
+      "bytes": 6784,
+      "sha256": "50607dc369d717c43dfd705a5c55093b5d3455ae4652f1725eef373f6b2f9fc7"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\literature\\Source_Query_Log.json",
+      "bytes": 2404,
+      "sha256": "49b5b017f5ce1c44a994a4c8fb0af53ecaa9e475eac9909fd011e46d5c3aeb02"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\literature\\sources\\ANA_AAAI_2011_Author.pdf",
+      "bytes": 463386,
+      "sha256": "d6b9cf63c51e70427de5df584ab11163194a303736531610ae4b335fc14c7974"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\literature\\sources\\Hansen_Zhou_2007_JAIR.pdf",
+      "bytes": 285983,
+      "sha256": "fb77512570fc8742d758689eb92f644ca050de1596e252e3e2afbab8b08604e7"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\literature\\sources\\Hansen_Zhou_2007_JAIR.txt",
+      "bytes": 94464,
+      "sha256": "2d82114226ccb2283812419e9d8df32908e3e235dc8dfd72dc1ce3866f194240"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\literature\\sources\\SBPL_ANAplanner.cpp",
+      "bytes": 37531,
+      "sha256": "838b025458f21c744b1c81cc0d8ec75267dd80b9532183bf71bbd35a9eba391a"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\literature\\sources\\SBPL_ANAplanner.h",
+      "bytes": 8009,
+      "sha256": "4b008acf95a9c3fcce16f9d45af45be419a8eb71d3b8d1f70af2309d6220f7f3"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\literature\\sources\\SBPL_Commit.json",
+      "bytes": 5370,
+      "sha256": "a7615ef434c00497579ffff3061a176d0c5deb2bf9dc672945a24e9217ffab85"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\literature\\sources\\SBPL_README.txt",
+      "bytes": 6490,
+      "sha256": "a0b958bc645cb9ebeb892aa0b78775646c1cf25a9d8704373841f46102e6571b"
+    }
+  ]
+}

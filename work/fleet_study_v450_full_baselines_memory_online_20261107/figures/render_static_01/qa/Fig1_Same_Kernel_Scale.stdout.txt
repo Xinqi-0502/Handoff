@@ -1,0 +1,72 @@
+{
+  "pdf": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\figures\\render_static_01\\exports\\Fig1_Same_Kernel_Scale.pdf",
+  "auditable": true,
+  "verdict": "FIX BEFORE DELIVERY",
+  "page_count": 1,
+  "visible_text_box_count": 39,
+  "text_trace_count": 39,
+  "stroke_path_count": 42,
+  "filled_region_count": 29,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 2,
+    "warn": 0,
+    "contained_fill_overlays": 8,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "45.0",
+      "text_bbox": [
+        170.83935546875,
+        149.1575469970703,
+        186.4124755859375,
+        157.1575469970703
+      ],
+      "other_text": null,
+      "other_bbox": [
+        51.87401580810547,
+        155.7329864501953,
+        253.34898376464844,
+        155.7329864501953
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        10
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "44.8",
+      "text_bbox": [
+        222.87318420410156,
+        149.3095245361328,
+        238.44630432128906,
+        157.3095245361328
+      ],
+      "other_text": null,
+      "other_bbox": [
+        51.87401580810547,
+        155.7329864501953,
+        253.34898376464844,
+        155.7329864501953
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        10
+      ]
+    }
+  ]
+}

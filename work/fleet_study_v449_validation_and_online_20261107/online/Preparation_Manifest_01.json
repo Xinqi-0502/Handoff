@@ -1,0 +1,38 @@
+{
+  "status": "PREPARED_AST_ONLY",
+  "sources": {
+    "check_online.py": {
+      "sha256": "c83c804f47a30e99455bb5b374ea69c3d45452cb43e05c4063484d6622796473",
+      "lines": 155
+    },
+    "job_host_online.py": {
+      "sha256": "8ec121a5fcaa35fed80df3261a42a41500f5f0e6a215966daccf89ad845d8fcd",
+      "lines": 41
+    },
+    "native_two_batch.py": {
+      "sha256": "54c19529942c92f36d7481ca1423e3cb8a03297a8b9ada4eadbbd5e1441ee628",
+      "lines": 155
+    },
+    "online_model.py": {
+      "sha256": "579c313ae4f181d4e214935d6f355db06656e7b7194c3ffabe2ed4cbd0e0b055",
+      "lines": 288
+    },
+    "run_online.py": {
+      "sha256": "cd76490ce0af30a7ad36c8b66e3ec0b2bd72f9f3d9d4199b9ca4bb775e6ac9a9",
+      "lines": 63
+    }
+  },
+  "old_sources_modified": false,
+  "solver_imported_or_run": false,
+  "sumo_started": false,
+  "inputs_created": false,
+  "correctness_gate_run": false,
+  "pending": [
+    "independent static review",
+    "final public-helper SHA and process-lifecycle clearance",
+    "input preparation",
+    "monitored independent correctness gate",
+    "native replay gate"
+  ],
+  "scope": "Restricted four-branch two-atomic-order extension of old customer-flow J"
+}

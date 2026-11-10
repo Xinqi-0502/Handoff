@@ -1,0 +1,7 @@
+budget_ms,metric,candidate,baseline,planned_cases,independent_mothers,known_pairs,unknown_pairs,wins,ties,losses,full64_mean_change_seconds,mean_definition
+10,customer_flow_J,HZ_AWA_PAIR_GATED,HZ_AWA_RADIUS,64,8,64,0,0,64,0,0.0,sum of 64 matched representative-replay differences / 64; NA if any pair unknown
+10,truck_handoff_wait,HZ_AWA_PAIR_GATED,HZ_AWA_RADIUS,64,8,64,0,0,64,0,0.0,sum of 64 matched representative-replay differences / 64; NA if any pair unknown
+50,customer_flow_J,HZ_AWA_PAIR_GATED,HZ_AWA_RADIUS,64,8,64,0,0,64,0,0.0,sum of 64 matched representative-replay differences / 64; NA if any pair unknown
+50,truck_handoff_wait,HZ_AWA_PAIR_GATED,HZ_AWA_RADIUS,64,8,64,0,0,64,0,0.0,sum of 64 matched representative-replay differences / 64; NA if any pair unknown
+200,customer_flow_J,HZ_AWA_PAIR_GATED,HZ_AWA_RADIUS,64,8,64,0,0,64,0,0.0,sum of 64 matched representative-replay differences / 64; NA if any pair unknown
+200,truck_handoff_wait,HZ_AWA_PAIR_GATED,HZ_AWA_RADIUS,64,8,64,0,0,64,0,0.0,sum of 64 matched representative-replay differences / 64; NA if any pair unknown

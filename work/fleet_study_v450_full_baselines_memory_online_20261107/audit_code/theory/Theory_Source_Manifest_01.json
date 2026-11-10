@@ -1,0 +1,50 @@
+{
+  "report": {
+    "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\audit_code\\theory\\Online_H2_J_Proof_Scope.md",
+    "sha256": "9bbf8ec845730c6eb6edaaa206e531d9cd7e0cd350105366b2fe9a6b465578f5"
+  },
+  "claim_scope": "Restricted forecast-model admissibility; no actual SUMO objective guarantee",
+  "blocking_flaw_found": false,
+  "sources": [
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v449_validation_and_online_20261107\\online\\online_model.py",
+      "sha256": "31d5521a1424608b6f0654744fbb7e0cfc83978071dd0ec96e4b83993a76fb06"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\online_model_v450.py",
+      "sha256": "30f4fc0037a17c5cab646970c82d09aa4e8e0d72490f5920525e0d61d734051f"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\published_online_v450.py",
+      "sha256": "6243ff17e9aab4539fbfb6ac2ce21e6fca92203e7b2c7b94d4cb587b45d7dba5"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\baseline_replication\\published_search_v450.py",
+      "sha256": "4d4286ad650f52264375bda90cf1a7c0c907eaa57df4396b58f959d7313b951c"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\online\\native_online_v450.py",
+      "sha256": "3efeade4e8e8be761f4003e88e4186504fc4a203c50768c6d1baec47fbe5b8a0"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v450_full_baselines_memory_online_20261107\\literature\\Formula_Coverage_Matrix.md",
+      "sha256": "4767166734f80ec306842408f4eb1dddd031492182dbb59ad0cf0582e57dbbc5"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v419_signal_pedestrian_traffic_20261104\\coarse.py",
+      "sha256": "0bc24da6f43bbe7943662c5f7486f7b03a5b1252eac2c4fd2277d5a5d18dc31c"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v419_signal_pedestrian_traffic_20261104\\model_turn2.py",
+      "sha256": "c566526fc95137d8b4aa3e2872b5ec42ee30b870146afa017b772609a11b6a6f"
+    },
+    {
+      "path": "E:\\CodexResearch-xi\\workspace\\work\\fleet_study_v410_traffic_budget_policy_20261104\\policy.py",
+      "sha256": "1935cee1702c05504910112869d4f7fd7dc1d179be2901062e00efbcc6199fa5"
+    }
+  ],
+  "frozen_sources_modified": false,
+  "date": "2026-11-07",
+  "status": "SOURCE_ONLY_AUDIT_COMPLETE",
+  "numerical_tasks_executed": 0
+}

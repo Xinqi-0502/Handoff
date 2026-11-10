@@ -1,0 +1,253 @@
+[
+  {
+    "seed": 3470402,
+    "m": 4,
+    "n_nodes": 6,
+    "coordinates": [
+      [
+        0,
+        0
+      ],
+      [
+        36,
+        40
+      ],
+      [
+        38,
+        43
+      ],
+      [
+        14,
+        -16
+      ],
+      [
+        -18,
+        15
+      ],
+      [
+        10,
+        -18
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        1,
+        18,
+        48,
+        24,
+        47
+      ],
+      [
+        0,
+        3,
+        10,
+        24,
+        6,
+        21
+      ],
+      [
+        0,
+        4,
+        9,
+        12,
+        3,
+        5
+      ],
+      [
+        0,
+        5,
+        10,
+        24,
+        6,
+        0
+      ],
+      [
+        1,
+        0,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        4,
+        24,
+        48,
+        24,
+        8
+      ],
+      [
+        2,
+        0,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        2,
+        48,
+        36,
+        29
+      ],
+      [
+        2,
+        4,
+        23,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        13,
+        12,
+        9,
+        11
+      ],
+      [
+        3,
+        4,
+        16,
+        48,
+        24,
+        40
+      ],
+      [
+        3,
+        5,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        12,
+        12,
+        6,
+        4
+      ],
+      [
+        4,
+        2,
+        24,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        3,
+        15,
+        12,
+        6,
+        2
+      ],
+      [
+        4,
+        5,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        12,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        1,
+        24,
+        12,
+        6,
+        9
+      ],
+      [
+        5,
+        3,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        4,
+        18,
+        24,
+        18,
+        0
+      ]
+    ],
+    "hub": 0,
+    "a_node": 1,
+    "start_node": 0,
+    "t0": 20,
+    "A": 31,
+    "wa": 120,
+    "wb": 160,
+    "a_service": 7,
+    "tau_a": 3,
+    "tau_b": 2,
+    "old": [
+      {
+        "node": 2,
+        "weight": 90,
+        "service": 12
+      },
+      {
+        "node": 3,
+        "weight": 54,
+        "service": 11
+      },
+      {
+        "node": 4,
+        "weight": 46,
+        "service": 9
+      },
+      {
+        "node": 5,
+        "weight": 10,
+        "service": 6
+      }
+    ],
+    "total_old_weight": 200,
+    "total_old_service": 38,
+    "case": "micro_s3470402_m4_roomier_signal",
+    "split": "micro",
+    "Q": 250,
+    "capacity_regime": "roomier",
+    "signal": true,
+    "geometry": "random_2d",
+    "control": false,
+    "pair_id": "micro_s3470402_m4_roomier",
+    "signal_pair_id": "micro_s3470402_m4_roomier",
+    "capacity_pair_id": "micro_s3470402_m4_signal",
+    "generation": "Prespecified random high-load FIFO synthetic transport",
+    "atomic_incoming_order": [
+      "a",
+      "b"
+    ],
+    "units": "Uncalibrated integer ticks and cargo units"
+  }
+]

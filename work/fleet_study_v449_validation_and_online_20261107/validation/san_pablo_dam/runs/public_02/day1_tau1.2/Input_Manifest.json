@@ -1,0 +1,13 @@
+{
+  "day": 1,
+  "tau": 1.2,
+  "n": 2298,
+  "files": {
+    "boundary.vss.xml": "08956f5a3c73d399bb39fa114d4c0a6d6ba94596a3ecf28d27364e230494dd88",
+    "detectors.add.xml": "d48098d34564a4d8222300164fb21e816c312d9e97900d6e8039d64d3a0cdf25",
+    "Observation_QC.json": "ee22dda0bda97340f8cebac5d8746b3a1c6eaba663d6bfb462f3ff503ecc414e",
+    "routes.rou.xml": "2bd592fc5da04afbe42392faa40d8ffc8e5278b3ff30070ba6d66bcaa72991a7",
+    "scenario.sumocfg": "d839606d31121a146c73bcc9439624d9b6b76bc03f2456774e58e15f97a71219"
+  },
+  "network_sha256": "ae1654c51384c289bd291f3249c7a94f2f721b052476e527ff86da697f2d7571"
+}

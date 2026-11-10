@@ -1,0 +1,273 @@
+{
+  "date": "7 November 2026",
+  "reviewed": true,
+  "panels": [
+    {
+      "title": "Native traffic execution: fewer states, unchanged deliveries",
+      "paragraphs": [
+        "The online extension connects the capacity-release check to the total customer-flow objective. Eight new demand mothers each have eight fixed signal-offset, pedestrian and slow-vehicle conditions, giving 64 scenarios. Each scenario has 16 old orders on two receivers and two new orders. The main comparison changes only the PAIR check within one complete AWA engine. All inputs, objectives, initial plans, search order and budgets are shared.",
+        "All 1,728 policy calls and 128 distinct native SUMO replays completed. The independent audit passed all 576 case/method/budget aggregates. Both main methods selected the same executed plan and activation tick in every paired call at 10, 50 and 200 ms. Every customer's completion time and the truck's handoff waiting time were unchanged. All eight mother-level differences and all eight traffic-condition differences are zero.",
+        "At 50 and 200 ms the added check removed 170 case-median expansions, reducing the all-case total from 6,304 to 6,134. The common on-time proof cost increased by 5.57% at 50 ms and 2.87% at 200 ms. At 50 ms the candidate completed proof in all three repetitions for 64 cases, versus 63 for the control. That single coverage difference is retained alongside the slower common-case proof time.",
+        "The 10-ms runs largely executed a late common initializer: 192 of 192 candidate calls and 191 of 192 control calls had no plan by the deadline. Neither arm expanded a state. These physical fallback outcomes are not evidence of valid within-budget solution quality. At 50 and 200 ms all initial plans arrived on time, and every case improved on the common initializer.",
+        "Measured planning delay was charged to execution. All 1,728 calls nevertheless activated at 6.2 seconds because the simulator rounds activation upward to its 0.2-second step. In the main comparison, identical plans and identical activation ticks explain the identical physical outcomes. The online check has demonstrated additional rejection, but no incremental delivery or truck-wait benefit in this cohort."
+      ],
+      "table": {
+        "headers": [
+          "Budget",
+          "Actual customer-flow change",
+          "Truck-wait change",
+          "Expanded states",
+          "Common proof cases",
+          "Proof-time change"
+        ],
+        "rows": [
+          [
+            "10 ms",
+            "0; late fallback dominates",
+            "0 s",
+            "0 to 0",
+            "0 / 64",
+            "Not available"
+          ],
+          [
+            "50 ms",
+            "0",
+            "0 s",
+            "6,304 to 6,134",
+            "63 / 64",
+            "+5.57%"
+          ],
+          [
+            "200 ms",
+            "0",
+            "0 s",
+            "6,304 to 6,134",
+            "64 / 64",
+            "+2.87%"
+          ]
+        ]
+      },
+      "links": [
+        {
+          "label": "Full online findings, deadlines and tradeoffs",
+          "path": "online/Online_Results_02.md"
+        },
+        {
+          "label": "Independent audit of raw execution",
+          "path": "online/analysis/full_02/Independent_Online_Audit.md"
+        },
+        {
+          "label": "All case-level method/budget results",
+          "path": "online/analysis/full_02/Case_Budget_Results.csv"
+        },
+        {
+          "label": "Every prespecified traffic condition",
+          "path": "figures/native_outcome/conditions_main_01/All_Condition_Summary.csv"
+        },
+        {
+          "label": "Cross-arm executed plan and activation identities",
+          "path": "figures/native_outcome/conditions_main_01/Execution_Identity_Per_Case.csv"
+        },
+        {
+          "label": "Full online numerical summary",
+          "path": "online/analysis/interpretation_02/Summary.json"
+        }
+      ]
+    },
+    {
+      "title": "Online cost and the old ROUTE comparison",
+      "paragraphs": [
+        "A separate 128-call instrumented profile measured 5,309 PAIR queries. The cheap upper test skipped 4,337 of them, or 81.69%. PAIR took 80.9517 ms in total, 15.25 microseconds per invocation and 4.40% of instrumented elapsed time. It rejected 170 states across 44 of 64 cases. These instrumented runs are not pooled with the formal timing runs because added timers changed the work completed before the deadline.",
+        "At 50 ms the candidate's total realized customer flow was 11.50% lower than old ROUTE's. The ordinary RADIUS, same-engine AWA control and ANA methods obtained the same realized outcome as the candidate. The improvement over old ROUTE therefore does not establish a benefit from the added joint check.",
+        "The lower customer-flow objective also has a service tradeoff. Mean truck handoff waiting was 264.0875 seconds for the candidate, compared with 253.9229 seconds for old ROUTE. Both new customers received their orders later on average. The improvement in total customer flow came from earlier completion of old orders. The stated objective sums all customer flow times and does not directly minimize the truck's waiting time."
+      ],
+      "table": {
+        "headers": [
+          "50-ms method",
+          "Mean total customer flow (customer-s)",
+          "Mean truck handoff waiting (s)"
+        ],
+        "rows": [
+          [
+            "Same-engine AWA control",
+            "2,416.040625",
+            "264.087500"
+          ],
+          [
+            "AWA plus joint check",
+            "2,416.040625",
+            "264.087500"
+          ],
+          [
+            "Ordinary RADIUS / ANA",
+            "2,416.040625",
+            "264.087500"
+          ],
+          [
+            "Old ROUTE",
+            "2,729.861458",
+            "253.922917"
+          ]
+        ]
+      },
+      "links": [
+        {
+          "label": "Full absolute customer and truck outcomes",
+          "path": "online/analysis/interpretation_02/Absolute_Outcome_Totals.csv"
+        },
+        {
+          "label": "Separate instrumented check costs",
+          "path": "online/analysis/interpretation_02/Profile_Costs.csv"
+        },
+        {
+          "label": "Formal same-engine results",
+          "path": "online/analysis/interpretation_02/Main_Same_Engine.csv"
+        }
+      ]
+    },
+    {
+      "title": "What changes in measured memory",
+      "paragraphs": [
+        "All 128 fresh-process observations completed: 32 scenarios from eight mother instances, four methods and one observation per method/scenario. All methods found and proved the verified optimum within one second. An independent audit checked all lifecycle records, replayed 428 stored plans and matched 4,412 fields in the primary analysis.",
+        "The same-engine paired ratios of summed process peaks were 0.9906215 for working set and 0.9851817 for private commit. The candidate had lower working-set peaks in 23 cases and higher peaks in nine. It had lower private-commit peaks in 25 cases and higher peaks in seven.",
+        "Most working-set peaks had already been reached before the solver started. No new working-set high-water mark occurred in 32 of 32 frozen deployment runs, 28 of 32 AWA baseline runs, 30 of 32 AWA-plus-check runs and 28 of 32 ANA runs. The small raw differences therefore do not establish memory savings caused by the proposed check. The report retains measured bytes without treating label counts or baseline subtraction as algorithm-exclusive RAM.",
+        "Working set includes resident shared and private pages. PeakPagefileUsage records peak process commit, not physical pagefile writes. The sample has one process observation per cell and does not estimate repeat-to-repeat memory variability."
+      ],
+      "table": {
+        "headers": [
+          "Metric",
+          "Cases",
+          "Candidate / baseline peak sums",
+          "Lower / higher cases"
+        ],
+        "rows": [
+          [
+            "Resident working-set peak",
+            32,
+            "0.990622",
+            "23 / 9"
+          ],
+          [
+            "Private-commit peak",
+            32,
+            "0.985182",
+            "25 / 7"
+          ]
+        ]
+      },
+      "links": [
+        {
+          "label": "Native memory results and metric definitions",
+          "path": "memory/analysis/main_01/Memory_Results.md"
+        },
+        {
+          "label": "Full native observations",
+          "path": "memory/analysis/main_01/Observations.csv"
+        },
+        {
+          "label": "Independent memory audit",
+          "path": "audit_code/memory/results/main_01/Independent_Memory_Audit.json"
+        },
+        {
+          "label": "Why the raw process peaks do not establish algorithm memory savings",
+          "path": "memory/analysis/main_01/Interpretation_Addendum.md"
+        }
+      ]
+    },
+    {
+      "title": "Originality and published-method coverage",
+      "paragraphs": [
+        "The proposed method links both handoffs through one first-handoff completion time. Its optimistic eligibility set retains old-parcel identities, so a parcel cannot release capacity twice. The second-stage witnesses must include delivery of the first incoming order. Minimization over the finite eligibility-change times yields the joint lower bound. A constructive upper bound on this relaxation identifies checks that cannot reject the state.",
+        "The formula matrix separates this construction from published weighted resource thresholds, temporal profiles and lazy heuristic evaluation. Inspected Hof-Schneider and Wei formulations do not supply the complete current query. Those ingredients and the AWA/ANA search policies are credited to their sources.",
+        "A newly screened inventory-routing paper, DOI 10.1016/j.cor.2026.107577, remains a partial-primary-text comparison. Its complete algorithm and constraint material were not obtained. The recorded audit supports a specific difference from inspected formulas, without a universal first-publication claim.",
+        "Complete freight ALNS systems have not been reproduced in this study. The current complete published baselines are search-policy reimplementations with disclosed domain adapters. Their comparison supports the added bound's search contribution on the stated problem."
+      ],
+      "links": [
+        {
+          "label": "Formula-level coverage matrix",
+          "path": "literature/Formula_Coverage_Matrix.md"
+        },
+        {
+          "label": "Published AWA and ANA implementation mapping",
+          "path": "literature/Published_Baseline_Implementation_Audit.md"
+        },
+        {
+          "label": "New COR paper: inspected material and remaining access gap",
+          "path": "literature/COR_107577_Bounded_Update_20261107.md"
+        },
+        {
+          "label": "Full freight ALNS reproduction checklist",
+          "path": "literature/Freight_ALNS_Reconstruction_Checklist.md"
+        }
+      ]
+    },
+    {
+      "title": "Controlled variables and evidence limits",
+      "paragraphs": [
+        "The causal static comparison changes only the additional two-handoff check in a common search engine. Inputs, objective, initial plan, queue ordering, raw-bound cache, Pathmax and budget are shared. Three technical timing repetitions are summarized per scenario. The 256 scenarios come from 64 mother instances, not 256 independent random draws.",
+        "The 255-case proof comparison retains the excluded case in the full quality and deadline tables. All four methods found its optimum within the one-second budget. Some methods had not finished certification in every repetition. An incomplete proof is not counted as a complete one.",
+        "The local objective is completion of the second handoff. The online objective is total customer flow time. The online adapter uses the handoff bound only in the second incoming customer's completion term. Handoff completion is not added again as a separate customer-flow cost.",
+        "The online implementation uses a static free-flow joint relaxation within a traffic-conditioned forecast search. Its lower-envelope proof remains valid for the implemented non-FIFO predictor because each predicted leg is no faster than the static lower envelope. The proof concerns forecast cost, not physical SUMO cost. Queue scoring stays common and the extra pop-time check only removes subtrees that cannot improve the forecast incumbent.",
+        "Native SUMO execution checks capacity, freight ownership, service duration, physical handoff, planned activation delay, complete deliveries, recorded collisions and teleports. These checks establish implementation behavior on the tested network. They do not calibrate the delivery network against measured city traffic.",
+        "The online test optimizes one receiving vehicle's remaining order and a common receiver/hub choice at one decision epoch. The other receiver follows a shared fixed route. Continuous rolling arrivals, arbitrary numbers of incoming batches and general citywide fleet optimization remain outside this experiment.",
+        "Native planning delay is rounded upward to 0.2-second simulation steps. Under the same deterministic inputs, selecting the same complete plan and activation tick produces the same execution. A sub-step CPU reduction alone is therefore not an observed delivery-time improvement in this model."
+      ],
+      "links": [
+        {
+          "label": "Static independent analysis crosscheck",
+          "path": "audit_code/results/crosscheck_01/Crosscheck.json"
+        },
+        {
+          "label": "Static paired results",
+          "path": "static_comparison/analysis/main_01/Paired_Summary.csv"
+        },
+        {
+          "label": "Online predeclared aggregation rules",
+          "path": "online/analysis/Analysis_Rules_01.md"
+        },
+        {
+          "label": "Independent objective-bridge proof and implementation scope",
+          "path": "audit_code/theory/Online_H2_J_Proof_Scope.md"
+        }
+      ]
+    },
+    {
+      "title": "What the evidence supports",
+      "paragraphs": [
+        "The retained joint-capacity combination has a measured local search benefit: it expands fewer states and finishes optimality proofs faster than the complete AWA and ANA search-policy baselines on the independent local cohort. The same-kernel ablation attributes the AWA difference to the added check. It does not establish better early approximate solutions, lower algorithm memory, or improved physical delivery outcomes.",
+        "The online connection is implemented and tested. Its added pruning is too small to repay its checking cost in the present 18-customer cohort. The local proof-cost result and the online null result belong to different objectives and must remain separate in the manuscript. A future rolling-dispatch study should retain the same controls and measure whether decision or activation changes occur before claiming service improvement."
+      ],
+      "links": [
+        {
+          "label": "Static raw-evidence independent audit",
+          "path": "audit_code/results/main_01/Independent_Audit.md"
+        },
+        {
+          "label": "Static figures and data verification",
+          "path": "figures/render_static_02/Final_Visual_QA.md"
+        },
+        {
+          "label": "Memory failure and correction history",
+          "path": "memory/Failure_Chronology.md"
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "path": "figures/render_static_02/exports/Fig1_Same_Kernel_Scale.png",
+      "alt": "Normalized expanded-state count and proof time by old-order count.",
+      "caption": "Source-generated comparison within the same AWA engine. Baseline equals 100. Each bar uses sums of case medians over the common on-time proof subset. The per-scale denominators are 64, 64, 64 and 63 out of 64 scenarios."
+    },
+    {
+      "path": "figures/render_static_02/exports/Fig2_Anytime_Tradeoff.png",
+      "alt": "Time changes for first five-percent gap, ten-percent gap, optimum and proof.",
+      "caption": "Source-generated anytime comparison. First attainment of the 5% and 10% duration gaps is slower, while first attainment of the optimum and completion of its proof are faster in aggregate. First-attainment results include 256 scenarios. The common on-time proof comparison includes 255."
+    },
+    {
+      "path": "figures/native_outcome/render_native_02/Fig3_Native_Outcomes.png",
+      "alt": "Actual customer-flow and truck-wait differences are zero at all three budgets.",
+      "caption": "Same-engine physical comparison across all 64 scenarios from eight mothers. All pairs tie in actual customer flow and truck handoff waiting. At 10 ms, 192/192 candidate calls and 191/192 control calls execute late initial-plan fallbacks. These are execution outcomes, not valid within-budget quality results. The 50- and 200-ms plans are on time. Values use policy-frequency-weighted representative replays rather than three independent native runs."
+    }
+  ]
+}

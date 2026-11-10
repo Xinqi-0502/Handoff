@@ -1,0 +1,4 @@
+{"case": "v449_scale_cost_s94488001_m8_tight_free", "oracle_exact": true, "completed_attempts": 9}
+{"case": "v449_scale_cost_s94488001_m8_tight_signal", "oracle_exact": true, "completed_attempts": 9}
+{"case": "v449_scale_cost_s94488001_m8_roomier_free", "oracle_exact": true, "completed_attempts": 9}
+{"case": "v449_scale_cost_s94488001_m8_roomier_signal", "oracle_exact": true, "completed_attempts": 9}

@@ -1,0 +1,46 @@
+[
+  {
+    "status": "OK",
+    "pid": 92516,
+    "monotonic_seconds": 611338.3613423,
+    "counters_bytes": {
+      "PeakWorkingSetSize": 1748992,
+      "WorkingSetSize": 1748992,
+      "QuotaPeakPagedPoolUsage": 17224,
+      "QuotaPagedPoolUsage": 17224,
+      "QuotaPeakNonPagedPoolUsage": 1904,
+      "QuotaNonPagedPoolUsage": 1904,
+      "PagefileUsage": 425984,
+      "PeakPagefileUsage": 434176,
+      "PrivateUsage": 425984
+    },
+    "page_fault_count": 450,
+    "counter_structure_bytes": 80,
+    "pointer_bits": 64,
+    "semantics": "Working set includes resident private and shared pages. PagefileUsage/PrivateUsage are process commit, not actual bytes written to a paging file.",
+    "peak_reset_performed": false,
+    "stage": "started"
+  },
+  {
+    "status": "OK",
+    "pid": 92516,
+    "monotonic_seconds": 611343.7491857,
+    "counters_bytes": {
+      "PeakWorkingSetSize": 27918336,
+      "WorkingSetSize": 36864,
+      "QuotaPeakPagedPoolUsage": 153904,
+      "QuotaPagedPoolUsage": 288,
+      "QuotaPeakNonPagedPoolUsage": 39520,
+      "QuotaNonPagedPoolUsage": 0,
+      "PagefileUsage": 81920,
+      "PeakPagefileUsage": 19808256,
+      "PrivateUsage": 81920
+    },
+    "page_fault_count": 12936,
+    "counter_structure_bytes": 80,
+    "pointer_bits": 64,
+    "semantics": "Working set includes resident private and shared pages. PagefileUsage/PrivateUsage are process commit, not actual bytes written to a paging file.",
+    "peak_reset_performed": false,
+    "stage": "exited"
+  }
+]
